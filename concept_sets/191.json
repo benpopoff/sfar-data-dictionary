@@ -13,15 +13,14 @@
       {
         "concept": {
           "conceptId": 3006315,
-          "conceptName": "Concept 3006315",
+          "conceptName": "Basophils [#/volume] in Blood",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "26444-0",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Lab Test",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
@@ -32,15 +31,14 @@
       {
         "concept": {
           "conceptId": 3013429,
-          "conceptName": "Concept 3013429",
+          "conceptName": "Basophils [#/volume] in Blood by Automated count",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "704-7",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Lab Test",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
@@ -51,15 +49,14 @@
       {
         "concept": {
           "conceptId": 3027651,
-          "conceptName": "Concept 3027651",
+          "conceptName": "Basophils [#/volume] in Blood by Manual count",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "705-4",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Lab Test",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },

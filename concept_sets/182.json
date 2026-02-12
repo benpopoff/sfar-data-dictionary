@@ -13,15 +13,14 @@
       {
         "concept": {
           "conceptId": 3011960,
-          "conceptName": "Concept 3011960",
+          "conceptName": "Natriuretic peptide B [Mass/volume] in Serum or Plasma",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "30934-4",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Lab Test",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
@@ -32,16 +31,15 @@
       {
         "concept": {
           "conceptId": 3031569,
-          "conceptName": "Concept 3031569",
+          "conceptName": "Natriuretic peptide B [Mass/volume] in Blood",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
-          "validStartDate": "1970-01-01",
+          "conceptCode": "42637-9",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Lab Test",
+          "validStartDate": "2005-10-11",
           "validEndDate": "2099-12-31"
         },
         "isExcluded": false,

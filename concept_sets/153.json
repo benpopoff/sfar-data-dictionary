@@ -13,15 +13,14 @@
       {
         "concept": {
           "conceptId": 3016502,
-          "conceptName": "Concept 3016502",
+          "conceptName": "Oxygen saturation in Arterial blood",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "2708-6",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Lab Test",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
@@ -32,15 +31,14 @@
       {
         "concept": {
           "conceptId": 3014295,
-          "conceptName": "Concept 3014295",
+          "conceptName": "Oxygen saturation in Arterial cord blood",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "28642-7",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Lab Test",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },

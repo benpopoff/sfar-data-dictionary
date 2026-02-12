@@ -13,15 +13,14 @@
       {
         "concept": {
           "conceptId": 3007194,
-          "conceptName": "Concept 3007194",
+          "conceptName": "Glasgow coma score total",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "9269-2",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
@@ -32,15 +31,14 @@
       {
         "concept": {
           "conceptId": 3008223,
-          "conceptName": "Concept 3008223",
+          "conceptName": "Glasgow coma score motor",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "9268-4",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
@@ -51,15 +49,14 @@
       {
         "concept": {
           "conceptId": 3009094,
-          "conceptName": "Concept 3009094",
+          "conceptName": "Glasgow coma score verbal",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "9270-0",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
@@ -70,15 +67,14 @@
       {
         "concept": {
           "conceptId": 3016335,
-          "conceptName": "Concept 3016335",
+          "conceptName": "Glasgow coma score eye opening",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReason": null,
           "invalidReasonCaption": "Valid",
-          "conceptCode": "",
-          "domainId": "",
-          "vocabularyId": "",
-          "conceptClassId": "",
+          "conceptCode": "9267-6",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31"
         },
