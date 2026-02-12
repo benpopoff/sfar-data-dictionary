@@ -4,169 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 40480223,
-          "conceptName": "Lysinibacillus",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "444611003",
+          "conceptId": 601808,
+          "conceptName": "Lysinibacillus antri",
           "domainId": "Observation",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Organism",
-          "validStartDate": "2010-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42535803,
-          "conceptName": "Lysinibacillus chungkukjangi",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "734253004",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2018-01-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 37155063,
-          "conceptName": "Lysinibacillus composti",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "24731000181107",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2023-02-28",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 37155533,
-          "conceptName": "Lysinibacillus endophyticus",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "24741000181100",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2023-02-28",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 37158771,
-          "conceptName": "Lysinibacillus yapensis",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1269284007",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2023-03-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 37159310,
-          "conceptName": "Lysinibacillus alkaliphilus",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "24721000181105",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2023-02-28",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 37159311,
-          "conceptName": "Lysinibacillus parviboronicapiens",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "24751000181102",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2023-02-28",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40482047,
-          "conceptName": "Ureibacillus massiliensis",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "445083002",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2010-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 4186714,
-          "conceptName": "Lysinibacillus macroides",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "413620008",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2005-01-31",
-          "validEndDate": "2099-12-31"
+          "conceptCode": "471191000124106",
+          "validStartDate": "2021-09-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -176,15 +33,16 @@
         "concept": {
           "conceptId": 4179088,
           "conceptName": "Lysinibacillus odysseyi",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
           "conceptCode": "428958007",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
           "validStartDate": "2008-01-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -192,89 +50,18 @@
       },
       {
         "concept": {
-          "conceptId": 40484255,
-          "conceptName": "Lysinibacillus sphaericus",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "445591001",
+          "conceptId": 4186714,
+          "conceptName": "Lysinibacillus macroides",
           "domainId": "Observation",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Organism",
-          "validStartDate": "2010-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40484284,
-          "conceptName": "Lysinibacillus fusiformis",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "445617008",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2010-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40492194,
-          "conceptName": "Lysinibacillus boronitolerans",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "445654004",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2010-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42872423,
-          "conceptName": "Lysinibacillus xylanilyticus",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "450414001",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2012-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 601808,
-          "conceptName": "Lysinibacillus antri",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "471191000124106",
-          "domainId": "Observation",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Organism",
-          "validStartDate": "2021-09-01",
-          "validEndDate": "2099-12-31"
+          "conceptCode": "413620008",
+          "validStartDate": "2005-01-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -284,15 +71,16 @@
         "concept": {
           "conceptId": 36712899,
           "conceptName": "Lysinibacillus contaminans",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "14421000146106",
           "domainId": "Observation",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "14421000146106",
           "validStartDate": "2017-01-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -302,15 +90,244 @@
         "concept": {
           "conceptId": 36712900,
           "conceptName": "Lysinibacillus manganicus",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "14431000146108",
           "domainId": "Observation",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "14431000146108",
           "validStartDate": "2017-01-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37155063,
+          "conceptName": "Lysinibacillus composti",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "24731000181107",
+          "validStartDate": "2023-02-28",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37155533,
+          "conceptName": "Lysinibacillus endophyticus",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "24741000181100",
+          "validStartDate": "2023-02-28",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37158771,
+          "conceptName": "Lysinibacillus yapensis",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1269284007",
+          "validStartDate": "2023-03-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37159310,
+          "conceptName": "Lysinibacillus alkaliphilus",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "24721000181105",
+          "validStartDate": "2023-02-28",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37159311,
+          "conceptName": "Lysinibacillus parviboronicapiens",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "24751000181102",
+          "validStartDate": "2023-02-28",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40480223,
+          "conceptName": "Lysinibacillus",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "444611003",
+          "validStartDate": "2010-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40482047,
+          "conceptName": "Ureibacillus massiliensis",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "445083002",
+          "validStartDate": "2010-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40484255,
+          "conceptName": "Lysinibacillus sphaericus",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "445591001",
+          "validStartDate": "2010-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40484284,
+          "conceptName": "Lysinibacillus fusiformis",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "445617008",
+          "validStartDate": "2010-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40492194,
+          "conceptName": "Lysinibacillus boronitolerans",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "445654004",
+          "validStartDate": "2010-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42535803,
+          "conceptName": "Lysinibacillus chungkukjangi",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "734253004",
+          "validStartDate": "2018-01-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42872423,
+          "conceptName": "Lysinibacillus xylanilyticus",
+          "domainId": "Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Organism",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "450414001",
+          "validStartDate": "2012-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

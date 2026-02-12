@@ -4,1285 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 46275427,
-          "conceptName": "piperacillin 2000 MG / tazobactam 250 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1659131",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-09-08",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46275433,
-          "conceptName": "piperacillin 3000 MG / tazobactam 375 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1659137",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-09-08",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46275444,
-          "conceptName": "piperacillin 4000 MG / tazobactam 500 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1659149",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-09-08",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1746118,
-          "conceptName": "piperacillin 200 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "239186",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1746119,
-          "conceptName": "piperacillin 30 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "312442",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1746121,
-          "conceptName": "piperacillin 400 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "312444",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1746143,
-          "conceptName": "piperacillin 200 MG/ML / tazobactam 25 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "312447",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19080706,
-          "conceptName": "piperacillin 20 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "315066",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1746145,
-          "conceptName": "piperacillin 40 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "315178",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36061879,
-          "conceptName": "piperacillin 3000 MG / tazobactam 375 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4987837",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2020-08-17",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41021443,
-          "conceptName": "Piperacillin 80 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2219405",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41052658,
-          "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2250620",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41052659,
-          "conceptName": "Piperacillin 52.1 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2250621",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41052662,
-          "conceptName": "Piperacillin 1000 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2250624",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41052663,
-          "conceptName": "Piperacillin 104 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2250625",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41052664,
-          "conceptName": "Piperacillin 50 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2250626",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42721899,
-          "conceptName": "Piperacillin 69.7 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2723002",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42715189,
-          "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2724629",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42715110,
-          "conceptName": "Piperacillin 62.6 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2730791",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42728608,
-          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.784 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2731110",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42711252,
-          "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2735475",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42715109,
-          "conceptName": "Piperacillin 69.3 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2736296",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42712590,
-          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2739060",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42711253,
-          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.78 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2739343",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42715111,
-          "conceptName": "Piperacillin 52 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2741335",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42712607,
-          "conceptName": "Piperacillin 0.885 MG/MG / tazobactam 0.114 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2742981",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36881893,
-          "conceptName": "Piperacillin 0.885 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP994200",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36887774,
-          "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP995586",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19115096,
-          "conceptName": "piperacillin 500 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "562056",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2005-09-11",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36891736,
-          "conceptName": "Piperacillin 133 MG/ML / tazobactam 16.7 MG/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1002585",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36891737,
-          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1006819",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36894651,
-          "conceptName": "Piperacillin 0.885 MG/MG / tazobactam 0.115 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1007106",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44176131,
-          "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3052854",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-10-06",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36789920,
-          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Intravenous Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4778165",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-09-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36789927,
-          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Intravenous Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4778172",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-09-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36882928,
-          "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP988498",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36894650,
-          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP988920",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40834602,
-          "conceptName": "Piperacillin 2000 MG / tazobactam 500 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2032564",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40927921,
-          "conceptName": "Piperacillin 62.5 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2125883",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41115486,
-          "conceptName": "Piperacillin 6000 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2313448",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41147025,
-          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2344987",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41147029,
-          "conceptName": "Piperacillin 69.5 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2344991",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41148611,
-          "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.781 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2346573",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41209478,
-          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2407440",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41240452,
-          "conceptName": "Piperacillin 133 MG/ML / tazobactam 16.7 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2438414",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41271299,
-          "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2469261",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41272928,
-          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2470890",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41302424,
-          "conceptName": "Piperacillin 133 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2500386",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43023445,
-          "conceptName": "Piperacillin 2000 MG Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4838562",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2019-10-06",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43216438,
-          "conceptName": "Piperacillin 4000 MG Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP489528",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43183574,
-          "conceptName": "Piperacillin 1000 MG Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP489536",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 2050048,
-          "conceptName": "piperacillin 1000 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4950476",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2020-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42973601,
-          "conceptName": "Piperacillin 2000 MG / Sulbactam 1000 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4700006",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42973604,
-          "conceptName": "Piperacillin 1000 MG / Sulbactam 500 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4700009",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42973607,
-          "conceptName": "Piperacillin 3000 MG / Sulbactam 1500 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4700012",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42973655,
-          "conceptName": "Piperacillin 4000 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4700060",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42973658,
-          "conceptName": "Piperacillin 2000 MG Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4700063",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44058313,
-          "conceptName": "Piperacillin 2000 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1052944",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44071204,
-          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1065835",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44084068,
-          "conceptName": "Piperacillin 12000 MG / tazobactam 1500 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1078699",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44084069,
-          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1078700",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44084070,
-          "conceptName": "Piperacillin 36000 MG / tazobactam 4500 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1078701",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44084071,
-          "conceptName": "Piperacillin 4000 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1078702",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44096995,
-          "conceptName": "Piperacillin 2000 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1091626",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44096996,
-          "conceptName": "Piperacillin 3000 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1091627",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44109867,
-          "conceptName": "Piperacillin 3000 MG / tazobactam 375 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1104498",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44109868,
-          "conceptName": "Piperacillin 4000 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1104499",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44123021,
-          "conceptName": "Piperacillin 40000 MG Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1117652",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44123022,
-          "conceptName": "Piperacillin 3000 MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1117653",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21081698,
-          "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP359635",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
           "conceptId": 1235623,
           "conceptName": "piperacillin 50 MG/ML / tazobactam 6 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216329",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216329",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1292,15 +33,1042 @@
         "concept": {
           "conceptId": 1235624,
           "conceptName": "piperacillin 69.3 MG/ML / tazobactam 8.3 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216330",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216330",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 1746118,
+          "conceptName": "piperacillin 200 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "239186",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 1746119,
+          "conceptName": "piperacillin 30 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "312442",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 1746121,
+          "conceptName": "piperacillin 400 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "312444",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 1746143,
+          "conceptName": "piperacillin 200 MG/ML / tazobactam 25 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "312447",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 1746145,
+          "conceptName": "piperacillin 40 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "315178",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 2050048,
+          "conceptName": "piperacillin 1000 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4950476",
+          "validStartDate": "2020-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 19080706,
+          "conceptName": "piperacillin 20 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "315066",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 19115096,
+          "conceptName": "piperacillin 500 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "562056",
+          "validStartDate": "2005-09-11",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 21081698,
+          "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP359635",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36061879,
+          "conceptName": "piperacillin 3000 MG / tazobactam 375 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4987837",
+          "validStartDate": "2020-08-17",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36789920,
+          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Intravenous Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4778165",
+          "validStartDate": "2018-09-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36789927,
+          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Intravenous Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4778172",
+          "validStartDate": "2018-09-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36881893,
+          "conceptName": "Piperacillin 0.885 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP994200",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36882928,
+          "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP988498",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36887774,
+          "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP995586",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36891736,
+          "conceptName": "Piperacillin 133 MG/ML / tazobactam 16.7 MG/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1002585",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36891737,
+          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1006819",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36894650,
+          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP988920",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36894651,
+          "conceptName": "Piperacillin 0.885 MG/MG / tazobactam 0.115 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1007106",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40834602,
+          "conceptName": "Piperacillin 2000 MG / tazobactam 500 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2032564",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40927921,
+          "conceptName": "Piperacillin 62.5 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2125883",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41021443,
+          "conceptName": "Piperacillin 80 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2219405",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41052658,
+          "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2250620",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41052659,
+          "conceptName": "Piperacillin 52.1 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2250621",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41052662,
+          "conceptName": "Piperacillin 1000 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2250624",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41052663,
+          "conceptName": "Piperacillin 104 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2250625",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41052664,
+          "conceptName": "Piperacillin 50 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2250626",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41115486,
+          "conceptName": "Piperacillin 6000 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2313448",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41147025,
+          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2344987",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41147029,
+          "conceptName": "Piperacillin 69.5 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2344991",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41148611,
+          "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.781 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2346573",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41209478,
+          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2407440",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41240452,
+          "conceptName": "Piperacillin 133 MG/ML / tazobactam 16.7 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2438414",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41271299,
+          "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2469261",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41272928,
+          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2470890",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41302424,
+          "conceptName": "Piperacillin 133 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2500386",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42711252,
+          "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2735475",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42711253,
+          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.78 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2739343",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42712590,
+          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2739060",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42712607,
+          "conceptName": "Piperacillin 0.885 MG/MG / tazobactam 0.114 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2742981",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42715109,
+          "conceptName": "Piperacillin 69.3 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2736296",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42715110,
+          "conceptName": "Piperacillin 62.6 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2730791",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42715111,
+          "conceptName": "Piperacillin 52 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2741335",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42715189,
+          "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2724629",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42721899,
+          "conceptName": "Piperacillin 69.7 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2723002",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42728608,
+          "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.784 MG/MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2731110",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42973601,
+          "conceptName": "Piperacillin 2000 MG / Sulbactam 1000 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4700006",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42973604,
+          "conceptName": "Piperacillin 1000 MG / Sulbactam 500 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4700009",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42973607,
+          "conceptName": "Piperacillin 3000 MG / Sulbactam 1500 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4700012",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42973655,
+          "conceptName": "Piperacillin 4000 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4700060",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42973658,
+          "conceptName": "Piperacillin 2000 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4700063",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 43023445,
+          "conceptName": "Piperacillin 2000 MG Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4838562",
+          "validStartDate": "2019-10-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 43183574,
+          "conceptName": "Piperacillin 1000 MG Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP489536",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 43216438,
+          "conceptName": "Piperacillin 4000 MG Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP489528",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1310,15 +1078,16 @@
         "concept": {
           "conceptId": 43730252,
           "conceptName": "Piperacillin 1 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP660831",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP660831",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1328,15 +1097,16 @@
         "concept": {
           "conceptId": 43838383,
           "conceptName": "Piperacillin 0.886 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP660862",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP660862",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1346,15 +1116,320 @@
         "concept": {
           "conceptId": 43856397,
           "conceptName": "Piperacillin 0.886 MG/MG / tazobactam 0.114 MG/MG Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP660876",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP660876",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44058313,
+          "conceptName": "Piperacillin 2000 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1052944",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44071204,
+          "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1065835",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44084068,
+          "conceptName": "Piperacillin 12000 MG / tazobactam 1500 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1078699",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44084069,
+          "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1078700",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44084070,
+          "conceptName": "Piperacillin 36000 MG / tazobactam 4500 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1078701",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44084071,
+          "conceptName": "Piperacillin 4000 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1078702",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44096995,
+          "conceptName": "Piperacillin 2000 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1091626",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44096996,
+          "conceptName": "Piperacillin 3000 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1091627",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44109867,
+          "conceptName": "Piperacillin 3000 MG / tazobactam 375 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1104498",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44109868,
+          "conceptName": "Piperacillin 4000 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1104499",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44123021,
+          "conceptName": "Piperacillin 40000 MG Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1117652",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44123022,
+          "conceptName": "Piperacillin 3000 MG Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1117653",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44176131,
+          "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3052854",
+          "validStartDate": "2017-10-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46275427,
+          "conceptName": "piperacillin 2000 MG / tazobactam 250 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1659131",
+          "validStartDate": "2015-09-08",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46275433,
+          "conceptName": "piperacillin 3000 MG / tazobactam 375 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1659137",
+          "validStartDate": "2015-09-08",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46275444,
+          "conceptName": "piperacillin 4000 MG / tazobactam 500 MG Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1659149",
+          "validStartDate": "2015-09-08",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

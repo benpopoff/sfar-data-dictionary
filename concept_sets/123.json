@@ -4,367 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 42902356,
-          "conceptName": "insulin aspart protamine, human 70 UNT/ML / insulin aspart, human 30 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1359469",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42481303,
-          "conceptName": "Insulin, Aspart, Human 100 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP417465",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42963016,
-          "conceptName": "insulin degludec 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4689503",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40866838,
-          "conceptName": "Insulin, Aspart, Human 62.5 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2064800",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40991609,
-          "conceptName": "Insulin, Aspart, Human 30 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2189571",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41053854,
-          "conceptName": "Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2251816",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36888724,
-          "conceptName": "Insulin, Aspart, Human 100 UNT/ML Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP988526",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41085403,
-          "conceptName": "Insulin, Aspart, Human 0.1 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2283365",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41116594,
-          "conceptName": "Insulin, Aspart, Human 30 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2314556",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41116595,
-          "conceptName": "Insulin, Aspart, Human 0.1 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2314557",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41148105,
-          "conceptName": "Insulin, Aspart, Human 10 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2346067",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36274986,
-          "conceptName": "Insulin, Aspart Protamine, Human 30 UNT/ML / Insulin, Aspart, Human 70 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3125861",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-10-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36277560,
-          "conceptName": "Insulin, Aspart Protamine, Human 50 UNT/ML / Insulin, Aspart, Human 50 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3128435",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-10-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44084311,
-          "conceptName": "Insulin, Aspart, Human 30 UNT/ML / Regular Insulin, Human 70 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1078942",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44097223,
-          "conceptName": "Insulin, Aspart Protamine, Human 0.7 MG/ML / Insulin, Aspart, Human 0.3 MG/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1091854",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
           "conceptId": 782531,
           "conceptName": "Insulin, Aspart Protamine, Human 30 UNT/ML / Insulin, Aspart, Human 70 UNT/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
           "conceptCode": "OMOP4830365",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
           "validStartDate": "2019-04-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 2054236,
-          "conceptName": "insulin aspart, human 100 IU/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4954830",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2020-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 2054241,
-          "conceptName": "insulin aspart, human 100 IU/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4954835",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2020-07-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46234044,
-          "conceptName": "insulin aspart, human 100 UNT/ML Cartridge",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1653199",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-07-06",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46234050,
-          "conceptName": "insulin aspart, human 100 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1653205",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-07-06",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -374,33 +33,16 @@
         "concept": {
           "conceptId": 793498,
           "conceptName": "insulin aspart, human 30 UNT/ML / insulin degludec 70 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
           "conceptCode": "1994317",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
           "validStartDate": "2018-02-05",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19078558,
-          "conceptName": "insulin aspart, human 100 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "311040",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -410,15 +52,73 @@
         "concept": {
           "conceptId": 1567201,
           "conceptName": "insulin aspart protamine, human 70 UNT/ML / insulin aspart, human 30 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "351297",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "351297",
           "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 2054236,
+          "conceptName": "insulin aspart, human 100 IU/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4954830",
+          "validStartDate": "2020-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 2054241,
+          "conceptName": "insulin aspart, human 100 IU/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4954835",
+          "validStartDate": "2020-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 19078558,
+          "conceptName": "insulin aspart, human 100 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "311040",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -428,15 +128,263 @@
         "concept": {
           "conceptId": 19133793,
           "conceptName": "insulin aspart protamine, human 50 UNT/ML / insulin aspart, human 50 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "833159",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "833159",
           "validStartDate": "2009-03-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36274986,
+          "conceptName": "Insulin, Aspart Protamine, Human 30 UNT/ML / Insulin, Aspart, Human 70 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3125861",
+          "validStartDate": "2017-10-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36277560,
+          "conceptName": "Insulin, Aspart Protamine, Human 50 UNT/ML / Insulin, Aspart, Human 50 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3128435",
+          "validStartDate": "2017-10-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36888724,
+          "conceptName": "Insulin, Aspart, Human 100 UNT/ML Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP988526",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40866838,
+          "conceptName": "Insulin, Aspart, Human 62.5 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2064800",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40991609,
+          "conceptName": "Insulin, Aspart, Human 30 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2189571",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41053854,
+          "conceptName": "Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2251816",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41085403,
+          "conceptName": "Insulin, Aspart, Human 0.1 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2283365",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41116594,
+          "conceptName": "Insulin, Aspart, Human 30 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2314556",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41116595,
+          "conceptName": "Insulin, Aspart, Human 0.1 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2314557",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41148105,
+          "conceptName": "Insulin, Aspart, Human 10 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2346067",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42481303,
+          "conceptName": "Insulin, Aspart, Human 100 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP417465",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42902356,
+          "conceptName": "insulin aspart protamine, human 70 UNT/ML / insulin aspart, human 30 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1359469",
+          "validStartDate": "2012-12-03",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42963016,
+          "conceptName": "insulin degludec 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4689503",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -446,15 +394,16 @@
         "concept": {
           "conceptId": 43257917,
           "conceptName": "Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP551916",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP551916",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -464,15 +413,92 @@
         "concept": {
           "conceptId": 43268818,
           "conceptName": "Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Cartridge",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP551922",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP551922",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44084311,
+          "conceptName": "Insulin, Aspart, Human 30 UNT/ML / Regular Insulin, Human 70 UNT/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1078942",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44097223,
+          "conceptName": "Insulin, Aspart Protamine, Human 0.7 MG/ML / Insulin, Aspart, Human 0.3 MG/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1091854",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46234044,
+          "conceptName": "insulin aspart, human 100 UNT/ML Cartridge",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1653199",
+          "validStartDate": "2015-07-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46234050,
+          "conceptName": "insulin aspart, human 100 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1653205",
+          "validStartDate": "2015-07-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

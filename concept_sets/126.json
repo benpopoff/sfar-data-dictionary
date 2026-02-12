@@ -4,295 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 36884883,
-          "conceptName": "Insulin Glargine 100 UNT/ML Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1001999",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36883957,
-          "conceptName": "Insulin Glargine 300 UNT/ML Auto-Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1003926",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36888812,
-          "conceptName": "Insulin Glargine 300 UNT/ML Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1005278",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36892775,
-          "conceptName": "Insulin Glargine 100 UNT/ML Cartridge",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1006858",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36419854,
-          "conceptName": "Insulin Glargine 200 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4762142",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-10-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35134152,
-          "conceptName": "Insulin Glargine 300 UNT Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4791354",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2019-03-11",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35137845,
-          "conceptName": "Insulin Glargine 300 UNT Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4795016",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2019-03-11",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35146779,
-          "conceptName": "Insulin Glargine 450 UNT Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4803855",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2019-03-11",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44045584,
-          "conceptName": "Insulin Glargine 300 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1040215",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35410536,
-          "conceptName": "Insulin Glargine 100 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1144121",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35411315,
-          "conceptName": "Insulin Glargine 300 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1144900",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42971268,
-          "conceptName": "Insulin Glargine 100 UNT/ML / Lixisenatide 0.05 MG/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4697688",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46221558,
-          "conceptName": "insulin glargine 300 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1604545",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-05-04",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1718605,
-          "conceptName": "insulin glargine 100 UNT/ML / lixisenatide 0.033 MG/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1859001",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-01-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 37498226,
-          "conceptName": "Sensor 3 ML insulin glargine 100 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "2268064",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2020-05-04",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
           "conceptId": 701383,
           "conceptName": "insulin glargine-yfgn 100 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "2563974",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "2563974",
           "validStartDate": "2022-01-03",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -302,267 +33,16 @@
         "concept": {
           "conceptId": 701385,
           "conceptName": "insulin glargine-yfgn 100 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
           "conceptCode": "2563976",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
           "validStartDate": "2022-01-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1758673,
-          "conceptName": "insulin glargine-aglr 100 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "2589009",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2022-03-07",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19078559,
-          "conceptName": "insulin glargine 100 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "311041",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40835738,
-          "conceptName": "Insulin Glargine 10 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2033700",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40835740,
-          "conceptName": "Insulin Glargine 33.3 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2033702",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40835741,
-          "conceptName": "Insulin Glargine 0.1 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2033703",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40929064,
-          "conceptName": "Insulin Glargine 40 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2127026",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41116589,
-          "conceptName": "Insulin Glargine 200 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2314551",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41116591,
-          "conceptName": "Insulin Glargine 33.3 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2314553",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41179142,
-          "conceptName": "Insulin Glargine 0.1 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2377104",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41179145,
-          "conceptName": "Insulin Glargine 12 UNT/ML / Insulin, Prompt Zinc, Beef 28 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2377107",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41210620,
-          "conceptName": "Insulin Glargine 10 UNT/ML / Insulin, Prompt Zinc, Beef 30 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2408582",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43275144,
-          "conceptName": "Insulin Glargine 100 UNT/ML Auto-Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP572744",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44164971,
-          "conceptName": "Insulin Glargine 100 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3041694",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-10-06",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44168825,
-          "conceptName": "Insulin Glargine 33.3 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3045548",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-10-06",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -572,15 +52,16 @@
         "concept": {
           "conceptId": 782685,
           "conceptName": "Insulin Glargine 100 UNT/ML / Lixisenatide 0.033 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4830516",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4830516",
           "validStartDate": "2019-04-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -590,15 +71,54 @@
         "concept": {
           "conceptId": 782690,
           "conceptName": "Insulin Glargine 100 UNT/ML / Lixisenatide 0.05 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4830521",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4830521",
           "validStartDate": "2019-04-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 1718605,
+          "conceptName": "insulin glargine 100 UNT/ML / lixisenatide 0.033 MG/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1859001",
+          "validStartDate": "2017-01-03",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 1758673,
+          "conceptName": "insulin glargine-aglr 100 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "2589009",
+          "validStartDate": "2022-03-07",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -608,15 +128,16 @@
         "concept": {
           "conceptId": 2058014,
           "conceptName": "insulin glargine 100 IU/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4958945",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4958945",
           "validStartDate": "2020-07-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -626,15 +147,16 @@
         "concept": {
           "conceptId": 2058019,
           "conceptName": "insulin glargine 10.9 MG/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4958950",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4958950",
           "validStartDate": "2020-07-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -644,15 +166,16 @@
         "concept": {
           "conceptId": 2058023,
           "conceptName": "insulin glargine 3.64 MG/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4958954",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4958954",
           "validStartDate": "2020-07-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -662,15 +185,415 @@
         "concept": {
           "conceptId": 2058025,
           "conceptName": "insulin glargine 3.64 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4958956",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4958956",
           "validStartDate": "2020-07-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 19078559,
+          "conceptName": "insulin glargine 100 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "311041",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 35134152,
+          "conceptName": "Insulin Glargine 300 UNT Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4791354",
+          "validStartDate": "2019-03-11",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 35137845,
+          "conceptName": "Insulin Glargine 300 UNT Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4795016",
+          "validStartDate": "2019-03-11",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 35146779,
+          "conceptName": "Insulin Glargine 450 UNT Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4803855",
+          "validStartDate": "2019-03-11",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 35410536,
+          "conceptName": "Insulin Glargine 100 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1144121",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 35411315,
+          "conceptName": "Insulin Glargine 300 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1144900",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36419854,
+          "conceptName": "Insulin Glargine 200 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4762142",
+          "validStartDate": "2018-10-03",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36883957,
+          "conceptName": "Insulin Glargine 300 UNT/ML Auto-Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1003926",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36884883,
+          "conceptName": "Insulin Glargine 100 UNT/ML Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1001999",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36888812,
+          "conceptName": "Insulin Glargine 300 UNT/ML Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1005278",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36892775,
+          "conceptName": "Insulin Glargine 100 UNT/ML Cartridge",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1006858",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37498226,
+          "conceptName": "Sensor 3 ML insulin glargine 100 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "2268064",
+          "validStartDate": "2020-05-04",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40835738,
+          "conceptName": "Insulin Glargine 10 UNT/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2033700",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40835740,
+          "conceptName": "Insulin Glargine 33.3 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2033702",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40835741,
+          "conceptName": "Insulin Glargine 0.1 UNT/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2033703",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40929064,
+          "conceptName": "Insulin Glargine 40 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2127026",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41116589,
+          "conceptName": "Insulin Glargine 200 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2314551",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41116591,
+          "conceptName": "Insulin Glargine 33.3 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2314553",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41179142,
+          "conceptName": "Insulin Glargine 0.1 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2377104",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41179145,
+          "conceptName": "Insulin Glargine 12 UNT/ML / Insulin, Prompt Zinc, Beef 28 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2377107",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41210620,
+          "conceptName": "Insulin Glargine 10 UNT/ML / Insulin, Prompt Zinc, Beef 30 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2408582",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -680,15 +603,130 @@
         "concept": {
           "conceptId": 42902742,
           "conceptName": "insulin glargine 100 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1359855",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1359855",
           "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42971268,
+          "conceptName": "Insulin Glargine 100 UNT/ML / Lixisenatide 0.05 MG/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4697688",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 43275144,
+          "conceptName": "Insulin Glargine 100 UNT/ML Auto-Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP572744",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44045584,
+          "conceptName": "Insulin Glargine 300 UNT/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1040215",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44164971,
+          "conceptName": "Insulin Glargine 100 UNT/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3041694",
+          "validStartDate": "2017-10-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44168825,
+          "conceptName": "Insulin Glargine 33.3 UNT/ML Injectable Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3045548",
+          "validStartDate": "2017-10-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46221558,
+          "conceptName": "insulin glargine 300 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1604545",
+          "validStartDate": "2015-05-04",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

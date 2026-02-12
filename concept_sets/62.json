@@ -4,25 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
           "conceptId": 40896006,
           "conceptName": "Ximelagatran 24 MG Oral Tablet",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2093968",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2093968",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

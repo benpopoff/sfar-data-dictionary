@@ -4,493 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 19009067,
-          "conceptName": "midazolam 2 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "106517",
+          "conceptId": 708300,
+          "conceptName": "midazolam 7.5 MG Oral Tablet",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "199775",
           "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42708907,
-          "conceptName": "midazolam 0.2 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1249586",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2012-05-07",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42708908,
-          "conceptName": "midazolam 0.1 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1249588",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2012-05-07",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42902873,
-          "conceptName": "midazolam 2 MG/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1359986",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42902896,
-          "conceptName": "midazolam 1 MG/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1360009",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42902919,
-          "conceptName": "midazolam 0.5 MG/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1360032",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42716532,
-          "conceptName": "Midazolam 0.0892 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2729767",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42728538,
-          "conceptName": "Midazolam 5.57 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2731467",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36886719,
-          "conceptName": "Midazolam 10.2 MG Oral Tablet",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP998391",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40959798,
-          "conceptName": "Midazolam 8.34 MG Oral Tablet",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2157760",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40991032,
-          "conceptName": "Midazolam 0.089 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2188994",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21072157,
-          "conceptName": "Midazolam 2.5 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362266",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21101504,
-          "conceptName": "Midazolam 2.5 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362268",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21052420,
-          "conceptName": "Midazolam 2.5 MG/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362270",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21091612,
-          "conceptName": "Midazolam 1 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362275",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21042644,
-          "conceptName": "Midazolam 1 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362277",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21052421,
-          "conceptName": "Midazolam 1.25 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362286",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21042645,
-          "conceptName": "Midazolam 1.25 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362288",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21072158,
-          "conceptName": "Midazolam 10 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362293",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21022980,
-          "conceptName": "Midazolam 5 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362303",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21170325,
-          "conceptName": "Midazolam 5 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362305",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21022982,
-          "conceptName": "Midazolam 0.5 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362316",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21160530,
-          "conceptName": "Midazolam 0.5 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362318",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21052424,
-          "conceptName": "Midazolam 4 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362323",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21121019,
-          "conceptName": "Midazolam 4 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362325",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21052425,
-          "conceptName": "Midazolam 8 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362335",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21130793,
-          "conceptName": "Midazolam 8 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP362337",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -500,15 +33,16 @@
         "concept": {
           "conceptId": 1235413,
           "conceptName": "midazolam 5 MG/ML Mucosal Spray",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216120",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216120",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -518,15 +52,16 @@
         "concept": {
           "conceptId": 1235415,
           "conceptName": "midazolam 1.25 MG/ACTUAT Nasal Spray",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216122",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216122",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -536,15 +71,16 @@
         "concept": {
           "conceptId": 1235417,
           "conceptName": "midazolam 2.5 MG/ACTUAT Nasal Spray",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216124",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216124",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -554,15 +90,16 @@
         "concept": {
           "conceptId": 1235419,
           "conceptName": "midazolam 0.5 MG/ACTUAT Nasal Spray",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216126",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216126",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -572,15 +109,16 @@
         "concept": {
           "conceptId": 1235421,
           "conceptName": "midazolam 2.5 MG Nasal Spray",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216128",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216128",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -590,105 +128,16 @@
         "concept": {
           "conceptId": 1235423,
           "conceptName": "midazolam 5 MG Nasal Spray",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP5216130",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP5216130",
           "validStartDate": "2023-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46287613,
-          "conceptName": "midazolam 1 MG/ML Cartridge",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1666778",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-10-05",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46287619,
-          "conceptName": "midazolam 1 MG/ML Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1666799",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-10-05",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46287622,
-          "conceptName": "midazolam 5 MG/ML Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1666815",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-10-05",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 46287624,
-          "conceptName": "midazolam 5 MG/ML Cartridge",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1666822",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2015-10-05",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 708300,
-          "conceptName": "midazolam 7.5 MG Oral Tablet",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "199775",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -698,33 +147,16 @@
         "concept": {
           "conceptId": 1396589,
           "conceptName": "midazolam 50 MG/ML Nasal Spray",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
           "conceptCode": "2173494",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
           "validStartDate": "2019-07-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19061399,
-          "conceptName": "midazolam 15 MG Oral Tablet",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "248630",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -734,15 +166,54 @@
         "concept": {
           "conceptId": 1525440,
           "conceptName": "midazolam 14.3 MG/ML Auto-Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "2608699",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "2608699",
           "validStartDate": "2022-10-03",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 19009067,
+          "conceptName": "midazolam 2 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "106517",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 19061399,
+          "conceptName": "midazolam 15 MG Oral Tablet",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "248630",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -752,15 +223,16 @@
         "concept": {
           "conceptId": 19078924,
           "conceptName": "midazolam 1 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "311700",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "311700",
           "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -770,51 +242,16 @@
         "concept": {
           "conceptId": 19078925,
           "conceptName": "midazolam 5 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "311702",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "311702",
           "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36067130,
-          "conceptName": "midazolam 2.2 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4993604",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2020-08-17",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36067131,
-          "conceptName": "midazolam 2.2 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4993605",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2020-08-17",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -824,15 +261,16 @@
         "concept": {
           "conceptId": 19105755,
           "conceptName": "midazolam 2 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "422410",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "422410",
           "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -842,15 +280,16 @@
         "concept": {
           "conceptId": 19129533,
           "conceptName": "midazolam 10 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "763260",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "763260",
           "validStartDate": "2008-03-30",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -858,17 +297,18 @@
       },
       {
         "concept": {
-          "conceptId": 36884766,
-          "conceptName": "Midazolam 5.56 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1002752",
+          "conceptId": 21022980,
+          "conceptName": "Midazolam 5 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362303",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -876,17 +316,18 @@
       },
       {
         "concept": {
-          "conceptId": 40835150,
-          "conceptName": "Midazolam 1.67 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2033112",
+          "conceptId": 21022982,
+          "conceptName": "Midazolam 0.5 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362316",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -894,17 +335,18 @@
       },
       {
         "concept": {
-          "conceptId": 40897440,
-          "conceptName": "Midazolam 0.04 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2095402",
+          "conceptId": 21042644,
+          "conceptName": "Midazolam 1 MG/ML Oral Suspension",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362277",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -912,17 +354,18 @@
       },
       {
         "concept": {
-          "conceptId": 41084804,
-          "conceptName": "Midazolam 2.78 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2282766",
+          "conceptId": 21042645,
+          "conceptName": "Midazolam 1.25 MG/ML Oral Suspension",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362288",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -930,17 +373,18 @@
       },
       {
         "concept": {
-          "conceptId": 42482076,
-          "conceptName": "Midazolam 2 MG/ML Injection",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP419878",
+          "conceptId": 21052420,
+          "conceptName": "Midazolam 2.5 MG/ML Prefilled Syringe",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362270",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -948,17 +392,18 @@
       },
       {
         "concept": {
-          "conceptId": 42482610,
-          "conceptName": "Midazolam 2 MG/ML Oral Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP419879",
+          "conceptId": 21052421,
+          "conceptName": "Midazolam 1.25 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362286",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -966,53 +411,18 @@
       },
       {
         "concept": {
-          "conceptId": 40747240,
-          "conceptName": "Lidocaine 20 MG/ML / Midazolam 40 MG/ML Inhalant Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4709957",
+          "conceptId": 21052424,
+          "conceptName": "Midazolam 4 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-06-04",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40739327,
-          "conceptName": "Midazolam 4 MG/ML Injectable Solution",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4718354",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-06-04",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44084197,
-          "conceptName": "Midazolam 5 MG/ML Intramuscular Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1078828",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
+          "conceptCode": "OMOP362323",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1020,17 +430,18 @@
       },
       {
         "concept": {
-          "conceptId": 44123132,
-          "conceptName": "Midazolam 1 MG/ML Intramuscular Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1117763",
+          "conceptId": 21052425,
+          "conceptName": "Midazolam 8 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362335",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1038,17 +449,18 @@
       },
       {
         "concept": {
-          "conceptId": 41210004,
-          "conceptName": "Midazolam 5.56 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2407966",
+          "conceptId": 21072157,
+          "conceptName": "Midazolam 2.5 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362266",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1056,17 +468,18 @@
       },
       {
         "concept": {
-          "conceptId": 41240994,
-          "conceptName": "Midazolam 0.0667 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2438956",
+          "conceptId": 21072158,
+          "conceptName": "Midazolam 10 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362293",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1074,17 +487,18 @@
       },
       {
         "concept": {
-          "conceptId": 41271807,
-          "conceptName": "Midazolam 0.08 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2469769",
+          "conceptId": 21091612,
+          "conceptName": "Midazolam 1 MG/ML Oral Solution",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362275",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1092,17 +506,18 @@
       },
       {
         "concept": {
-          "conceptId": 41271808,
-          "conceptName": "Midazolam 0.02 MG/ML Oral Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2469770",
+          "conceptId": 21101504,
+          "conceptName": "Midazolam 2.5 MG/ML Oral Suspension",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362268",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1110,17 +525,113 @@
       },
       {
         "concept": {
-          "conceptId": 41302946,
-          "conceptName": "Midazolam 0.02 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2500908",
+          "conceptId": 21121019,
+          "conceptName": "Midazolam 4 MG/ML Oral Suspension",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362325",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 21130793,
+          "conceptName": "Midazolam 8 MG/ML Oral Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362337",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 21160530,
+          "conceptName": "Midazolam 0.5 MG/ML Oral Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362318",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 21170325,
+          "conceptName": "Midazolam 5 MG/ML Oral Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP362305",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36067130,
+          "conceptName": "midazolam 2.2 MG/ML Oral Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4993604",
+          "validStartDate": "2020-08-17",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36067131,
+          "conceptName": "midazolam 2.2 MG/ML Oral Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4993605",
+          "validStartDate": "2020-08-17",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1130,15 +641,16 @@
         "concept": {
           "conceptId": 36407481,
           "conceptName": "Midazolam 2.5 MG/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3099523",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3099523",
           "validStartDate": "2017-08-02",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -1148,15 +660,567 @@
         "concept": {
           "conceptId": 36880976,
           "conceptName": "Midazolam 20.3 MG Oral Tablet",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP989287",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP989287",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36884766,
+          "conceptName": "Midazolam 5.56 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1002752",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36886719,
+          "conceptName": "Midazolam 10.2 MG Oral Tablet",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP998391",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40739327,
+          "conceptName": "Midazolam 4 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4718354",
+          "validStartDate": "2018-06-04",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40747240,
+          "conceptName": "Lidocaine 20 MG/ML / Midazolam 40 MG/ML Inhalant Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4709957",
+          "validStartDate": "2018-06-04",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40835150,
+          "conceptName": "Midazolam 1.67 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2033112",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40897440,
+          "conceptName": "Midazolam 0.04 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2095402",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40959798,
+          "conceptName": "Midazolam 8.34 MG Oral Tablet",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2157760",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40991032,
+          "conceptName": "Midazolam 0.089 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2188994",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41084804,
+          "conceptName": "Midazolam 2.78 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2282766",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41210004,
+          "conceptName": "Midazolam 5.56 MG/ML Oral Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2407966",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41240994,
+          "conceptName": "Midazolam 0.0667 MG/ML Oral Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2438956",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41271807,
+          "conceptName": "Midazolam 0.08 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2469769",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41271808,
+          "conceptName": "Midazolam 0.02 MG/ML Oral Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2469770",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 41302946,
+          "conceptName": "Midazolam 0.02 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2500908",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42482076,
+          "conceptName": "Midazolam 2 MG/ML Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP419878",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42482610,
+          "conceptName": "Midazolam 2 MG/ML Oral Suspension",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP419879",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42708907,
+          "conceptName": "midazolam 0.2 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1249586",
+          "validStartDate": "2012-05-07",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42708908,
+          "conceptName": "midazolam 0.1 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1249588",
+          "validStartDate": "2012-05-07",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42716532,
+          "conceptName": "Midazolam 0.0892 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2729767",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42728538,
+          "conceptName": "Midazolam 5.57 MG/ML Injectable Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2731467",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42902873,
+          "conceptName": "midazolam 2 MG/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1359986",
+          "validStartDate": "2012-12-03",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42902896,
+          "conceptName": "midazolam 1 MG/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1360009",
+          "validStartDate": "2012-12-03",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42902919,
+          "conceptName": "midazolam 0.5 MG/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1360032",
+          "validStartDate": "2012-12-03",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44084197,
+          "conceptName": "Midazolam 5 MG/ML Intramuscular Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1078828",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 44123132,
+          "conceptName": "Midazolam 1 MG/ML Intramuscular Solution",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1117763",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46287613,
+          "conceptName": "midazolam 1 MG/ML Cartridge",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1666778",
+          "validStartDate": "2015-10-05",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46287619,
+          "conceptName": "midazolam 1 MG/ML Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1666799",
+          "validStartDate": "2015-10-05",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46287622,
+          "conceptName": "midazolam 5 MG/ML Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1666815",
+          "validStartDate": "2015-10-05",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 46287624,
+          "conceptName": "midazolam 5 MG/ML Cartridge",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1666822",
+          "validStartDate": "2015-10-05",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

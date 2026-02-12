@@ -4,115 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 42902821,
-          "conceptName": "insulin detemir 100 UNT/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1359934",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36894766,
-          "conceptName": "insulin detemir 100 UNT/ML Cartridge",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP991401",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35409752,
-          "conceptName": "insulin detemir 100 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1143337",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42949464,
-          "conceptName": "insulin detemir 14.2 MG/ML Pen Injector",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4676048",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2018-08-21",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
           "conceptId": 1516978,
           "conceptName": "insulin detemir 100 UNT/ML Injectable Solution",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "484322",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
           "conceptClassId": "Clinical Drug",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36891850,
-          "conceptName": "insulin detemir 100 UNT/ML Injection",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP1006321",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "conceptCode": "484322",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -122,15 +33,35 @@
         "concept": {
           "conceptId": 35156395,
           "conceptName": "insulin detemir 300 UNT Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP4813405",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4813405",
           "validStartDate": "2019-03-11",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 35409752,
+          "conceptName": "insulin detemir 100 UNT/ML Prefilled Syringe",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1143337",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -140,15 +71,54 @@
         "concept": {
           "conceptId": 36262203,
           "conceptName": "insulin detemir 33.3 UNT/ML / insulin, isophane 70 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3113078",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3113078",
           "validStartDate": "2017-10-01",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36891850,
+          "conceptName": "insulin detemir 100 UNT/ML Injection",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP1006321",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 36894766,
+          "conceptName": "insulin detemir 100 UNT/ML Cartridge",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP991401",
+          "validStartDate": "2017-08-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -158,15 +128,54 @@
         "concept": {
           "conceptId": 41053849,
           "conceptName": "insulin detemir 33.3 UNT/ML Prefilled Syringe",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP2251811",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP2251811",
           "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42902821,
+          "conceptName": "insulin detemir 100 UNT/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1359934",
+          "validStartDate": "2012-12-03",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 42949464,
+          "conceptName": "insulin detemir 14.2 MG/ML Pen Injector",
+          "domainId": "Drug",
+          "vocabularyId": "RxNorm Extension",
+          "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP4676048",
+          "validStartDate": "2018-08-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -176,15 +185,16 @@
         "concept": {
           "conceptId": 44161177,
           "conceptName": "insulin detemir 100 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3037900",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3037900",
           "validStartDate": "2017-10-06",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -194,15 +204,16 @@
         "concept": {
           "conceptId": 44172551,
           "conceptName": "insulin detemir 33.3 UNT/ML Injectable Suspension",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "OMOP3049274",
           "domainId": "Drug",
           "vocabularyId": "RxNorm Extension",
           "conceptClassId": "Clinical Drug",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "OMOP3049274",
           "validStartDate": "2017-10-06",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

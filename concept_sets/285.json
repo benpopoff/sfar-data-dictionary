@@ -4,25 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
           "conceptId": 4141768,
           "conceptName": "Medical contraindication to procedure",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "266757004",
           "domainId": "Observation",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Context-dependent",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "266757004",
           "validStartDate": "2002-01-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -32,15 +33,16 @@
         "concept": {
           "conceptId": 44813449,
           "conceptName": "Medical contraindication to ear syringing",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "784911000000106",
           "domainId": "Observation",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Context-dependent",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "784911000000106",
           "validStartDate": "2011-10-03",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

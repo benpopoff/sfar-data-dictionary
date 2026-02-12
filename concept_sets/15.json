@@ -4,43 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
           "conceptId": 4165600,
           "conceptName": "Visual analog pain scale",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "273904000",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Staging / Scales",
-          "validStartDate": "2002-01-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40492247,
-          "conceptName": "Assessment using visual analog pain scale",
-          "standardConcept": "",
+          "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "445719003",
-          "domainId": "Measurement",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Procedure",
-          "validStartDate": "2011-01-31",
-          "validEndDate": "2099-12-31"
+          "conceptCode": "273904000",
+          "validStartDate": "2002-01-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -50,15 +33,35 @@
         "concept": {
           "conceptId": 40481449,
           "conceptName": "Visual analog scale pain score",
-          "standardConcept": "",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "443394008",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Observable Entity",
+          "standardConcept": null,
+          "standardConceptCaption": "Unknown",
+          "conceptCode": "443394008",
           "validStartDate": "2010-01-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 40492247,
+          "conceptName": "Assessment using visual analog pain scale",
+          "domainId": "Measurement",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Procedure",
+          "standardConcept": null,
+          "standardConceptCaption": "Unknown",
+          "conceptCode": "445719003",
+          "validStartDate": "2011-01-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

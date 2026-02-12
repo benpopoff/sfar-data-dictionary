@@ -4,43 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
           "conceptId": 37151627,
           "conceptName": "Numeric Pain Rating Scale",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1284852002",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Staging / Scales",
-          "validStartDate": "2023-05-31",
-          "validEndDate": "2099-12-31"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 37174733,
-          "conceptName": "Assessment using Numeric Pain Rating Scale",
-          "standardConcept": "",
+          "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1284856004",
-          "domainId": "Measurement",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Procedure",
+          "conceptCode": "1284852002",
           "validStartDate": "2023-05-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -50,15 +33,35 @@
         "concept": {
           "conceptId": 37151630,
           "conceptName": "Numeric Pain Rating Scale score",
-          "standardConcept": "",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "1284857008",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Observable Entity",
+          "standardConcept": null,
+          "standardConceptCaption": "Unknown",
+          "conceptCode": "1284857008",
           "validStartDate": "2023-05-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37174733,
+          "conceptName": "Assessment using Numeric Pain Rating Scale",
+          "domainId": "Measurement",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Procedure",
+          "standardConcept": null,
+          "standardConceptCaption": "Unknown",
+          "conceptCode": "1284856004",
+          "validStartDate": "2023-05-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,

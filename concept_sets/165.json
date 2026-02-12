@@ -4,25 +4,26 @@
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
-  "createdDate": "2025-01-26",
+  "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2025-01-26",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9001",
+  "modifiedDate": "2026-02-12",
+  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 4045667,
-          "conceptName": "Venous blood specimen",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "122555007",
+          "conceptId": 4001226,
+          "conceptName": "Mixed venous blood specimen",
           "domainId": "Specimen",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Specimen",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "119298005",
           "validStartDate": "2002-01-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
@@ -30,17 +31,18 @@
       },
       {
         "concept": {
-          "conceptId": 4001226,
-          "conceptName": "Mixed venous blood specimen",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "invalidReasonCaption": "Valid",
-          "conceptCode": "119298005",
+          "conceptId": 4045667,
+          "conceptName": "Venous blood specimen",
           "domainId": "Specimen",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Specimen",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "122555007",
           "validStartDate": "2002-01-31",
-          "validEndDate": "2099-12-31"
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
         "includeDescendants": false,
