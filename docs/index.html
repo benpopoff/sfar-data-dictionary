@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INDICATE Data Dictionary</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #0f60af;
+    --primary-light: #e8f0fe;
+    --primary-hover: #0d4f8f;
+    --success: #28a745;
+    --danger: #dc3545;
+    --gray: #6c757d;
+    --gray-light: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --border: #dee2e6;
+    --text: #212529;
+    --text-muted: #6c757d;
+    --radius: 6px;
+    --shadow: 0 1px 3px rgba(0,0,0,.1);
+    --shadow-lg: 0 4px 12px rgba(0,0,0,.12);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: var(--gray-light);
+    line-height: 1.5;
+  }
+
+  /* Header - matches INDICATE Shiny app */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--primary);
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    gap: 20px;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 15px;
+    cursor: pointer;
+  }
+  .header-logo {
+    height: 40px;
+  }
+  .header-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+  }
+  .nav-tab {
+    background: transparent;
+    border: none;
+    color: var(--gray);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all .2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .nav-tab:hover { background: #f2f7fd; color: var(--primary); }
+  .nav-tab.active {
+    background: var(--primary) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+  }
+  .nav-tab.active:hover { background: #0d4d8f !important; }
+  .nav-tab i { font-size: 14px; }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 12px;
+  }
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: var(--primary);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .lang-toggle:hover { background: #0d4d8f; }
+
+  .stats-badge {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* Loading */
+  .loading-overlay {
+    position: fixed; inset: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    gap: 16px;
+  }
+  .loading-overlay.hidden { display: none; }
+  .spinner {
+    width: 40px; height: 40px;
+    border: 3px solid var(--gray-200);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { color: var(--text-muted); font-size: 14px; }
+
+  /* Main layout */
+  .main { padding: 20px 24px; max-width: 1600px; margin: 0 auto; }
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* Search & filters */
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .search-input {
+    flex: 1;
+    min-width: 250px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+    outline: none;
+    transition: border-color .15s;
+  }
+  .search-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(15,96,175,.1); }
+
+  .category-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .category-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--text);
+    transition: all .15s;
+    white-space: nowrap;
+  }
+  .category-badge:hover { border-color: var(--primary); color: var(--primary); }
+  .category-badge.active {
+    background: #ff8c00;
+    color: white;
+    border-color: #ff8c00;
+  }
+  .category-badge .count {
+    display: inline-block;
+    background: rgba(0,0,0,.1);
+    padding: 0 6px;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-left: 4px;
+  }
+  .category-badge.active .count { background: rgba(255,255,255,.2); }
+
+  /* Tables */
+  .table-container {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    background: var(--gray-light);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover { color: var(--primary); }
+  thead th .sort-icon { margin-left: 4px; font-size: 10px; opacity: .4; }
+  thead th.sorted .sort-icon { opacity: 1; color: var(--primary); }
+  tbody tr {
+    border-bottom: 1px solid var(--gray-200);
+    cursor: pointer;
+    transition: background .1s;
+  }
+  tbody tr:hover { background: var(--primary-light); }
+  tbody td {
+    padding: 8px 12px;
+    vertical-align: middle;
+  }
+
+  .td-center { text-align: center; }
+  .td-right { text-align: right; }
+
+  /* Badges & chips */
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge-standard { background: #d4edda; color: #155724; }
+  .badge-classification { background: #e2e3e5; color: #383d41; }
+  .badge-non-standard { background: #f8d7da; color: #721c24; }
+  .badge-valid { background: #d4edda; color: #155724; }
+  .badge-invalid { background: #f8d7da; color: #721c24; }
+  .badge-category {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .badge-count {
+    background: var(--gray-200);
+    color: var(--text-muted);
+    font-weight: 500;
+    min-width: 28px;
+    text-align: center;
+  }
+
+  /* Concept set flags */
+  .flag-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-right: 6px;
+  }
+  .flag-icon.excluded { color: var(--danger); }
+  .flag-icon.descendants { color: var(--primary); }
+  .flag-icon.mapped { color: var(--success); }
+
+  /* Detail view */
+  .detail-view { display: none; }
+  .detail-view.active { display: block; }
+  .list-view.hidden { display: none; }
+
+  .detail-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    transition: all .15s;
+  }
+  .btn-back:hover { border-color: var(--primary); color: var(--primary); }
+
+  .detail-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .detail-meta {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  /* Panels */
+  .panels {
+    display: grid;
+    gap: 20px;
+  }
+  .panels-2 { grid-template-columns: 1fr 1fr; }
+  .panels-1 { grid-template-columns: 1fr; }
+
+  .panel {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gray-light);
+  }
+  .panel-header h3 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-muted);
+  }
+  .panel-body { padding: 16px; }
+
+  /* Concept detail grid */
+  .concept-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .detail-item label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+  }
+  .detail-item .value {
+    font-size: 14px;
+    word-break: break-word;
+  }
+  .detail-item a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .detail-item a:hover { text-decoration: underline; }
+
+  /* Concept set info section */
+  .cs-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  /* Pagination */
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-top: 1px solid var(--gray-200);
+    background: var(--gray-light);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .pagination-buttons {
+    display: flex;
+    gap: 4px;
+  }
+  .pagination button {
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all .15s;
+  }
+  .pagination button:hover { border-color: var(--primary); color: var(--primary); }
+  .pagination button:disabled { opacity: .4; cursor: default; }
+  .pagination button.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+  /* Project cards */
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+  }
+  .project-card {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    cursor: pointer;
+    transition: all .15s;
+    border: 2px solid transparent;
+  }
+  .project-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+  }
+  .project-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--primary);
+  }
+  .project-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .project-card-footer {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .project-card-footer span { display: flex; align-items: center; gap: 4px; }
+
+  /* Project detail */
+  .project-detail-section {
+    margin-bottom: 20px;
+  }
+  .project-detail-section h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  .project-detail-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+  }
+
+  /* Tabs inside panels */
+  .panel-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .panel-tab {
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: var(--text-muted);
+    transition: all .15s;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .panel-tab:hover { color: var(--text); }
+  .panel-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state svg { margin-bottom: 12px; opacity: .4; }
+  .empty-state p { font-size: 14px; }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .nav-tab span { display: none; }
+    .nav-tab { padding: 8px 12px; }
+    .header-nav { gap: 5px; }
+  }
+  @media (max-width: 900px) {
+    .panels-2 { grid-template-columns: 1fr; }
+    .project-cards { grid-template-columns: 1fr; }
+    .concept-detail-grid { grid-template-columns: 1fr; }
+    .cs-info-grid { grid-template-columns: 1fr; }
+    .header-title { font-size: 16px; }
+    .main { padding: 12px; }
+  }
+
+  /* Scrollable table in panel */
+  .panel-table-wrap {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .panel-table-wrap table thead { position: sticky; top: 0; z-index: 1; }
+
+  /* Description truncation */
+  .desc-truncated {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .export-btn {
+    padding: 6px 14px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    transition: all .15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .export-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+  /* Status badges matching Shiny app */
+  .status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .status-badge.draft { background: #6c757d; color: white; }
+  .status-badge.pending_review { background: #ffc107; color: #000; }
+  .status-badge.approved { background: #28a745; color: white; }
+  .status-badge.needs_revision { background: #dc3545; color: white; }
+  .status-badge.deprecated { background: #495057; color: white; }
+
+  /* Column filter dropdowns */
+  .column-filter {
+    padding: 5px 8px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 12px;
+    font-family: inherit;
+    outline: none;
+    background: white;
+    color: var(--text);
+    max-width: 100%;
+    width: 100%;
+  }
+  .column-filter:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(15,96,175,.1); }
+  .filter-row th {
+    padding: 4px 12px 8px !important;
+    background: var(--gray-light) !important;
+    border-bottom: 2px solid var(--border) !important;
+    cursor: default !important;
+  }
+  .filter-row th:hover { color: var(--text-muted) !important; }
+
+  /* Project detail header - matches Shiny app */
+  .project-name-badge {
+    display: inline-block;
+    max-width: 400px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: #f97316;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+  }
+  .project-name-badge:hover { background: #ea580c; }
+
+  .btn-back-discrete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all .15s;
+    flex-shrink: 0;
+  }
+  .btn-back-discrete:hover { border-color: var(--primary); color: var(--primary); }
+
+  /* Custom tooltip */
+  .custom-tooltip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: help;
+  }
+  .custom-tooltip .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: normal;
+    width: 300px;
+    z-index: 200;
+    pointer-events: none;
+    transition: opacity .2s ease, visibility .2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  }
+  .custom-tooltip .tooltip-text::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 12px;
+    border: 6px solid transparent;
+    border-bottom-color: #1a1a1a;
+  }
+  .custom-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<div class="loading-overlay" id="loading">
+  <div class="spinner"></div>
+  <div class="loading-text">Loading data dictionary...</div>
+</div>
+
+<header class="header">
+  <div class="header-left">
+    <img src="logo.png" class="header-logo" alt="INDICATE">
+    <span class="header-title">INDICATE Data Dictionary</span>
+  </div>
+  <nav class="header-nav">
+    <button class="nav-tab active" data-page="concept-sets">
+      <i class="fas fa-book"></i>
+      <span>Data Dictionary</span>
+    </button>
+    <button class="nav-tab" data-page="projects">
+      <i class="fas fa-list-check"></i>
+      <span>Projects</span>
+    </button>
+  </nav>
+  <div class="header-right">
+    <span class="stats-badge" id="stats-badge"></span>
+    <button class="lang-toggle" id="lang-toggle" title="Switch language">
+      <i class="fas fa-globe"></i> EN
+    </button>
+  </div>
+</header>
+
+<div class="main">
+  <!-- ==================== CONCEPT SETS PAGE ==================== -->
+  <div class="page active" id="page-concept-sets">
+
+    <!-- List view -->
+    <div class="list-view" id="cs-list-view">
+      <div class="toolbar">
+        <input type="text" class="search-input" id="cs-search" placeholder="Search concept sets...">
+      </div>
+      <div class="category-badges" id="cs-categories"></div>
+      <div class="table-container">
+        <table id="cs-table">
+          <thead>
+            <tr>
+              <th data-sort="category" style="width:12%">Category <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="subcategory" style="width:12%">Subcategory <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="name" style="width:20%">Name <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="description" style="width:24%">Description <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="reviewStatus" style="width:9%" class="td-center">Status <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="version" style="width:6%" class="td-center">Version <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="concepts" style="width:7%" class="td-center">Concepts <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="modified" style="width:8%" class="td-center">Modified <span class="sort-icon">&#9650;</span></th>
+            </tr>
+            <tr class="filter-row">
+              <th><select class="column-filter" id="filter-category"><option value="">All</option></select></th>
+              <th><select class="column-filter" id="filter-subcategory"><option value="">All</option></select></th>
+              <th></th>
+              <th></th>
+              <th><select class="column-filter" id="filter-reviewStatus"><option value="">All</option></select></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cs-tbody"></tbody>
+        </table>
+        <div class="pagination" id="cs-pagination">
+          <span id="cs-page-info"></span>
+          <div class="pagination-buttons" id="cs-page-buttons"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detail view -->
+    <div class="detail-view" id="cs-detail-view">
+      <div class="detail-header">
+        <button class="btn-back" id="cs-back">&#8592; Back</button>
+        <span class="detail-title" id="cs-detail-title"></span>
+        <div class="detail-meta" id="cs-detail-meta"></div>
+      </div>
+
+      <!-- Concepts table + detail -->
+      <div class="panels panels-2">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Concepts</h3>
+            <span class="badge badge-count" id="cs-concept-count">0</span>
+            <span class="custom-tooltip" style="margin-left:6px">
+              <i class="fas fa-exclamation-triangle" style="color:#ffc107; font-size:14px;"></i>
+              <span class="tooltip-text">Only the concept set expression is shown here, not its full resolution. If a concept includes descendants, the descendants will not be listed. For full resolution, use the INDICATE Data Dictionary application directly.</span>
+            </span>
+          </div>
+          <div class="panel-table-wrap">
+            <table id="concepts-table">
+              <thead>
+                <tr>
+                  <th style="width:12%">Vocabulary</th>
+                  <th style="width:32%">Concept Name</th>
+                  <th style="width:14%">Concept Code</th>
+                  <th style="width:12%">Domain</th>
+                  <th style="width:12%" class="td-center">Standard</th>
+                  <th style="width:18%">Flags</th>
+                </tr>
+              </thead>
+              <tbody id="concepts-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header"><h3>Concept Details</h3></div>
+          <div class="panel-body" id="concept-detail-body">
+            <div class="empty-state">
+              <p>Select a concept to view details</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Concept set info -->
+      <div class="panel" style="margin-top:20px">
+        <div class="panel-header"><h3>Concept Set Information</h3></div>
+        <div class="panel-body">
+          <div class="cs-info-grid" id="cs-info-grid"></div>
+          <div id="cs-description-block"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PROJECTS PAGE ==================== -->
+  <div class="page" id="page-projects">
+
+    <!-- List view -->
+    <div class="list-view" id="proj-list-view">
+      <div class="toolbar">
+        <input type="text" class="search-input" id="proj-search" placeholder="Search projects...">
+      </div>
+      <div class="project-cards" id="proj-cards"></div>
+    </div>
+
+    <!-- Detail view -->
+    <div class="detail-view" id="proj-detail-view">
+      <div class="detail-header" style="align-items:center">
+        <button class="btn-back-discrete" id="proj-back" title="Projects">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <span class="project-name-badge" id="proj-detail-title"></span>
+        <div class="detail-meta" id="proj-detail-meta"></div>
+      </div>
+
+      <div class="panel-tabs" id="proj-tabs">
+        <button class="panel-tab active" data-tab="context">Context</button>
+        <button class="panel-tab" data-tab="variables">Concept Sets</button>
+      </div>
+
+      <!-- Context tab -->
+      <div class="panel" id="proj-tab-context" style="margin-top:16px">
+        <div class="panel-body">
+          <div class="project-detail-section" id="proj-description-section"></div>
+          <div class="project-detail-section" id="proj-justification-section"></div>
+          <div class="project-detail-section" id="proj-bibliography-section"></div>
+        </div>
+      </div>
+
+      <!-- Variables tab -->
+      <div class="panel" id="proj-tab-variables" style="margin-top:16px; display:none">
+        <div class="panel-header">
+          <h3>Concept Sets in this Project</h3>
+          <span class="badge badge-count" id="proj-cs-count">0</span>
+          <button class="export-btn" id="proj-export-csv" style="margin-left:auto" title="Export all concepts to CSV">
+            <i class="fas fa-download"></i> Export CSV
+          </button>
+        </div>
+        <div class="toolbar" style="padding:12px 16px 0">
+          <input type="text" class="search-input" id="proj-cs-search" placeholder="Search concept sets in project...">
+        </div>
+        <div class="panel-table-wrap" style="max-height:600px">
+          <table id="proj-cs-table">
+            <thead>
+              <tr>
+                <th style="width:18%">Category</th>
+                <th style="width:18%">Subcategory</th>
+                <th style="width:30%">Name</th>
+                <th style="width:8%" class="td-center">Concepts</th>
+                <th style="width:8%" class="td-center">Version</th>
+              </tr>
+            </thead>
+            <tbody id="proj-cs-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="data_inline.js"></script>
+<script>
+(function() {
+  'use strict';
+
+  // ==================== STATE ====================
+  let conceptSets = [];
+  let projects = [];
+  let lang = 'en';
+  let csPage = 1;
+  const csPageSize = 25;
+  let csSort = { key: 'category', asc: true };
+  let csFilter = '';
+  let csCategories = new Set();
+  let csFilterCategory = '';
+  let csFilterSubcategory = '';
+  let csFilterReviewStatus = '';
+  let selectedConceptSet = null;
+  let selectedProject = null;
+
+  // ==================== DATA LOADING ====================
+  function loadData() {
+    conceptSets = DATA.conceptSets || [];
+    projects = DATA.projects || [];
+    document.getElementById('stats-badge').textContent =
+      conceptSets.length + ' concept sets \u00b7 ' + projects.length + ' projects';
+    document.getElementById('loading').classList.add('hidden');
+    renderAll();
+  }
+
+  // ==================== HELPERS ====================
+  function t(cs) {
+    const tr = cs.metadata && cs.metadata.translations;
+    return (tr && tr[lang]) || (tr && tr.en) || {};
+  }
+
+  function escapeHtml(s) {
+    if (!s) return '';
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function renderMarkdown(s) {
+    if (!s) return '';
+    // Escape HTML first
+    let html = escapeHtml(s);
+    // Bold: **text**
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // Split into paragraphs on double newlines
+    const blocks = html.split(/\n\n+/);
+    return blocks.map(block => {
+      // Check if block is a list (lines starting with -)
+      const lines = block.split('\n');
+      const isList = lines.every(l => l.trim() === '' || l.trim().startsWith('- '));
+      if (isList) {
+        const items = lines.filter(l => l.trim().startsWith('- ')).map(l => '<li>' + l.trim().substring(2) + '</li>');
+        return '<ul style="margin:8px 0 8px 20px; line-height:1.8">' + items.join('') + '</ul>';
+      }
+      return '<p>' + block.replace(/\n/g, '<br>') + '</p>';
+    }).join('');
+  }
+
+  // Fuzzy search: returns a score (lower = better match), or -1 if no match
+  function fuzzyMatch(text, query) {
+    text = text.toLowerCase();
+    query = query.toLowerCase();
+    // Exact substring match gets best score
+    if (text.includes(query)) return 0;
+    // Fuzzy: all query chars must appear in order
+    let ti = 0, qi = 0, score = 0, lastMatch = -1;
+    while (ti < text.length && qi < query.length) {
+      if (text[ti] === query[qi]) {
+        score += (ti - (lastMatch + 1)); // penalize gaps
+        lastMatch = ti;
+        qi++;
+      }
+      ti++;
+    }
+    return qi === query.length ? score + 1 : -1; // +1 so fuzzy always scores worse than exact
+  }
+
+  function fuzzyFilter(items, query, getTexts) {
+    if (!query) return items;
+    const q = query.toLowerCase().trim();
+    // First try exact substring, then fuzzy
+    const results = [];
+    for (const item of items) {
+      const texts = getTexts(item);
+      let bestScore = -1;
+      for (const t of texts) {
+        const s = fuzzyMatch(t || '', q);
+        if (s >= 0 && (bestScore < 0 || s < bestScore)) bestScore = s;
+      }
+      if (bestScore >= 0) results.push({ item, score: bestScore });
+    }
+    results.sort((a, b) => a.score - b.score);
+    return results.map(r => r.item);
+  }
+
+  // Status badge HTML
+  function statusBadge(status) {
+    if (!status) status = 'draft';
+    const labels = {
+      draft: 'Draft',
+      pending_review: 'Pending Review',
+      approved: 'Approved',
+      needs_revision: 'Needs Revision',
+      deprecated: 'Deprecated'
+    };
+    return '<span class="status-badge ' + escapeHtml(status) + '">' + escapeHtml(labels[status] || status) + '</span>';
+  }
+
+  function truncate(s, n) {
+    if (!s) return '';
+    return s.length > n ? s.substring(0, n) + '...' : s;
+  }
+
+  function standardBadge(concept) {
+    const sc = concept.standardConcept;
+    if (sc === 'S') return '<span class="badge badge-standard">Standard</span>';
+    if (sc === 'C') return '<span class="badge badge-classification">Classification</span>';
+    return '<span class="badge badge-non-standard">Non-standard</span>';
+  }
+
+  function validBadge(concept) {
+    const v = concept.invalidReasonCaption;
+    if (v === 'Valid') return '<span class="badge badge-valid">Valid</span>';
+    return '<span class="badge badge-invalid">' + escapeHtml(v) + '</span>';
+  }
+
+  function conceptFlags(item) {
+    let html = '';
+    if (item.isExcluded) html += '<span class="flag-icon excluded" title="Excluded">&#10005; Excl</span>';
+    if (item.includeDescendants) html += '<span class="flag-icon descendants" title="Include Descendants">&#8595; Desc</span>';
+    if (item.includeMapped) html += '<span class="flag-icon mapped" title="Include Mapped">&#8596; Map</span>';
+    return html || '<span style="color:var(--text-muted)">—</span>';
+  }
+
+  // ==================== CONCEPT SETS ====================
+  function getCSData() {
+    return conceptSets.map(cs => {
+      const tr = t(cs);
+      return {
+        id: cs.id,
+        name: tr.name || cs.name,
+        category: tr.category || '',
+        subcategory: tr.subcategory || '',
+        description: cs.description || '',
+        reviewStatus: cs.reviewStatus || 'draft',
+        version: cs.version || '',
+        concepts: (cs.expression && cs.expression.items) ? cs.expression.items.length : 0,
+        modified: cs.modifiedDate || cs.createdDate || '',
+        raw: cs
+      };
+    });
+  }
+
+  function getFilteredCS() {
+    let data = getCSData();
+    // Category badge filter
+    if (csCategories.size > 0) data = data.filter(d => csCategories.has(d.category));
+    // Column dropdown filters
+    if (csFilterCategory) data = data.filter(d => d.category === csFilterCategory);
+    if (csFilterSubcategory) data = data.filter(d => d.subcategory === csFilterSubcategory);
+    if (csFilterReviewStatus) data = data.filter(d => d.reviewStatus === csFilterReviewStatus);
+    // Fuzzy text search
+    if (csFilter) {
+      data = fuzzyFilter(data, csFilter, d => [d.name, d.category, d.subcategory, d.description]);
+    }
+    // Sort (only if no fuzzy search active, since fuzzy already sorts by relevance)
+    if (!csFilter) {
+      data.sort((a, b) => {
+        let va = a[csSort.key], vb = b[csSort.key];
+        if (csSort.key === 'concepts') { va = +va; vb = +vb; }
+        else { va = (va || '').toString().toLowerCase(); vb = (vb || '').toString().toLowerCase(); }
+        if (va < vb) return csSort.asc ? -1 : 1;
+        if (va > vb) return csSort.asc ? 1 : -1;
+        return 0;
+      });
+    }
+    return data;
+  }
+
+  function renderCSCategories() {
+    const counts = {};
+    getCSData().forEach(d => { counts[d.category] = (counts[d.category] || 0) + 1; });
+    // Sort categories alphabetically, but put "Other"/"Autres" last
+    const cats = Object.keys(counts).sort((a, b) => {
+      const aIsOther = a.toLowerCase() === 'other' || a.toLowerCase() === 'autres';
+      const bIsOther = b.toLowerCase() === 'other' || b.toLowerCase() === 'autres';
+      if (aIsOther && !bIsOther) return 1;
+      if (!aIsOther && bIsOther) return -1;
+      return a.localeCompare(b);
+    });
+    const el = document.getElementById('cs-categories');
+    el.innerHTML = cats.map(cat =>
+      '<span class="category-badge' + (csCategories.has(cat) ? ' active' : '') +
+      '" data-category="' + escapeHtml(cat) + '">' +
+      escapeHtml(cat) + '<span class="count">' + counts[cat] + '</span></span>'
+    ).join('');
+  }
+
+  const statusLabels = { draft: 'Draft', pending_review: 'Pending Review', approved: 'Approved', needs_revision: 'Needs Revision', deprecated: 'Deprecated' };
+
+  function populateColumnFilters() {
+    const data = getCSData();
+    const categories = [...new Set(data.map(d => d.category))].sort((a, b) => {
+      const aO = a.toLowerCase() === 'other' || a.toLowerCase() === 'autres';
+      const bO = b.toLowerCase() === 'other' || b.toLowerCase() === 'autres';
+      if (aO && !bO) return 1;
+      if (!aO && bO) return -1;
+      return a.localeCompare(b);
+    });
+
+    // Subcategories: filter by selected category dropdown + active category badges
+    let subData = data;
+    if (csFilterCategory) subData = subData.filter(d => d.category === csFilterCategory);
+    else if (csCategories.size > 0) subData = subData.filter(d => csCategories.has(d.category));
+    const subcategories = [...new Set(subData.map(d => d.subcategory))].filter(Boolean).sort();
+
+    const statuses = [...new Set(data.map(d => d.reviewStatus))].filter(Boolean).sort();
+
+    const catSel = document.getElementById('filter-category');
+    catSel.innerHTML = '<option value="">All</option>' + categories.map(c => '<option value="' + escapeHtml(c) + '"' + (csFilterCategory === c ? ' selected' : '') + '>' + escapeHtml(c) + '</option>').join('');
+
+    const subSel = document.getElementById('filter-subcategory');
+    // Reset subcategory if no longer available
+    if (csFilterSubcategory && !subcategories.includes(csFilterSubcategory)) csFilterSubcategory = '';
+    subSel.innerHTML = '<option value="">All</option>' + subcategories.map(c => '<option value="' + escapeHtml(c) + '"' + (csFilterSubcategory === c ? ' selected' : '') + '>' + escapeHtml(c) + '</option>').join('');
+
+    const statusSel = document.getElementById('filter-reviewStatus');
+    statusSel.innerHTML = '<option value="">All</option>' + statuses.map(c => '<option value="' + escapeHtml(c) + '"' + (csFilterReviewStatus === c ? ' selected' : '') + '>' + escapeHtml(statusLabels[c] || c) + '</option>').join('');
+  }
+
+  function renderCSTable() {
+    const data = getFilteredCS();
+    const totalPages = Math.ceil(data.length / csPageSize);
+    if (csPage > totalPages) csPage = Math.max(1, totalPages);
+    const start = (csPage - 1) * csPageSize;
+    const pageData = data.slice(start, start + csPageSize);
+
+    const tbody = document.getElementById('cs-tbody');
+    tbody.innerHTML = pageData.map(d =>
+      '<tr data-id="' + d.id + '">' +
+      '<td><span class="badge badge-category">' + escapeHtml(d.category) + '</span></td>' +
+      '<td>' + escapeHtml(d.subcategory) + '</td>' +
+      '<td><strong>' + escapeHtml(d.name) + '</strong></td>' +
+      '<td class="desc-truncated">' + escapeHtml(truncate(d.description, 100)) + '</td>' +
+      '<td class="td-center">' + statusBadge(d.reviewStatus) + '</td>' +
+      '<td class="td-center">' + escapeHtml(d.version) + '</td>' +
+      '<td class="td-center"><span class="badge badge-count">' + d.concepts + '</span></td>' +
+      '<td class="td-center">' + escapeHtml(d.modified) + '</td>' +
+      '</tr>'
+    ).join('');
+
+    // Pagination
+    document.getElementById('cs-page-info').textContent =
+      'Showing ' + (data.length ? start + 1 : 0) + '-' + Math.min(start + csPageSize, data.length) + ' of ' + data.length;
+
+    const btnContainer = document.getElementById('cs-page-buttons');
+    let btns = '';
+    btns += '<button ' + (csPage <= 1 ? 'disabled' : '') + ' data-page="prev">&laquo;</button>';
+    const maxButtons = 7;
+    let startPage = Math.max(1, csPage - Math.floor(maxButtons / 2));
+    let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+    if (endPage - startPage < maxButtons - 1) startPage = Math.max(1, endPage - maxButtons + 1);
+    for (let i = startPage; i <= endPage; i++) {
+      btns += '<button ' + (i === csPage ? 'class="active"' : '') + ' data-page="' + i + '">' + i + '</button>';
+    }
+    btns += '<button ' + (csPage >= totalPages ? 'disabled' : '') + ' data-page="next">&raquo;</button>';
+    btnContainer.innerHTML = btns;
+
+    // Sort indicators
+    document.querySelectorAll('#cs-table thead th').forEach(th => {
+      th.classList.toggle('sorted', th.dataset.sort === csSort.key);
+      const icon = th.querySelector('.sort-icon');
+      if (icon) icon.textContent = (th.dataset.sort === csSort.key && !csSort.asc) ? '\u25BC' : '\u25B2';
+    });
+  }
+
+  function showCSDetail(id) {
+    const cs = conceptSets.find(c => c.id === id);
+    if (!cs) return;
+    selectedConceptSet = cs;
+    const tr = t(cs);
+
+    document.getElementById('cs-list-view').classList.add('hidden');
+    document.getElementById('cs-detail-view').classList.add('active');
+
+    document.getElementById('cs-detail-title').textContent = tr.name || cs.name;
+    document.getElementById('cs-detail-meta').innerHTML =
+      '<span class="badge badge-category">' + escapeHtml(tr.category || '') + '</span>' +
+      '<span class="badge badge-category">' + escapeHtml(tr.subcategory || '') + '</span>';
+
+    // Info grid
+    const info = document.getElementById('cs-info-grid');
+    const details = cs.metadata && cs.metadata.createdByDetails;
+    const rawUrl = 'https://raw.githubusercontent.com/indicate-eu/data-dictionary-content/main/concept_sets/' + cs.id + '.json';
+    info.innerHTML =
+      '<div class="detail-item"><label>ID</label><div class="value">' + cs.id + ' &mdash; <a href="' + rawUrl + '" target="_blank">View JSON <i class="fas fa-external-link-alt" style="font-size:11px"></i></a></div></div>' +
+      '<div class="detail-item"><label>Version</label><div class="value">' + escapeHtml(cs.version) + '</div></div>' +
+      '<div class="detail-item"><label>Created By</label><div class="value">' + escapeHtml(cs.createdBy || '') +
+        (details && details.orcid ? ' <a href="https://orcid.org/' + details.orcid + '" target="_blank">ORCID</a>' : '') +
+      '</div></div>' +
+      (details ? '<div class="detail-item"><label>Affiliation</label><div class="value">' + escapeHtml(details.affiliation || '') + '</div></div>' : '') +
+      '<div class="detail-item"><label>Created Date</label><div class="value">' + escapeHtml(cs.createdDate || '') + '</div></div>' +
+      '<div class="detail-item"><label>Modified Date</label><div class="value">' + escapeHtml(cs.modifiedDate || '') + '</div></div>' +
+      '<div class="detail-item"><label>Tool</label><div class="value">' + escapeHtml(cs.createdByTool || '') + '</div></div>' +
+      '<div class="detail-item"><label>Status</label><div class="value">' + statusBadge(cs.reviewStatus) + '</div></div>';
+
+    // Description
+    const descBlock = document.getElementById('cs-description-block');
+    if (cs.description) {
+      descBlock.innerHTML = '<div class="detail-item"><label>Description</label><div class="value">' + escapeHtml(cs.description) + '</div></div>';
+    } else {
+      descBlock.innerHTML = '';
+    }
+
+    // Concepts table
+    const items = (cs.expression && cs.expression.items) || [];
+    document.getElementById('cs-concept-count').textContent = items.length;
+    const ctbody = document.getElementById('concepts-tbody');
+    ctbody.innerHTML = items.map((item, i) => {
+      const c = item.concept;
+      return '<tr data-idx="' + i + '">' +
+        '<td>' + escapeHtml(c.vocabularyId) + '</td>' +
+        '<td>' + escapeHtml(c.conceptName) + '</td>' +
+        '<td>' + escapeHtml(c.conceptCode) + '</td>' +
+        '<td>' + escapeHtml(c.domainId) + '</td>' +
+        '<td class="td-center">' + standardBadge(c) + '</td>' +
+        '<td>' + conceptFlags(item) + '</td>' +
+        '</tr>';
+    }).join('');
+
+    if (items.length === 0) {
+      ctbody.innerHTML = '<tr><td colspan="6" class="empty-state"><p>No concepts in this concept set</p></td></tr>';
+    }
+
+    // Clear concept detail
+    document.getElementById('concept-detail-body').innerHTML =
+      '<div class="empty-state"><p>Select a concept to view details</p></div>';
+  }
+
+  function showConceptDetail(idx) {
+    if (!selectedConceptSet) return;
+    const items = selectedConceptSet.expression && selectedConceptSet.expression.items;
+    if (!items || !items[idx]) return;
+    const item = items[idx];
+    const c = item.concept;
+    const el = document.getElementById('concept-detail-body');
+
+    const athenaUrl = 'https://athena.ohdsi.org/search-terms/terms/' + c.conceptId;
+
+    el.innerHTML =
+      '<div class="concept-detail-grid">' +
+      '<div class="detail-item"><label>Concept Name</label><div class="value">' + escapeHtml(c.conceptName) + '</div></div>' +
+      '<div class="detail-item"><label>Concept ID</label><div class="value"><a href="' + athenaUrl + '" target="_blank">' + c.conceptId + ' &#8599;</a></div></div>' +
+      '<div class="detail-item"><label>Vocabulary</label><div class="value">' + escapeHtml(c.vocabularyId) + '</div></div>' +
+      '<div class="detail-item"><label>Concept Code</label><div class="value">' + escapeHtml(c.conceptCode) + '</div></div>' +
+      '<div class="detail-item"><label>Domain</label><div class="value">' + escapeHtml(c.domainId) + '</div></div>' +
+      '<div class="detail-item"><label>Concept Class</label><div class="value">' + escapeHtml(c.conceptClassId) + '</div></div>' +
+      '<div class="detail-item"><label>Standard</label><div class="value">' + standardBadge(c) + '</div></div>' +
+      '<div class="detail-item"><label>Validity</label><div class="value">' + validBadge(c) + '</div></div>' +
+      '<div class="detail-item"><label>Valid Start</label><div class="value">' + escapeHtml(c.validStartDate) + '</div></div>' +
+      '<div class="detail-item"><label>Valid End</label><div class="value">' + escapeHtml(c.validEndDate) + '</div></div>' +
+      '</div>' +
+      '<hr style="margin:16px 0; border:none; border-top:1px solid var(--gray-200)">' +
+      '<div style="display:flex; gap:24px; align-items:center; flex-wrap:wrap">' +
+      '<div class="detail-item"><label>Excluded</label><div class="value">' + (item.isExcluded ? '<span class="badge badge-invalid">Yes</span>' : '<span class="badge badge-valid">No</span>') + '</div></div>' +
+      '<div class="detail-item"><label>Include Descendants</label><div class="value">' + (item.includeDescendants ? '<span class="badge badge-standard">Yes</span>' : '<span class="badge badge-count">No</span>') + '</div></div>' +
+      '<div class="detail-item"><label>Include Mapped</label><div class="value">' + (item.includeMapped ? '<span class="badge badge-standard">Yes</span>' : '<span class="badge badge-count">No</span>') + '</div></div>' +
+      '</div>';
+
+    // Highlight row
+    document.querySelectorAll('#concepts-tbody tr').forEach(tr => tr.style.background = '');
+    const row = document.querySelector('#concepts-tbody tr[data-idx="' + idx + '"]');
+    if (row) row.style.background = 'var(--primary-light)';
+  }
+
+  function hideCSDetail() {
+    document.getElementById('cs-detail-view').classList.remove('active');
+    document.getElementById('cs-list-view').classList.remove('hidden');
+    selectedConceptSet = null;
+  }
+
+  // ==================== PROJECTS ====================
+  function renderProjectCards() {
+    const filter = document.getElementById('proj-search').value.toLowerCase();
+    const filtered = projects.filter(p => {
+      if (!filter) return true;
+      return (p.name || '').toLowerCase().includes(filter) ||
+        (p.description || '').toLowerCase().includes(filter);
+    });
+
+    const el = document.getElementById('proj-cards');
+    el.innerHTML = filtered.map(p => {
+      const csCount = (p.conceptSetIds || []).length;
+      return '<div class="project-card" data-id="' + p.id + '">' +
+        '<h3>' + escapeHtml(p.name) + '</h3>' +
+        '<p>' + escapeHtml(p.description || 'No description') + '</p>' +
+        '<div class="project-card-footer">' +
+          '<span>&#128203; ' + csCount + ' concept sets</span>' +
+          '<span>&#128100; ' + escapeHtml(p.createdBy || '') + '</span>' +
+          '<span>&#128197; ' + escapeHtml(p.createdDate || '') + '</span>' +
+        '</div>' +
+        '</div>';
+    }).join('');
+  }
+
+  function showProjectDetail(id) {
+    const proj = projects.find(p => p.id === id);
+    if (!proj) return;
+    selectedProject = proj;
+
+    document.getElementById('proj-list-view').classList.add('hidden');
+    document.getElementById('proj-detail-view').classList.add('active');
+
+    document.getElementById('proj-detail-title').textContent = proj.name;
+    document.getElementById('proj-detail-meta').innerHTML =
+      '<span class="badge badge-count">&#128203; ' + (proj.conceptSetIds || []).length + ' concept sets</span>' +
+      '<span style="color:var(--text-muted); font-size:13px">' + escapeHtml(proj.createdBy || '') + ' &middot; ' + escapeHtml(proj.createdDate || '') + '</span>';
+
+    // Context tab
+    const descSec = document.getElementById('proj-description-section');
+    descSec.innerHTML = '<h4>Description</h4><p>' + escapeHtml(proj.description || 'No description') + '</p>';
+
+    const justSec = document.getElementById('proj-justification-section');
+    if (proj.justification) {
+      justSec.innerHTML = '<h4>Justification</h4>' + renderMarkdown(proj.justification);
+      justSec.style.display = '';
+    } else {
+      justSec.style.display = 'none';
+    }
+
+    const bibSec = document.getElementById('proj-bibliography-section');
+    if (proj.bibliography) {
+      bibSec.innerHTML = '<h4>Bibliography</h4><p>' + escapeHtml(
+        Array.isArray(proj.bibliography) ? proj.bibliography.join('\n') : proj.bibliography
+      ) + '</p>';
+      bibSec.style.display = '';
+    } else {
+      bibSec.style.display = 'none';
+    }
+
+    // Concept sets tab
+    renderProjectCSTable();
+
+    // Reset to context tab
+    document.querySelectorAll('#proj-tabs .panel-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === 'context'));
+    document.getElementById('proj-tab-context').style.display = '';
+    document.getElementById('proj-tab-variables').style.display = 'none';
+  }
+
+  function renderProjectCSTable() {
+    if (!selectedProject) return;
+    const ids = new Set(selectedProject.conceptSetIds || []);
+    const csData = getCSData().filter(d => ids.has(d.id));
+    const filter = document.getElementById('proj-cs-search').value.toLowerCase();
+    const filtered = filter ? csData.filter(d =>
+      d.name.toLowerCase().includes(filter) ||
+      d.category.toLowerCase().includes(filter) ||
+      d.subcategory.toLowerCase().includes(filter)
+    ) : csData;
+
+    // Sort by category then name
+    filtered.sort((a, b) => {
+      const ca = a.category.localeCompare(b.category);
+      if (ca !== 0) return ca;
+      return a.name.localeCompare(b.name);
+    });
+
+    document.getElementById('proj-cs-count').textContent = filtered.length;
+    const tbody = document.getElementById('proj-cs-tbody');
+    tbody.innerHTML = filtered.map(d =>
+      '<tr data-id="' + d.id + '" style="cursor:pointer">' +
+      '<td><span class="badge badge-category">' + escapeHtml(d.category) + '</span></td>' +
+      '<td>' + escapeHtml(d.subcategory) + '</td>' +
+      '<td><strong>' + escapeHtml(d.name) + '</strong></td>' +
+      '<td class="td-center"><span class="badge badge-count">' + d.concepts + '</span></td>' +
+      '<td class="td-center">' + escapeHtml(d.version) + '</td>' +
+      '</tr>'
+    ).join('');
+  }
+
+  function hideProjectDetail() {
+    document.getElementById('proj-detail-view').classList.remove('active');
+    document.getElementById('proj-list-view').classList.remove('hidden');
+    selectedProject = null;
+  }
+
+  // ==================== RENDER ALL ====================
+  function renderAll() {
+    renderCSCategories();
+    populateColumnFilters();
+    renderCSTable();
+    renderProjectCards();
+  }
+
+  // ==================== EVENTS ====================
+  // Navigation
+  document.querySelector('.header-nav').addEventListener('click', e => {
+    const btn = e.target.closest('.nav-tab[data-page]');
+    if (!btn) return;
+    const page = btn.dataset.page;
+    document.querySelectorAll('.header-nav .nav-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + page).classList.add('active');
+    // Reset detail views
+    hideCSDetail();
+    hideProjectDetail();
+  });
+
+  // Header logo/title click -> go to Data Dictionary list
+  document.querySelector('.header-left').addEventListener('click', () => {
+    document.querySelectorAll('.header-nav .nav-tab').forEach(b => b.classList.remove('active'));
+    document.querySelector('.header-nav .nav-tab[data-page="concept-sets"]').classList.add('active');
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-concept-sets').classList.add('active');
+    hideCSDetail();
+    hideProjectDetail();
+  });
+
+  // Language toggle
+  document.getElementById('lang-toggle').addEventListener('click', () => {
+    lang = lang === 'en' ? 'fr' : 'en';
+    document.getElementById('lang-toggle').textContent = lang.toUpperCase();
+    renderAll();
+    // Re-render detail if open
+    if (selectedConceptSet) showCSDetail(selectedConceptSet.id);
+    if (selectedProject) {
+      showProjectDetail(selectedProject.id);
+    }
+  });
+
+  // CS search
+  document.getElementById('cs-search').addEventListener('input', e => {
+    csFilter = e.target.value;
+    csPage = 1;
+    renderCSTable();
+  });
+
+  // CS category filter
+  document.getElementById('cs-categories').addEventListener('click', e => {
+    const badge = e.target.closest('.category-badge');
+    if (!badge) return;
+    const cat = badge.dataset.category;
+    if (csCategories.has(cat)) csCategories.delete(cat); else csCategories.add(cat);
+    csPage = 1;
+    renderCSCategories();
+    populateColumnFilters();
+    renderCSTable();
+  });
+
+  // CS sort
+  document.getElementById('cs-table').querySelector('thead').addEventListener('click', e => {
+    const th = e.target.closest('th[data-sort]');
+    if (!th) return;
+    const key = th.dataset.sort;
+    if (csSort.key === key) csSort.asc = !csSort.asc;
+    else { csSort.key = key; csSort.asc = true; }
+    renderCSTable();
+  });
+
+  // CS pagination
+  document.getElementById('cs-page-buttons').addEventListener('click', e => {
+    const btn = e.target.closest('button[data-page]');
+    if (!btn || btn.disabled) return;
+    const p = btn.dataset.page;
+    if (p === 'prev') csPage--;
+    else if (p === 'next') csPage++;
+    else csPage = parseInt(p);
+    renderCSTable();
+  });
+
+  // CS table row click -> detail
+  document.getElementById('cs-tbody').addEventListener('click', e => {
+    const tr = e.target.closest('tr[data-id]');
+    if (!tr) return;
+    showCSDetail(parseInt(tr.dataset.id));
+  });
+
+  // CS back button
+  document.getElementById('cs-back').addEventListener('click', hideCSDetail);
+
+  // Concept row click -> concept detail
+  document.getElementById('concepts-tbody').addEventListener('click', e => {
+    const tr = e.target.closest('tr[data-idx]');
+    if (!tr) return;
+    showConceptDetail(parseInt(tr.dataset.idx));
+  });
+
+  // Project card click
+  document.getElementById('proj-cards').addEventListener('click', e => {
+    const card = e.target.closest('.project-card[data-id]');
+    if (!card) return;
+    showProjectDetail(parseInt(card.dataset.id));
+  });
+
+  // Project back button
+  document.getElementById('proj-back').addEventListener('click', hideProjectDetail);
+
+  // Project search
+  document.getElementById('proj-search').addEventListener('input', renderProjectCards);
+
+  // Project tabs
+  document.getElementById('proj-tabs').addEventListener('click', e => {
+    const tab = e.target.closest('.panel-tab');
+    if (!tab) return;
+    document.querySelectorAll('#proj-tabs .panel-tab').forEach(b => b.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('proj-tab-context').style.display = tab.dataset.tab === 'context' ? '' : 'none';
+    document.getElementById('proj-tab-variables').style.display = tab.dataset.tab === 'variables' ? '' : 'none';
+  });
+
+  // Project concept set search
+  document.getElementById('proj-cs-search').addEventListener('input', renderProjectCSTable);
+
+  // Project concept set row click -> navigate to CS detail
+  document.getElementById('proj-cs-tbody').addEventListener('click', e => {
+    const tr = e.target.closest('tr[data-id]');
+    if (!tr) return;
+    // Switch to concept sets page and show detail
+    document.querySelectorAll('.header-nav .nav-tab').forEach(b => b.classList.remove('active'));
+    document.querySelector('.header-nav .nav-tab[data-page="concept-sets"]').classList.add('active');
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-concept-sets').classList.add('active');
+    hideProjectDetail();
+    showCSDetail(parseInt(tr.dataset.id));
+  });
+
+  // Column filter dropdowns
+  document.getElementById('filter-category').addEventListener('change', e => {
+    csFilterCategory = e.target.value;
+    csPage = 1;
+    populateColumnFilters();
+    renderCSTable();
+  });
+  document.getElementById('filter-subcategory').addEventListener('change', e => {
+    csFilterSubcategory = e.target.value;
+    csPage = 1;
+    renderCSTable();
+  });
+  document.getElementById('filter-reviewStatus').addEventListener('change', e => {
+    csFilterReviewStatus = e.target.value;
+    csPage = 1;
+    renderCSTable();
+  });
+
+  // CSV export for project concepts
+  document.getElementById('proj-export-csv').addEventListener('click', () => {
+    if (!selectedProject) return;
+    const ids = new Set(selectedProject.conceptSetIds || []);
+    const rows = [];
+    rows.push(['concept_set_id', 'concept_set_name', 'concept_set_category', 'concept_set_subcategory',
+      'concept_id', 'concept_name', 'domain_id', 'vocabulary_id', 'concept_class_id', 'concept_code',
+      'standard_concept', 'invalid_reason', 'valid_start_date', 'valid_end_date',
+      'is_excluded', 'include_descendants', 'include_mapped'].join(','));
+
+    conceptSets.filter(cs => ids.has(cs.id)).forEach(cs => {
+      const tr = t(cs);
+      const csName = (tr.name || cs.name || '').replace(/"/g, '""');
+      const csCat = (tr.category || '').replace(/"/g, '""');
+      const csSub = (tr.subcategory || '').replace(/"/g, '""');
+      const items = (cs.expression && cs.expression.items) || [];
+      items.forEach(item => {
+        const c = item.concept;
+        rows.push([
+          cs.id,
+          '"' + csName + '"',
+          '"' + csCat + '"',
+          '"' + csSub + '"',
+          c.conceptId,
+          '"' + (c.conceptName || '').replace(/"/g, '""') + '"',
+          '"' + (c.domainId || '') + '"',
+          '"' + (c.vocabularyId || '') + '"',
+          '"' + (c.conceptClassId || '') + '"',
+          '"' + (c.conceptCode || '') + '"',
+          '"' + (c.standardConcept || '') + '"',
+          '"' + (c.invalidReasonCaption || '') + '"',
+          '"' + (c.validStartDate || '') + '"',
+          '"' + (c.validEndDate || '') + '"',
+          item.isExcluded ? 'TRUE' : 'FALSE',
+          item.includeDescendants ? 'TRUE' : 'FALSE',
+          item.includeMapped ? 'TRUE' : 'FALSE'
+        ].join(','));
+      });
+    });
+
+    const csv = rows.join('\n');
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = (selectedProject.name || 'project').replace(/[^a-zA-Z0-9]/g, '_') + '_concepts.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // Keyboard: Escape to go back
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      if (selectedConceptSet) hideCSDetail();
+      else if (selectedProject) hideProjectDetail();
+    }
+  });
+
+  // ==================== INIT ====================
+  loadData();
+})();
+</script>
+</body>
+</html>
