@@ -6,237 +6,598 @@
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-02-12",
+  "modifiedDate": "2026-02-13",
   "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 3000276,
-          "conceptName": "Heart rate Peripheral artery by US.doppler",
+          "conceptId": 1002511,
+          "conceptName": "Heart rate measure duration | Heart study | General heart rate",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "8892-2",
-          "validStartDate": "1970-01-01",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415757-6",
+          "validStartDate": "2019-12-13",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
       },
       {
         "concept": {
-          "conceptId": 3001376,
-          "conceptName": "Heart rate by Pulse oximetry",
+          "conceptId": 1002513,
+          "conceptName": "Heart rate measurement site | Patient | General heart rate",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "8889-8",
-          "validStartDate": "1970-01-01",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415758-4",
+          "validStartDate": "2019-12-13",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
       },
       {
         "concept": {
-          "conceptId": 3003841,
-          "conceptName": "Heart rate Peripheral artery by palpation",
+          "conceptId": 1002662,
+          "conceptName": "Pulse wave form | Dorsal pedal artery Left | Specific heart rate",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "8893-0",
-          "validStartDate": "1970-01-01",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415793-1",
+          "validStartDate": "2019-12-13",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
       },
       {
         "concept": {
-          "conceptId": 3027018,
+          "conceptId": 1002818,
+          "conceptName": "Pulse wave form | Radial artery Left | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415800-4",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1002852,
+          "conceptName": "Pulse wave form | Dorsal pedal artery | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415792-3",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1002962,
+          "conceptName": "Pulse wave form | Carotid artery Right | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415791-5",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1002982,
+          "conceptName": "Heart rate | XXX | Timed specific heart rate",
+          "domainId": "Observation",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415805-3",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003050,
+          "conceptName": "Pulse wave form | Brachial artery Left | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415788-1",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003061,
+          "conceptName": "Arterial pulse quality | XXX | General heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415754-3",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003084,
+          "conceptName": "Pulse wave form | Carotid artery Left | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415790-7",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003265,
+          "conceptName": "Heart rate special circumstances | Patient | General heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415762-6",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003300,
+          "conceptName": "Pulse wave form | Femoral artery Left | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415794-9",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003311,
+          "conceptName": "Pulse wave form | Popliteal artery Right | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415797-2",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003333,
+          "conceptName": "Heart rate method | Heart rate measure | General heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415759-2",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003552,
+          "conceptName": "Pulse wave form | Ulnar artery Right | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415803-8",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003673,
+          "conceptName": "Pulse wave form | Ulnar artery Left | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415802-0",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003863,
+          "conceptName": "Pulse wave form | Posterior tibial artery Left | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415798-0",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003906,
+          "conceptName": "Pulse wave form | Femoral artery Right | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415795-6",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003955,
+          "conceptName": "Heart rate | Fetus | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415787-3",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1003968,
+          "conceptName": "Heart rate | Arterial system | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415780-8",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1004019,
+          "conceptName": "Heart rate method | XXX | General heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415760-0",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1004025,
           "conceptName": "Heart rate",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP29713-2",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1004051,
+          "conceptName": "Pulse wave form | Posterior tibial artery Right | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415799-8",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1004068,
+          "conceptName": "Pulse wave form | Brachial artery Right | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415789-9",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1004074,
+          "conceptName": "Pulse wave form | Popliteal artery Left | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415796-4",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1004109,
+          "conceptName": "Pulse wave form | Radial artery Right | Specific heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415801-2",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 1004152,
+          "conceptName": "Heart rate rhythm | XXX | General heart rate",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP415761-8",
+          "validStartDate": "2019-12-13",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 3013883,
+          "conceptName": "Heart rate at First encounter",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
           "conceptClassId": "Clinical Observation",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "8867-4",
+          "conceptCode": "11328-2",
+          "validStartDate": "1970-01-01",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 21494979,
+          "conceptName": "Pulse intensity assessment panel",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "80284-3",
+          "validStartDate": "2016-06-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
+      },
+      {
+        "concept": {
+          "conceptId": 37045490,
+          "conceptName": "Heart rate.beat-to-beat | Heart | EKG measurements",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "LOINC Hierarchy",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LP406897-1",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
+        "includeDescendants": true,
+        "includeMapped": true
       },
       {
         "concept": {
-          "conceptId": 3040891,
-          "conceptName": "Heart rate --resting",
+          "conceptId": 40654164,
+          "conceptName": "Heart rate|Number=Count/Time|Moment in time|Without specimen",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "40443-4",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 3042292,
-          "conceptName": "Heart rate --post exercise",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "40442-6",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21490670,
-          "conceptName": "Heart rate Intra arterial line by Invasive",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "60978-4",
-          "validStartDate": "2016-06-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21490736,
-          "conceptName": "Heart rate by Noninvasive",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "76477-9",
-          "validStartDate": "2016-06-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21490872,
-          "conceptName": "Heart rate.beat-to-beat by EKG",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "76282-3",
-          "validStartDate": "2016-06-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36303801,
-          "conceptName": "Heart rate --post bronchodilation",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "89282-8",
+          "conceptClassId": "LOINC Group",
+          "standardConcept": "C",
+          "standardConceptCaption": "Non-Standard",
+          "conceptCode": "LG33055-1",
           "validStartDate": "2018-06-15",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36303943,
-          "conceptName": "Heart rate --W exercise",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "89273-7",
-          "validStartDate": "2018-06-15",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36305351,
-          "conceptName": "Heart rate --during anesthesia",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "89278-6",
-          "validStartDate": "2018-06-15",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
+        "includeDescendants": true,
+        "includeMapped": true
       },
       {
         "concept": {
@@ -254,103 +615,27 @@
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
+        "includeDescendants": true,
+        "includeMapped": true
       },
       {
         "concept": {
-          "conceptId": 40769763,
-          "conceptName": "Heart rate Peripheral artery by palpation --resting",
+          "conceptId": 40771925,
+          "conceptName": "Orthostatic heart rate [Difference in rate]",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
           "conceptClassId": "Clinical Observation",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "67129-7",
-          "validStartDate": "2011-06-30",
+          "conceptCode": "69408-3",
+          "validStartDate": "2011-11-01",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40771524,
-          "conceptName": "Heart rate --supine",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "68999-2",
-          "validStartDate": "2011-10-05",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40771525,
-          "conceptName": "Heart rate --sitting",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "69000-8",
-          "validStartDate": "2011-10-05",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40771526,
-          "conceptName": "Heart rate --standing",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "69001-6",
-          "validStartDate": "2011-10-05",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42527141,
-          "conceptName": "Heart rate by Transthoracic impedance",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "76476-1",
-          "validStartDate": "2017-02-21",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
+        "isExcluded": true,
+        "includeDescendants": true,
+        "includeMapped": true
       }
     ]
   },
@@ -361,7 +646,8 @@
       "en": {
         "name": "Heart rate",
         "category": "Vitals",
-        "subcategory": "Haemodynamics"
+        "subcategory": "Haemodynamics",
+        "longDescription": ""
       },
       "fr": {
         "name": "Fréquence cardiaque",
@@ -378,6 +664,6 @@
     },
     "reviews": [],
     "versions": [],
-    "distributionStats": null
+    "distributionStats": {}
   }
 }
