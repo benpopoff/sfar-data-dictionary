@@ -29,11 +29,15 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  html, body { height: 100%; }
+
   body {
     font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: var(--text);
     background: var(--gray-light);
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Header - matches INDICATE Shiny app */
@@ -162,9 +166,9 @@
   .loading-text { color: var(--text-muted); font-size: 14px; }
 
   /* Main layout */
-  .main { padding: 20px 24px; max-width: 1600px; margin: 0 auto; }
+  .main { padding: 10px; flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
   .page { display: none; }
-  .page.active { display: block; }
+  .page.active { display: flex; flex-direction: column; flex: 1; min-height: 0; }
 
   /* Search & filters */
   .toolbar {
@@ -234,7 +238,7 @@
   }
   thead th {
     background: var(--gray-light);
-    padding: 10px 12px;
+    padding: 6px 10px;
     text-align: left;
     font-weight: 600;
     font-size: 12px;
@@ -256,7 +260,7 @@
   }
   tbody tr:hover { background: var(--primary-light); }
   tbody td {
-    padding: 8px 12px;
+    padding: 5px 10px;
     vertical-align: middle;
   }
 
@@ -293,16 +297,65 @@
 
   /* Detail view */
   .detail-view { display: none; }
-  .detail-view.active { display: block; }
+  .detail-view.active { display: flex; flex-direction: column; flex: 1; min-height: 0; }
   .list-view.hidden { display: none; }
 
   .detail-header {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .detail-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     flex-wrap: wrap;
   }
+  .detail-header-tabs {
+    display: flex;
+    gap: 6px;
+  }
+  .tab-btn-blue {
+    background: #d0e4f7;
+    border: none;
+    color: #0f60af;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .tab-btn-blue:hover { background: #b8d4f0; color: #0d4d8f; }
+  .tab-btn-blue.active { background: #0f60af; color: #fff; font-weight: 600; }
+  .tab-btn-blue.active:hover { background: #0d4d8f; }
+  .tab-btn-blue i { font-size: 12px; }
+  .tab-btn-green {
+    background: #d4edda;
+    border: none;
+    color: #155724;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+    font-family: inherit;
+  }
+  .tab-btn-green:hover { background: #c3e6cb; color: #0f4c18; }
+  .tab-btn-green i { font-size: 12px; }
   .btn-back {
     display: inline-flex;
     align-items: center;
@@ -345,7 +398,7 @@
     overflow: hidden;
   }
   .panel-header {
-    padding: 12px 16px;
+    padding: 12px 5px;
     border-bottom: 1px solid var(--gray-200);
     display: flex;
     align-items: center;
@@ -361,38 +414,47 @@
   }
   .panel-body { padding: 16px; }
 
-  /* Concept detail grid */
-  .concept-detail-grid {
+  /* Concept detail grid (matches Shiny app) */
+  .concept-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+  }
+  .concept-details-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 4px 10px;
   }
-  .detail-item label {
-    display: block;
-    font-size: 11px;
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: #f8f9fa;
+    border-left: 3px solid #0f60af;
+    border-radius: 3px;
+    line-height: 1.4;
+  }
+  .detail-item strong {
+    flex-shrink: 0;
+    color: #0f60af;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    color: var(--text-muted);
-    margin-bottom: 2px;
+    font-size: 11px;
+    display: inline-block;
+    min-width: 120px;
   }
-  .detail-item .value {
-    font-size: 14px;
-    word-break: break-word;
+  .detail-item > span {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 12px;
   }
   .detail-item a {
     color: var(--primary);
-    text-decoration: none;
+    text-decoration: underline;
   }
-  .detail-item a:hover { text-decoration: underline; }
-
-  /* Concept set info section */
-  .cs-info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
+  .detail-item a:hover { color: var(--primary-hover); }
 
   /* Pagination */
   .pagination {
@@ -522,14 +584,20 @@
     .panels-2 { grid-template-columns: 1fr; }
     .project-cards { grid-template-columns: 1fr; }
     .concept-detail-grid { grid-template-columns: 1fr; }
-    .cs-info-grid { grid-template-columns: 1fr; }
     .header-title { font-size: 16px; }
     .main { padding: 12px; }
   }
 
+  /* Tab content fills available height */
+  .cs-tab-content { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+  #cs-resolved-view, #cs-expression-view { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+  #cs-resolved-view .panels { flex: 1; min-height: 0; }
+  #cs-resolved-view .panel { display: flex; flex-direction: column; min-height: 0; }
+
   /* Scrollable table in panel */
   .panel-table-wrap {
-    max-height: 400px;
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
   }
   .panel-table-wrap table thead { position: sticky; top: 0; z-index: 1; }
@@ -612,33 +680,40 @@
   }
   .project-name-badge:hover { background: #ea580c; }
 
-
-  .author-link {
-    color: var(--primary);
-    text-decoration: none;
-    cursor: pointer;
+  .concept-set-badges {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  .author-link:hover { text-decoration: underline; }
-
-  .author-detail-row {
-    display: flex;
-    gap: 8px;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border);
-    align-items: baseline;
-  }
-  .author-detail-row:last-child { border-bottom: none; }
-  .author-detail-row label {
-    font-size: 13px;
+  .version-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
     font-weight: 600;
-    color: var(--text-muted);
-    min-width: 100px;
-    flex-shrink: 0;
+    color: #fff;
+    background: #6c757d;
+    border-radius: 12px;
+    vertical-align: middle;
   }
-  .author-detail-row .value {
+
+  .btn-primary-custom {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
     font-size: 13px;
-    color: var(--text);
+    font-weight: 500;
+    transition: background .15s;
+    line-height: 1.4;
   }
+  .btn-primary-custom:hover { background: var(--primary-hover); }
+
 
   .btn-back-discrete {
     display: inline-flex;
@@ -723,6 +798,45 @@
   .toggle-btn:not(:last-child) { border-right: 1px solid var(--border); }
   .toggle-btn:hover { background: var(--gray-light); color: var(--text); }
   .toggle-btn.active { background: var(--primary); color: white; font-weight: 600; }
+
+  /* Column visibility dropdown */
+  .btn-outline-sm {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px 10px;
+    font-size: 12px;
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .btn-outline-sm:hover { border-color: var(--primary); color: var(--primary); }
+  .col-vis-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 4px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    padding: 8px 0;
+    z-index: 50;
+    min-width: 180px;
+  }
+  .col-vis-dropdown label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 14px;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .col-vis-dropdown label:hover { background: var(--gray-light); }
 
   /* Flag badges for expression table */
   .flag-yes { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: #d4edda; color: #155724; }
@@ -809,6 +923,48 @@
   }
   .btn-submit:hover { background: var(--primary-hover); }
 
+  /* Export modal options */
+  .export-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+  }
+  .export-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s ease;
+    background: #fff;
+  }
+  .export-option:hover {
+    border-color: var(--primary);
+    background: #f2f7fd;
+    box-shadow: 0 2px 8px rgba(15,96,175,.1);
+    transform: translateY(-1px);
+  }
+  .export-option-icon {
+    font-size: 24px;
+    min-width: 40px;
+    text-align: center;
+  }
+  .export-option-content { flex: 1; }
+  .export-option-title {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .export-option-subtitle {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
   @media (max-width: 600px) {
     .form-row { grid-template-columns: 1fr; }
     .modal { width: 95vw; }
@@ -862,24 +1018,20 @@
         <table id="cs-table">
           <thead>
             <tr>
-              <th data-sort="category" style="width:12%">Category <span class="sort-icon">&#9650;</span></th>
-              <th data-sort="subcategory" style="width:12%">Subcategory <span class="sort-icon">&#9650;</span></th>
-              <th data-sort="name" style="width:20%">Name <span class="sort-icon">&#9650;</span></th>
-              <th data-sort="description" style="width:24%">Description <span class="sort-icon">&#9650;</span></th>
-              <th data-sort="reviewStatus" style="width:9%" class="td-center">Status <span class="sort-icon">&#9650;</span></th>
-              <th data-sort="version" style="width:6%" class="td-center">Version <span class="sort-icon">&#9650;</span></th>
-              <th data-sort="concepts" style="width:7%" class="td-center">Concepts <span class="sort-icon">&#9650;</span></th>
-              <th data-sort="modified" style="width:8%" class="td-center">Modified <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="category" style="width:14%">Category <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="subcategory" style="width:14%">Subcategory <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="name" style="width:24%">Name <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="description" style="width:30%">Description <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="version" style="width:8%" class="td-center">Version <span class="sort-icon">&#9650;</span></th>
+              <th data-sort="reviewStatus" style="width:10%" class="td-center">Status <span class="sort-icon">&#9650;</span></th>
             </tr>
             <tr class="filter-row">
               <th><select class="column-filter" id="filter-category"><option value="">All</option></select></th>
               <th><select class="column-filter" id="filter-subcategory"><option value="">All</option></select></th>
               <th></th>
               <th></th>
+              <th></th>
               <th><select class="column-filter" id="filter-reviewStatus"><option value="">All</option></select></th>
-              <th></th>
-              <th></th>
-              <th></th>
             </tr>
           </thead>
           <tbody id="cs-tbody"></tbody>
@@ -893,32 +1045,36 @@
 
     <!-- Detail view -->
     <div class="detail-view" id="cs-detail-view">
-      <div class="detail-header" style="align-items:center">
-        <button class="btn-back-discrete" id="cs-back" title="Concept Sets">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-        <span class="project-name-badge" id="cs-detail-title"></span>
-        <div class="detail-meta" id="cs-detail-meta"></div>
-        <button class="export-btn" id="cs-export-json" title="Export concept set as JSON">
-          <i class="fas fa-download"></i> Export JSON
-        </button>
-      </div>
-
-      <!-- 4-tab bar -->
-      <div class="panel-tabs" id="cs-detail-tabs">
-        <button class="panel-tab active" data-tab="concepts"><i class="fas fa-list"></i> Concepts</button>
-        <button class="panel-tab" data-tab="comments"><i class="fas fa-comment-alt"></i> Comments</button>
-        <button class="panel-tab" data-tab="statistics"><i class="fas fa-chart-bar"></i> Statistics</button>
-        <button class="panel-tab" data-tab="review"><i class="fas fa-check-circle"></i> Review</button>
+      <div class="detail-header">
+        <div class="detail-header-left">
+          <button class="btn-back-discrete" id="cs-back" title="Concept Sets">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <span class="project-name-badge" id="cs-detail-title"></span>
+          <span class="concept-set-badges" id="cs-detail-badges"></span>
+          <button class="btn-primary-custom" id="cs-export-json" title="Export">
+            <i class="fas fa-download"></i> Export
+          </button>
+        </div>
+        <div class="detail-header-tabs" id="cs-detail-tabs">
+          <button class="tab-btn-blue active" data-tab="concepts"><i class="fas fa-list"></i> Concepts</button>
+          <button class="tab-btn-blue" data-tab="comments"><i class="fas fa-comment"></i> Comments</button>
+          <button class="tab-btn-blue" data-tab="statistics"><i class="fas fa-chart-bar"></i> Statistics</button>
+          <button class="tab-btn-blue" data-tab="review"><i class="fas fa-clipboard-check"></i> Review</button>
+        </div>
       </div>
 
       <!-- TAB 1: Concepts -->
-      <div class="cs-tab-content" id="cs-tab-concepts" style="margin-top:16px">
+      <div class="cs-tab-content" id="cs-tab-concepts">
         <!-- Resolved/Expression toggle -->
         <div class="toggle-bar" id="cs-concept-toggle-bar">
           <div class="toggle-group">
             <button class="toggle-btn active" data-mode="resolved">Resolved</button>
             <button class="toggle-btn" data-mode="expression">Expression</button>
+          </div>
+          <div class="col-vis-wrapper" id="col-vis-wrapper" style="position:relative">
+            <button class="btn-outline-sm" id="col-vis-btn"><i class="fas fa-columns"></i> Columns</button>
+            <div class="col-vis-dropdown" id="col-vis-dropdown" style="display:none"></div>
           </div>
           <span class="badge badge-count" id="cs-concept-count">0</span>
         </div>
@@ -931,12 +1087,22 @@
                 <table id="resolved-table">
                   <thead>
                     <tr>
-                      <th style="width:14%">Vocabulary</th>
-                      <th style="width:28%">Concept Name</th>
-                      <th style="width:14%">Concept Code</th>
-                      <th style="width:14%">Domain</th>
-                      <th style="width:14%" class="td-center">Standard</th>
-                      <th style="width:16%">Concept Class</th>
+                      <th data-col="conceptId">Concept ID</th>
+                      <th data-col="vocabulary">Vocabulary</th>
+                      <th data-col="name">Concept Name</th>
+                      <th data-col="code">Concept Code</th>
+                      <th data-col="domain">Domain</th>
+                      <th data-col="standard" class="td-center">Standard</th>
+                      <th data-col="class">Concept Class</th>
+                    </tr>
+                    <tr class="filter-row">
+                      <th data-col="conceptId"><input type="text" class="column-filter" id="resolved-filter-conceptId" placeholder="Filter..."></th>
+                      <th data-col="vocabulary"><select class="column-filter" id="resolved-filter-vocabulary"><option value="">All</option></select></th>
+                      <th data-col="name"><input type="text" class="column-filter" id="resolved-filter-name" placeholder="Filter..."></th>
+                      <th data-col="code"><input type="text" class="column-filter" id="resolved-filter-code" placeholder="Filter..."></th>
+                      <th data-col="domain"><select class="column-filter" id="resolved-filter-domain"><option value="">All</option></select></th>
+                      <th data-col="standard"><select class="column-filter" id="resolved-filter-standard"><option value="">All</option></select></th>
+                      <th data-col="class"><select class="column-filter" id="resolved-filter-class"><option value="">All</option></select></th>
                     </tr>
                   </thead>
                   <tbody id="resolved-tbody"></tbody>
@@ -945,7 +1111,7 @@
             </div>
             <div class="panel">
               <div class="panel-header"><h3>Concept Details</h3></div>
-              <div class="panel-body" id="resolved-concept-detail-body">
+              <div class="panel-body" id="resolved-concept-detail-body" style="overflow-y:auto; flex:1; min-height:0">
                 <div class="empty-state"><p>Select a concept to view details</p></div>
               </div>
             </div>
@@ -959,14 +1125,14 @@
               <table id="expression-table">
                 <thead>
                   <tr>
-                    <th style="width:12%">Vocabulary</th>
-                    <th style="width:24%">Concept Name</th>
-                    <th style="width:12%">Concept Code</th>
-                    <th style="width:12%">Domain</th>
-                    <th style="width:10%" class="td-center">Standard</th>
-                    <th style="width:10%" class="td-center">Exclude</th>
-                    <th style="width:10%" class="td-center">Descendants</th>
-                    <th style="width:10%" class="td-center">Mapped</th>
+                    <th data-col="vocabulary" style="width:12%">Vocabulary</th>
+                    <th data-col="name" style="width:24%">Concept Name</th>
+                    <th data-col="code" style="width:12%">Concept Code</th>
+                    <th data-col="domain" style="width:12%">Domain</th>
+                    <th data-col="standard" style="width:10%" class="td-center">Standard</th>
+                    <th data-col="exclude" style="width:10%" class="td-center">Exclude</th>
+                    <th data-col="descendants" style="width:10%" class="td-center">Descendants</th>
+                    <th data-col="mapped" style="width:10%" class="td-center">Mapped</th>
                   </tr>
                 </thead>
                 <tbody id="expression-tbody"></tbody>
@@ -974,18 +1140,10 @@
             </div>
           </div>
         </div>
-
-        <!-- Concept Set Information -->
-        <div class="panel" style="margin-top:20px">
-          <div class="panel-header"><h3>Concept Set Information</h3></div>
-          <div class="panel-body">
-            <div class="cs-info-grid" id="cs-info-grid"></div>
-          </div>
-        </div>
       </div>
 
       <!-- TAB 2: Comments -->
-      <div class="cs-tab-content" id="cs-tab-comments" style="display:none; margin-top:16px">
+      <div class="cs-tab-content" id="cs-tab-comments" style="display:none;">
         <div class="panel">
           <div class="panel-header"><h3>Description</h3></div>
           <div class="panel-body" id="cs-comments-body">
@@ -995,7 +1153,7 @@
       </div>
 
       <!-- TAB 3: Statistics -->
-      <div class="cs-tab-content" id="cs-tab-statistics" style="display:none; margin-top:16px">
+      <div class="cs-tab-content" id="cs-tab-statistics" style="display:none;">
         <div class="panel">
           <div class="panel-header"><h3>Distribution Statistics</h3></div>
           <div class="panel-body" id="cs-statistics-body">
@@ -1009,12 +1167,12 @@
       </div>
 
       <!-- TAB 4: Review -->
-      <div class="cs-tab-content" id="cs-tab-review" style="display:none; margin-top:16px">
+      <div class="cs-tab-content" id="cs-tab-review" style="display:none;">
         <div class="panel">
           <div class="panel-header">
             <h3>Reviews</h3>
             <span class="badge badge-count" id="cs-review-count">0</span>
-            <button class="export-btn" id="cs-add-review-btn" style="margin-left:auto">
+            <button class="tab-btn-green" id="cs-add-review-btn" style="margin-left:auto">
               <i class="fas fa-plus"></i> Add Review
             </button>
           </div>
@@ -1110,22 +1268,9 @@
 </div>
 
 <!-- Author Details Modal -->
-<div class="modal-overlay" id="author-modal" style="display:none">
-  <div class="modal" style="max-width:420px">
-    <div class="modal-header">
-      <h3>Author Details</h3>
-      <button class="modal-close" id="author-modal-close">&times;</button>
-    </div>
-    <div class="modal-body" id="author-modal-body"></div>
-    <div class="modal-footer">
-      <button class="btn-submit" id="author-modal-ok">OK</button>
-    </div>
-  </div>
-</div>
-
 <!-- User Profile Modal -->
 <div class="modal-overlay" id="profile-modal" style="display:none">
-  <div class="modal">
+  <div class="modal" style="width:700px">
     <div class="modal-header">
       <h3>Edit Profile</h3>
       <button class="modal-close" id="profile-modal-close">&times;</button>
@@ -1168,6 +1313,60 @@
       <button class="btn-submit" id="profile-save">
         <i class="fas fa-check"></i> Save
       </button>
+    </div>
+  </div>
+</div>
+
+<!-- Export Modal -->
+<div class="modal-overlay" id="export-modal" style="display:none">
+  <div class="modal" style="max-width:500px">
+    <div class="modal-header">
+      <h3><i class="fas fa-download"></i> Export Concept Set</h3>
+      <button class="modal-close" id="export-modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <!-- Step 1: Choose format -->
+      <div id="export-step-format">
+        <div class="export-options-container">
+          <div class="export-option" data-format="indicate">
+            <div class="export-option-icon"><i class="fas fa-file-code" style="color:#0f60af"></i></div>
+            <div class="export-option-content">
+              <h5 class="export-option-title">Concept Set Specification</h5>
+              <p class="export-option-subtitle">Full OHDSI format with metadata and translations</p>
+            </div>
+          </div>
+          <div class="export-option" data-format="atlas">
+            <div class="export-option-icon"><i class="fas fa-globe" style="color:#28a745"></i></div>
+            <div class="export-option-content">
+              <h5 class="export-option-title">ATLAS</h5>
+              <p class="export-option-subtitle">ATLAS-compatible format (expression only)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Step 2: Choose method -->
+      <div id="export-step-method" style="display:none">
+        <div class="export-options-container">
+          <div class="export-option" data-method="clipboard">
+            <div class="export-option-icon"><i class="fas fa-clipboard" style="color:#0f60af"></i></div>
+            <div class="export-option-content">
+              <h5 class="export-option-title">Copy OHDSI JSON to Clipboard</h5>
+              <p class="export-option-subtitle">Copy the concept set in OHDSI-compliant JSON format to clipboard</p>
+            </div>
+          </div>
+          <div class="export-option" data-method="file">
+            <div class="export-option-icon"><i class="fas fa-file-download" style="color:#28a745"></i></div>
+            <div class="export-option-content">
+              <h5 class="export-option-title">Download OHDSI JSON File</h5>
+              <p class="export-option-subtitle">Download the concept set as a JSON file following OHDSI specification</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="export-back" style="display:none"><i class="fas fa-arrow-left"></i> Back</button>
+      <button class="btn-cancel" id="export-cancel">Cancel</button>
     </div>
   </div>
 </div>
@@ -1236,9 +1435,16 @@
   let sessionReviews = {};
 
   // ==================== DATA LOADING ====================
+  var resolvedIndex = {}; // conceptSetId -> resolvedConcepts[]
+
   function loadData() {
     conceptSets = DATA.conceptSets || [];
     projects = DATA.projects || [];
+    // Build resolved concepts index
+    var resolved = DATA.resolvedConceptSets || [];
+    resolved.forEach(function(r) {
+      resolvedIndex[r.conceptSetId] = r.resolvedConcepts || [];
+    });
     document.getElementById('loading').classList.add('hidden');
     renderAll();
   }
@@ -1377,8 +1583,7 @@
     if (!csFilter) {
       data.sort((a, b) => {
         let va = a[csSort.key], vb = b[csSort.key];
-        if (csSort.key === 'concepts') { va = +va; vb = +vb; }
-        else { va = (va || '').toString().toLowerCase(); vb = (vb || '').toString().toLowerCase(); }
+        va = (va || '').toString().toLowerCase(); vb = (vb || '').toString().toLowerCase();
         if (va < vb) return csSort.asc ? -1 : 1;
         if (va > vb) return csSort.asc ? 1 : -1;
         return 0;
@@ -1452,10 +1657,8 @@
       '<td>' + escapeHtml(d.subcategory) + '</td>' +
       '<td><strong>' + escapeHtml(d.name) + '</strong></td>' +
       '<td class="desc-truncated">' + escapeHtml(truncate(d.description, 100)) + '</td>' +
-      '<td class="td-center">' + statusBadge(d.reviewStatus) + '</td>' +
       '<td class="td-center">' + escapeHtml(d.version) + '</td>' +
-      '<td class="td-center"><span class="badge badge-count">' + d.concepts + '</span></td>' +
-      '<td class="td-center">' + escapeHtml(d.modified) + '</td>' +
+      '<td class="td-center">' + statusBadge(d.reviewStatus) + '</td>' +
       '</tr>'
     ).join('');
 
@@ -1487,7 +1690,7 @@
   // ==================== CS DETAIL: TABS & TOGGLE ====================
   function switchCSDetailTab(tabName) {
     csDetailTab = tabName;
-    document.querySelectorAll('#cs-detail-tabs .panel-tab').forEach(btn =>
+    document.querySelectorAll('#cs-detail-tabs .tab-btn-blue').forEach(btn =>
       btn.classList.toggle('active', btn.dataset.tab === tabName)
     );
     ['concepts', 'comments', 'statistics', 'review'].forEach(function(t) {
@@ -1503,6 +1706,7 @@
     );
     document.getElementById('cs-expression-view').style.display = (mode === 'expression') ? '' : 'none';
     document.getElementById('cs-resolved-view').style.display = (mode === 'resolved') ? '' : 'none';
+    buildColVisDropdown();
     if (mode === 'expression') renderExpressionTable();
     else renderResolvedTable();
   }
@@ -1529,53 +1733,247 @@
         '<td class="td-center">' + (item.includeMapped ? '<span class="' + (item.isExcluded ? 'flag-yes-danger' : 'flag-yes') + '">Yes</span>' : '<span class="flag-no">No</span>') + '</td>' +
         '</tr>';
     }).join('');
+    applyColumnVisibility();
   }
 
-  function renderResolvedTable() {
+  var resolvedFilterDefaults = { standard: 'S' };
+
+  // Column visibility configs
+  var resolvedColumns = {
+    conceptId: { label: 'Concept ID', visible: true },
+    vocabulary: { label: 'Vocabulary', visible: true },
+    name: { label: 'Concept Name', visible: true },
+    code: { label: 'Concept Code', visible: true },
+    domain: { label: 'Domain', visible: false },
+    standard: { label: 'Standard', visible: true },
+    'class': { label: 'Concept Class', visible: false }
+  };
+  var expressionColumns = {
+    vocabulary: { label: 'Vocabulary', visible: true },
+    name: { label: 'Concept Name', visible: true },
+    code: { label: 'Concept Code', visible: true },
+    domain: { label: 'Domain', visible: true },
+    standard: { label: 'Standard', visible: true },
+    exclude: { label: 'Exclude', visible: true },
+    descendants: { label: 'Descendants', visible: true },
+    mapped: { label: 'Mapped', visible: true }
+  };
+
+  function getActiveColConfig() {
+    return csConceptMode === 'expression' ? expressionColumns : resolvedColumns;
+  }
+  function getActiveTableId() {
+    return csConceptMode === 'expression' ? 'expression-table' : 'resolved-table';
+  }
+
+  function applyColumnVisibility() {
+    var cols = getActiveColConfig();
+    var table = document.getElementById(getActiveTableId());
+    var keys = Object.keys(cols);
+    keys.forEach(function(col) {
+      var vis = cols[col].visible;
+      table.querySelectorAll('[data-col="' + col + '"]').forEach(function(el) {
+        el.style.display = vis ? '' : 'none';
+      });
+      var colIndex = keys.indexOf(col);
+      table.querySelectorAll('tbody tr').forEach(function(tr) {
+        var td = tr.children[colIndex];
+        if (td) td.style.display = vis ? '' : 'none';
+      });
+    });
+  }
+
+  function buildColVisDropdown() {
+    var cols = getActiveColConfig();
+    var dd = document.getElementById('col-vis-dropdown');
+    dd.innerHTML = Object.keys(cols).map(function(col) {
+      var c = cols[col];
+      return '<label><input type="checkbox" data-col="' + col + '"' +
+        (c.visible ? ' checked' : '') + '> ' + escapeHtml(c.label) + '</label>';
+    }).join('');
+  }
+
+  function standardLabel(sc) {
+    if (sc === 'S') return 'Standard';
+    if (sc === 'C') return 'Classification';
+    return 'Non-standard';
+  }
+
+  function populateResolvedFilters(concepts) {
+    var vocabs = {}, domains = {}, standards = {}, classes = {};
+    concepts.forEach(function(c) {
+      vocabs[c.vocabularyId || ''] = true;
+      domains[c.domainId || ''] = true;
+      var sc = c.standardConcept || '';
+      standards[sc] = standardLabel(sc);
+      classes[c.conceptClassId || ''] = true;
+    });
+
+    function fillSelect(id, values, labelMap) {
+      var sel = document.getElementById(id);
+      var cur = sel.value;
+      var opts = '<option value="">All</option>';
+      Object.keys(values).sort().forEach(function(v) {
+        var label = labelMap ? (labelMap[v] || v) : v;
+        opts += '<option value="' + escapeHtml(v) + '">' + escapeHtml(label || '(empty)') + '</option>';
+      });
+      sel.innerHTML = opts;
+      sel.value = cur;
+    }
+
+    fillSelect('resolved-filter-vocabulary', vocabs);
+    fillSelect('resolved-filter-domain', domains);
+    fillSelect('resolved-filter-standard', standards, standards);
+    fillSelect('resolved-filter-class', classes);
+  }
+
+  function getResolvedFilters() {
+    return {
+      conceptId: document.getElementById('resolved-filter-conceptId').value.toLowerCase(),
+      vocabulary: document.getElementById('resolved-filter-vocabulary').value,
+      name: document.getElementById('resolved-filter-name').value.toLowerCase(),
+      code: document.getElementById('resolved-filter-code').value.toLowerCase(),
+      domain: document.getElementById('resolved-filter-domain').value,
+      standard: document.getElementById('resolved-filter-standard').value,
+      conceptClass: document.getElementById('resolved-filter-class').value
+    };
+  }
+
+  function fuzzyMatch(text, query) {
+    var ti = 0;
+    for (var qi = 0; qi < query.length; qi++) {
+      var ch = query[qi];
+      while (ti < text.length && text[ti] !== ch) ti++;
+      if (ti >= text.length) return false;
+      ti++;
+    }
+    return true;
+  }
+
+  function filterResolvedConcepts(concepts, filters) {
+    return concepts.filter(function(c) {
+      if (filters.conceptId && String(c.conceptId).toLowerCase().indexOf(filters.conceptId) === -1) return false;
+      if (filters.vocabulary && (c.vocabularyId || '') !== filters.vocabulary) return false;
+      if (filters.name && !fuzzyMatch((c.conceptName || '').toLowerCase(), filters.name)) return false;
+      if (filters.code && (c.conceptCode || '').toLowerCase().indexOf(filters.code) === -1) return false;
+      if (filters.domain && (c.domainId || '') !== filters.domain) return false;
+      if (filters.standard && (c.standardConcept || '') !== filters.standard) return false;
+      if (filters.conceptClass && (c.conceptClassId || '') !== filters.conceptClass) return false;
+      return true;
+    });
+  }
+
+  function renderResolvedTable(keepFilters) {
     if (!selectedConceptSet) return;
+    var allConcepts = resolvedIndex[selectedConceptSet.id] || [];
     var tbody = document.getElementById('resolved-tbody');
-    tbody.innerHTML = '<tr><td colspan="6" class="empty-state">' +
-      '<p>Resolved concepts are not yet available.</p>' +
-      '<p style="font-size:12px; margin-top:4px; color:var(--text-muted)">Concept resolution requires the INDICATE Data Dictionary application with an OMOP vocabulary database.</p>' +
-      '</td></tr>';
-    document.getElementById('cs-concept-count').textContent = '0';
     document.getElementById('resolved-concept-detail-body').innerHTML =
       '<div class="empty-state"><p>Select a concept to view details</p></div>';
+    var colCount = Object.keys(resolvedColumns).length;
+
+    if (!keepFilters) {
+      document.getElementById('resolved-filter-conceptId').value = '';
+      document.getElementById('resolved-filter-vocabulary').value = '';
+      document.getElementById('resolved-filter-name').value = '';
+      document.getElementById('resolved-filter-code').value = '';
+      document.getElementById('resolved-filter-domain').value = '';
+      document.getElementById('resolved-filter-standard').value = resolvedFilterDefaults.standard;
+      document.getElementById('resolved-filter-class').value = '';
+    }
+
+    populateResolvedFilters(allConcepts);
+
+    if (!keepFilters) {
+      document.getElementById('resolved-filter-standard').value = resolvedFilterDefaults.standard;
+    }
+
+    var filters = getResolvedFilters();
+    var concepts = filterResolvedConcepts(allConcepts, filters);
+    document.getElementById('cs-concept-count').textContent = concepts.length + ' / ' + allConcepts.length;
+
+    if (allConcepts.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="' + colCount + '" class="empty-state">' +
+        '<p>No resolved concepts available.</p></td></tr>';
+      applyColumnVisibility();
+      return;
+    }
+    if (concepts.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="' + colCount + '" class="empty-state">' +
+        '<p>No concepts match the current filters.</p></td></tr>';
+      applyColumnVisibility();
+      return;
+    }
+    tbody.innerHTML = concepts.map(function(c) {
+      var origIdx = allConcepts.indexOf(c);
+      return '<tr data-idx="' + origIdx + '">' +
+        '<td>' + c.conceptId + '</td>' +
+        '<td>' + escapeHtml(c.vocabularyId) + '</td>' +
+        '<td>' + escapeHtml(c.conceptName) + '</td>' +
+        '<td>' + escapeHtml(c.conceptCode) + '</td>' +
+        '<td>' + escapeHtml(c.domainId) + '</td>' +
+        '<td class="td-center">' + standardBadge(c) + '</td>' +
+        '<td>' + escapeHtml(c.conceptClassId) + '</td>' +
+        '</tr>';
+    }).join('');
+    applyColumnVisibility();
+  }
+
+  // FHIR URL builder (matches Shiny app)
+  function buildFhirUrl(vocabularyId, conceptCode) {
+    var fhirSystems = {
+      SNOMED: 'http://snomed.info/sct',
+      LOINC: 'http://loinc.org',
+      ICD10: 'http://hl7.org/fhir/sid/icd-10',
+      ICD10CM: 'http://hl7.org/fhir/sid/icd-10-cm',
+      UCUM: 'http://unitsofmeasure.org',
+      RxNorm: 'http://www.nlm.nih.gov/research/umls/rxnorm'
+    };
+    var noLink = ['RxNorm Extension', 'OMOP Extension'];
+    if (noLink.indexOf(vocabularyId) !== -1) return null;
+    var system = fhirSystems[vocabularyId];
+    if (!system) return null;
+    return 'https://tx.fhir.org/r4/CodeSystem/$lookup?system=' +
+      encodeURIComponent(system) + '&code=' + encodeURIComponent(conceptCode);
   }
 
   function showResolvedConceptDetail(concept) {
     var el = document.getElementById('resolved-concept-detail-body');
     var athenaUrl = 'https://athena.ohdsi.org/search-terms/terms/' + concept.conceptId;
-    el.innerHTML =
-      '<div class="concept-detail-grid">' +
-      '<div class="detail-item"><label>Concept Name</label><div class="value">' + escapeHtml(concept.conceptName) + '</div></div>' +
-      '<div class="detail-item"><label>Concept ID</label><div class="value"><a href="' + athenaUrl + '" target="_blank">' + concept.conceptId + ' &#8599;</a></div></div>' +
-      '<div class="detail-item"><label>Vocabulary</label><div class="value">' + escapeHtml(concept.vocabularyId) + '</div></div>' +
-      '<div class="detail-item"><label>Concept Code</label><div class="value">' + escapeHtml(concept.conceptCode) + '</div></div>' +
-      '<div class="detail-item"><label>Domain</label><div class="value">' + escapeHtml(concept.domainId) + '</div></div>' +
-      '<div class="detail-item"><label>Concept Class</label><div class="value">' + escapeHtml(concept.conceptClassId) + '</div></div>' +
-      '<div class="detail-item"><label>Standard</label><div class="value">' + standardBadge(concept) + '</div></div>' +
-      '<div class="detail-item"><label>Validity</label><div class="value">' + validBadge(concept) + '</div></div>' +
-      '<div class="detail-item"><label>Valid Start</label><div class="value">' + escapeHtml(concept.validStartDate) + '</div></div>' +
-      '<div class="detail-item"><label>Valid End</label><div class="value">' + escapeHtml(concept.validEndDate) + '</div></div>' +
-      '</div>';
-  }
+    var fhirUrl = buildFhirUrl(concept.vocabularyId, concept.conceptCode);
 
-  function renderCSInfoGrid(cs) {
-    var info = document.getElementById('cs-info-grid');
-    var details = cs.metadata && cs.metadata.createdByDetails;
-    var rawUrl = 'https://raw.githubusercontent.com/indicate-eu/data-dictionary-content/main/concept_sets/' + cs.id + '.json';
-    var authorLink = details
-      ? '<a href="#" class="author-link" id="cs-author-link">' + escapeHtml(cs.createdBy || '') + '</a>'
-      : escapeHtml(cs.createdBy || '');
-    info.innerHTML =
-      '<div class="detail-item"><label>ID</label><div class="value">' + cs.id + ' &mdash; <a href="' + rawUrl + '" target="_blank">View JSON <i class="fas fa-external-link-alt" style="font-size:11px"></i></a></div></div>' +
-      '<div class="detail-item"><label>Version</label><div class="value">' + escapeHtml(cs.version) + '</div></div>' +
-      '<div class="detail-item"><label>Created By</label><div class="value">' + authorLink + '</div></div>' +
-      '<div class="detail-item"><label>Created Date</label><div class="value">' + escapeHtml(cs.createdDate || '') + '</div></div>' +
-      '<div class="detail-item"><label>Modified Date</label><div class="value">' + escapeHtml(cs.modifiedDate || '') + '</div></div>' +
-      '<div class="detail-item"><label>Tool</label><div class="value">' + escapeHtml(cs.createdByTool || '') + '</div></div>' +
-      '<div class="detail-item"><label>Status</label><div class="value">' + statusBadge(cs.reviewStatus) + '</div></div>';
+    // Standard text & color
+    var sc = concept.standardConcept || '';
+    var standardText = sc === 'S' ? 'Standard' : (sc === 'C' ? 'Classification' : 'Non-standard');
+    var standardColor = sc === 'S' ? '#28a745' : (sc === 'C' ? '#6c757d' : '#dc3545');
+
+    // Validity
+    var isValid = !concept.invalidReason || concept.invalidReason === '' || concept.invalidReason === 'V';
+    var validityText = isValid ? 'Valid' : 'Invalid (' + escapeHtml(concept.invalidReason || '') + ')';
+    var validityColor = isValid ? '#28a745' : '#dc3545';
+
+    // FHIR display
+    var fhirHtml = fhirUrl
+      ? '<a href="' + fhirUrl + '" target="_blank">' + escapeHtml(concept.vocabularyId) + '</a>'
+      : '<span style="color:var(--text-muted)">No link available</span>';
+
+    el.innerHTML =
+      '<div class="concept-details-container"><div class="concept-details-grid">' +
+      // Row 1: Concept Name | View in ATHENA
+      '<div class="detail-item"><strong>Concept Name:</strong><span>' + escapeHtml(concept.conceptName) + '</span></div>' +
+      '<div class="detail-item"><strong>View in ATHENA:</strong><span><a href="' + athenaUrl + '" target="_blank">' + concept.conceptId + '</a></span></div>' +
+      // Row 2: Vocabulary ID | FHIR Resource
+      '<div class="detail-item"><strong>Vocabulary ID:</strong><span>' + escapeHtml(concept.vocabularyId) + '</span></div>' +
+      '<div class="detail-item"><strong>FHIR Resource:</strong><span>' + fhirHtml + '</span></div>' +
+      // Row 3: Concept Code | Standard
+      '<div class="detail-item"><strong>Concept Code:</strong><span>' + escapeHtml(concept.conceptCode) + '</span></div>' +
+      '<div class="detail-item"><strong>Standard:</strong><span style="color:' + standardColor + ';font-weight:600">' + escapeHtml(standardText) + '</span></div>' +
+      // Row 4: Domain | Validity
+      '<div class="detail-item"><strong>Domain:</strong><span>' + escapeHtml(concept.domainId) + '</span></div>' +
+      '<div class="detail-item"><strong>Validity:</strong><span style="color:' + validityColor + ';font-weight:600">' + validityText + '</span></div>' +
+      // Row 5: Concept Class | empty
+      '<div class="detail-item"><strong>Concept Class:</strong><span>' + escapeHtml(concept.conceptClassId) + '</span></div>' +
+      '<div></div>' +
+      '</div></div>';
   }
 
   function renderCommentsTab(cs) {
@@ -1655,16 +2053,17 @@
     document.getElementById('cs-detail-view').classList.add('active');
 
     document.getElementById('cs-detail-title').textContent = tr.name || cs.name;
-    document.getElementById('cs-detail-meta').innerHTML =
-      '<span class="badge badge-category">' + escapeHtml(tr.category || '') + '</span>' +
-      '<span class="badge badge-category">' + escapeHtml(tr.subcategory || '') + '</span>';
+    var statusClass = (cs.reviewStatus || 'draft').replace(/\s+/g, '_').toLowerCase();
+    var statusLabel = (cs.reviewStatus || 'Draft').charAt(0).toUpperCase() + (cs.reviewStatus || 'draft').slice(1).replace(/_/g, ' ');
+    document.getElementById('cs-detail-badges').innerHTML =
+      '<span class="version-badge">v' + escapeHtml(cs.version || '1.0.0') + '</span>' +
+      '<span class="status-badge ' + statusClass + '">' + escapeHtml(statusLabel) + '</span>';
 
     // Reset to Concepts tab, Resolved mode
     switchCSDetailTab('concepts');
     switchConceptMode('resolved');
 
     // Render all tabs
-    renderCSInfoGrid(cs);
     renderCommentsTab(cs);
     renderStatisticsTab(cs);
     renderReviewTab(cs);
@@ -1694,21 +2093,7 @@
     document.getElementById('user-badge-name').textContent = name || 'Guest';
   }
 
-  function openAuthorModal(cs) {
-    var d = cs && cs.metadata && cs.metadata.createdByDetails;
-    if (!d) return;
-    var rows = '';
-    if (d.firstName || d.lastName) rows += '<div class="author-detail-row"><label>Name</label><div class="value">' + escapeHtml((d.firstName || '') + ' ' + (d.lastName || '')) + '</div></div>';
-    if (d.affiliation) rows += '<div class="author-detail-row"><label>Affiliation</label><div class="value">' + escapeHtml(d.affiliation) + '</div></div>';
-    if (d.profession) rows += '<div class="author-detail-row"><label>Profession</label><div class="value">' + escapeHtml(d.profession) + '</div></div>';
-    if (d.orcid) rows += '<div class="author-detail-row"><label>ORCID</label><div class="value"><a href="https://orcid.org/' + d.orcid + '" target="_blank">' + escapeHtml(d.orcid) + ' <i class="fas fa-external-link-alt" style="font-size:11px"></i></a></div></div>';
-    document.getElementById('author-modal-body').innerHTML = rows || '<p style="color:var(--text-muted)">No author details available.</p>';
-    document.getElementById('author-modal').style.display = 'flex';
-  }
 
-  function closeAuthorModal() {
-    document.getElementById('author-modal').style.display = 'none';
-  }
 
   function getKnownAuthors() {
     var seen = {};
@@ -1834,8 +2219,36 @@
   }
 
   // ==================== JSON EXPORT ====================
-  function exportConceptSetJSON() {
+  var exportFormat = null; // 'indicate' or 'atlas'
+
+  function openExportModal() {
     if (!selectedConceptSet) return;
+    exportFormat = null;
+    document.getElementById('export-step-format').style.display = '';
+    document.getElementById('export-step-method').style.display = 'none';
+    document.getElementById('export-back').style.display = 'none';
+    document.getElementById('export-modal').style.display = 'flex';
+  }
+
+  function closeExportModal() {
+    document.getElementById('export-modal').style.display = 'none';
+  }
+
+  function exportStepFormat(format) {
+    exportFormat = format;
+    document.getElementById('export-step-format').style.display = 'none';
+    document.getElementById('export-step-method').style.display = '';
+    document.getElementById('export-back').style.display = '';
+  }
+
+  function exportStepBack() {
+    exportFormat = null;
+    document.getElementById('export-step-format').style.display = '';
+    document.getElementById('export-step-method').style.display = 'none';
+    document.getElementById('export-back').style.display = 'none';
+  }
+
+  function buildIndicateJSON() {
     var cs = JSON.parse(JSON.stringify(selectedConceptSet));
     var sessionRevs = sessionReviews[cs.id] || [];
     if (sessionRevs.length > 0) {
@@ -1843,14 +2256,62 @@
       if (!cs.metadata.reviews) cs.metadata.reviews = [];
       cs.metadata.reviews = cs.metadata.reviews.concat(sessionRevs);
     }
-    var json = JSON.stringify(cs, null, 2);
-    var blob = new Blob([json], { type: 'application/json' });
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement('a');
-    a.href = url;
-    a.download = cs.id + '.json';
-    a.click();
-    URL.revokeObjectURL(url);
+    return JSON.stringify(cs, null, 2);
+  }
+
+  function buildAtlasJSON() {
+    var cs = selectedConceptSet;
+    var items = (cs.expression && cs.expression.items) || [];
+    var atlasItems = items.map(function(item) {
+      var c = item.concept;
+      var sc = c.standardConcept;
+      var vs = (c.validStartDate || '19700101').replace(/-/g, '');
+      var ve = (c.validEndDate || '20991231').replace(/-/g, '');
+      return {
+        concept: {
+          CONCEPT_ID: c.conceptId,
+          CONCEPT_NAME: c.conceptName,
+          DOMAIN_ID: c.domainId,
+          VOCABULARY_ID: c.vocabularyId,
+          CONCEPT_CLASS_ID: c.conceptClassId,
+          STANDARD_CONCEPT: sc || '',
+          STANDARD_CONCEPT_CAPTION: sc === 'S' ? 'Standard' : (sc === 'C' ? 'Classification' : 'Non-Standard'),
+          CONCEPT_CODE: c.conceptCode,
+          VALID_START_DATE: vs,
+          VALID_END_DATE: ve,
+          INVALID_REASON: c.invalidReason || 'V',
+          INVALID_REASON_CAPTION: c.invalidReasonCaption || 'Valid'
+        },
+        isExcluded: item.isExcluded || false,
+        includeDescendants: item.includeDescendants || false,
+        includeMapped: item.includeMapped || false
+      };
+    });
+    return JSON.stringify({ items: atlasItems }, null, 2);
+  }
+
+  function executeExport(method) {
+    if (!selectedConceptSet || !exportFormat) return;
+    var json = (exportFormat === 'atlas') ? buildAtlasJSON() : buildIndicateJSON();
+    var filename = selectedConceptSet.id + '.json';
+
+    if (method === 'clipboard') {
+      navigator.clipboard.writeText(json).then(function() {
+        alert('Copied to clipboard!');
+      }).catch(function() {
+        // Fallback: show in textarea
+        prompt('Copy the JSON below:', json);
+      });
+    } else {
+      var blob = new Blob([json], { type: 'application/json' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+    closeExportModal();
   }
 
   // ==================== PROJECTS ====================
@@ -1869,9 +2330,9 @@
         '<h3>' + escapeHtml(p.name) + '</h3>' +
         '<p>' + escapeHtml(p.description || 'No description') + '</p>' +
         '<div class="project-card-footer">' +
-          '<span>&#128203; ' + csCount + ' concept sets</span>' +
-          '<span>&#128100; ' + escapeHtml(p.createdBy || '') + '</span>' +
-          '<span>&#128197; ' + escapeHtml(p.createdDate || '') + '</span>' +
+          '<span><i class="fas fa-list"></i> ' + csCount + ' concept sets</span>' +
+          '<span><i class="fas fa-user"></i> ' + escapeHtml(p.createdBy || '') + '</span>' +
+          '<span><i class="fas fa-calendar-alt"></i> ' + escapeHtml(p.createdDate || '') + '</span>' +
         '</div>' +
         '</div>';
     }).join('');
@@ -1887,8 +2348,8 @@
 
     document.getElementById('proj-detail-title').textContent = proj.name;
     document.getElementById('proj-detail-meta').innerHTML =
-      '<span class="badge badge-count">&#128203; ' + (proj.conceptSetIds || []).length + ' concept sets</span>' +
-      '<span style="color:var(--text-muted); font-size:13px">' + escapeHtml(proj.createdBy || '') + ' &middot; ' + escapeHtml(proj.createdDate || '') + '</span>';
+      '<span class="badge badge-count"><i class="fas fa-list"></i> ' + (proj.conceptSetIds || []).length + ' concept sets</span>' +
+      '<span style="color:var(--text-muted); font-size:13px"><i class="fas fa-user"></i> ' + escapeHtml(proj.createdBy || '') + ' &middot; <i class="fas fa-calendar-alt"></i> ' + escapeHtml(proj.createdDate || '') + '</span>';
 
     // Context tab
     const descSec = document.getElementById('proj-description-section');
@@ -2055,7 +2516,7 @@
 
   // CS detail tabs
   document.getElementById('cs-detail-tabs').addEventListener('click', e => {
-    const tab = e.target.closest('.panel-tab');
+    const tab = e.target.closest('.tab-btn-blue');
     if (!tab) return;
     switchCSDetailTab(tab.dataset.tab);
   });
@@ -2070,26 +2531,61 @@
   // Resolved concept row click -> concept detail
   document.getElementById('resolved-tbody').addEventListener('click', e => {
     const tr = e.target.closest('tr[data-idx]');
-    if (!tr) return;
-    // Future: showResolvedConceptDetail when data exists
+    if (!tr || !selectedConceptSet) return;
+    var concepts = resolvedIndex[selectedConceptSet.id] || [];
+    var idx = parseInt(tr.dataset.idx);
+    if (concepts[idx]) showResolvedConceptDetail(concepts[idx]);
+  });
+
+  // Resolved table filters
+  ['resolved-filter-vocabulary', 'resolved-filter-domain', 'resolved-filter-standard', 'resolved-filter-class'].forEach(function(id) {
+    document.getElementById(id).addEventListener('change', function() { renderResolvedTable(true); });
+  });
+  ['resolved-filter-conceptId', 'resolved-filter-name', 'resolved-filter-code'].forEach(function(id) {
+    document.getElementById(id).addEventListener('input', function() { renderResolvedTable(true); });
+  });
+
+  // Column visibility dropdown
+  buildColVisDropdown();
+  document.getElementById('col-vis-btn').addEventListener('click', function(e) {
+    e.stopPropagation();
+    var dd = document.getElementById('col-vis-dropdown');
+    dd.style.display = dd.style.display === 'none' ? '' : 'none';
+  });
+  document.getElementById('col-vis-dropdown').addEventListener('change', function(e) {
+    var cb = e.target;
+    if (cb.dataset.col) {
+      getActiveColConfig()[cb.dataset.col].visible = cb.checked;
+      applyColumnVisibility();
+    }
+  });
+  document.addEventListener('click', function(e) {
+    var dd = document.getElementById('col-vis-dropdown');
+    if (dd.style.display !== 'none' && !e.target.closest('#col-vis-wrapper')) {
+      dd.style.display = 'none';
+    }
   });
 
   // Export JSON
-  document.getElementById('cs-export-json').addEventListener('click', exportConceptSetJSON);
+  // Export modal events
+  document.getElementById('cs-export-json').addEventListener('click', openExportModal);
+  document.getElementById('export-modal-close').addEventListener('click', closeExportModal);
+  document.getElementById('export-cancel').addEventListener('click', closeExportModal);
+  document.getElementById('export-back').addEventListener('click', exportStepBack);
+  document.getElementById('export-modal').addEventListener('click', e => {
+    if (e.target === document.getElementById('export-modal')) closeExportModal();
+  });
+  document.getElementById('export-step-format').addEventListener('click', function(e) {
+    var opt = e.target.closest('.export-option[data-format]');
+    if (opt) exportStepFormat(opt.dataset.format);
+  });
+  document.getElementById('export-step-method').addEventListener('click', function(e) {
+    var opt = e.target.closest('.export-option[data-method]');
+    if (opt) executeExport(opt.dataset.method);
+  });
 
   // Add Review button
   document.getElementById('cs-add-review-btn').addEventListener('click', openReviewModal);
-
-  // Author modal events
-  document.getElementById('cs-info-grid').addEventListener('click', function(e) {
-    var link = e.target.closest('#cs-author-link');
-    if (link) { e.preventDefault(); openAuthorModal(selectedConceptSet); }
-  });
-  document.getElementById('author-modal-close').addEventListener('click', closeAuthorModal);
-  document.getElementById('author-modal-ok').addEventListener('click', closeAuthorModal);
-  document.getElementById('author-modal').addEventListener('click', e => {
-    if (e.target === document.getElementById('author-modal')) closeAuthorModal();
-  });
 
   // User profile modal events
   document.getElementById('user-badge').addEventListener('click', openProfileModal);
@@ -2233,7 +2729,7 @@
   // Keyboard: Escape to go back (modals have priority)
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
-      if (document.getElementById('author-modal').style.display !== 'none') closeAuthorModal();
+      if (document.getElementById('export-modal').style.display !== 'none') closeExportModal();
       else if (document.getElementById('profile-modal').style.display !== 'none') closeProfileModal();
       else if (document.getElementById('review-modal').style.display !== 'none') closeReviewModal();
       else if (selectedConceptSet) hideCSDetail();
