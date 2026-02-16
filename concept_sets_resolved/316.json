@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 316,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44782824,
+      "conceptName": "Mean inspiratory airway pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "698821009",
+      "standardConcept": "S"
+    }
+  ]
+}

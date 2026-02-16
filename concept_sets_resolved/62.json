@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 62,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40896006,
+      "conceptName": "Ximelagatran 24 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2093968",
+      "standardConcept": "S"
+    }
+  ]
+}

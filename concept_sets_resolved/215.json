@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 215,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3010838,
+      "conceptName": "Calcium [Moles/time] in 24 hour Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "14637-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3018133,
+      "conceptName": "Calcium [Moles/volume] in Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2004-0",
+      "standardConcept": "S"
+    }
+  ]
+}

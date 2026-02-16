@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 47,
+  "resolvedConcepts": [
+    {
+      "conceptId": 19134706,
+      "conceptName": "fluindione 20 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "844899",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43147543,
+      "conceptName": "fluindione 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP462592",
+      "standardConcept": "S"
+    }
+  ]
+}

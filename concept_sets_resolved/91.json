@@ -1,0 +1,932 @@
+{
+  "conceptSetId": 91,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40835570,
+      "conceptName": "Ketoconazole 0.000667 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033532",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41241370,
+      "conceptName": "Ketoconazole 0.00133 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2439332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43517192,
+      "conceptName": "Ketoconazole 0.01 MG/MG Medicated Shampoo",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2804307",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43516778,
+      "conceptName": "Ketoconazole 0.02 MG/MG Medicated Shampoo",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2803893",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35412142,
+      "conceptName": "Ketoconazole 0.02 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1145727",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21171868,
+      "conceptName": "Ketoconazole 0.02 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP390767",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110055,
+      "conceptName": "Ketoconazole 0.02 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104686",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084279,
+      "conceptName": "Ketoconazole 0.02 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078910",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41303363,
+      "conceptName": "Ketoconazole 0.0381 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2501325",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42711222,
+      "conceptName": "Ketoconazole 0.0382 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2728515",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41053683,
+      "conceptName": "Ketoconazole 0.167 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2251645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085234,
+      "conceptName": "Ketoconazole 0.19 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283196",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41178987,
+      "conceptName": "Ketoconazole 0.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2376949",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40897815,
+      "conceptName": "Ketoconazole 0.333 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2095777",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21152199,
+      "conceptName": "Ketoconazole 12 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP390714",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21083478,
+      "conceptName": "Ketoconazole 15 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP390698",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44161157,
+      "conceptName": "Ketoconazole 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3037880",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40928906,
+      "conceptName": "Ketoconazole 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2126868",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887695,
+      "conceptName": "Ketoconazole 20 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998983",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884785,
+      "conceptName": "Ketoconazole 20 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993071",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35162105,
+      "conceptName": "Ketoconazole 20 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4819068",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41303364,
+      "conceptName": "Ketoconazole 21 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2501326",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44506652,
+      "conceptName": "acetic acid 20 MG/ML / chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1439948",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234499,
+      "conceptName": "betamethasone 0.001 MG/MG / ketoconazole 0.02 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215203",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793510,
+      "conceptName": "chlorhexidine 0.02 MG/MG / ketoconazole 0.01 MG/MG Medicated Pad",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1994333",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44818384,
+      "conceptName": "chlorhexidine gluconate 10 MG/ML / ketoconazole 2.5 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1537189",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44818402,
+      "conceptName": "chlorhexidine gluconate 10 MG/ML / ketoconazole 2.5 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1537336",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44816231,
+      "conceptName": "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML / salicyloyl phytosphingosine 0.2 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1495165",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 780049,
+      "conceptName": "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Medicated Pad",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2604934",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37003105,
+      "conceptName": "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2458971",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36250030,
+      "conceptName": "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1797506",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221360,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / hydrocortisone 10 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1648132",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 746469,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / hydrocortisone 5 MG/ML / ketoconazole 10 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2663929",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44816239,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.2 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1495199",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605249,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.4 MG/ML Medicated Pad",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1739988",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784991,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.5 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1484770",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605855,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.5 MG/ML Topical Foam",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732122",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36249092,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Pad",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1798297",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43527187,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1424016",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36026927,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Foam",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2538834",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40221031,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1805285",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43525663,
+      "conceptName": "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1371365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44507804,
+      "conceptName": "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1482657",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44507806,
+      "conceptName": "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1482646",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784994,
+      "conceptName": "chlorhexidine gluconate 3 MG/ML / ketoconazole 3 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1485182",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40237001,
+      "conceptName": "chloroxylenol 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1091892",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40237004,
+      "conceptName": "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Medicated Pad",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1092217",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40237006,
+      "conceptName": "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1092209",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40237008,
+      "conceptName": "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1092587",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234255,
+      "conceptName": "clindamycin 0.02 MG/MG / ketoconazole 0.02 MG/MG / triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234257,
+      "conceptName": "fusidate 0.02 MG/MG / ketoconazole 0.02 MG/MG / triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214961",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221727,
+      "conceptName": "hydrocortisone 0.01 MG/MG / ketoconazole 0.0015 MG/MG Otic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1606353",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234371,
+      "conceptName": "hydrocortisone 0.01 MG/MG / ketoconazole 0.02 MG/MG / zinc oxide 0.1 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215074",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19131670,
+      "conceptName": "hydrocortisone 0.01 MG/MG / ketoconazole 0.02 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "804512",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42543957,
+      "conceptName": "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2003645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1201491,
+      "conceptName": "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2639745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36026929,
+      "conceptName": "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2538838",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104587,
+      "conceptName": "ketoconazole 0.005 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415676",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1735075,
+      "conceptName": "ketoconazole 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2691107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19064105,
+      "conceptName": "ketoconazole 0.01 MG/MG Topical Powder",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234252,
+      "conceptName": "ketoconazole 0.02 MG/MG / triamcinolone 0.0005 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234236,
+      "conceptName": "ketoconazole 0.02 MG/MG / triamcinolone 0.001 MG/MG / zinc oxide 0.05 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214940",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234237,
+      "conceptName": "ketoconazole 0.02 MG/MG / triamcinolone 0.001 MG/MG / zinc oxide 0.1 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214941",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234253,
+      "conceptName": "ketoconazole 0.02 MG/MG / triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214957",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234379,
+      "conceptName": "ketoconazole 0.02 MG/MG / zinc oxide 0.1 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215082",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 985782,
+      "conceptName": "ketoconazole 0.02 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "647253",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35832070,
+      "conceptName": "ketoconazole 0.02 MG/MG Topical Lotion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5036323",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 985763,
+      "conceptName": "ketoconazole 0.02 MG/MG Topical Powder",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251567",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35832068,
+      "conceptName": "ketoconazole 0.02 MG/MG Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5036325",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35832067,
+      "conceptName": "ketoconazole 0.02 MG/MG Topical Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5036326",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43525662,
+      "conceptName": "ketoconazole 1 MG/ML / lactic acid 1.5 MG/ML / salicylic acid 1.5 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1371361",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44816290,
+      "conceptName": "ketoconazole 1 MG/ML / phytosphingosine 0.1 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1534846",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 747109,
+      "conceptName": "ketoconazole 1 MG/ML / salicylic acid 1.5 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2669490",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42800866,
+      "conceptName": "ketoconazole 1 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1297960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874296,
+      "conceptName": "ketoconazole 10 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031230",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19058104,
+      "conceptName": "ketoconazole 10 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "240812",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874306,
+      "conceptName": "ketoconazole 10 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031240",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874289,
+      "conceptName": "ketoconazole 100 MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031223",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874290,
+      "conceptName": "ketoconazole 100 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031224",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874902,
+      "conceptName": "ketoconazole 10000 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031213",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874287,
+      "conceptName": "ketoconazole 140 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031221",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874294,
+      "conceptName": "ketoconazole 15 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031228",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874908,
+      "conceptName": "ketoconazole 150 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031219",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874900,
+      "conceptName": "ketoconazole 15000 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031211",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1525478,
+      "conceptName": "ketoconazole 2 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2609847",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19008700,
+      "conceptName": "ketoconazole 20 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106336",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19061110,
+      "conceptName": "ketoconazole 20 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "248070",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19026476,
+      "conceptName": "ketoconazole 20 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "203088",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19127278,
+      "conceptName": "ketoconazole 20 MG/ML Topical Foam",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "728550",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19062689,
+      "conceptName": "ketoconazole 20 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250402",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19062539,
+      "conceptName": "ketoconazole 200 MG / secnidazole 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250337",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874301,
+      "conceptName": "ketoconazole 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031235",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 985711,
+      "conceptName": "ketoconazole 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197853",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874300,
+      "conceptName": "ketoconazole 200 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031234",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19114622,
+      "conceptName": "ketoconazole 21 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "545021",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874906,
+      "conceptName": "ketoconazole 300 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031217",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 985762,
+      "conceptName": "ketoconazole 400 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251566",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874299,
+      "conceptName": "ketoconazole 400 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874298,
+      "conceptName": "ketoconazole 400 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031232",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106046,
+      "conceptName": "ketoconazole 5 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "425918",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874292,
+      "conceptName": "ketoconazole 75 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031226",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874904,
+      "conceptName": "ketoconazole 750 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5031215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758644,
+      "conceptName": "levoketoconazole 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2588848",
+      "standardConcept": "S"
+    }
+  ]
+}

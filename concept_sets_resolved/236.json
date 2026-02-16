@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 236,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4234555,
+      "conceptName": "Enterococcus faecium",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "90272000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46273313,
+      "conceptName": "Vancomycin intermediate Enterococcus faecium",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "712666003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37204331,
+      "conceptName": "Vancomycin susceptible Enterococcus faecium",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "782956001",
+      "standardConcept": "S"
+    }
+  ]
+}

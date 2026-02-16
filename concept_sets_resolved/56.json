@@ -1,0 +1,212 @@
+{
+  "conceptSetId": 56,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41240196,
+      "conceptName": "reviparin 17.2 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438158",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40990210,
+      "conceptName": "reviparin 1750 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2188172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42717880,
+      "conceptName": "reviparin 5.72 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2733734",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40958976,
+      "conceptName": "reviparin 5.73 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2156938",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40822031,
+      "conceptName": "reviparin 5.73 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2019993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35137902,
+      "conceptName": "reviparin 5000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4795073",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2040356,
+      "conceptName": "reviparin 55.2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4939989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 590446,
+      "conceptName": "reviparin 5728 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137081",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902710,
+      "conceptName": "reviparin 5728 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359823",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36406720,
+      "conceptName": "reviparin 5730 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3098762",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40865509,
+      "conceptName": "reviparin 7 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2063471",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41115223,
+      "conceptName": "reviparin 7 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2313185",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40834373,
+      "conceptName": "reviparin 7000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2032335",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240195,
+      "conceptName": "reviparin 7000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438157",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889670,
+      "conceptName": "reviparin 71.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994019",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712526,
+      "conceptName": "reviparin 71.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2739392",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271069,
+      "conceptName": "reviparin 9.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469031",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715121,
+      "conceptName": "reviparin 9530 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2734490",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271070,
+      "conceptName": "reviparin 9540 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469032",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880950,
+      "conceptName": "reviparin 97.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002526",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42713831,
+      "conceptName": "reviparin 97.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2742914",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163301,
+      "conceptName": "reviparin sodium 55.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "857643",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902706,
+      "conceptName": "reviparin sodium 5730 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359819",
+      "standardConcept": "S"
+    }
+  ]
+}

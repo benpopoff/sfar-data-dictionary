@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 272,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4014465,
+      "conceptName": "Birth length",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "169886007",
+      "standardConcept": "S"
+    }
+  ]
+}

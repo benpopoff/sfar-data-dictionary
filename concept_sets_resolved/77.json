@@ -1,0 +1,950 @@
+{
+  "conceptSetId": 77,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43140510,
+      "conceptName": "Cefuroxime 0.0299 MG/MG Granules for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP498114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212220,
+      "conceptName": "Cefuroxime 0.0299 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410182",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42727372,
+      "conceptName": "Cefuroxime 0.03 MG/MG Granules for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2725215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891803,
+      "conceptName": "Cefuroxime 0.03 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998495",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42724667,
+      "conceptName": "Cefuroxime 0.03 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2726559",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720696,
+      "conceptName": "Cefuroxime 0.03 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2732344",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43748833,
+      "conceptName": "Cefuroxime 0.0301 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP672987",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43857108,
+      "conceptName": "Cefuroxime 0.0301 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP673042",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 586808,
+      "conceptName": "Cefuroxime 0.0358 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138131",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42718028,
+      "conceptName": "Cefuroxime 0.0359 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2738401",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44180146,
+      "conceptName": "Cefuroxime 0.0359 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3056869",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43748832,
+      "conceptName": "Cefuroxime 0.036 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP672984",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44161305,
+      "conceptName": "Cefuroxime 0.036 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3038028",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305175,
+      "conceptName": "Cefuroxime 0.625 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503137",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41243178,
+      "conceptName": "Cefuroxime 0.893 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441140",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719351,
+      "conceptName": "Cefuroxime 0.894 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727504",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43639919,
+      "conceptName": "Cefuroxime 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP959742",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883982,
+      "conceptName": "Cefuroxime 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989721",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052252,
+      "conceptName": "Cefuroxime 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359444",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274052,
+      "conceptName": "Cefuroxime 1.25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472014",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715281,
+      "conceptName": "Cefuroxime 1.78 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2738616",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41149751,
+      "conceptName": "Cefuroxime 1.79 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347713",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408958,
+      "conceptName": "Cefuroxime 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3101000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062097,
+      "conceptName": "Cefuroxime 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359440",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43140524,
+      "conceptName": "Cefuroxime 125 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP498242",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032251,
+      "conceptName": "Cefuroxime 125 MG Granules for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40731693,
+      "conceptName": "Cefuroxime 125 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4726005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21111190,
+      "conceptName": "Cefuroxime 125 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359509",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886875,
+      "conceptName": "Cefuroxime 132 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994470",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101347,
+      "conceptName": "Cefuroxime 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359580",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868537,
+      "conceptName": "Cefuroxime 15 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2066499",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21160364,
+      "conceptName": "Cefuroxime 15 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891804,
+      "conceptName": "Cefuroxime 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992278",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032288,
+      "conceptName": "Cefuroxime 150 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847340",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097638,
+      "conceptName": "Cefuroxime 1500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092269",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110476,
+      "conceptName": "Cefuroxime 1500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36784727,
+      "conceptName": "Cefuroxime 1500 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4773011",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882090,
+      "conceptName": "Cefuroxime 1500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002692",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305176,
+      "conceptName": "Cefuroxime 2.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503138",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086978,
+      "conceptName": "Cefuroxime 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284940",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43195560,
+      "conceptName": "Cefuroxime 25 MG/ML Granules for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP498233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41024234,
+      "conceptName": "Cefuroxime 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222196",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123676,
+      "conceptName": "Cefuroxime 25 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118307",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36420155,
+      "conceptName": "Cefuroxime 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4762443",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882994,
+      "conceptName": "Cefuroxime 25 MG/ML Powder for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992250",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43173709,
+      "conceptName": "Cefuroxime 250 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP498276",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41024237,
+      "conceptName": "Cefuroxime 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222199",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091450,
+      "conceptName": "Cefuroxime 250 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359492",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123675,
+      "conceptName": "Cefuroxime 250 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118306",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888845,
+      "conceptName": "Cefuroxime 250 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006298",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35762429,
+      "conceptName": "Cefuroxime 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2763890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180847,
+      "conceptName": "Cefuroxime 30 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378809",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881121,
+      "conceptName": "Cefuroxime 30 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991063",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961998,
+      "conceptName": "Cefuroxime 30 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042501,
+      "conceptName": "Cefuroxime 30 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359577",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212225,
+      "conceptName": "Cefuroxime 30.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893784,
+      "conceptName": "Cefuroxime 30.1 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001821",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894721,
+      "conceptName": "Cefuroxime 30.1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991925",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719352,
+      "conceptName": "Cefuroxime 30.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2739258",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42724666,
+      "conceptName": "Cefuroxime 30.2 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2726132",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712665,
+      "conceptName": "Cefuroxime 30.2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2741132",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886873,
+      "conceptName": "Cefuroxime 301 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002504",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894720,
+      "conceptName": "Cefuroxime 301 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889826,
+      "conceptName": "Cefuroxime 39.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055495,
+      "conceptName": "Cefuroxime 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253457",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081694,
+      "conceptName": "Cefuroxime 50 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359568",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890832,
+      "conceptName": "Cefuroxime 50 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991671",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43140520,
+      "conceptName": "Cefuroxime 500 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP498190",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055493,
+      "conceptName": "Cefuroxime 60 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253455",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885917,
+      "conceptName": "Cefuroxime 601 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988123",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885916,
+      "conceptName": "Cefuroxime 601 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005168",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43140518,
+      "conceptName": "Cefuroxime 7.5 MG/ML Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP498171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045974,
+      "conceptName": "Cefuroxime 750 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040605",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032991,
+      "conceptName": "Cefuroxime 750 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886874,
+      "conceptName": "Cefuroxime 750 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993501",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123673,
+      "conceptName": "Cefuroxime 7500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881123,
+      "conceptName": "Cefuroxime 78.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994457",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180845,
+      "conceptName": "Cefuroxime 78.9 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378807",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42713971,
+      "conceptName": "Cefuroxime 79 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2743121",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715279,
+      "conceptName": "Cefuroxime 79 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2737114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107120,
+      "conceptName": "acetylcysteine 200 MG / cefuroxime 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "430550",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19130160,
+      "conceptName": "cefuroxime 0.03 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "795848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006519,
+      "conceptName": "cefuroxime 12.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105189",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2917565,
+      "conceptName": "cefuroxime 125 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5134387",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074979,
+      "conceptName": "cefuroxime 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309095",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2048037,
+      "conceptName": "cefuroxime 1250 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948370",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287414,
+      "conceptName": "cefuroxime 1500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665444",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2048020,
+      "conceptName": "cefuroxime 25 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948351",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074980,
+      "conceptName": "cefuroxime 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309096",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1778195,
+      "conceptName": "cefuroxime 250 MG Oral Granules",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "248212",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075001,
+      "conceptName": "cefuroxime 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309097",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19059663,
+      "conceptName": "cefuroxime 250 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245239",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2048031,
+      "conceptName": "cefuroxime 2500 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1778196,
+      "conceptName": "cefuroxime 350 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "252419",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235649,
+      "conceptName": "cefuroxime 45 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216355",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19101580,
+      "conceptName": "cefuroxime 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "387065",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009352,
+      "conceptName": "cefuroxime 50 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106850",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2917571,
+      "conceptName": "cefuroxime 50 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5134393",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1778225,
+      "conceptName": "cefuroxime 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313926",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075002,
+      "conceptName": "cefuroxime 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309098",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19101591,
+      "conceptName": "cefuroxime 60 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "387066",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075006,
+      "conceptName": "cefuroxime 7.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309102",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287419,
+      "conceptName": "cefuroxime 750 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665449",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2047960,
+      "conceptName": "cefuroxime 750 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948290",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075005,
+      "conceptName": "cefuroxime 95 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309101",
+      "standardConcept": "S"
+    }
+  ]
+}

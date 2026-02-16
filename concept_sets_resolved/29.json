@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 29,
+  "resolvedConcepts": [
+    {
+      "conceptId": 46273524,
+      "conceptName": "Dependence on home ventilator",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Clinical Finding",
+      "conceptCode": "60631000119109",
+      "standardConcept": "S"
+    }
+  ]
+}

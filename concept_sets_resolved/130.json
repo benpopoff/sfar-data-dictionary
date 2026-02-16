@@ -1,0 +1,122 @@
+{
+  "conceptSetId": 130,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36785643,
+      "conceptName": "Dexmedetomidine 0.1 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4773924",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891706,
+      "conceptName": "Dexmedetomidine 0.1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992428",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40822989,
+      "conceptName": "Dexmedetomidine 0.118 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2020951",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606046,
+      "conceptName": "dexmedetomidine 0.00009 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732668",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36120551,
+      "conceptName": "dexmedetomidine 0.004 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5049511",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35603040,
+      "conceptName": "dexmedetomidine 0.004 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1718903",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35829710,
+      "conceptName": "dexmedetomidine 0.004 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5038511",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604437,
+      "conceptName": "dexmedetomidine 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1788947",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35603083,
+      "conceptName": "dexmedetomidine 0.1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1719792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 779650,
+      "conceptName": "dexmedetomidine 0.12 MG Sublingual Film",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2601119",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 779659,
+      "conceptName": "dexmedetomidine 0.18 MG Sublingual Film",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2601129",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44818165,
+      "conceptName": "dexmedetomidine hydrochloride 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1535224",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44818167,
+      "conceptName": "dexmedetomidine hydrochloride 0.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1535228",
+      "standardConcept": "S"
+    }
+  ]
+}

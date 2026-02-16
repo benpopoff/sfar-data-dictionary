@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 10,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37174733,
+      "conceptName": "Assessment using Numeric Pain Rating Scale",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Procedure",
+      "conceptCode": "1284856004",
+      "standardConcept": null
+    },
+    {
+      "conceptId": 37151627,
+      "conceptName": "Numeric Pain Rating Scale",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Staging / Scales",
+      "conceptCode": "1284852002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37151630,
+      "conceptName": "Numeric Pain Rating Scale score",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "1284857008",
+      "standardConcept": null
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 204,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3032503,
+      "conceptName": "Calcium [Mass/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "49765-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3006906,
+      "conceptName": "Calcium [Mass/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "17861-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3005162,
+      "conceptName": "Calcium [Moles/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1996-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3034988,
+      "conceptName": "Calcium [Moles/volume] in Capillary blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "42593-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3032543,
+      "conceptName": "Calcium [Moles/volume] in Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "42857-3",
+      "standardConcept": "S"
+    }
+  ]
+}

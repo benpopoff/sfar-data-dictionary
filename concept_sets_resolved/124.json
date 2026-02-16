@@ -1,0 +1,176 @@
+{
+  "conceptSetId": 124,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44124065,
+      "conceptName": "Areca Catechu 1 X / Barberry Extract 3 X / Burdock root extract 3 X / calcium sulfide 30 X / Cascara sagrada 3 X / Glycyrrhiza glabra extract 3 X / insulin degludec 6 X / magnesium phosphate 12 X / Manganese 10 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118696",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2911826,
+      "conceptName": "insulin aspart 30 IU/ML / insulin degludec 70 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128581",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2911830,
+      "conceptName": "insulin aspart 30 IU/ML / insulin degludec 70 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128585",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793498,
+      "conceptName": "insulin aspart, human 30 UNT/ML / insulin degludec 70 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1994317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2038333,
+      "conceptName": "insulin degludec 100 IU/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4937824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404310,
+      "conceptName": "insulin degludec 100 UNT/ML / liraglutide 3.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096352",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1718712,
+      "conceptName": "insulin degludec 100 UNT/ML / liraglutide 3.6 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1860173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21144564,
+      "conceptName": "insulin degludec 100 UNT/ML / liraglutide 3.6 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP266118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2911259,
+      "conceptName": "insulin degludec 100 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1356057,
+      "conceptName": "insulin degludec 100 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2107520",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097224,
+      "conceptName": "insulin degludec 100 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35602725,
+      "conceptName": "insulin degludec 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1670017",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482554,
+      "conceptName": "insulin degludec 100 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2038328,
+      "conceptName": "insulin degludec 200 IU/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4937820",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408864,
+      "conceptName": "insulin degludec 200 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3100906",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35602732,
+      "conceptName": "insulin degludec 200 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1670024",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479644,
+      "conceptName": "insulin degludec 200 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418991",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35147082,
+      "conceptName": "insulin degludec 300 UNT Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4804157",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42963016,
+      "conceptName": "insulin degludec 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4689503",
+      "standardConcept": "S"
+    }
+  ]
+}

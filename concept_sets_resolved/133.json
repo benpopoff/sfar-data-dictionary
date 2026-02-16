@@ -1,0 +1,518 @@
+{
+  "conceptSetId": 133,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36404383,
+      "conceptName": "Amitriptyline 0.02 MG/MG / Ketamine 0.01 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096425",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21071837,
+      "conceptName": "Amitriptyline 0.02 MG/MG / Ketamine 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP356470",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42722048,
+      "conceptName": "Chlorobutanol 5 MG/ML / Ketamine 57.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2725104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41243096,
+      "conceptName": "Chlorobutanol 5 MG/ML / Ketamine 57.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441058",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42722049,
+      "conceptName": "Chlorobutanol 5 MG/ML / Ketamine 57.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2723693",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101495,
+      "conceptName": "Ketamine 1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362147",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110057,
+      "conceptName": "Ketamine 10 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104688",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110058,
+      "conceptName": "Ketamine 10 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104689",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21130788,
+      "conceptName": "Ketamine 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362160",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081855,
+      "conceptName": "Ketamine 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362162",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480771,
+      "conceptName": "Ketamine 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417713",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885776,
+      "conceptName": "Ketamine 100 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003546",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052413,
+      "conceptName": "Ketamine 100 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362181",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482005,
+      "conceptName": "Ketamine 100 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417717",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40735335,
+      "conceptName": "Ketamine 1000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721624",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40735344,
+      "conceptName": "Ketamine 10000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721615",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40735346,
+      "conceptName": "Ketamine 100000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721613",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887696,
+      "conceptName": "Ketamine 11.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005609",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835573,
+      "conceptName": "Ketamine 11.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033535",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405149,
+      "conceptName": "Ketamine 2 MG/ML / Morphine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097191",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21072155,
+      "conceptName": "Ketamine 2 MG/ML / Morphine 2 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362202",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991441,
+      "conceptName": "Ketamine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189403",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042640,
+      "conceptName": "Ketamine 2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362199",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40866668,
+      "conceptName": "Ketamine 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2064630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21121008,
+      "conceptName": "Ketamine 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362137",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147961,
+      "conceptName": "Ketamine 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2345923",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21139736,
+      "conceptName": "Ketamine 25 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP344298",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40735342,
+      "conceptName": "Ketamine 25000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721617",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883850,
+      "conceptName": "Ketamine 28.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001554",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081853,
+      "conceptName": "Ketamine 3 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362154",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081854,
+      "conceptName": "Ketamine 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362157",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40735338,
+      "conceptName": "Ketamine 40 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721621",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408201,
+      "conceptName": "Ketamine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3100243",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052414,
+      "conceptName": "Ketamine 5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362188",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21071152,
+      "conceptName": "Ketamine 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP344291",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42725917,
+      "conceptName": "Ketamine 5.75 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2730841",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43786460,
+      "conceptName": "Ketamine 5.77 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP701103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42727264,
+      "conceptName": "Ketamine 5.78 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2740233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 590147,
+      "conceptName": "Ketamine 50 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045556,
+      "conceptName": "Ketamine 50 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091603,
+      "conceptName": "Ketamine 50 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362178",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170319,
+      "conceptName": "Ketamine 50 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482545,
+      "conceptName": "Ketamine 50 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417715",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42723244,
+      "conceptName": "Ketamine 57.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2722317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881003,
+      "conceptName": "Ketamine 57.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988334",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42716554,
+      "conceptName": "Ketamine 57.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731638",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42725918,
+      "conceptName": "Ketamine 57.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2730087",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41053686,
+      "conceptName": "Ketamine 577 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2251648",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091601,
+      "conceptName": "Ketamine 6 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362150",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081857,
+      "conceptName": "Ketamine 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362196",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2914440,
+      "conceptName": "ketamine 1 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5131232",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19057195,
+      "conceptName": "ketamine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "238082",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19057196,
+      "conceptName": "ketamine 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "238083",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36946780,
+      "conceptName": "ketamine 1000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5206395",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36956865,
+      "conceptName": "ketamine 10000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5206396",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36937196,
+      "conceptName": "ketamine 25000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5206397",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19057197,
+      "conceptName": "ketamine 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "238084",
+      "standardConcept": "S"
+    }
+  ]
+}

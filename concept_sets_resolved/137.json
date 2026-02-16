@@ -1,0 +1,230 @@
+{
+  "conceptSetId": 137,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43678469,
+      "conceptName": "remifentanil 0.0683 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP694701",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587493,
+      "conceptName": "remifentanil 0.0683 MG/MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138482",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43606212,
+      "conceptName": "remifentanil 0.128 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP694697",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588311,
+      "conceptName": "remifentanil 0.128 MG/MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3136928",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43804100,
+      "conceptName": "remifentanil 0.268 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP694626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589344,
+      "conceptName": "remifentanil 0.268 MG/MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135864",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927714,
+      "conceptName": "remifentanil 0.275 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125676",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41021211,
+      "conceptName": "remifentanil 0.367 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2219173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589040,
+      "conceptName": "remifentanil 0.367 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137273",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40959000,
+      "conceptName": "remifentanil 0.44 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2156962",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588314,
+      "conceptName": "remifentanil 0.44 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3136595",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41021212,
+      "conceptName": "remifentanil 0.55 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2219174",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 590359,
+      "conceptName": "remifentanil 0.55 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138845",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884760,
+      "conceptName": "remifentanil 1 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995502",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44096916,
+      "conceptName": "remifentanil 1 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091547",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605375,
+      "conceptName": "remifentanil 1 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1729578",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887663,
+      "conceptName": "remifentanil 1 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP990519",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891652,
+      "conceptName": "remifentanil 2 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994506",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045282,
+      "conceptName": "remifentanil 2 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1039913",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605380,
+      "conceptName": "remifentanil 2 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1729584",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884759,
+      "conceptName": "remifentanil 2 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP987962",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893620,
+      "conceptName": "remifentanil 5 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002791",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44083998,
+      "conceptName": "remifentanil 5 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078629",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605384,
+      "conceptName": "remifentanil 5 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1729710",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891651,
+      "conceptName": "remifentanil 5 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002003",
+      "standardConcept": "S"
+    }
+  ]
+}

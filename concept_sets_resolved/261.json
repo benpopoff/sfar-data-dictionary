@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 261,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4264368,
+      "conceptName": "Staphylococcus hominis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "44827007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4162204,
+      "conceptName": "Staphylococcus hominis hominis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "432505008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4204773,
+      "conceptName": "Staphylococcus hominis novobiosepticus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "438202004",
+      "standardConcept": "S"
+    }
+  ]
+}

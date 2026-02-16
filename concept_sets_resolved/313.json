@@ -1,0 +1,95 @@
+{
+  "conceptSetId": 313,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3029268,
+      "conceptName": "Horowitz index adjusted to patients actual temperature in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50989-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3029906,
+      "conceptName": "Horowitz index adjusted to patients actual temperature in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50987-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3032208,
+      "conceptName": "Horowitz index adjusted to patients actual temperature in Capillary blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50988-5",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3029523,
+      "conceptName": "Horowitz index adjusted to patients actual temperature in Mixed venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50990-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3032443,
+      "conceptName": "Horowitz index adjusted to patients actual temperature in Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50991-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3029943,
+      "conceptName": "Horowitz index in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50984-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3029880,
+      "conceptName": "Horowitz index in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50982-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3030774,
+      "conceptName": "Horowitz index in Capillary blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50983-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3029599,
+      "conceptName": "Horowitz index in Mixed venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50985-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3029316,
+      "conceptName": "Horowitz index in Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "50986-9",
+      "standardConcept": "S"
+    }
+  ]
+}

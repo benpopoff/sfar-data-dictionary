@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 264,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4185892,
+      "conceptName": "Streptococcus anginosus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "44304009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37155815,
+      "conceptName": "Streptococcus anginosus subsp. anginosus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "33061000087104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37155816,
+      "conceptName": "Streptococcus anginosus subsp. whileyi",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "33071000087108",
+      "standardConcept": "S"
+    }
+  ]
+}

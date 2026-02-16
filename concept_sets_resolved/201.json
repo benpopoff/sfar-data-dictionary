@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 201,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3016436,
+      "conceptName": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2532-0",
+      "standardConcept": "S"
+    }
+  ]
+}

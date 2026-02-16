@@ -1,0 +1,3191 @@
+{
+  "conceptSetId": 142,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44072333,
+      "conceptName": "AESCULUS HIPPOCASTANUM SEED OIL 2 X / cupric acetate 6 X / Epinephrine 6 X / Ergot Alkaloids 4 X / Helleborus niger whole extract 6 X / Potentilla anserina whole extract 2 X / tobacco leaf extract 4 X Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066964",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085114,
+      "conceptName": "Actaea racemosa whole extract 3 X / Activated Charcoal 12 X / Angelica sinensis preparation 3 X / boric acid 12 X / Bos taurus ovary preparation 8 X / Creosote 12 X / Epinephrine 10 X / Iodine 12 X / Nitric Acid 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071989,
+      "conceptName": "Actaea racemosa whole extract 3 X / Activated Charcoal 12 X / Bos taurus ovary preparation 8 X / Epinephrine 6 X / Fucus vesiculosus extract 3 X / Glycyrrhiza glabra extract 3 X / Iodine 12 X / JUNIPERUS SABINA LEAF 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066620",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44124102,
+      "conceptName": "Actaea racemosa whole extract 3 X / Angelicae Sinensis Radix 3 X / boric acid 12 X / Creosote 12 X / Epinephrine 12 X / Iodine 12 X / Oyster shell calcium carbonate preparation 12 X / Pulsatilla koreana whole extract 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118733",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44025893,
+      "conceptName": "Activated Charcoal 12 X / Aethusa cynapium extract 12 X / belladonna extract, USP 12 X / Capsicum extract 3 X / Comfrey leaf extract 3 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 6 X / Gentiana cruciata root extract 3 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1020524",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110962,
+      "conceptName": "Activated Charcoal 12 X / Agaricus campestris var. campestris whole extract 12 X / Araneus diadematus preparation 12 X / Arnica montana Extract 12 X / Epinephrine 6 X / Hypericum Perforatum Flower extract 12 X / Iodine 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105593",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085174,
+      "conceptName": "Activated Charcoal 12 X / Alfalfa preparation 3 X / Buckthorn preparation 3 X / coffee fruit preparation 12 X / Comfrey leaf extract 3 X / Epinephrine 12 X / Fucus vesiculosus extract 3 X / Iodine 12 X / Liverwort 5 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079805",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059394,
+      "conceptName": "Activated Charcoal 12 X / Aralia racemosa root extract 12 X / Cantharidin 12 X / Epinephrine 12 X / ginger root 3 X / Glycyrrhiza glabra extract 3 X / Iodine 12 X / onion allergenic extract 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1054025",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097995,
+      "conceptName": "Activated Charcoal 12 X / Araneus diadematus preparation 12 X / Astragalus preparation 12 X / belladonna extract, USP 12 X / Cochlearia officinalis flowering top extract 3 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123993,
+      "conceptName": "Activated Charcoal 12 X / Araneus diadematus preparation 12 X / Barberry Extract 3 X / Burdock root extract 3 X / calcium sulfide 12 X / Canada goldenrod pollen extract 3 X / Conium maculatum preparation 12 X / Epinephrine 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118624",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085008,
+      "conceptName": "Activated Charcoal 12 X / Araneus diadematus preparation 12 X / Barberry Extract 3 X / Burdock root extract 3 X / calcium sulfide 12 X / Conium maculatum preparation 12 X / Epinephrine 12 X / Greater Celandine 3 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079639",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085066,
+      "conceptName": "Activated Charcoal 12 X / Arnica montana Extract 30 X / barium chloride 12 X / calcium lactate 12 X / Cholesterol 12 X / Convallaria majalis extract 12 X / Epinephrine 12 X / Iodine 12 X / magnesium carbonate 3 X / Nitroglycerin 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079697",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44124015,
+      "conceptName": "Activated Charcoal 12 X / Astragalus preparation 12 X / Candida parapsilosis 12 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 12 X / Hydrastis canadensis whole preparation 3 X / Iodine 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118646",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44033355,
+      "conceptName": "Activated Charcoal 12 X / Astragalus preparation 6 X / Baptisia tinctoria extract 3 X / belladonna extract, USP 12 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 12 X / ferrous phosphate 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027986",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085011,
+      "conceptName": "Activated Charcoal 12 X / Barberry Extract 3 X / belladonna extract, USP 12 X / Burdock root extract 3 X / Croton eluteria bark extract 3 X / Elymus repens whole extract 1 X / Epinephrine 6 X / Glycerin 3 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059020,
+      "conceptName": "Activated Charcoal 12 X / Capsicum extract 3 X / Conium maculatum preparation 12 X / Copper 12 X / Elaeis guineensis whole extract 3 X / Epinephrine 12 X / Ginkgo biloba extract 3 X / Ginseng Preparation 3 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053651",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084672,
+      "conceptName": "Activated Charcoal 12 X / Common Bean Garden 12 X / Epinephrine 6 X / ginger root 3 X / Glycyrrhiza glabra extract 3 X / Greater Celandine 3 X / Hydrastis canadensis whole preparation 3 X / Iodine 12 X / Liverwort 5 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079303",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084666,
+      "conceptName": "Activated Charcoal 12 X / Dibasic potassium phosphate 12 X / Epinephrine 12 X / Glycyrrhiza glabra extract 1 X / Iodine 12 X / Lycopodium Clavatum Preparation 12 X / Oats preparation 3 X / Phosphoric acid 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079297",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071798,
+      "conceptName": "Activated Charcoal 12 X / Dibasic potassium phosphate 3 X / Epinephrine 6 X / Histamine 30 X / Liverwort 5 X / Lycopodium Clavatum Preparation 12 X / Phosphorus 12 X / Pulsatilla koreana whole extract 12 X / Silicon Dioxide 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066429",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097622,
+      "conceptName": "Activated Charcoal 12 X / Epinephrine 6 X / ferrous iodide 12 X / Fucus vesiculosus extract 3 X / Iodine 12 X / Oyster shell calcium carbonate preparation 12 X / Phosphoric acid 12 X / Posterior Pituitary Hormones 6 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092253",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900648,
+      "conceptName": "Aluminum carbonate 0.087 MG/MG / Atropa belladona whole extract 0.01 MG/MG / Epinephrine 0.0001 MG/MG / Isobutamben 0.01 MG/MG / Matricaria chamomilla flowering top oil 0.009 MG/MG / Procaine 0.0024 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098610",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181840,
+      "conceptName": "Aluminum carbonate 46 MG / Bismuth 98 MG / Epinephrine 0.1 MG / Isobutamben 115 MG / Procaine 25 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379802",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838441,
+      "conceptName": "Ambroxol 0.005 MG/MG / boric acid 0.01 MG/MG / Epinephrine 0.01 MG/MG / Sodium 0.003 MG/MG / Thimerosal 0.00005 MG/MG Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036403",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41306183,
+      "conceptName": "Ambroxol 0.01 MG/MG / Epinephrine 0.018 MG/MG / Sodium 0.005 MG/MG / Thimerosal 0.00005 MG/MG Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2504145",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097997,
+      "conceptName": "Araneus diadematus preparation 12 X / Astragalus preparation 12 X / Barberry Extract 12 X / Cochlearia officinalis flowering top extract 3 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092628",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110848,
+      "conceptName": "Arnica montana Extract 3 X / Astragalus preparation 12 X / Baptisia tinctoria extract 3 X / belladonna extract, USP 12 X / Calendula officinalis extract 3 X / CHAMOMILE FLOWERS 12 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105479",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43708170,
+      "conceptName": "Articaine 10 MG/ML / Epinephrine 0.006 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP821090",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43798066,
+      "conceptName": "Articaine 20 MG/ML / Epinephrine 0.006 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP820967",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056249,
+      "conceptName": "Articaine 20 MG/ML / Epinephrine 0.06 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254211",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43024236,
+      "conceptName": "Articaine 35.5 MG/ML / Epinephrine 0.005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4839349",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43144014,
+      "conceptName": "Articaine 35.5 MG/ML / Epinephrine 0.005 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP450898",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43024249,
+      "conceptName": "Articaine 35.5 MG/ML / Epinephrine 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4839362",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43177168,
+      "conceptName": "Articaine 35.5 MG/ML / Epinephrine 0.01 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP450793",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43209947,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.0025 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP450100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43798068,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.003 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP821070",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40931461,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.003 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2129423",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110842,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105473",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43254687,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.005 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532198",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056251,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.005 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254213",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35407492,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.005 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141077",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715200,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.00599 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2737404",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43816120,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.006 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP821223",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274831,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.006 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472793",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43166965,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.006 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP426684",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43690344,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.009 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP822992",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056248,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.009 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254210",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43816126,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP822895",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43287261,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.01 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532031",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119034,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.01 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35407493,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.01 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141078",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43636279,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.0125 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP821042",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150552,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.0125 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348514",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43188951,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.0125 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP426630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056250,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.015 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254212",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150549,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.015 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348511",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900358,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.018 MG/ML / Sodium 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098320",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305953,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.035 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503915",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962758,
+      "conceptName": "Articaine 40 MG/ML / Epinephrine 0.035 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160720",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056239,
+      "conceptName": "Ascorbic Acid 10.8 MG/ML / Benzoate 2 MG/ML / Epinephrine 48 MG/ML / Potassium 7.41 MG/ML / Sodium 1.5 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254201",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305942,
+      "conceptName": "Ascorbic Acid 10.8 MG/ML / Ephedrine 20 MG/ML / Epinephrine 2.9 MG/ML / homatropine 2 MG/ML / Intermedin 3 UNT/ML / Papaverine 8.5 MG/ML / Scopolamine 0.4 MG/ML / Tetracaine 0.8 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503904",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715483,
+      "conceptName": "Ascorbic Acid 10.8 MG/ML / Ephedrine 20 MG/ML / Epinephrine 2.9 MG/ML / homatropine 2 MG/ML / Intermedin 3 UNT/ML / Papaverine 8.53 MG/ML / Scopolamine 0.4 MG/ML / Tetracaine 0.8 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2734529",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119022,
+      "conceptName": "Ascorbic Acid 10.8 MG/ML / Ephedrine 20 MG/ML / Epinephrine 2.9 MG/ML / homatropine 2 MG/ML / Papaverine 8.5 MG/ML / Scopolamine 0.4 MG/ML / Tetracaine 0.8 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316984",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42714179,
+      "conceptName": "Ascorbic Acid 10.8 MG/ML / Ephedrine 20 MG/ML / Epinephrine 2.9 MG/ML / homatropine 2 MG/ML / Papaverine 8.53 MG/ML / Scopolamine 0.4 MG/ML / Tetracaine 0.8 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2722009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719553,
+      "conceptName": "Ascorbic Acid 10.8 MG/ML / Ephedrine 20 MG/ML / Epinephrine 2.91 MG/ML / homatropine 2 MG/ML / Intermedin 3 UNT/ML / Papaverine 8.51 MG/ML / Scopolamine 0.4 MG/ML / Tetracaine 0.8 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2722889",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097994,
+      "conceptName": "Astragalus preparation 12 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 12 X / Ginkgo biloba extract 3 X / Hydrastis canadensis whole preparation 3 X / Lycopodium Clavatum Preparation 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092625",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44124014,
+      "conceptName": "Astragalus preparation 12 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 6 X / Fucus vesiculosus extract 3 X / Hydrastis canadensis whole preparation 3 X / Lycopodium Clavatum Preparation 30 X / Phosphoric acid 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44046321,
+      "conceptName": "Astragalus preparation 12 X / calcium sulfide 12 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 12 X / Eupatorium perfoliatum preparation 12 X / ferrous phosphate 12 X / Hydrastis canadensis whole preparation 3 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040952",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059339,
+      "conceptName": "Astragalus preparation 6 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 6 X / hexafluorosilicate 12 X / juniper berry oil 12 X / Oats preparation 3 X / Phosphoric acid 12 X / picrate 12 X / Pulsatilla koreana whole extract 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053970",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085026,
+      "conceptName": "Astragalus preparation 6 X / belladonna extract, USP 12 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 12 X / Eupatorium perfoliatum preparation 12 X / Gelsemium Sempervirens Preparation 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079657",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305846,
+      "conceptName": "Atropine 0.02 MG/MG / Epinephrine 0.001 MG/MG / Tyramine 0.02 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503808",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403566,
+      "conceptName": "Atropine 1.67 MG/ML / Epinephrine 0.2 MG/ML / Procaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095608",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21034716,
+      "conceptName": "Atropine 1.67 MG/ML / Epinephrine 0.2 MG/ML / Procaine 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP397359",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274710,
+      "conceptName": "Atropine 2 MG/ML / Epinephrine 22.5 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472672",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181487,
+      "conceptName": "Atropine 2.5 MG/ML / Epinephrine 3 MG/ML / hypophysis extract 1 UNT/ML / Papaverine 10 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379449",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407457,
+      "conceptName": "Atropine 3.33 MG/ML / Epinephrine 0.4 MG/ML / Procaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099499",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21152606,
+      "conceptName": "Atropine 3.33 MG/ML / Epinephrine 0.4 MG/ML / Procaine 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP397365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44046303,
+      "conceptName": "Baptisia tinctoria extract 3 X / Canada goldenrod pollen extract 3 X / ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 6 X / Euphrasia officinalis preparation 12 X / Garlic preparation 3 X / Histamine 30 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040934",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993669,
+      "conceptName": "Bismuth 0.0219 MG/MG / Ephedrine 0.000055 MG/MG / Epinephrine 0.000003 MG/MG / Menthol 0.001 MG/MG / Peruvian balsam 0.0082 MG/MG / prednisolone 0.001 MG/MG / Procaine 0.00065 MG/MG / Zinc Oxide 0.038 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305597,
+      "conceptName": "Bismuth 44 MG / Ephedrine 0.2 MG / Epinephrine 0.02 MG / Menthol 2.2 MG / Peruvian balsam 16 MG / Procaine 1.3 MG / Zinc Oxide 66 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503559",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150167,
+      "conceptName": "Bismuth 44 MG / Ephedrine 0.2 MG / Epinephrine 0.02 MG / Menthol 2.2 MG / Peruvian balsam 16 MG / prednisolone 2 MG / Procaine 1.3 MG / Zinc Oxide 66 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348129",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43144009,
+      "conceptName": "Bupivacaine 0.25 MG/ML / Epinephrine 0.00025 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP450225",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43281814,
+      "conceptName": "Bupivacaine 2.5 MG/ML / Epinephrine 0.0025 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532309",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480226,
+      "conceptName": "Bupivacaine 2.5 MG/ML / Epinephrine 0.005 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419046",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097798,
+      "conceptName": "Bupivacaine 2.5 MG/ML / Epinephrine 0.009 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092429",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42483180,
+      "conceptName": "Bupivacaine 5 MG/ML / Epinephrine 0.005 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419044",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887863,
+      "conceptName": "Bupivacaine 5 MG/ML / Epinephrine 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212508,
+      "conceptName": "Butanilicaine 30 MG/ML / Epinephrine 0.02 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410470",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837732,
+      "conceptName": "Butanilicaine 30 MG/ML / Epinephrine 0.02 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2035694",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084473,
+      "conceptName": "Canada goldenrod pollen extract 12 X / Epinephrine 6 X / Euphrasia officinalis preparation 12 X / Histamine 30 X / Liverwort 5 X / Phosphorus 12 X / Potassium Iodide 3 X / Pulsatilla koreana whole extract 12 X / ... Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43274926,
+      "conceptName": "Cocaine 0.1 MG/MG / Epinephrine 0.0018 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP557102",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752765,
+      "conceptName": "Cocaine 0.25 MG/MG / Epinephrine 0.001 MG/MG Paste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4705762",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21102712,
+      "conceptName": "Cocaine 0.25 MG/MG / Epinephrine 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP383237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882070,
+      "conceptName": "Cocaine 0.25 MG/MG / Epinephrine 0.0018 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994210",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21151774,
+      "conceptName": "Cocaine 100 MG/ML / Epinephrine 0.05 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP383235",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21171444,
+      "conceptName": "Cocaine 100 MG/ML / Epinephrine 0.5 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP383233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21073347,
+      "conceptName": "Cocaine 50 MG/ML / Epinephrine 0.5 MG/ML Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP383231",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084669,
+      "conceptName": "ECHINACEA ANGUSTIFOLIA Extract 3 X / Epinephrine 6 X / Greater Celandine 3 X / Lycopodium Clavatum Preparation 12 X / Milk thistle extract 12 X / Phosphoric acid 12 X / Propolis 8 X / Sodium Chloride 12 X Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079300",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097395,
+      "conceptName": "ECHINACEA ANGUSTIFOLIA Extract 6 X / Epinephrine 6 X / Gelsemium Sempervirens Preparation 6 X / onion allergenic extract 6 X / Potassium Iodide 9 X / Sanguinaria canadensis extract 6 X / silver ragweed pollen extract 6 X / ... Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092026",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110328,
+      "conceptName": "Ephedrine 0.05 MG/ML / Epinephrine 0.001 MG/ML / Glucose 0.1 MG/ML / Lidocaine 0.01 MG/ML / Tetracaine 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054570,
+      "conceptName": "Epinephrine 0.0001 MG/MG / Zinc Acetate 0.00215 MG/MG Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252532",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898704,
+      "conceptName": "Epinephrine 0.00075 MG/MG / Sparteine Sulfate 0.03 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096666",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032835,
+      "conceptName": "Epinephrine 0.001 MG/ML / Glucose 0.1 MG/ML / Lidocaine 0.01 MG/ML / Tetracaine 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027466",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123505,
+      "conceptName": "Epinephrine 0.001 MG/ML / Glucose 0.175 MG/ML / Lidocaine 0.06 MG/ML / Povidone-Iodine 0.01 MG/ML / Tetracaine 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118136",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36811942,
+      "conceptName": "Epinephrine 0.001 MG/ML / Lidocaine 0.04 MG/ML / Tetracaine 0.005 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4825977",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753161,
+      "conceptName": "Epinephrine 0.001 MG/ML / Lidocaine 0.04 MG/ML / Tetracaine 0.005 MG/ML Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4703967",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054584,
+      "conceptName": "Epinephrine 0.0018 MG/MG Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252546",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023326,
+      "conceptName": "Epinephrine 0.002 MG/ML / Mepivacaine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221288",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43726107,
+      "conceptName": "Epinephrine 0.003 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP819862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43254693,
+      "conceptName": "Epinephrine 0.0033 MG/ML / Prilocaine 30 MG/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532498",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43254691,
+      "conceptName": "Epinephrine 0.0033 MG/ML / Prilocaine 30 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532490",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620957,
+      "conceptName": "Epinephrine 0.005 MG/ML / Lidocaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800865",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482764,
+      "conceptName": "Epinephrine 0.005 MG/ML / Lidocaine 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417161",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620634,
+      "conceptName": "Epinephrine 0.005 MG/ML / Lidocaine 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2801468",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40877900,
+      "conceptName": "Epinephrine 0.005 MG/ML / Lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2075862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480409,
+      "conceptName": "Epinephrine 0.005 MG/ML / Lidocaine 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417160",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888761,
+      "conceptName": "Epinephrine 0.005 MG/ML / Lidocaine 5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996176",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480410,
+      "conceptName": "Epinephrine 0.005 MG/ML / Lidocaine 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417162",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032770,
+      "conceptName": "Epinephrine 0.005 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027401",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885844,
+      "conceptName": "Epinephrine 0.00556 MG/ML / Mepivacaine 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994031",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43600152,
+      "conceptName": "Epinephrine 0.006 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP820610",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887765,
+      "conceptName": "Epinephrine 0.00694 MG/ML / Lidocaine 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43690342,
+      "conceptName": "Epinephrine 0.00728 MG/ML / Prilocaine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP822799",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43690335,
+      "conceptName": "Epinephrine 0.00728 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP821843",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961150,
+      "conceptName": "Epinephrine 0.009 MG/ML / Lidocaine 10 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159112",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43834312,
+      "conceptName": "Epinephrine 0.009 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP822142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929814,
+      "conceptName": "Epinephrine 0.01 MG/MG / Pilocarpine 0.02 MG/MG / Thimerosal 0.00005 MG/MG Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127776",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211399,
+      "conceptName": "Epinephrine 0.01 MG/ML / Etidocaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409361",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211400,
+      "conceptName": "Epinephrine 0.01 MG/ML / Etidocaine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409362",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304247,
+      "conceptName": "Epinephrine 0.01 MG/ML / Lidocaine 10 MG/ML / Norepinephrine 0.0111 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502209",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891730,
+      "conceptName": "Epinephrine 0.01 MG/ML / Lidocaine 10 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995830",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883911,
+      "conceptName": "Epinephrine 0.01 MG/ML / Lidocaine 20 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003853",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123433,
+      "conceptName": "Epinephrine 0.01 MG/ML / Lidocaine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118064",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211395,
+      "conceptName": "Epinephrine 0.01 MG/ML / Mepivacaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409357",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43265440,
+      "conceptName": "Epinephrine 0.01 MG/ML / Mepivacaine 20 MG/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532468",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892733,
+      "conceptName": "Epinephrine 0.01 MG/ML / Mepivacaine 20 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999857",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479239,
+      "conceptName": "Epinephrine 0.01 MG/ML / Mepivacaine 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417164",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117388,
+      "conceptName": "Epinephrine 0.01 MG/ML / Mepivacaine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315350",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880089,
+      "conceptName": "Epinephrine 0.01 MG/ML / Prilocaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997586",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961142,
+      "conceptName": "Epinephrine 0.01 MG/ML / Prilocaine 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891727,
+      "conceptName": "Epinephrine 0.01 MG/ML / Prilocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991703",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43689022,
+      "conceptName": "Epinephrine 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP960430",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482921,
+      "conceptName": "Epinephrine 0.01 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP420732",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880090,
+      "conceptName": "Epinephrine 0.0125 MG/ML / Lidocaine 20 MG/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992063",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889765,
+      "conceptName": "Epinephrine 0.0125 MG/ML / Lidocaine 20 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086165,
+      "conceptName": "Epinephrine 0.0125 MG/ML / Lidocaine 20 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480408,
+      "conceptName": "Epinephrine 0.0125 MG/ML / Lidocaine 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417159",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43814803,
+      "conceptName": "Epinephrine 0.0125 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP654792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882019,
+      "conceptName": "Epinephrine 0.015 MG/ML / Lidocaine 20 MG/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999330",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886797,
+      "conceptName": "Epinephrine 0.015 MG/ML / Lidocaine 20 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148874,
+      "conceptName": "Epinephrine 0.015 MG/ML / Lidocaine 20 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346836",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43708167,
+      "conceptName": "Epinephrine 0.015 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP820549",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43600158,
+      "conceptName": "Epinephrine 0.018 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP822077",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054576,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885846,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006390",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891729,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 16.7 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP990769",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929818,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 20 MG/ML / Norepinephrine 0.0243 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127780",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867619,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 20 MG/ML / Norepinephrine 0.0243 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065581",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40992401,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 20 MG/ML / pyridoxine 0.0243 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2190363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882020,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006287",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023328,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 20 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221290",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117389,
+      "conceptName": "Epinephrine 0.02 MG/ML / Lidocaine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315351",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43832924,
+      "conceptName": "Epinephrine 0.02 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP655731",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304252,
+      "conceptName": "Epinephrine 0.0227 MG/ML / Lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502214",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054578,
+      "conceptName": "Epinephrine 0.0227 MG/ML / Lidocaine 20 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252540",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42729925,
+      "conceptName": "Epinephrine 0.0228 MG/ML / Lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2736723",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242294,
+      "conceptName": "Epinephrine 0.025 MG/ML / Procaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440256",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752370,
+      "conceptName": "Epinephrine 0.025 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4705716",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117387,
+      "conceptName": "Epinephrine 0.0273 MG/ML / Mepivacaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315349",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929815,
+      "conceptName": "Epinephrine 0.0273 MG/ML / Mepivacaine 20 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127777",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42729923,
+      "conceptName": "Epinephrine 0.0274 MG/ML / Mepivacaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2738956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836533,
+      "conceptName": "Epinephrine 0.0303 MG/ML / Mepivacaine 20 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034495",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304250,
+      "conceptName": "Epinephrine 0.035 MG/ML / Lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502212",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110256,
+      "conceptName": "Epinephrine 0.035 MG/ML Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104887",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123431,
+      "conceptName": "Epinephrine 0.04 MG/ML / Lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118062",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891728,
+      "conceptName": "Epinephrine 0.04 MG/ML / Lidocaine 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996085",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43024203,
+      "conceptName": "Epinephrine 0.04 MG/ML / Lidocaine 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4839317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884840,
+      "conceptName": "Epinephrine 0.04 MG/ML / Lidocaine 30 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989162",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242304,
+      "conceptName": "Epinephrine 0.04 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440266",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929811,
+      "conceptName": "Epinephrine 0.05 MG/ML / Procaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127773",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883913,
+      "conceptName": "Epinephrine 0.1 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004499",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179965,
+      "conceptName": "Epinephrine 0.125 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377927",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35135253,
+      "conceptName": "Epinephrine 0.15 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4792450",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752351,
+      "conceptName": "Epinephrine 0.2 MG/ML / Lidocaine 40 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4705735",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21024989,
+      "conceptName": "Epinephrine 0.2 MG/ML / Lidocaine 40 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP397334",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21162485,
+      "conceptName": "Epinephrine 0.2 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP397227",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752373,
+      "conceptName": "Epinephrine 0.22 MG/ACTUAT Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4705713",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21172232,
+      "conceptName": "Epinephrine 0.22 MG/ACTUAT Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP397266",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43024171,
+      "conceptName": "Epinephrine 0.25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4839286",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885848,
+      "conceptName": "Epinephrine 0.25 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998742",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35137576,
+      "conceptName": "Epinephrine 0.3 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4794749",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054583,
+      "conceptName": "Epinephrine 0.4 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36264848,
+      "conceptName": "Epinephrine 0.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3115723",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21083855,
+      "conceptName": "Epinephrine 0.5 MG/ML / Lidocaine 20 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP397300",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21083854,
+      "conceptName": "Epinephrine 0.5 MG/ML / Zinc Sulfate 2.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP397292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961153,
+      "conceptName": "Epinephrine 0.5 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159115",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894642,
+      "conceptName": "Epinephrine 0.5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003216",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084474,
+      "conceptName": "Epinephrine 0.5 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36257198,
+      "conceptName": "Epinephrine 0.5 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3108073",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179964,
+      "conceptName": "Epinephrine 0.597 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377926",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118922,
+      "conceptName": "Epinephrine 0.78 MG/ML / homatropine 1.5 MG/ML / Papaverine 12 MG/ML / Tetracaine 2.5 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316884",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179962,
+      "conceptName": "Epinephrine 0.8 MG/ML / hypophysis extract 0.03 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377924",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36267408,
+      "conceptName": "Epinephrine 0.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3118283",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752363,
+      "conceptName": "Epinephrine 0.9 MG/ML / Zinc Sulfate 2.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4705723",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097383,
+      "conceptName": "Epinephrine 1 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092014",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21083736,
+      "conceptName": "Epinephrine 1 MG/ML / Lidocaine 40 MG/ML / Tetracaine 5 MG/ML Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395087",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071585,
+      "conceptName": "Epinephrine 1 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066216",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36262261,
+      "conceptName": "Epinephrine 1 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3113136",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482214,
+      "conceptName": "Epinephrine 1 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417146",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891732,
+      "conceptName": "Epinephrine 1.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242303,
+      "conceptName": "Epinephrine 1.2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440265",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44172628,
+      "conceptName": "Epinephrine 1.4 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3049351",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35745636,
+      "conceptName": "Epinephrine 1.67 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2747097",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888764,
+      "conceptName": "Epinephrine 1.67 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001191",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42483368,
+      "conceptName": "Epinephrine 1.67 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417153",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882022,
+      "conceptName": "Epinephrine 1.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1007137",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890764,
+      "conceptName": "Epinephrine 1.8 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988439",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752368,
+      "conceptName": "Epinephrine 1000000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4705718",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898713,
+      "conceptName": "Epinephrine 11.9 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096675",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867620,
+      "conceptName": "Epinephrine 12.5 MG/ML / Lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065582",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304254,
+      "conceptName": "Epinephrine 14 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502216",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123430,
+      "conceptName": "Epinephrine 2 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118061",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117391,
+      "conceptName": "Epinephrine 2 MG/ML / Guanethidine 10 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315353",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890763,
+      "conceptName": "Epinephrine 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961144,
+      "conceptName": "Epinephrine 22.5 MG/ML / Pilocarpine 25 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097384,
+      "conceptName": "Epinephrine 30 C Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092015",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242308,
+      "conceptName": "Epinephrine 30 C Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440270",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41024911,
+      "conceptName": "Epinephrine 4 MG/ML / ethaverine 6.4 MG/ML / homatropine 1.25 MG/ML / polidocanol 12 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222873",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898712,
+      "conceptName": "Epinephrine 4 MG/ML / hypophysis extract 0.03 UNT/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096674",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36421685,
+      "conceptName": "Epinephrine 4 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4763966",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898706,
+      "conceptName": "Epinephrine 40 MG/ML / Pilocarpine 20 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096668",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148878,
+      "conceptName": "Epinephrine 47.8 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346840",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961138,
+      "conceptName": "Epinephrine 48 MG/ML / Theophylline 10 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179963,
+      "conceptName": "Epinephrine 5 MG/ML / Guanethidine 20 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377925",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43024177,
+      "conceptName": "Epinephrine 500 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4839292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881056,
+      "conceptName": "Epinephrine 500 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001812",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1344242,
+      "conceptName": "NDA019430 0.3 ML epinephrine 0.5 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "727316",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594368,
+      "conceptName": "NDA019430 0.3 ML epinephrine 1 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870207",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594379,
+      "conceptName": "NDA020800 0.15 ML epinephrine 1 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870225",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594382,
+      "conceptName": "NDA020800 0.3 ML epinephrine 1 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870230",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793160,
+      "conceptName": "NDA201739 0.1 ML epinephrine 1 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1991328",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594383,
+      "conceptName": "NDA201739 0.15 ML epinephrine 1 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870232",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594367,
+      "conceptName": "NDA201739 0.3 ML epinephrine 1 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870205",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1344210,
+      "conceptName": "articaine 40 MG/ML / epinephrine 0.018 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "597837",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593724,
+      "conceptName": "articaine hydrochloride 40 MG/ML / epinephrine bitartrate 0.009 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1928859",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593730,
+      "conceptName": "articaine hydrochloride 40 MG/ML / epinephrine bitartrate 0.018 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1928865",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40243323,
+      "conceptName": "atropine sulfate 0.01 MG/MG / epinephrine bitartrate 0.001 MG/MG / tyramine 0.02 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1190822",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274432,
+      "conceptName": "boric acid 0.05 MG/MG / Epinephrine 0.000024 MG/MG / Menthol 0.01 MG/MG Nasal Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472394",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2062160,
+      "conceptName": "bupivacaine 5 MG/ML / epinephrine 0.009 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4963411",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40225943,
+      "conceptName": "bupivacaine hydrochloride 2.5 MG/ML / epinephrine 0.005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012377",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593743,
+      "conceptName": "bupivacaine hydrochloride 2.5 MG/ML / epinephrine 0.005 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1867595",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35602780,
+      "conceptName": "bupivacaine hydrochloride 5 MG/ML / epinephrine 0.005 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1670366",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40225960,
+      "conceptName": "bupivacaine hydrochloride 5 MG/ML / epinephrine 0.005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012384",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35602798,
+      "conceptName": "bupivacaine hydrochloride 5 MG/ML / epinephrine 0.005 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1672918",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593794,
+      "conceptName": "bupivacaine hydrochloride 7.5 MG/ML / epinephrine 0.005 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1867921",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074391,
+      "conceptName": "butabarbital 25 MG / epinephrine 24 MG / theophylline 130 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308826",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009830,
+      "conceptName": "cocaine 50 MG/ML / epinephrine 0.2 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "107623",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36026769,
+      "conceptName": "epinephrine 0.001 MG/MG / lidocaine hydrochloride 0.05 MG/MG / tetracaine hydrochloride 0.01 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2534333",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40240717,
+      "conceptName": "epinephrine 0.001 MG/MG / lidocaine hydrochloride 0.1 MG/MG Medicated Patch",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1116626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226810,
+      "conceptName": "epinephrine 0.002 MG/ML / lidocaine hydrochloride 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012155",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867645,
+      "conceptName": "epinephrine 0.002 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5024112",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226811,
+      "conceptName": "epinephrine 0.005 MG/ML / etidocaine hydrochloride 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226814,
+      "conceptName": "epinephrine 0.005 MG/ML / etidocaine hydrochloride 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234879,
+      "conceptName": "epinephrine 0.005 MG/ML / lidocaine 10.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215582",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234880,
+      "conceptName": "epinephrine 0.005 MG/ML / lidocaine 21.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215583",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593803,
+      "conceptName": "epinephrine 0.005 MG/ML / lidocaine hydrochloride 10 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1867941",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593916,
+      "conceptName": "epinephrine 0.005 MG/ML / lidocaine hydrochloride 15 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1867994",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593923,
+      "conceptName": "epinephrine 0.005 MG/ML / lidocaine hydrochloride 20 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1868011",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226826,
+      "conceptName": "epinephrine 0.005 MG/ML / lidocaine hydrochloride 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1010745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104243,
+      "conceptName": "epinephrine 0.005 MG/ML / mepivacaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413278",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104479,
+      "conceptName": "epinephrine 0.005 MG/ML / mepivacaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19022026,
+      "conceptName": "epinephrine 0.005 MG/ML / prilocaine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199567",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234686,
+      "conceptName": "epinephrine 0.005 MG/ML / prilocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215391",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226829,
+      "conceptName": "epinephrine 0.005 MG/ML / prilocaine hydrochloride 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012707",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19108377,
+      "conceptName": "epinephrine 0.01 MG/ML / lidocaine 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "435374",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226837,
+      "conceptName": "epinephrine 0.01 MG/ML / lidocaine hydrochloride 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1010751",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902708,
+      "conceptName": "epinephrine 0.01 MG/ML / lidocaine hydrochloride 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359821",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903014,
+      "conceptName": "epinephrine 0.01 MG/ML / lidocaine hydrochloride 20 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226840,
+      "conceptName": "epinephrine 0.01 MG/ML / lidocaine hydrochloride 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1010759",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226844,
+      "conceptName": "epinephrine 0.01 MG/ML / lidocaine hydrochloride 20 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1013009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226850,
+      "conceptName": "epinephrine 0.01 MG/ML / mepivacaine hydrochloride 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226851,
+      "conceptName": "epinephrine 0.0125 MG/ML / lidocaine hydrochloride 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012169",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104297,
+      "conceptName": "epinephrine 0.015 MG/ML / lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413567",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104244,
+      "conceptName": "epinephrine 0.015 MG/ML / mepivacaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413279",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1735483,
+      "conceptName": "epinephrine 0.016 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2695030",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40226852,
+      "conceptName": "epinephrine 0.02 MG/ML / lidocaine hydrochloride 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1012178",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275967,
+      "conceptName": "epinephrine 0.02 MG/ML / lidocaine hydrochloride 20 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1657017",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867644,
+      "conceptName": "epinephrine 0.025 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5024111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867643,
+      "conceptName": "epinephrine 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5024110",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19016967,
+      "conceptName": "epinephrine 0.1 MG / fluorouracil 30 MG Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "153217",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19114017,
+      "conceptName": "epinephrine 0.1 MG/ML / lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "542570",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606255,
+      "conceptName": "epinephrine 0.1 MG/ML / lidocaine hydrochloride 50 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1733892",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076867,
+      "conceptName": "epinephrine 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310116",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009229,
+      "conceptName": "epinephrine 0.1 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106778",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902641,
+      "conceptName": "epinephrine 0.1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359754",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2062169,
+      "conceptName": "epinephrine 0.107 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4963420",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1356382,
+      "conceptName": "epinephrine 0.125 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2109089",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 990325,
+      "conceptName": "epinephrine 0.125 MG/ML / lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413235",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2062180,
+      "conceptName": "epinephrine 0.15 MG Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4963431",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903378,
+      "conceptName": "epinephrine 0.16 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360491",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123940,
+      "conceptName": "epinephrine 0.2 MG/ML / lidocaine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "629897",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2062165,
+      "conceptName": "epinephrine 0.214 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4963416",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902962,
+      "conceptName": "epinephrine 0.22 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360075",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076898,
+      "conceptName": "epinephrine 0.25 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310129",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2062176,
+      "conceptName": "epinephrine 0.3 MG Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4963427",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19020395,
+      "conceptName": "epinephrine 0.3 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198620",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103200,
+      "conceptName": "epinephrine 0.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "407869",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009221,
+      "conceptName": "epinephrine 0.5 MG/ML / guanethidine 2.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106694",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903224,
+      "conceptName": "epinephrine 0.5 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360337",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1344014,
+      "conceptName": "epinephrine 0.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009230,
+      "conceptName": "epinephrine 0.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106779",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1361227,
+      "conceptName": "epinephrine 0.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2178793",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009190,
+      "conceptName": "epinephrine 1 MG/ML / guanethidine 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106693",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36956395,
+      "conceptName": "epinephrine 1 MG/ML / lidocaine 40 MG/ML / tetracaine 5 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5185519",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902643,
+      "conceptName": "epinephrine 1 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359756",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2062181,
+      "conceptName": "epinephrine 1 MG/ML Inhalation Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4963432",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076899,
+      "conceptName": "epinephrine 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310132",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275919,
+      "conceptName": "epinephrine 1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1660017",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1344050,
+      "conceptName": "epinephrine 1 MG/ML Nasal Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313967",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1344013,
+      "conceptName": "epinephrine 1 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "244284",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793011,
+      "conceptName": "epinephrine 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1989118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2924588,
+      "conceptName": "epinephrine 1.67 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5141393",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2935210,
+      "conceptName": "epinephrine 1.8 MG/ML / lidocaine 40 MG/ML / tetracaine 5 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5151946",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2935206,
+      "conceptName": "epinephrine 1.8 MG/ML / lidocaine 43 MG/ML / tetracaine 5 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5151942",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2935208,
+      "conceptName": "epinephrine 1.8 MG/ML / lidocaine 43 MG/ML / tetracaine 5 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5151944",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19002108,
+      "conceptName": "epinephrine 10 MG/ML / guanethidine 50 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "103239",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40224921,
+      "conceptName": "epinephrine 10 MG/ML / pilocarpine hydrochloride 10 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1001079",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40224922,
+      "conceptName": "epinephrine 10 MG/ML / pilocarpine hydrochloride 20 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1001082",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40224923,
+      "conceptName": "epinephrine 10 MG/ML / pilocarpine hydrochloride 30 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1001085",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40224924,
+      "conceptName": "epinephrine 10 MG/ML / pilocarpine hydrochloride 40 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1001086",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40224925,
+      "conceptName": "epinephrine 10 MG/ML / pilocarpine hydrochloride 60 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1001089",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1343989,
+      "conceptName": "epinephrine 10 MG/ML Inhalation Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "237187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867640,
+      "conceptName": "epinephrine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5024107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1343918,
+      "conceptName": "epinephrine 10 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "141848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19028216,
+      "conceptName": "epinephrine 10 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "204801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36966383,
+      "conceptName": "epinephrine 1000000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5191595",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009188,
+      "conceptName": "epinephrine 2 MG/ML / guanethidine 10 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106691",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076896,
+      "conceptName": "epinephrine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076897,
+      "conceptName": "epinephrine 2.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1735304,
+      "conceptName": "epinephrine 20 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2693442",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1344049,
+      "conceptName": "epinephrine 20 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123042,
+      "conceptName": "epinephrine 22.5 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "605689",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009189,
+      "conceptName": "epinephrine 5 MG/ML / guanethidine 10 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106692",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009187,
+      "conceptName": "epinephrine 5 MG/ML / guanethidine 30 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106690",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19002107,
+      "conceptName": "epinephrine 5 MG/ML / guanethidine 50 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "103238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076869,
+      "conceptName": "epinephrine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115150,
+      "conceptName": "epinephrine 5 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562260",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009261,
+      "conceptName": "epinephrine 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106780",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076870,
+      "conceptName": "epinephrine 7 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310119",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076891,
+      "conceptName": "epinephrine 80 MG/ML / zinc chloride 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310120",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606253,
+      "conceptName": "epinephrine hydrochloride 0.0001 MG/MG / lidocaine hydrochloride 0.05 MG/MG Rectal Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1733890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 779681,
+      "conceptName": "epinephrine hydrochloride 0.1 MG/ML / lidocaine hydrochloride 50 MG/ML Rectal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2601579",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37003150,
+      "conceptName": "epinephrine hydrochloride 0.1 MG/ML / lidocaine hydrochloride 50 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2462017",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1344202,
+      "conceptName": "epinephryl borate 20 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "485672",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076921,
+      "conceptName": "epinephryl borate 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310134",
+      "standardConcept": "S"
+    }
+  ]
+}

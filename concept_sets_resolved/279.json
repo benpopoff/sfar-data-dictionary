@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 279,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4260747,
+      "conceptName": "Length of gestation at birth",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "412726003",
+      "standardConcept": "S"
+    }
+  ]
+}

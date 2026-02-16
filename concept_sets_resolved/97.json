@@ -1,0 +1,266 @@
+{
+  "conceptSetId": 97,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42956968,
+      "conceptName": "Norfloxacin 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4683501",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35131865,
+      "conceptName": "Norfloxacin 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4789098",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41209818,
+      "conceptName": "Norfloxacin 3 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2407780",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43155797,
+      "conceptName": "Norfloxacin 400 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP502127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35157573,
+      "conceptName": "Norfloxacin 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4814577",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1721547,
+      "conceptName": "norfloxacin 0.003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "249392",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862212,
+      "conceptName": "norfloxacin 0.1 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018383",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862228,
+      "conceptName": "norfloxacin 0.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018399",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862226,
+      "conceptName": "norfloxacin 1.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018397",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862222,
+      "conceptName": "norfloxacin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018393",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861719,
+      "conceptName": "norfloxacin 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018410",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861707,
+      "conceptName": "norfloxacin 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018409",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107971,
+      "conceptName": "norfloxacin 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433893",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861705,
+      "conceptName": "norfloxacin 100 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018407",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862214,
+      "conceptName": "norfloxacin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018385",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862205,
+      "conceptName": "norfloxacin 1000 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018376",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862224,
+      "conceptName": "norfloxacin 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018395",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862209,
+      "conceptName": "norfloxacin 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018380",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862231,
+      "conceptName": "norfloxacin 200 MG Inhalation Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018402",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861703,
+      "conceptName": "norfloxacin 200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862233,
+      "conceptName": "norfloxacin 200 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018404",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862203,
+      "conceptName": "norfloxacin 2500 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018374",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079112,
+      "conceptName": "norfloxacin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312032",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862207,
+      "conceptName": "norfloxacin 30 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018378",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862230,
+      "conceptName": "norfloxacin 400 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018401",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2050985,
+      "conceptName": "norfloxacin 400 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4951457",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19019411,
+      "conceptName": "norfloxacin 400 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198044",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862218,
+      "conceptName": "norfloxacin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018389",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862216,
+      "conceptName": "norfloxacin 80 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018387",
+      "standardConcept": "S"
+    }
+  ]
+}

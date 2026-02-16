@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 240,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4320771,
+      "conceptName": "Gram-positive cocci in clusters",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Finding",
+      "conceptCode": "70003006",
+      "standardConcept": "S"
+    }
+  ]
+}

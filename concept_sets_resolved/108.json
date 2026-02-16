@@ -1,0 +1,77 @@
+{
+  "conceptSetId": 108,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41270622,
+      "conceptName": "tigecycline 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2468584",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 994960,
+      "conceptName": "tigecycline 10 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4821472",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 590050,
+      "conceptName": "tigecycline 10 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3134975",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407417,
+      "conceptName": "tigecycline 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099459",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44070999,
+      "conceptName": "tigecycline 50 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1065630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1742434,
+      "conceptName": "tigecycline 50 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "581531",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36785667,
+      "conceptName": "tigecycline 50 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4773947",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886801,
+      "conceptName": "tigecycline 50 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997161",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 58,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42962443,
+      "conceptName": "sulodexide 250 UNT Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4688934",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "conceptSetId": 123,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44097223,
+      "conceptName": "Insulin, Aspart Protamine, Human 0.7 MG/ML / Insulin, Aspart, Human 0.3 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 782531,
+      "conceptName": "Insulin, Aspart Protamine, Human 30 UNT/ML / Insulin, Aspart, Human 70 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4830365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36274986,
+      "conceptName": "Insulin, Aspart Protamine, Human 30 UNT/ML / Insulin, Aspart, Human 70 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3125861",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36277560,
+      "conceptName": "Insulin, Aspart Protamine, Human 50 UNT/ML / Insulin, Aspart, Human 50 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3128435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43268818,
+      "conceptName": "Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP551922",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43257917,
+      "conceptName": "Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP551916",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41053854,
+      "conceptName": "Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2251816",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116595,
+      "conceptName": "Insulin, Aspart, Human 0.1 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314557",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085403,
+      "conceptName": "Insulin, Aspart, Human 0.1 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148105,
+      "conceptName": "Insulin, Aspart, Human 10 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346067",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888724,
+      "conceptName": "Insulin, Aspart, Human 100 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988526",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481303,
+      "conceptName": "Insulin, Aspart, Human 100 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417465",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084311,
+      "conceptName": "Insulin, Aspart, Human 30 UNT/ML / Regular Insulin, Human 70 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078942",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991609,
+      "conceptName": "Insulin, Aspart, Human 30 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189571",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116594,
+      "conceptName": "Insulin, Aspart, Human 30 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314556",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40866838,
+      "conceptName": "Insulin, Aspart, Human 62.5 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2064800",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19133793,
+      "conceptName": "insulin aspart protamine, human 50 UNT/ML / insulin aspart, human 50 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "833159",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1567201,
+      "conceptName": "insulin aspart protamine, human 70 UNT/ML / insulin aspart, human 30 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "351297",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902356,
+      "conceptName": "insulin aspart protamine, human 70 UNT/ML / insulin aspart, human 30 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359469",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2054241,
+      "conceptName": "insulin aspart, human 100 IU/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4954835",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2054236,
+      "conceptName": "insulin aspart, human 100 IU/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4954830",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234044,
+      "conceptName": "insulin aspart, human 100 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1653199",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078558,
+      "conceptName": "insulin aspart, human 100 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234050,
+      "conceptName": "insulin aspart, human 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1653205",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793498,
+      "conceptName": "insulin aspart, human 30 UNT/ML / insulin degludec 70 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1994317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42963016,
+      "conceptName": "insulin degludec 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4689503",
+      "standardConcept": "S"
+    }
+  ]
+}

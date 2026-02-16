@@ -1,0 +1,239 @@
+{
+  "conceptSetId": 59,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41177276,
+      "conceptName": "tinzaparin 10 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2375238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41051948,
+      "conceptName": "tinzaparin 10 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2249910",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109669,
+      "conceptName": "tinzaparin 11700 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104300",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104480,
+      "conceptName": "tinzaparin 120 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415269",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37593555,
+      "conceptName": "tinzaparin 120 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4782991",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104227,
+      "conceptName": "tinzaparin 141 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413228",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40989786,
+      "conceptName": "tinzaparin 19.9 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2187748",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41051949,
+      "conceptName": "tinzaparin 20 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2249911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41177277,
+      "conceptName": "tinzaparin 20 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2375239",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41083555,
+      "conceptName": "tinzaparin 24.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2281517",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891669,
+      "conceptName": "tinzaparin 241 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991301",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36419314,
+      "conceptName": "tinzaparin 241 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4761610",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40958512,
+      "conceptName": "tinzaparin 268 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2156474",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41083554,
+      "conceptName": "tinzaparin 301 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2281516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927263,
+      "conceptName": "tinzaparin 344 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125225",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41239753,
+      "conceptName": "tinzaparin 346 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2437715",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41270606,
+      "conceptName": "tinzaparin 402 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2468568",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41020748,
+      "conceptName": "tinzaparin 403 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2218710",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41301680,
+      "conceptName": "tinzaparin 482 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2499642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715128,
+      "conceptName": "tinzaparin 60.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2732978",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41239754,
+      "conceptName": "tinzaparin 60.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2437716",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114769,
+      "conceptName": "tinzaparin 603 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312731",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40180715,
+      "conceptName": "tinzaparin sodium 10000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "978717",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902894,
+      "conceptName": "tinzaparin sodium 10000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40180717,
+      "conceptName": "tinzaparin sodium 20000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "978713",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902916,
+      "conceptName": "tinzaparin sodium 20000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360029",
+      "standardConcept": "S"
+    }
+  ]
+}

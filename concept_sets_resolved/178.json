@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 178,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3026910,
+      "conceptName": "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2324-2",
+      "standardConcept": "S"
+    }
+  ]
+}

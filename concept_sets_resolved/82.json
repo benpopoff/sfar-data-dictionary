@@ -1,0 +1,104 @@
+{
+  "conceptSetId": 82,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43030179,
+      "conceptName": "Daptomycin 17.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845248",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43030177,
+      "conceptName": "Daptomycin 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845246",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836854,
+      "conceptName": "Daptomycin 350 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034816",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884920,
+      "conceptName": "Daptomycin 350 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991738",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242641,
+      "conceptName": "Daptomycin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440603",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110344,
+      "conceptName": "Daptomycin 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104975",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887834,
+      "conceptName": "Daptomycin 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP990105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1301928,
+      "conceptName": "daptomycin 10 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2632128",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793583,
+      "conceptName": "daptomycin 350 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1996246",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19102518,
+      "conceptName": "daptomycin 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "403920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1301930,
+      "conceptName": "daptomycin 7 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2632131",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 153,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3016502,
+      "conceptName": "Oxygen saturation in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2708-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3014295,
+      "conceptName": "Oxygen saturation in Arterial cord blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "28642-7",
+      "standardConcept": "S"
+    }
+  ]
+}

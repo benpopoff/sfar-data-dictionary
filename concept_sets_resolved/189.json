@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 189,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3048529,
+      "conceptName": "Troponin T.cardiac [Mass/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "48425-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3019800,
+      "conceptName": "Troponin T.cardiac [Mass/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "6598-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40769783,
+      "conceptName": "Troponin T.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "67151-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3019572,
+      "conceptName": "Troponin T.cardiac [Mass/volume] in Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "6597-9",
+      "standardConcept": "S"
+    }
+  ]
+}

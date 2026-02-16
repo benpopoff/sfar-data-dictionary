@@ -1,0 +1,689 @@
+{
+  "conceptSetId": 66,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40838351,
+      "conceptName": "Amphotericin B 0.0005 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036313",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838347,
+      "conceptName": "Amphotericin B 0.0125 MG/MG / Tetracycline 0.025 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036309",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962881,
+      "conceptName": "Amphotericin B 0.0125 MG/MG / Tetracycline 0.0259 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160843",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728898,
+      "conceptName": "Amphotericin B 0.0125 MG/MG / Tetracycline 0.026 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2740111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884757,
+      "conceptName": "Amphotericin B 0.0192 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994084",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43603765,
+      "conceptName": "Amphotericin B 0.0259 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP958440",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42727235,
+      "conceptName": "Amphotericin B 0.026 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2723666",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41213106,
+      "conceptName": "Amphotericin B 0.03 MG/MG / Gramicidin 0.00025 MG/MG / Neomycin 0.00385 MG/MG / Triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2411068",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962882,
+      "conceptName": "Amphotericin B 0.03 MG/MG / Gramicidin 0.00025 MG/MG / Neomycin 0.00385 MG/MG / Triamcinolone 0.001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160844",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119164,
+      "conceptName": "Amphotericin B 0.03 MG/MG / Triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2317126",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274996,
+      "conceptName": "Amphotericin B 0.03 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472958",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43581894,
+      "conceptName": "Amphotericin B 0.0377 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP775712",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40821137,
+      "conceptName": "Amphotericin B 0.0377 MG/MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2019099",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43672228,
+      "conceptName": "Amphotericin B 0.0384 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP775982",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056399,
+      "conceptName": "Amphotericin B 0.1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254361",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43779878,
+      "conceptName": "Amphotericin B 0.45 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP775680",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119165,
+      "conceptName": "Amphotericin B 1.5 MG/ML / Triamcinolone 2 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2317127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21174730,
+      "conceptName": "Amphotericin B 1.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP278133",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40994152,
+      "conceptName": "Amphotericin B 1.5 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2192114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056401,
+      "conceptName": "Amphotericin B 1.67 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41213109,
+      "conceptName": "Amphotericin B 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2411071",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36406620,
+      "conceptName": "Amphotericin B 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3098662",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44098081,
+      "conceptName": "Amphotericin B 100 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092712",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21096144,
+      "conceptName": "Amphotericin B 100 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP278115",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884758,
+      "conceptName": "Amphotericin B 100 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988385",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479118,
+      "conceptName": "Amphotericin B 100 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419980",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41087916,
+      "conceptName": "Amphotericin B 15 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2285878",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885739,
+      "conceptName": "Amphotericin B 154 MG Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001897",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181732,
+      "conceptName": "Amphotericin B 1900 MG / Triamcinolone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379694",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025186,
+      "conceptName": "Amphotericin B 2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181736,
+      "conceptName": "Amphotericin B 2 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379698",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41213107,
+      "conceptName": "Amphotericin B 2650 MG / Gramicidin 1.25 MG / Neomycin 19 MG / Tetracycline 1040 MG / Triamcinolone 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2411069",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40931589,
+      "conceptName": "Amphotericin B 2650 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2129551",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838348,
+      "conceptName": "Amphotericin B 2800 MG / Gramicidin 2.5 MG / Neomycin 38 MG / Tetracycline 1040 MG / Triamcinolone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036310",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41087912,
+      "conceptName": "Amphotericin B 2800 MG / Triamcinolone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2285874",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025182,
+      "conceptName": "Amphotericin B 2900 MG / Tetracycline 1250 MG / Triamcinolone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223144",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21027478,
+      "conceptName": "Amphotericin B 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP278105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43166284,
+      "conceptName": "Amphotericin B 3.33 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP460683",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41244092,
+      "conceptName": "Amphotericin B 3.33 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2442054",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181740,
+      "conceptName": "Amphotericin B 4.17 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379702",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025187,
+      "conceptName": "Amphotericin B 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223149",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21056882,
+      "conceptName": "Amphotericin B 5 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP278123",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886711,
+      "conceptName": "Amphotericin B 5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989225",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44124122,
+      "conceptName": "Amphotericin B 5 MG/ML Intravenous Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118753",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21047153,
+      "conceptName": "Amphotericin B 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP278127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056396,
+      "conceptName": "Amphotericin B 50 MG / Tetracycline 104 MG Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254358",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962883,
+      "conceptName": "Amphotericin B 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160845",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110898,
+      "conceptName": "Amphotericin B 50 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105529",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892635,
+      "conceptName": "Amphotericin B 50 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025185,
+      "conceptName": "Amphotericin B 50 MG Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223147",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105135,
+      "conceptName": "amphotericin B 0.03 MG/MG / triamcinolone 0.001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "418381",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717293,
+      "conceptName": "amphotericin B 0.03 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "244413",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36929330,
+      "conceptName": "amphotericin B 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5199558",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861931,
+      "conceptName": "amphotericin B 10 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018485",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717265,
+      "conceptName": "amphotericin B 10 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199417",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051237,
+      "conceptName": "amphotericin B 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4951715",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19064462,
+      "conceptName": "amphotericin B 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251350",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717264,
+      "conceptName": "amphotericin B 100 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199264",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861934,
+      "conceptName": "amphotericin B 25 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018488",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103292,
+      "conceptName": "amphotericin B 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "409827",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104957,
+      "conceptName": "amphotericin B 30 MG/ML / triamcinolone 1 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "417404",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717262,
+      "conceptName": "amphotericin B 30 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197367",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717263,
+      "conceptName": "amphotericin B 30 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197368",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861552,
+      "conceptName": "amphotericin B 5 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018491",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861551,
+      "conceptName": "amphotericin B 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018490",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836961,
+      "conceptName": "amphotericin B 5 MG/ML / tetracycline 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "242814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1831264,
+      "conceptName": "amphotericin B 5 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5156511",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19073213,
+      "conceptName": "amphotericin B 50 MG / tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308206",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19057592,
+      "conceptName": "amphotericin B 50 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "239240",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36787697,
+      "conceptName": "amphotericin B lipid complex 5 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4775960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604140,
+      "conceptName": "amphotericin B lipid complex 5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1737442",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 783035,
+      "conceptName": "amphotericin B lipid complex 5 MG/ML Intravenous Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4830865",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19133991,
+      "conceptName": "amphotericin B liposomal 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "834789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40747350,
+      "conceptName": "amphotericin B liposomal 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4709849",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40175779,
+      "conceptName": "amphotericin B liposomal 50 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "967385",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36788600,
+      "conceptName": "amphotericin B liposomal 50 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4776854",
+      "standardConcept": "S"
+    }
+  ]
+}

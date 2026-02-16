@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 185,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3023091,
+      "conceptName": "Interleukin 6 [Mass/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26881-3",
+      "standardConcept": "S"
+    }
+  ]
+}

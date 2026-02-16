@@ -1,0 +1,149 @@
+{
+  "conceptSetId": 257,
+  "resolvedConcepts": [
+    {
+      "conceptId": 605510,
+      "conceptName": "Borderline oxacillin-resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1108501000112102",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4249256,
+      "conceptName": "Glycopeptide intermediate Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "406605001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4249257,
+      "conceptName": "Glycopeptide intermediate/resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "406606000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4232582,
+      "conceptName": "Glycopeptide resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "404679009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4019195,
+      "conceptName": "Methicillin resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "115329001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4168510,
+      "conceptName": "Methicillin susceptible Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "417943000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37396650,
+      "conceptName": "Multiple drug resistant methicillin resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "716531008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37396649,
+      "conceptName": "Non-multiple drug resistant methicillin resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "716530009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46272235,
+      "conceptName": "Panton-Valentine leukocidin producing Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "710564002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4149419,
+      "conceptName": "Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "3092008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4034627,
+      "conceptName": "Staphylococcus aureus ss aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "113961008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4177186,
+      "conceptName": "Staphylococcus aureus ss. anaerobius",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "50269000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4229388,
+      "conceptName": "Vancomycin intermediate Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "406962002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4249133,
+      "conceptName": "Vancomycin intermediate/resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "406576009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4225532,
+      "conceptName": "Vancomycin resistant Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "404680007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784188,
+      "conceptName": "Vancomycin susceptible Staphylococcus aureus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698216001",
+      "standardConcept": "S"
+    }
+  ]
+}

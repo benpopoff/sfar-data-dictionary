@@ -1,0 +1,185 @@
+{
+  "conceptSetId": 138,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41208980,
+      "conceptName": "Sufentanil 0.0005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2406942",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927433,
+      "conceptName": "Sufentanil 0.0025 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125395",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43695388,
+      "conceptName": "Sufentanil 0.005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP678523",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588885,
+      "conceptName": "Sufentanil 0.005 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137188",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889720,
+      "conceptName": "Sufentanil 0.005 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988582",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43767164,
+      "conceptName": "Sufentanil 0.0075 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP678510",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42727272,
+      "conceptName": "Sufentanil 0.00752 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727939",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35407450,
+      "conceptName": "Sufentanil 0.015 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141035",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40824216,
+      "conceptName": "Sufentanil 0.0157 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2022178",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43821297,
+      "conceptName": "Sufentanil 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP678516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882871,
+      "conceptName": "Sufentanil 0.05 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992969",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43659563,
+      "conceptName": "Sufentanil 0.075 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP678504",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589368,
+      "conceptName": "Sufentanil 0.075 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3136506",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728576,
+      "conceptName": "Sufentanil 0.0752 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724815",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589231,
+      "conceptName": "Sufentanil 0.0752 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138453",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720588,
+      "conceptName": "Sufentanil 0.0753 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2725769",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41146529,
+      "conceptName": "Sufentanil 0.392 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344491",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40896428,
+      "conceptName": "Sufentanil 1.57 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2094390",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35201758,
+      "conceptName": "sufentanil 0.03 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2103192",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220493,
+      "conceptName": "sufentanil 0.05 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1809100",
+      "standardConcept": "S"
+    }
+  ]
+}

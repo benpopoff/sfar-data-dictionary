@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 230,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4274350,
+      "conceptName": "Corynebacterium striatum",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "63815007",
+      "standardConcept": "S"
+    }
+  ]
+}

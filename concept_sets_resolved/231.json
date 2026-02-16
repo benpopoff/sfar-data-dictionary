@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 231,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4212869,
+      "conceptName": "Dermabacter hominis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "413977006",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 242,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37151800,
+      "conceptName": "AmpC beta-lactamase producing Klebsiella oxytoca",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1097401000112108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36714518,
+      "conceptName": "Carbapenem resistant Klebsiella oxytoca",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "719792001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1244054,
+      "conceptName": "Carbapenemase-producing Klebsiella oxytoca",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "51271000087100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017621,
+      "conceptName": "Extended spectrum beta-lactamase producing Klebsiella oxytoca",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "713928005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4254213,
+      "conceptName": "Klebsiella oxytoca",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "40886007",
+      "standardConcept": "S"
+    }
+  ]
+}

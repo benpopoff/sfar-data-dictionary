@@ -1,0 +1,509 @@
+{
+  "conceptSetId": 87,
+  "resolvedConcepts": [
+    {
+      "conceptId": 35136306,
+      "conceptName": "Fosfomycin 0.2 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4793487",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43162424,
+      "conceptName": "Fosfomycin 0.375 MG/MG Granules for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP495924",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42874918,
+      "conceptName": "Fosfomycin 0.375 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4872036",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36507189,
+      "conceptName": "Fosfomycin 0.375 MG/MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4836212",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41303949,
+      "conceptName": "Fosfomycin 0.375 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2501911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35160443,
+      "conceptName": "Fosfomycin 0.4 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4817421",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43586186,
+      "conceptName": "Fosfomycin 0.704 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP660985",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43820300,
+      "conceptName": "Fosfomycin 0.704 MG/MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP660975",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43622252,
+      "conceptName": "Fosfomycin 0.704 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP660980",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719261,
+      "conceptName": "Fosfomycin 0.758 MG/MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2735471",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43140286,
+      "conceptName": "Fosfomycin 0.759 MG/MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP495971",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892708,
+      "conceptName": "Fosfomycin 0.98 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000595",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43640353,
+      "conceptName": "Fosfomycin 0.981 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP659918",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404387,
+      "conceptName": "Fosfomycin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096429",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21130156,
+      "conceptName": "Fosfomycin 1000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP350813",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891714,
+      "conceptName": "Fosfomycin 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405164,
+      "conceptName": "Fosfomycin 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097206",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21051771,
+      "conceptName": "Fosfomycin 2000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP350773",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35143085,
+      "conceptName": "Fosfomycin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4800192",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35156576,
+      "conceptName": "Fosfomycin 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4813587",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929490,
+      "conceptName": "Fosfomycin 26.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127452",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35157001,
+      "conceptName": "Fosfomycin 30 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4814008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40754399,
+      "conceptName": "Fosfomycin 3000 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4703326",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084414,
+      "conceptName": "Fosfomycin 3000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079045",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042032,
+      "conceptName": "Fosfomycin 3000 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP350783",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272800,
+      "conceptName": "Fosfomycin 33.3 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470762",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40823295,
+      "conceptName": "Fosfomycin 39.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2021257",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272802,
+      "conceptName": "Fosfomycin 40 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470764",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404386,
+      "conceptName": "Fosfomycin 4000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096428",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21061568,
+      "conceptName": "Fosfomycin 4000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP350824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889746,
+      "conceptName": "Fosfomycin 4000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999933",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148521,
+      "conceptName": "Fosfomycin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346483",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272801,
+      "conceptName": "Fosfomycin 50 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470763",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35139998,
+      "conceptName": "Fosfomycin 500 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4797148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35133779,
+      "conceptName": "Fosfomycin 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4790985",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41022963,
+      "conceptName": "Fosfomycin 65.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220925",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44180068,
+      "conceptName": "Fosfomycin 65.9 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3056791",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850562,
+      "conceptName": "fosfomycin 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006766",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850559,
+      "conceptName": "fosfomycin 100 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006763",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850560,
+      "conceptName": "fosfomycin 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006764",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060191,
+      "conceptName": "fosfomycin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246094",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850557,
+      "conceptName": "fosfomycin 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006761",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850556,
+      "conceptName": "fosfomycin 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006760",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850554,
+      "conceptName": "fosfomycin 140 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006758",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850551,
+      "conceptName": "fosfomycin 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006755",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850549,
+      "conceptName": "fosfomycin 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006753",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115088,
+      "conceptName": "fosfomycin 2000 MG Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562039",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060192,
+      "conceptName": "fosfomycin 250 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246095",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19132594,
+      "conceptName": "fosfomycin 3000 MG Granules for Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "808917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850545,
+      "conceptName": "fosfomycin 3000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006749",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2036180,
+      "conceptName": "fosfomycin 375 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4935445",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060194,
+      "conceptName": "fosfomycin 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246097",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060193,
+      "conceptName": "fosfomycin 500 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246096",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850546,
+      "conceptName": "fosfomycin 500 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006750",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36057604,
+      "conceptName": "fosfomycin 5000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4983147",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35850565,
+      "conceptName": "fosfomycin 62.5 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5006769",
+      "standardConcept": "S"
+    }
+  ]
+}

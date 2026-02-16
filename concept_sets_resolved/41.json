@@ -1,0 +1,428 @@
+{
+  "conceptSetId": 41,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41054962,
+      "conceptName": "Dalteparin 10 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252924",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894581,
+      "conceptName": "Dalteparin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117763,
+      "conceptName": "Dalteparin 1000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315725",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35153406,
+      "conceptName": "Dalteparin 1000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4810434",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43263317,
+      "conceptName": "Dalteparin 10000 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP551777",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868000,
+      "conceptName": "Dalteparin 12.5 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065962",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211730,
+      "conceptName": "Dalteparin 12.5 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409692",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43623979,
+      "conceptName": "Dalteparin 12500 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP692915",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43290508,
+      "conceptName": "Dalteparin 12500 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP551784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273546,
+      "conceptName": "Dalteparin 12500000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471508",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868003,
+      "conceptName": "Dalteparin 2.5 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065965",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242646,
+      "conceptName": "Dalteparin 2.5 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440608",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42731154,
+      "conceptName": "Dalteparin 226 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2742728",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880992,
+      "conceptName": "Dalteparin 227 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003116",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42716535,
+      "conceptName": "Dalteparin 228 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2734088",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273544,
+      "conceptName": "Dalteparin 24 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471506",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868001,
+      "conceptName": "Dalteparin 25 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117765,
+      "conceptName": "Dalteparin 25 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315727",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35134341,
+      "conceptName": "Dalteparin 250 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4791544",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045837,
+      "conceptName": "Dalteparin 2500 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040468",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482044,
+      "conceptName": "Dalteparin 2500 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417841",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43268801,
+      "conceptName": "Dalteparin 25000 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP551767",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42875889,
+      "conceptName": "Dalteparin 36000 IU/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4873002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35158595,
+      "conceptName": "Dalteparin 5000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4815588",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961514,
+      "conceptName": "Dalteparin 5000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023718,
+      "conceptName": "Dalteparin 6250 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221680",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891680,
+      "conceptName": "Dalteparin 900 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003259",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2068884,
+      "conceptName": "dalteparin 10000 IU/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4970343",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2927919,
+      "conceptName": "dalteparin 10000 IU/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5144721",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35869695,
+      "conceptName": "dalteparin 12500 IU/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5025940",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2927914,
+      "conceptName": "dalteparin 12500 IU/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5144716",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2068880,
+      "conceptName": "dalteparin 12500 IU/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4970339",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2068887,
+      "conceptName": "dalteparin 2500 IU/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4970347",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35869692,
+      "conceptName": "dalteparin 25000 IU/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5025937",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2927906,
+      "conceptName": "dalteparin 25000 IU/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5144709",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2068876,
+      "conceptName": "dalteparin 25000 IU/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4970335",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19131463,
+      "conceptName": "dalteparin 55.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "802056",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104360,
+      "conceptName": "dalteparin 75 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413809",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40176336,
+      "conceptName": "dalteparin sodium 10000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "978759",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902583,
+      "conceptName": "dalteparin sodium 10000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359696",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903352,
+      "conceptName": "dalteparin sodium 12500 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360465",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40176344,
+      "conceptName": "dalteparin sodium 2500 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "978774",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 741765,
+      "conceptName": "dalteparin sodium 2500 UNT/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2618840",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40176348,
+      "conceptName": "dalteparin sodium 25000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "978777",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902755,
+      "conceptName": "dalteparin sodium 25000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359868",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707445,
+      "conceptName": "dalteparin sodium 36 MG/ML / dihydroergotamine mesylate 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233976",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104359,
+      "conceptName": "dalteparin sodium 36 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413808",
+      "standardConcept": "S"
+    }
+  ]
+}

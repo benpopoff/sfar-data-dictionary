@@ -1,0 +1,113 @@
+{
+  "conceptSetId": 74,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44032996,
+      "conceptName": "Cefoxitin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027627",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123681,
+      "conceptName": "Cefoxitin 1000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118312",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885923,
+      "conceptName": "Cefoxitin 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996722",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071828,
+      "conceptName": "Cefoxitin 10000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066459",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071827,
+      "conceptName": "Cefoxitin 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066458",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071826,
+      "conceptName": "Cefoxitin 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066457",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887841,
+      "conceptName": "Cefoxitin 2000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995865",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605239,
+      "conceptName": "cefoxitin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1739890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287363,
+      "conceptName": "cefoxitin 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665102",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074909,
+      "conceptName": "cefoxitin 200 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309072",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287368,
+      "conceptName": "cefoxitin 2000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35858861,
+      "conceptName": "cefoxitin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5015731",
+      "standardConcept": "S"
+    }
+  ]
+}

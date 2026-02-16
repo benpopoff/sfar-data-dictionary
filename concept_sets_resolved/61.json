@@ -1,0 +1,320 @@
+{
+  "conceptSetId": 61,
+  "resolvedConcepts": [
+    {
+      "conceptId": 21134742,
+      "conceptName": "Warfarin 0.02 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267535",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21124844,
+      "conceptName": "Warfarin 0.1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267634",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21066141,
+      "conceptName": "Warfarin 0.2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267640",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21174173,
+      "conceptName": "Warfarin 0.2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21095537,
+      "conceptName": "Warfarin 0.3 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21105427,
+      "conceptName": "Warfarin 0.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21036677,
+      "conceptName": "Warfarin 0.4 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267647",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21174174,
+      "conceptName": "Warfarin 0.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267666",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21105428,
+      "conceptName": "Warfarin 0.6 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267651",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21164395,
+      "conceptName": "Warfarin 0.6 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267653",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21134748,
+      "conceptName": "Warfarin 0.8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267670",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21134735,
+      "conceptName": "Warfarin 0.832 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267404",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753383,
+      "conceptName": "Warfarin 1 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704339",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21046557,
+      "conceptName": "Warfarin 1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267656",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21026882,
+      "conceptName": "Warfarin 1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267658",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35146532,
+      "conceptName": "Warfarin 2 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4803610",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21115242,
+      "conceptName": "Warfarin 2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267672",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21174175,
+      "conceptName": "Warfarin 2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267674",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753374,
+      "conceptName": "Warfarin 3 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704348",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44096725,
+      "conceptName": "Warfarin 5 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091356",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753366,
+      "conceptName": "Warfarin 5 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704356",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21105415,
+      "conceptName": "Warfarin 5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267400",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35831300,
+      "conceptName": "warfarin 0.002 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5037040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235144,
+      "conceptName": "warfarin 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215847",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163508,
+      "conceptName": "warfarin sodium 0.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855350",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163510,
+      "conceptName": "warfarin sodium 1 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855288",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163518,
+      "conceptName": "warfarin sodium 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855296",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163524,
+      "conceptName": "warfarin sodium 2 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855302",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163530,
+      "conceptName": "warfarin sodium 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855308",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163534,
+      "conceptName": "warfarin sodium 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855312",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163540,
+      "conceptName": "warfarin sodium 3 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855318",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163546,
+      "conceptName": "warfarin sodium 4 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163554,
+      "conceptName": "warfarin sodium 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163560,
+      "conceptName": "warfarin sodium 6 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855338",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163566,
+      "conceptName": "warfarin sodium 7.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "855344",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "conceptSetId": 96,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40866237,
+      "conceptName": "Mupirocin 0.00133 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2064199",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40990961,
+      "conceptName": "Mupirocin 0.002 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2188923",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587271,
+      "conceptName": "Mupirocin 0.00666 MG/MG Nasal Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138620",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44187418,
+      "conceptName": "Mupirocin 0.00667 MG/MG Nasal Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3064141",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405872,
+      "conceptName": "Mupirocin 0.02 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097914",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071308,
+      "conceptName": "Mupirocin 0.02 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1065939",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097088,
+      "conceptName": "Mupirocin 0.02 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091719",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 951537,
+      "conceptName": "mupirocin 0.02 MG/MG Nasal Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311878",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19008723,
+      "conceptName": "mupirocin 0.02 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106346",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2036326,
+      "conceptName": "mupirocin 0.0255 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4935618",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 951536,
+      "conceptName": "mupirocin 20 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311877",
+      "standardConcept": "S"
+    }
+  ]
+}

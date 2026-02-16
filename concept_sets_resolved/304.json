@@ -1,0 +1,95 @@
+{
+  "conceptSetId": 304,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4215616,
+      "conceptName": "Fog inhalation therapy",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "80677001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4178391,
+      "conceptName": "Heat and moisture exchanger",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "297117007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1246607,
+      "conceptName": "High-flow non-heated respiratory humidifier",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "48621000087108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4055258,
+      "conceptName": "Humidification therapy",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "243130008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40760764,
+      "conceptName": "Humidifier heated wire temperature differential setting Ventilator airway circuit",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "57652-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4116405,
+      "conceptName": "Inspired gas humidification",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "286814009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4039921,
+      "conceptName": "Menthol inhalations",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "229305000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4039397,
+      "conceptName": "Mist inhalation therapy",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "229303007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4039398,
+      "conceptName": "Steam inhalations",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "229304001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4042359,
+      "conceptName": "Ultrasonic humidification",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "229302002",
+      "standardConcept": "S"
+    }
+  ]
+}

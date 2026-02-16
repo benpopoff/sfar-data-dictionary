@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 14,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36684829,
+      "conceptName": "Richmond Agitation-Sedation Scale",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Staging / Scales",
+      "conceptCode": "457441000124102",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 48,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44084416,
+      "conceptName": "fondaparinux 12.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079047",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43266627,
+      "conceptName": "fondaparinux 12.5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058691,
+      "conceptName": "fondaparinux 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053322",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43282915,
+      "conceptName": "fondaparinux 5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902397,
+      "conceptName": "fondaparinux sodium 12.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359510",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903069,
+      "conceptName": "fondaparinux sodium 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360182",
+      "standardConcept": "S"
+    }
+  ]
+}

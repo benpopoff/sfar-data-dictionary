@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 276,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4265167,
+      "conceptName": "Date of death",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "399753006",
+      "standardConcept": "S"
+    }
+  ]
+}

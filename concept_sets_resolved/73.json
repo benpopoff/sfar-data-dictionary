@@ -1,0 +1,329 @@
+{
+  "conceptSetId": 73,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43820179,
+      "conceptName": "Cefotaxime 0.001 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP658971",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42718033,
+      "conceptName": "Cefotaxime 0.261 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2728993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43586096,
+      "conceptName": "Cefotaxime 0.262 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP659016",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43676495,
+      "conceptName": "Cefotaxime 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP658989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41024259,
+      "conceptName": "Cefotaxime 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222221",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097644,
+      "conceptName": "Cefotaxime 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092275",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084683,
+      "conceptName": "Cefotaxime 1000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079314",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887843,
+      "conceptName": "Cefotaxime 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004513",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993277,
+      "conceptName": "Cefotaxime 105 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191239",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032221,
+      "conceptName": "Cefotaxime 133 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032999,
+      "conceptName": "Cefotaxime 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123682,
+      "conceptName": "Cefotaxime 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118313",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889828,
+      "conceptName": "Cefotaxime 2000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998682",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885924,
+      "conceptName": "Cefotaxime 262 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994786",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728701,
+      "conceptName": "Cefotaxime 263 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2742923",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032218,
+      "conceptName": "Cefotaxime 33.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847271",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962023,
+      "conceptName": "Cefotaxime 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159985",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41087004,
+      "conceptName": "Cefotaxime 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284966",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44033000,
+      "conceptName": "Cefotaxime 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097645,
+      "conceptName": "Cefotaxime 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092276",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887842,
+      "conceptName": "Cefotaxime 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992785",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962022,
+      "conceptName": "Cefotaxime 500 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159984",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993282,
+      "conceptName": "Cefotaxime 52.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191244",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41243196,
+      "conceptName": "Cefotaxime 52.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441158",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962021,
+      "conceptName": "Cefotaxime 525 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159983",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032211,
+      "conceptName": "Cefotaxime 66.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847264",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35407393,
+      "conceptName": "Cefotaxime 66.7 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1140978",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104535,
+      "conceptName": "cefotaxime 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415551",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275706,
+      "conceptName": "cefotaxime 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1656313",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19102382,
+      "conceptName": "cefotaxime 1000 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "402677",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604156,
+      "conceptName": "cefotaxime 20 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1747118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074902,
+      "conceptName": "cefotaxime 200 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309065",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275711,
+      "conceptName": "cefotaxime 2000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1656318",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35858887,
+      "conceptName": "cefotaxime 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5015757",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604162,
+      "conceptName": "cefotaxime 40 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1747124",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074905,
+      "conceptName": "cefotaxime 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309068",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 148,
+  "resolvedConcepts": [
+    {
+      "conceptId": 1002144,
+      "conceptName": "Ammonia [Moles/volume] in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "93684-9",
+      "standardConcept": "S"
+    }
+  ]
+}

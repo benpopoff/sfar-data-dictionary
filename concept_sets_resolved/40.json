@@ -1,0 +1,86 @@
+{
+  "conceptSetId": 40,
+  "resolvedConcepts": [
+    {
+      "conceptId": 35606208,
+      "conceptName": "dabigatran etexilate 110 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1723476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758804,
+      "conceptName": "dabigatran etexilate 110 MG Oral Pellet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2590616",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40228154,
+      "conceptName": "dabigatran etexilate 150 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1037045",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758808,
+      "conceptName": "dabigatran etexilate 150 MG Oral Pellet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2590620",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758811,
+      "conceptName": "dabigatran etexilate 20 MG Oral Pellet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2590623",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758815,
+      "conceptName": "dabigatran etexilate 30 MG Oral Pellet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2590627",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758819,
+      "conceptName": "dabigatran etexilate 40 MG Oral Pellet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2590631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758823,
+      "conceptName": "dabigatran etexilate 50 MG Oral Pellet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2590635",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40228161,
+      "conceptName": "dabigatran etexilate 75 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1037179",
+      "standardConcept": "S"
+    }
+  ]
+}

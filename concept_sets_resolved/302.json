@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 302,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4141684,
+      "conceptName": "Delivered oxygen flow rate",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "427081008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44782836,
+      "conceptName": "Delivered oxygen flow rate to non ventilated lung",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "698833004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3005629,
+      "conceptName": "Inhaled oxygen flow rate",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "3151-8",
+      "standardConcept": "S"
+    }
+  ]
+}

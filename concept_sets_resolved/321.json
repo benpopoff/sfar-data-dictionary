@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 321,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3007469,
+      "conceptName": "Breath rate setting Ventilator",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "19834-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3026892,
+      "conceptName": "Breath rate spontaneous --on ventilator",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "19839-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3007646,
+      "conceptName": "Breath rate spontaneous and mechanical --on ventilator",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "19840-8",
+      "standardConcept": "S"
+    }
+  ]
+}

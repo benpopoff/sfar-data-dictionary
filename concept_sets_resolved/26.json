@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 26,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4195694,
+      "conceptName": "Acute respiratory distress syndrome",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "67782005",
+      "standardConcept": "S"
+    }
+  ]
+}

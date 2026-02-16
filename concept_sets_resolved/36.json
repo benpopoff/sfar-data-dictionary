@@ -1,0 +1,95 @@
+{
+  "conceptSetId": 36,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42925118,
+      "conceptName": "bemiparin 125 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4651949",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404328,
+      "conceptName": "bemiparin 12500 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096370",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42925114,
+      "conceptName": "bemiparin 175 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4651945",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405848,
+      "conceptName": "bemiparin 17500 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405849,
+      "conceptName": "bemiparin 25000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097891",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902423,
+      "conceptName": "bemiparin sodium 12500 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359536",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902551,
+      "conceptName": "bemiparin sodium 17500 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359664",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902773,
+      "conceptName": "bemiparin sodium 22500 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359886",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902628,
+      "conceptName": "bemiparin sodium 25000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359741",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902724,
+      "conceptName": "bemiparin sodium 40000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359837",
+      "standardConcept": "S"
+    }
+  ]
+}

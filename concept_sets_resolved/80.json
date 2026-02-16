@@ -1,0 +1,1202 @@
+{
+  "conceptSetId": 80,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36811481,
+      "conceptName": "Benzoyl Peroxide 0.03 MG/MG / Clindamycin 0.01 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4825517",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091410,
+      "conceptName": "Benzoyl Peroxide 0.03 MG/MG / Clindamycin 0.01 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358743",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44033289,
+      "conceptName": "Benzoyl Peroxide 0.03 MG/ML / Clindamycin 0.01 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880212,
+      "conceptName": "Benzoyl Peroxide 0.045 MG/MG / Clindamycin 0.012 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992613",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21150392,
+      "conceptName": "Benzoyl Peroxide 0.05 MG/MG / Clindamycin 0.01 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358748",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44046250,
+      "conceptName": "Benzoyl Peroxide 0.05 MG/ML / Clindamycin 0.01 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040881",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883037,
+      "conceptName": "Benzoyl Peroxide 0.065 MG/MG / Clindamycin 0.012 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989690",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993764,
+      "conceptName": "Benzoyl Peroxide 2500 MG / Clindamycin 348 MG Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191726",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962513,
+      "conceptName": "Benzoyl Peroxide 320 MG / Clindamycin 1200 MG / Gentamicin 1670 MG / polyacrylate 35400 MG / Zirconium 4270 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40823933,
+      "conceptName": "Clindamycin 0.0005 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2021895",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43193160,
+      "conceptName": "Clindamycin 0.01 MG/MG / Tretinoin 0.00025 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP476956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042456,
+      "conceptName": "Clindamycin 0.01 MG/MG / Tretinoin 0.00025 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358734",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21130575,
+      "conceptName": "Clindamycin 0.01 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358633",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110409,
+      "conceptName": "Clindamycin 0.01 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084615,
+      "conceptName": "Clindamycin 0.01 MG/ML Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079246",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890907,
+      "conceptName": "Clindamycin 0.012 MG/MG / Tretinoin 0.00025 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001987",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40930515,
+      "conceptName": "Clindamycin 0.012 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2128477",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882977,
+      "conceptName": "Clindamycin 0.012 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996772",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071744,
+      "conceptName": "Clindamycin 0.012 MG/ML / Tretinoin 0.00025 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066375",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589170,
+      "conceptName": "Clindamycin 0.0201 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135222",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118066,
+      "conceptName": "Clindamycin 0.024 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316028",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42727355,
+      "conceptName": "Clindamycin 0.712 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2723176",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43801234,
+      "conceptName": "Clindamycin 0.713 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP951796",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242949,
+      "conceptName": "Clindamycin 0.938 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43517205,
+      "conceptName": "Clindamycin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2804320",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36811756,
+      "conceptName": "Clindamycin 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4825790",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44161288,
+      "conceptName": "Clindamycin 100 MG Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3038011",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43747273,
+      "conceptName": "Clindamycin 119 MG Vaginal Ring",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP951818",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273833,
+      "conceptName": "Clindamycin 12 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471795",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055252,
+      "conceptName": "Clindamycin 12 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253214",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101297,
+      "conceptName": "Clindamycin 12 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358629",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212015,
+      "conceptName": "Clindamycin 12 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409977",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180609,
+      "conceptName": "Clindamycin 135 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378571",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045908,
+      "conceptName": "Clindamycin 15 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040539",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481485,
+      "conceptName": "Clindamycin 15 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419334",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084614,
+      "conceptName": "Clindamycin 150 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079245",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482102,
+      "conceptName": "Clindamycin 150 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419335",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884892,
+      "conceptName": "Clindamycin 169 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993853",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893768,
+      "conceptName": "Clindamycin 172 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP990728",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888821,
+      "conceptName": "Clindamycin 174 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006102",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43715292,
+      "conceptName": "Clindamycin 180 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP900993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36813336,
+      "conceptName": "Clindamycin 20 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4827370",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21071967,
+      "conceptName": "Clindamycin 20 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358721",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43855117,
+      "conceptName": "Clindamycin 25 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945906",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837149,
+      "conceptName": "Clindamycin 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2035111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43765195,
+      "conceptName": "Clindamycin 25 MG/ML Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP951785",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21032540,
+      "conceptName": "Clindamycin 30 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358717",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732957,
+      "conceptName": "Clindamycin 30 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4723951",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35142000,
+      "conceptName": "Clindamycin 300 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4799120",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882976,
+      "conceptName": "Clindamycin 338 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994892",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890802,
+      "conceptName": "Clindamycin 344 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996946",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893769,
+      "conceptName": "Clindamycin 348 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997490",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091402,
+      "conceptName": "Clindamycin 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358616",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732934,
+      "conceptName": "Clindamycin 40 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4723974",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892781,
+      "conceptName": "Clindamycin 489 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991902",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170118,
+      "conceptName": "Clindamycin 60 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358609",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35151314,
+      "conceptName": "Clindamycin 600 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4808362",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44180126,
+      "conceptName": "Clindamycin 600 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3056849",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880145,
+      "conceptName": "Clindamycin 688 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998618",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273827,
+      "conceptName": "Clindamycin 75 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479125,
+      "conceptName": "Clindamycin 75 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419338",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885898,
+      "conceptName": "Clindamycin 84.6 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000301",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404376,
+      "conceptName": "Clindamycin 9 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096418",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732930,
+      "conceptName": "Clindamycin 90 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4723978",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086774,
+      "conceptName": "Clindamycin 900 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075427,
+      "conceptName": "Once-Daily clindamycin 0.01 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42609303,
+      "conceptName": "Twice-Daily clindamycin 0.01 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2676585",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 746969,
+      "conceptName": "adapalene 0.0015 MG/MG / benzoyl peroxide 0.031 MG/MG / clindamycin phosphate 0.012 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2668198",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44072171,
+      "conceptName": "avobenzone 0.02 MG/ML / Clindamycin 0.01 MG/ML / Octinoxate 0.075 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066802",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168575,
+      "conceptName": "benzoyl peroxide 0.025 MG/MG / clindamycin phosphate 0.012 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "885131",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997958,
+      "conceptName": "benzoyl peroxide 0.05 MG/MG / clindamycin 0.01 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "358917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19126426,
+      "conceptName": "benzoyl peroxide 50 MG/ML / clindamycin 10 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "705729",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234264,
+      "conceptName": "clindamycin 0.01 MG/MG / triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214967",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234255,
+      "conceptName": "clindamycin 0.02 MG/MG / ketoconazole 0.02 MG/MG / triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 702515,
+      "conceptName": "clindamycin 0.02 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2587810",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2934748,
+      "conceptName": "clindamycin 0.05 MG/MG / triamcinolone 0.01 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5151493",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40161180,
+      "conceptName": "clindamycin 0.1 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "853386",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234265,
+      "conceptName": "clindamycin 10 MG/ML / triamcinolone 1 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214968",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 998014,
+      "conceptName": "clindamycin 10 MG/ML Medicated Pad",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "797274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997961,
+      "conceptName": "clindamycin 10 MG/ML Topical Foam",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "477451",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873643,
+      "conceptName": "clindamycin 10 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030557",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997893,
+      "conceptName": "clindamycin 10 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197519",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873644,
+      "conceptName": "clindamycin 10 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030558",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075428,
+      "conceptName": "clindamycin 10 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309333",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874103,
+      "conceptName": "clindamycin 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030539",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874101,
+      "conceptName": "clindamycin 100 MG Paste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874105,
+      "conceptName": "clindamycin 100 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030541",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874102,
+      "conceptName": "clindamycin 100 MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874106,
+      "conceptName": "clindamycin 100 MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030542",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997898,
+      "conceptName": "clindamycin 100 MG Vaginal Insert",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "259233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1970314,
+      "conceptName": "clindamycin 100 MG Vaginal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5162900",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997976,
+      "conceptName": "clindamycin 12 MG/ML / glucose 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604111,
+      "conceptName": "clindamycin 12 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1737234",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19059531,
+      "conceptName": "clindamycin 120 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "244963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873994,
+      "conceptName": "clindamycin 1200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030432",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997973,
+      "conceptName": "clindamycin 15 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562266",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874091,
+      "conceptName": "clindamycin 150 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030527",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997892,
+      "conceptName": "clindamycin 150 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107907,
+      "conceptName": "clindamycin 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433773",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19030822,
+      "conceptName": "clindamycin 150 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "205964",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604119,
+      "conceptName": "clindamycin 150 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1737246",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997975,
+      "conceptName": "clindamycin 18 MG/ML / glucose 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562269",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604113,
+      "conceptName": "clindamycin 18 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1737238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19059624,
+      "conceptName": "clindamycin 180 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245164",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075532,
+      "conceptName": "clindamycin 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309338",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19011634,
+      "conceptName": "clindamycin 20 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "141970",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075531,
+      "conceptName": "clindamycin 20 MG/ML Vaginal Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309337",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873159,
+      "conceptName": "clindamycin 200 MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030418",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873990,
+      "conceptName": "clindamycin 225 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030428",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40161189,
+      "conceptName": "clindamycin 25 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "853019",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40171743,
+      "conceptName": "clindamycin 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "900391",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40171747,
+      "conceptName": "clindamycin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "900424",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873153,
+      "conceptName": "clindamycin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030412",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104645,
+      "conceptName": "clindamycin 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415873",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874051,
+      "conceptName": "clindamycin 300 MG Inhalation Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030489",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997899,
+      "conceptName": "clindamycin 300 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "284215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107919,
+      "conceptName": "clindamycin 300 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433810",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873165,
+      "conceptName": "clindamycin 300 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030424",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873149,
+      "conceptName": "clindamycin 400 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030408",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35872998,
+      "conceptName": "clindamycin 450 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030392",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35874046,
+      "conceptName": "clindamycin 489 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030484",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 997974,
+      "conceptName": "clindamycin 6 MG/ML / glucose 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069846,
+      "conceptName": "clindamycin 6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996584",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604115,
+      "conceptName": "clindamycin 6 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1737242",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107908,
+      "conceptName": "clindamycin 600 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433774",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075425,
+      "conceptName": "clindamycin 75 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309329",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40171750,
+      "conceptName": "clindamycin 75 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "900460",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19101844,
+      "conceptName": "clindamycin 75 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "392275",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35872992,
+      "conceptName": "clindamycin 750 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030386",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069821,
+      "conceptName": "clindamycin 80 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996559",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075534,
+      "conceptName": "clindamycin 9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309340",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873640,
+      "conceptName": "clindamycin 90 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030554",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168239,
+      "conceptName": "clindamycin phosphate 0.012 MG/MG / tretinoin 0.00025 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "882548",
+      "standardConcept": "S"
+    }
+  ]
+}

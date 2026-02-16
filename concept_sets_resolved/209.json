@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 209,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3006916,
+      "conceptName": "Magnesium [Mass/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "21377-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3021770,
+      "conceptName": "Magnesium [Mass/volume] in Red Blood Cells",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26746-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3033836,
+      "conceptName": "Magnesium [Moles/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2593-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3012095,
+      "conceptName": "Magnesium [Moles/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2601-3",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 247,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4015237,
+      "conceptName": "Paenibacillus pabuli",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114103000",
+      "standardConcept": "S"
+    }
+  ]
+}

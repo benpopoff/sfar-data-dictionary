@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 286,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3026267,
+      "conceptName": "Calorie intake total 24 hour",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "9057-1",
+      "standardConcept": "S"
+    }
+  ]
+}

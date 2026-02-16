@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 221,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3014485,
+      "conceptName": "Sodium [Moles/volume] in 24 hour Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "21525-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3003181,
+      "conceptName": "Sodium [Moles/volume] in Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2955-3",
+      "standardConcept": "S"
+    }
+  ]
+}

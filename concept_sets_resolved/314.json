@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 314,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4215838,
+      "conceptName": "Inspiratory pressure setting",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "417071008",
+      "standardConcept": "S"
+    }
+  ]
+}

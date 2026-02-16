@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 21,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4242843,
+      "conceptName": "Immunosuppression",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Clinical Finding",
+      "conceptCode": "38013005",
+      "standardConcept": "S"
+    }
+  ]
+}

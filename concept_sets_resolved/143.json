@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 143,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42482095,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419969",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36783484,
+      "conceptName": "Levosimendan 2.5 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4771767",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408187,
+      "conceptName": "Levosimendan 2.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141772",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173186,
+      "conceptName": "levosimendan 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "901047",
+      "standardConcept": "S"
+    }
+  ]
+}

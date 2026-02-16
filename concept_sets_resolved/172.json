@@ -1,0 +1,68 @@
+{
+  "conceptSetId": 172,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40766287,
+      "conceptName": "aPTT actual/normal in Platelet poor plasma by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "63561-5",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3013466,
+      "conceptName": "aPTT in Blood by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "3173-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3018677,
+      "conceptName": "aPTT in Platelet poor plasma by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "14979-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3041974,
+      "conceptName": "aPTT in Platelet poor plasma by Coagulation assay -- after addition of protein C activator + Factor V depleted plasma/aPTT",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "52766-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3052968,
+      "conceptName": "aPTT in Platelet poor plasma by Coagulation assay --after addition of APC",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "48590-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3042436,
+      "conceptName": "aPTT in Platelet poor plasma by Coagulation assay --baseline",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "40100-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3041232,
+      "conceptName": "aPTT in Platelet poor plasma by Coagulation assay --post heparin neutralization",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "52123-7",
+      "standardConcept": "S"
+    }
+  ]
+}

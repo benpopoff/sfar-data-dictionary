@@ -1,0 +1,680 @@
+{
+  "conceptSetId": 99,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41148611,
+      "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.781 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346573",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42711252,
+      "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2735475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715189,
+      "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724629",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42711253,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.78 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2739343",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272928,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712590,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2739060",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728608,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.784 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731110",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712607,
+      "conceptName": "Piperacillin 0.885 MG/MG / tazobactam 0.114 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2742981",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894651,
+      "conceptName": "Piperacillin 0.885 MG/MG / tazobactam 0.115 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1007106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881893,
+      "conceptName": "Piperacillin 0.885 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994200",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43856397,
+      "conceptName": "Piperacillin 0.886 MG/MG / tazobactam 0.114 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP660876",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43838383,
+      "conceptName": "Piperacillin 0.886 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP660862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43730252,
+      "conceptName": "Piperacillin 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP660831",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42973604,
+      "conceptName": "Piperacillin 1000 MG / Sulbactam 500 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4700009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41052662,
+      "conceptName": "Piperacillin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2250624",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43183574,
+      "conceptName": "Piperacillin 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP489536",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41052663,
+      "conceptName": "Piperacillin 104 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2250625",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084068,
+      "conceptName": "Piperacillin 12000 MG / tazobactam 1500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078699",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240452,
+      "conceptName": "Piperacillin 133 MG/ML / tazobactam 16.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438414",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891736,
+      "conceptName": "Piperacillin 133 MG/ML / tazobactam 16.7 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002585",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41302424,
+      "conceptName": "Piperacillin 133 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2500386",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42973601,
+      "conceptName": "Piperacillin 2000 MG / Sulbactam 1000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4700006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41209478,
+      "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2407440",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071204,
+      "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1065835",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36789927,
+      "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4778172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891737,
+      "conceptName": "Piperacillin 2000 MG / tazobactam 250 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006819",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40834602,
+      "conceptName": "Piperacillin 2000 MG / tazobactam 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2032564",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058313,
+      "conceptName": "Piperacillin 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1052944",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44096995,
+      "conceptName": "Piperacillin 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42973658,
+      "conceptName": "Piperacillin 2000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4700063",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43023445,
+      "conceptName": "Piperacillin 2000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4838562",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42973607,
+      "conceptName": "Piperacillin 3000 MG / Sulbactam 1500 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4700012",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109867,
+      "conceptName": "Piperacillin 3000 MG / tazobactam 375 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104498",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123022,
+      "conceptName": "Piperacillin 3000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117653",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44096996,
+      "conceptName": "Piperacillin 3000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091627",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084070,
+      "conceptName": "Piperacillin 36000 MG / tazobactam 4500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078701",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081698,
+      "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP359635",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176131,
+      "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3052854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887774,
+      "conceptName": "Piperacillin 40 MG/ML / tazobactam 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995586",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147025,
+      "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344987",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084069,
+      "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078700",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36789920,
+      "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4778165",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894650,
+      "conceptName": "Piperacillin 4000 MG / tazobactam 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084071,
+      "conceptName": "Piperacillin 4000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078702",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109868,
+      "conceptName": "Piperacillin 4000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104499",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42973655,
+      "conceptName": "Piperacillin 4000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4700060",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43216438,
+      "conceptName": "Piperacillin 4000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP489528",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123021,
+      "conceptName": "Piperacillin 40000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117652",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41052664,
+      "conceptName": "Piperacillin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2250626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715111,
+      "conceptName": "Piperacillin 52 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2741335",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41052659,
+      "conceptName": "Piperacillin 52.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2250621",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41115486,
+      "conceptName": "Piperacillin 6000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2313448",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927921,
+      "conceptName": "Piperacillin 62.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125883",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715110,
+      "conceptName": "Piperacillin 62.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2730791",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715109,
+      "conceptName": "Piperacillin 69.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2736296",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147029,
+      "conceptName": "Piperacillin 69.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344991",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42721899,
+      "conceptName": "Piperacillin 69.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2723002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41052658,
+      "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2250620",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271299,
+      "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469261",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882928,
+      "conceptName": "Piperacillin 80 MG/ML / tazobactam 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988498",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41021443,
+      "conceptName": "Piperacillin 80 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2219405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2050048,
+      "conceptName": "piperacillin 1000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4950476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19080706,
+      "conceptName": "piperacillin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "315066",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1746143,
+      "conceptName": "piperacillin 200 MG/ML / tazobactam 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312447",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1746118,
+      "conceptName": "piperacillin 200 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "239186",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275427,
+      "conceptName": "piperacillin 2000 MG / tazobactam 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1659131",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1746119,
+      "conceptName": "piperacillin 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312442",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36061879,
+      "conceptName": "piperacillin 3000 MG / tazobactam 375 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4987837",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275433,
+      "conceptName": "piperacillin 3000 MG / tazobactam 375 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1659137",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1746145,
+      "conceptName": "piperacillin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "315178",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1746121,
+      "conceptName": "piperacillin 400 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312444",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275444,
+      "conceptName": "piperacillin 4000 MG / tazobactam 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1659149",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235623,
+      "conceptName": "piperacillin 50 MG/ML / tazobactam 6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216329",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115096,
+      "conceptName": "piperacillin 500 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562056",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235624,
+      "conceptName": "piperacillin 69.3 MG/ML / tazobactam 8.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216330",
+      "standardConcept": "S"
+    }
+  ]
+}

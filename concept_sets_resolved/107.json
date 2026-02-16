@@ -1,0 +1,905 @@
+{
+  "conceptSetId": 107,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40932078,
+      "conceptName": "4-Epitetracycline 3.29 MG/ML / Dimethyl Sulfoxide 1.25 MG/ML / Tetracycline 2.2 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2130040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41088027,
+      "conceptName": "Aluminum carbonate 21200 MG / Hexachlorophene 10 MG / Tetracycline 7500 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2285989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41306210,
+      "conceptName": "Aluminum carbonate 21200 MG / Hexachlorophene 15 MG / Tetracycline 7500 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2504172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41275112,
+      "conceptName": "Aluminum carbonate 40 MG / Hexachlorophene 15 MG / Magnesium 855 MG / Silicon Dioxide 2070 MG / Tetracycline 7500 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2473074",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838347,
+      "conceptName": "Amphotericin B 0.0125 MG/MG / Tetracycline 0.025 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036309",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962881,
+      "conceptName": "Amphotericin B 0.0125 MG/MG / Tetracycline 0.0259 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160843",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728898,
+      "conceptName": "Amphotericin B 0.0125 MG/MG / Tetracycline 0.026 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2740111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41213107,
+      "conceptName": "Amphotericin B 2650 MG / Gramicidin 1.25 MG / Neomycin 19 MG / Tetracycline 1040 MG / Triamcinolone 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2411069",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838348,
+      "conceptName": "Amphotericin B 2800 MG / Gramicidin 2.5 MG / Neomycin 38 MG / Tetracycline 1040 MG / Triamcinolone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036310",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025182,
+      "conceptName": "Amphotericin B 2900 MG / Tetracycline 1250 MG / Triamcinolone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223144",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305920,
+      "conceptName": "Ascorbic Acid 20 MG / Folic Acid 0.4 MG / Niacinamide 10 MG / Pantothenic Acid 5 MG / pyridoxine 0.5 MG / Riboflavin 2.4 MG / Tetracycline 250 MG / Thiamine 2.5 MG / Vitamin B 12 0.003 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503882",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900324,
+      "conceptName": "Ascorbic Acid 75 MG / Folic Acid 0.4 MG / menadiol 0.5 MG / Niacinamide 25 MG / Pantothenic Acid 5 MG / pyridoxine 0.5 MG / Riboflavin 2.4 MG / Tetracycline 250 MG / Thiamine 2.5 MG / Vitamin B 12 0.001 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098286",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838162,
+      "conceptName": "Ascorbic Acid 75 MG / Folic Acid 0.4 MG / menadiol 0.5 MG / Niacinamide 25 MG / Pantothenic Acid 5 MG / pyridoxine 0.5 MG / Riboflavin 2.4 MG / Tetracycline 250 MG / Thiamine 2.5 MG / Vitamin B 12 0.001 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036124",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305710,
+      "conceptName": "Benzydamine 50 MG / Tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503672",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41243593,
+      "conceptName": "Bismuth 140 MG / Metronidazole 125 MG / Tetracycline 125 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441555",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962401,
+      "conceptName": "Bismuth 140 MG / Metronidazole 125 MG / Tetracycline 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212570,
+      "conceptName": "Bromelains 40 MG / Tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410532",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150133,
+      "conceptName": "Bromhexine 4 MG / Doxylamine 3.75 MG / metaproterenol 2.5 MG / Tetracycline 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348095",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055403,
+      "conceptName": "Chlormidazole 0.025 MG/MG / Hydrocortisone 0.01 MG/MG / Tetracycline 0.005 MG/MG / Tyrothricin 0.005 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180034,
+      "conceptName": "Doxylamine 1.25 MG/ML / Etafedrine 4 MG/ML / Guaifenesin 10 MG/ML / Phenylephrine 1.6 MG/ML / Tetracycline 25 MG/ML / Theophylline 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273253,
+      "conceptName": "Doxylamine 12.5 MG / Etafedrine 40 MG / Guaifenesin 100 MG / Phenylephrine 15 MG / Tetracycline 250 MG / Theophylline 75 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085958,
+      "conceptName": "FEDRILATE 60 MG / Tetracycline 333 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991886,
+      "conceptName": "Guaifenesin 100 MG / Papaverine 25 MG / Tetracycline 250 MG / Theophylline 65 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898228,
+      "conceptName": "Guaifenesin 100 MG / Papaverine 45 MG / Tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096190",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835863,
+      "conceptName": "Hydrocortisone 15 MG/ML / Polymyxin B 10000 UNT/ML / Tetracycline 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033825",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41022277,
+      "conceptName": "Lidocaine 10 MG/ML / Tetracycline 62.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220239",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240877,
+      "conceptName": "Niacinamide 25 MG / Papaverine 20 MG / pyridoxine 3 MG / Riboflavin 3 MG / Tetracycline 250 MG / Thiamine 6 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438839",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41178421,
+      "conceptName": "Nitrofurantoin 50 MG / Papaverine 100 MG / Tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2376383",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40834912,
+      "conceptName": "Oleandomycin 16.5 MG / Tetracycline 33.5 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2032874",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41052990,
+      "conceptName": "Oleandomycin 33 MG/ML / Tetracycline 67 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2250952",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40897240,
+      "conceptName": "Oleandomycin 8.25 MG/ML / Tetracycline 16.7 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2095202",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271599,
+      "conceptName": "Oleandomycin 82.5 MG / Tetracycline 168 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469561",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41209696,
+      "conceptName": "Pancreas extract 75 MG / Tetracycline 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2407658",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41178183,
+      "conceptName": "Pantothenic Acid 33.3 MG / Terpin hydrate 45 MG / Tetracycline 250 MG / Turpentine 4.2 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2376145",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304510,
+      "conceptName": "Propoxyphene 75 MG / Tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502472",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44183825,
+      "conceptName": "Propoxyphene 75 MG / Tetracycline 333 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3060548",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40896751,
+      "conceptName": "Protease 50000 UNT / Tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2094713",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41020834,
+      "conceptName": "Tetracycline 0.001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2218796",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40834039,
+      "conceptName": "Tetracycline 0.0015 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2032001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44083876,
+      "conceptName": "Tetracycline 0.01 MG/ML Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078507",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114830,
+      "conceptName": "Tetracycline 0.03 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35138371,
+      "conceptName": "Tetracycline 0.03 MG/MG Oral Paste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4795532",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35140055,
+      "conceptName": "Tetracycline 1040 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4797203",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40865148,
+      "conceptName": "Tetracycline 123 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2063110",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887930,
+      "conceptName": "Tetracycline 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997857",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41020836,
+      "conceptName": "Tetracycline 125 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2218798",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35132814,
+      "conceptName": "Tetracycline 15 MG Oral Lozenge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4791814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41146443,
+      "conceptName": "Tetracycline 2.5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41146783,
+      "conceptName": "Tetracycline 250 MG / Vitamin A 50000 UNT Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41270704,
+      "conceptName": "Tetracycline 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2468666",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43033944,
+      "conceptName": "Tetracycline 333 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4848990",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114831,
+      "conceptName": "Tetracycline 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312793",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35151876,
+      "conceptName": "Tetracycline 50 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4808919",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40865141,
+      "conceptName": "Tetracycline 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2063103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41208872,
+      "conceptName": "Tetracycline 50.2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2406834",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42723550,
+      "conceptName": "Tetracycline 50.3 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2728956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836961,
+      "conceptName": "amphotericin B 5 MG/ML / tetracycline 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "242814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19073213,
+      "conceptName": "amphotericin B 50 MG / tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308206",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 905365,
+      "conceptName": "bismuth biskalcitrate 140 MG / metronidazole 125 MG / tetracycline 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "687231",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43179564,
+      "conceptName": "bismuth oxide 40 MG / Metronidazole 125 MG / Tetracycline 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452782",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42800144,
+      "conceptName": "bismuth subcitrate 140 MG / metronidazole 125 MG / tetracycline hydrochloride 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1294619",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41149661,
+      "conceptName": "chlorphenoxamine 3.08 MG / Codeine 5.5 MG / Etamiphyllin 23.1 MG / Guaifenesin 25 MG / Tetracycline 215 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347623",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173863,
+      "conceptName": "chlortetracycline 115 MG / demeclocycline hydrochloride 69 MG / tetracycline 115 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "905515",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2047097,
+      "conceptName": "colistin 0.005 MG/MG / tetracycline 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4947324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273594,
+      "conceptName": "dexpanthenol 5 MG / Edetic Acid 75 MG / Folic Acid 0.4 MG / Niacinamide 25 MG / pyridoxine 0.5 MG / Riboflavin 2.4 MG / Tetracycline 250 MG / Thiamine 2.5 MG / Vitamin B 12 0.003 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471556",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086145,
+      "conceptName": "eprazinone 30 MG / Tetracycline 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234808,
+      "conceptName": "hydrocortisone 0.01 MG/MG / tetracycline 0.03 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215512",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234809,
+      "conceptName": "hydrocortisone 0.01 MG/MG / tetracycline 0.03 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215513",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103289,
+      "conceptName": "nystatin 250000 UNT / tetracycline hydrochloride 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "409824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857985,
+      "conceptName": "tetracycline 0.0025 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857991,
+      "conceptName": "tetracycline 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014551",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857992,
+      "conceptName": "tetracycline 0.005 MG/MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014552",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234413,
+      "conceptName": "tetracycline 0.01 MG/MG / zinc oxide 0.572 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234270,
+      "conceptName": "tetracycline 0.03 MG/MG / triamcinolone 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5214973",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857978,
+      "conceptName": "tetracycline 10000 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014539",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857987,
+      "conceptName": "tetracycline 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014547",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857982,
+      "conceptName": "tetracycline 2.5 MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014543",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857990,
+      "conceptName": "tetracycline 2.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014550",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836999,
+      "conceptName": "tetracycline 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "756192",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857976,
+      "conceptName": "tetracycline 25000 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857980,
+      "conceptName": "tetracycline 5 MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014541",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857989,
+      "conceptName": "tetracycline 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014549",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35857988,
+      "conceptName": "tetracycline 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014548",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235661,
+      "conceptName": "tetracycline 50 MG/ML Mouthwash",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216367",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836969,
+      "conceptName": "tetracycline hydrochloride 0.01 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313248",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19101811,
+      "conceptName": "tetracycline hydrochloride 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "391989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836970,
+      "conceptName": "tetracycline hydrochloride 10 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313249",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19101812,
+      "conceptName": "tetracycline hydrochloride 10 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "391990",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836950,
+      "conceptName": "tetracycline hydrochloride 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198249",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079719,
+      "conceptName": "tetracycline hydrochloride 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313250",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836998,
+      "conceptName": "tetracycline hydrochloride 12.7 MG Drug Implant",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "596956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40174514,
+      "conceptName": "tetracycline hydrochloride 2.08 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "902640",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836972,
+      "conceptName": "tetracycline hydrochloride 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313251",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836974,
+      "conceptName": "tetracycline hydrochloride 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313253",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19019852,
+      "conceptName": "tetracycline hydrochloride 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198250",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836973,
+      "conceptName": "tetracycline hydrochloride 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313252",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1361356,
+      "conceptName": "tetracycline hydrochloride 30 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2180656",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836953,
+      "conceptName": "tetracycline hydrochloride 500 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198252",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836975,
+      "conceptName": "tetracycline hydrochloride 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313254",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1355844,
+      "conceptName": "tetracycline phosphate complex 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2105977",
+      "standardConcept": "S"
+    }
+  ]
+}

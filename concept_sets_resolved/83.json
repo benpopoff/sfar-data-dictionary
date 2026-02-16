@@ -1,0 +1,770 @@
+{
+  "conceptSetId": 83,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41182131,
+      "conceptName": "Acetylcysteine 200 MG / Doxycycline 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2380093",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41244489,
+      "conceptName": "Acetylcysteine 6000 MG / Doxycycline 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2442451",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40930422,
+      "conceptName": "Codeine 30 MG / Doxycycline 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2128384",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42723296,
+      "conceptName": "Doxycycline 0.0698 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2740788",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 590213,
+      "conceptName": "Doxycycline 0.0698 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3134967",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117479,
+      "conceptName": "Doxycycline 0.07 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315441",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44172636,
+      "conceptName": "Doxycycline 0.07 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3049359",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21071374,
+      "conceptName": "Doxycycline 0.14 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP348410",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889778,
+      "conceptName": "Doxycycline 0.162 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894655,
+      "conceptName": "Doxycycline 0.172 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004730",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273262,
+      "conceptName": "Doxycycline 0.538 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471224",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482203,
+      "conceptName": "Doxycycline 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419751",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110287,
+      "conceptName": "Doxycycline 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104918",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242375,
+      "conceptName": "Doxycycline 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440337",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898793,
+      "conceptName": "Doxycycline 150 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096755",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44180097,
+      "conceptName": "Doxycycline 150 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3056820",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211473,
+      "conceptName": "Doxycycline 2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40745712,
+      "conceptName": "Doxycycline 20 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4711431",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480969,
+      "conceptName": "Doxycycline 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419750",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36269940,
+      "conceptName": "Doxycycline 200 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3120815",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894656,
+      "conceptName": "Doxycycline 23.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000741",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42713918,
+      "conceptName": "Doxycycline 23.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2741148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891743,
+      "conceptName": "Doxycycline 231 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996462",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180038,
+      "conceptName": "Doxycycline 3.33 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480395,
+      "conceptName": "Doxycycline 40 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419753",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898789,
+      "conceptName": "Doxycycline 40 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096751",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045771,
+      "conceptName": "Doxycycline 44 MG/UNT Oral Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040402",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885856,
+      "conceptName": "Doxycycline 50 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000431",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103841,
+      "conceptName": "ambroxol 75 MG / doxycycline 100 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "411862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103547,
+      "conceptName": "ambroxol 75 MG / doxycycline 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "410896",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36926065,
+      "conceptName": "betamethasone 0.0005 MG/MG / doxycycline 0.1 MG/MG / nystatin 0.02 MG/MG Mouthwash",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5183197",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19121372,
+      "conceptName": "doxycycline 100 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "578682",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19096718,
+      "conceptName": "doxycycline 100 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "349354",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738664,
+      "conceptName": "doxycycline 109 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "349115",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738663,
+      "conceptName": "doxycycline 109 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "349114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104326,
+      "conceptName": "doxycycline 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413721",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861012,
+      "conceptName": "doxycycline 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017711",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861011,
+      "conceptName": "doxycycline 20 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017710",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103300,
+      "conceptName": "doxycycline 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "409837",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738578,
+      "conceptName": "doxycycline 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251843",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861015,
+      "conceptName": "doxycycline 200 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017714",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861013,
+      "conceptName": "doxycycline 250 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017712",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738727,
+      "conceptName": "doxycycline 50 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "411887",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2917949,
+      "conceptName": "doxycycline 50 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5134772",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19108074,
+      "conceptName": "doxycycline 50 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "434274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738665,
+      "conceptName": "doxycycline 54.4 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "349116",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103517,
+      "conceptName": "doxycycline 57.7 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "410752",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19122180,
+      "conceptName": "doxycycline 75 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "597521",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738754,
+      "conceptName": "doxycycline 75 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "578689",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19122288,
+      "conceptName": "doxycycline 75 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "602219",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40171393,
+      "conceptName": "doxycycline anhydrous 40 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "901399",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076752,
+      "conceptName": "doxycycline calcium 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310026",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233704,
+      "conceptName": "doxycycline calcium 5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1650032",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40239976,
+      "conceptName": "doxycycline hyclate 0.1 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1113433",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738611,
+      "conceptName": "doxycycline hyclate 100 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "348869",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19108021,
+      "conceptName": "doxycycline hyclate 100 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "434018",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076753,
+      "conceptName": "doxycycline hyclate 100 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310027",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234523,
+      "conceptName": "doxycycline hyclate 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1649988",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233711,
+      "conceptName": "doxycycline hyclate 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1650143",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36249415,
+      "conceptName": "doxycycline hyclate 120 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1801138",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19130459,
+      "conceptName": "doxycycline hyclate 150 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "799048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233757,
+      "conceptName": "doxycycline hyclate 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1650446",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076754,
+      "conceptName": "doxycycline hyclate 20 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310028",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1738579,
+      "conceptName": "doxycycline hyclate 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "283535",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43526700,
+      "conceptName": "doxycycline hyclate 200 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1423080",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 963813,
+      "conceptName": "doxycycline hyclate 200 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1998483",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234083,
+      "conceptName": "doxycycline hyclate 50 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1653433",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234415,
+      "conceptName": "doxycycline hyclate 50 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1649405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233989,
+      "conceptName": "doxycycline hyclate 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1652674",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36249419,
+      "conceptName": "doxycycline hyclate 60 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1801142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19096551,
+      "conceptName": "doxycycline hyclate 75 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "348870",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103151,
+      "conceptName": "doxycycline hyclate 75 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "406524",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42628914,
+      "conceptName": "doxycycline hyclate 75 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1791505",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234419,
+      "conceptName": "doxycycline hyclate 75 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1649425",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1511043,
+      "conceptName": "doxycycline hyclate 80 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2122343",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19122179,
+      "conceptName": "doxycycline monohydrate 100 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "597520",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234525,
+      "conceptName": "doxycycline monohydrate 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1649990",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233710,
+      "conceptName": "doxycycline monohydrate 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1650142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19127264,
+      "conceptName": "doxycycline monohydrate 150 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "728207",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233755,
+      "conceptName": "doxycycline monohydrate 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1650444",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233702,
+      "conceptName": "doxycycline monohydrate 5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1650030",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234412,
+      "conceptName": "doxycycline monohydrate 50 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1649401",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46233988,
+      "conceptName": "doxycycline monohydrate 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1652673",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19125655,
+      "conceptName": "doxycycline monohydrate 75 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "700408",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234422,
+      "conceptName": "doxycycline monohydrate 75 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1649429",
+      "standardConcept": "S"
+    }
+  ]
+}

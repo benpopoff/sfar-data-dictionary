@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 246,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4174810,
+      "conceptName": "Micrococcus luteus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "48299003",
+      "standardConcept": "S"
+    }
+  ]
+}

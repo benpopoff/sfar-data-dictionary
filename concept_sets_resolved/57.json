@@ -1,0 +1,122 @@
+{
+  "conceptSetId": 57,
+  "resolvedConcepts": [
+    {
+      "conceptId": 702551,
+      "conceptName": "rivaroxaban 1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2588062",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43137701,
+      "conceptName": "rivaroxaban 10 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP472882",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35130845,
+      "conceptName": "rivaroxaban 10 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4788093",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40241333,
+      "conceptName": "rivaroxaban 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1114198",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1831986,
+      "conceptName": "rivaroxaban 103 MG Granules for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5157232",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43181738,
+      "conceptName": "rivaroxaban 15 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP472865",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35144287,
+      "conceptName": "rivaroxaban 15 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4801383",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40244444,
+      "conceptName": "rivaroxaban 15 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1232082",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35200878,
+      "conceptName": "rivaroxaban 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2059015",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43137705,
+      "conceptName": "rivaroxaban 20 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP472897",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40244448,
+      "conceptName": "rivaroxaban 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1232086",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44122941,
+      "conceptName": "rivaroxaban 35 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117572",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1831981,
+      "conceptName": "rivaroxaban 51.7 MG Granules for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5157227",
+      "standardConcept": "S"
+    }
+  ]
+}

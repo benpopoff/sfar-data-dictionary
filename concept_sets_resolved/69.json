@@ -1,0 +1,221 @@
+{
+  "conceptSetId": 69,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41024877,
+      "conceptName": "Aztreonam 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222839",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588404,
+      "conceptName": "Aztreonam 100 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135793",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274659,
+      "conceptName": "Aztreonam 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472621",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892879,
+      "conceptName": "Aztreonam 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997567",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118896,
+      "conceptName": "Aztreonam 120 MG Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316858",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40869145,
+      "conceptName": "Aztreonam 122 MG Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2067107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212827,
+      "conceptName": "Aztreonam 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40869146,
+      "conceptName": "Aztreonam 20 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2067108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589375,
+      "conceptName": "Aztreonam 20 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274658,
+      "conceptName": "Aztreonam 200 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472620",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588238,
+      "conceptName": "Aztreonam 200 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135682",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118894,
+      "conceptName": "Aztreonam 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056135,
+      "conceptName": "Aztreonam 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254097",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056134,
+      "conceptName": "Aztreonam 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254096",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 590393,
+      "conceptName": "Aztreonam 50 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274657,
+      "conceptName": "Aztreonam 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472619",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21172300,
+      "conceptName": "Aztreonam 500 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP398516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891867,
+      "conceptName": "Aztreonam 75 MG Dry Powder Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989625",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21132853,
+      "conceptName": "Aztreonam 75 MG Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP398526",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36508702,
+      "conceptName": "Aztreonam 75 MG/ML Dry Powder Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4835393",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36267509,
+      "conceptName": "Aztreonam 75 MG/ML Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3118384",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287307,
+      "conceptName": "aztreonam 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1664981",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287312,
+      "conceptName": "aztreonam 2000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1664986",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173627,
+      "conceptName": "aztreonam 75 MG/ML Inhalation Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "901610",
+      "standardConcept": "S"
+    }
+  ]
+}

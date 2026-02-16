@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 131,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41086004,
+      "conceptName": "Etomidate 0.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283966",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890754,
+      "conceptName": "Etomidate 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994113",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43218284,
+      "conceptName": "Etomidate 2 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440565",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46234149,
+      "conceptName": "etomidate 2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1654007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35854994,
+      "conceptName": "etomidate 2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5011631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903350,
+      "conceptName": "etomidate 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360463",
+      "standardConcept": "S"
+    }
+  ]
+}

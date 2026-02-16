@@ -1,0 +1,140 @@
+{
+  "conceptSetId": 93,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36885933,
+      "conceptName": "linezolid 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999018",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46276322,
+      "conceptName": "linezolid 2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1662281",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36786821,
+      "conceptName": "linezolid 2 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4775089",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893796,
+      "conceptName": "linezolid 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000162",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43216907,
+      "conceptName": "linezolid 20 MG/ML Granules for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP493706",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43750594,
+      "conceptName": "linezolid 20 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP702826",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2917978,
+      "conceptName": "linezolid 20 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5134800",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861033,
+      "conceptName": "linezolid 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017764",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1736890,
+      "conceptName": "linezolid 20 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311345",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43290854,
+      "conceptName": "linezolid 20 MG/ML Powder for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP555012",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42953630,
+      "conceptName": "linezolid 300 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4680187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045526,
+      "conceptName": "linezolid 3000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040157",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19080151,
+      "conceptName": "linezolid 400 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "314079",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43162150,
+      "conceptName": "linezolid 600 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP493723",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1736892,
+      "conceptName": "linezolid 600 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311347",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 255,
+  "resolvedConcepts": [
+    {
+      "conceptId": 1242266,
+      "conceptName": "Extended spectrum beta-lactamase producing Serratia liquefaciens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1107101000112105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4028952,
+      "conceptName": "Serratia liquefaciens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "23787004",
+      "standardConcept": "S"
+    }
+  ]
+}

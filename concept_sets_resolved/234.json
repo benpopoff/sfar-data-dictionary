@@ -1,0 +1,212 @@
+{
+  "conceptSetId": 234,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37017689,
+      "conceptName": "Carbapenem resistant Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "714007005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42535760,
+      "conceptName": "Carbapenem resistant Enterobacter cloacae complex",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "734201007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3657167,
+      "conceptName": "Carbapenemase-producing Enterobacter asburiae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1093601000112103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42537866,
+      "conceptName": "Carbapenemase-producing Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "737529000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42535855,
+      "conceptName": "Carbapenemase-producing Enterobacter cloacae complex",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "734353001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3657168,
+      "conceptName": "Carbapenemase-producing Enterobacter hormaechei",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1094301000112105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4140527,
+      "conceptName": "Enterobacter asburiae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "33115003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4016600,
+      "conceptName": "Enterobacter cancerogenus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114451003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4030716,
+      "conceptName": "Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "14385002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4189174,
+      "conceptName": "Enterobacter cloacae complex",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "414102007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36717518,
+      "conceptName": "Enterobacter cloacae subsp. cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "721950003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4210735,
+      "conceptName": "Enterobacter cloacae subspecies dissolvens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "56813009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4014972,
+      "conceptName": "Enterobacter hormaechei",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114454006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37155783,
+      "conceptName": "Enterobacter hormaechei subsp. hormaechei",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "31591000087103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37155169,
+      "conceptName": "Enterobacter hormaechei subsp. oharae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "31601000087106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37155784,
+      "conceptName": "Enterobacter hormaechei subsp. steigerwaltii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "31611000087108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4017114,
+      "conceptName": "Enterobacter kobei",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114456008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36716067,
+      "conceptName": "Extended spectrum beta-lactamase producing Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "721910001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37155306,
+      "conceptName": "Extended spectrum beta-lactamase producing Enterobacter cloacae complex",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1094001000112107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1242252,
+      "conceptName": "Extended spectrum beta-lactamase producing Enterobacter hormaechei",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1094401000112103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37311316,
+      "conceptName": "Multidrug-resistant Enterobacter cloacae complex",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "816085003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017941,
+      "conceptName": "Multiple drug-resistant Enterobacter asburiae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "714316001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017942,
+      "conceptName": "Multiple drug-resistant Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "714317005",
+      "standardConcept": "S"
+    }
+  ]
+}

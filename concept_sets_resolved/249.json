@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 249,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37018965,
+      "conceptName": "Pantoea septica",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "5681000146105",
+      "standardConcept": "S"
+    }
+  ]
+}

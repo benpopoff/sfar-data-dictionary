@@ -1,0 +1,752 @@
+{
+  "conceptSetId": 81,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43030079,
+      "conceptName": "Bacitracin 500 UNT/ML / Colistin 250000 UNT/ML / Hydrocortisone 10 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43674637,
+      "conceptName": "Colistin 0.0000374 MG/MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP932411",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961660,
+      "conceptName": "Colistin 0.0000595 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43746214,
+      "conceptName": "Colistin 0.0374 MG/MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP932418",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43782737,
+      "conceptName": "Colistin 1 MG/MG Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP940504",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43800584,
+      "conceptName": "Colistin 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP940507",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21027347,
+      "conceptName": "Colistin 10 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304778,
+      "conceptName": "Colistin 100000 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502740",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21105909,
+      "conceptName": "Colistin 1000000 UNT Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276136",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961661,
+      "conceptName": "Colistin 1000000 UNT Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159623",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883959,
+      "conceptName": "Colistin 1000000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1007270",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21145120,
+      "conceptName": "Colistin 1000000 UNT Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40899218,
+      "conceptName": "Colistin 1000000 UNT Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2097180",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737581,
+      "conceptName": "Colistin 1000000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719629",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21125345,
+      "conceptName": "Colistin 1000000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276163",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837002,
+      "conceptName": "Colistin 113 UNT/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034964",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43030071,
+      "conceptName": "Colistin 120 MG Dry Powder Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845140",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43710725,
+      "conceptName": "Colistin 12500 UNT/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP940497",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110389,
+      "conceptName": "Colistin 150 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105020",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058893,
+      "conceptName": "Colistin 150 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053524",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43269450,
+      "conceptName": "Colistin 150 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP558018",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21105905,
+      "conceptName": "Colistin 1500000 UNT Dry Powder Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276119",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407385,
+      "conceptName": "Colistin 1500000 UNT Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099427",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055124,
+      "conceptName": "Colistin 151 UNT/MG / Erythromycin 0.00743 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253086",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180474,
+      "conceptName": "Colistin 151000 UNT/ML / Erythromycin 7.43 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378436",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42724643,
+      "conceptName": "Colistin 151000 UNT/ML / Erythromycin 7.44 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724894",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737583,
+      "conceptName": "Colistin 17900 UNT/ACTUAT Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719627",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37592944,
+      "conceptName": "Colistin 1800000 UNT Dry Powder Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4782385",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180475,
+      "conceptName": "Colistin 1800000 UNT Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378437",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21145124,
+      "conceptName": "Colistin 19500000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276166",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737580,
+      "conceptName": "Colistin 19500000 UNT Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41149390,
+      "conceptName": "Colistin 200000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347352",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888814,
+      "conceptName": "Colistin 2000000 UNT Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991829",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837003,
+      "conceptName": "Colistin 2000000 UNT Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034965",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883958,
+      "conceptName": "Colistin 2000000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37592941,
+      "conceptName": "Colistin 2000000 UNT Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4782382",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21174618,
+      "conceptName": "Colistin 2000000 UNT Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276126",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117947,
+      "conceptName": "Colistin 2000000 UNT Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315909",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35157095,
+      "conceptName": "Colistin 2000000 UNT/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4814102",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35148566,
+      "conceptName": "Colistin 2000000 UNT/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4805628",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21066628,
+      "conceptName": "Colistin 2000000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276160",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737563,
+      "conceptName": "Colistin 2000000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719647",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837006,
+      "conceptName": "Colistin 250000 UNT Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034968",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43584698,
+      "conceptName": "Colistin 26.7 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP940479",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868157,
+      "conceptName": "Colistin 3000000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2066119",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35161924,
+      "conceptName": "Colistin 3000000 UNT Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4818888",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21164886,
+      "conceptName": "Colistin 3000000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276112",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737568,
+      "conceptName": "Colistin 3000000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737572,
+      "conceptName": "Colistin 33300 UNT/ACTUAT Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719638",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086645,
+      "conceptName": "Colistin 333000 UNT/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284607",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180477,
+      "conceptName": "Colistin 333000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378439",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737565,
+      "conceptName": "Colistin 35700 UNT/ACTUAT Inhalant Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42948106,
+      "conceptName": "Colistin 5 MG/ML / Erythromycin 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4674696",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405053,
+      "conceptName": "Colistin 500000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097095",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21066624,
+      "conceptName": "Colistin 500000 UNT Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP276103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40737586,
+      "conceptName": "Colistin 500000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4719624",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43710256,
+      "conceptName": "Colistin 95 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP932423",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234427,
+      "conceptName": "bacitracin 500 UNT/ML / colistin 25000 UNT/ML / hydrocortisone 10 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215128",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234426,
+      "conceptName": "bacitracin 500 UNT/ML / colistin 250000 UNT/ML / hydrocortisone 10 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2050017,
+      "conceptName": "colistin 0.005 MG/MG / erythromycin 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4950443",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2047097,
+      "conceptName": "colistin 0.005 MG/MG / tetracycline 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4947324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19064597,
+      "conceptName": "colistin 120 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251780",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105318,
+      "conceptName": "colistin 125000 UNT/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "419911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006721,
+      "conceptName": "colistin 1500000 UNT Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106106,
+      "conceptName": "colistin 16.6 MG / furazolidone 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "427119",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2040322,
+      "conceptName": "colistin 160 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4939953",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36058981,
+      "conceptName": "colistin 1660000 UNT Inhalation Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4984643",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36927767,
+      "conceptName": "colistin 19500000 UNT Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5207244",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1236115,
+      "conceptName": "colistin 20 MG/ML / tobramycin 15.2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216825",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35829980,
+      "conceptName": "colistin 2000 UNT/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5038741",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35829978,
+      "conceptName": "colistin 2000 UNT/MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5038743",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107917,
+      "conceptName": "colistin 2000000 UNT Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433808",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106126,
+      "conceptName": "colistin 25 MG / furazolidone 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "427186",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40163006,
+      "conceptName": "colistin 3 MG/ML / hydrocortisone 10 MG/ML / neomycin 3.3 MG/ML / thonzonium bromide 0.5 MG/ML Otic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "854992",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1236114,
+      "conceptName": "colistin 380000 UNT/ML / tobramycin 24.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 901847,
+      "conceptName": "colistin 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251779",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075830,
+      "conceptName": "colistin 5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309502",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19128854,
+      "conceptName": "colistin 50000 UNT/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "755852",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105316,
+      "conceptName": "colistin 50000 UNT/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "419850",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107916,
+      "conceptName": "colistin 500000 UNT Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433807",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40241488,
+      "conceptName": "colistin 75 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1117522",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2906262,
+      "conceptName": "colistin 80 MG Inhalation Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5123044",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2040321,
+      "conceptName": "colistin 80 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4939946",
+      "standardConcept": "S"
+    }
+  ]
+}

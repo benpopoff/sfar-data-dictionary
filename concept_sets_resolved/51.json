@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 51,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40866445,
+      "conceptName": "Melagatran 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2064407",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "conceptSetId": 86,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42937324,
+      "conceptName": "Fluconazole 0.005 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4664013",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117137,
+      "conceptName": "Fluconazole 0.0333 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315099",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023070,
+      "conceptName": "Fluconazole 0.1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221032",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085923,
+      "conceptName": "Fluconazole 0.286 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283885",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35139094,
+      "conceptName": "Fluconazole 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4796251",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071539,
+      "conceptName": "Fluconazole 10 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066170",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44172608,
+      "conceptName": "Fluconazole 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3049331",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883892,
+      "conceptName": "Fluconazole 10 MG/ML Powder for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999937",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43166257,
+      "conceptName": "Fluconazole 10 MG/ML Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP458176",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481605,
+      "conceptName": "Fluconazole 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417295",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36783795,
+      "conceptName": "Fluconazole 2 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4772078",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884821,
+      "conceptName": "Fluconazole 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993885",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36419929,
+      "conceptName": "Fluconazole 40 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4762218",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43155248,
+      "conceptName": "Fluconazole 40 MG/ML Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP457424",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35138048,
+      "conceptName": "Fluconazole 80 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4795217",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2049367,
+      "conceptName": "fluconazole 10 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4949725",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860279,
+      "conceptName": "fluconazole 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016447",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077380,
+      "conceptName": "fluconazole 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310352",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860242,
+      "conceptName": "fluconazole 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016409",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19022584,
+      "conceptName": "fluconazole 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199950",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1754995,
+      "conceptName": "fluconazole 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197698",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1754999,
+      "conceptName": "fluconazole 150 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1754996,
+      "conceptName": "fluconazole 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197699",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605310,
+      "conceptName": "fluconazole 2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1721311",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859756,
+      "conceptName": "fluconazole 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016471",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1755000,
+      "conceptName": "fluconazole 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199746",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19019003,
+      "conceptName": "fluconazole 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197700",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19124598,
+      "conceptName": "fluconazole 200 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "646041",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860270,
+      "conceptName": "fluconazole 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016438",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077401,
+      "conceptName": "fluconazole 40 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310353",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859735,
+      "conceptName": "fluconazole 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016450",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19128807,
+      "conceptName": "fluconazole 5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "755760",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105804,
+      "conceptName": "fluconazole 5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "422644",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860259,
+      "conceptName": "fluconazole 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016427",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1755001,
+      "conceptName": "fluconazole 50 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199747",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860248,
+      "conceptName": "fluconazole 50 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016416",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19019004,
+      "conceptName": "fluconazole 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197701",
+      "standardConcept": "S"
+    }
+  ]
+}

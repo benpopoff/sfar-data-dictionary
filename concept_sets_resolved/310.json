@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 310,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4353622,
+      "conceptName": "Expiratory time",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "250820008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4353623,
+      "conceptName": "Inspiratory pause time",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "250821007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4353947,
+      "conceptName": "Inspiratory time",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "250819002",
+      "standardConcept": "S"
+    }
+  ]
+}

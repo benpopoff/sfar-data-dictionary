@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 195,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3010813,
+      "conceptName": "Leukocytes [#/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26464-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3000905,
+      "conceptName": "Leukocytes [#/volume] in Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "6690-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3032393,
+      "conceptName": "Leukocytes [#/volume] in Blood by Estimate",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "49498-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3003282,
+      "conceptName": "Leukocytes [#/volume] in Blood by Manual count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "804-5",
+      "standardConcept": "S"
+    }
+  ]
+}

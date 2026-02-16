@@ -1,0 +1,581 @@
+{
+  "conceptSetId": 76,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43032319,
+      "conceptName": "Ceftriaxone 0.0001 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847371",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032317,
+      "conceptName": "Ceftriaxone 0.000286 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847369",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43730774,
+      "conceptName": "Ceftriaxone 0.001 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP669898",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43766694,
+      "conceptName": "Ceftriaxone 0.0597 MG/MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP669794",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42716663,
+      "conceptName": "Ceftriaxone 0.0598 MG/MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2730614",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032308,
+      "conceptName": "Ceftriaxone 0.1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847360",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43694884,
+      "conceptName": "Ceftriaxone 0.119 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP669882",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588251,
+      "conceptName": "Ceftriaxone 0.119 MG/MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135979",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032312,
+      "conceptName": "Ceftriaxone 0.286 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847364",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43766696,
+      "conceptName": "Ceftriaxone 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP669836",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41149757,
+      "conceptName": "Ceftriaxone 1 MG/MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347719",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 590096,
+      "conceptName": "Ceftriaxone 1 MG/MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3136574",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43136642,
+      "conceptName": "Ceftriaxone 1 MG/MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP463259",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43712724,
+      "conceptName": "Ceftriaxone 1.19 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP669814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588598,
+      "conceptName": "Ceftriaxone 100 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135522",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888846,
+      "conceptName": "Ceftriaxone 100 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006825",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110477,
+      "conceptName": "Ceftriaxone 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084679,
+      "conceptName": "Ceftriaxone 1000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079310",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884923,
+      "conceptName": "Ceftriaxone 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000935",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43659067,
+      "conceptName": "Ceftriaxone 1000 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP669889",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110478,
+      "conceptName": "Ceftriaxone 10000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105109",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084680,
+      "conceptName": "Ceftriaxone 10000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079311",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032992,
+      "conceptName": "Ceftriaxone 100000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027623",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887837,
+      "conceptName": "Ceftriaxone 119 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588614,
+      "conceptName": "Ceftriaxone 119 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137541",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42941673,
+      "conceptName": "Ceftriaxone 1500 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4668316",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21169877,
+      "conceptName": "Ceftriaxone 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP354379",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071822,
+      "conceptName": "Ceftriaxone 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066453",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032993,
+      "conceptName": "Ceftriaxone 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027624",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36784714,
+      "conceptName": "Ceftriaxone 2000 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4772998",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894724,
+      "conceptName": "Ceftriaxone 2000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991912",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032345,
+      "conceptName": "Ceftriaxone 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847397",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071823,
+      "conceptName": "Ceftriaxone 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066454",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058993,
+      "conceptName": "Ceftriaxone 250 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053624",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894722,
+      "conceptName": "Ceftriaxone 250 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996705",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43032333,
+      "conceptName": "Ceftriaxone 250 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4847384",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42724668,
+      "conceptName": "Ceftriaxone 285 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2734379",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212233,
+      "conceptName": "Ceftriaxone 286 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410195",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587799,
+      "conceptName": "Ceftriaxone 286 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137870",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36267466,
+      "conceptName": "Ceftriaxone 286 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3118341",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881124,
+      "conceptName": "Ceftriaxone 286 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720697,
+      "conceptName": "Ceftriaxone 287 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724251",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41149758,
+      "conceptName": "Ceftriaxone 40 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347720",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305178,
+      "conceptName": "Ceftriaxone 43.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503140",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212230,
+      "conceptName": "Ceftriaxone 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410192",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837396,
+      "conceptName": "Ceftriaxone 50 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2035358",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588143,
+      "conceptName": "Ceftriaxone 50 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137041",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35410556,
+      "conceptName": "Ceftriaxone 50 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144141",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41024240,
+      "conceptName": "Ceftriaxone 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222202",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41024239,
+      "conceptName": "Ceftriaxone 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222201",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880169,
+      "conceptName": "Ceftriaxone 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993330",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892808,
+      "conceptName": "Ceftriaxone 59.7 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003364",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719353,
+      "conceptName": "Ceftriaxone 59.8 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2732039",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2048066,
+      "conceptName": "ceftriaxone 10 MG/ML / sodium chloride 9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948399",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2048226,
+      "conceptName": "ceftriaxone 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948562",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074975,
+      "conceptName": "ceftriaxone 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309090",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234892,
+      "conceptName": "ceftriaxone 1000 MG / lidocaine 35 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215595",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287328,
+      "conceptName": "ceftriaxone 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665021",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2048063,
+      "conceptName": "ceftriaxone 20 MG/ML / sodium chloride 9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948396",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287335,
+      "conceptName": "ceftriaxone 2000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665046",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074977,
+      "conceptName": "ceftriaxone 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309092",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235647,
+      "conceptName": "ceftriaxone 28.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216353",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235645,
+      "conceptName": "ceftriaxone 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216351",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287321,
+      "conceptName": "ceftriaxone 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665005",
+      "standardConcept": "S"
+    }
+  ]
+}

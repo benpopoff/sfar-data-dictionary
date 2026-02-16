@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 8,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3016335,
+      "conceptName": "Glasgow coma score eye opening",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "9267-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3008223,
+      "conceptName": "Glasgow coma score motor",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "9268-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3007194,
+      "conceptName": "Glasgow coma score total",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "9269-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3009094,
+      "conceptName": "Glasgow coma score verbal",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "9270-0",
+      "standardConcept": "S"
+    }
+  ]
+}

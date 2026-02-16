@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 37,
+  "resolvedConcepts": [
+    {
+      "conceptId": 1592993,
+      "conceptName": "betrixaban 40 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1927856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1593001,
+      "conceptName": "betrixaban 80 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1927864",
+      "standardConcept": "S"
+    }
+  ]
+}

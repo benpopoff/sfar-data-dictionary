@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 165,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4001226,
+      "conceptName": "Mixed venous blood specimen",
+      "vocabularyId": "SNOMED",
+      "domainId": "Specimen",
+      "conceptClassId": "Specimen",
+      "conceptCode": "119298005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4045667,
+      "conceptName": "Venous blood specimen",
+      "vocabularyId": "SNOMED",
+      "domainId": "Specimen",
+      "conceptClassId": "Specimen",
+      "conceptCode": "122555007",
+      "standardConcept": "S"
+    }
+  ]
+}

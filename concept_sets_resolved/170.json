@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 170,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3032080,
+      "conceptName": "INR in Blood by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "34714-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3051593,
+      "conceptName": "INR in Capillary blood by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "46418-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3022217,
+      "conceptName": "INR in Platelet poor plasma by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "6301-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3039326,
+      "conceptName": "INR in Platelet poor plasma by Coagulation assay --post heparin neutralization",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "52129-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3042605,
+      "conceptName": "INR in Platelet poor plasma or blood by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "38875-1",
+      "standardConcept": "S"
+    }
+  ]
+}

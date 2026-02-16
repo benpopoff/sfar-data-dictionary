@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 262,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4270057,
+      "conceptName": "Staphylococcus warneri",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "63550006",
+      "standardConcept": "S"
+    }
+  ]
+}

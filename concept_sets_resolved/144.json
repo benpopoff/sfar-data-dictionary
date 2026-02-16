@@ -1,0 +1,113 @@
+{
+  "conceptSetId": 144,
+  "resolvedConcepts": [
+    {
+      "conceptId": 35157982,
+      "conceptName": "Milrinone 0.15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4814981",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403592,
+      "conceptName": "Milrinone 0.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095634",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403593,
+      "conceptName": "Milrinone 0.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095635",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062209,
+      "conceptName": "Milrinone 0.4 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP361500",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405917,
+      "conceptName": "Milrinone 0.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120973,
+      "conceptName": "Milrinone 0.6 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP361510",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885798,
+      "conceptName": "Milrinone 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36787298,
+      "conceptName": "Milrinone 1 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4775563",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481305,
+      "conceptName": "Milrinone 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417477",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240991,
+      "conceptName": "Milrinone 1.42 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438953",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42628990,
+      "conceptName": "milrinone lactate 0.2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1791841",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42628994,
+      "conceptName": "milrinone lactate 1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1791855",
+      "standardConcept": "S"
+    }
+  ]
+}

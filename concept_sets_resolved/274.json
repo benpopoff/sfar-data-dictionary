@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 274,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3036277,
+      "conceptName": "Body height",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8302-2",
+      "standardConcept": "S"
+    }
+  ]
+}

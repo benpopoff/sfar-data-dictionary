@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 72,
+  "resolvedConcepts": [
+    {
+      "conceptId": 35885672,
+      "conceptName": "cefiderocol 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5032959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37498014,
+      "conceptName": "cefiderocol 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2265706",
+      "standardConcept": "S"
+    }
+  ]
+}

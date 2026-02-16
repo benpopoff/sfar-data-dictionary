@@ -1,0 +1,212 @@
+{
+  "conceptSetId": 328,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3012895,
+      "conceptName": "Femoral artery - left Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8534-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3018701,
+      "conceptName": "Femoral artery - right Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8535-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3019870,
+      "conceptName": "Femoral artery Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8504-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21490852,
+      "conceptName": "Invasive Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "76214-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4108290,
+      "conceptName": "Invasive mean arterial pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "251075007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37168599,
+      "conceptName": "Mean arterial pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "1285244000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3027598,
+      "conceptName": "Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8478-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4239021,
+      "conceptName": "Mean blood pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "6797001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21490778,
+      "conceptName": "Mean blood pressure by Continuous non-invasive monitoring",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "75996-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21492241,
+      "conceptName": "Mean blood pressure by Noninvasive",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "76536-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36031385,
+      "conceptName": "Mean blood pressure by Noninvasive--during anesthesia",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "95821-5",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36031915,
+      "conceptName": "Mean blood pressure--during anesthesia",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "95822-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3022152,
+      "conceptName": "Mean blood pressure--expiration",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8448-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3013032,
+      "conceptName": "Mean blood pressure--inspiration",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8449-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3012526,
+      "conceptName": "Mean blood pressure--sitting",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8456-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3017490,
+      "conceptName": "Mean blood pressure--standing",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8457-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3018336,
+      "conceptName": "Mean blood pressure--supine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8458-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4108289,
+      "conceptName": "Non-invasive mean arterial pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "251074006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3009075,
+      "conceptName": "Radial artery - left Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8542-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3015847,
+      "conceptName": "Radial artery - right Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8543-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3005468,
+      "conceptName": "Radial artery Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8506-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3010443,
+      "conceptName": "Renal artery - left Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8417-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3015939,
+      "conceptName": "Renal artery - right Mean blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8418-6",
+      "standardConcept": "S"
+    }
+  ]
+}

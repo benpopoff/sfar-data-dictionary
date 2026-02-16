@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 300,
+  "resolvedConcepts": [
+    {
+      "conceptId": 1076472,
+      "conceptName": "Fenestrated tracheostomy tube",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "1343696006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36713922,
+      "conceptName": "Laryngectomy tube, non-sterile",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "718933007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1076494,
+      "conceptName": "Non-fenestrated tracheostomy tube",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "1344664005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4044008,
+      "conceptName": "Tracheostomy tube",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "129121000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 605799,
+      "conceptName": "Tracheostomy tube cannula",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "1137710007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1076451,
+      "conceptName": "Tracheostomy tube inner cannula",
+      "vocabularyId": "SNOMED",
+      "domainId": "Device",
+      "conceptClassId": "Physical Object",
+      "conceptCode": "1343640004",
+      "standardConcept": "S"
+    }
+  ]
+}

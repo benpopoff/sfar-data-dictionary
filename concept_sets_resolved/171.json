@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 171,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3034426,
+      "conceptName": "Prothrombin time (PT)",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "5902-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3033658,
+      "conceptName": "Prothrombin time (PT) actual/Normal",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "5894-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3002417,
+      "conceptName": "Prothrombin time (PT) in Blood by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "5964-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3053181,
+      "conceptName": "Prothrombin time (PT) in Capillary blood by Coagulation assay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "46417-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3041133,
+      "conceptName": "Prothrombin time (PT) in Platelet poor plasma by Coagulation assay --baseline",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "40088-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3039931,
+      "conceptName": "Prothrombin time (PT) in Platelet poor plasma by Coagulation assay --post heparin neutralization",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "52122-9",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "conceptSetId": 126,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41179142,
+      "conceptName": "Insulin Glargine 0.1 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835741,
+      "conceptName": "Insulin Glargine 0.1 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033703",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41210620,
+      "conceptName": "Insulin Glargine 10 UNT/ML / Insulin, Prompt Zinc, Beef 30 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2408582",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835738,
+      "conceptName": "Insulin Glargine 10 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033700",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 782685,
+      "conceptName": "Insulin Glargine 100 UNT/ML / Lixisenatide 0.033 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4830516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 782690,
+      "conceptName": "Insulin Glargine 100 UNT/ML / Lixisenatide 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4830521",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42971268,
+      "conceptName": "Insulin Glargine 100 UNT/ML / Lixisenatide 0.05 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4697688",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43275144,
+      "conceptName": "Insulin Glargine 100 UNT/ML Auto-Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP572744",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892775,
+      "conceptName": "Insulin Glargine 100 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006858",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44164971,
+      "conceptName": "Insulin Glargine 100 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3041694",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884883,
+      "conceptName": "Insulin Glargine 100 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001999",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35410536,
+      "conceptName": "Insulin Glargine 100 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144121",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179145,
+      "conceptName": "Insulin Glargine 12 UNT/ML / Insulin, Prompt Zinc, Beef 28 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36419854,
+      "conceptName": "Insulin Glargine 200 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4762142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116589,
+      "conceptName": "Insulin Glargine 200 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314551",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35134152,
+      "conceptName": "Insulin Glargine 300 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4791354",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35137845,
+      "conceptName": "Insulin Glargine 300 UNT Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4795016",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883957,
+      "conceptName": "Insulin Glargine 300 UNT/ML Auto-Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003926",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045584,
+      "conceptName": "Insulin Glargine 300 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888812,
+      "conceptName": "Insulin Glargine 300 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005278",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35411315,
+      "conceptName": "Insulin Glargine 300 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144900",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116591,
+      "conceptName": "Insulin Glargine 33.3 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314553",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44168825,
+      "conceptName": "Insulin Glargine 33.3 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3045548",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835740,
+      "conceptName": "Insulin Glargine 33.3 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033702",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929064,
+      "conceptName": "Insulin Glargine 40 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127026",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35146779,
+      "conceptName": "Insulin Glargine 450 UNT Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4803855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37498226,
+      "conceptName": "Sensor 3 ML insulin glargine 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2268064",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2058019,
+      "conceptName": "insulin glargine 10.9 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4958950",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2058014,
+      "conceptName": "insulin glargine 100 IU/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4958945",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1718605,
+      "conceptName": "insulin glargine 100 UNT/ML / lixisenatide 0.033 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1859001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078559,
+      "conceptName": "insulin glargine 100 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311041",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902742,
+      "conceptName": "insulin glargine 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2058025,
+      "conceptName": "insulin glargine 3.64 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4958956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2058023,
+      "conceptName": "insulin glargine 3.64 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4958954",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221558,
+      "conceptName": "insulin glargine 300 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1604545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1758673,
+      "conceptName": "insulin glargine-aglr 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2589009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 701385,
+      "conceptName": "insulin glargine-yfgn 100 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2563976",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 701383,
+      "conceptName": "insulin glargine-yfgn 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2563974",
+      "standardConcept": "S"
+    }
+  ]
+}

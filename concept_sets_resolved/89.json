@@ -1,0 +1,266 @@
+{
+  "conceptSetId": 89,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43748872,
+      "conceptName": "Cilastatin 0.475 MG/MG / Imipenem 0.474 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP673662",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882982,
+      "conceptName": "Cilastatin 0.491 MG/MG / Imipenem 0.49 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882075,
+      "conceptName": "Cilastatin 0.491 MG/MG / Imipenem 0.491 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40930606,
+      "conceptName": "Cilastatin 0.491 MG/MG / Imipenem 0.491 MG/MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2128568",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43802900,
+      "conceptName": "Cilastatin 0.492 MG/MG / Imipenem 0.49 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP673655",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43023040,
+      "conceptName": "Cilastatin 12.5 MG/ML / Imipenem 12.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4838164",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409005,
+      "conceptName": "Cilastatin 12.5 MG/ML / Imipenem 12.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1142590",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212093,
+      "conceptName": "Cilastatin 16.7 MG/ML / Imipenem 16.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410055",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43193274,
+      "conceptName": "Cilastatin 16.7 MG/ML / Imipenem 16.7 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP477884",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43182313,
+      "conceptName": "Cilastatin 22.7 MG/ML / Imipenem 22.7 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP477879",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41024103,
+      "conceptName": "Cilastatin 25 MG/ML / Imipenem 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2222065",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273921,
+      "conceptName": "Cilastatin 25 MG/ML / Imipenem 25 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471883",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43160420,
+      "conceptName": "Cilastatin 25 MG/ML / Imipenem 25 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP477858",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212092,
+      "conceptName": "Cilastatin 250 MG / Imipenem 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410054",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097581,
+      "conceptName": "Cilastatin 250 MG / Imipenem 250 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092212",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882074,
+      "conceptName": "Cilastatin 250 MG / Imipenem 250 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988851",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055348,
+      "conceptName": "Cilastatin 5.3 MG/ML / Imipenem 5.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253310",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43712949,
+      "conceptName": "Cilastatin 5.3 MG/ML / Imipenem 5.3 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP673657",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888823,
+      "conceptName": "Cilastatin 500 MG / Imipenem 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992695",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110425,
+      "conceptName": "Cilastatin 500 MG / Imipenem 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105056",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889812,
+      "conceptName": "Cilastatin 500 MG / Imipenem 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996151",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43802901,
+      "conceptName": "Imipenem 0.0053 MG/MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP673669",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604059,
+      "conceptName": "cilastatin 250 MG / imipenem 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1726204",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075345,
+      "conceptName": "cilastatin 250 MG/ML / imipenem 250 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309293",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2047908,
+      "conceptName": "cilastatin 5 MG/ML / imipenem 5 MG/ML / sodium chloride 9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948239",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35887263,
+      "conceptName": "cilastatin 500 MG / imipenem 500 MG / relebactam 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5034723",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1361539,
+      "conceptName": "cilastatin 500 MG / imipenem 500 MG / relebactam 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2184142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604068,
+      "conceptName": "cilastatin 500 MG / imipenem 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1726214",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19096680,
+      "conceptName": "imipenem 500 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "349223",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 44,
+  "resolvedConcepts": [
+    {
+      "conceptId": 19108504,
+      "conceptName": "dicumarol 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "436496",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19108493,
+      "conceptName": "dicumarol 25 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "436308",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1325125,
+      "conceptName": "dicumarol 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197597",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19108503,
+      "conceptName": "dicumarol 50 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "436495",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076408,
+      "conceptName": "dicumarol 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309861",
+      "standardConcept": "S"
+    }
+  ]
+}

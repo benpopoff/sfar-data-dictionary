@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 168,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3048530,
+      "conceptName": "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "48066-5",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3052716,
+      "conceptName": "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma by Immunoassay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "48058-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42870366,
+      "conceptName": "Fibrin D-dimer FEU [Mass/volume] in Blood by Immunoassay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "71427-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3051714,
+      "conceptName": "Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "48065-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3052648,
+      "conceptName": "Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma by Immunoassay",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "48067-3",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 198,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3017732,
+      "conceptName": "Neutrophils [#/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26499-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3013650,
+      "conceptName": "Neutrophils [#/volume] in Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "751-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3017501,
+      "conceptName": "Neutrophils [#/volume] in Blood by Manual count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "753-4",
+      "standardConcept": "S"
+    }
+  ]
+}

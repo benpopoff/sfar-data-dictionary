@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 33,
+  "resolvedConcepts": [
+    {
+      "conceptId": 19060033,
+      "conceptName": "acenocoumarol 1 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246018",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060034,
+      "conceptName": "acenocoumarol 4 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246019",
+      "standardConcept": "S"
+    }
+  ]
+}

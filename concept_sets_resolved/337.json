@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 337,
+  "resolvedConcepts": [
+    {
+      "conceptId": 21491186,
+      "conceptName": "Endotracheal tube Diameter",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "79562-5",
+      "standardConcept": "S"
+    }
+  ]
+}

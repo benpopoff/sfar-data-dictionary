@@ -1,0 +1,725 @@
+{
+  "conceptSetId": 111,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40754281,
+      "conceptName": "Gentamicin 0.02 MG/ML / heparin 3500 UNT/ML / Vancomycin 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4702742",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43837183,
+      "conceptName": "Vancomycin 0.000952 MG/UNT Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945822",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43657228,
+      "conceptName": "Vancomycin 0.986 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945819",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719509,
+      "conceptName": "Vancomycin 0.987 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2742895",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42723510,
+      "conceptName": "Vancomycin 0.99 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731479",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886959,
+      "conceptName": "Vancomycin 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006544",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43855105,
+      "conceptName": "Vancomycin 1 MG/MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945741",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43584998,
+      "conceptName": "Vancomycin 1 MG/MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945838",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176021,
+      "conceptName": "Vancomycin 1 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3052744",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41270412,
+      "conceptName": "Vancomycin 1 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2468374",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894800,
+      "conceptName": "Vancomycin 1.02 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995715",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43603027,
+      "conceptName": "Vancomycin 1.03 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945774",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404382,
+      "conceptName": "Vancomycin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096424",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35144845,
+      "conceptName": "Vancomycin 10 MG/ML Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4801936",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091309,
+      "conceptName": "Vancomycin 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP356870",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42478969,
+      "conceptName": "Vancomycin 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418721",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44083823,
+      "conceptName": "Vancomycin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078454",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43218286,
+      "conceptName": "Vancomycin 1000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440702",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36789694,
+      "conceptName": "Vancomycin 1000 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4777940",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41208616,
+      "conceptName": "Vancomycin 1000 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2406578",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886003,
+      "conceptName": "Vancomycin 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995950",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43603032,
+      "conceptName": "Vancomycin 1000 UNT/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945794",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44122767,
+      "conceptName": "Vancomycin 10000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117398",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752943,
+      "conceptName": "Vancomycin 100000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704681",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091314,
+      "conceptName": "Vancomycin 12.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP356985",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43023812,
+      "conceptName": "Vancomycin 125 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4838929",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43158140,
+      "conceptName": "Vancomycin 125 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP457743",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21111051,
+      "conceptName": "Vancomycin 14 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP356988",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405158,
+      "conceptName": "Vancomycin 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097200",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479567,
+      "conceptName": "Vancomycin 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418723",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120707,
+      "conceptName": "Vancomycin 20 MG Oral Lozenge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP356877",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43023803,
+      "conceptName": "Vancomycin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4838921",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43202059,
+      "conceptName": "Vancomycin 250 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP457762",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752949,
+      "conceptName": "Vancomycin 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704675",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43023809,
+      "conceptName": "Vancomycin 37 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4838926",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883085,
+      "conceptName": "Vancomycin 37 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003719",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752938,
+      "conceptName": "Vancomycin 4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704686",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882153,
+      "conceptName": "Vancomycin 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005243",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42483098,
+      "conceptName": "Vancomycin 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418722",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892896,
+      "conceptName": "Vancomycin 50 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991339",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21111050,
+      "conceptName": "Vancomycin 50 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP356982",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41270411,
+      "conceptName": "Vancomycin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2468373",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43711008,
+      "conceptName": "Vancomycin 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP945748",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36789701,
+      "conceptName": "Vancomycin 500 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4777947",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35153005,
+      "conceptName": "Vancomycin 500 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4811030",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40896086,
+      "conceptName": "Vancomycin 500 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2094048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887916,
+      "conceptName": "Vancomycin 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058056,
+      "conceptName": "Vancomycin 5000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1052687",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052957,
+      "conceptName": "sodium chloride 9 MG/ML / vancomycin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4953479",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35830195,
+      "conceptName": "vancomycin 0.01 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5037925",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19057568,
+      "conceptName": "vancomycin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "239209",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40165385,
+      "conceptName": "vancomycin 100 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "860441",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40221355,
+      "conceptName": "vancomycin 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1807513",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36921965,
+      "conceptName": "vancomycin 100000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5199065",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235581,
+      "conceptName": "vancomycin 12.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216288",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052991,
+      "conceptName": "vancomycin 125 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4953521",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079834,
+      "conceptName": "vancomycin 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313570",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1560136,
+      "conceptName": "vancomycin 1250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2049888",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1560138,
+      "conceptName": "vancomycin 1500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2049890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1734850,
+      "conceptName": "vancomycin 1750 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2688632",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36074492,
+      "conceptName": "vancomycin 2.83 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4988244",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36965877,
+      "conceptName": "vancomycin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5199045",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1734852,
+      "conceptName": "vancomycin 2000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2688634",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 964086,
+      "conceptName": "vancomycin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2000127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1560139,
+      "conceptName": "vancomycin 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2049891",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707751,
+      "conceptName": "vancomycin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313571",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36062238,
+      "conceptName": "vancomycin 3.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4988241",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862251,
+      "conceptName": "vancomycin 400 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018832",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40221351,
+      "conceptName": "vancomycin 5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1807509",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707772,
+      "conceptName": "vancomycin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313572",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 964093,
+      "conceptName": "vancomycin 50 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2000134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36036119,
+      "conceptName": "vancomycin 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5046125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40221358,
+      "conceptName": "vancomycin 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1807516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40221360,
+      "conceptName": "vancomycin 750 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1807518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235584,
+      "conceptName": "vancomycin 8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216290",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862249,
+      "conceptName": "vancomycin 800 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018830",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707747,
+      "conceptName": "vancomycin 83.3 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "239211",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19112780,
+      "conceptName": "vancomycin 83.3 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "485094",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19124227,
+      "conceptName": "vancomycin 87 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "633163",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19096053,
+      "conceptName": "vancomycin 87 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "346489",
+      "standardConcept": "S"
+    }
+  ]
+}

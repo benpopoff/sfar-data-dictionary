@@ -1,0 +1,230 @@
+{
+  "conceptSetId": 329,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3006962,
+      "conceptName": "Femoral artery - left Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8553-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3006633,
+      "conceptName": "Femoral artery - right Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8554-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3020524,
+      "conceptName": "Femoral artery Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8510-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21490853,
+      "conceptName": "Invasive Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "76215-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4353843,
+      "conceptName": "Invasive systolic arterial pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "251071003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37394652,
+      "conceptName": "Non-invasive central systolic blood pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "1036551000000101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4354252,
+      "conceptName": "Non-invasive systolic arterial pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "251070002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3012979,
+      "conceptName": "Radial artery - left Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8567-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3010693,
+      "conceptName": "Radial artery - right Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8568-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3005659,
+      "conceptName": "Radial artery Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8512-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4217013,
+      "conceptName": "Systolic arterial pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "72313002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4152194,
+      "conceptName": "Systolic blood pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "271649006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3004249,
+      "conceptName": "Systolic blood pressure",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8480-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21490779,
+      "conceptName": "Systolic blood pressure by Continuous non-invasive monitoring",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "75997-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21492239,
+      "conceptName": "Systolic blood pressure by Noninvasive",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "76534-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3028737,
+      "conceptName": "Systolic blood pressure by palpation",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8479-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36305059,
+      "conceptName": "Systolic blood pressure--W exercise",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "87739-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36304016,
+      "conceptName": "Systolic blood pressure--during anesthesia",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "89280-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3000605,
+      "conceptName": "Systolic blood pressure--expiration",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8450-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3033616,
+      "conceptName": "Systolic blood pressure--inspiration",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8451-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36303812,
+      "conceptName": "Systolic blood pressure--lying in L-lateral position",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "89268-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36303525,
+      "conceptName": "Systolic blood pressure--post exercise",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "87741-5",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3018586,
+      "conceptName": "Systolic blood pressure--sitting",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8459-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3035856,
+      "conceptName": "Systolic blood pressure--standing",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8460-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3009395,
+      "conceptName": "Systolic blood pressure--supine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8461-6",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "conceptSetId": 106,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43857781,
+      "conceptName": "Teicoplanin 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP684085",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41146473,
+      "conceptName": "Teicoplanin 100 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881966,
+      "conceptName": "Teicoplanin 133 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996508",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40865171,
+      "conceptName": "Teicoplanin 133 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2063133",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884793,
+      "conceptName": "Teicoplanin 133 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001544",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403561,
+      "conceptName": "Teicoplanin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095603",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21172840,
+      "conceptName": "Teicoplanin 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP408142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885788,
+      "conceptName": "Teicoplanin 200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997240",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21172842,
+      "conceptName": "Teicoplanin 200 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP408148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41239860,
+      "conceptName": "Teicoplanin 200 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2437822",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889718,
+      "conceptName": "Teicoplanin 400 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998055",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21025554,
+      "conceptName": "Teicoplanin 400 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP408135",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927363,
+      "conceptName": "Teicoplanin 400 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125325",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43034580,
+      "conceptName": "Teicoplanin 55.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4849626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881965,
+      "conceptName": "Teicoplanin 55.6 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40865172,
+      "conceptName": "Teicoplanin 55.6 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2063134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885787,
+      "conceptName": "Teicoplanin 55.6 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882870,
+      "conceptName": "Teicoplanin 66.7 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005217",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40989883,
+      "conceptName": "Teicoplanin 66.7 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2187845",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894598,
+      "conceptName": "Teicoplanin 66.7 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991316",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2042243,
+      "conceptName": "sodium chloride 87 MG/ML / teicoplanin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4941978",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36950770,
+      "conceptName": "teicoplanin 10 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5204544",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19063993,
+      "conceptName": "teicoplanin 133 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250921",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104509,
+      "conceptName": "teicoplanin 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415459",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36059668,
+      "conceptName": "teicoplanin 3.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4985424",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104508,
+      "conceptName": "teicoplanin 4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415458",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36059665,
+      "conceptName": "teicoplanin 5.36 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4985421",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36059662,
+      "conceptName": "teicoplanin 6.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4985418",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19064500,
+      "conceptName": "teicoplanin 66.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251570",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104510,
+      "conceptName": "teicoplanin 7.27 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415460",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36059660,
+      "conceptName": "teicoplanin 8.33 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4985415",
+      "standardConcept": "S"
+    }
+  ]
+}

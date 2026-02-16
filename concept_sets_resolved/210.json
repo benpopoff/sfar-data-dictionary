@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 210,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3024232,
+      "conceptName": "Phosphate [Mass/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2774-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3018913,
+      "conceptName": "Phosphate [Moles/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "24519-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3003458,
+      "conceptName": "Phosphate [Moles/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "14879-1",
+      "standardConcept": "S"
+    }
+  ]
+}

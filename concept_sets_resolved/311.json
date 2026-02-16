@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 311,
+  "resolvedConcepts": [
+    {
+      "conceptId": 21490580,
+      "conceptName": "Carbon dioxide production (VCO2) in Respiratory system",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "60825-7",
+      "standardConcept": "S"
+    }
+  ]
+}

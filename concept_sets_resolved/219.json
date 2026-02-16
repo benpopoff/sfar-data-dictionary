@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 219,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3010600,
+      "conceptName": "Phosphate [Moles/time] in 24 hour Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "14881-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3022229,
+      "conceptName": "Phosphate [Moles/volume] in Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "13539-2",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 193,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3026361,
+      "conceptName": "Erythrocytes [#/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26453-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3020416,
+      "conceptName": "Erythrocytes [#/volume] in Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "789-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3027017,
+      "conceptName": "Erythrocytes [#/volume] in Blood by Manual count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "790-6",
+      "standardConcept": "S"
+    }
+  ]
+}

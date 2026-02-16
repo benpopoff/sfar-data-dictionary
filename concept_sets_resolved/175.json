@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 175,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3013721,
+      "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1920-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36305398,
+      "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "88112-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3037081,
+      "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "30239-8",
+      "standardConcept": "S"
+    }
+  ]
+}

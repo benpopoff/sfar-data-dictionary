@@ -1,0 +1,185 @@
+{
+  "conceptSetId": 263,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4183468,
+      "conceptName": "Group B streptococcus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "43492007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017618,
+      "conceptName": "Non-hemolytic Streptococcus agalactiae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "713924007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784050,
+      "conceptName": "Streptococcus agalactiae serotype II",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698168002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44782617,
+      "conceptName": "Streptococcus agalactiae serotype II/R",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698170006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784051,
+      "conceptName": "Streptococcus agalactiae serotype II/c",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698169005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784052,
+      "conceptName": "Streptococcus agalactiae serotype III",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698171005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784054,
+      "conceptName": "Streptococcus agalactiae serotype III/R",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698173008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784053,
+      "conceptName": "Streptococcus agalactiae serotype III/c",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698172003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784146,
+      "conceptName": "Streptococcus agalactiae serotype IV",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698174002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37395797,
+      "conceptName": "Streptococcus agalactiae serotype IX",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "715358008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44782616,
+      "conceptName": "Streptococcus agalactiae serotype Ia",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698164000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784047,
+      "conceptName": "Streptococcus agalactiae serotype Ia/c",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698165004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784048,
+      "conceptName": "Streptococcus agalactiae serotype Ib",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698166003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784049,
+      "conceptName": "Streptococcus agalactiae serotype Ib/c",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698167007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784149,
+      "conceptName": "Streptococcus agalactiae serotype V",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698177009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784151,
+      "conceptName": "Streptococcus agalactiae serotype V/R",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698179007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784150,
+      "conceptName": "Streptococcus agalactiae serotype V/c",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698178004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37395796,
+      "conceptName": "Streptococcus agalactiae serotype VI",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "715357003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784152,
+      "conceptName": "Streptococcus agalactiae serotype VII",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698180005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784153,
+      "conceptName": "Streptococcus agalactiae serotype VIII",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "698181009",
+      "standardConcept": "S"
+    }
+  ]
+}

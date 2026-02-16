@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 45,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36787912,
+      "conceptName": "edoxaban 15 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4776175",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35141149,
+      "conceptName": "edoxaban 15 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4798279",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36787920,
+      "conceptName": "edoxaban 30 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4776183",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35137111,
+      "conceptName": "edoxaban 30 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4794287",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36787907,
+      "conceptName": "edoxaban 60 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4776170",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35137677,
+      "conceptName": "edoxaban 60 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4794851",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 288,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36685263,
+      "conceptName": "Advance care plan agreed",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Clinical Finding",
+      "conceptCode": "1095851000000100",
+      "standardConcept": "S"
+    }
+  ]
+}

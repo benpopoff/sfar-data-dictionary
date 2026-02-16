@@ -1,0 +1,428 @@
+{
+  "conceptSetId": 71,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43030174,
+      "conceptName": "Cefazolin 0.1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845243",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43030169,
+      "conceptName": "Cefazolin 0.2 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43030166,
+      "conceptName": "Cefazolin 0.333 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845235",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43639257,
+      "conceptName": "Cefazolin 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP947507",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40899647,
+      "conceptName": "Cefazolin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2097609",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110484,
+      "conceptName": "Cefazolin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105115",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058997,
+      "conceptName": "Cefazolin 1000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053628",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882998,
+      "conceptName": "Cefazolin 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988474",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084685,
+      "conceptName": "Cefazolin 10000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079316",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110485,
+      "conceptName": "Cefazolin 10000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105116",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097648,
+      "conceptName": "Cefazolin 100000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092279",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40930799,
+      "conceptName": "Cefazolin 131 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2128761",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40899648,
+      "conceptName": "Cefazolin 133 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2097610",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962038,
+      "conceptName": "Cefazolin 140 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212247,
+      "conceptName": "Cefazolin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410209",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305218,
+      "conceptName": "Cefazolin 20 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503180",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837430,
+      "conceptName": "Cefazolin 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2035392",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118322,
+      "conceptName": "Cefazolin 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316284",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36785974,
+      "conceptName": "Cefazolin 2000 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4774251",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894726,
+      "conceptName": "Cefazolin 2000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995135",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084686,
+      "conceptName": "Cefazolin 20000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305216,
+      "conceptName": "Cefazolin 21 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503178",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176403,
+      "conceptName": "Cefazolin 21 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3053126",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35137401,
+      "conceptName": "Cefazolin 250 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4794575",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36262297,
+      "conceptName": "Cefazolin 250 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3113172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118320,
+      "conceptName": "Cefazolin 350 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316282",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993296,
+      "conceptName": "Cefazolin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191258",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41243215,
+      "conceptName": "Cefazolin 41.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441177",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720700,
+      "conceptName": "Cefazolin 42 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727350",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097647,
+      "conceptName": "Cefazolin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092278",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123683,
+      "conceptName": "Cefazolin 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118314",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889829,
+      "conceptName": "Cefazolin 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999388",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868575,
+      "conceptName": "Cefazolin 52.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2066537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41149785,
+      "conceptName": "Cefazolin 69.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347747",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42726035,
+      "conceptName": "Cefazolin 70 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2733504",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902850,
+      "conceptName": "cefazolin 100 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287338,
+      "conceptName": "cefazolin 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665050",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123963,
+      "conceptName": "cefazolin 10000 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "630111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859457,
+      "conceptName": "cefazolin 1500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5015826",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079960,
+      "conceptName": "cefazolin 200 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287345,
+      "conceptName": "cefazolin 2000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665060",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115099,
+      "conceptName": "cefazolin 250 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562062",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235642,
+      "conceptName": "cefazolin 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216348",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1301806,
+      "conceptName": "cefazolin 3000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2630753",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287340,
+      "conceptName": "cefazolin 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665052",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19131148,
+      "conceptName": "cefazolin 500 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "801155",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235643,
+      "conceptName": "cefazolin 52.4 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216349",
+      "standardConcept": "S"
+    }
+  ]
+}

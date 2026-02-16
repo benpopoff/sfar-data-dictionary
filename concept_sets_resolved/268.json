@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 268,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4015550,
+      "conceptName": "Streptococcus vestibularis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "113998009",
+      "standardConcept": "S"
+    }
+  ]
+}

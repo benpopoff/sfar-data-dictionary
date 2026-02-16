@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 179,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3007359,
+      "conceptName": "Bilirubin.indirect [Mass/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1971-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3007242,
+      "conceptName": "Bilirubin.indirect [Moles/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "14630-8",
+      "standardConcept": "S"
+    }
+  ]
+}

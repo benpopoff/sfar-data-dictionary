@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 319,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4101694,
+      "conceptName": "Peak inspiratory pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "27913002",
+      "standardConcept": "S"
+    }
+  ]
+}

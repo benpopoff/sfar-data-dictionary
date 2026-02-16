@@ -1,0 +1,221 @@
+{
+  "conceptSetId": 136,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44071160,
+      "conceptName": "Propofol 0.01 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1065791",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40834464,
+      "conceptName": "Propofol 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2032426",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240274,
+      "conceptName": "Propofol 0.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438236",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176115,
+      "conceptName": "Propofol 0.2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3052838",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41052470,
+      "conceptName": "Propofol 0.25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2250432",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40865591,
+      "conceptName": "Propofol 0.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2063553",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271144,
+      "conceptName": "Propofol 0.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40896767,
+      "conceptName": "Propofol 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2094729",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40990300,
+      "conceptName": "Propofol 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2188262",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43679557,
+      "conceptName": "Propofol 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP900560",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43820937,
+      "conceptName": "Propofol 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP671953",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43751294,
+      "conceptName": "Propofol 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP900671",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43820942,
+      "conceptName": "Propofol 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP671983",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271145,
+      "conceptName": "Propofol 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882820,
+      "conceptName": "Propofol 5 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21044754,
+      "conceptName": "Propofol 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP400648",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35864285,
+      "conceptName": "propofol 10 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5020740",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2915382,
+      "conceptName": "propofol 10 MG/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5132200",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 753629,
+      "conceptName": "propofol 10 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312674",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220389,
+      "conceptName": "propofol 10 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1808220",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 753627,
+      "conceptName": "propofol 20 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "153475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1537391,
+      "conceptName": "propofol lipid emulsion 10 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2561291",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1537217,
+      "conceptName": "propofol lipid emulsion 10 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2559910",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1145814,
+      "conceptName": "propofol lipid emulsion 20 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2370237",
+      "standardConcept": "S"
+    }
+  ]
+}

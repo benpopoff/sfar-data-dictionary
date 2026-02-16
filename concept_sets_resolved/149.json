@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 149,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3003396,
+      "conceptName": "Base excess in Arterial blood by calculation",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1925-7",
+      "standardConcept": "S"
+    }
+  ]
+}

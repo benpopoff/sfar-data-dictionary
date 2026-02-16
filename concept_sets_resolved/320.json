@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 320,
+  "resolvedConcepts": [
+    {
+      "conceptId": 44782825,
+      "conceptName": "Airway plateau pressure",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "698822002",
+      "standardConcept": "S"
+    }
+  ]
+}

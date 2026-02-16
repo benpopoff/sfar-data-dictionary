@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 192,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3013115,
+      "conceptName": "Eosinophils [#/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26449-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3028615,
+      "conceptName": "Eosinophils [#/volume] in Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "711-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3009932,
+      "conceptName": "Eosinophils [#/volume] in Blood by Manual count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "712-0",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "conceptSetId": 121,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41056471,
+      "conceptName": "Aminopyrine 150 MG / Prednisone 0.75 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254433",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119242,
+      "conceptName": "Aminopyrine 50 MG / Chloroquine 40 MG / mofebutazone 50 MG / Prednisone 1 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2317204",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084648,
+      "conceptName": "Ascorbic Acid 75 MG / Chlorpheniramine 2 MG / Prednisone 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079279",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274718,
+      "conceptName": "Atropine 0.13 MG / Caffeine 15 MG / Dihydroergocristine 0.12 MG / Prednisone 0.25 MG / propyphenazone 200 MG / Strychnine 0.1 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472680",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40930689,
+      "conceptName": "Chloramphenicol 5 MG/ML / Prednisone 2 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2128651",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40825172,
+      "conceptName": "Ephedrine 15 MG / Phenobarbital 10 MG / Prednisone 1.5 MG / Theophylline 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2023134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40959919,
+      "conceptName": "Meprobamate 120 MG / Prednisone 1.5 MG / propyphenazone 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2157881",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41178063,
+      "conceptName": "Phenylbutazone 200 MG / Prednisone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2376025",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40896987,
+      "conceptName": "Phenylbutazone 200 MG / Prednisone 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2094949",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927974,
+      "conceptName": "Phenylbutazone 200 MG / Prednisone 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125936",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41178064,
+      "conceptName": "Phenylbutazone 50 MG / Prednisone 1.25 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2376026",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41146905,
+      "conceptName": "Prednisone 0.0025 MG/ML Rectal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344867",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480362,
+      "conceptName": "Prednisone 1 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP420237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271180,
+      "conceptName": "Prednisone 1 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469142",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40834503,
+      "conceptName": "Prednisone 10 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2032465",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42483314,
+      "conceptName": "Prednisone 2 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP420238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41302299,
+      "conceptName": "Prednisone 2 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2500261",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482158,
+      "conceptName": "Prednisone 5 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP420236",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105235,
+      "conceptName": "chloramphenicol 0.002 MG/MG / prednisone 0.005 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "418863",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023191,
+      "conceptName": "ethenzamide 125 MG / prednisolone 0.5 MG / Prednisone 0.5 MG / salicylamide 120 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221153",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19064110,
+      "conceptName": "piroxicam 10 MG / prednisone 2 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1146889,
+      "conceptName": "piroxicam 10 MG / prednisone 2 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251947",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105412,
+      "conceptName": "piroxicam 10 MG / prednisone 2 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420639",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35864926,
+      "conceptName": "prednisone 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021023",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35864927,
+      "conceptName": "prednisone 0.005 MG/MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021024",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35864921,
+      "conceptName": "prednisone 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021018",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42873627,
+      "conceptName": "prednisone 1 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1303125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551100,
+      "conceptName": "prednisone 1 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198144",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551193,
+      "conceptName": "prednisone 1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "315187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19127696,
+      "conceptName": "prednisone 10 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "746380",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551101,
+      "conceptName": "prednisone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198145",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105450,
+      "conceptName": "prednisone 10 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420774",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35864924,
+      "conceptName": "prednisone 10 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021021",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105449,
+      "conceptName": "prednisone 100 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420773",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42873629,
+      "conceptName": "prednisone 2 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1303132",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551122,
+      "conceptName": "prednisone 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198146",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19127774,
+      "conceptName": "prednisone 20 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "746836",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551170,
+      "conceptName": "prednisone 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312615",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551171,
+      "conceptName": "prednisone 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312616",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235466,
+      "conceptName": "prednisone 30 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105448,
+      "conceptName": "prednisone 30 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420772",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106694,
+      "conceptName": "prednisone 40 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "429332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42873631,
+      "conceptName": "prednisone 5 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1303135",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19127775,
+      "conceptName": "prednisone 5 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "746837",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551192,
+      "conceptName": "prednisone 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312617",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105447,
+      "conceptName": "prednisone 5 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420771",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35864925,
+      "conceptName": "prednisone 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021022",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19028933,
+      "conceptName": "prednisone 5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "205301",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1551123,
+      "conceptName": "prednisone 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35864923,
+      "conceptName": "prednisone 50 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021020",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106693,
+      "conceptName": "prednisone 8 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "429331",
+      "standardConcept": "S"
+    }
+  ]
+}

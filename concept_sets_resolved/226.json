@@ -1,0 +1,149 @@
+{
+  "conceptSetId": 226,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3657162,
+      "conceptName": "Carbapenemase-producing Citrobacter braakii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1089301000112107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3657163,
+      "conceptName": "Carbapenemase-producing Citrobacter freundii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1089901000112108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37155969,
+      "conceptName": "Carbapenemase-producing Citrobacter freundii complex",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "44601000087107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3657164,
+      "conceptName": "Carbapenemase-producing Citrobacter werkmanii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1091201000112104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3662047,
+      "conceptName": "Carbapenemase-producing Citrobacter youngae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1091401000112100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4016020,
+      "conceptName": "Citrobacter braakii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114262000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4269070,
+      "conceptName": "Citrobacter freundii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "6265002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36684336,
+      "conceptName": "Citrobacter freundii complex",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "782522004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4220438,
+      "conceptName": "Citrobacter gillenii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "416990006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4221194,
+      "conceptName": "Citrobacter murliniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "417581000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4016449,
+      "conceptName": "Citrobacter sedlakii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114265003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4016598,
+      "conceptName": "Citrobacter werkmanii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114442006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4017113,
+      "conceptName": "Citrobacter youngae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114443001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36716066,
+      "conceptName": "ESBL Citrobacter freundii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "721909006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37156014,
+      "conceptName": "Extended spectrum beta-lactamase producing Citrobacter braakii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1089401000112100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37395686,
+      "conceptName": "Multiple drug-resistant Citrobacter freundii",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "715206000",
+      "standardConcept": "S"
+    }
+  ]
+}

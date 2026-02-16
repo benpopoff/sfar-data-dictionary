@@ -1,0 +1,635 @@
+{
+  "conceptSetId": 109,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36257212,
+      "conceptName": "Dexamethasone 0.001 MG/MG / Tobramycin 0.003 MG/MG Ophthalmic Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3108087",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084541,
+      "conceptName": "Dexamethasone 0.001 MG/ML / Tobramycin 0.003 MG/ML Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084540,
+      "conceptName": "Dexamethasone 0.001 MG/ML / Tobramycin 0.003 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480134,
+      "conceptName": "Dexamethasone 1 MG/ML / Tobramycin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418633",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41301669,
+      "conceptName": "Tobramycin 0.000857 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2499631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43022782,
+      "conceptName": "Tobramycin 0.003 MG/MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4837909",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44070994,
+      "conceptName": "Tobramycin 0.003 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1065625",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890909,
+      "conceptName": "Tobramycin 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995681",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35159634,
+      "conceptName": "Tobramycin 10 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4816618",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43258667,
+      "conceptName": "Tobramycin 10 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP572568",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480701,
+      "conceptName": "Tobramycin 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418628",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40958505,
+      "conceptName": "Tobramycin 100 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2156467",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41239745,
+      "conceptName": "Tobramycin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2437707",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891884,
+      "conceptName": "Tobramycin 100 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114757,
+      "conceptName": "Tobramycin 11.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312719",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045152,
+      "conceptName": "Tobramycin 1200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1039783",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045151,
+      "conceptName": "Tobramycin 1200 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1039782",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927257,
+      "conceptName": "Tobramycin 122 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125219",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894802,
+      "conceptName": "Tobramycin 15.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003366",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21023114,
+      "conceptName": "Tobramycin 27 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP364745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42478949,
+      "conceptName": "Tobramycin 28 MG Dry Powder Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44122797,
+      "conceptName": "Tobramycin 28 MG Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117428",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887921,
+      "conceptName": "Tobramycin 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989419",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35770825,
+      "conceptName": "Tobramycin 3 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2772286",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43782078,
+      "conceptName": "Tobramycin 3 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP929355",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886008,
+      "conceptName": "Tobramycin 3 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000486",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21160681,
+      "conceptName": "Tobramycin 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP364753",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41083544,
+      "conceptName": "Tobramycin 4.57 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2281506",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889912,
+      "conceptName": "Tobramycin 40 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995673",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40755523,
+      "conceptName": "Tobramycin 40 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4702172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481929,
+      "conceptName": "Tobramycin 40 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886009,
+      "conceptName": "Tobramycin 50 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40755521,
+      "conceptName": "Tobramycin 500000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4702174",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44122796,
+      "conceptName": "Tobramycin 60 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117427",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40755524,
+      "conceptName": "Tobramycin 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4702171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109664,
+      "conceptName": "Tobramycin 80 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104295",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170465,
+      "conceptName": "Tobramycin 80 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP364773",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35135672,
+      "conceptName": "Tobramycin 90 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4792862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1236115,
+      "conceptName": "colistin 20 MG/ML / tobramycin 15.2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216825",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1236114,
+      "conceptName": "colistin 380000 UNT/ML / tobramycin 24.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19127837,
+      "conceptName": "dexamethasone 0.0001 MG/MG / tobramycin 0.0003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "748085",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076133,
+      "conceptName": "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309682",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19135508,
+      "conceptName": "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "849115",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19076134,
+      "conceptName": "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309683",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42708918,
+      "conceptName": "fluorometholone acetate 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1249626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 967569,
+      "conceptName": "loteprednol etabonate 5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "545255",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2039980,
+      "conceptName": "sodium chloride 9 MG/ML / tobramycin 0.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4939605",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902740,
+      "conceptName": "tobramycin 0.003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313414",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104589,
+      "conceptName": "tobramycin 0.003 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415681",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19080828,
+      "conceptName": "tobramycin 0.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "315208",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35852475,
+      "conceptName": "tobramycin 0.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5009420",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605485,
+      "conceptName": "tobramycin 0.8 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1740476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902734,
+      "conceptName": "tobramycin 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "242824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605486,
+      "conceptName": "tobramycin 1.2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1740480",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902733,
+      "conceptName": "tobramycin 1.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "241514",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902762,
+      "conceptName": "tobramycin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313416",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1236117,
+      "conceptName": "tobramycin 14 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216827",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43526089,
+      "conceptName": "tobramycin 28 MG Inhalation Powder",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1374569",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1831784,
+      "conceptName": "tobramycin 28 MG Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5157029",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902741,
+      "conceptName": "tobramycin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313415",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19112822,
+      "conceptName": "tobramycin 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "485575",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902807,
+      "conceptName": "tobramycin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "597823",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2040169,
+      "conceptName": "tobramycin 45 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4939792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104455,
+      "conceptName": "tobramycin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415080",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36934832,
+      "conceptName": "tobramycin 500000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5207317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902806,
+      "conceptName": "tobramycin 60 MG/ML Inhalation Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "348719",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902736,
+      "conceptName": "tobramycin 60 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245246",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42901769,
+      "conceptName": "tobramycin 75 MG/ML Inhalation Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1314763",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 902723,
+      "conceptName": "tobramycin 80 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198288",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35852847,
+      "conceptName": "tobramycin 9 MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5009425",
+      "standardConcept": "S"
+    }
+  ]
+}

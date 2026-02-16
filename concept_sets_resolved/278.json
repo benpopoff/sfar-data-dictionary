@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 278,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3012266,
+      "conceptName": "Gestational age",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "18185-9",
+      "standardConcept": "S"
+    }
+  ]
+}

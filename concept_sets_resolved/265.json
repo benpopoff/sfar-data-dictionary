@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 265,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4246822,
+      "conceptName": "Streptococcus dysgalactiae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "40812000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4015113,
+      "conceptName": "Streptococcus dysgalactiae subsp. dysgalactiae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "113982002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4134608,
+      "conceptName": "Streptococcus dysgalactiae subsp. equisimilis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "128338004",
+      "standardConcept": "S"
+    }
+  ]
+}

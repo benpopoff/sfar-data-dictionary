@@ -1,0 +1,482 @@
+{
+  "conceptSetId": 92,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41053595,
+      "conceptName": "Levofloxacin 10 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2251557",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110030,
+      "conceptName": "Levofloxacin 100 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104661",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35151688,
+      "conceptName": "Levofloxacin 100 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4808732",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147891,
+      "conceptName": "Levofloxacin 16.7 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2345853",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35151561,
+      "conceptName": "Levofloxacin 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4808608",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35158540,
+      "conceptName": "Levofloxacin 250 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4815534",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479165,
+      "conceptName": "Levofloxacin 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP420164",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36788176,
+      "conceptName": "Levofloxacin 5 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4776436",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43768057,
+      "conceptName": "Levofloxacin 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP694343",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880942,
+      "conceptName": "Levofloxacin 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005844",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43173611,
+      "conceptName": "Levofloxacin 500 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP497391",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35138534,
+      "conceptName": "Levofloxacin 500 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4795694",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36951903,
+      "conceptName": "dexamethasone 1 MG/ML / levofloxacin 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5195330",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35830693,
+      "conceptName": "levofloxacin 0.1 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5037983",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860930,
+      "conceptName": "levofloxacin 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017526",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860924,
+      "conceptName": "levofloxacin 1.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017520",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860920,
+      "conceptName": "levofloxacin 1.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861059,
+      "conceptName": "levofloxacin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017250",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860749,
+      "conceptName": "levofloxacin 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017176",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860738,
+      "conceptName": "levofloxacin 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017165",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107185,
+      "conceptName": "levofloxacin 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "430645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860337,
+      "conceptName": "levofloxacin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860768,
+      "conceptName": "levofloxacin 15 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017373",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1742334,
+      "conceptName": "levofloxacin 15 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "545118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860801,
+      "conceptName": "levofloxacin 150 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017377",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860631,
+      "conceptName": "levofloxacin 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017472",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860625,
+      "conceptName": "levofloxacin 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017466",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860873,
+      "conceptName": "levofloxacin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017413",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861138,
+      "conceptName": "levofloxacin 200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017328",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861137,
+      "conceptName": "levofloxacin 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017327",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861133,
+      "conceptName": "levofloxacin 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017323",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287452,
+      "conceptName": "levofloxacin 25 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1742291,
+      "conceptName": "levofloxacin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "477391",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860722,
+      "conceptName": "levofloxacin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017149",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860721,
+      "conceptName": "levofloxacin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1742254,
+      "conceptName": "levofloxacin 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199884",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860889,
+      "conceptName": "levofloxacin 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017429",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860887,
+      "conceptName": "levofloxacin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017427",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860869,
+      "conceptName": "levofloxacin 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017409",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861099,
+      "conceptName": "levofloxacin 300 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017289",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860881,
+      "conceptName": "levofloxacin 4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017421",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860865,
+      "conceptName": "levofloxacin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861089,
+      "conceptName": "levofloxacin 400 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017279",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287441,
+      "conceptName": "levofloxacin 5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1665505",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19080152,
+      "conceptName": "levofloxacin 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "314080",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861061,
+      "conceptName": "levofloxacin 5 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017252",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860855,
+      "conceptName": "levofloxacin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017395",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860708,
+      "conceptName": "levofloxacin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017135",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1742255,
+      "conceptName": "levofloxacin 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199885",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860846,
+      "conceptName": "levofloxacin 60 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017387",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860844,
+      "conceptName": "levofloxacin 75 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017385",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1742284,
+      "conceptName": "levofloxacin 750 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311296",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35860805,
+      "conceptName": "levofloxacin 80 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5017381",
+      "standardConcept": "S"
+    }
+  ]
+}

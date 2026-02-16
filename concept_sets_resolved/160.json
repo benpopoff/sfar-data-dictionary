@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 160,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3019977,
+      "conceptName": "pH of Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2744-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3029473,
+      "conceptName": "pH of Arterial blood adjusted to patient's actual temperature",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "33254-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3006598,
+      "conceptName": "pH of Arterial cord blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "28646-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3030109,
+      "conceptName": "pH of Arterial cord blood adjusted to patient's actual temperature",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "49698-4",
+      "standardConcept": "S"
+    }
+  ]
+}

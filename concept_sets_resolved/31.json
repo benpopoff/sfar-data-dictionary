@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 31,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42537216,
+      "conceptName": "Catheter related bloodstream infection",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "736442006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43021261,
+      "conceptName": "Infection associated with totally implantable venous access device",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "473052005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4326841,
+      "conceptName": "Infection of central venous catheter exit site",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "430957008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 764921,
+      "conceptName": "Infection of hemodialysis catheter",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "841000124105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 764924,
+      "conceptName": "Infection of hemodialysis temporary catheter",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "851000124107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4149606,
+      "conceptName": "Infection of intravenous catheter",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "310643001",
+      "standardConcept": "S"
+    }
+  ]
+}

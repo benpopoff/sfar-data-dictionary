@@ -1,0 +1,131 @@
+{
+  "conceptSetId": 122,
+  "resolvedConcepts": [
+    {
+      "conceptId": 2911846,
+      "conceptName": "insulin aspart 100 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128601",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35159339,
+      "conceptName": "insulin aspart 100 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4816322",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2911838,
+      "conceptName": "insulin aspart 100 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128593",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2911857,
+      "conceptName": "insulin aspart 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128612",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2919815,
+      "conceptName": "insulin aspart 30 IU/ML / insulin aspart protamine, human 70 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5136635",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2919811,
+      "conceptName": "insulin aspart 30 IU/ML / insulin aspart protamine, human 70 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5136631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2919819,
+      "conceptName": "insulin aspart 30 IU/ML / insulin aspart protamine, human 70 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5136639",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2911826,
+      "conceptName": "insulin aspart 30 IU/ML / insulin degludec 70 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128581",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2911830,
+      "conceptName": "insulin aspart 30 IU/ML / insulin degludec 70 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5128585",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35145318,
+      "conceptName": "insulin aspart 300 UNT Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4802408",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2919802,
+      "conceptName": "insulin aspart 50 IU/ML / insulin aspart protamine, human 50 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5136622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2919806,
+      "conceptName": "insulin aspart 50 IU/ML / insulin aspart protamine, human 50 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5136626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2919793,
+      "conceptName": "insulin aspart 70 IU/ML / insulin aspart protamine, human 30 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5136613",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2919797,
+      "conceptName": "insulin aspart 70 IU/ML / insulin aspart protamine, human 30 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5136617",
+      "standardConcept": "S"
+    }
+  ]
+}

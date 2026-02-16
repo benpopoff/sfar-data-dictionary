@@ -1,0 +1,833 @@
+{
+  "conceptSetId": 129,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41305065,
+      "conceptName": "Chlorthalidone 15 MG / Clonidine 0.075 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503027",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40748122,
+      "conceptName": "Clonidine 0.00075 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4709585",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21160334,
+      "conceptName": "Clonidine 0.001 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062073,
+      "conceptName": "Clonidine 0.001 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358958",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170128,
+      "conceptName": "Clonidine 0.00125 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358827",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21130583,
+      "conceptName": "Clonidine 0.00125 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358829",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21111153,
+      "conceptName": "Clonidine 0.002 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062067,
+      "conceptName": "Clonidine 0.002 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358850",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120822,
+      "conceptName": "Clonidine 0.0025 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358853",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101312,
+      "conceptName": "Clonidine 0.0025 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21111152,
+      "conceptName": "Clonidine 0.003 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358821",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120820,
+      "conceptName": "Clonidine 0.003 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21032545,
+      "conceptName": "Clonidine 0.005 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358811",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052222,
+      "conceptName": "Clonidine 0.005 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358813",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062064,
+      "conceptName": "Clonidine 0.0075 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358798",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120819,
+      "conceptName": "Clonidine 0.0075 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358800",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170131,
+      "conceptName": "Clonidine 0.009 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358914",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081656,
+      "conceptName": "Clonidine 0.009 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358916",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120827,
+      "conceptName": "Clonidine 0.01 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358909",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062071,
+      "conceptName": "Clonidine 0.01 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40747711,
+      "conceptName": "Clonidine 0.0125 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4709593",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36406715,
+      "conceptName": "Clonidine 0.015 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3098757",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042469,
+      "conceptName": "Clonidine 0.015 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358924",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21022792,
+      "conceptName": "Clonidine 0.015 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21022793,
+      "conceptName": "Clonidine 0.015 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358922",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101316,
+      "conceptName": "Clonidine 0.018 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358961",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170136,
+      "conceptName": "Clonidine 0.018 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358964",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21022787,
+      "conceptName": "Clonidine 0.02 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062063,
+      "conceptName": "Clonidine 0.02 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358794",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21130584,
+      "conceptName": "Clonidine 0.025 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358832",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081649,
+      "conceptName": "Clonidine 0.025 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358836",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091419,
+      "conceptName": "Clonidine 0.05 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358973",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081658,
+      "conceptName": "Clonidine 0.05 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358975",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242919,
+      "conceptName": "Clonidine 0.063 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440881",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273802,
+      "conceptName": "Clonidine 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471764",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993011,
+      "conceptName": "Clonidine 0.125 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2190973",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885896,
+      "conceptName": "Clonidine 0.15 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991878",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052231,
+      "conceptName": "Clonidine 0.15 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358948",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101315,
+      "conceptName": "Clonidine 0.15 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358950",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482648,
+      "conceptName": "Clonidine 0.15 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419371",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118047,
+      "conceptName": "Clonidine 0.25 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43656358,
+      "conceptName": "Clonidine 0.625 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP929874",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961768,
+      "conceptName": "Clonidine 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159730",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062065,
+      "conceptName": "Clonidine 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358843",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961763,
+      "conceptName": "Clonidine 1.25 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159725",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43674485,
+      "conceptName": "Clonidine 1.25 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP929846",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404375,
+      "conceptName": "Clonidine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096417",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120821,
+      "conceptName": "Clonidine 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP358839",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304894,
+      "conceptName": "Clonidine 2.5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43728135,
+      "conceptName": "Clonidine 2.5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP929882",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993012,
+      "conceptName": "Clonidine 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2190974",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707378,
+      "conceptName": "bendroflumethiazide 5 MG / clonidine hydrochloride 0.1 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233769",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707380,
+      "conceptName": "chlorthalidone 15 MG / clonidine hydrochloride 0.075 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233782",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168694,
+      "conceptName": "chlorthalidone 15 MG / clonidine hydrochloride 0.1 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "884192",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707381,
+      "conceptName": "chlorthalidone 15 MG / clonidine hydrochloride 0.15 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233783",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168699,
+      "conceptName": "chlorthalidone 15 MG / clonidine hydrochloride 0.2 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "884198",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168704,
+      "conceptName": "chlorthalidone 15 MG / clonidine hydrochloride 0.3 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "884203",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707382,
+      "conceptName": "chlorthalidone 50 MG / clonidine hydrochloride 0.075 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902909,
+      "conceptName": "clonidine 0.00417 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360022",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36064523,
+      "conceptName": "clonidine 0.008 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4990754",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903007,
+      "conceptName": "clonidine 0.00833 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360120",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902931,
+      "conceptName": "clonidine 0.0125 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360044",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36947688,
+      "conceptName": "clonidine 0.04 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5193978",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168658,
+      "conceptName": "clonidine 0.09 MG/ML Extended Release Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "885879",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 779473,
+      "conceptName": "clonidine 0.17 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2599284",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865099,
+      "conceptName": "clonidine 0.25 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5022180",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36958902,
+      "conceptName": "clonidine 0.3 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5193972",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865110,
+      "conceptName": "clonidine 1 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5022191",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865108,
+      "conceptName": "clonidine 1.5 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5022189",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865106,
+      "conceptName": "clonidine 2 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5022187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865103,
+      "conceptName": "clonidine 2.5 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5022184",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865104,
+      "conceptName": "clonidine 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5022185",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865101,
+      "conceptName": "clonidine 5 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5022182",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169599,
+      "conceptName": "clonidine hydrochloride 0.025 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892791",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707383,
+      "conceptName": "clonidine hydrochloride 0.075 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233785",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707384,
+      "conceptName": "clonidine hydrochloride 0.075 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233786",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40227885,
+      "conceptName": "clonidine hydrochloride 0.1 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1013935",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168654,
+      "conceptName": "clonidine hydrochloride 0.1 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "884173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1735017,
+      "conceptName": "clonidine hydrochloride 0.1 MG/ML Extended Release Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2690728",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606033,
+      "conceptName": "clonidine hydrochloride 0.1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732374",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707386,
+      "conceptName": "clonidine hydrochloride 0.15 MG / cyclothiazide 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233788",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707385,
+      "conceptName": "clonidine hydrochloride 0.15 MG / hydrochlorothiazide 5 MG / triamterene 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233787",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707387,
+      "conceptName": "clonidine hydrochloride 0.15 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707388,
+      "conceptName": "clonidine hydrochloride 0.15 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233790",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707371,
+      "conceptName": "clonidine hydrochloride 0.15 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233709",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169601,
+      "conceptName": "clonidine hydrochloride 0.15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892793",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168663,
+      "conceptName": "clonidine hydrochloride 0.2 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "885881",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168664,
+      "conceptName": "clonidine hydrochloride 0.2 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "884185",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169603,
+      "conceptName": "clonidine hydrochloride 0.25 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892795",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169604,
+      "conceptName": "clonidine hydrochloride 0.3 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40168669,
+      "conceptName": "clonidine hydrochloride 0.3 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "884189",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606035,
+      "conceptName": "clonidine hydrochloride 0.5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732378",
+      "standardConcept": "S"
+    }
+  ]
+}

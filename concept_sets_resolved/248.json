@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 248,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37156023,
+      "conceptName": "Extended spectrum beta-lactamase producing Pantoea agglomerans",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1102301000112105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4018788,
+      "conceptName": "Pantoea agglomerans",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "115015008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4216113,
+      "conceptName": "Pantoea agglomerans pv. betae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "415006003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4189796,
+      "conceptName": "Pantoea agglomerans pv. gypsophilae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "415007007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4187182,
+      "conceptName": "Pantoea agglomerans pv. milletiae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "415008002",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "conceptSetId": 85,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36881997,
+      "conceptName": "Amoxicillin 300 MG / Floxacillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001667",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42483390,
+      "conceptName": "Ampicillin 25 MG/ML / Floxacillin 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417294",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403577,
+      "conceptName": "Ampicillin 250 MG / Floxacillin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095619",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21024435,
+      "conceptName": "Ampicillin 250 MG / Floxacillin 250 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP387402",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43638729,
+      "conceptName": "Floxacillin 0.001 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP938555",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148611,
+      "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.781 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346573",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42711252,
+      "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2735475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715189,
+      "conceptName": "Floxacillin 0.262 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724629",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42711253,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.78 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2739343",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272928,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.782 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712590,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.783 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2739060",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728608,
+      "conceptName": "Floxacillin 0.263 MG/MG / Piperacillin 0.784 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731110",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719265,
+      "conceptName": "Floxacillin 0.912 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2740590",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43692681,
+      "conceptName": "Floxacillin 0.913 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP938547",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43782622,
+      "conceptName": "Floxacillin 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP938559",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898487,
+      "conceptName": "Floxacillin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096449",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21025581,
+      "conceptName": "Floxacillin 1000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP408642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929586,
+      "conceptName": "Floxacillin 103 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127548",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242049,
+      "conceptName": "Floxacillin 15 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440011",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272930,
+      "conceptName": "Floxacillin 17.8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470892",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023071,
+      "conceptName": "Floxacillin 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221033",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272931,
+      "conceptName": "Floxacillin 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470893",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032716,
+      "conceptName": "Floxacillin 25 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027347",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43255751,
+      "conceptName": "Floxacillin 25 MG/ML Powder for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532084",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117138,
+      "conceptName": "Floxacillin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21113958,
+      "conceptName": "Floxacillin 250 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP408754",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117141,
+      "conceptName": "Floxacillin 28.6 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242048,
+      "conceptName": "Floxacillin 4000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440010",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43288298,
+      "conceptName": "Floxacillin 50 MG/ML Powder for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP532112",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272933,
+      "conceptName": "Floxacillin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470895",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21163135,
+      "conceptName": "Floxacillin 500 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP408624",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867367,
+      "conceptName": "Floxacillin 59.2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065329",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713445,
+      "conceptName": "amoxicillin 25 MG/ML / floxacillin 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "249855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713444,
+      "conceptName": "amoxicillin 250 MG / floxacillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "249642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19128706,
+      "conceptName": "amoxicillin 5 MG/ML / floxacillin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "755519",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006420,
+      "conceptName": "ampicillin 167 MG/ML / floxacillin 167 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19129099,
+      "conceptName": "ampicillin 25 MG/ML / floxacillin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "756252",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19062826,
+      "conceptName": "ampicillin 250 MG / floxacillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250463",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104322,
+      "conceptName": "floxacillin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413715",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235831,
+      "conceptName": "floxacillin 12 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216539",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006381,
+      "conceptName": "floxacillin 167 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105099",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104337,
+      "conceptName": "floxacillin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413754",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2909801,
+      "conceptName": "floxacillin 2000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5129784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235834,
+      "conceptName": "floxacillin 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216542",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19055001,
+      "conceptName": "floxacillin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "755758",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19054963,
+      "conceptName": "floxacillin 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "247684",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19054940,
+      "conceptName": "floxacillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199468",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19021108,
+      "conceptName": "floxacillin 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199067",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006382,
+      "conceptName": "floxacillin 250 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104321,
+      "conceptName": "floxacillin 28.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413714",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235833,
+      "conceptName": "floxacillin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216541",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006383,
+      "conceptName": "floxacillin 400 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104511,
+      "conceptName": "floxacillin 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415461",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235835,
+      "conceptName": "floxacillin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216543",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2913032,
+      "conceptName": "floxacillin 50 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5129820",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19055002,
+      "conceptName": "floxacillin 50 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "755759",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19054962,
+      "conceptName": "floxacillin 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "247647",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19054961,
+      "conceptName": "floxacillin 500 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199469",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19021109,
+      "conceptName": "floxacillin 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199068",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235836,
+      "conceptName": "floxacillin 59.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216544",
+      "standardConcept": "S"
+    }
+  ]
+}

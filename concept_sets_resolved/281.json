@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 281,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3021690,
+      "conceptName": "Hospital discharge date",
+      "vocabularyId": "LOINC",
+      "domainId": "Observation",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8649-6",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,1598 @@
+{
+  "conceptSetId": 67,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42720554,
+      "conceptName": "Ampicillin 0.000658 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2733813",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43637531,
+      "conceptName": "Ampicillin 0.00066 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP917337",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42725887,
+      "conceptName": "Ampicillin 0.000707 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2730292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43727406,
+      "conceptName": "Ampicillin 0.000709 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP917355",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712527,
+      "conceptName": "Ampicillin 0.00071 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2729562",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892634,
+      "conceptName": "Ampicillin 0.000711 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991696",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41244086,
+      "conceptName": "Ampicillin 0.133 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2442048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728905,
+      "conceptName": "Ampicillin 0.658 MG/MG / Sulbactam 0.34 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727302",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42727234,
+      "conceptName": "Ampicillin 0.658 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2722011",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43673752,
+      "conceptName": "Ampicillin 0.66 MG/MG / Sulbactam 0.34 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP917381",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43781390,
+      "conceptName": "Ampicillin 0.66 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP917333",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42718248,
+      "conceptName": "Ampicillin 0.661 MG/MG / Sulbactam 0.339 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731085",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42725888,
+      "conceptName": "Ampicillin 0.661 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2728757",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720925,
+      "conceptName": "Ampicillin 0.707 MG/MG / Sulbactam 0.365 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731896",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43583415,
+      "conceptName": "Ampicillin 0.709 MG/MG / Sulbactam 0.365 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP917366",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42722253,
+      "conceptName": "Ampicillin 0.71 MG/MG / Sulbactam 0.367 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2738559",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43691563,
+      "conceptName": "Ampicillin 0.711 MG/MG / Sulbactam 0.366 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP917369",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891650,
+      "conceptName": "Ampicillin 0.999 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992840",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43817376,
+      "conceptName": "Ampicillin 1 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP917325",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36879995,
+      "conceptName": "Ampicillin 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993535",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900514,
+      "conceptName": "Ampicillin 1.16 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025161,
+      "conceptName": "Ampicillin 10.6 MG/ML / Sulbactam 5.47 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223123",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838338,
+      "conceptName": "Ampicillin 100 MG/ML / Cloxacillin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036300",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40931583,
+      "conceptName": "Ampicillin 100 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2129545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35134610,
+      "conceptName": "Ampicillin 100 MG/ML Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4791812",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059441,
+      "conceptName": "Ampicillin 100 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1054072",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35142877,
+      "conceptName": "Ampicillin 100 MG/ML Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4799984",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40994130,
+      "conceptName": "Ampicillin 1000 MG / Sulbactam 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2192092",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885007,
+      "conceptName": "Ampicillin 1000 MG / Sulbactam 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995390",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44124120,
+      "conceptName": "Ampicillin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118751",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059438,
+      "conceptName": "Ampicillin 1000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1054069",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119159,
+      "conceptName": "Ampicillin 1000 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2317121",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880961,
+      "conceptName": "Ampicillin 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002758",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150682,
+      "conceptName": "Ampicillin 115 MG/ML / Cloxacillin 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348644",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838343,
+      "conceptName": "Ampicillin 115 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036305",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40994143,
+      "conceptName": "Ampicillin 116 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2192105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44172775,
+      "conceptName": "Ampicillin 116 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3049498",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892633,
+      "conceptName": "Ampicillin 1160 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994702",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181721,
+      "conceptName": "Ampicillin 117 MG/ML / Cloxacillin 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379683",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44046421,
+      "conceptName": "Ampicillin 125 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1041052",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44033418,
+      "conceptName": "Ampicillin 125 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1028049",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36267517,
+      "conceptName": "Ampicillin 125 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3118392",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40994137,
+      "conceptName": "Ampicillin 125 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2192099",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119163,
+      "conceptName": "Ampicillin 133 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2317125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150680,
+      "conceptName": "Ampicillin 139 MG/ML / Dicloxacillin 87 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42716868,
+      "conceptName": "Ampicillin 141 MG/ML / Sulbactam 72.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2737233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900499,
+      "conceptName": "Ampicillin 141 MG/ML / Sulbactam 72.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098461",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41087904,
+      "conceptName": "Ampicillin 173 MG / Dicloxacillin 108 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2285866",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41306067,
+      "conceptName": "Ampicillin 2.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2504029",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900501,
+      "conceptName": "Ampicillin 2000 MG / Sulbactam 1.09 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098463",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025166,
+      "conceptName": "Ampicillin 2000 MG / Sulbactam 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223128",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41087900,
+      "conceptName": "Ampicillin 2000 MG / Sulbactam 1000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2285862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44046423,
+      "conceptName": "Ampicillin 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1041054",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44046422,
+      "conceptName": "Ampicillin 2000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1041053",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883822,
+      "conceptName": "Ampicillin 2000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999804",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838330,
+      "conceptName": "Ampicillin 212 MG/ML / Sulbactam 109 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056393,
+      "conceptName": "Ampicillin 212 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254355",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42483390,
+      "conceptName": "Ampicillin 25 MG/ML / Floxacillin 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417294",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059442,
+      "conceptName": "Ampicillin 25 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1054073",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403577,
+      "conceptName": "Ampicillin 250 MG / Floxacillin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095619",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21024435,
+      "conceptName": "Ampicillin 250 MG / Floxacillin 250 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP387402",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110896,
+      "conceptName": "Ampicillin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105527",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059439,
+      "conceptName": "Ampicillin 250 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1054070",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900513,
+      "conceptName": "Ampicillin 250 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274983,
+      "conceptName": "Ampicillin 288 MG / Cloxacillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472945",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025125,
+      "conceptName": "Ampicillin 3000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223087",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150681,
+      "conceptName": "Ampicillin 346 MG / Dicloxacillin 217 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348643",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150679,
+      "conceptName": "Ampicillin 3500 MG / Oxacillin 2000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348641",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588052,
+      "conceptName": "Ampicillin 389 MG / Sulbactam 375 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3134958",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41306069,
+      "conceptName": "Ampicillin 4.17 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2504031",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056384,
+      "conceptName": "Ampicillin 45 MG/ML / Cloxacillin 10.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254346",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056379,
+      "conceptName": "Ampicillin 45 MG/ML / Oxacillin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254341",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44187712,
+      "conceptName": "Ampicillin 45 MG/ML / Oxacillin 20 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3064435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40931576,
+      "conceptName": "Ampicillin 50 MG/ML / Cloxacillin 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2129538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41087902,
+      "conceptName": "Ampicillin 50 MG/ML / Guaifenesin 2.78 MG/ML / Papaverine 1.43 MG/ML / Theophylline 3 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2285864",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41306055,
+      "conceptName": "Ampicillin 50 MG/ML / Sulbactam 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2504017",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43604825,
+      "conceptName": "Ampicillin 50 MG/ML / Sulbactam 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP669317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588475,
+      "conceptName": "Ampicillin 50 MG/ML / Sulbactam 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110897,
+      "conceptName": "Ampicillin 50 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105528",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838329,
+      "conceptName": "Ampicillin 500 MG / Sulbactam 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036291",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42966045,
+      "conceptName": "Ampicillin 500 MG / Sulbactam 250 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4692509",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884847,
+      "conceptName": "Ampicillin 500 MG / Sulbactam 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000439",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44098080,
+      "conceptName": "Ampicillin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092711",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059440,
+      "conceptName": "Ampicillin 500 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1054071",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894561,
+      "conceptName": "Ampicillin 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000805",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838339,
+      "conceptName": "Ampicillin 5000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036301",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274985,
+      "conceptName": "Ampicillin 5000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472947",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056390,
+      "conceptName": "Ampicillin 57.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254352",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40838341,
+      "conceptName": "Ampicillin 57.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2036303",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40931585,
+      "conceptName": "Ampicillin 57.7 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2129547",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41087911,
+      "conceptName": "Ampicillin 57.7 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2285873",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40869394,
+      "conceptName": "Ampicillin 577 MG / Guaifenesin 100 MG / Papaverine 40 MG / Theophylline 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2067356",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025168,
+      "conceptName": "Ampicillin 577 MG / Phenazopyridine 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223130",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900517,
+      "conceptName": "Ampicillin 58 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098479",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962869,
+      "conceptName": "Ampicillin 63.6 MG/ML / Oxacillin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160831",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40994133,
+      "conceptName": "Ampicillin 6360 MG / Oxacillin 4220 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2192095",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40994136,
+      "conceptName": "Ampicillin 70.7 MG/ML / Oxacillin 35.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2192098",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42724517,
+      "conceptName": "Ampicillin 70.7 MG/ML / Oxacillin 35.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724628",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40900502,
+      "conceptName": "Ampicillin 70.7 MG/ML / Sulbactam 36.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098464",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181716,
+      "conceptName": "Ampicillin 84.8 MG/ML / Oxacillin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379678",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105300,
+      "conceptName": "ambroxol 10 MG/ML / ampicillin 100 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "419771",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105299,
+      "conceptName": "ambroxol 5 MG/ML / ampicillin 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "419713",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717474,
+      "conceptName": "ampicillin 0.008 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "252264",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105035,
+      "conceptName": "ampicillin 0.008 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "417856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35830169,
+      "conceptName": "ampicillin 0.1 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5037951",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35830168,
+      "conceptName": "ampicillin 0.1 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5037952",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861923,
+      "conceptName": "ampicillin 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018477",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861922,
+      "conceptName": "ampicillin 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861920,
+      "conceptName": "ampicillin 100 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018474",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861921,
+      "conceptName": "ampicillin 100 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105294,
+      "conceptName": "ampicillin 100 MG/ML / bromhexine 1.6 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "419706",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105335,
+      "conceptName": "ampicillin 100 MG/ML / brovanexine 3 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420053",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19061823,
+      "conceptName": "ampicillin 100 MG/ML / cloxacillin 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "249601",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19058200,
+      "conceptName": "ampicillin 100 MG/ML / sulbactam 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "240984",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19129655,
+      "conceptName": "ampicillin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "789980",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19073216,
+      "conceptName": "ampicillin 100 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308209",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107853,
+      "conceptName": "ampicillin 1000 MG / bromhexine 8 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433590",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107860,
+      "conceptName": "ampicillin 1000 MG / brovanexine 30 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433627",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275616,
+      "conceptName": "ampicillin 1000 MG / sulbactam 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1659592",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605342,
+      "conceptName": "ampicillin 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1721475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717433,
+      "conceptName": "ampicillin 1000 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246285",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19073214,
+      "conceptName": "ampicillin 125 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308207",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717410,
+      "conceptName": "ampicillin 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861911,
+      "conceptName": "ampicillin 125 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018465",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717407,
+      "conceptName": "ampicillin 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "226633",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861912,
+      "conceptName": "ampicillin 125000 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018466",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861918,
+      "conceptName": "ampicillin 1500 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018472",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006420,
+      "conceptName": "ampicillin 167 MG/ML / floxacillin 167 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115147,
+      "conceptName": "ampicillin 167 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562195",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40178233,
+      "conceptName": "ampicillin 20 MG/ML / sulbactam 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "993109",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46275622,
+      "conceptName": "ampicillin 2000 MG / sulbactam 1000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1659598",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605343,
+      "conceptName": "ampicillin 2000 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1721476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42800399,
+      "conceptName": "ampicillin 225 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1299068",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717437,
+      "conceptName": "ampicillin 25 MG/ML / bromhexine 0.8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246344",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19128708,
+      "conceptName": "ampicillin 25 MG/ML / cloxacillin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "755521",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19061822,
+      "conceptName": "ampicillin 25 MG/ML / cloxacillin 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "249600",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19129099,
+      "conceptName": "ampicillin 25 MG/ML / floxacillin 25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "756252",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717481,
+      "conceptName": "ampicillin 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313799",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717435,
+      "conceptName": "ampicillin 250 MG / bromhexine 8 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246342",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060461,
+      "conceptName": "ampicillin 250 MG / carbocysteine 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246502",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006421,
+      "conceptName": "ampicillin 250 MG / cloxacillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105138",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717434,
+      "conceptName": "ampicillin 250 MG / dicloxacillin 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246338",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19062826,
+      "conceptName": "ampicillin 250 MG / floxacillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250463",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605340,
+      "conceptName": "ampicillin 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1721473",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079893,
+      "conceptName": "ampicillin 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313800",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861908,
+      "conceptName": "ampicillin 250 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018462",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717411,
+      "conceptName": "ampicillin 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246283",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717503,
+      "conceptName": "ampicillin 250 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313819",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37498794,
+      "conceptName": "ampicillin 250 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2281872",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861914,
+      "conceptName": "ampicillin 25000 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018468",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717408,
+      "conceptName": "ampicillin 30 MG/ML / sulbactam 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "239187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115148,
+      "conceptName": "ampicillin 333 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562196",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1151426,
+      "conceptName": "ampicillin 3500 MG / probenecid 1000 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "242784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19073218,
+      "conceptName": "ampicillin 3500 MG / probenecid 1000 MG Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308211",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079894,
+      "conceptName": "ampicillin 389 MG / probenecid 111 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287509,
+      "conceptName": "ampicillin 400 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1666111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861916,
+      "conceptName": "ampicillin 4000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018470",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42800401,
+      "conceptName": "ampicillin 45 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1299070",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104338,
+      "conceptName": "ampicillin 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "413755",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35861906,
+      "conceptName": "ampicillin 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018460",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717438,
+      "conceptName": "ampicillin 50 MG/ML / bromhexine 0.8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246345",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105298,
+      "conceptName": "ampicillin 50 MG/ML / bromhexine 1.6 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "419711",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105336,
+      "conceptName": "ampicillin 50 MG/ML / brovanexine 3 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420054",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060462,
+      "conceptName": "ampicillin 50 MG/ML / carbocysteine 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246503",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19128709,
+      "conceptName": "ampicillin 50 MG/ML / cloxacillin 50 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "755522",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19073217,
+      "conceptName": "ampicillin 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308210",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107852,
+      "conceptName": "ampicillin 500 MG / bromhexine 8 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433589",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717436,
+      "conceptName": "ampicillin 500 MG / bromhexine 8 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246343",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107861,
+      "conceptName": "ampicillin 500 MG / brovanexine 30 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433628",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707540,
+      "conceptName": "ampicillin 500 MG / diclofenac sodium 25 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1234529",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707542,
+      "conceptName": "ampicillin 500 MG / diclofenac sodium 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1234531",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107830,
+      "conceptName": "ampicillin 500 MG / dicloxacillin 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433526",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605341,
+      "conceptName": "ampicillin 500 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1721474",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19073219,
+      "conceptName": "ampicillin 500 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308212",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717432,
+      "conceptName": "ampicillin 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246284",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902556,
+      "conceptName": "ampicillin 6.25 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359669",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1717475,
+      "conceptName": "ampicillin 8 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "252493",
+      "standardConcept": "S"
+    }
+  ]
+}

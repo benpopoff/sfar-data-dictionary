@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 212,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42528959,
+      "conceptName": "Sodium [Mass/volume] in Red Blood Cells",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "82812-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3000285,
+      "conceptName": "Sodium [Moles/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2947-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3038702,
+      "conceptName": "Sodium [Moles/volume] in Capillary blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "39792-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3031579,
+      "conceptName": "Sodium [Moles/volume] in Mixed venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "41657-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3019550,
+      "conceptName": "Sodium [Moles/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2951-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3041473,
+      "conceptName": "Sodium [Moles/volume] in Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "39791-9",
+      "standardConcept": "S"
+    }
+  ]
+}

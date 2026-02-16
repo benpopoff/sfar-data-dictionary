@@ -174,6 +174,13 @@
     });
   }
 
+  function updateViewJsonLink() {
+    var link = document.getElementById('cs-view-json');
+    if (!selectedConceptSet || !link) return;
+    var folder = (csConceptMode === 'expression') ? 'concept_sets' : 'concept_sets_resolved';
+    link.href = 'https://github.com/' + GITHUB_REPO + '/blob/main/' + folder + '/' + selectedConceptSet.id + '.json';
+  }
+
   function switchConceptMode(mode) {
     csConceptMode = mode;
     document.querySelectorAll('#cs-concept-toggle-bar .toggle-btn').forEach(function(btn) {
@@ -182,6 +189,7 @@
     document.getElementById('cs-expression-view').style.display = (mode === 'expression') ? '' : 'none';
     document.getElementById('cs-resolved-view').style.display = (mode === 'resolved') ? '' : 'none';
     buildColVisDropdown();
+    updateViewJsonLink();
     if (mode === 'expression') renderExpressionTable();
     else renderResolvedTable();
   }
@@ -545,6 +553,7 @@
 
     switchCSDetailTab('concepts');
     switchConceptMode('resolved');
+    updateViewJsonLink();
 
     renderCommentsTab(cs);
     renderStatisticsTab(cs);

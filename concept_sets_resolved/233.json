@@ -1,0 +1,68 @@
+{
+  "conceptSetId": 233,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37017689,
+      "conceptName": "Carbapenem resistant Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "714007005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42537866,
+      "conceptName": "Carbapenemase-producing Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "737529000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4030716,
+      "conceptName": "Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "14385002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36717518,
+      "conceptName": "Enterobacter cloacae subsp. cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "721950003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4210735,
+      "conceptName": "Enterobacter cloacae subspecies dissolvens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "56813009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36716067,
+      "conceptName": "Extended spectrum beta-lactamase producing Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "721910001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017942,
+      "conceptName": "Multiple drug-resistant Enterobacter cloacae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "714317005",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 241,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4034131,
+      "conceptName": "Granulicatella adiacens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "113713009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4212342,
+      "conceptName": "Nutritionally Variant Streptococcus, insufficient growth to speciate",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "414886005",
+      "standardConcept": "S"
+    }
+  ]
+}

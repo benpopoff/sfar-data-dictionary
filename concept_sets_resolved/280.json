@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 280,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3023170,
+      "conceptName": "Hospital admission date",
+      "vocabularyId": "LOINC",
+      "domainId": "Observation",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "8656-1",
+      "standardConcept": "S"
+    }
+  ]
+}

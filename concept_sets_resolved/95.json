@@ -1,0 +1,1418 @@
+{
+  "conceptSetId": 95,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41243593,
+      "conceptName": "Bismuth 140 MG / Metronidazole 125 MG / Tetracycline 125 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441555",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962401,
+      "conceptName": "Bismuth 140 MG / Metronidazole 125 MG / Tetracycline 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43655376,
+      "conceptName": "Citric Acid 140 MG / Metronidazole 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP913294",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118027,
+      "conceptName": "Clotrimazole 800 MG / Metronidazole 2400 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242891,
+      "conceptName": "Clotrimazole 800 MG / Metronidazole 5000 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440853",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271827,
+      "conceptName": "Metronidazole 0.00015 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991048,
+      "conceptName": "Metronidazole 0.00015 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189010",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40959819,
+      "conceptName": "Metronidazole 0.00025 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2157781",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147575,
+      "conceptName": "Metronidazole 0.00025 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2345537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991045,
+      "conceptName": "Metronidazole 0.001 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43516360,
+      "conceptName": "Metronidazole 0.005 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2803475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587223,
+      "conceptName": "Metronidazole 0.0075 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138886",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589729,
+      "conceptName": "Metronidazole 0.0075 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43157601,
+      "conceptName": "Metronidazole 0.0075 MG/MG Topical Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452738",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032473,
+      "conceptName": "Metronidazole 0.0075 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123135,
+      "conceptName": "Metronidazole 0.0075 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117766",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045469,
+      "conceptName": "Metronidazole 0.0075 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058445,
+      "conceptName": "Metronidazole 0.0075 MG/ML Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053076",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35411349,
+      "conceptName": "Metronidazole 0.008 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144934",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101040,
+      "conceptName": "Metronidazole 0.008 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353883",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753287,
+      "conceptName": "Metronidazole 0.008 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704840",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405922,
+      "conceptName": "Metronidazole 0.01 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097964",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21032261,
+      "conceptName": "Metronidazole 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353750",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097106,
+      "conceptName": "Metronidazole 0.01 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091737",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058444,
+      "conceptName": "Metronidazole 0.01 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053075",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407490,
+      "conceptName": "Metronidazole 0.02 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099532",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21150099,
+      "conceptName": "Metronidazole 0.02 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353717",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408256,
+      "conceptName": "Metronidazole 0.05 MG/MG Medicated Pad",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141841",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41210026,
+      "conceptName": "Metronidazole 0.05 MG/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2407988",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40897460,
+      "conceptName": "Metronidazole 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2095422",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097105,
+      "conceptName": "Metronidazole 0.1 MG/MG / Nystatin 22200 UNT/MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408255,
+      "conceptName": "Metronidazole 0.1 MG/MG Oral Paste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141840",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35411347,
+      "conceptName": "Metronidazole 0.1 MG/MG Toothpaste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144932",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40752803,
+      "conceptName": "Metronidazole 0.1 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704896",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109970,
+      "conceptName": "Metronidazole 0.1 MG/ML Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104601",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41084822,
+      "conceptName": "Metronidazole 0.25 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2282784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835169,
+      "conceptName": "Metronidazole 0.4 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033131",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41302967,
+      "conceptName": "Metronidazole 0.833 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2500929",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41241016,
+      "conceptName": "Metronidazole 1 MG/MG Unknown Combination Pack Medical Aids",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438978",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21032265,
+      "conceptName": "Metronidazole 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353820",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21110876,
+      "conceptName": "Metronidazole 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353822",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43709209,
+      "conceptName": "Metronidazole 100 MG Vaginal Ring",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP913261",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882848,
+      "conceptName": "Metronidazole 100 MG Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996359",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43190448,
+      "conceptName": "Metronidazole 100 MG/ML Oral Paste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43135474,
+      "conceptName": "Metronidazole 100 MG/ML Toothpaste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452749",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43583167,
+      "conceptName": "Metronidazole 1000 MG Vaginal Ring",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP913281",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40897457,
+      "conceptName": "Metronidazole 1000 MG Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2095419",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41178601,
+      "conceptName": "Metronidazole 1000 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2376563",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753313,
+      "conceptName": "Metronidazole 100000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43135481,
+      "conceptName": "Metronidazole 125 MG / Spiramycin 750000 UNT Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452829",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081379,
+      "conceptName": "Metronidazole 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353743",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21120532,
+      "conceptName": "Metronidazole 20 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353745",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753305,
+      "conceptName": "Metronidazole 200 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704822",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43212316,
+      "conceptName": "Metronidazole 250 MG / Spiramycin 1500000 UNT Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43212302,
+      "conceptName": "Metronidazole 250 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452720",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35134248,
+      "conceptName": "Metronidazole 250 MG Vaginal Ring",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4791450",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147578,
+      "conceptName": "Metronidazole 3600 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2345540",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43168495,
+      "conceptName": "Metronidazole 4.5 MG Medicated Pad",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452689",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481448,
+      "conceptName": "Metronidazole 40 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419867",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620289,
+      "conceptName": "Metronidazole 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800242",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36789673,
+      "conceptName": "Metronidazole 5 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4777919",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881931,
+      "conceptName": "Metronidazole 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005186",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43283607,
+      "conceptName": "Metronidazole 5 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP538821",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43135471,
+      "conceptName": "Metronidazole 50 MG/ML Medicated Pad",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452714",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43781191,
+      "conceptName": "Metronidazole 50 MG/ML Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP913275",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43201515,
+      "conceptName": "Metronidazole 500 MG / Neomycin 65000 UNT / Nystatin 100000 UNT Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452773",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058443,
+      "conceptName": "Metronidazole 500 MG / Nystatin 100000 UNT Vaginal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053074",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43190445,
+      "conceptName": "Metronidazole 500 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452704",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 782671,
+      "conceptName": "Metronidazole 500 MG Vaginal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4830502",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881932,
+      "conceptName": "Metronidazole 7.5 MG/ML Topical Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40753311,
+      "conceptName": "Metronidazole 7.5 MG/ML Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4704816",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085021,
+      "conceptName": "avobenzone 0.02 MG/ML / Metronidazole 0.01 MG/ML / Octinoxate 0.075 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079652",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 905365,
+      "conceptName": "bismuth biskalcitrate 140 MG / metronidazole 125 MG / tetracycline 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "687231",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43179564,
+      "conceptName": "bismuth oxide 40 MG / Metronidazole 125 MG / Tetracycline 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP452782",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42800144,
+      "conceptName": "bismuth subcitrate 140 MG / metronidazole 125 MG / tetracycline hydrochloride 125 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1294619",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101043,
+      "conceptName": "bismuth subnitrate 0.02 MG/MG / Metronidazole 0.1 MG/MG / Oxytetracycline 0.06 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP353960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19010086,
+      "conceptName": "diloxanide 250 MG / metronidazole 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "108302",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 928045,
+      "conceptName": "iodoquinol 20 MG/ML / metronidazole 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246432",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105825,
+      "conceptName": "iodoquinol 20 MG/ML / metronidazole 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "422711",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 928044,
+      "conceptName": "iodoquinol 200 MG / metronidazole 400 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246375",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060467,
+      "conceptName": "iodoquinol 325 MG / metronidazole 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246508",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060466,
+      "conceptName": "iodoquinol 42 MG/ML / metronidazole 40.2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246507",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40224238,
+      "conceptName": "malachite green 0.0001 MG/ML / metronidazole 0.005 MG/ML / microcrystalline cellulose 0.00763 MG/ML / trichlorfon 0.00025 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1000584",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707344,
+      "conceptName": "metronidazole 0.0075 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311679",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19011786,
+      "conceptName": "metronidazole 0.0075 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "142046",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707281,
+      "conceptName": "metronidazole 0.008 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "226584",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36062259,
+      "conceptName": "metronidazole 0.0085 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4988265",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707472,
+      "conceptName": "metronidazole 0.01 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "577237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221270,
+      "conceptName": "metronidazole 0.013 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1608253",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123939,
+      "conceptName": "metronidazole 0.075 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "629887",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862326,
+      "conceptName": "metronidazole 0.2 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018907",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862325,
+      "conceptName": "metronidazole 0.2 MG Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018906",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862333,
+      "conceptName": "metronidazole 0.2 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018914",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19002934,
+      "conceptName": "metronidazole 0.25 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "103867",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104566,
+      "conceptName": "metronidazole 0.25 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415600",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862323,
+      "conceptName": "metronidazole 1 MG Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018904",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078922,
+      "conceptName": "metronidazole 10 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311680",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862270,
+      "conceptName": "metronidazole 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018851",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103298,
+      "conceptName": "metronidazole 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "409834",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107923,
+      "conceptName": "metronidazole 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433816",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 746808,
+      "conceptName": "metronidazole 100 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2667642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060675,
+      "conceptName": "metronidazole 100 MG/ML Vaginal Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "247055",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107922,
+      "conceptName": "metronidazole 1000 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433815",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19062435,
+      "conceptName": "metronidazole 1000 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250261",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36931157,
+      "conceptName": "metronidazole 100000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5199043",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2053003,
+      "conceptName": "metronidazole 125 MG / spiramycin 234 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4953533",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19064998,
+      "conceptName": "metronidazole 125 MG / spiramycin 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "252305",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862285,
+      "conceptName": "metronidazole 150 MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018866",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862331,
+      "conceptName": "metronidazole 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018912",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862330,
+      "conceptName": "metronidazole 2 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862319,
+      "conceptName": "metronidazole 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018900",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707319,
+      "conceptName": "metronidazole 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "249577",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707170,
+      "conceptName": "metronidazole 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199326",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862269,
+      "conceptName": "metronidazole 200 MG Vaginal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018850",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862301,
+      "conceptName": "metronidazole 25 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018882",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 965842,
+      "conceptName": "metronidazole 25 MG/ML / scopolamine 1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246377",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862274,
+      "conceptName": "metronidazole 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707439,
+      "conceptName": "metronidazole 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "422429",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103297,
+      "conceptName": "metronidazole 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "409833",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19080187,
+      "conceptName": "metronidazole 250 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "314106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862267,
+      "conceptName": "metronidazole 250 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35830199,
+      "conceptName": "metronidazole 250 MG Vaginal Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5037921",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862268,
+      "conceptName": "metronidazole 250 MG Vaginal Insert",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018849",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862315,
+      "conceptName": "metronidazole 3 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018896",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862283,
+      "conceptName": "metronidazole 300 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018864",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862279,
+      "conceptName": "metronidazole 3000 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018860",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862297,
+      "conceptName": "metronidazole 37.5 MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018878",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19021080,
+      "conceptName": "metronidazole 375 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199055",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006760,
+      "conceptName": "metronidazole 40 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103299,
+      "conceptName": "metronidazole 400 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "409835",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707171,
+      "conceptName": "metronidazole 400 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199327",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862281,
+      "conceptName": "metronidazole 450 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862311,
+      "conceptName": "metronidazole 5 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018892",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862309,
+      "conceptName": "metronidazole 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018890",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1592856,
+      "conceptName": "metronidazole 5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1863332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862278,
+      "conceptName": "metronidazole 5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018859",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862277,
+      "conceptName": "metronidazole 5 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018858",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862293,
+      "conceptName": "metronidazole 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018874",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862273,
+      "conceptName": "metronidazole 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060329,
+      "conceptName": "metronidazole 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246303",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104682,
+      "conceptName": "metronidazole 50 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415992",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 922662,
+      "conceptName": "metronidazole 500 MG / nystatin 100000 UNT/ML Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245836",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 965781,
+      "conceptName": "metronidazole 500 MG / scopolamine 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246376",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707317,
+      "conceptName": "metronidazole 500 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "247673",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707346,
+      "conceptName": "metronidazole 500 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311681",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707272,
+      "conceptName": "metronidazole 500 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862265,
+      "conceptName": "metronidazole 500 MG Vaginal Insert",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018846",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862307,
+      "conceptName": "metronidazole 6 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018888",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707343,
+      "conceptName": "metronidazole 7.5 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311678",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19114231,
+      "conceptName": "metronidazole 7.5 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "543505",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707313,
+      "conceptName": "metronidazole 7.5 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "242736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862289,
+      "conceptName": "metronidazole 75 MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018870",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1707347,
+      "conceptName": "metronidazole 750 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311682",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862260,
+      "conceptName": "metronidazole 750 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018841",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862305,
+      "conceptName": "metronidazole 8 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018886",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862328,
+      "conceptName": "metronidazole 8 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018909",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862287,
+      "conceptName": "metronidazole 90 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018868",
+      "standardConcept": "S"
+    }
+  ]
+}

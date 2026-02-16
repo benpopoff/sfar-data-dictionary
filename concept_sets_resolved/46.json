@@ -1,0 +1,230 @@
+{
+  "conceptSetId": 46,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41148892,
+      "conceptName": "Enoxaparin 1 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867638,
+      "conceptName": "Enoxaparin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065600",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023342,
+      "conceptName": "Enoxaparin 10 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961166,
+      "conceptName": "Enoxaparin 10 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159128",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881946,
+      "conceptName": "Enoxaparin 100 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996850",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43803627,
+      "conceptName": "Enoxaparin 10000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP686457",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211417,
+      "conceptName": "Enoxaparin 10000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409379",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836551,
+      "conceptName": "Enoxaparin 13.3 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034513",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054605,
+      "conceptName": "Enoxaparin 133 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252567",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054606,
+      "conceptName": "Enoxaparin 15 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252568",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123442,
+      "conceptName": "Enoxaparin 150 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118073",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886730,
+      "conceptName": "Enoxaparin 150 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999881",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36259706,
+      "conceptName": "Enoxaparin 15000 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3110581",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36783760,
+      "conceptName": "Enoxaparin 15000 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4772144",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929839,
+      "conceptName": "Enoxaparin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898729,
+      "conceptName": "Enoxaparin 30 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096691",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148895,
+      "conceptName": "Enoxaparin 33.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346857",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023347,
+      "conceptName": "Enoxaparin 5 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221309",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211416,
+      "conceptName": "Enoxaparin 6 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409378",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836552,
+      "conceptName": "Enoxaparin 7.5 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034514",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35869699,
+      "conceptName": "enoxaparin 10000 IU/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5025944",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104488,
+      "conceptName": "enoxaparin 60 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415320",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40160948,
+      "conceptName": "enoxaparin sodium 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "854255",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902906,
+      "conceptName": "enoxaparin sodium 100 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360019",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902627,
+      "conceptName": "enoxaparin sodium 150 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359740",
+      "standardConcept": "S"
+    }
+  ]
+}

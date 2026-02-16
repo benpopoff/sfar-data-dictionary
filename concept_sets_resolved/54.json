@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 54,
+  "resolvedConcepts": [
+    {
+      "conceptId": 19021888,
+      "conceptName": "phenindione 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199500",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19004009,
+      "conceptName": "phenindione 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "104468",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19004010,
+      "conceptName": "phenindione 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "104469",
+      "standardConcept": "S"
+    }
+  ]
+}

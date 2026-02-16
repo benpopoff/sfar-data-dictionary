@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 60,
+  "resolvedConcepts": [
+    {
+      "conceptId": 19107417,
+      "conceptName": "tioclomarol 4 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "432451",
+      "standardConcept": "S"
+    }
+  ]
+}

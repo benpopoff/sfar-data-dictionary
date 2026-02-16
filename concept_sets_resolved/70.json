@@ -1,0 +1,113 @@
+{
+  "conceptSetId": 70,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43031253,
+      "conceptName": "Caspofungin 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4846317",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837466,
+      "conceptName": "Caspofungin 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2035428",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059003,
+      "conceptName": "Caspofungin 50 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053634",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36785495,
+      "conceptName": "Caspofungin 50 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4773776",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885964,
+      "conceptName": "Caspofungin 50 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006131",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43031255,
+      "conceptName": "Caspofungin 7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4846319",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837464,
+      "conceptName": "Caspofungin 70 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2035426",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123689,
+      "conceptName": "Caspofungin 70 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118320",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36785507,
+      "conceptName": "Caspofungin 70 MG Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4773787",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881170,
+      "conceptName": "Caspofungin 70 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002459",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1718059,
+      "conceptName": "caspofungin acetate 50 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "828755",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1718056,
+      "conceptName": "caspofungin acetate 70 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "828539",
+      "standardConcept": "S"
+    }
+  ]
+}

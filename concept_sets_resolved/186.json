@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 186,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3004905,
+      "conceptName": "Lipase [Enzymatic activity/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "3040-3",
+      "standardConcept": "S"
+    }
+  ]
+}

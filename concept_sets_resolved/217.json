@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 217,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3013539,
+      "conceptName": "Creatinine [Moles/volume] in 24 hour Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "25886-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3009508,
+      "conceptName": "Creatinine [Moles/volume] in Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "14683-7",
+      "standardConcept": "S"
+    }
+  ]
+}

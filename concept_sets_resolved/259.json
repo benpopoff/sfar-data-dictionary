@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 259,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4130581,
+      "conceptName": "Elastase-producing strain Staphylococcus epidermidis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "264402002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017617,
+      "conceptName": "Methicillin resistant Staphylococcus epidermidis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "713923001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4246180,
+      "conceptName": "Staphylococcus epidermidis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "60875001",
+      "standardConcept": "S"
+    }
+  ]
+}

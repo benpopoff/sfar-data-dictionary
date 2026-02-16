@@ -1,0 +1,122 @@
+{
+  "conceptSetId": 127,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40866833,
+      "conceptName": "Insulin, Glulisine, Human 0.1 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2064795",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179138,
+      "conceptName": "Insulin, Glulisine, Human 10 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882921,
+      "conceptName": "Insulin, Glulisine, Human 100 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001820",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43296681,
+      "conceptName": "Insulin, Glulisine, Human 100 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP572584",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35412958,
+      "conceptName": "Insulin, Glulisine, Human 100 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1146543",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42925857,
+      "conceptName": "Insulin, Glulisine, Human 3.49 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4652682",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42925855,
+      "conceptName": "Insulin, Glulisine, Human 3.49 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4652680",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35135949,
+      "conceptName": "Insulin, Glulisine, Human 300 UNT Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4793134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960372,
+      "conceptName": "Insulin, Glulisine, Human 33.3 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2158334",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41210614,
+      "conceptName": "Insulin, Glulisine, Human 33.3 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2408576",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891725,
+      "conceptName": "Insulin, Glulisine, Human 400 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988112",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19112791,
+      "conceptName": "insulin glulisine, human 100 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "485210",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902468,
+      "conceptName": "insulin glulisine, human 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359581",
+      "standardConcept": "S"
+    }
+  ]
+}

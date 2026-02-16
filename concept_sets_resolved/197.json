@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 197,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3001604,
+      "conceptName": "Monocytes [#/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26484-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3033575,
+      "conceptName": "Monocytes [#/volume] in Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "742-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3034107,
+      "conceptName": "Monocytes [#/volume] in Blood by Manual count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "743-5",
+      "standardConcept": "S"
+    }
+  ]
+}

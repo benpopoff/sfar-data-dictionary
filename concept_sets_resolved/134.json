@@ -1,0 +1,581 @@
+{
+  "conceptSetId": 134,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40747240,
+      "conceptName": "Lidocaine 20 MG/ML / Midazolam 40 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4709957",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41302946,
+      "conceptName": "Midazolam 0.02 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2500908",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271808,
+      "conceptName": "Midazolam 0.02 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469770",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40897440,
+      "conceptName": "Midazolam 0.04 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2095402",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240994,
+      "conceptName": "Midazolam 0.0667 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271807,
+      "conceptName": "Midazolam 0.08 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469769",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991032,
+      "conceptName": "Midazolam 0.089 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2188994",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42716532,
+      "conceptName": "Midazolam 0.0892 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2729767",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21022982,
+      "conceptName": "Midazolam 0.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362316",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21160530,
+      "conceptName": "Midazolam 0.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362318",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123132,
+      "conceptName": "Midazolam 1 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117763",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21091612,
+      "conceptName": "Midazolam 1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362275",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042644,
+      "conceptName": "Midazolam 1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362277",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052421,
+      "conceptName": "Midazolam 1.25 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362286",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042645,
+      "conceptName": "Midazolam 1.25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362288",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835150,
+      "conceptName": "Midazolam 1.67 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033112",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21072158,
+      "conceptName": "Midazolam 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362293",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886719,
+      "conceptName": "Midazolam 10.2 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998391",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482076,
+      "conceptName": "Midazolam 2 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419878",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482610,
+      "conceptName": "Midazolam 2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419879",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407481,
+      "conceptName": "Midazolam 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099523",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21072157,
+      "conceptName": "Midazolam 2.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362266",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101504,
+      "conceptName": "Midazolam 2.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052420,
+      "conceptName": "Midazolam 2.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362270",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41084804,
+      "conceptName": "Midazolam 2.78 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2282766",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880976,
+      "conceptName": "Midazolam 20.3 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989287",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40739327,
+      "conceptName": "Midazolam 4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4718354",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052424,
+      "conceptName": "Midazolam 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362323",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21121019,
+      "conceptName": "Midazolam 4 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362325",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084197,
+      "conceptName": "Midazolam 5 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078828",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21022980,
+      "conceptName": "Midazolam 5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362303",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170325,
+      "conceptName": "Midazolam 5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362305",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884766,
+      "conceptName": "Midazolam 5.56 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002752",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41210004,
+      "conceptName": "Midazolam 5.56 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2407966",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728538,
+      "conceptName": "Midazolam 5.57 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731467",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052425,
+      "conceptName": "Midazolam 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362335",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21130793,
+      "conceptName": "Midazolam 8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362337",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40959798,
+      "conceptName": "Midazolam 8.34 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2157760",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42708908,
+      "conceptName": "midazolam 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1249588",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42708907,
+      "conceptName": "midazolam 0.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1249586",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235419,
+      "conceptName": "midazolam 0.5 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216126",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902919,
+      "conceptName": "midazolam 0.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360032",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287613,
+      "conceptName": "midazolam 1 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1666778",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078924,
+      "conceptName": "midazolam 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311700",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287619,
+      "conceptName": "midazolam 1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1666799",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902896,
+      "conceptName": "midazolam 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235415,
+      "conceptName": "midazolam 1.25 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216122",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19129533,
+      "conceptName": "midazolam 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "763260",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1525440,
+      "conceptName": "midazolam 14.3 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2608699",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19061399,
+      "conceptName": "midazolam 15 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "248630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009067,
+      "conceptName": "midazolam 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106517",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105755,
+      "conceptName": "midazolam 2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "422410",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902873,
+      "conceptName": "midazolam 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359986",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36067131,
+      "conceptName": "midazolam 2.2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4993605",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36067130,
+      "conceptName": "midazolam 2.2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4993604",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235421,
+      "conceptName": "midazolam 2.5 MG Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216128",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235417,
+      "conceptName": "midazolam 2.5 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216124",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235423,
+      "conceptName": "midazolam 5 MG Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216130",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287624,
+      "conceptName": "midazolam 5 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1666822",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078925,
+      "conceptName": "midazolam 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311702",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46287622,
+      "conceptName": "midazolam 5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1666815",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235413,
+      "conceptName": "midazolam 5 MG/ML Mucosal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216120",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1396589,
+      "conceptName": "midazolam 50 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2173494",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 708300,
+      "conceptName": "midazolam 7.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199775",
+      "standardConcept": "S"
+    }
+  ]
+}

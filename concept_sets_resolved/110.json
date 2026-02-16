@@ -1,0 +1,986 @@
+{
+  "conceptSetId": 110,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41212143,
+      "conceptName": "Chlorpheniramine 40 MG / Codeine 350 MG / Sulfamethoxazole 8000 MG / Trimethoprim 1600 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086679,
+      "conceptName": "Codeine 120 MG / Guaifenesin 2000 MG / Pseudoephedrine 480 MG / Sulfamethoxazole 8000 MG / Trimethoprim 1600 MG / Triprolidine 24 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284641",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055163,
+      "conceptName": "Codeine 60 MG / Guaifenesin 1000 MG / Pseudoephedrine 240 MG / Sulfamethoxazole 4000 MG / Trimethoprim 800 MG / Triprolidine 12 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41021512,
+      "conceptName": "Phenazopyridine 1000 MG / Sulfamethoxazole 8000 MG / Trimethoprim 1600 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2219474",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240523,
+      "conceptName": "Phenazopyridine 2000 MG / Sulfamethoxazole 8000 MG / Trimethoprim 1600 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438485",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21093108,
+      "conceptName": "Polymyxin B 10000 UNT/MG / Trimethoprim 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP388330",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40989973,
+      "conceptName": "Sorbitol 250 MG/ML / sulfametrole 40 MG/ML / Trimethoprim 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2187935",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41239971,
+      "conceptName": "Sorbitol 70 MG/ML / sulfametrole 3.45 MG/ML / Trimethoprim 0.64 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2437933",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41083704,
+      "conceptName": "Sulfadiazine 41 MG/ML / Trimethoprim 9 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2281666",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40865230,
+      "conceptName": "Sulfamerazine 12 MG/ML / Trimethoprim 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2063192",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41020918,
+      "conceptName": "Sulfamerazine 30 MG / Trimethoprim 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2218880",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40927413,
+      "conceptName": "Sulfamethoxazole 160 MG/ML / Trimethoprim 32 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2125375",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114919,
+      "conceptName": "Sulfamethoxazole 20 MG/ML / Trimethoprim 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312881",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114923,
+      "conceptName": "Sulfamethoxazole 200 MG / Trimethoprim 40 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312885",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884074,
+      "conceptName": "Sulfamethoxazole 40 MG/ML / Trimethoprim 8 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991679",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41146520,
+      "conceptName": "Sulfamethoxazole 400 MG / Trimethoprim 80 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344482",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032158,
+      "conceptName": "Sulfamethoxazole 8 MG/ML / Trimethoprim 1.6 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1026789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894815,
+      "conceptName": "Sulfamethoxazole 80 MG/ML / Trimethoprim 16 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36789542,
+      "conceptName": "Sulfamethoxazole 80 MG/ML / Trimethoprim 16 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4777789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887934,
+      "conceptName": "Sulfamethoxazole 80 MG/ML / Trimethoprim 16 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002498",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114925,
+      "conceptName": "Sulfamethoxazole 800 MG / Trimethoprim 160 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312887",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21041837,
+      "conceptName": "Sulfamethoxazole 800 MG / Trimethoprim 160 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP347739",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41114926,
+      "conceptName": "Sulfamethoxazole 800 MG / Trimethoprim 160 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2312888",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41239913,
+      "conceptName": "Sulfamoxole 100 MG / Trimethoprim 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2437875",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40958429,
+      "conceptName": "Trimethoprim 0.667 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2156391",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21132284,
+      "conceptName": "Trimethoprim 1.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP388258",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21024477,
+      "conceptName": "Trimethoprim 1.4 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP388260",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884064,
+      "conceptName": "Trimethoprim 16 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996487",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36879304,
+      "conceptName": "Trimethoprim 16 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP987903",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890906,
+      "conceptName": "Trimethoprim 16 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999223",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881220,
+      "conceptName": "Trimethoprim 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996568",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479562,
+      "conceptName": "Trimethoprim 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418698",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21034178,
+      "conceptName": "Trimethoprim 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP388175",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21083335,
+      "conceptName": "Trimethoprim 4 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP388177",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21112838,
+      "conceptName": "Trimethoprim 40 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP388169",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21161978,
+      "conceptName": "Trimethoprim 40 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP388171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481953,
+      "conceptName": "Trimethoprim 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418699",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888941,
+      "conceptName": "Trimethoprim 8 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003208",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883089,
+      "conceptName": "Trimethoprim 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997594",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40236837,
+      "conceptName": "phenazopyridine hydrochloride 200 MG / sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1094352",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19063846,
+      "conceptName": "polymyxin B 10 UNT/MG / trimethoprim 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250858",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 948637,
+      "conceptName": "polymyxin B 10000 UNT/ML / trimethoprim 1 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "244967",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1763259,
+      "conceptName": "rifampin 20 MG/ML / trimethoprim 5.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "248766",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103700,
+      "conceptName": "rifampin 300 MG / trimethoprim 80 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "411475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1763258,
+      "conceptName": "rifampin 300 MG / trimethoprim 80 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246378",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170253,
+      "conceptName": "sulfadiazine 0.333 MG/MG / trimethoprim 0.067 MG/MG Oral Powder",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894883",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106463,
+      "conceptName": "sulfadiazine 400 MG / trimethoprim 80 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "428614",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836395,
+      "conceptName": "sulfadiazine 41 MG/ML / trimethoprim 9 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245838",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836394,
+      "conceptName": "sulfadiazine 410 MG / trimethoprim 90 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "245837",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19061032,
+      "conceptName": "sulfadiazine 820 MG / trimethoprim 180 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "248003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1705703,
+      "conceptName": "sulfalene 200 MG / trimethoprim 250 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246433",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1705704,
+      "conceptName": "sulfalene 8 MG/ML / trimethoprim 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246434",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105643,
+      "conceptName": "sulfamerazine 12 MG/ML / trimethoprim 8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "421922",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107655,
+      "conceptName": "sulfamerazine 120 MG / trimethoprim 80 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "432824",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40180928,
+      "conceptName": "sulfamethazine 1.45 MG/ML / trimethoprim 0.29 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "991880",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836431,
+      "conceptName": "sulfamethoxazole 100 MG / trimethoprim 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "142118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836447,
+      "conceptName": "sulfamethoxazole 267 MG/ML / trimethoprim 53.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246253",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19129060,
+      "conceptName": "sulfamethoxazole 40 MG/ML / trimethoprim 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "756187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836449,
+      "conceptName": "sulfamethoxazole 40 MG/ML / trimethoprim 8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836433,
+      "conceptName": "sulfamethoxazole 400 MG / trimethoprim 80 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198334",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19113235,
+      "conceptName": "sulfamethoxazole 400 MG / trimethoprim 800 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "540153",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836452,
+      "conceptName": "sulfamethoxazole 80 MG/ML / trimethoprim 16 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313137",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220484,
+      "conceptName": "sulfamethoxazole 80 MG/ML / trimethoprim 16 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1809084",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19129061,
+      "conceptName": "sulfamethoxazole 80 MG/ML / trimethoprim 16 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "756188",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836446,
+      "conceptName": "sulfamethoxazole 80 MG/ML / trimethoprim 16 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246252",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836451,
+      "conceptName": "sulfamethoxazole 800 MG / trimethoprim 160 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313136",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1836434,
+      "conceptName": "sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198335",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41177410,
+      "conceptName": "sulfametrole 100 MG / Trimethoprim 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2375372",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1705706,
+      "conceptName": "sulfametrole 40 MG/ML / trimethoprim 8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246436",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1705705,
+      "conceptName": "sulfametrole 400 MG / trimethoprim 80 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107552,
+      "conceptName": "sulfametrole 800 MG / trimethoprim 160 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "432685",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060221,
+      "conceptName": "sulfamoxole 40 MG/ML / trimethoprim 8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060200,
+      "conceptName": "sulfamoxole 400 MG / trimethoprim 80 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "246105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862397,
+      "conceptName": "trimethoprim 0.025 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018973",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862393,
+      "conceptName": "trimethoprim 10 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018969",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115239,
+      "conceptName": "trimethoprim 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562707",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19010210,
+      "conceptName": "trimethoprim 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "108449",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862355,
+      "conceptName": "trimethoprim 100 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018932",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1705676,
+      "conceptName": "trimethoprim 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862391,
+      "conceptName": "trimethoprim 12.5 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018967",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862390,
+      "conceptName": "trimethoprim 12.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018966",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107974,
+      "conceptName": "trimethoprim 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433897",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862354,
+      "conceptName": "trimethoprim 160 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018931",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104619,
+      "conceptName": "trimethoprim 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415813",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862379,
+      "conceptName": "trimethoprim 20 MG Inhalation Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018955",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862376,
+      "conceptName": "trimethoprim 20 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018952",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862377,
+      "conceptName": "trimethoprim 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018953",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19011481,
+      "conceptName": "trimethoprim 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "141843",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105759,
+      "conceptName": "trimethoprim 20 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "422432",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1705677,
+      "conceptName": "trimethoprim 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198333",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862388,
+      "conceptName": "trimethoprim 25 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018964",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862387,
+      "conceptName": "trimethoprim 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19021574,
+      "conceptName": "trimethoprim 300 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "199332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862375,
+      "conceptName": "trimethoprim 40 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018951",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862372,
+      "conceptName": "trimethoprim 40 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018949",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862374,
+      "conceptName": "trimethoprim 40 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018950",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862382,
+      "conceptName": "trimethoprim 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018958",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862371,
+      "conceptName": "trimethoprim 50 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018948",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862370,
+      "conceptName": "trimethoprim 50 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018947",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19107973,
+      "conceptName": "trimethoprim 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "433896",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862381,
+      "conceptName": "trimethoprim 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018957",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079805,
+      "conceptName": "trimethoprim 50 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313494",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862385,
+      "conceptName": "trimethoprim 60 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018961",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862383,
+      "conceptName": "trimethoprim 65 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862395,
+      "conceptName": "trimethoprim 8 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018971",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862365,
+      "conceptName": "trimethoprim 80 MG Inhalation Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018942",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862359,
+      "conceptName": "trimethoprim 80 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018936",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862360,
+      "conceptName": "trimethoprim 80 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018937",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862356,
+      "conceptName": "trimethoprim 90 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5018933",
+      "standardConcept": "S"
+    }
+  ]
+}

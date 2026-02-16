@@ -1,0 +1,2201 @@
+{
+  "conceptSetId": 88,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40962513,
+      "conceptName": "Benzoyl Peroxide 320 MG / Clindamycin 1200 MG / Gentamicin 1670 MG / polyacrylate 35400 MG / Zirconium 4270 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160475",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097865,
+      "conceptName": "Betamethasone 0.0005 MG/ML / Gentamicin 0.001 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092496",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305660,
+      "conceptName": "Betamethasone 0.0006 MG/MG / Gentamicin 0.000167 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41243650,
+      "conceptName": "Betamethasone 0.0006 MG/MG / Gentamicin 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441612",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212668,
+      "conceptName": "Betamethasone 0.0006 MG/MG / Gentamicin 0.00167 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410630",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40869008,
+      "conceptName": "Betamethasone 0.0006 MG/MG / Gentamicin 0.00167 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2066970",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43620053,
+      "conceptName": "Betamethasone 0.0006 MG/MG / Gentamicin 0.0017 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP928312",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620463,
+      "conceptName": "Betamethasone 0.0006 MG/MG / Gentamicin 0.0017 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2801289",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42963060,
+      "conceptName": "Betamethasone 0.00064 MG/MG / Clotrimazole 0.01 MG/MG / Gentamicin 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4689545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42963057,
+      "conceptName": "Betamethasone 0.00064 MG/MG / Clotrimazole 0.01 MG/MG / Gentamicin 0.001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4689542",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42963039,
+      "conceptName": "Betamethasone 0.001 MG/MG / Gentamicin 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4689526",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620116,
+      "conceptName": "Betamethasone 0.001 MG/MG / Gentamicin 0.001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800908",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42619860,
+      "conceptName": "Betamethasone 0.001 MG/MG / Gentamicin 0.003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2801001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274517,
+      "conceptName": "Betamethasone 0.001 MG/MG / Gentamicin 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472479",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44033230,
+      "conceptName": "Betamethasone 0.001 MG/ML / Gentamicin 0.001 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027861",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118740,
+      "conceptName": "Betamethasone 0.00122 MG/MG / Gentamicin 0.00167 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316702",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055977,
+      "conceptName": "Betamethasone 0.00122 MG/MG / Gentamicin 0.00167 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253939",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43583837,
+      "conceptName": "Betamethasone 0.00122 MG/MG / Gentamicin 0.0017 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP925589",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889864,
+      "conceptName": "Betamethasone 0.00122 MG/MG / Gentamicin 0.0017 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006178",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305661,
+      "conceptName": "Betamethasone 0.00122 MG/MG / Gentamicin 0.00835 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503623",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720751,
+      "conceptName": "Betamethasone 0.00122 MG/MG / Gentamicin 0.00836 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727497",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40869007,
+      "conceptName": "Betamethasone 0.00643 MG/MG / Gentamicin 0.00167 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2066969",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620115,
+      "conceptName": "Betamethasone 1 MG/ML / Gentamicin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800328",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150234,
+      "conceptName": "Betamethasone 1 MG/ML / Gentamicin 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348196",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305658,
+      "conceptName": "Betamethasone 1 MG/ML / Gentamicin 8.35 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503620",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715328,
+      "conceptName": "Betamethasone 1 MG/ML / Gentamicin 8.36 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2730970",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150235,
+      "conceptName": "Betamethasone 13 MG / Gentamicin 50 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348197",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180556,
+      "conceptName": "Cloxiquine 0.005 MG/MG / FLUPREDNIDENE 0.001 MG/MG / Gentamicin 0.00167 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868156,
+      "conceptName": "Collagen 160 MG / Gentamicin 233 MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2066118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055121,
+      "conceptName": "Collagen 280 MG / Gentamicin 200 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253083",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273696,
+      "conceptName": "Collagen 320 MG / Gentamicin 466 MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471658",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40930360,
+      "conceptName": "Collagen 70 MG / Gentamicin 50 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2128322",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40992904,
+      "conceptName": "Collagen 80 MG / Gentamicin 116 MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2190866",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023654,
+      "conceptName": "Dexamethasone 0.00029 MG/MG / Gentamicin 0.003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221616",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42716694,
+      "conceptName": "Dexamethasone 0.00029 MG/MG / Gentamicin 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2742576",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086437,
+      "conceptName": "Dexamethasone 0.00029 MG/MG / Gentamicin 0.00835 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284399",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42722104,
+      "conceptName": "Dexamethasone 0.00029 MG/MG / Gentamicin 0.00836 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731590",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42726064,
+      "conceptName": "Dexamethasone 0.00029 MG/MG / Gentamicin 0.00837 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41086438,
+      "conceptName": "Dexamethasone 0.001 MG/MG / Gentamicin 0.00835 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2284400",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42711389,
+      "conceptName": "Dexamethasone 0.001 MG/MG / Gentamicin 0.00836 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2728613",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42726065,
+      "conceptName": "Dexamethasone 0.001 MG/MG / Gentamicin 0.00837 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2721711",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36269952,
+      "conceptName": "Dexamethasone 1 MG/ML / Gentamicin 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3120827",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961449,
+      "conceptName": "Dexamethasone 1 MG/ML / Gentamicin 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159411",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273492,
+      "conceptName": "Dexamethasone 1 MG/ML / Gentamicin 8.35 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471454",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42724704,
+      "conceptName": "Dexamethasone 1 MG/ML / Gentamicin 8.36 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2741826",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304557,
+      "conceptName": "Dexamethasone 6 MG / Gentamicin 37.5 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502519",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304556,
+      "conceptName": "Dexamethasone 6 MG / Gentamicin 40 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867298,
+      "conceptName": "FLUPREDNIDENE 0.0005 MG/MG / Gentamicin 0.00167 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065260",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885959,
+      "conceptName": "FLUPREDNIDENE 0.0005 MG/MG / Gentamicin 0.0017 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988077",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960876,
+      "conceptName": "FLUPREDNIDENE 0.001 MG/MG / Gentamicin 0.00167 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2158838",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43799810,
+      "conceptName": "FLUPREDNIDENE 0.001 MG/MG / Gentamicin 0.0017 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP926721",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42963031,
+      "conceptName": "Fluorometholone 0.001 MG/MG / Gentamicin 0.003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4689518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42711387,
+      "conceptName": "Fluorometholone 0.001 MG/MG / Gentamicin 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2721999",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42963034,
+      "conceptName": "Fluorometholone 1 MG/ML / Gentamicin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4689521",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272886,
+      "conceptName": "Fluorometholone 1 MG/ML / Gentamicin 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40992116,
+      "conceptName": "Fluorometholone 9 MG / Gentamicin 45.1 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2190078",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41022899,
+      "conceptName": "Gentamicin 0.00000667 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220861",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054194,
+      "conceptName": "Gentamicin 0.00001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252156",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148457,
+      "conceptName": "Gentamicin 0.00001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346419",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836110,
+      "conceptName": "Gentamicin 0.00002 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034072",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898319,
+      "conceptName": "Gentamicin 0.00002 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096281",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272739,
+      "conceptName": "Gentamicin 0.00002 MG/MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470701",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179551,
+      "conceptName": "Gentamicin 0.0000333 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377513",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929439,
+      "conceptName": "Gentamicin 0.0000333 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127401",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085780,
+      "conceptName": "Gentamicin 0.00005 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283742",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867202,
+      "conceptName": "Gentamicin 0.00005 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065164",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085771,
+      "conceptName": "Gentamicin 0.0000667 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283733",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929427,
+      "conceptName": "Gentamicin 0.0000667 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127389",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712708,
+      "conceptName": "Gentamicin 0.0000669 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2734681",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712707,
+      "conceptName": "Gentamicin 0.0000669 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2722341",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085778,
+      "conceptName": "Gentamicin 0.0006 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283740",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116987,
+      "conceptName": "Gentamicin 0.001 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314949",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867193,
+      "conceptName": "Gentamicin 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065155",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071495,
+      "conceptName": "Gentamicin 0.001 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066126",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071494,
+      "conceptName": "Gentamicin 0.001 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41022895,
+      "conceptName": "Gentamicin 0.0012 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220857",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179538,
+      "conceptName": "Gentamicin 0.00167 MG/MG / Hydrocortisone 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377500",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116983,
+      "conceptName": "Gentamicin 0.00167 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314945",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116977,
+      "conceptName": "Gentamicin 0.00167 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314939",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41210979,
+      "conceptName": "Gentamicin 0.00167 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2408941",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836109,
+      "conceptName": "Gentamicin 0.00167 MG/MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034071",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867197,
+      "conceptName": "Gentamicin 0.00167 MG/MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065159",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43782021,
+      "conceptName": "Gentamicin 0.0017 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP928253",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885960,
+      "conceptName": "Gentamicin 0.0017 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993791",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836114,
+      "conceptName": "Gentamicin 0.002 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034076",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620638,
+      "conceptName": "Gentamicin 0.003 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800796",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123332,
+      "conceptName": "Gentamicin 0.003 MG/ML Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032680,
+      "conceptName": "Gentamicin 0.003 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027311",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929419,
+      "conceptName": "Gentamicin 0.005 MG/MG / prednisolone 0.006 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127381",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21122851,
+      "conceptName": "Gentamicin 0.005 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395871",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898323,
+      "conceptName": "Gentamicin 0.005 MG/MG Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096285",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929437,
+      "conceptName": "Gentamicin 0.00835 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127399",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715322,
+      "conceptName": "Gentamicin 0.00836 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2728568",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40754281,
+      "conceptName": "Gentamicin 0.02 MG/ML / heparin 3500 UNT/ML / Vancomycin 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4702742",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42970792,
+      "conceptName": "Gentamicin 0.1 MG/ML / Streptomycin 0.2 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4697216",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40823922,
+      "conceptName": "Gentamicin 0.167 MG/MG / Hydrocortisone 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2021884",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836113,
+      "conceptName": "Gentamicin 0.6 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034075",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032679,
+      "conceptName": "Gentamicin 0.8 MG/ML / Sodium Chloride 9 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027310",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867194,
+      "conceptName": "Gentamicin 0.8 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065156",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045667,
+      "conceptName": "Gentamicin 1 MG/ML / Sodium Chloride 9 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040298",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929426,
+      "conceptName": "Gentamicin 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127388",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36787928,
+      "conceptName": "Gentamicin 1 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4776191",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898315,
+      "conceptName": "Gentamicin 1 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096277",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43148991,
+      "conceptName": "Gentamicin 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP476056",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097296,
+      "conceptName": "Gentamicin 1.2 MG/ML / Sodium Chloride 9 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091927",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272748,
+      "conceptName": "Gentamicin 1.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470710",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35141161,
+      "conceptName": "Gentamicin 10 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4798291",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123333,
+      "conceptName": "Gentamicin 10 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117964",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21054284,
+      "conceptName": "Gentamicin 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395860",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43214956,
+      "conceptName": "Gentamicin 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP476071",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21172151,
+      "conceptName": "Gentamicin 12.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395720",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36259670,
+      "conceptName": "Gentamicin 134 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3110545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991982,
+      "conceptName": "Gentamicin 134 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189944",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960759,
+      "conceptName": "Gentamicin 134 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2158721",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41303877,
+      "conceptName": "Gentamicin 135 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2501839",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085769,
+      "conceptName": "Gentamicin 135 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283731",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272747,
+      "conceptName": "Gentamicin 138 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470709",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898313,
+      "conceptName": "Gentamicin 138 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096275",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620963,
+      "conceptName": "Gentamicin 140 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800821",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21044489,
+      "conceptName": "Gentamicin 15 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395730",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929424,
+      "conceptName": "Gentamicin 16.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127386",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929433,
+      "conceptName": "Gentamicin 17 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127395",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054191,
+      "conceptName": "Gentamicin 17 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252153",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179549,
+      "conceptName": "Gentamicin 17.2 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377511",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43656247,
+      "conceptName": "Gentamicin 2.8 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP928262",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41303889,
+      "conceptName": "Gentamicin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2501851",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21034624,
+      "conceptName": "Gentamicin 20 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395816",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43148995,
+      "conceptName": "Gentamicin 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP476092",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21162399,
+      "conceptName": "Gentamicin 20000 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395778",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21113277,
+      "conceptName": "Gentamicin 20400 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395740",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21044495,
+      "conceptName": "Gentamicin 225 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395825",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836121,
+      "conceptName": "Gentamicin 270 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034083",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836120,
+      "conceptName": "Gentamicin 270 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034082",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21122848,
+      "conceptName": "Gentamicin 28 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395834",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620538,
+      "conceptName": "Gentamicin 3 MG/ML / Hydrocortisone 10 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800789",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21172160,
+      "conceptName": "Gentamicin 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395842",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36259669,
+      "conceptName": "Gentamicin 3 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3110544",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116979,
+      "conceptName": "Gentamicin 3 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314941",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43182119,
+      "conceptName": "Gentamicin 3 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP476082",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123334,
+      "conceptName": "Gentamicin 3 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117965",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929420,
+      "conceptName": "Gentamicin 3.34 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127382",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42619770,
+      "conceptName": "Gentamicin 3.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800954",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43135096,
+      "conceptName": "Gentamicin 3000 UNT/ML / Indomethacin 1 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP449312",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929430,
+      "conceptName": "Gentamicin 33.4 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127392",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960757,
+      "conceptName": "Gentamicin 33.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2158719",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960760,
+      "conceptName": "Gentamicin 34 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2158722",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148456,
+      "conceptName": "Gentamicin 34 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346418",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41022900,
+      "conceptName": "Gentamicin 37.5 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032683,
+      "conceptName": "Gentamicin 4.5 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027314",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35141329,
+      "conceptName": "Gentamicin 40 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4798459",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960752,
+      "conceptName": "Gentamicin 40 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2158714",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032682,
+      "conceptName": "Gentamicin 40 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027313",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43171111,
+      "conceptName": "Gentamicin 40 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP476101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21122845,
+      "conceptName": "Gentamicin 40000 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395762",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21103421,
+      "conceptName": "Gentamicin 40800 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21024881,
+      "conceptName": "Gentamicin 41600 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395724",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21074087,
+      "conceptName": "Gentamicin 41800 MG Cement",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395748",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991980,
+      "conceptName": "Gentamicin 45 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189942",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41210981,
+      "conceptName": "Gentamicin 45 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2408943",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884020,
+      "conceptName": "Gentamicin 450 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41210971,
+      "conceptName": "Gentamicin 5 MG/ML / prednisolone 10 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2408933",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032681,
+      "conceptName": "Gentamicin 5 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027312",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40991978,
+      "conceptName": "Gentamicin 5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2189940",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482007,
+      "conceptName": "Gentamicin 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418927",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929432,
+      "conceptName": "Gentamicin 50 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127394",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880209,
+      "conceptName": "Gentamicin 56 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004384",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712702,
+      "conceptName": "Gentamicin 59.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2736466",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36406690,
+      "conceptName": "Gentamicin 6 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3098732",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35153875,
+      "conceptName": "Gentamicin 60 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4810901",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41022892,
+      "conceptName": "Gentamicin 60 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42719400,
+      "conceptName": "Gentamicin 66.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2729011",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41022897,
+      "conceptName": "Gentamicin 66.7 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220859",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054193,
+      "conceptName": "Gentamicin 66.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252155",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929421,
+      "conceptName": "Gentamicin 66.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127383",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42731313,
+      "conceptName": "Gentamicin 67 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2736306",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891848,
+      "conceptName": "Gentamicin 67.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996229",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42723394,
+      "conceptName": "Gentamicin 68 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2734453",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42718066,
+      "conceptName": "Gentamicin 68.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2731904",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41085772,
+      "conceptName": "Gentamicin 68.9 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2283734",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898324,
+      "conceptName": "Gentamicin 68.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096286",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42716696,
+      "conceptName": "Gentamicin 69 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2735066",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21152520,
+      "conceptName": "Gentamicin 7 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395755",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36264805,
+      "conceptName": "Gentamicin 7.5 MG / zirconium oxide 20 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3115680",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43277657,
+      "conceptName": "Gentamicin 7.5 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP533168",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960768,
+      "conceptName": "Gentamicin 7.52 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2158730",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21064157,
+      "conceptName": "Gentamicin 75 MG Drug Implant",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP395810",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35745640,
+      "conceptName": "Gentamicin 75 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2747101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179541,
+      "conceptName": "Gentamicin 8.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377503",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42722105,
+      "conceptName": "Gentamicin 8.32 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724672",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41303878,
+      "conceptName": "Gentamicin 8.35 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2501840",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40745779,
+      "conceptName": "Gentamicin 8.36 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4711922",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116976,
+      "conceptName": "Gentamicin 80 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2314938",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43193062,
+      "conceptName": "Gentamicin 80 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP476062",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42724707,
+      "conceptName": "Gentamicin 80.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2721802",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728740,
+      "conceptName": "Gentamicin 80.2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727278",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2059684,
+      "conceptName": "betamethasone 0.00061 MG/MG / gentamicin 0.001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4960782",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40236749,
+      "conceptName": "betamethasone 0.284 MG/ML / gentamicin 0.57 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1093235",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35201850,
+      "conceptName": "betamethasone valerate 0.00061 MG/MG / gentamicin sulfate 0.001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2103397",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1560038,
+      "conceptName": "betamethasone valerate 0.001 MG/MG / clotrimazole 0.01 MG/MG / gentamicin sulfate 0.003 MG/MG Otic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2049508",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221669,
+      "conceptName": "clotrimazole 10 MG/ML / gentamicin 3 MG/ML / mometasone 1 MG/ML Otic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1606021",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235399,
+      "conceptName": "dexamethasone 1 MG/ML / gentamicin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2059675,
+      "conceptName": "fluorometholone 1 MG/ML / gentamicin 3 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4960766",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077579,
+      "conceptName": "gentamicin 0.001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310465",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077602,
+      "conceptName": "gentamicin 0.003 MG/MG / prednisolone acetate 0.006 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310468",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077580,
+      "conceptName": "gentamicin 0.003 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310466",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077604,
+      "conceptName": "gentamicin 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310470",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867990,
+      "conceptName": "gentamicin 0.08 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5023968",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867988,
+      "conceptName": "gentamicin 0.3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5023966",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19065960,
+      "conceptName": "gentamicin 0.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "259047",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077606,
+      "conceptName": "gentamicin 0.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310472",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594417,
+      "conceptName": "gentamicin 0.8 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870291",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594421,
+      "conceptName": "gentamicin 0.9 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870298",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594668,
+      "conceptName": "gentamicin 1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 919346,
+      "conceptName": "gentamicin 1 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197735",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594675,
+      "conceptName": "gentamicin 1.2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870632",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594670,
+      "conceptName": "gentamicin 1.4 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594672,
+      "conceptName": "gentamicin 1.6 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870629",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19057565,
+      "conceptName": "gentamicin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "239204",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1592204,
+      "conceptName": "gentamicin 10 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870677",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19101858,
+      "conceptName": "gentamicin 10 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "392315",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44784803,
+      "conceptName": "gentamicin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1485222",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40236241,
+      "conceptName": "gentamicin 100 MG/ML Irrigation Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1090525",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235555,
+      "conceptName": "gentamicin 14 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216262",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009354,
+      "conceptName": "gentamicin 15 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106871",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36065040,
+      "conceptName": "gentamicin 19 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4991310",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594392,
+      "conceptName": "gentamicin 2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870246",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36065054,
+      "conceptName": "gentamicin 2.26 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4991324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077632,
+      "conceptName": "gentamicin 2.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310478",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36065051,
+      "conceptName": "gentamicin 2.79 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4991321",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867980,
+      "conceptName": "gentamicin 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5023958",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077603,
+      "conceptName": "gentamicin 3 MG/ML / prednisolone acetate 10 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310469",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077601,
+      "conceptName": "gentamicin 3 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310467",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19060801,
+      "conceptName": "gentamicin 3 MG/ML Otic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "247350",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36065048,
+      "conceptName": "gentamicin 3.3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4991318",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36065045,
+      "conceptName": "gentamicin 3.96 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4991315",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867977,
+      "conceptName": "gentamicin 40 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5023955",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867974,
+      "conceptName": "gentamicin 40 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5023952",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 919532,
+      "conceptName": "gentamicin 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1594687,
+      "conceptName": "gentamicin 40 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1870651",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19001257,
+      "conceptName": "gentamicin 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "102770",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077605,
+      "conceptName": "gentamicin 5 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310471",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35867984,
+      "conceptName": "gentamicin 800 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5023962",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36065042,
+      "conceptName": "gentamicin 9 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4991312",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42708365,
+      "conceptName": "gentamicin sulfate 1.5 MG/ML / hydrocortisone aceponate 1.11 MG/ML / miconazole nitrate 15.1 MG/ML Otic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1245245",
+      "standardConcept": "S"
+    }
+  ]
+}

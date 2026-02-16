@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 273,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4264825,
+      "conceptName": "Birth weight",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "364589006",
+      "standardConcept": "S"
+    }
+  ]
+}

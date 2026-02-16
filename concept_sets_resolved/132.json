@@ -1,0 +1,2138 @@
+{
+  "conceptSetId": 132,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36405173,
+      "conceptName": "Bupivacaine 0.624 MG/ML / Fentanyl 0.002 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620459,
+      "conceptName": "Bupivacaine 0.624 MG/ML / Fentanyl 0.002 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800207",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21149534,
+      "conceptName": "Bupivacaine 0.625 MG/ML / Fentanyl 0.002 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343223",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21021906,
+      "conceptName": "Bupivacaine 1.05 MG/ML / Fentanyl 0.002 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343262",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21061138,
+      "conceptName": "Bupivacaine 1.05 MG/ML / Fentanyl 0.002 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343208",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21031664,
+      "conceptName": "Bupivacaine 1.05 MG/ML / Fentanyl 0.004 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343201",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21129777,
+      "conceptName": "Bupivacaine 1.05 MG/ML / Fentanyl 0.004 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343204",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21031666,
+      "conceptName": "Bupivacaine 1.05 MG/ML / Fentanyl 0.005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21090523,
+      "conceptName": "Bupivacaine 1.05 MG/ML / Fentanyl 0.005 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343219",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21090527,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.001 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343259",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620301,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.002 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800571",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479054,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.002 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419049",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21169245,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.004 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343245",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888867,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.005 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989511",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21080778,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.00833 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343249",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408982,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.00834 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3101024",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42722090,
+      "conceptName": "Bupivacaine 1.2 MG/ML / Fentanyl 0.00834 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2741394",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21031667,
+      "conceptName": "Bupivacaine 1.5 MG/ML / Fentanyl 0.002 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343230",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21090524,
+      "conceptName": "Bupivacaine 1.5 MG/ML / Fentanyl 0.002 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP343233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836590,
+      "conceptName": "Droperidol 0.25 MG/ML / Fentanyl 0.0785 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034552",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40867688,
+      "conceptName": "Droperidol 2.5 MG/ML / Fentanyl 0.123 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2065650",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042703,
+      "conceptName": "Fentanyl 0.002 MG/ML / Levobupivacaine 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP363180",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21072199,
+      "conceptName": "Fentanyl 0.002 MG/ML / Levobupivacaine 1.25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP363168",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882936,
+      "conceptName": "Fentanyl 0.002 MG/ML / ropivacaine 2 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006779",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052475,
+      "conceptName": "Fentanyl 0.004 MG/ML / Levobupivacaine 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP363177",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170363,
+      "conceptName": "Fentanyl 0.004 MG/ML / Levobupivacaine 1.25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP363171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886809,
+      "conceptName": "Fentanyl 0.004 MG/ML / ropivacaine 2 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999179",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21130844,
+      "conceptName": "Fentanyl 0.005 MG/ML / Levobupivacaine 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP363184",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272955,
+      "conceptName": "Fentanyl 0.005 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21081892,
+      "conceptName": "Fentanyl 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362876",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36421759,
+      "conceptName": "Fentanyl 0.01 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4764037",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21022987,
+      "conceptName": "Fentanyl 0.01 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362463",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023092,
+      "conceptName": "Fentanyl 0.015 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221054",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101538,
+      "conceptName": "Fentanyl 0.02 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362879",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21052461,
+      "conceptName": "Fentanyl 0.02 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362883",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37592163,
+      "conceptName": "Fentanyl 0.02 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4781614",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148634,
+      "conceptName": "Fentanyl 0.025 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346596",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21170362,
+      "conceptName": "Fentanyl 0.025 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP363118",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148639,
+      "conceptName": "Fentanyl 0.025 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346601",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42619856,
+      "conceptName": "Fentanyl 0.0251 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800122",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36505776,
+      "conceptName": "Fentanyl 0.0251 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4835919",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023089,
+      "conceptName": "Fentanyl 0.0314 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221051",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41148635,
+      "conceptName": "Fentanyl 0.0436 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2346597",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35152503,
+      "conceptName": "Fentanyl 0.05 MG Buccal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4809536",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110229,
+      "conceptName": "Fentanyl 0.05 MG Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104860",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43189083,
+      "conceptName": "Fentanyl 0.05 MG Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP437180",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836313,
+      "conceptName": "Fentanyl 0.05 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034275",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21072190,
+      "conceptName": "Fentanyl 0.05 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362945",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42483384,
+      "conceptName": "Fentanyl 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417257",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058725,
+      "conceptName": "Fentanyl 0.05 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053356",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304068,
+      "conceptName": "Fentanyl 0.05 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502030",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42874865,
+      "conceptName": "Fentanyl 0.0556 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4872085",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054363,
+      "conceptName": "Fentanyl 0.0628 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252325",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211163,
+      "conceptName": "Fentanyl 0.0645 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42731201,
+      "conceptName": "Fentanyl 0.0647 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724450",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43156184,
+      "conceptName": "Fentanyl 0.067 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440529",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42717947,
+      "conceptName": "Fentanyl 0.0783 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2726333",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882911,
+      "conceptName": "Fentanyl 0.0785 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997036",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304062,
+      "conceptName": "Fentanyl 0.0785 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502024",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715194,
+      "conceptName": "Fentanyl 0.0786 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2729796",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42713894,
+      "conceptName": "Fentanyl 0.0787 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071558,
+      "conceptName": "Fentanyl 0.1 MG Buccal Film",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066189",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43282810,
+      "conceptName": "Fentanyl 0.1 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP531649",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071559,
+      "conceptName": "Fentanyl 0.1 MG Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066190",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43134051,
+      "conceptName": "Fentanyl 0.1 MG Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP437705",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43167094,
+      "conceptName": "Fentanyl 0.1 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP437760",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211168,
+      "conceptName": "Fentanyl 0.101 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409130",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836312,
+      "conceptName": "Fentanyl 0.108 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062264,
+      "conceptName": "Fentanyl 0.133 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362637",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41117154,
+      "conceptName": "Fentanyl 0.15 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2315116",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44187559,
+      "conceptName": "Fentanyl 0.157 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3064282",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054361,
+      "conceptName": "Fentanyl 0.157 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252323",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587109,
+      "conceptName": "Fentanyl 0.158 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138926",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929602,
+      "conceptName": "Fentanyl 0.174 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127564",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43282806,
+      "conceptName": "Fentanyl 0.2 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP531631",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045708,
+      "conceptName": "Fentanyl 0.2 MG Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040339",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43156200,
+      "conceptName": "Fentanyl 0.2 MG Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440688",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43178209,
+      "conceptName": "Fentanyl 0.2 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440697",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176322,
+      "conceptName": "Fentanyl 0.2 MG Unknown Combination Pack Medical Aids",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3053045",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101521,
+      "conceptName": "Fentanyl 0.2 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362632",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43167098,
+      "conceptName": "Fentanyl 0.2 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP438433",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43211275,
+      "conceptName": "Fentanyl 0.256 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP443710",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304063,
+      "conceptName": "Fentanyl 0.258 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502025",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35766516,
+      "conceptName": "Fentanyl 0.267 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2767977",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21140781,
+      "conceptName": "Fentanyl 0.267 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP363159",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43807539,
+      "conceptName": "Fentanyl 0.3 MG Buccal Film",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP721541",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43272002,
+      "conceptName": "Fentanyl 0.4 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP531738",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43167089,
+      "conceptName": "Fentanyl 0.4 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP436989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44165024,
+      "conceptName": "Fentanyl 0.4 MG Unknown Combination Pack Medical Aids",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3041747",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41272953,
+      "conceptName": "Fentanyl 0.405 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2470915",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43134072,
+      "conceptName": "Fentanyl 0.5 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440540",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21101518,
+      "conceptName": "Fentanyl 0.533 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362608",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43282820,
+      "conceptName": "Fentanyl 0.6 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP531731",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43156173,
+      "conceptName": "Fentanyl 0.6 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP439358",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176327,
+      "conceptName": "Fentanyl 0.6 MG Unknown Combination Pack Medical Aids",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3053050",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44168882,
+      "conceptName": "Fentanyl 0.628 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3045605",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588970,
+      "conceptName": "Fentanyl 0.782 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3137874",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587674,
+      "conceptName": "Fentanyl 0.783 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135837",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179727,
+      "conceptName": "Fentanyl 0.785 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377689",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41054362,
+      "conceptName": "Fentanyl 0.785 MG/ML Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2252324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44187562,
+      "conceptName": "Fentanyl 0.785 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3064285",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589377,
+      "conceptName": "Fentanyl 0.786 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3136814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43261040,
+      "conceptName": "Fentanyl 0.8 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP531623",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43144983,
+      "conceptName": "Fentanyl 0.8 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP437405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35130321,
+      "conceptName": "Fentanyl 0.8 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4787575",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44168881,
+      "conceptName": "Fentanyl 0.8 MG Unknown Combination Pack Medical Aids",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3045604",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888754,
+      "conceptName": "Fentanyl 0.875 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004570",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43663948,
+      "conceptName": "Fentanyl 0.94 MG Buccal Film",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP721512",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886779,
+      "conceptName": "Fentanyl 0.943 MG Oral Lozenge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996247",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35152250,
+      "conceptName": "Fentanyl 1 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4809288",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44168880,
+      "conceptName": "Fentanyl 1 MG/ML Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3045603",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43178188,
+      "conceptName": "Fentanyl 1 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440523",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881045,
+      "conceptName": "Fentanyl 1.2 MG Buccal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882909,
+      "conceptName": "Fentanyl 1.2 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993940",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36421754,
+      "conceptName": "Fentanyl 1.2 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4764032",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891720,
+      "conceptName": "Fentanyl 1.2 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001083",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44165025,
+      "conceptName": "Fentanyl 1.26 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3041748",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885827,
+      "conceptName": "Fentanyl 1.38 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999903",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41179725,
+      "conceptName": "Fentanyl 1.5 MG/ML Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2377687",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43764541,
+      "conceptName": "Fentanyl 1.6 MG Buccal Film",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP939905",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893702,
+      "conceptName": "Fentanyl 1.6 MG Buccal Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005975",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36421751,
+      "conceptName": "Fentanyl 1.6 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4764029",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35146397,
+      "conceptName": "Fentanyl 1.7 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4803476",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176324,
+      "conceptName": "Fentanyl 1.74 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3053047",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43593116,
+      "conceptName": "Fentanyl 1.88 MG Buccal Film",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP764947",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890745,
+      "conceptName": "Fentanyl 1.89 MG Oral Lozenge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44176325,
+      "conceptName": "Fentanyl 1.89 MG Unknown Combination Pack Medical Aids",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3053048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084449,
+      "conceptName": "Fentanyl 10.2 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079080",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35410585,
+      "conceptName": "Fentanyl 11 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144170",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888753,
+      "conceptName": "Fentanyl 11.6 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995038",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882908,
+      "conceptName": "Fentanyl 12.4 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992381",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35410589,
+      "conceptName": "Fentanyl 12.6 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144174",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35407480,
+      "conceptName": "Fentanyl 14.4 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141065",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35410590,
+      "conceptName": "Fentanyl 15.5 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144175",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35412954,
+      "conceptName": "Fentanyl 16.5 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1146539",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408270,
+      "conceptName": "Fentanyl 16.8 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141855",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882906,
+      "conceptName": "Fentanyl 17.3 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999730",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409825,
+      "conceptName": "Fentanyl 19.2 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1143410",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41211166,
+      "conceptName": "Fentanyl 2 MG/ML Nasal Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2409128",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44165026,
+      "conceptName": "Fentanyl 2 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3041749",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886780,
+      "conceptName": "Fentanyl 2.06 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409066,
+      "conceptName": "Fentanyl 2.1 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1142651",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44161235,
+      "conceptName": "Fentanyl 2.5 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3037958",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884825,
+      "conceptName": "Fentanyl 2.51 MG Oral Lozenge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071560,
+      "conceptName": "Fentanyl 2.51 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066191",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409821,
+      "conceptName": "Fentanyl 2.55 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1143406",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35411365,
+      "conceptName": "Fentanyl 2.75 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144950",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881047,
+      "conceptName": "Fentanyl 2.89 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992378",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35412166,
+      "conceptName": "Fentanyl 20.4 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1145751",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882003,
+      "conceptName": "Fentanyl 23.1 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP990943",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44187560,
+      "conceptName": "Fentanyl 3.24 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3064283",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35149393,
+      "conceptName": "Fentanyl 3.4 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4806452",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43167121,
+      "conceptName": "Fentanyl 4 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP440571",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882002,
+      "conceptName": "Fentanyl 4.13 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35411370,
+      "conceptName": "Fentanyl 4.2 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144955",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408272,
+      "conceptName": "Fentanyl 4.8 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141857",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110230,
+      "conceptName": "Fentanyl 5.1 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104861",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409827,
+      "conceptName": "Fentanyl 5.5 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1143412",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893703,
+      "conceptName": "Fentanyl 5.78 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP989122",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43023923,
+      "conceptName": "Fentanyl 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4839038",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35151788,
+      "conceptName": "Fentanyl 6.7 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4808832",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097351,
+      "conceptName": "Fentanyl 8.25 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1091982",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408271,
+      "conceptName": "Fentanyl 8.4 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409822,
+      "conceptName": "Fentanyl 9.6 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1143407",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 739327,
+      "conceptName": "droperidol 2.5 MG/ML / fentanyl 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "243774",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19121331,
+      "conceptName": "fentanyl 0.002 MG/ML / ropivacaine 0.001 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "578168",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19121333,
+      "conceptName": "fentanyl 0.002 MG/ML / ropivacaine 0.002 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "578170",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19135177,
+      "conceptName": "fentanyl 0.002 MG/ML / ropivacaine 0.8 MG/ML / sodium chloride 0.154 MEQ/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "846366",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19135255,
+      "conceptName": "fentanyl 0.002 MG/ML / ropivacaine 0.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "847127",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19121334,
+      "conceptName": "fentanyl 0.003 MG/ML / ropivacaine 0.001 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "578171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707361,
+      "conceptName": "fentanyl 0.003 MG/ML / ropivacaine hydrochloride 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233685",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19127353,
+      "conceptName": "fentanyl 0.003 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "729846",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707362,
+      "conceptName": "fentanyl 0.004 MG/ML / ropivacaine hydrochloride 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233686",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707363,
+      "conceptName": "fentanyl 0.004 MG/ML / ropivacaine hydrochloride 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1233687",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19135175,
+      "conceptName": "fentanyl 0.004 MG/ML / sodium chloride 0.154 MEQ/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "846363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19121335,
+      "conceptName": "fentanyl 0.005 MG/ML / ropivacaine 0.001 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "578172",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902404,
+      "conceptName": "fentanyl 0.012 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359517",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235087,
+      "conceptName": "fentanyl 0.0125 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215790",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42708910,
+      "conceptName": "fentanyl 0.015 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1249594",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902803,
+      "conceptName": "fentanyl 0.025 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359916",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221484,
+      "conceptName": "fentanyl 0.0375 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1603496",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793234,
+      "conceptName": "fentanyl 0.04 MG/ACTUAT Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1992292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2070454,
+      "conceptName": "fentanyl 0.05 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4972008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903228,
+      "conceptName": "fentanyl 0.05 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360341",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902769,
+      "conceptName": "fentanyl 0.05 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359882",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35603429,
+      "conceptName": "fentanyl 0.05 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1735004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235085,
+      "conceptName": "fentanyl 0.05 MG/ML Mucosal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215788",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 739546,
+      "conceptName": "fentanyl 0.05 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2474268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221487,
+      "conceptName": "fentanyl 0.0625 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1603499",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903081,
+      "conceptName": "fentanyl 0.075 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360194",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 46221490,
+      "conceptName": "fentanyl 0.0875 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1603502",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1154278,
+      "conceptName": "fentanyl 0.1 MG Buccal Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "668363",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077247,
+      "conceptName": "fentanyl 0.1 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40234427,
+      "conceptName": "fentanyl 0.1 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1053647",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2070444,
+      "conceptName": "fentanyl 0.1 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4971996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40240780,
+      "conceptName": "fentanyl 0.1 MG/ACTUAT Metered Dose Nasal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1115573",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707850,
+      "conceptName": "fentanyl 0.1 MG/ACTUAT Mucosal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1237050",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36068243,
+      "conceptName": "fentanyl 0.1 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4994823",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902560,
+      "conceptName": "fentanyl 0.1 MG/HR Transdermal System",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359673",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40165711,
+      "conceptName": "fentanyl 0.2 MG Buccal Film",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "858092",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1154279,
+      "conceptName": "fentanyl 0.2 MG Buccal Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "668364",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077250,
+      "conceptName": "fentanyl 0.2 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310295",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40234430,
+      "conceptName": "fentanyl 0.2 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1053652",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2070442,
+      "conceptName": "fentanyl 0.2 MG/ACTUAT Metered Dose Inhaler",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4971994",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707852,
+      "conceptName": "fentanyl 0.2 MG/ACTUAT Mucosal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1237057",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19126620,
+      "conceptName": "fentanyl 0.3 MG Buccal Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "706898",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077271,
+      "conceptName": "fentanyl 0.3 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310296",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40234433,
+      "conceptName": "fentanyl 0.3 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1053655",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605150,
+      "conceptName": "fentanyl 0.3 MG/ACTUAT Metered Dose Nasal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1729320",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40165715,
+      "conceptName": "fentanyl 0.4 MG Buccal Film",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "858095",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1154280,
+      "conceptName": "fentanyl 0.4 MG Buccal Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "668365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077272,
+      "conceptName": "fentanyl 0.4 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310297",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40234436,
+      "conceptName": "fentanyl 0.4 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1053658",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40240784,
+      "conceptName": "fentanyl 0.4 MG/ACTUAT Metered Dose Nasal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1115577",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707854,
+      "conceptName": "fentanyl 0.4 MG/ACTUAT Mucosal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1237060",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36068242,
+      "conceptName": "fentanyl 0.4 MG/ACTUAT Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4994822",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35831405,
+      "conceptName": "fentanyl 0.5 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5036812",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40165718,
+      "conceptName": "fentanyl 0.6 MG Buccal Film",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "858098",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1154281,
+      "conceptName": "fentanyl 0.6 MG Buccal Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "668366",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1154146,
+      "conceptName": "fentanyl 0.6 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313992",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40234439,
+      "conceptName": "fentanyl 0.6 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1053661",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707856,
+      "conceptName": "fentanyl 0.6 MG/ACTUAT Mucosal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1237064",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40165721,
+      "conceptName": "fentanyl 0.8 MG Buccal Film",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "858101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1154312,
+      "conceptName": "fentanyl 0.8 MG Buccal Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "668367",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1154147,
+      "conceptName": "fentanyl 0.8 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40234442,
+      "conceptName": "fentanyl 0.8 MG Sublingual Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1053664",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42707858,
+      "conceptName": "fentanyl 0.8 MG/ACTUAT Mucosal Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1237068",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40165724,
+      "conceptName": "fentanyl 1.2 MG Buccal Film",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "858087",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077248,
+      "conceptName": "fentanyl 1.2 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310293",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19019976,
+      "conceptName": "fentanyl 1.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198402",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19077249,
+      "conceptName": "fentanyl 1.6 MG Oral Lozenge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "310294",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19019977,
+      "conceptName": "fentanyl 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "198403",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35870208,
+      "conceptName": "fentanyl 2.51 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5026997",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35870207,
+      "conceptName": "fentanyl 4.13 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5026996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35870206,
+      "conceptName": "fentanyl 5.1 MG Medicated Patch",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5026995",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44785662,
+      "conceptName": "fentanyl 50 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1487611",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235089,
+      "conceptName": "fentanyl 6.3 MG Transdermal System",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215792",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "conceptSetId": 90,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41022425,
+      "conceptName": "Itraconazole 0.0667 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2220387",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482127,
+      "conceptName": "Itraconazole 10 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419440",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41053708,
+      "conceptName": "Itraconazole 100 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2251670",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43283237,
+      "conceptName": "Itraconazole 50 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP535690",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35150384,
+      "conceptName": "Itraconazole 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4807435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078729,
+      "conceptName": "itraconazole 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311205",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19096455,
+      "conceptName": "itraconazole 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "348506",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078730,
+      "conceptName": "itraconazole 10 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311206",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19078728,
+      "conceptName": "itraconazole 100 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "311204",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35862418,
+      "conceptName": "itraconazole 100 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5019103",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106152,
+      "conceptName": "itraconazole 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "427282",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19106153,
+      "conceptName": "itraconazole 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "427283",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40184845,
+      "conceptName": "itraconazole 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "992413",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19103446,
+      "conceptName": "itraconazole 33.3 MG / secnidazole 167 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "410538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1355944,
+      "conceptName": "itraconazole 65 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2106642",
+      "standardConcept": "S"
+    }
+  ]
+}

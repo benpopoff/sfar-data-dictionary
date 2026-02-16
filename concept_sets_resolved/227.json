@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 227,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3662046,
+      "conceptName": "Carbapenemase-producing Citrobacter koseri",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1090401000112109",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4016448,
+      "conceptName": "Citrobacter koseri",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "114264004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37151179,
+      "conceptName": "Extended spectrum beta-lactamase producing Citrobacter koseri",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1090501000112108",
+      "standardConcept": "S"
+    }
+  ]
+}

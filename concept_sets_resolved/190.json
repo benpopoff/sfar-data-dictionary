@@ -1,0 +1,68 @@
+{
+  "conceptSetId": 190,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3009542,
+      "conceptName": "Hematocrit [Volume Fraction] of Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "20570-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3023314,
+      "conceptName": "Hematocrit [Volume Fraction] of Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "4544-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3019909,
+      "conceptName": "Hematocrit [Volume Fraction] of Blood by Centrifugation",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "4545-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3050746,
+      "conceptName": "Hematocrit [Volume Fraction] of Blood by Estimated",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "48703-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3013752,
+      "conceptName": "Hematocrit [Volume Fraction] of Blood by Impedance",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "31100-1",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3028813,
+      "conceptName": "Hematocrit [Volume Fraction] of Capillary blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "42908-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3034976,
+      "conceptName": "Hematocrit [Volume Fraction] of Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "41654-5",
+      "standardConcept": "S"
+    }
+  ]
+}

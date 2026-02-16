@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 173,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3001110,
+      "conceptName": "Alkaline phosphatase [Enzymatic activity/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1783-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3035995,
+      "conceptName": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "6768-6",
+      "standardConcept": "S"
+    }
+  ]
+}

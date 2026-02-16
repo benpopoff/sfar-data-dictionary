@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 43,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41149199,
+      "conceptName": "desirudin 15 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347161",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19102223,
+      "conceptName": "desirudin 15 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "402248",
+      "standardConcept": "S"
+    }
+  ]
+}

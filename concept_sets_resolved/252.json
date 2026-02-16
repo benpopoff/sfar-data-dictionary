@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 252,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4261653,
+      "conceptName": "Rothia dentocariosa",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "35379007",
+      "standardConcept": "S"
+    }
+  ]
+}

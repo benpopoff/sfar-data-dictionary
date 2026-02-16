@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 312,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4353938,
+      "conceptName": "End tidal carbon dioxide concentration",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "250784008",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "conceptSetId": 35,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42966022,
+      "conceptName": "argatroban 0.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4692486",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35140140,
+      "conceptName": "argatroban 0.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4797286",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40747299,
+      "conceptName": "argatroban 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4709899",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220927,
+      "conceptName": "argatroban 1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1804736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41213021,
+      "conceptName": "argatroban 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410983",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220925,
+      "conceptName": "argatroban 100 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1804732",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480206,
+      "conceptName": "argatroban 100 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP418955",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962802,
+      "conceptName": "argatroban 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160764",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42966026,
+      "conceptName": "argatroban 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4692490",
+      "standardConcept": "S"
+    }
+  ]
+}

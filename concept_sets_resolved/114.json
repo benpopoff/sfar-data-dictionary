@@ -1,0 +1,1148 @@
+{
+  "conceptSetId": 114,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40732034,
+      "conceptName": "Anthralin 0.0005 MG/MG / Clobetasol 0.000125 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725656",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21083665,
+      "conceptName": "Anthralin 0.0005 MG/MG / Clobetasol 0.0005 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP393931",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44187602,
+      "conceptName": "Clobetasol 0.000005 MG/MG Topical Foam",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3064325",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587797,
+      "conceptName": "Clobetasol 0.00000501 MG/MG Topical Foam",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3135792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993042,
+      "conceptName": "Clobetasol 0.00001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304914,
+      "conceptName": "Clobetasol 0.00001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502876",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734316,
+      "conceptName": "Clobetasol 0.0000125 MG/MG / Coal Tar 0.06 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722773",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408953,
+      "conceptName": "Clobetasol 0.0000167 MG/MG / Neomycin 0.000167 MG/MG / Nystatin 100 UNT/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3100995",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482454,
+      "conceptName": "Clobetasol 0.0000167 MG/MG / Neomycin 0.000167 MG/MG / Nystatin 100 UNT/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP420439",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961787,
+      "conceptName": "Clobetasol 0.0000167 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159749",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41273821,
+      "conceptName": "Clobetasol 0.0000167 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471783",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993043,
+      "conceptName": "Clobetasol 0.00002 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023999,
+      "conceptName": "Clobetasol 0.00002 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221961",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055240,
+      "conceptName": "Clobetasol 0.0000333 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253202",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40961786,
+      "conceptName": "Clobetasol 0.0000333 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2159748",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732058,
+      "conceptName": "Clobetasol 0.00005 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725632",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732057,
+      "conceptName": "Clobetasol 0.00005 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725633",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732051,
+      "conceptName": "Clobetasol 0.0001 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725639",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732050,
+      "conceptName": "Clobetasol 0.0001 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725640",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734315,
+      "conceptName": "Clobetasol 0.000125 MG/MG / Coal Tar 0.05 MG/MG / Propylene glycol 0.4 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722774",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734312,
+      "conceptName": "Clobetasol 0.000125 MG/MG / Coal Tar 0.05 MG/MG / Salicylic Acid 0.02 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722777",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734319,
+      "conceptName": "Clobetasol 0.000125 MG/MG / Coal Tar 0.05 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722770",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732045,
+      "conceptName": "Clobetasol 0.000125 MG/MG / Propylene glycol 0.4 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40731487,
+      "conceptName": "Clobetasol 0.000125 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725616",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732048,
+      "conceptName": "Clobetasol 0.00015 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725642",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732047,
+      "conceptName": "Clobetasol 0.00015 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725643",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732042,
+      "conceptName": "Clobetasol 0.0002 MG/MG / Propylene glycol 0.6 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725648",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732039,
+      "conceptName": "Clobetasol 0.000238 MG/MG / Propylene glycol 0.475 MG/MG / Salicylic Acid 0.05 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725651",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732038,
+      "conceptName": "Clobetasol 0.00025 MG/MG / Propylene glycol 0.048 MG/MG / Salicylic Acid 0.002 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725652",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732041,
+      "conceptName": "Clobetasol 0.00025 MG/MG / Propylene glycol 0.5 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725649",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732040,
+      "conceptName": "Clobetasol 0.00025 MG/MG / Propylene glycol 0.5 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725650",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732035,
+      "conceptName": "Clobetasol 0.00025 MG/MG / Salicylic Acid 0.5 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725655",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732053,
+      "conceptName": "Clobetasol 0.00025 MG/MG Paste",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725637",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732055,
+      "conceptName": "Clobetasol 0.00025 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725635",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732054,
+      "conceptName": "Clobetasol 0.00025 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725636",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732044,
+      "conceptName": "Clobetasol 0.0003 MG/MG / Propylene glycol 0.4 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725646",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732043,
+      "conceptName": "Clobetasol 0.0003 MG/MG / Propylene glycol 0.4 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725647",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734320,
+      "conceptName": "Clobetasol 0.000375 MG/MG / Coal Tar 0.25 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722769",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732046,
+      "conceptName": "Clobetasol 0.0004 MG/MG / Propylene glycol 0.2 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725644",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732037,
+      "conceptName": "Clobetasol 0.000425 MG/MG / Salicylic Acid 0.15 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725653",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734318,
+      "conceptName": "Clobetasol 0.00045 MG/MG / Coal Tar 0.1 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722771",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734317,
+      "conceptName": "Clobetasol 0.00045 MG/MG / Coal Tar 0.1 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722772",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40732036,
+      "conceptName": "Clobetasol 0.00045 MG/MG / Salicylic Acid 0.1 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4725654",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40734313,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.03 MG/MG / Salicylic Acid 0.02 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4722776",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405198,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.05 MG/MG / Propylene glycol 0.4 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097240",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21099925,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.05 MG/MG / Propylene glycol 0.4 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP281308",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403522,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.05 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095564",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21095548,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.05 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267734",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36406638,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.06 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3098680",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21115246,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.06 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267731",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405072,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.1 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21056319,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Coal Tar 0.1 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267729",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42972338,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Neomycin 0.005 MG/MG / Nystatin 100 IU/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4698748",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405148,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Neomycin 0.005 MG/MG / Nystatin 100 UNT/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097190",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21062341,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Neomycin 0.005 MG/MG / Nystatin 100 UNT/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP364068",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36406760,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.2 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3098802",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21090011,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.2 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP281229",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36404414,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.4 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3096456",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21021417,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.4 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP281268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407532,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.475 MG/MG / Salicylic Acid 0.05 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099574",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21031130,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.475 MG/MG / Salicylic Acid 0.05 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP281088",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403644,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.5 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095686",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21139123,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.5 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP281189",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 589658,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.501 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3138120",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42620114,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.501 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2800385",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36403643,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.6 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3095685",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21080290,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Propylene glycol 0.6 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP281246",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405892,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Salicylic Acid 0.05 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097934",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21034437,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Salicylic Acid 0.05 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP392513",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21073891,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Salicylic Acid 0.1 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP392518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21083576,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Salicylic Acid 0.15 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP392511",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21142447,
+      "conceptName": "Clobetasol 0.0005 MG/MG / Salicylic Acid 0.5 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP392516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35753960,
+      "conceptName": "Clobetasol 0.0005 MG/MG Medicated Shampoo",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2755421",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43657757,
+      "conceptName": "Clobetasol 0.0005 MG/MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP955319",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21134750,
+      "conceptName": "Clobetasol 0.0005 MG/MG Rectal Foam",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP267703",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35407408,
+      "conceptName": "Clobetasol 0.0005 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1140993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35407407,
+      "conceptName": "Clobetasol 0.0005 MG/MG Topical Foam",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1140992",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36275080,
+      "conceptName": "Clobetasol 0.0005 MG/MG Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3125955",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43603582,
+      "conceptName": "Clobetasol 0.0005 MG/MG Topical Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP955373",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097552,
+      "conceptName": "Clobetasol 0.0005 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092183",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123594,
+      "conceptName": "Clobetasol 0.0005 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118225",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045906,
+      "conceptName": "Clobetasol 0.0005 MG/ML Topical Foam",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032916,
+      "conceptName": "Clobetasol 0.0005 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027547",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44058920,
+      "conceptName": "Clobetasol 0.0005 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053551",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44097553,
+      "conceptName": "Clobetasol 0.0005 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1092184",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055241,
+      "conceptName": "Clobetasol 0.01 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253203",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41180598,
+      "conceptName": "Clobetasol 0.01 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2378560",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40868292,
+      "conceptName": "Clobetasol 0.0167 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2066254",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304910,
+      "conceptName": "Clobetasol 0.0167 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502872",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304916,
+      "conceptName": "Clobetasol 0.0333 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502878",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41023998,
+      "conceptName": "Clobetasol 0.0333 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2221960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21121120,
+      "conceptName": "Clobetasol 0.5 MG/ML / Neomycin 5 MG/ML / Nystatin 100 UNT/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP364062",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41149526,
+      "conceptName": "Clobetasol 0.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2347488",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36506841,
+      "conceptName": "Clobetasol 0.5 MG/ML Medicated Bar Soap",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4834760",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893767,
+      "conceptName": "Clobetasol 0.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996770",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408194,
+      "conceptName": "Clobetasol 0.5 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1141779",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894706,
+      "conceptName": "Clobetasol 0.5 MG/ML Topical Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004265",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793230,
+      "conceptName": "Emollient clobetasol propionate 0.5 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1992281",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793227,
+      "conceptName": "Emollient clobetasol propionate 0.5 MG/ML Topical Foam",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1992273",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105072,
+      "conceptName": "clobetasol 0.000125 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "418067",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069808,
+      "conceptName": "clobetasol 0.00025 MG/MG / propylene glycol 0.475 MG/MG / salicylic acid 0.002 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996543",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234945,
+      "conceptName": "clobetasol 0.00025 MG/MG Mucosal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215648",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234946,
+      "conceptName": "clobetasol 0.00025 MG/MG Oral Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215649",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069812,
+      "conceptName": "clobetasol 0.00045 MG/MG / coal tar 0.06 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996547",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069809,
+      "conceptName": "clobetasol 0.000475 MG/MG / coal tar 0.03 MG/MG / salicylic acid 0.02 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996544",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069811,
+      "conceptName": "clobetasol 0.000475 MG/MG / coal tar 0.05 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996546",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069810,
+      "conceptName": "clobetasol 0.000475 MG/MG / coal tar 0.05 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069807,
+      "conceptName": "clobetasol 0.000475 MG/MG / salicylic acid 0.05 MG/MG Topical Cream",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4996542",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35888456,
+      "conceptName": "clobetasol 0.0005 MG/MG / tacrolimus 0.003 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5036018",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234947,
+      "conceptName": "clobetasol 0.0005 MG/MG Mucosal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215650",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35831967,
+      "conceptName": "clobetasol 0.0005 MG/MG Topical Lotion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5036427",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 998456,
+      "conceptName": "clobetasol 0.05 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "544934",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234948,
+      "conceptName": "clobetasol 0.25 MG/ML Mouthwash",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215651",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2073382,
+      "conceptName": "clobetasol 0.466 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4975023",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1970320,
+      "conceptName": "clobetasol 0.5 MG/MG Topical Foam",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5162905",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234949,
+      "conceptName": "clobetasol 0.5 MG/ML Mouthwash",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215652",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35872987,
+      "conceptName": "clobetasol 2 MG Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5030381",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164501,
+      "conceptName": "clobetasol propionate 0.0005 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861434",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164505,
+      "conceptName": "clobetasol propionate 0.0005 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861448",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793716,
+      "conceptName": "clobetasol propionate 0.25 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1995455",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164514,
+      "conceptName": "clobetasol propionate 0.5 MG/ML Medicated Shampoo",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861490",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1734479,
+      "conceptName": "clobetasol propionate 0.5 MG/ML Ophthalmic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2683740",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164516,
+      "conceptName": "clobetasol propionate 0.5 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861495",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164521,
+      "conceptName": "clobetasol propionate 0.5 MG/ML Topical Foam",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861353",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164523,
+      "conceptName": "clobetasol propionate 0.5 MG/ML Topical Lotion",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861505",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164525,
+      "conceptName": "clobetasol propionate 0.5 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861487",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40164529,
+      "conceptName": "clobetasol propionate 0.5 MG/ML Topical Spray",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "861512",
+      "standardConcept": "S"
+    }
+  ]
+}

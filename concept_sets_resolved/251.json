@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 251,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37151809,
+      "conceptName": "Carbapenemase-producing Raoultella ornithinolytica",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1105401000112106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37156029,
+      "conceptName": "Extended spectrum beta-lactamase producing Raoultella ornithinolytica",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1105501000112105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4212063,
+      "conceptName": "Raoultella ornithinolytica",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "416832000",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 34,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43139238,
+      "conceptName": "apixaban 2.5 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP486584",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43013026,
+      "conceptName": "apixaban 2.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1364435",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43139239,
+      "conceptName": "apixaban 5 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP486595",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43013030,
+      "conceptName": "apixaban 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1364445",
+      "standardConcept": "S"
+    }
+  ]
+}

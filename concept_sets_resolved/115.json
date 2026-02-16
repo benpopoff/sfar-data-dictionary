@@ -1,0 +1,185 @@
+{
+  "conceptSetId": 115,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41273675,
+      "conceptName": "Cortisone 0.00001 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2471637",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40836991,
+      "conceptName": "Cortisone 0.005 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2034953",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41242778,
+      "conceptName": "Cortisone 0.01 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2440740",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21148590,
+      "conceptName": "Cortisone 0.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP377914",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21138740,
+      "conceptName": "Cortisone 0.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP377933",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21060247,
+      "conceptName": "Cortisone 1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP377759",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40992889,
+      "conceptName": "Cortisone 12 X Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2190851",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21168339,
+      "conceptName": "Cortisone 5 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP377705",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865658,
+      "conceptName": "cortisone 0.0025 MG/MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021764",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19108520,
+      "conceptName": "cortisone 0.005 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "436611",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105262,
+      "conceptName": "cortisone 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "418981",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1507706,
+      "conceptName": "cortisone 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197543",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865654,
+      "conceptName": "cortisone 2500 MG Ophthalmic Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021760",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35865655,
+      "conceptName": "cortisone 2500 MG Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5021761",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1507707,
+      "conceptName": "cortisone 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "197545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19108519,
+      "conceptName": "cortisone 5 MG/ML Topical Cream",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "436610",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19075849,
+      "conceptName": "cortisone 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "309542",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19032449,
+      "conceptName": "cortisone 50 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "206445",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1507735,
+      "conceptName": "cortisone acetate 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "828248",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1507738,
+      "conceptName": "cortisone acetate 25 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "828286",
+      "standardConcept": "S"
+    }
+  ]
+}

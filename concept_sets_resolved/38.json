@@ -1,0 +1,68 @@
+{
+  "conceptSetId": 38,
+  "resolvedConcepts": [
+    {
+      "conceptId": 2912580,
+      "conceptName": "bivalirudin 100 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5129350",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43023767,
+      "conceptName": "bivalirudin 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4838885",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41212596,
+      "conceptName": "bivalirudin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2410558",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44059183,
+      "conceptName": "bivalirudin 250 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1053814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19074279,
+      "conceptName": "bivalirudin 250 MG Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "308769",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888705,
+      "conceptName": "bivalirudin 250 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003452",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 793488,
+      "conceptName": "bivalirudin 5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1997016",
+      "standardConcept": "S"
+    }
+  ]
+}

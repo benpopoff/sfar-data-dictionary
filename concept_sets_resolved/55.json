@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 55,
+  "resolvedConcepts": [
+    {
+      "conceptId": 43837037,
+      "conceptName": "Phenprocoumon 1.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP943173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41302483,
+      "conceptName": "Phenprocoumon 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2500445",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235796,
+      "conceptName": "phenprocoumon 1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216504",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19079272,
+      "conceptName": "phenprocoumon 3 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "312380",
+      "standardConcept": "S"
+    }
+  ]
+}

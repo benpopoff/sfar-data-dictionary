@@ -1,0 +1,131 @@
+{
+  "conceptSetId": 101,
+  "resolvedConcepts": [
+    {
+      "conceptId": 1355733,
+      "conceptName": "mometasone furoate 1 MG/ML / orbifloxacin 10 MG/ML / posaconazole 1 MG/ML Otic Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2105737",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41115418,
+      "conceptName": "posaconazole 0.381 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2313380",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36274899,
+      "conceptName": "posaconazole 100 MG Delayed Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3125774",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44785056,
+      "conceptName": "posaconazole 100 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1482908",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36885887,
+      "conceptName": "posaconazole 100 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999954",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41146966,
+      "conceptName": "posaconazole 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2344928",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40896880,
+      "conceptName": "posaconazole 18 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2094842",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606456,
+      "conceptName": "posaconazole 18 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1724197",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36782016,
+      "conceptName": "posaconazole 18 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4770301",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35410524,
+      "conceptName": "posaconazole 18 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1144109",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44785880,
+      "conceptName": "posaconazole 200 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1487912",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1537174,
+      "conceptName": "posaconazole 300 MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2558603",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41021385,
+      "conceptName": "posaconazole 40 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2219347",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19125036,
+      "conceptName": "posaconazole 40 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "665019",
+      "standardConcept": "S"
+    }
+  ]
+}

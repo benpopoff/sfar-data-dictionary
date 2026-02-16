@@ -1,0 +1,86 @@
+{
+  "conceptSetId": 128,
+  "resolvedConcepts": [
+    {
+      "conceptId": 40900745,
+      "conceptName": "Alfentanil 0.25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2098707",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887746,
+      "conceptName": "Alfentanil 0.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991873",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480119,
+      "conceptName": "Alfentanil 0.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417359",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21113992,
+      "conceptName": "Alfentanil 1 MG/ML Nasal Spray",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP409354",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480120,
+      "conceptName": "Alfentanil 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417362",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19002645,
+      "conceptName": "alfentanil 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "103746",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606191,
+      "conceptName": "alfentanil 0.5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1723207",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2043059,
+      "conceptName": "alfentanil 0.544 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4943033",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19009034,
+      "conceptName": "alfentanil 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "106500",
+      "standardConcept": "S"
+    }
+  ]
+}

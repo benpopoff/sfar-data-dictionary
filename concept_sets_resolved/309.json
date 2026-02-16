@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 309,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4308797,
+      "conceptName": "Trial of spontaneous breathing",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "424139009",
+      "standardConcept": "S"
+    }
+  ]
+}

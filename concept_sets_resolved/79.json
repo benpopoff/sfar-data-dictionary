@@ -1,0 +1,1805 @@
+{
+  "conceptSetId": 79,
+  "resolvedConcepts": [
+    {
+      "conceptId": 42723271,
+      "conceptName": "Amoxicillin 0.333 MG/MG / Clavulanate 0.0416 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2730963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43138597,
+      "conceptName": "Amoxicillin 0.333 MG/MG / Clavulanate 0.0417 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP480923",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42713883,
+      "conceptName": "Amoxicillin 0.333 MG/MG / Clavulanate 0.0418 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2726580",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715180,
+      "conceptName": "Amoxicillin 0.5 MG/MG / Clavulanate 0.0623 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724991",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42721964,
+      "conceptName": "Amoxicillin 0.5 MG/MG / Clavulanate 0.0624 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2736480",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43138625,
+      "conceptName": "Amoxicillin 0.5 MG/MG / Clavulanate 0.0625 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP481107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42715179,
+      "conceptName": "Amoxicillin 0.637 MG/MG / Clavulanate 0.0796 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727096",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43204640,
+      "conceptName": "Amoxicillin 0.638 MG/MG / Clavulanate 0.0798 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP481162",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42723273,
+      "conceptName": "Amoxicillin 0.639 MG/MG / Clavulanate 0.0795 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2738478",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712586,
+      "conceptName": "Amoxicillin 0.639 MG/MG / Clavulanate 0.0797 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724356",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884817,
+      "conceptName": "Amoxicillin 0.639 MG/MG / Clavulanate 0.0798 MG/MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995817",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43658412,
+      "conceptName": "Amoxicillin 0.789 MG/MG / Clavulanate 0.211 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP658827",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42713882,
+      "conceptName": "Amoxicillin 0.791 MG/MG / Clavulanate 0.211 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2736938",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889743,
+      "conceptName": "Amoxicillin 0.815 MG/MG / Clavulanate 0.183 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004576",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720604,
+      "conceptName": "Amoxicillin 0.815 MG/MG / Clavulanate 0.184 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2727177",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881038,
+      "conceptName": "Amoxicillin 0.816 MG/MG / Clavulanate 0.184 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991666",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880069,
+      "conceptName": "Amoxicillin 0.817 MG/MG / Clavulanate 0.183 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993263",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43640296,
+      "conceptName": "Amoxicillin 0.817 MG/MG / Clavulanate 0.184 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP658837",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43586083,
+      "conceptName": "Amoxicillin 0.882 MG/MG / Clavulanate 0.118 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP658828",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42729905,
+      "conceptName": "Amoxicillin 0.883 MG/MG / Clavulanate 0.118 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2728293",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891711,
+      "conceptName": "Amoxicillin 0.898 MG/MG / Clavulanate 0.101 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995759",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43694287,
+      "conceptName": "Amoxicillin 0.899 MG/MG / Clavulanate 0.101 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP658839",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21160122,
+      "conceptName": "Amoxicillin 10 MG/ML / Clavulanate 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP355153",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43160777,
+      "conceptName": "Amoxicillin 100 MG/ML / Clavulanate 12.5 MG/ML Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP481184",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43028772,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4843851",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36257290,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 100 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3108165",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892703,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 100 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001120",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43028736,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 125 MG Powder for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4843816",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36879271,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 149 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004406",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44180228,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 156 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3056951",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888742,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 156 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407488,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099530",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21160118,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 200 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP355070",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894624,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 200 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997871",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181742,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 240 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379704",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36884816,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 278 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP994328",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36270023,
+      "conceptName": "Amoxicillin 1000 MG / Clavulanate 62.5 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3120898",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150695,
+      "conceptName": "Amoxicillin 11.5 MG/ML / Clavulanate 3 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348657",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882896,
+      "conceptName": "Amoxicillin 120 MG/ML / Clavulanate 14.9 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996486",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42951326,
+      "conceptName": "Amoxicillin 125 MG / Clavulanate 31.2 MG Tablet for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4677897",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42951876,
+      "conceptName": "Amoxicillin 125 MG / Clavulanate 62.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4678438",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44172776,
+      "conceptName": "Amoxicillin 150 MG / Clavulanate 37.5 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3049499",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41119172,
+      "conceptName": "Amoxicillin 150 MG / Clavulanate 37.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2317134",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41244093,
+      "conceptName": "Amoxicillin 20 MG/ML / Clavulanate 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2442055",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21140339,
+      "conceptName": "Amoxicillin 20 MG/ML / Clavulanate 4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP355160",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41150696,
+      "conceptName": "Amoxicillin 20 MG/ML / Clavulanate 4.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2348658",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42951317,
+      "conceptName": "Amoxicillin 200 MG / Clavulanate 50 MG Tablet for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4677888",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 783197,
+      "conceptName": "Amoxicillin 2000 MG / Clavulanate 200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4831028",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36272567,
+      "conceptName": "Amoxicillin 2000 MG / Clavulanate 200 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3123442",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883887,
+      "conceptName": "Amoxicillin 2000 MG / Clavulanate 200 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003929",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41306085,
+      "conceptName": "Amoxicillin 2000 MG / Clavulanate 240 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2504047",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43028703,
+      "conceptName": "Amoxicillin 25 MG/ML / Clavulanate 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4843783",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894623,
+      "conceptName": "Amoxicillin 25 MG/ML / Clavulanate 2.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993017",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41025194,
+      "conceptName": "Amoxicillin 25 MG/ML / Clavulanate 6.25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2223156",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44085126,
+      "conceptName": "Amoxicillin 25 MG/ML / Clavulanate 6.25 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1079757",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43265620,
+      "conceptName": "Amoxicillin 25 MG/ML / Clavulanate 6.25 MG/ML Powder for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP547724",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408187,
+      "conceptName": "Amoxicillin 250 MG / Clavulanate 125 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3100229",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41306086,
+      "conceptName": "Amoxicillin 250 MG / Clavulanate 31.2 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2504048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887743,
+      "conceptName": "Amoxicillin 28.7 MG/ML / Clavulanate 7.44 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000443",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889742,
+      "conceptName": "Amoxicillin 28.7 MG/ML / Clavulanate 7.44 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP988371",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44187719,
+      "conceptName": "Amoxicillin 28.7 MG/ML / Clavulanate 7.45 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3064442",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881989,
+      "conceptName": "Amoxicillin 28.7 MG/ML / Clavulanate 7.45 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP995606",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40931591,
+      "conceptName": "Amoxicillin 28.7 MG/ML / Clavulanate 8.58 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2129553",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42720605,
+      "conceptName": "Amoxicillin 28.8 MG/ML / Clavulanate 7.44 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2737040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42712585,
+      "conceptName": "Amoxicillin 28.8 MG/ML / Clavulanate 7.44 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2724257",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44165194,
+      "conceptName": "Amoxicillin 300 MG / Clavulanate 75 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3041917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44124125,
+      "conceptName": "Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118756",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42951831,
+      "conceptName": "Amoxicillin 400 MG / Clavulanate 57 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4678396",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881039,
+      "conceptName": "Amoxicillin 50 MG/ML / Clavulanate 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1004390",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41213114,
+      "conceptName": "Amoxicillin 50 MG/ML / Clavulanate 12.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2411076",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44124126,
+      "conceptName": "Amoxicillin 50 MG/ML / Clavulanate 12.5 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1118757",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41274998,
+      "conceptName": "Amoxicillin 50 MG/ML / Clavulanate 14.9 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472960",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408959,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3101001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21042264,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 100 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP355169",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36879320,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 100 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993458",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36272564,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 125 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3123439",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36259782,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 125 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3110657",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41056407,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 125 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2254369",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36264938,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 125 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3115813",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43028689,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 50 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4843771",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36257288,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 50 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3108163",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43193634,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 50 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP481088",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43160751,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 62.5 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP480954",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41275001,
+      "conceptName": "Amoxicillin 500 MG / Clavulanate 62.5 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2472963",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880068,
+      "conceptName": "Amoxicillin 60 MG/ML / Clavulanate 14.8 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992377",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887744,
+      "conceptName": "Amoxicillin 60 MG/ML / Clavulanate 14.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998717",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890735,
+      "conceptName": "Amoxicillin 60 MG/ML / Clavulanate 14.9 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993679",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44180233,
+      "conceptName": "Amoxicillin 60 MG/ML / Clavulanate 14.9 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3056956",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36883885,
+      "conceptName": "Amoxicillin 60 MG/ML / Clavulanate 14.9 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999879",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44183964,
+      "conceptName": "Amoxicillin 600 MG / Clavulanate 149 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3060687",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888740,
+      "conceptName": "Amoxicillin 600 MG / Clavulanate 149 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999354",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886770,
+      "conceptName": "Amoxicillin 600 MG / Clavulanate 162 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP998347",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893692,
+      "conceptName": "Amoxicillin 600 MG / Clavulanate 278 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003522",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44072256,
+      "conceptName": "Amoxicillin 80 MG/ML / Clavulanate 11.4 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1066887",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43260193,
+      "conceptName": "Amoxicillin 80 MG/ML / Clavulanate 11.4 MG/ML Powder for Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP546832",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36264940,
+      "conceptName": "Amoxicillin 875 MG / Clavulanate 125 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3115815",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36270021,
+      "conceptName": "Amoxicillin 875 MG / Clavulanate 125 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3120896",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36267519,
+      "conceptName": "Amoxicillin 875 MG / Clavulanate 125 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3118394",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43658797,
+      "conceptName": "Clavulanate 0.00744 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665097",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43730502,
+      "conceptName": "Clavulanate 0.00744 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43658801,
+      "conceptName": "Clavulanate 0.00745 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42713885,
+      "conceptName": "Clavulanate 0.00748 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2743068",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893693,
+      "conceptName": "Clavulanate 0.0148 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005957",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43766399,
+      "conceptName": "Clavulanate 0.0149 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665121",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43640657,
+      "conceptName": "Clavulanate 0.0149 MG/MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665119",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43676839,
+      "conceptName": "Clavulanate 0.0149 MG/MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665128",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43029946,
+      "conceptName": "Clavulanate 0.0344 MG/MG / Ticarcillin 0.861 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4845015",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43640659,
+      "conceptName": "Clavulanate 0.101 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665165",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43586449,
+      "conceptName": "Clavulanate 0.183 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665136",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881040,
+      "conceptName": "Clavulanate 0.184 MG/MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005383",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42948459,
+      "conceptName": "Clavulanate 100 MG / Ticarcillin 1650 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4675049",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 588691,
+      "conceptName": "Clavulanate 100 MG / Ticarcillin 3000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3136486",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110413,
+      "conceptName": "Clavulanate 100 MG / Ticarcillin 3000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105044",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43293351,
+      "conceptName": "Clavulanate 100 MG / Ticarcillin 3000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP528539",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032321,
+      "conceptName": "Clavulanate 1000 MG / Ticarcillin 30000 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1026952",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43748416,
+      "conceptName": "Clavulanate 12.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP665159",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40993055,
+      "conceptName": "Clavulanate 125 MG / Ticarcillin 1650 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2191017",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36890738,
+      "conceptName": "Clavulanate 14.9 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP993709",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36408962,
+      "conceptName": "Clavulanate 200 MG / Ticarcillin 3000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3101004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21032172,
+      "conceptName": "Clavulanate 200 MG / Ticarcillin 3000 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP352292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881229,
+      "conceptName": "Clavulanate 200 MG / Ticarcillin 3000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889916,
+      "conceptName": "Clavulanate 200 MG / Ticarcillin 5000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996256",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41055254,
+      "conceptName": "Clavulanate 24 MG / Ticarcillin 550 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2253216",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41304932,
+      "conceptName": "Clavulanate 240 MG / Ticarcillin 3000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2502894",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40837152,
+      "conceptName": "Clavulanate 240 MG / Ticarcillin 5000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2035114",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42721966,
+      "conceptName": "Clavulanate 7.43 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2737763",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36892704,
+      "conceptName": "Clavulanate 7.44 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997462",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1355750,
+      "conceptName": "amoxicillin 100 MG / clavulanate 25 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2105786",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1355740,
+      "conceptName": "amoxicillin 100 MG / clavulanate 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2105776",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052143,
+      "conceptName": "amoxicillin 100 MG / clavulanate 25 MG Tablet for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952645",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123643,
+      "conceptName": "amoxicillin 100 MG/ML / clavulanate 12.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "618001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123644,
+      "conceptName": "amoxicillin 100 MG/ML / clavulanate 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "618002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051938,
+      "conceptName": "amoxicillin 1000 MG / clavulanate 240 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952432",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713699,
+      "conceptName": "amoxicillin 1000 MG / clavulanate 62.5 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617989",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051745,
+      "conceptName": "amoxicillin 10000 MG / clavulanate 1430 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952229",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2918362,
+      "conceptName": "amoxicillin 120 MG/ML / clavulanate 8.58 MG/ML Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5135183",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1760056,
+      "conceptName": "amoxicillin 120 MG/ML / clavulanate 8.58 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051739,
+      "conceptName": "amoxicillin 12000 MG / clavulanate 1710 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952223",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1759848,
+      "conceptName": "amoxicillin 125 MG / clavulanate 31.2 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562253",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052121,
+      "conceptName": "amoxicillin 125 MG / clavulanate 31.2 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235593,
+      "conceptName": "amoxicillin 125 MG / clavulanate 31.2 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216299",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052207,
+      "conceptName": "amoxicillin 125 MG / clavulanate 8.58 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952705",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051828,
+      "conceptName": "amoxicillin 1250 MG / clavulanate 313 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952312",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051736,
+      "conceptName": "amoxicillin 12500 MG / clavulanate 3130 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952220",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051819,
+      "conceptName": "amoxicillin 1600 MG / clavulanate 228 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123645,
+      "conceptName": "amoxicillin 20 MG/ML / clavulanate 2.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "618003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123591,
+      "conceptName": "amoxicillin 200 MG / clavulanate 28.5 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617309",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1355756,
+      "conceptName": "amoxicillin 200 MG / clavulanate 50 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2105792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220673,
+      "conceptName": "amoxicillin 200 MG / clavulanate 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1810270",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19124564,
+      "conceptName": "amoxicillin 200 MG/ML / clavulanate 28 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "645806",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1971622,
+      "conceptName": "amoxicillin 2000 MG / clavulanate 200 MG Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5164194",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051884,
+      "conceptName": "amoxicillin 2000 MG / clavulanate 278 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952374",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051710,
+      "conceptName": "amoxicillin 20000 MG / clavulanate 2850 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952196",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052275,
+      "conceptName": "amoxicillin 25 MG / clavulanate 6.25 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952772",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123642,
+      "conceptName": "amoxicillin 25 MG/ML / clavulanate 12.4 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "618000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19105350,
+      "conceptName": "amoxicillin 25 MG/ML / clavulanate 12.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "420111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713698,
+      "conceptName": "amoxicillin 25 MG/ML / clavulanate 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617975",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123585,
+      "conceptName": "amoxicillin 25 MG/ML / clavulanate 6.25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617302",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713671,
+      "conceptName": "amoxicillin 250 MG / clavulanate 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562251",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123587,
+      "conceptName": "amoxicillin 250 MG / clavulanate 62.5 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235596,
+      "conceptName": "amoxicillin 250 MG / clavulanate 62.5 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216302",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235598,
+      "conceptName": "amoxicillin 250 MG / clavulanate 62.5 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235597,
+      "conceptName": "amoxicillin 250 MG / clavulanate 62.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216303",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051815,
+      "conceptName": "amoxicillin 2500 MG / clavulanate 625 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952300",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051809,
+      "conceptName": "amoxicillin 2800 MG / clavulanate 399 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952294",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1355759,
+      "conceptName": "amoxicillin 300 MG / clavulanate 75 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2105795",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220676,
+      "conceptName": "amoxicillin 300 MG / clavulanate 75 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1810273",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052421,
+      "conceptName": "amoxicillin 40 MG / clavulanate 5.7 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713697,
+      "conceptName": "amoxicillin 40 MG/ML / clavulanate 5.7 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617423",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123639,
+      "conceptName": "amoxicillin 400 MG / clavulanate 28.5 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617981",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1759877,
+      "conceptName": "amoxicillin 400 MG / clavulanate 57 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617316",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051806,
+      "conceptName": "amoxicillin 4000 MG / clavulanate 570 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051857,
+      "conceptName": "amoxicillin 438 MG / clavulanate 62.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952343",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713693,
+      "conceptName": "amoxicillin 5 MG/ML / clavulanate 2.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617293",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1355762,
+      "conceptName": "amoxicillin 50 MG / clavulanate 12.5 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2105798",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052158,
+      "conceptName": "amoxicillin 50 MG / clavulanate 12.5 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952657",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40220671,
+      "conceptName": "amoxicillin 50 MG / clavulanate 12.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1810268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1759851,
+      "conceptName": "amoxicillin 50 MG/ML / clavulanate 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617295",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1759879,
+      "conceptName": "amoxicillin 50 MG/ML / clavulanate 12.5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617322",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1760054,
+      "conceptName": "amoxicillin 50 MG/ML / clavulanate 25 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617976",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1713694,
+      "conceptName": "amoxicillin 500 MG / clavulanate 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617296",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051753,
+      "conceptName": "amoxicillin 6000 MG / clavulanate 429 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051678,
+      "conceptName": "amoxicillin 62.5 MG / clavulanate 15.6 MG Tablet for Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952165",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2051747,
+      "conceptName": "amoxicillin 6250 MG / clavulanate 1560 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952231",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2052162,
+      "conceptName": "amoxicillin 80 MG / clavulanate 11.4 MG Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4952661",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123605,
+      "conceptName": "amoxicillin 80 MG/ML / clavulanate 11.4 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617430",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19123640,
+      "conceptName": "amoxicillin 800 MG / clavulanate 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "617996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36036161,
+      "conceptName": "amoxicillin 875 MG / clavulanate 125 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5046166",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115197,
+      "conceptName": "amoxicillin 875 MG / clavulanate 125 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562508",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1759847,
+      "conceptName": "clavulanate 1 MG/ML / ticarcillin 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "351239",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2053421,
+      "conceptName": "clavulanate 100 MG / ticarcillin 1500 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4953996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859573,
+      "conceptName": "clavulanate 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016173",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859582,
+      "conceptName": "clavulanate 11.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016182",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859579,
+      "conceptName": "clavulanate 12.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016179",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859571,
+      "conceptName": "clavulanate 200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016171",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859576,
+      "conceptName": "clavulanate 28.5 MG Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016176",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35859575,
+      "conceptName": "clavulanate 57 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5016175",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19006466,
+      "conceptName": "clavulanic acid 1 MG/ML / ticarcillin 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "105167",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19057774,
+      "conceptName": "clavulanic acid 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "240394",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115097,
+      "conceptName": "clavulanic acid 2 MG/ML / ticarcillin 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "562057",
+      "standardConcept": "S"
+    }
+  ]
+}

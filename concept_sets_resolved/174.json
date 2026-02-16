@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 174,
+  "resolvedConcepts": [
+    {
+      "conceptId": 46235106,
+      "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "76625-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3006923,
+      "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1742-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3027388,
+      "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1744-2",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3005755,
+      "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1743-4",
+      "standardConcept": "S"
+    }
+  ]
+}

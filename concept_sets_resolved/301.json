@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 301,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3020716,
+      "conceptName": "Inhaled oxygen concentration",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "3150-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4353936,
+      "conceptName": "Inspired oxygen concentration",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "250774007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3026238,
+      "conceptName": "Oxygen/Inspired gas Respiratory system --on ventilator",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "19996-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3025408,
+      "conceptName": "Oxygen/Inspired gas Respiratory system by O2 Analyzer --on ventilator",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "19995-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3024882,
+      "conceptName": "Oxygen/Total gas setting [Volume Fraction] Ventilator",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "19994-3",
+      "standardConcept": "S"
+    }
+  ]
+}

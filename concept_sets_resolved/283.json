@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 283,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36659649,
+      "conceptName": "Intensive care unit (ICU) discharge date",
+      "vocabularyId": "LOINC",
+      "domainId": "Observation",
+      "conceptClassId": "Clinical Observation",
+      "conceptCode": "95368-7",
+      "standardConcept": "S"
+    }
+  ]
+}

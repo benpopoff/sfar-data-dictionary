@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 222,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3015672,
+      "conceptName": "Urea [Moles/volume] in 24 hour Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "25998-6",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3012898,
+      "conceptName": "Urea [Moles/volume] in Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "22700-9",
+      "standardConcept": "S"
+    }
+  ]
+}

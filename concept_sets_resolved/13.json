@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 13,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4105091,
+      "conceptName": "Ramsay sedation scale",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Staging / Scales",
+      "conceptCode": "281400004",
+      "standardConcept": "S"
+    }
+  ]
+}

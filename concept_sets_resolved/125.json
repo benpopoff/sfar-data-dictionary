@@ -1,0 +1,104 @@
+{
+  "conceptSetId": 125,
+  "resolvedConcepts": [
+    {
+      "conceptId": 36894766,
+      "conceptName": "insulin detemir 100 UNT/ML Cartridge",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991401",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1516978,
+      "conceptName": "insulin detemir 100 UNT/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "484322",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44161177,
+      "conceptName": "insulin detemir 100 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3037900",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891850,
+      "conceptName": "insulin detemir 100 UNT/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006321",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902821,
+      "conceptName": "insulin detemir 100 UNT/ML Pen Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359934",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409752,
+      "conceptName": "insulin detemir 100 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1143337",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42949464,
+      "conceptName": "insulin detemir 14.2 MG/ML Pen Injector",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4676048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35156395,
+      "conceptName": "insulin detemir 300 UNT Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4813405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36262203,
+      "conceptName": "insulin detemir 33.3 UNT/ML / insulin, isophane 70 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3113078",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44172551,
+      "conceptName": "insulin detemir 33.3 UNT/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3049274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41053849,
+      "conceptName": "insulin detemir 33.3 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2251811",
+      "standardConcept": "S"
+    }
+  ]
+}

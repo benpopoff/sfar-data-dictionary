@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 292,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37206602,
+      "conceptName": "Arteriovenous extracorporeal membrane oxygenation",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "786452006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4052536,
+      "conceptName": "Extracorporeal membrane oxygenation",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "233573008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37206601,
+      "conceptName": "Venoarterial extracorporeal membrane oxygenation",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "786451004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37206603,
+      "conceptName": "Venovenous extracorporeal membrane oxygenation",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "786453001",
+      "standardConcept": "S"
+    }
+  ]
+}

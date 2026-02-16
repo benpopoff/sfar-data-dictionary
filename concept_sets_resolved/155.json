@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 155,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3041706,
+      "conceptName": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "53138-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40757497,
+      "conceptName": "Calcium.ionized [Moles/volume] adjusted to pH 7.4 in Cord blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "54366-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3044331,
+      "conceptName": "Calcium.ionized [Moles/volume] in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "34581-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40757498,
+      "conceptName": "Calcium.ionized [Moles/volume] in Cord blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "54367-8",
+      "standardConcept": "S"
+    }
+  ]
+}

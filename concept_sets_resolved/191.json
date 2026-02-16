@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 191,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3006315,
+      "conceptName": "Basophils [#/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26444-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3013429,
+      "conceptName": "Basophils [#/volume] in Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "704-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3027651,
+      "conceptName": "Basophils [#/volume] in Blood by Manual count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "705-4",
+      "standardConcept": "S"
+    }
+  ]
+}

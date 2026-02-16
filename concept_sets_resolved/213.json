@@ -1,0 +1,41 @@
+{
+  "conceptSetId": 213,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3009810,
+      "conceptName": "Urea [Mass/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "20977-5",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43534077,
+      "conceptName": "Urea [Moles/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "72903-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3020779,
+      "conceptName": "Urea [Moles/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "22664-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43534100,
+      "conceptName": "Urea [Moles/volume] in Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "72926-9",
+      "standardConcept": "S"
+    }
+  ]
+}

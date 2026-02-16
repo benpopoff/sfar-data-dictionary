@@ -1,0 +1,23 @@
+{
+  "conceptSetId": 220,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3010796,
+      "conceptName": "Potassium [Moles/volume] in 24 hour Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "21476-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3016038,
+      "conceptName": "Potassium [Moles/volume] in Urine",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2828-2",
+      "standardConcept": "S"
+    }
+  ]
+}

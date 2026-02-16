@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 296,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4196006,
+      "conceptName": "Placing subject in prone position",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "431182000",
+      "standardConcept": "S"
+    }
+  ]
+}

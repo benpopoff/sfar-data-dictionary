@@ -1,0 +1,32 @@
+{
+  "conceptSetId": 196,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3019198,
+      "conceptName": "Lymphocytes [#/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "26474-7",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3004327,
+      "conceptName": "Lymphocytes [#/volume] in Blood by Automated count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "731-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3003215,
+      "conceptName": "Lymphocytes [#/volume] in Blood by Manual count",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "732-8",
+      "standardConcept": "S"
+    }
+  ]
+}

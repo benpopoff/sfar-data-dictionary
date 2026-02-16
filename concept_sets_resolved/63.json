@@ -1,0 +1,473 @@
+{
+  "conceptSetId": 63,
+  "resolvedConcepts": [
+    {
+      "conceptId": 784023,
+      "conceptName": "Amikacin 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4831850",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36267531,
+      "conceptName": "Amikacin 10 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3118406",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36882856,
+      "conceptName": "Amikacin 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992833",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35135161,
+      "conceptName": "Amikacin 100 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4792359",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35161142,
+      "conceptName": "Amikacin 100 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4818116",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43036828,
+      "conceptName": "Amikacin 1000 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4851868",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43135329,
+      "conceptName": "Amikacin 1000 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP451474",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36893647,
+      "conceptName": "Amikacin 13.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41181814,
+      "conceptName": "Amikacin 134 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2379776",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889703,
+      "conceptName": "Amikacin 2.4 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000073",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42928413,
+      "conceptName": "Amikacin 200 MG Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4655208",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40721705,
+      "conceptName": "Amikacin 25 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4735437",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43036832,
+      "conceptName": "Amikacin 250 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4851872",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43212166,
+      "conceptName": "Amikacin 250 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP451454",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44110906,
+      "conceptName": "Amikacin 250 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1105537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479655,
+      "conceptName": "Amikacin 250 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36887691,
+      "conceptName": "Amikacin 334 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003903",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36259790,
+      "conceptName": "Amikacin 5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3110665",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880998,
+      "conceptName": "Amikacin 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000542",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480216,
+      "conceptName": "Amikacin 50 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP417781",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43036837,
+      "conceptName": "Amikacin 500 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4851877",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43179416,
+      "conceptName": "Amikacin 500 MG Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP451461",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881950,
+      "conceptName": "Amikacin 6.67 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP996302",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888698,
+      "conceptName": "Amikacin 6.68 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP999985",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40994237,
+      "conceptName": "Amikacin 668 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2192199",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2047712,
+      "conceptName": "amikacin 0.05 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4948042",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104621,
+      "conceptName": "amikacin 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415815",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1790906,
+      "conceptName": "amikacin 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "252662",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104450,
+      "conceptName": "amikacin 175 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415060",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104636,
+      "conceptName": "amikacin 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415863",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104638,
+      "conceptName": "amikacin 2.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415865",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35858624,
+      "conceptName": "amikacin 2.4 MG/ML Ophthalmic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014958",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35858625,
+      "conceptName": "amikacin 2.4 MG/ML Topical Ointment",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5014959",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104632,
+      "conceptName": "amikacin 2.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415859",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1790905,
+      "conceptName": "amikacin 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "252661",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35830607,
+      "conceptName": "amikacin 200 MG Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5038069",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606164,
+      "conceptName": "amikacin 250 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1723157",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104637,
+      "conceptName": "amikacin 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415864",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104639,
+      "conceptName": "amikacin 3.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415866",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104633,
+      "conceptName": "amikacin 3.6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415860",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104631,
+      "conceptName": "amikacin 4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415858",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104634,
+      "conceptName": "amikacin 4.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415861",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104622,
+      "conceptName": "amikacin 4.8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415816",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104635,
+      "conceptName": "amikacin 5.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "415862",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604628,
+      "conceptName": "amikacin 50 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1727175",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1971685,
+      "conceptName": "amikacin 59 MG/ML Inhalation Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5164256",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36120166,
+      "conceptName": "amikacin 590 MG Inhalation Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5049096",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35200928,
+      "conceptName": "amikacin liposomal 70.3 MG/ML Inhalation Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2059184",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173554,
+      "conceptName": "amikacin sulfate 125 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "905152",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173560,
+      "conceptName": "amikacin sulfate 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "905156",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173562,
+      "conceptName": "amikacin sulfate 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "905148",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173566,
+      "conceptName": "amikacin sulfate 62.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "905154",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "conceptSetId": 243,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3657171,
+      "conceptName": "AmpC beta-lactamase producing Klebsiella pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1098101000112102",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1072898,
+      "conceptName": "AmpC beta-lactamase producing Klebsiella pneumoniae subspecies ozaenae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1097801000112105",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1072899,
+      "conceptName": "AmpC beta-lactamase producing Klebsiella pneumoniae subspecies rhinoscleromatis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1098401000112107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40489864,
+      "conceptName": "Carbapenem resistant Klebsiella pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "446870005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3657172,
+      "conceptName": "Carbapenemase-producing Klebsiella pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1098201000112108",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4260332,
+      "conceptName": "Extended spectrum beta-lactamase producing Klebsiella pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "409801009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37016999,
+      "conceptName": "KPC-2 producing Klebsiella pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "713171002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4209452,
+      "conceptName": "Klebsiella pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "56415008",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4083579,
+      "conceptName": "Klebsiella pneumoniae ss. pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "18400002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4275741,
+      "conceptName": "Klebsiella pneumoniae subsp. ozaenae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "65186004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4070556,
+      "conceptName": "Klebsiella pneumoniae subsp. rhinoscleromatis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "17688001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017940,
+      "conceptName": "Multiple drug-resistant Klebsiella pneumoniae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "714315002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37017620,
+      "conceptName": "Multiple drug-resistant Klebsiella pneumoniae subsp. ozaenae",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "713926009",
+      "standardConcept": "S"
+    }
+  ]
+}

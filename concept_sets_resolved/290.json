@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 290,
+  "resolvedConcepts": [
+    {
+      "conceptId": 762209,
+      "conceptName": "Active heathcare surrogate",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Clinical Finding",
+      "conceptCode": "3021000175108",
+      "standardConcept": "S"
+    }
+  ]
+}

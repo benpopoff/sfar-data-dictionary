@@ -1,0 +1,365 @@
+{
+  "conceptSetId": 117,
+  "resolvedConcepts": [
+    {
+      "conceptId": 41243120,
+      "conceptName": "Chloramphenicol 0.002 MG/MG / Fludrocortisone 0.0005 MG/MG Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2441082",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41118225,
+      "conceptName": "Chloramphenicol 2 MG/ML / Fludrocortisone 0.5 MG/ML Prefilled Applicator",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2316187",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21155315,
+      "conceptName": "Fludrocortisone 0.002 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280532",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21057018,
+      "conceptName": "Fludrocortisone 0.004 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280548",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21027613,
+      "conceptName": "Fludrocortisone 0.005 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280559",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21037385,
+      "conceptName": "Fludrocortisone 0.006 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280553",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21066864,
+      "conceptName": "Fludrocortisone 0.01 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280622",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21047267,
+      "conceptName": "Fludrocortisone 0.0125 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280542",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21135495,
+      "conceptName": "Fludrocortisone 0.015 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280566",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21076771,
+      "conceptName": "Fludrocortisone 0.017 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280616",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21125605,
+      "conceptName": "Fludrocortisone 0.02 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280609",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21047272,
+      "conceptName": "Fludrocortisone 0.025 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280626",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21037383,
+      "conceptName": "Fludrocortisone 0.026 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280535",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21047270,
+      "conceptName": "Fludrocortisone 0.03 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280569",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21096286,
+      "conceptName": "Fludrocortisone 0.03 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280529",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21076768,
+      "conceptName": "Fludrocortisone 0.0375 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280575",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21076772,
+      "conceptName": "Fludrocortisone 0.04 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280629",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21135492,
+      "conceptName": "Fludrocortisone 0.05 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280523",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43150657,
+      "conceptName": "Fludrocortisone 0.05 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP490766",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21047268,
+      "conceptName": "Fludrocortisone 0.05 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280563",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21106143,
+      "conceptName": "Fludrocortisone 0.08 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280612",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21165123,
+      "conceptName": "Fludrocortisone 0.1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21106142,
+      "conceptName": "Fludrocortisone 0.12 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280603",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21115928,
+      "conceptName": "Fludrocortisone 0.125 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280606",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40726976,
+      "conceptName": "Fludrocortisone 0.15 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4730174",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21135501,
+      "conceptName": "Fludrocortisone 0.15 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280619",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21076766,
+      "conceptName": "Fludrocortisone 0.17 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280545",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21086524,
+      "conceptName": "Fludrocortisone 0.2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP280556",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43147537,
+      "conceptName": "Fludrocortisone 0.9 MG/ML / Lidocaine 32.5 MG/ML / Neomycin 10 MG/ML / Polymyxin B 10000 UNT/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP462529",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40929578,
+      "conceptName": "Fludrocortisone 0.9 MG/ML / Lidocaine 40 MG/ML / Neomycin 10 MG/ML / Polymyxin B 10000 UNT/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2127540",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36262236,
+      "conceptName": "Fludrocortisone 0.9 MG/ML / Lidocaine 40 MG/ML / Neomycin 7500 UNT/ML / Polymyxin B 10000 UNT/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3113111",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40898480,
+      "conceptName": "Fludrocortisone 0.9 MG/ML / Lidocaine 40 MG/ML / Polymyxin B 10000 UNT/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2096442",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36789746,
+      "conceptName": "Fludrocortisone 1 MG/ML / Lidocaine 40 MG/ML / Neomycin 7500 UNT/ML / Polymyxin B 10000 UNT/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4777992",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40992161,
+      "conceptName": "Fludrocortisone 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2190123",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19104886,
+      "conceptName": "fludrocortisone 0.001 MG/MG / hexamidine 0.001 MG/MG / selenium sulfide 0.01 MG/MG Topical Ointment",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "417015",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235467,
+      "conceptName": "fludrocortisone 0.03 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216174",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1235469,
+      "conceptName": "fludrocortisone 0.0625 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5216176",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36921233,
+      "conceptName": "fludrocortisone 0.1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5197069",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234436,
+      "conceptName": "fludrocortisone 1 MG/ML / lidocaine 40 MG/ML / neomycin 10 MG/ML / polymyxin B 10000 UNT/ML Otic Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215137",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1555142,
+      "conceptName": "fludrocortisone acetate 0.1 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "313979",
+      "standardConcept": "S"
+    }
+  ]
+}

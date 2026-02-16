@@ -1,0 +1,77 @@
+{
+  "conceptSetId": 256,
+  "resolvedConcepts": [
+    {
+      "conceptId": 37311342,
+      "conceptName": "Carbapenem-resistant Serratia marcescens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "816049003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3657175,
+      "conceptName": "Carbapenemase-producing Serratia marcescens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1107201000112104",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37151813,
+      "conceptName": "Extended spectrum beta-lactamase producing Serratia marcescens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "1107301000112107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 37395793,
+      "conceptName": "Multiple drug-resistant Serratia marcescens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "715354005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4140691,
+      "conceptName": "Serratia marcescens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "33522002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4207914,
+      "conceptName": "Serratia marcescens marcescens",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "438911005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4230550,
+      "conceptName": "Serratia marcescens sakuensis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "438912003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4018272,
+      "conceptName": "Serratia marcescens, Biogroup I",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "115006001",
+      "standardConcept": "S"
+    }
+  ]
+}

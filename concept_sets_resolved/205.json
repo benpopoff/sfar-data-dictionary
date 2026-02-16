@@ -1,0 +1,50 @@
+{
+  "conceptSetId": 205,
+  "resolvedConcepts": [
+    {
+      "conceptId": 3018572,
+      "conceptName": "Chloride [Moles/volume] in Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2069-3",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3039964,
+      "conceptName": "Chloride [Moles/volume] in Capillary blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "51590-8",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1761323,
+      "conceptName": "Chloride [Moles/volume] in Mixed venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "100745-9",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3014576,
+      "conceptName": "Chloride [Moles/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "2075-0",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 3035285,
+      "conceptName": "Chloride [Moles/volume] in Venous blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "41649-5",
+      "standardConcept": "S"
+    }
+  ]
+}

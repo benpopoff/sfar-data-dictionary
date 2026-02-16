@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 53,
+  "resolvedConcepts": [
+    {
+      "conceptId": 35145372,
+      "conceptName": "parnaparin 100 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4802463",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2046467,
+      "conceptName": "parnaparin 10600 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4946682",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2046463,
+      "conceptName": "parnaparin 10700 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4946678",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35148230,
+      "conceptName": "parnaparin 150 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4805292",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35162150,
+      "conceptName": "parnaparin 200 UNT/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4819112",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35130087,
+      "conceptName": "parnaparin 5000 UNT Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4787346",
+      "standardConcept": "S"
+    }
+  ]
+}

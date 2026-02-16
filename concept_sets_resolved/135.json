@@ -1,0 +1,2363 @@
+{
+  "conceptSetId": 135,
+  "resolvedConcepts": [
+    {
+      "conceptId": 1592507,
+      "conceptName": "Abuse-Deterrent 12 HR morphine sulfate 100 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1872234",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1592352,
+      "conceptName": "Abuse-Deterrent 12 HR morphine sulfate 15 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1871434",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1592359,
+      "conceptName": "Abuse-Deterrent 12 HR morphine sulfate 30 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1871441",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1592362,
+      "conceptName": "Abuse-Deterrent 12 HR morphine sulfate 60 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1871444",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40166392,
+      "conceptName": "Abuse-Deterrent morphine sulfate 100 MG / naltrexone hydrochloride 4 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "863845",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40166395,
+      "conceptName": "Abuse-Deterrent morphine sulfate 20 MG / naltrexone hydrochloride 0.8 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "863848",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40166398,
+      "conceptName": "Abuse-Deterrent morphine sulfate 30 MG / naltrexone hydrochloride 1.2 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "863850",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40166400,
+      "conceptName": "Abuse-Deterrent morphine sulfate 50 MG / naltrexone hydrochloride 2 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "863852",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40166403,
+      "conceptName": "Abuse-Deterrent morphine sulfate 60 MG / naltrexone hydrochloride 2.4 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "863854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40166407,
+      "conceptName": "Abuse-Deterrent morphine sulfate 80 MG / naltrexone hydrochloride 3.2 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "863856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40747713,
+      "conceptName": "Activated attapulgite 313 MG / attapulgite 188 MG / Morphine 0.395 MG Chewable Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4709575",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40745588,
+      "conceptName": "Aluminum Hydroxide 160 MG / belladonna extract, USP 3 MG / Kaolin 700 MG / Morphine 0.23 MG Chewable Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4711557",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41305843,
+      "conceptName": "Atropine 0.05 MG/ML / Morphine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2503805",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40869171,
+      "conceptName": "Atropine 0.5 MG/ML / Morphine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2067133",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40962649,
+      "conceptName": "Atropine 0.5 MG/ML / Morphine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2160611",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736029,
+      "conceptName": "Calcium Carbonate 200 MG / Kaolin 800 MG / Morphine 0.35 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721100",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40750560,
+      "conceptName": "Chloroform 100 MG/ML / Ethanol 100 MG/ML / ethyl ether 24 MG/ML / Glycyrrhiza glabra extract 98.7 MG/ML / Molasses 100 MG/ML / Morphine 2.29 MG/ML / Peppermint oil 0.8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4706701",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736019,
+      "conceptName": "Chloroform 4 MG/ML / Kaolin 206 MG/ML / Morphine 0.1 MG/ML / Sodium Bicarbonate 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721110",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736031,
+      "conceptName": "Cocaine 1 MG/ML / Ethanol 100 MG/ML / Morphine 1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721098",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482874,
+      "conceptName": "Cyclizine 2 MG/ML / Morphine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP416976",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21027436,
+      "conceptName": "Cyclizine 20 MG/ML / Morphine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277477",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480327,
+      "conceptName": "Cyclizine 50 MG/ML / Morphine 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419478",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482130,
+      "conceptName": "Cyclizine 50 MG/ML / Morphine 15 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419480",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736006,
+      "conceptName": "Glycyrrhiza glabra extract 84 MG/ML / Ipecac 15 MG/ML / Morphine 0.1 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721123",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069241,
+      "conceptName": "Glycyrrhiza glabra extract 84 MG/ML / ipecac 16 MG/ML / morphine 0.0916 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4995931",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405149,
+      "conceptName": "Ketamine 2 MG/ML / Morphine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097191",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21072155,
+      "conceptName": "Ketamine 2 MG/ML / Morphine 2 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP362202",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41116012,
+      "conceptName": "Morphine 0.00015 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2313974",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36810793,
+      "conceptName": "Morphine 0.001 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4824829",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35766341,
+      "conceptName": "Morphine 0.001 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2767802",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36811348,
+      "conceptName": "Morphine 0.002 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4825386",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35753929,
+      "conceptName": "Morphine 0.002 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2755390",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35160943,
+      "conceptName": "Morphine 0.02 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4817917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36814327,
+      "conceptName": "Morphine 0.02 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4828365",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35766340,
+      "conceptName": "Morphine 0.02 MG/MG Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2767801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41084755,
+      "conceptName": "Morphine 0.0345 MG/MG Extended Release Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2282717",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36406622,
+      "conceptName": "Morphine 0.04 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3098664",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21076599,
+      "conceptName": "Morphine 0.04 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277265",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736088,
+      "conceptName": "Morphine 0.05 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721041",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41240951,
+      "conceptName": "Morphine 0.05 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2438913",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40959753,
+      "conceptName": "Morphine 0.0513 MG/MG Extended Release Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2157715",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41209964,
+      "conceptName": "Morphine 0.0514 MG/MG Extended Release Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2407926",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41271776,
+      "conceptName": "Morphine 0.0515 MG/MG Extended Release Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2469738",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42728535,
+      "conceptName": "Morphine 0.0516 MG/MG Extended Release Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2737092",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41084754,
+      "conceptName": "Morphine 0.0517 MG/MG Extended Release Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2282716",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35158235,
+      "conceptName": "Morphine 0.06 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4815232",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405814,
+      "conceptName": "Morphine 0.06 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21086329,
+      "conceptName": "Morphine 0.06 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277254",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43696369,
+      "conceptName": "Morphine 0.072 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP696208",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21155119,
+      "conceptName": "Morphine 0.1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277047",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480841,
+      "conceptName": "Morphine 0.1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419905",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43624149,
+      "conceptName": "Morphine 0.108 MG/MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP696190",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147503,
+      "conceptName": "Morphine 0.15 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2345465",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21124884,
+      "conceptName": "Morphine 0.2 MG/ML / Peppermint oil 0.0003 ML/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP268415",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479096,
+      "conceptName": "Morphine 0.2 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419903",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21115744,
+      "conceptName": "Morphine 0.2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277033",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480840,
+      "conceptName": "Morphine 0.2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419904",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21037187,
+      "conceptName": "Morphine 0.3 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277434",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36405815,
+      "conceptName": "Morphine 0.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3097857",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21155123,
+      "conceptName": "Morphine 0.4 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277140",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44045454,
+      "conceptName": "Morphine 0.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1040085",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736055,
+      "conceptName": "Morphine 0.5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721074",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479098,
+      "conceptName": "Morphine 0.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21135303,
+      "conceptName": "Morphine 0.6 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277271",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21047108,
+      "conceptName": "Morphine 0.67 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277274",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21076590,
+      "conceptName": "Morphine 1 MG/ML Inhalant Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277126",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480839,
+      "conceptName": "Morphine 1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419897",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482613,
+      "conceptName": "Morphine 1 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419898",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36812997,
+      "conceptName": "Morphine 1 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4827031",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21056835,
+      "conceptName": "Morphine 1 MG/ML Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277125",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36262165,
+      "conceptName": "Morphine 10 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3113040",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43166211,
+      "conceptName": "Morphine 10 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP453732",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736037,
+      "conceptName": "Morphine 10 MG/ML Injectable Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721092",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44071311,
+      "conceptName": "Morphine 10 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1065942",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42875762,
+      "conceptName": "Morphine 100 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4872875",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43267412,
+      "conceptName": "Morphine 100 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP539681",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41147502,
+      "conceptName": "Morphine 100 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2345464",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35160508,
+      "conceptName": "Morphine 1000 MG Oral Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4817485",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21086334,
+      "conceptName": "Morphine 12 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277327",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35141822,
+      "conceptName": "Morphine 120 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4798944",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35148403,
+      "conceptName": "Morphine 120 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4805467",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889686,
+      "conceptName": "Morphine 15 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000940",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032458,
+      "conceptName": "Morphine 15 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027089",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21086317,
+      "conceptName": "Morphine 15 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277042",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880973,
+      "conceptName": "Morphine 150 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP997405",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21027421,
+      "conceptName": "Morphine 16 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277268",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032453,
+      "conceptName": "Morphine 2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027084",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123116,
+      "conceptName": "Morphine 2 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117747",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36813064,
+      "conceptName": "Morphine 2 MG/ML Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4827097",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21037169,
+      "conceptName": "Morphine 2 MG/ML Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277161",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21115746,
+      "conceptName": "Morphine 2.5 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277115",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43625247,
+      "conceptName": "Morphine 20 MG Effervescent Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP900549",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36889685,
+      "conceptName": "Morphine 20 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1006554",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43267408,
+      "conceptName": "Morphine 20 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP539633",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40897406,
+      "conceptName": "Morphine 20 MG/ML / Scopolamine 0.4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2095368",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880006,
+      "conceptName": "Morphine 20 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP990434",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482078,
+      "conceptName": "Morphine 20 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419902",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36274935,
+      "conceptName": "Morphine 20 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3125810",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21125404,
+      "conceptName": "Morphine 20 MG/ML Vaginal Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277170",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42875758,
+      "conceptName": "Morphine 200 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4872871",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481454,
+      "conceptName": "Morphine 200 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43294582,
+      "conceptName": "Morphine 200 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP539648",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21135305,
+      "conceptName": "Morphine 200 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736083,
+      "conceptName": "Morphine 2000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721046",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36886718,
+      "conceptName": "Morphine 22.5 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1002192",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109954,
+      "conceptName": "Morphine 25 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104585",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44123118,
+      "conceptName": "Morphine 25 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1117749",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736107,
+      "conceptName": "Morphine 25000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721022",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42480843,
+      "conceptName": "Morphine 3 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419916",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42875766,
+      "conceptName": "Morphine 30 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4872879",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43278361,
+      "conceptName": "Morphine 30 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP539544",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880003,
+      "conceptName": "Morphine 30 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1005382",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482079,
+      "conceptName": "Morphine 30 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419909",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40959752,
+      "conceptName": "Morphine 4 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2157714",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36407384,
+      "conceptName": "Morphine 40 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP3099426",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36880007,
+      "conceptName": "Morphine 40 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP992505",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21096087,
+      "conceptName": "Morphine 40 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277012",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881926,
+      "conceptName": "Morphine 45 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1003290",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40835111,
+      "conceptName": "Morphine 45 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP2033073",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44084182,
+      "conceptName": "Morphine 5 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1078813",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43133164,
+      "conceptName": "Morphine 5 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP453569",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44032455,
+      "conceptName": "Morphine 5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1027086",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109952,
+      "conceptName": "Morphine 50 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104583",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 44109951,
+      "conceptName": "Morphine 50 MG/ML Intramuscular Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1104582",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42479097,
+      "conceptName": "Morphine 50 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419910",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40736123,
+      "conceptName": "Morphine 5000 MG Topical Powder",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4721006",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42481455,
+      "conceptName": "Morphine 60 MG Oral Capsule",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP419918",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43272898,
+      "conceptName": "Morphine 60 MG Oral Granules",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP539587",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36894572,
+      "conceptName": "Morphine 7.5 MG Delayed Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001944",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36891667,
+      "conceptName": "Morphine 7.5 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1001374",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36888671,
+      "conceptName": "Morphine 75 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP991656",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21056846,
+      "conceptName": "Morphine 750 MG Rectal Suppository",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP277332",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36881927,
+      "conceptName": "Morphine 80 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP1000016",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36070449,
+      "conceptName": "aluminum hydroxide 160 MG / belladonna extract, USP 3 MG / kaolin 700 MG / morphine 0.25 MG Chewable Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4997245",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40243412,
+      "conceptName": "atropine sulfate 0.4 MG/ML / morphine sulfate 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1190775",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40243413,
+      "conceptName": "atropine sulfate 0.4 MG/ML / morphine sulfate 16 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1190921",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40243425,
+      "conceptName": "atropine sulfate 0.6 MG/ML / morphine sulfate 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1190785",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19064598,
+      "conceptName": "attapulgite 280 MG / morphine 0.23 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "251801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170436,
+      "conceptName": "attapulgite 500 MG / morphine hydrochloride 0.395 MG Chewable Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895931",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170474,
+      "conceptName": "bismuth subcarbonate 300 MG / morphine sulfate 0.5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895933",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069237,
+      "conceptName": "calcium carbonate 200 MG / kaolin 750 MG / morphine 0.35 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4995927",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069251,
+      "conceptName": "chloroform 4 MG/ML / kaolin 190 MG/ML / morphine 0.0916 MG/ML / sodium bicarbonate 50 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4995941",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19062492,
+      "conceptName": "cyclizine 50 MG/ML / morphine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250304",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19062493,
+      "conceptName": "cyclizine 50 MG/ML / morphine 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "250305",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234987,
+      "conceptName": "dexamethasone 0.04 MG/ML / morphine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215692",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234988,
+      "conceptName": "dexamethasone 0.05 MG/ML / morphine 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215693",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234989,
+      "conceptName": "dexamethasone 0.08 MG/ML / morphine 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215694",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1189437,
+      "conceptName": "guaiacolsulfonate 106 MG/ML / morphine 2.8 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "795792",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234983,
+      "conceptName": "morphine 0.005 MG/MG Topical Gel",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215688",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36069231,
+      "conceptName": "morphine 0.2 MG/ML / peppermint oil 0.24 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4995917",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35873255,
+      "conceptName": "morphine 0.395 MG Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5029704",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36966859,
+      "conceptName": "morphine 1 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5186315",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35606052,
+      "conceptName": "morphine 15 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732878",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36952471,
+      "conceptName": "morphine 2.5 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5186324",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1234985,
+      "conceptName": "morphine 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5215690",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36968288,
+      "conceptName": "morphine 20 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5186371",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36926242,
+      "conceptName": "morphine 30 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5186386",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36965039,
+      "conceptName": "morphine 5 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP5186331",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19115064,
+      "conceptName": "morphine 64 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "561993",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 2072200,
+      "conceptName": "morphine 8 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "OMOP4973838",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170080,
+      "conceptName": "morphine hydrochloride 10 MG/ML Topical Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895856",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170082,
+      "conceptName": "morphine hydrochloride 40 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895867",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169870,
+      "conceptName": "morphine sulfate 0.1 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894976",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169872,
+      "conceptName": "morphine sulfate 0.2 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894984",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169874,
+      "conceptName": "morphine sulfate 0.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894986",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604834,
+      "conceptName": "morphine sulfate 0.5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1728785",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604843,
+      "conceptName": "morphine sulfate 1 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1728802",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169886,
+      "conceptName": "morphine sulfate 1 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895854",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169890,
+      "conceptName": "morphine sulfate 10 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894997",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169891,
+      "conceptName": "morphine sulfate 10 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892494",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169893,
+      "conceptName": "morphine sulfate 10 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895003",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169894,
+      "conceptName": "morphine sulfate 10 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895014",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169895,
+      "conceptName": "morphine sulfate 10 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892516",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605838,
+      "conceptName": "morphine sulfate 10 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1731996",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169902,
+      "conceptName": "morphine sulfate 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892531",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605836,
+      "conceptName": "morphine sulfate 10 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1731994",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169904,
+      "conceptName": "morphine sulfate 10 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895016",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42903067,
+      "conceptName": "morphine sulfate 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360180",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169906,
+      "conceptName": "morphine sulfate 100 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892554",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169908,
+      "conceptName": "morphine sulfate 100 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "891874",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169911,
+      "conceptName": "morphine sulfate 100 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895857",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169912,
+      "conceptName": "morphine sulfate 100 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895022",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169917,
+      "conceptName": "morphine sulfate 120 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892300",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42874030,
+      "conceptName": "morphine sulfate 130 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1303729",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902739,
+      "conceptName": "morphine sulfate 14.3 MG/ML Auto-Injector",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359852",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169922,
+      "conceptName": "morphine sulfate 15 MG Disintegrating Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895027",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169923,
+      "conceptName": "morphine sulfate 15 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895839",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169924,
+      "conceptName": "morphine sulfate 15 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "891881",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169927,
+      "conceptName": "morphine sulfate 15 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892579",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169929,
+      "conceptName": "morphine sulfate 15 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892582",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169931,
+      "conceptName": "morphine sulfate 15 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895185",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902993,
+      "conceptName": "morphine sulfate 15 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360106",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169936,
+      "conceptName": "morphine sulfate 15 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895194",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605651,
+      "conceptName": "morphine sulfate 15 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1731531",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1718287,
+      "conceptName": "morphine sulfate 15 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1855384",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169938,
+      "conceptName": "morphine sulfate 150 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894933",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169939,
+      "conceptName": "morphine sulfate 150 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895858",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35604999,
+      "conceptName": "morphine sulfate 2 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1729198",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42543981,
+      "conceptName": "morphine sulfate 2 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "2003715",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169944,
+      "conceptName": "morphine sulfate 2 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892589",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169946,
+      "conceptName": "morphine sulfate 2 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895199",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902935,
+      "conceptName": "morphine sulfate 2 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1360048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169948,
+      "conceptName": "morphine sulfate 20 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892596",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169950,
+      "conceptName": "morphine sulfate 20 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895844",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169951,
+      "conceptName": "morphine sulfate 20 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895201",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169952,
+      "conceptName": "morphine sulfate 20 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892603",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169959,
+      "conceptName": "morphine sulfate 20 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895202",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169960,
+      "conceptName": "morphine sulfate 20 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892625",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169966,
+      "conceptName": "morphine sulfate 200 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892643",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169968,
+      "conceptName": "morphine sulfate 200 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892646",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169970,
+      "conceptName": "morphine sulfate 200 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895206",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169971,
+      "conceptName": "morphine sulfate 200 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895859",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169975,
+      "conceptName": "morphine sulfate 25 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895861",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605645,
+      "conceptName": "morphine sulfate 25 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1731518",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169983,
+      "conceptName": "morphine sulfate 3 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895209",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169984,
+      "conceptName": "morphine sulfate 3 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895208",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169985,
+      "conceptName": "morphine sulfate 30 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892345",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169988,
+      "conceptName": "morphine sulfate 30 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "891888",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169991,
+      "conceptName": "morphine sulfate 30 MG Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892669",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169993,
+      "conceptName": "morphine sulfate 30 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892672",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169995,
+      "conceptName": "morphine sulfate 30 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892678",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170006,
+      "conceptName": "morphine sulfate 30 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895213",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170008,
+      "conceptName": "morphine sulfate 33 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895865",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170010,
+      "conceptName": "morphine sulfate 35 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895215",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605849,
+      "conceptName": "morphine sulfate 4 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732015",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605845,
+      "conceptName": "morphine sulfate 4 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732007",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170013,
+      "conceptName": "morphine sulfate 4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894780",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902867,
+      "conceptName": "morphine sulfate 4 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359980",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42874036,
+      "conceptName": "morphine sulfate 40 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1303736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1111319,
+      "conceptName": "morphine sulfate 45 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "828713",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170025,
+      "conceptName": "morphine sulfate 5 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895217",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170026,
+      "conceptName": "morphine sulfate 5 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895869",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170027,
+      "conceptName": "morphine sulfate 5 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894807",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605859,
+      "conceptName": "morphine sulfate 5 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732137",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170034,
+      "conceptName": "morphine sulfate 5 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895870",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170035,
+      "conceptName": "morphine sulfate 5 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895219",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902406,
+      "conceptName": "morphine sulfate 5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359519",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170036,
+      "conceptName": "morphine sulfate 50 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894801",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170038,
+      "conceptName": "morphine sulfate 50 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895849",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170039,
+      "conceptName": "morphine sulfate 50 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895221",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170040,
+      "conceptName": "morphine sulfate 50 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895227",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605654,
+      "conceptName": "morphine sulfate 50 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1731538",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170044,
+      "conceptName": "morphine sulfate 50 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895871",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170048,
+      "conceptName": "morphine sulfate 6 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895237",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170049,
+      "conceptName": "morphine sulfate 6 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895238",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170050,
+      "conceptName": "morphine sulfate 6 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895233",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170052,
+      "conceptName": "morphine sulfate 6.67 MG/ML Oral Suspension",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895240",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170053,
+      "conceptName": "morphine sulfate 60 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892352",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170056,
+      "conceptName": "morphine sulfate 60 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "891893",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170059,
+      "conceptName": "morphine sulfate 60 MG Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895247",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170060,
+      "conceptName": "morphine sulfate 60 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895874",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42874041,
+      "conceptName": "morphine sulfate 70 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1303740",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1111352,
+      "conceptName": "morphine sulfate 75 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "828717",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170065,
+      "conceptName": "morphine sulfate 75 MG Rectal Suppository",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895248",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605843,
+      "conceptName": "morphine sulfate 8 MG/ML Cartridge",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732004",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605847,
+      "conceptName": "morphine sulfate 8 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1732012",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42902408,
+      "conceptName": "morphine sulfate 8 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1359521",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170070,
+      "conceptName": "morphine sulfate 8.4 MG/ML Oral Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895925",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170071,
+      "conceptName": "morphine sulfate 80 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "894814",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40170075,
+      "conceptName": "morphine sulfate 90 MG Extended Release Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "892358",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40169814,
+      "conceptName": "morphine sulfate liposomal 10 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "895975",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35605831,
+      "conceptName": "morphine sulfate liposomal 10 MG/ML Injection",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug",
+      "conceptCode": "1731988",
+      "standardConcept": "S"
+    }
+  ]
+}

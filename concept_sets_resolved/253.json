@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 253,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4211809,
+      "conceptName": "Rothia mucilaginosa",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "416544005",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "conceptSetId": 298,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4049846,
+      "conceptName": "Continuous venovenous hemodiafiltration",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "233590002",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4051329,
+      "conceptName": "Continuous venovenous hemodialysis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "233580005",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4051330,
+      "conceptName": "Continuous venovenous hemofiltration",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "233585000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4051326,
+      "conceptName": "Intermittent hemodialysis",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "233575001",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4050862,
+      "conceptName": "Intermittent hemodialysis with continuous ultrafiltration",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "233577009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 4051327,
+      "conceptName": "Intermittent hemodialysis with sequential ultrafiltration",
+      "vocabularyId": "SNOMED",
+      "domainId": "Procedure",
+      "conceptClassId": "Procedure",
+      "conceptCode": "233576000",
+      "standardConcept": "S"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 164,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4047495,
+      "conceptName": "Peripheral blood specimen",
+      "vocabularyId": "SNOMED",
+      "domainId": "Specimen",
+      "conceptClassId": "Specimen",
+      "conceptCode": "122551003",
+      "standardConcept": "S"
+    }
+  ]
+}

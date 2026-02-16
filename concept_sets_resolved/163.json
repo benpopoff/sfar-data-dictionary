@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 163,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4047496,
+      "conceptName": "Arterial blood specimen",
+      "vocabularyId": "SNOMED",
+      "domainId": "Specimen",
+      "conceptClassId": "Specimen",
+      "conceptCode": "122552005",
+      "standardConcept": "S"
+    }
+  ]
+}

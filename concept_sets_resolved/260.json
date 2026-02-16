@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 260,
+  "resolvedConcepts": [
+    {
+      "conceptId": 4308865,
+      "conceptName": "Staphylococcus haemolyticus",
+      "vocabularyId": "SNOMED",
+      "domainId": "Observation",
+      "conceptClassId": "Organism",
+      "conceptCode": "83452006",
+      "standardConcept": "S"
+    }
+  ]
+}

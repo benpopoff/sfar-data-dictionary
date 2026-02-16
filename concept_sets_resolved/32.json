@@ -1,0 +1,14 @@
+{
+  "conceptSetId": 32,
+  "resolvedConcepts": [
+    {
+      "conceptId": 259992,
+      "conceptName": "Ventilator associated pneumonia",
+      "vocabularyId": "SNOMED",
+      "domainId": "Condition",
+      "conceptClassId": "Disorder",
+      "conceptCode": "429271009",
+      "standardConcept": "S"
+    }
+  ]
+}
