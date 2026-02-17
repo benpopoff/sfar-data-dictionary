@@ -1,8 +1,9 @@
-// concept-sets.js — Concept Sets page logic
-(function() {
+// concept-sets.js — Concept Sets page module
+var ConceptSetsPage = (function() {
   'use strict';
 
   var GITHUB_REPO = 'indicate-eu/data-dictionary-content';
+  var initialized = false;
 
   // ==================== CS STATE ====================
   var csPage = 1;
@@ -506,7 +507,6 @@
     var reviews = getReviewsForCS(cs);
     document.getElementById('cs-review-count').textContent = reviews.length;
 
-    // Show/hide GitHub propose button
     var proposeBtn = document.getElementById('cs-propose-github');
     if (proposeBtn) {
       var hasSessionReviews = (App.sessionReviews[cs.id] || []).length > 0;
@@ -670,26 +670,26 @@
     exportMethod = null;
     document.getElementById('export-step-method').style.display = '';
     document.getElementById('export-step-format').style.display = 'none';
-    document.getElementById('export-back').style.display = 'none';
-    document.getElementById('export-modal').style.display = 'flex';
+    document.getElementById('cs-export-back').style.display = 'none';
+    document.getElementById('cs-export-modal').style.display = 'flex';
   }
 
   function closeExportModal() {
-    document.getElementById('export-modal').style.display = 'none';
+    document.getElementById('cs-export-modal').style.display = 'none';
   }
 
   function exportStepMethod(method) {
     exportMethod = method;
     document.getElementById('export-step-method').style.display = 'none';
     document.getElementById('export-step-format').style.display = '';
-    document.getElementById('export-back').style.display = '';
+    document.getElementById('cs-export-back').style.display = '';
   }
 
   function exportStepBack() {
     exportMethod = null;
     document.getElementById('export-step-method').style.display = '';
     document.getElementById('export-step-format').style.display = 'none';
-    document.getElementById('export-back').style.display = 'none';
+    document.getElementById('cs-export-back').style.display = 'none';
   }
 
   function buildIndicateJSON() {
@@ -763,18 +763,6 @@
     populateColumnFilters();
     renderCSTable();
   }
-
-  // ==================== LANGUAGE CHANGE CALLBACK ====================
-  window.onLanguageChange = function() {
-    csCategories.clear();
-    csSubcategories.clear();
-    csFilterReviewStatus.clear();
-    csFilterName = '';
-    document.getElementById('filter-name').value = '';
-    csPage = 1;
-    renderAll();
-    if (selectedConceptSet) showCSDetail(selectedConceptSet.id);
-  };
 
   // ==================== EVENTS ====================
   function initEvents() {
@@ -875,20 +863,14 @@
         applyColumnVisibility();
       }
     });
-    document.addEventListener('click', function(e) {
-      var dd = document.getElementById('col-vis-dropdown');
-      if (dd.style.display !== 'none' && !e.target.closest('#col-vis-wrapper')) {
-        dd.style.display = 'none';
-      }
-    });
 
-    // Export modal events
+    // Export modal events (cs-export-modal)
     document.getElementById('cs-export-json').addEventListener('click', openExportModal);
-    document.getElementById('export-modal-close').addEventListener('click', closeExportModal);
-    document.getElementById('export-cancel').addEventListener('click', closeExportModal);
-    document.getElementById('export-back').addEventListener('click', exportStepBack);
-    document.getElementById('export-modal').addEventListener('click', function(e) {
-      if (e.target === document.getElementById('export-modal')) closeExportModal();
+    document.getElementById('cs-export-modal-close').addEventListener('click', closeExportModal);
+    document.getElementById('cs-export-cancel').addEventListener('click', closeExportModal);
+    document.getElementById('cs-export-back').addEventListener('click', exportStepBack);
+    document.getElementById('cs-export-modal').addEventListener('click', function(e) {
+      if (e.target === document.getElementById('cs-export-modal')) closeExportModal();
     });
     document.getElementById('export-step-method').addEventListener('click', function(e) {
       var opt = e.target.closest('.export-option[data-method]');
@@ -909,33 +891,43 @@
     // Review modal events
     document.getElementById('review-modal-close').addEventListener('click', closeReviewModal);
     document.getElementById('review-submit').addEventListener('click', submitReview);
-
-    // Keyboard: Escape
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        if (document.getElementById('confirm-reset-modal').style.display !== 'none') {
-          document.getElementById('confirm-reset-modal').style.display = 'none';
-        } else if (document.getElementById('export-modal').style.display !== 'none') {
-          closeExportModal();
-        } else if (document.getElementById('profile-modal').style.display !== 'none') {
-          App.closeProfileModal();
-        } else if (document.getElementById('review-modal').classList.contains('visible')) {
-          closeReviewModal();
-        } else if (selectedConceptSet) {
-          hideCSDetail();
-        }
-      }
-    });
   }
 
-  // ==================== INIT ====================
-  App.updateUserBadge();
-  App.initSharedEvents();
-  initEvents();
-  App.loadData(function() {
+  // ==================== PAGE MODULE ====================
+  function init() {
+    if (initialized) return;
+    initialized = true;
+    initEvents();
     renderAll();
-    var params = new URLSearchParams(window.location.search);
-    var csId = params.get('cs');
-    if (csId) showCSDetail(parseInt(csId));
-  });
+  }
+
+  function show(query) {
+    init();
+    if (query && query.cs) {
+      showCSDetail(parseInt(query.cs));
+    }
+  }
+
+  function hide() {
+    closeExportModal();
+    closeReviewModal();
+  }
+
+  function onLanguageChange() {
+    if (!initialized) return;
+    csCategories.clear();
+    csSubcategories.clear();
+    csFilterReviewStatus.clear();
+    csFilterName = '';
+    document.getElementById('filter-name').value = '';
+    csPage = 1;
+    renderAll();
+    if (selectedConceptSet) showCSDetail(selectedConceptSet.id);
+  }
+
+  return {
+    show: show,
+    hide: hide,
+    onLanguageChange: onLanguageChange
+  };
 })();

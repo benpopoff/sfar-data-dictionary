@@ -1,8 +1,10 @@
 /**
- * Dev Tools page — SQL Editor + Schema/ERD
+ * Dev Tools page module — SQL Editor + Schema/ERD
  */
-(function () {
+var DevToolsPage = (function () {
   'use strict';
+
+  var initialized = false;
 
   /* ── State ──────────────────────────────────────────── */
 
@@ -442,7 +444,6 @@
       } else {
         x = PAD + tbl.col * (CARD_W + GAP_X);
       }
-      /* Compute row Y: measure actual card heights per row for tighter spacing */
       y = PAD + tbl.row * (160 + GAP_Y);
 
       cardPositions[tbl.name] = { x: x, y: y, w: CARD_W, h: h };
@@ -485,50 +486,40 @@
         var tgtPos = cardPositions[col.fk];
         if (!tgtPos) return;
 
-        /* Source point: right or left edge of the FK column row */
         var srcRowY = srcPos.y + CARD_H_BASE + colIdx * ROW_H + ROW_H / 2;
-        /* Target point: center of the target card header */
         var tgtCenterX = tgtPos.x + tgtPos.w / 2;
         var tgtCenterY = tgtPos.y + tgtPos.h / 2;
 
         var x1, y1, x2, y2;
 
-        /* Choose connection direction based on relative position */
         if (srcPos.y > tgtPos.y + tgtPos.h) {
-          /* Source is below target */
           x1 = srcPos.x + srcPos.w / 2;
           y1 = srcPos.y;
           x2 = tgtCenterX;
           y2 = tgtPos.y + tgtPos.h;
         } else if (srcPos.y + srcPos.h < tgtPos.y) {
-          /* Source is above target */
           x1 = srcPos.x + srcPos.w / 2;
           y1 = srcPos.y + srcPos.h;
           x2 = tgtCenterX;
           y2 = tgtPos.y;
         } else if (srcPos.x > tgtPos.x) {
-          /* Source is to the right */
           x1 = srcPos.x;
           y1 = srcRowY;
           x2 = tgtPos.x + tgtPos.w;
           y2 = tgtCenterY;
         } else {
-          /* Source is to the left */
           x1 = srcPos.x + srcPos.w;
           y1 = srcRowY;
           x2 = tgtPos.x;
           y2 = tgtCenterY;
         }
 
-        /* Quadratic bezier: smoothstep-like */
         var midX = (x1 + x2) / 2;
         var midY = (y1 + y2) / 2;
         var d;
         if (Math.abs(y1 - y2) > Math.abs(x1 - x2)) {
-          /* Vertical connection */
           d = 'M ' + x1 + ' ' + y1 + ' C ' + x1 + ' ' + midY + ' ' + x2 + ' ' + midY + ' ' + x2 + ' ' + y2;
         } else {
-          /* Horizontal connection */
           d = 'M ' + x1 + ' ' + y1 + ' C ' + midX + ' ' + y1 + ' ' + midX + ' ' + y2 + ' ' + x2 + ' ' + y2;
         }
 
@@ -539,16 +530,12 @@
       });
     });
 
-    /* Pan and zoom */
     initErdPanZoom();
-
-    /* Fit ERD to viewport on initial render */
     fitErdToViewport();
   }
 
   function initErdPanZoom() {
     var viewport = document.getElementById('erd-viewport');
-    var canvas = document.getElementById('erd-canvas');
 
     viewport.addEventListener('wheel', function (e) {
       e.preventDefault();
@@ -599,50 +586,63 @@
 
   /* ── Event listeners ────────────────────────────────── */
 
-  document.querySelectorAll('#devtools-tabs .settings-tab').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      switchTab(this.dataset.tab);
-    });
-  });
-
-  document.getElementById('sql-run-btn').addEventListener('click', runQuery);
-
-  document.getElementById('sql-editor').addEventListener('keydown', function (e) {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-      e.preventDefault();
-      runQuery();
-    }
-    /* Allow Tab to insert spaces */
-    if (e.key === 'Tab') {
-      e.preventDefault();
-      var start = this.selectionStart;
-      var end = this.selectionEnd;
-      this.value = this.value.substring(0, start) + '  ' + this.value.substring(end);
-      this.selectionStart = this.selectionEnd = start + 2;
-    }
-  });
-
-  document.querySelectorAll('#result-view-toggle .toggle-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('#result-view-toggle .toggle-btn').forEach(function (b) {
-        b.classList.remove('active');
+  function initEvents() {
+    document.querySelectorAll('#devtools-tabs .settings-tab').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        switchTab(this.dataset.tab);
       });
-      this.classList.add('active');
-      resultViewMode = this.dataset.mode;
-      renderResults();
     });
-  });
 
-  document.getElementById('sql-export-csv').addEventListener('click', exportCsv);
+    document.getElementById('sql-run-btn').addEventListener('click', runQuery);
 
-  /* ── Init ───────────────────────────────────────────── */
+    document.getElementById('sql-editor').addEventListener('keydown', function (e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        runQuery();
+      }
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        var start = this.selectionStart;
+        var end = this.selectionEnd;
+        this.value = this.value.substring(0, start) + '  ' + this.value.substring(end);
+        this.selectionStart = this.selectionEnd = start + 2;
+      }
+    });
 
-  App.updateUserBadge();
-  App.initSharedEvents();
+    document.querySelectorAll('#result-view-toggle .toggle-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('#result-view-toggle .toggle-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        this.classList.add('active');
+        resultViewMode = this.dataset.mode;
+        renderResults();
+      });
+    });
 
-  App.loadData(function () {
+    document.getElementById('sql-export-csv').addEventListener('click', exportCsv);
+  }
+
+  /* ── Page module ───────────────────────────────────── */
+
+  function init() {
+    if (initialized) return;
+    initialized = true;
+    initEvents();
     populateExamples();
     checkDbStatus();
-  });
+  }
 
+  function show() {
+    init();
+  }
+
+  function hide() {
+    // nothing to clean up
+  }
+
+  return {
+    show: show,
+    hide: hide
+  };
 })();

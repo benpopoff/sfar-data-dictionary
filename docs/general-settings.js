@@ -1,54 +1,18 @@
 /**
- * General Settings page — OHDSI Vocabulary import via DuckDB-WASM
+ * General Settings page module — OHDSI Vocabulary import via DuckDB-WASM
  */
-(function () {
+var GeneralSettingsPage = (function () {
   'use strict';
 
-  /* ── DOM refs ──────────────────────────────────────── */
-  var statusPanel   = document.getElementById('vocab-status-panel');
-  var statusIcon    = document.getElementById('vocab-status-icon');
-  var statusTitle   = document.getElementById('vocab-status-title');
-  var statusMsg     = document.getElementById('vocab-status-msg');
+  var initialized = false;
 
-  var btnSelectFolder = document.getElementById('vocab-select-folder');
-  var btnRegrant      = document.getElementById('vocab-regrant');
-  var btnDeleteDb     = document.getElementById('vocab-delete-db');
-  var fileInput       = document.getElementById('vocab-file-input');
-
-  var progressSection = document.getElementById('vocab-progress-section');
-  var progressLabel   = document.getElementById('vocab-progress-label');
-  var progressPct     = document.getElementById('vocab-progress-pct');
-  var progressFill    = document.getElementById('vocab-progress-fill');
-  var fileListEl      = document.getElementById('vocab-file-list');
-
-  var statsSection = document.getElementById('vocab-stats-section');
-  var statsGrid    = document.getElementById('vocab-stats-grid');
-
-  var deleteModal      = document.getElementById('confirm-delete-db-modal');
-  var deleteModalClose = document.getElementById('confirm-delete-db-close');
-  var deleteModalCancel = document.getElementById('confirm-delete-db-cancel');
-  var deleteModalOk    = document.getElementById('confirm-delete-db-ok');
-
+  /* ── DOM refs (set on init) ─────────────────────────── */
+  var statusPanel, statusIcon, statusTitle, statusMsg;
+  var btnSelectFolder, btnRegrant, btnDeleteDb, fileInput;
+  var progressSection, progressLabel, progressPct, progressFill, fileListEl;
+  var statsSection, statsGrid;
+  var deleteModal, deleteModalClose, deleteModalCancel, deleteModalOk;
   var supportsDirectoryPicker = !!window.showDirectoryPicker;
-
-  /* ── Browser compatibility warning ──────────────────── */
-  (function () {
-    var warningEl = document.getElementById('vocab-browser-warning');
-    var msgEl = document.getElementById('vocab-browser-warning-msg');
-    if (!warningEl || !msgEl) return;
-
-    var ua = navigator.userAgent;
-    var isFirefox = /Firefox\//i.test(ua);
-    var isSafari = /Safari\//i.test(ua) && !/Chrome\//i.test(ua);
-
-    if (isFirefox) {
-      msgEl.textContent = 'Firefox does not support persistent file access. You will need to re-select the vocabulary folder each time you visit the site. For best experience, use Chrome or Edge.';
-      warningEl.style.display = '';
-    } else if (isSafari) {
-      msgEl.textContent = 'Safari has limited support for the File System Access API. Vocabulary features may not work correctly. For best experience, use Chrome or Edge.';
-      warningEl.style.display = '';
-    }
-  })();
 
   /* ── Status display helpers ────────────────────────── */
 
@@ -206,12 +170,6 @@
     }
   }
 
-  fileInput.addEventListener('change', function () {
-    if (fileInput.files && fileInput.files.length > 0) {
-      startImportFromFiles(fileInput.files);
-    }
-  });
-
   /* ── Re-grant access (Chrome stored handle) ────────── */
 
   function regrantAccess() {
@@ -245,32 +203,7 @@
     deleteModal.style.display = 'none';
   }
 
-  deleteModalClose.addEventListener('click', closeDeleteModal);
-  deleteModalCancel.addEventListener('click', closeDeleteModal);
-  deleteModal.addEventListener('click', function (e) {
-    if (e.target === deleteModal) closeDeleteModal();
-  });
-
-  deleteModalOk.addEventListener('click', function () {
-    closeDeleteModal();
-    setStatus('loading', 'Deleting database...');
-    showButtons(false, false, false);
-    statsSection.style.display = 'none';
-    progressSection.style.display = 'none';
-
-    VocabDB.deleteDatabase()
-      .then(function () {
-        setStatus('empty', 'No vocabulary database found. Select a folder to import OHDSI vocabulary files.');
-        showButtons(true, false, false);
-        App.showToast('Database deleted', 'success');
-      })
-      .catch(function (err) {
-        setStatus('error', 'Delete failed: ' + err.message);
-        showButtons(false, false, true);
-      });
-  });
-
-  /* ── Status check on load ──────────────────────────── */
+  /* ── Status check ──────────────────────────────────── */
 
   function showReadyState(stats) {
     var msg = 'Vocabulary database is loaded and ready.';
@@ -332,19 +265,106 @@
       });
   }
 
+  /* ── Browser compatibility warning ──────────────────── */
+  function showBrowserWarning() {
+    var warningEl = document.getElementById('vocab-browser-warning');
+    var msgEl = document.getElementById('vocab-browser-warning-msg');
+    if (!warningEl || !msgEl) return;
+
+    var ua = navigator.userAgent;
+    var isFirefox = /Firefox\//i.test(ua);
+    var isSafari = /Safari\//i.test(ua) && !/Chrome\//i.test(ua);
+
+    if (isFirefox) {
+      msgEl.textContent = 'Firefox does not support persistent file access. You will need to re-select the vocabulary folder each time you visit the site. Persistent file access is supported by Chrome and Edge.';
+      warningEl.style.display = '';
+    } else if (isSafari) {
+      msgEl.textContent = 'Safari has limited support for the File System Access API. Vocabulary features may not work correctly. Full support is available in Chrome and Edge.';
+      warningEl.style.display = '';
+    }
+  }
+
   /* ── Event listeners ───────────────────────────────── */
 
-  btnSelectFolder.addEventListener('click', selectFolder);
-  btnRegrant.addEventListener('click', regrantAccess);
-  btnDeleteDb.addEventListener('click', openDeleteModal);
+  function initEvents() {
+    btnSelectFolder.addEventListener('click', selectFolder);
+    btnRegrant.addEventListener('click', regrantAccess);
+    btnDeleteDb.addEventListener('click', openDeleteModal);
 
-  /* ── Init ──────────────────────────────────────────── */
+    fileInput.addEventListener('change', function () {
+      if (fileInput.files && fileInput.files.length > 0) {
+        startImportFromFiles(fileInput.files);
+      }
+    });
 
-  App.updateUserBadge();
-  App.initSharedEvents();
+    deleteModalClose.addEventListener('click', closeDeleteModal);
+    deleteModalCancel.addEventListener('click', closeDeleteModal);
+    deleteModal.addEventListener('click', function (e) {
+      if (e.target === deleteModal) closeDeleteModal();
+    });
 
-  App.loadData(function () {
+    deleteModalOk.addEventListener('click', function () {
+      closeDeleteModal();
+      setStatus('loading', 'Deleting database...');
+      showButtons(false, false, false);
+      statsSection.style.display = 'none';
+      progressSection.style.display = 'none';
+
+      VocabDB.deleteDatabase()
+        .then(function () {
+          setStatus('empty', 'No vocabulary database found. Select a folder to import OHDSI vocabulary files.');
+          showButtons(true, false, false);
+          App.showToast('Database deleted', 'success');
+        })
+        .catch(function (err) {
+          setStatus('error', 'Delete failed: ' + err.message);
+          showButtons(false, false, true);
+        });
+    });
+  }
+
+  /* ── Page module ───────────────────────────────────── */
+
+  function init() {
+    if (initialized) return;
+    initialized = true;
+
+    // Grab DOM refs
+    statusPanel   = document.getElementById('vocab-status-panel');
+    statusIcon    = document.getElementById('vocab-status-icon');
+    statusTitle   = document.getElementById('vocab-status-title');
+    statusMsg     = document.getElementById('vocab-status-msg');
+    btnSelectFolder = document.getElementById('vocab-select-folder');
+    btnRegrant      = document.getElementById('vocab-regrant');
+    btnDeleteDb     = document.getElementById('vocab-delete-db');
+    fileInput       = document.getElementById('vocab-file-input');
+    progressSection = document.getElementById('vocab-progress-section');
+    progressLabel   = document.getElementById('vocab-progress-label');
+    progressPct     = document.getElementById('vocab-progress-pct');
+    progressFill    = document.getElementById('vocab-progress-fill');
+    fileListEl      = document.getElementById('vocab-file-list');
+    statsSection = document.getElementById('vocab-stats-section');
+    statsGrid    = document.getElementById('vocab-stats-grid');
+    deleteModal      = document.getElementById('confirm-delete-db-modal');
+    deleteModalClose = document.getElementById('confirm-delete-db-close');
+    deleteModalCancel = document.getElementById('confirm-delete-db-cancel');
+    deleteModalOk    = document.getElementById('confirm-delete-db-ok');
+
+    initEvents();
+    showBrowserWarning();
     checkDatabaseStatus();
-  });
+  }
 
+  function show() {
+    init();
+  }
+
+  function hide() {
+    // nothing to clean up
+  }
+
+  return {
+    show: show,
+    hide: hide
+  };
 })();

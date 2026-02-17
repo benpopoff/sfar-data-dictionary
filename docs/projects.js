@@ -1,7 +1,8 @@
-// projects.js — Projects page logic
-(function() {
+// projects.js — Projects page module
+var ProjectsPage = (function() {
   'use strict';
 
+  var initialized = false;
   var selectedProject = null;
 
   // ==================== PROJECT CS TABLE STATE ====================
@@ -208,12 +209,6 @@
     selectedProject = null;
   }
 
-  // ==================== LANGUAGE CHANGE ====================
-  window.onLanguageChange = function() {
-    renderProjectCards();
-    if (selectedProject) showProjectDetail(selectedProject.id);
-  };
-
   // ==================== EVENTS ====================
   function initEvents() {
     // Project card click
@@ -241,11 +236,11 @@
       document.getElementById('proj-export-csv').style.display = isVars ? '' : 'none';
     });
 
-    // Project concept set click -> navigate to Data Dictionary page
+    // Project concept set click -> navigate to concept sets page via router
     document.getElementById('proj-cs-tbody').addEventListener('click', function(e) {
       var tr = e.target.closest('tr[data-id]');
       if (!tr) return;
-      window.location.href = 'index.html?cs=' + tr.dataset.id;
+      Router.navigate('/concept-sets', { cs: tr.dataset.id });
     });
 
     // Project CS sort
@@ -313,24 +308,33 @@
       a.click();
       URL.revokeObjectURL(url);
     });
-
-    // Keyboard: Escape
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        if (document.getElementById('confirm-reset-modal').style.display !== 'none') {
-          document.getElementById('confirm-reset-modal').style.display = 'none';
-        } else if (document.getElementById('profile-modal').style.display !== 'none') {
-          App.closeProfileModal();
-        } else if (selectedProject) {
-          hideProjectDetail();
-        }
-      }
-    });
   }
 
-  // ==================== INIT ====================
-  App.updateUserBadge();
-  App.initSharedEvents();
-  initEvents();
-  App.loadData(renderProjectCards);
+  // ==================== PAGE MODULE ====================
+  function init() {
+    if (initialized) return;
+    initialized = true;
+    initEvents();
+    renderProjectCards();
+  }
+
+  function show() {
+    init();
+  }
+
+  function hide() {
+    // nothing to clean up
+  }
+
+  function onLanguageChange() {
+    if (!initialized) return;
+    renderProjectCards();
+    if (selectedProject) showProjectDetail(selectedProject.id);
+  }
+
+  return {
+    show: show,
+    hide: hide,
+    onLanguageChange: onLanguageChange
+  };
 })();

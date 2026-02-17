@@ -1,6 +1,8 @@
-// settings.js — Dictionary Settings page logic
-(function() {
+// settings.js — Dictionary Settings page module
+var SettingsPage = (function() {
   'use strict';
+
+  var initialized = false;
 
   // ==================== STATE ====================
   var activeTab = 'etl';
@@ -66,9 +68,9 @@
   function exportEtl() {
     var content = etlEditor ? etlEditor.getValue() : (App.etlGuidelines || '');
     pendingExport = { content: content, filename: 'etl_guidelines.md', type: 'text/markdown' };
-    document.getElementById('export-clipboard-desc').textContent = 'Copy Markdown content to clipboard';
-    document.getElementById('export-file-desc').textContent = 'Download as etl_guidelines.md';
-    document.getElementById('export-modal').style.display = 'flex';
+    document.getElementById('settings-export-clipboard-desc').textContent = 'Copy Markdown content to clipboard';
+    document.getElementById('settings-export-file-desc').textContent = 'Download as etl_guidelines.md';
+    document.getElementById('settings-export-modal').style.display = 'flex';
   }
 
   // ==================== UNIT CONVERSIONS ====================
@@ -217,7 +219,6 @@
       return;
     }
 
-    // Check duplicate
     var exists = convData.some(function(r) {
       return r.conceptId1 === cid1 && r.unitConceptId1 === uid1 &&
              r.conceptId2 === cid2 && r.unitConceptId2 === uid2;
@@ -258,9 +259,9 @@
   function exportConv() {
     var json = JSON.stringify(convData, null, 2);
     pendingExport = { content: json, filename: 'unit_conversions.json', type: 'application/json' };
-    document.getElementById('export-clipboard-desc').textContent = 'Copy JSON to clipboard';
-    document.getElementById('export-file-desc').textContent = 'Download as unit_conversions.json';
-    document.getElementById('export-modal').style.display = 'flex';
+    document.getElementById('settings-export-clipboard-desc').textContent = 'Copy JSON to clipboard';
+    document.getElementById('settings-export-file-desc').textContent = 'Download as unit_conversions.json';
+    document.getElementById('settings-export-modal').style.display = 'flex';
   }
 
   // ==================== RECOMMENDED UNITS ====================
@@ -355,9 +356,9 @@
   function exportRU() {
     var json = JSON.stringify(ruData, null, 2);
     pendingExport = { content: json, filename: 'recommended_units.json', type: 'application/json' };
-    document.getElementById('export-clipboard-desc').textContent = 'Copy JSON to clipboard';
-    document.getElementById('export-file-desc').textContent = 'Download as recommended_units.json';
-    document.getElementById('export-modal').style.display = 'flex';
+    document.getElementById('settings-export-clipboard-desc').textContent = 'Copy JSON to clipboard';
+    document.getElementById('settings-export-file-desc').textContent = 'Download as recommended_units.json';
+    document.getElementById('settings-export-modal').style.display = 'flex';
   }
 
   // ==================== SHARED EXPORT MODAL ====================
@@ -378,7 +379,7 @@
       a.click();
       URL.revokeObjectURL(url);
     }
-    document.getElementById('export-modal').style.display = 'none';
+    document.getElementById('settings-export-modal').style.display = 'none';
     pendingExport = null;
   }
 
@@ -469,17 +470,17 @@
       if (e.target === this) this.style.display = 'none';
     });
 
-    // Export modal
-    document.getElementById('export-modal-close').addEventListener('click', function() {
-      document.getElementById('export-modal').style.display = 'none';
+    // Settings export modal
+    document.getElementById('settings-export-modal-close').addEventListener('click', function() {
+      document.getElementById('settings-export-modal').style.display = 'none';
     });
-    document.getElementById('export-cancel').addEventListener('click', function() {
-      document.getElementById('export-modal').style.display = 'none';
+    document.getElementById('settings-export-cancel').addEventListener('click', function() {
+      document.getElementById('settings-export-modal').style.display = 'none';
     });
-    document.getElementById('export-modal').addEventListener('click', function(e) {
+    document.getElementById('settings-export-modal').addEventListener('click', function(e) {
       if (e.target === this) this.style.display = 'none';
     });
-    document.querySelectorAll('#export-modal .export-option').forEach(function(opt) {
+    document.querySelectorAll('#settings-export-modal .export-option').forEach(function(opt) {
       opt.addEventListener('click', function() {
         executeExport(opt.dataset.method);
       });
@@ -499,29 +500,33 @@
     document.getElementById('delete-modal').addEventListener('click', function(e) {
       if (e.target === this) this.style.display = 'none';
     });
-
-    // Keyboard: Escape
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        ['export-modal', 'conv-add-modal', 'test-conv-modal', 'delete-modal',
-         'ru-add-modal', 'confirm-reset-modal', 'profile-modal'].forEach(function(id) {
-          var el = document.getElementById(id);
-          if (el && el.style.display !== 'none') el.style.display = 'none';
-        });
-      }
-    });
   }
 
-  // ==================== INIT ====================
-  App.updateUserBadge();
-  App.initSharedEvents();
-  initEvents();
-  App.loadData(function() {
+  // ==================== PAGE MODULE ====================
+  function init() {
+    if (initialized) return;
+    initialized = true;
+    initEvents();
     // Deep copy data into session-editable arrays
     convData = JSON.parse(JSON.stringify(App.unitConversions));
     ruData = JSON.parse(JSON.stringify(App.recommendedUnits));
     initEtlEditor();
     renderConvTable();
     renderRUTable();
-  });
+  }
+
+  function show() {
+    init();
+    // Resize Ace editor when showing (may have been hidden)
+    if (etlEditor) etlEditor.resize();
+  }
+
+  function hide() {
+    // nothing to clean up
+  }
+
+  return {
+    show: show,
+    hide: hide
+  };
 })();

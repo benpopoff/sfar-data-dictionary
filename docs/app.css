@@ -267,6 +267,7 @@ body {
 
 /* Main layout */
 .main { padding: 10px; flex: 1; overflow: hidden; display: flex; flex-direction: column; }
+.page-container { display: none; }
 
 .list-view { display: flex; flex-direction: column; flex: 1; min-height: 0; overflow: hidden; }
 

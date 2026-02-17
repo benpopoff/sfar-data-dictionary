@@ -11,6 +11,7 @@ var App = (function() {
   var lang = localStorage.getItem('indicate_lang') || 'en';
   var resolvedIndex = {}; // conceptSetId -> resolvedConcepts[]
   var sessionReviews = JSON.parse(localStorage.getItem('indicate_reviews') || '{}');
+  var languageChangeCallbacks = [];
 
   // ==================== DATA LOADING ====================
   function loadData(callback) {
@@ -262,7 +263,7 @@ var App = (function() {
         lang = lang === 'en' ? 'fr' : 'en';
         localStorage.setItem('indicate_lang', lang);
         langBtn.textContent = lang.toUpperCase();
-        if (typeof onLanguageChange === 'function') onLanguageChange();
+        languageChangeCallbacks.forEach(function(cb) { cb(); });
       });
     }
 
@@ -360,7 +361,7 @@ var App = (function() {
     var headerLeft = document.querySelector('.header-left');
     if (headerLeft && headerLeft.tagName !== 'A') {
       headerLeft.addEventListener('click', function() {
-        window.location.href = 'index.html';
+        Router.navigate('/concept-sets');
       });
     }
   }
@@ -421,6 +422,7 @@ var App = (function() {
     openProfileModal: openProfileModal,
     closeProfileModal: closeProfileModal,
     initSharedEvents: initSharedEvents,
-    getCSData: getCSData
+    getCSData: getCSData,
+    onLanguageChange: function(cb) { languageChangeCallbacks.push(cb); }
   };
 })();
