@@ -26,6 +26,32 @@ var SettingsPage = (function() {
   var testConvRow = null;
   var testConvSwapped = false;
 
+  // ==================== VOCAB ENRICHMENT ====================
+  function enrichTableNames(tbodyId) {
+    if (typeof VocabDB === 'undefined') return;
+    VocabDB.isDatabaseReady().then(function(ready) {
+      if (!ready) return;
+      var tbody = document.getElementById(tbodyId);
+      if (!tbody) return;
+      var cells = tbody.querySelectorAll('td[data-cid]');
+      var idSet = {};
+      for (var i = 0; i < cells.length; i++) {
+        var cid = parseInt(cells[i].getAttribute('data-cid'));
+        if (cid) idSet[cid] = true;
+      }
+      var ids = Object.keys(idSet).map(Number);
+      if (ids.length === 0) return;
+      VocabDB.lookupConcepts(ids).then(function(concepts) {
+        var map = {};
+        concepts.forEach(function(c) { map[c.concept_id] = c.concept_name; });
+        for (var j = 0; j < cells.length; j++) {
+          var id = parseInt(cells[j].getAttribute('data-cid'));
+          if (map[id]) cells[j].textContent = map[id];
+        }
+      });
+    });
+  }
+
   // ==================== TAB SWITCHING ====================
   function switchTab(tab) {
     activeTab = tab;
@@ -97,13 +123,13 @@ var SettingsPage = (function() {
       var idx = convData.indexOf(row);
       return '<tr data-idx="' + idx + '">' +
         '<td>' + row.conceptId1 + '</td>' +
-        '<td>' + App.escapeHtml(row.conceptName1 || '') + '</td>' +
-        '<td>' + App.escapeHtml(row.unitName1 || '') + '</td>' +
+        '<td data-cid="' + row.conceptId1 + '">' + App.escapeHtml(row.conceptName1 || '') + '</td>' +
+        '<td data-cid="' + row.unitConceptId1 + '">' + App.escapeHtml(row.unitName1 || '') + '</td>' +
         '<td class="td-center editable-cell" data-field="conversionFactor" data-idx="' + idx + '">' +
           row.conversionFactor + '</td>' +
         '<td>' + row.conceptId2 + '</td>' +
-        '<td>' + App.escapeHtml(row.conceptName2 || '') + '</td>' +
-        '<td>' + App.escapeHtml(row.unitName2 || '') + '</td>' +
+        '<td data-cid="' + row.conceptId2 + '">' + App.escapeHtml(row.conceptName2 || '') + '</td>' +
+        '<td data-cid="' + row.unitConceptId2 + '">' + App.escapeHtml(row.unitName2 || '') + '</td>' +
         '<td class="td-center">' +
           '<button class="btn-action btn-action-test" data-idx="' + idx + '" title="Test">' +
             '<i class="fas fa-calculator"></i> Test</button> ' +
@@ -112,6 +138,7 @@ var SettingsPage = (function() {
         '</td>' +
         '</tr>';
     }).join('');
+    enrichTableNames('conv-tbody');
   }
 
   function startEditFactor(td) {
@@ -288,10 +315,10 @@ var SettingsPage = (function() {
       var idx = ruData.indexOf(row);
       return '<tr data-idx="' + idx + '">' +
         '<td>' + row.conceptId + '</td>' +
-        '<td>' + App.escapeHtml(row.conceptName || '') + '</td>' +
+        '<td data-cid="' + row.conceptId + '">' + App.escapeHtml(row.conceptName || '') + '</td>' +
         '<td>' + App.escapeHtml(row.conceptCode || '') + '</td>' +
         '<td>' + row.recommendedUnitConceptId + '</td>' +
-        '<td>' + App.escapeHtml(row.recommendedUnitName || '') + '</td>' +
+        '<td data-cid="' + row.recommendedUnitConceptId + '">' + App.escapeHtml(row.recommendedUnitName || '') + '</td>' +
         '<td>' + App.escapeHtml(row.recommendedUnitCode || '') + '</td>' +
         '<td class="td-center">' +
           '<button class="btn-action btn-action-delete" data-ru-idx="' + idx + '" title="Delete">' +
@@ -299,6 +326,7 @@ var SettingsPage = (function() {
         '</td>' +
         '</tr>';
     }).join('');
+    enrichTableNames('ru-tbody');
   }
 
   function openAddRUModal() {

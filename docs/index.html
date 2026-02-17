@@ -62,11 +62,35 @@
 <div class="main page-container" id="page-concept-sets">
   <!-- List view -->
   <div class="list-view" id="cs-list-view">
-    <div class="category-badges" id="cs-categories"></div>
+    <div class="cs-toolbar" id="cs-toolbar">
+      <div class="category-badges" id="cs-categories" style="margin-bottom:0"></div>
+      <div class="cs-toolbar-right">
+        <button class="btn-secondary-custom btn-sm" id="cs-select-all-btn" title="Select all" style="display:none">
+          <i class="fas fa-check-square"></i>
+        </button>
+        <button class="btn-secondary-custom btn-sm" id="cs-unselect-all-btn" title="Unselect all" style="display:none">
+          <i class="far fa-square"></i>
+        </button>
+        <button class="btn-danger-custom btn-sm" id="cs-delete-selected-btn" title="Delete selected" style="display:none">
+          <i class="fas fa-trash"></i>
+        </button>
+        <span class="cs-selection-count" id="cs-selection-count" style="display:none">0 selected</span>
+        <button class="btn-secondary-custom" id="cs-select-mode-btn" title="Toggle selection mode">
+          <i class="far fa-check-square"></i>
+        </button>
+        <button class="btn-primary-custom" id="cs-export-all-btn">
+          <i class="fas fa-download"></i> Export
+        </button>
+        <button class="btn-success-custom" id="cs-create-btn">
+          <i class="fas fa-plus"></i> Add Concept Set
+        </button>
+      </div>
+    </div>
     <div class="table-container">
       <table id="cs-table">
         <thead>
           <tr>
+            <th class="cs-select-col"></th>
             <th data-sort="category" style="width:14%">Category <span class="sort-icon">&#9650;</span></th>
             <th data-sort="subcategory" style="width:14%">Subcategory <span class="sort-icon">&#9650;</span></th>
             <th data-sort="name" style="width:24%">Name <span class="sort-icon">&#9650;</span></th>
@@ -75,6 +99,7 @@
             <th data-sort="reviewStatus" style="width:10%" class="td-center">Status <span class="sort-icon">&#9650;</span></th>
           </tr>
           <tr class="filter-row">
+            <th class="cs-select-col"></th>
             <th><div class="ms-container" id="filter-category"></div></th>
             <th><div class="ms-container" id="filter-subcategory"></div></th>
             <th><input type="text" class="column-filter" id="filter-name" placeholder="Filter..."></th>
@@ -534,17 +559,15 @@
             </button>
             <span class="devtools-shortcut-hint">Ctrl+Enter</span>
           </div>
-          <textarea id="sql-editor" class="devtools-sql-textarea" spellcheck="false"
-            placeholder="Enter SQL query..."></textarea>
+          <div id="sql-editor" class="devtools-sql-ace">SELECT concept_id, concept_name, vocabulary_id, domain_id
+FROM concept
+WHERE standard_concept = 'S'
+LIMIT 50</div>
         </div>
 
         <!-- Right: results -->
         <div class="devtools-sql-right">
           <div class="devtools-sql-toolbar">
-            <div class="toggle-group" id="result-view-toggle">
-              <button class="toggle-btn active" data-mode="table">Table</button>
-              <button class="toggle-btn" data-mode="raw">Raw</button>
-            </div>
             <span class="devtools-row-count" id="sql-row-count"></span>
             <button class="btn-outline-sm" id="sql-export-csv" style="margin-left:auto" disabled>
               <i class="fas fa-download"></i> CSV
@@ -747,6 +770,130 @@ Enter your review comments here using Markdown syntax.
     <div class="modal-fs-col">
       <div class="modal-fs-col-title"><i class="fas fa-eye"></i> Preview</div>
       <div class="markdown-body" id="review-preview"><div class="markdown-preview-placeholder">Preview will appear here...</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Concept Sets Confirmation Modal -->
+<div class="modal-overlay" id="cs-delete-confirm-modal" style="display:none">
+  <div class="modal" style="width:420px">
+    <div class="modal-header">
+      <h3>Delete Concept Sets</h3>
+      <button class="modal-close" id="cs-delete-confirm-close">&times;</button>
+    </div>
+    <div class="modal-body" style="text-align:center; padding:24px 20px">
+      <i class="fas fa-exclamation-triangle" style="font-size:32px; color:var(--danger); margin-bottom:12px"></i>
+      <p style="font-size:14px; margin-bottom:4px" id="cs-delete-confirm-msg">Are you sure you want to delete the selected concept sets?</p>
+      <p style="font-size:13px; color:var(--text-muted)">This will only remove locally created concept sets. Repository concept sets cannot be deleted.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="cs-delete-confirm-cancel">Cancel</button>
+      <button class="btn-submit" id="cs-delete-confirm-ok" style="background:var(--danger)">
+        <i class="fas fa-trash"></i> Delete
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Bulk Export Concept Sets Modal -->
+<div class="modal-overlay" id="cs-bulk-export-modal" style="display:none">
+  <div class="modal" style="max-width:500px">
+    <div class="modal-header">
+      <h3><i class="fas fa-download"></i> Export Concept Sets</h3>
+      <button class="modal-close" id="cs-bulk-export-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="export-options-container">
+        <div class="export-option" data-bulk-export="all">
+          <div class="export-option-icon"><i class="fas fa-file-archive" style="color:#0f60af"></i></div>
+          <div class="export-option-content">
+            <h5 class="export-option-title">Export All</h5>
+            <p class="export-option-subtitle">Download all concept sets as a single JSON file</p>
+          </div>
+        </div>
+        <div class="export-option" data-bulk-export="selected" id="cs-bulk-export-selected-option" style="display:none">
+          <div class="export-option-icon"><i class="fas fa-check-square" style="color:#f97316"></i></div>
+          <div class="export-option-content">
+            <h5 class="export-option-title">Export Selected</h5>
+            <p class="export-option-subtitle" id="cs-bulk-export-selected-desc">Download selected concept sets</p>
+          </div>
+        </div>
+        <div class="export-option" data-bulk-export="category">
+          <div class="export-option-icon"><i class="fas fa-folder" style="color:#28a745"></i></div>
+          <div class="export-option-content">
+            <h5 class="export-option-title">Filter by Category</h5>
+            <p class="export-option-subtitle">Export concept sets from a specific category</p>
+          </div>
+        </div>
+      </div>
+      <div id="cs-bulk-export-category-select" style="display:none; margin-top:12px">
+        <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block">Category</label>
+        <select id="cs-bulk-export-category" class="form-input"></select>
+        <div style="margin-top:10px; text-align:right">
+          <button class="btn-submit" id="cs-bulk-export-category-go"><i class="fas fa-download"></i> Export</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="cs-bulk-export-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Create Concept Set Modal -->
+<div class="modal-overlay" id="cs-create-modal" style="display:none">
+  <div class="modal" style="width:640px">
+    <div class="modal-header">
+      <h3><i class="fas fa-plus"></i> New Concept Set</h3>
+      <button class="modal-close" id="cs-create-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Name (EN) *</label>
+          <input type="text" id="cs-create-name-en" class="form-input" placeholder="e.g. Heart Rate">
+        </div>
+        <div class="form-group">
+          <label>Name (FR)</label>
+          <input type="text" id="cs-create-name-fr" class="form-input" placeholder="e.g. Fréquence cardiaque">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="cs-create-desc" class="form-input" rows="3" placeholder="Brief description of the concept set..."></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Category (EN) *</label>
+          <input type="text" id="cs-create-cat-en" class="form-input" list="cs-create-cat-en-list" placeholder="e.g. Clinical observation">
+          <datalist id="cs-create-cat-en-list"></datalist>
+        </div>
+        <div class="form-group">
+          <label>Category (FR)</label>
+          <input type="text" id="cs-create-cat-fr" class="form-input" list="cs-create-cat-fr-list" placeholder="e.g. Observation clinique">
+          <datalist id="cs-create-cat-fr-list"></datalist>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Subcategory (EN)</label>
+          <input type="text" id="cs-create-subcat-en" class="form-input" list="cs-create-subcat-en-list" placeholder="e.g. Vital signs">
+          <datalist id="cs-create-subcat-en-list"></datalist>
+        </div>
+        <div class="form-group">
+          <label>Subcategory (FR)</label>
+          <input type="text" id="cs-create-subcat-fr" class="form-input" list="cs-create-subcat-fr-list" placeholder="e.g. Signes vitaux">
+          <datalist id="cs-create-subcat-fr-list"></datalist>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Version</label>
+        <input type="text" id="cs-create-version" class="form-input" value="1.0.0" style="width:120px">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="cs-create-cancel">Cancel</button>
+      <button class="btn-submit" id="cs-create-submit"><i class="fas fa-plus"></i> Create</button>
     </div>
   </div>
 </div>
@@ -989,6 +1136,7 @@ Enter your review comments here using Markdown syntax.
      ═══════════════════════════════════════════════════════════ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.7/ace.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <script src="data_inline.js"></script>
 <script src="app.js"></script>
 <script src="duckdb-loader.js"></script>

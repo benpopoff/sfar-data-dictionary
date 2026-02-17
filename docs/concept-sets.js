@@ -17,6 +17,10 @@ var ConceptSetsPage = (function() {
   var csDetailTab = 'concepts';
   var csConceptMode = 'resolved';
 
+  // Selection mode state
+  var selectionMode = false;
+  var selectedIds = new Set();
+
   // ==================== FILTERING ====================
   function getFilteredCS() {
     var data = App.getCSData();
@@ -126,7 +130,9 @@ var ConceptSetsPage = (function() {
 
     var tbody = document.getElementById('cs-tbody');
     tbody.innerHTML = pageData.map(function(d) {
-      return '<tr data-id="' + d.id + '">' +
+      var isSelected = selectedIds.has(d.id);
+      return '<tr data-id="' + d.id + '"' + (isSelected ? ' class="selected"' : '') + '>' +
+        '<td class="cs-select-col"><input type="checkbox" class="cs-row-checkbox" data-id="' + d.id + '"' + (isSelected ? ' checked' : '') + '></td>' +
         '<td><span class="badge badge-category">' + App.escapeHtml(d.category) + '</span></td>' +
         '<td><span class="badge badge-subcategory">' + App.escapeHtml(d.subcategory) + '</span></td>' +
         '<td><strong>' + App.escapeHtml(d.name) + '</strong></td>' +
@@ -458,6 +464,247 @@ var ConceptSetsPage = (function() {
       '<div class="detail-item"><strong>Concept Class:</strong><span>' + App.escapeHtml(concept.conceptClassId) + '</span></div>' +
       '<div></div>' +
       '</div></div>';
+
+    // Append vocab tabs if DuckDB is ready
+    if (typeof VocabDB !== 'undefined') {
+      VocabDB.isDatabaseReady().then(function(ready) {
+        if (!ready) return;
+        renderVocabTabs(concept, el);
+      });
+    }
+  }
+
+  // ==================== VOCAB TABS (Related / Hierarchy / Synonyms) ====================
+  var vocabTabsHierarchyNetwork = null;
+
+  function renderVocabTabs(concept, containerEl) {
+    var tabsHtml =
+      '<div class="concept-vocab-tab-bar">' +
+        '<button class="concept-vocab-tab active" data-vtab="related">Related</button>' +
+        '<button class="concept-vocab-tab" data-vtab="hierarchy">Hierarchy</button>' +
+        '<button class="concept-vocab-tab" data-vtab="synonyms">Synonyms</button>' +
+      '</div>' +
+      '<div class="concept-vocab-content" id="vtab-related"></div>' +
+      '<div class="concept-vocab-content" id="vtab-hierarchy" style="display:none"></div>' +
+      '<div class="concept-vocab-content" id="vtab-synonyms" style="display:none"></div>';
+
+    var wrapper = document.createElement('div');
+    wrapper.innerHTML = tabsHtml;
+    containerEl.appendChild(wrapper);
+
+    // Tab switching
+    var tabs = wrapper.querySelectorAll('.concept-vocab-tab');
+    var loaded = {};
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener('click', function() {
+        var vtab = this.getAttribute('data-vtab');
+        for (var j = 0; j < tabs.length; j++) tabs[j].classList.toggle('active', tabs[j] === this);
+        ['related', 'hierarchy', 'synonyms'].forEach(function(t) {
+          var el = document.getElementById('vtab-' + t);
+          if (el) el.style.display = (t === vtab) ? '' : 'none';
+        });
+        if (!loaded[vtab]) {
+          loaded[vtab] = true;
+          if (vtab === 'hierarchy') loadHierarchyGraph(concept.conceptId, document.getElementById('vtab-hierarchy'));
+          if (vtab === 'synonyms') loadSynonyms(concept.conceptId, document.getElementById('vtab-synonyms'));
+        }
+      });
+    }
+
+    // Load related by default
+    loaded.related = true;
+    loadRelatedConcepts(concept.conceptId, document.getElementById('vtab-related'));
+  }
+
+  function loadRelatedConcepts(conceptId, el) {
+    el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading...</div>';
+    VocabDB.query(
+      'SELECT cr.relationship_id, c.concept_id, c.concept_name, c.vocabulary_id ' +
+      'FROM concept_relationship cr ' +
+      'JOIN concept c ON c.concept_id = cr.concept_id_2 ' +
+      'WHERE cr.concept_id_1 = ' + conceptId + ' ' +
+      'ORDER BY cr.relationship_id, c.concept_name'
+    ).then(function(rows) {
+      if (!rows || rows.length === 0) {
+        el.innerHTML = '<div class="loading-inline">No related concepts found.</div>';
+        return;
+      }
+      var html = '<table class="concept-related-table"><thead><tr>' +
+        '<th>Relationship</th><th>Concept Name</th><th>Vocabulary</th>' +
+        '</tr></thead><tbody>';
+      rows.forEach(function(r) {
+        html += '<tr data-cid="' + r.concept_id + '">' +
+          '<td>' + App.escapeHtml(r.relationship_id) + '</td>' +
+          '<td>' + App.escapeHtml(r.concept_name) + '</td>' +
+          '<td>' + App.escapeHtml(r.vocabulary_id) + '</td>' +
+          '</tr>';
+      });
+      html += '</tbody></table>';
+      el.innerHTML = html;
+
+      // Click to navigate to concept
+      el.querySelector('tbody').addEventListener('click', function(e) {
+        var tr = e.target.closest('tr[data-cid]');
+        if (!tr) return;
+        var cid = parseInt(tr.getAttribute('data-cid'));
+        VocabDB.lookupConcepts([cid]).then(function(concepts) {
+          if (concepts.length > 0) {
+            var c = concepts[0];
+            showResolvedConceptDetail({
+              conceptId: c.concept_id, conceptName: c.concept_name,
+              vocabularyId: c.vocabulary_id, domainId: c.domain_id,
+              conceptClassId: c.concept_class_id, conceptCode: c.concept_code,
+              standardConcept: c.standard_concept
+            });
+          }
+        });
+      });
+    }).catch(function(err) {
+      el.innerHTML = '<div class="loading-inline" style="color:var(--danger)">Error: ' + App.escapeHtml(err.message) + '</div>';
+    });
+  }
+
+  function loadHierarchyGraph(conceptId, el) {
+    el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
+
+    var parentsSql =
+      'SELECT c.concept_id, c.concept_name, c.vocabulary_id, c.standard_concept ' +
+      'FROM concept_ancestor ca JOIN concept c ON c.concept_id = ca.ancestor_concept_id ' +
+      'WHERE ca.descendant_concept_id = ' + conceptId + ' AND ca.min_levels_of_separation = 1';
+    var childrenSql =
+      'SELECT c.concept_id, c.concept_name, c.vocabulary_id, c.standard_concept ' +
+      'FROM concept_ancestor ca JOIN concept c ON c.concept_id = ca.descendant_concept_id ' +
+      'WHERE ca.ancestor_concept_id = ' + conceptId + ' AND ca.min_levels_of_separation = 1';
+    var selfSql =
+      'SELECT concept_id, concept_name, vocabulary_id, standard_concept FROM concept WHERE concept_id = ' + conceptId;
+
+    Promise.all([VocabDB.query(parentsSql), VocabDB.query(childrenSql), VocabDB.query(selfSql)])
+      .then(function(results) {
+        var parents = results[0] || [];
+        var children = results[1] || [];
+        var self = results[2] && results[2][0];
+        if (!self) {
+          el.innerHTML = '<div class="loading-inline">Concept not found in vocabulary database.</div>';
+          return;
+        }
+
+        el.innerHTML = '<div id="hierarchy-graph-container" style="height:400px; border:1px solid #eee; border-radius:6px"></div>';
+
+        var nodes = [];
+        var edges = [];
+
+        // Self node (level 1)
+        nodes.push({
+          id: self.concept_id,
+          label: self.concept_name + '\n[' + self.vocabulary_id + ']',
+          level: 1,
+          shape: 'box',
+          color: { background: '#4A90D9', border: '#3570a8' },
+          font: { color: '#fff', size: 12 },
+          widthConstraint: { minimum: 140, maximum: 220 }
+        });
+
+        // Parent nodes (level 0)
+        parents.forEach(function(p) {
+          nodes.push({
+            id: p.concept_id,
+            label: p.concept_name + '\n[' + p.vocabulary_id + ']',
+            level: 0,
+            shape: 'box',
+            color: { background: '#aaa', border: '#888' },
+            font: { color: '#fff', size: 11 },
+            widthConstraint: { minimum: 140, maximum: 220 }
+          });
+          edges.push({ from: p.concept_id, to: self.concept_id, arrows: 'to' });
+        });
+
+        // Children nodes (level 2)
+        children.forEach(function(c) {
+          nodes.push({
+            id: c.concept_id,
+            label: c.concept_name + '\n[' + c.vocabulary_id + ']',
+            level: 2,
+            shape: 'box',
+            color: { background: '#5CB85C', border: '#449d44' },
+            font: { color: '#fff', size: 11 },
+            widthConstraint: { minimum: 140, maximum: 220 }
+          });
+          edges.push({ from: self.concept_id, to: c.concept_id, arrows: 'to' });
+        });
+
+        if (nodes.length === 1 && parents.length === 0 && children.length === 0) {
+          el.innerHTML = '<div class="loading-inline">No hierarchy relationships found for this concept.</div>';
+          return;
+        }
+
+        var container = document.getElementById('hierarchy-graph-container');
+        var data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+        var options = {
+          layout: {
+            hierarchical: {
+              direction: 'UD',
+              sortMethod: 'directed',
+              levelSeparation: 100,
+              nodeSpacing: 140
+            }
+          },
+          physics: false,
+          interaction: {
+            hover: true,
+            zoomView: true,
+            dragView: true,
+            navigationButtons: false
+          },
+          edges: {
+            color: { color: '#ccc', hover: '#999' },
+            smooth: { type: 'cubicBezier' }
+          }
+        };
+
+        if (vocabTabsHierarchyNetwork) vocabTabsHierarchyNetwork.destroy();
+        vocabTabsHierarchyNetwork = new vis.Network(container, data, options);
+
+        // Double-click to navigate
+        vocabTabsHierarchyNetwork.on('doubleClick', function(params) {
+          if (params.nodes.length === 1) {
+            var cid = params.nodes[0];
+            VocabDB.lookupConcepts([cid]).then(function(concepts) {
+              if (concepts.length > 0) {
+                var c2 = concepts[0];
+                showResolvedConceptDetail({
+                  conceptId: c2.concept_id, conceptName: c2.concept_name,
+                  vocabularyId: c2.vocabulary_id, domainId: c2.domain_id,
+                  conceptClassId: c2.concept_class_id, conceptCode: c2.concept_code,
+                  standardConcept: c2.standard_concept
+                });
+              }
+            });
+          }
+        });
+      })
+      .catch(function(err) {
+        el.innerHTML = '<div class="loading-inline" style="color:var(--danger)">Error: ' + App.escapeHtml(err.message) + '</div>';
+      });
+  }
+
+  function loadSynonyms(conceptId, el) {
+    el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading...</div>';
+    VocabDB.query('SELECT concept_synonym_name FROM concept_synonym WHERE concept_id = ' + conceptId)
+      .then(function(rows) {
+        if (!rows || rows.length === 0) {
+          el.innerHTML = '<div class="loading-inline">No synonyms found.</div>';
+          return;
+        }
+        var html = '<ul class="concept-synonyms-list">';
+        rows.forEach(function(r) {
+          html += '<li>' + App.escapeHtml(r.concept_synonym_name) + '</li>';
+        });
+        html += '</ul>';
+        el.innerHTML = html;
+      })
+      .catch(function(err) {
+        el.innerHTML = '<div class="loading-inline" style="color:var(--danger)">Error: ' + App.escapeHtml(err.message) + '</div>';
+      });
   }
 
   // ==================== TAB CONTENT ====================
@@ -764,8 +1011,302 @@ var ConceptSetsPage = (function() {
     renderCSTable();
   }
 
+  // ==================== SELECTION MODE ====================
+  function toggleSelectionMode() {
+    selectionMode = !selectionMode;
+    var table = document.getElementById('cs-table');
+    var btn = document.getElementById('cs-select-mode-btn');
+    table.classList.toggle('selection-mode', selectionMode);
+    btn.classList.toggle('active', selectionMode);
+
+    // Show/hide toolbar buttons
+    document.getElementById('cs-select-all-btn').style.display = selectionMode ? '' : 'none';
+    document.getElementById('cs-unselect-all-btn').style.display = selectionMode ? '' : 'none';
+    document.getElementById('cs-delete-selected-btn').style.display = selectionMode ? '' : 'none';
+    document.getElementById('cs-selection-count').style.display = selectionMode ? '' : 'none';
+
+    if (!selectionMode) {
+      selectedIds.clear();
+      updateSelectionCount();
+      renderCSTable();
+    }
+  }
+
+  function updateSelectionCount() {
+    var el = document.getElementById('cs-selection-count');
+    el.textContent = selectedIds.size + ' selected';
+  }
+
+  function selectAll() {
+    var data = getFilteredCS();
+    data.forEach(function(d) { selectedIds.add(d.id); });
+    updateSelectionCount();
+    renderCSTable();
+  }
+
+  function unselectAll() {
+    selectedIds.clear();
+    updateSelectionCount();
+    renderCSTable();
+  }
+
+  function toggleRowSelection(id) {
+    if (selectedIds.has(id)) selectedIds.delete(id); else selectedIds.add(id);
+    updateSelectionCount();
+    // Update just the row instead of full re-render
+    var row = document.querySelector('#cs-tbody tr[data-id="' + id + '"]');
+    if (row) {
+      row.classList.toggle('selected', selectedIds.has(id));
+      var cb = row.querySelector('.cs-row-checkbox');
+      if (cb) cb.checked = selectedIds.has(id);
+    }
+  }
+
+  // ==================== DELETE SELECTED ====================
+  function openDeleteConfirm() {
+    if (selectedIds.size === 0) {
+      App.showToast('No concept sets selected.', 'warning');
+      return;
+    }
+    var userCount = 0;
+    selectedIds.forEach(function(id) { if (App.isUserConceptSet(id)) userCount++; });
+    var repoCount = selectedIds.size - userCount;
+    var msg = 'Delete ' + selectedIds.size + ' selected concept set' + (selectedIds.size > 1 ? 's' : '') + '?';
+    if (repoCount > 0 && userCount > 0) {
+      msg += ' (' + userCount + ' local will be deleted, ' + repoCount + ' from repository will be skipped)';
+    } else if (repoCount > 0 && userCount === 0) {
+      msg = 'The selected concept sets are from the repository and cannot be deleted locally.';
+    }
+    document.getElementById('cs-delete-confirm-msg').textContent = msg;
+    document.getElementById('cs-delete-confirm-modal').style.display = 'flex';
+  }
+
+  function closeDeleteConfirm() {
+    document.getElementById('cs-delete-confirm-modal').style.display = 'none';
+  }
+
+  function executeDelete() {
+    var ids = Array.from(selectedIds);
+    var result = App.deleteConceptSets(ids);
+    closeDeleteConfirm();
+    selectedIds.clear();
+    updateSelectionCount();
+    renderAll();
+    if (result.deleted > 0) {
+      App.showToast(result.deleted + ' concept set' + (result.deleted > 1 ? 's' : '') + ' deleted.', 'success');
+    }
+    if (result.skipped > 0) {
+      App.showToast(result.skipped + ' repository concept set' + (result.skipped > 1 ? 's' : '') + ' cannot be deleted.', 'warning');
+    }
+  }
+
+  // ==================== BULK EXPORT ====================
+  function openBulkExportModal() {
+    // Show/hide the "Export Selected" option
+    var selectedOption = document.getElementById('cs-bulk-export-selected-option');
+    if (selectionMode && selectedIds.size > 0) {
+      selectedOption.style.display = '';
+      document.getElementById('cs-bulk-export-selected-desc').textContent =
+        'Download ' + selectedIds.size + ' selected concept set' + (selectedIds.size > 1 ? 's' : '');
+    } else {
+      selectedOption.style.display = 'none';
+    }
+    // Hide category select
+    document.getElementById('cs-bulk-export-category-select').style.display = 'none';
+    // Populate category dropdown
+    var cats = {};
+    App.getCSData().forEach(function(d) { cats[d.category] = true; });
+    var sel = document.getElementById('cs-bulk-export-category');
+    sel.innerHTML = Object.keys(cats).sort().map(function(c) {
+      return '<option value="' + App.escapeHtml(c) + '">' + App.escapeHtml(c) + '</option>';
+    }).join('');
+    document.getElementById('cs-bulk-export-modal').style.display = 'flex';
+  }
+
+  function closeBulkExportModal() {
+    document.getElementById('cs-bulk-export-modal').style.display = 'none';
+  }
+
+  function downloadConceptSetsJson(list, filename) {
+    var json = JSON.stringify(list.map(function(cs) {
+      var copy = JSON.parse(JSON.stringify(cs));
+      var sessionRevs = App.sessionReviews[cs.id] || [];
+      if (sessionRevs.length > 0) {
+        if (!copy.metadata) copy.metadata = {};
+        if (!copy.metadata.reviews) copy.metadata.reviews = [];
+        copy.metadata.reviews = copy.metadata.reviews.concat(sessionRevs);
+      }
+      return copy;
+    }), null, 2);
+    var blob = new Blob([json], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function executeBulkExport(mode) {
+    var list;
+    var filename;
+    if (mode === 'all') {
+      list = App.conceptSets;
+      filename = 'concept_sets_all.json';
+    } else if (mode === 'selected') {
+      list = App.conceptSets.filter(function(cs) { return selectedIds.has(cs.id); });
+      filename = 'concept_sets_selected.json';
+    } else if (mode === 'category') {
+      // Show the category selector instead of downloading
+      document.getElementById('cs-bulk-export-category-select').style.display = '';
+      return;
+    }
+    downloadConceptSetsJson(list, filename);
+    closeBulkExportModal();
+    App.showToast(list.length + ' concept set' + (list.length > 1 ? 's' : '') + ' exported.', 'success');
+  }
+
+  function executeBulkExportByCategory() {
+    var cat = document.getElementById('cs-bulk-export-category').value;
+    var list = App.conceptSets.filter(function(cs) {
+      var tr = App.t(cs);
+      return (tr.category || '') === cat;
+    });
+    var safeCat = cat.replace(/[^a-zA-Z0-9_-]/g, '_').toLowerCase();
+    downloadConceptSetsJson(list, 'concept_sets_' + safeCat + '.json');
+    closeBulkExportModal();
+    App.showToast(list.length + ' concept set' + (list.length > 1 ? 's' : '') + ' exported.', 'success');
+  }
+
+  // ==================== CREATE CONCEPT SET ====================
+  function openCreateModal() {
+    // Clear form
+    ['cs-create-name-en', 'cs-create-name-fr', 'cs-create-desc',
+     'cs-create-cat-en', 'cs-create-cat-fr',
+     'cs-create-subcat-en', 'cs-create-subcat-fr'].forEach(function(id) {
+      document.getElementById(id).value = '';
+    });
+    document.getElementById('cs-create-version').value = '1.0.0';
+
+    // Populate datalists with existing categories/subcategories
+    var catsEn = new Set(), catsFr = new Set(), subcatsEn = new Set(), subcatsFr = new Set();
+    App.conceptSets.forEach(function(cs) {
+      var tr = cs.metadata && cs.metadata.translations;
+      if (tr && tr.en) {
+        if (tr.en.category) catsEn.add(tr.en.category);
+        if (tr.en.subcategory) subcatsEn.add(tr.en.subcategory);
+      }
+      if (tr && tr.fr) {
+        if (tr.fr.category) catsFr.add(tr.fr.category);
+        if (tr.fr.subcategory) subcatsFr.add(tr.fr.subcategory);
+      }
+    });
+
+    function fillDatalist(id, values) {
+      var dl = document.getElementById(id);
+      dl.innerHTML = '';
+      Array.from(values).sort().forEach(function(v) {
+        var opt = document.createElement('option');
+        opt.value = v;
+        dl.appendChild(opt);
+      });
+    }
+    fillDatalist('cs-create-cat-en-list', catsEn);
+    fillDatalist('cs-create-cat-fr-list', catsFr);
+    fillDatalist('cs-create-subcat-en-list', subcatsEn);
+    fillDatalist('cs-create-subcat-fr-list', subcatsFr);
+
+    document.getElementById('cs-create-modal').style.display = 'flex';
+  }
+
+  function closeCreateModal() {
+    document.getElementById('cs-create-modal').style.display = 'none';
+  }
+
+  function submitCreateCS() {
+    var nameEn = document.getElementById('cs-create-name-en').value.trim();
+    var nameFr = document.getElementById('cs-create-name-fr').value.trim();
+    var desc = document.getElementById('cs-create-desc').value.trim();
+    var catEn = document.getElementById('cs-create-cat-en').value.trim();
+    var catFr = document.getElementById('cs-create-cat-fr').value.trim();
+    var subcatEn = document.getElementById('cs-create-subcat-en').value.trim();
+    var subcatFr = document.getElementById('cs-create-subcat-fr').value.trim();
+    var version = document.getElementById('cs-create-version').value.trim() || '1.0.0';
+
+    if (!nameEn) { App.showToast('Name (EN) is required.', 'error'); return; }
+    if (!catEn) { App.showToast('Category (EN) is required.', 'error'); return; }
+
+    var profile = App.getUserProfile();
+    var authorName = ((profile.firstName || '') + ' ' + (profile.lastName || '')).trim() || 'Anonymous';
+    var today = new Date().toISOString().split('T')[0];
+
+    var cs = {
+      id: App.nextConceptSetId(),
+      name: nameEn,
+      description: desc || null,
+      version: version,
+      createdBy: authorName,
+      createdDate: today,
+      modifiedBy: authorName,
+      modifiedDate: today,
+      createdByTool: 'INDICATE Data Dictionary (Web)',
+      expression: { items: [] },
+      tags: [],
+      reviewStatus: 'draft',
+      metadata: {
+        translations: {
+          en: { name: nameEn, category: catEn, subcategory: subcatEn },
+          fr: { name: nameFr || nameEn, category: catFr || catEn, subcategory: subcatFr || subcatEn }
+        },
+        createdByDetails: {
+          firstName: profile.firstName || '',
+          lastName: profile.lastName || '',
+          affiliation: profile.affiliation || '',
+          profession: profile.profession || '',
+          orcid: profile.orcid || ''
+        },
+        reviews: [],
+        versions: [],
+        distributionStats: null
+      }
+    };
+
+    App.addConceptSet(cs);
+    closeCreateModal();
+    renderAll();
+    showCSDetail(cs.id);
+    App.showToast('Concept set "' + nameEn + '" created.', 'success');
+  }
+
   // ==================== EVENTS ====================
   function initEvents() {
+    // Toolbar: selection mode toggle
+    document.getElementById('cs-select-mode-btn').addEventListener('click', toggleSelectionMode);
+    document.getElementById('cs-select-all-btn').addEventListener('click', selectAll);
+    document.getElementById('cs-unselect-all-btn').addEventListener('click', unselectAll);
+    document.getElementById('cs-delete-selected-btn').addEventListener('click', openDeleteConfirm);
+
+    // Toolbar: bulk export
+    document.getElementById('cs-export-all-btn').addEventListener('click', openBulkExportModal);
+    document.getElementById('cs-bulk-export-close').addEventListener('click', closeBulkExportModal);
+    document.getElementById('cs-bulk-export-cancel').addEventListener('click', closeBulkExportModal);
+    document.getElementById('cs-bulk-export-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeBulkExportModal();
+    });
+    document.getElementById('cs-bulk-export-modal').querySelector('.modal-body').addEventListener('click', function(e) {
+      var opt = e.target.closest('.export-option[data-bulk-export]');
+      if (opt) executeBulkExport(opt.dataset.bulkExport);
+    });
+    document.getElementById('cs-bulk-export-category-go').addEventListener('click', executeBulkExportByCategory);
+
+    // Toolbar: delete confirmation modal
+    document.getElementById('cs-delete-confirm-close').addEventListener('click', closeDeleteConfirm);
+    document.getElementById('cs-delete-confirm-cancel').addEventListener('click', closeDeleteConfirm);
+    document.getElementById('cs-delete-confirm-ok').addEventListener('click', executeDelete);
+    document.getElementById('cs-delete-confirm-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeDeleteConfirm();
+    });
+
     // CS name fuzzy filter
     document.getElementById('filter-name').addEventListener('input', function(e) {
       csFilterName = e.target.value;
@@ -808,11 +1349,23 @@ var ConceptSetsPage = (function() {
       renderCSTable();
     });
 
-    // CS table row click -> detail
+    // CS table row click -> detail OR toggle checkbox in selection mode
     document.getElementById('cs-tbody').addEventListener('click', function(e) {
       var tr = e.target.closest('tr[data-id]');
       if (!tr) return;
-      showCSDetail(parseInt(tr.dataset.id));
+      var id = parseInt(tr.dataset.id);
+      // If clicking a checkbox, toggle selection
+      if (e.target.classList.contains('cs-row-checkbox')) {
+        toggleRowSelection(id);
+        return;
+      }
+      // In selection mode, clicking the row toggles selection
+      if (selectionMode) {
+        toggleRowSelection(id);
+        return;
+      }
+      // Normal mode: open detail
+      showCSDetail(id);
     });
 
     // CS back button
@@ -891,6 +1444,15 @@ var ConceptSetsPage = (function() {
     // Review modal events
     document.getElementById('review-modal-close').addEventListener('click', closeReviewModal);
     document.getElementById('review-submit').addEventListener('click', submitReview);
+
+    // Create concept set modal events
+    document.getElementById('cs-create-btn').addEventListener('click', openCreateModal);
+    document.getElementById('cs-create-close').addEventListener('click', closeCreateModal);
+    document.getElementById('cs-create-cancel').addEventListener('click', closeCreateModal);
+    document.getElementById('cs-create-submit').addEventListener('click', submitCreateCS);
+    document.getElementById('cs-create-modal').addEventListener('click', function(e) {
+      if (e.target === document.getElementById('cs-create-modal')) closeCreateModal();
+    });
   }
 
   // ==================== PAGE MODULE ====================
@@ -911,6 +1473,9 @@ var ConceptSetsPage = (function() {
   function hide() {
     closeExportModal();
     closeReviewModal();
+    closeCreateModal();
+    closeBulkExportModal();
+    closeDeleteConfirm();
   }
 
   function onLanguageChange() {

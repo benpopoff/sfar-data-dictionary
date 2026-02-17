@@ -11,9 +11,10 @@ var DevToolsPage = (function () {
   var activeTab = 'sql';
   var lastQueryRows = null;
   var lastQueryCols = null;
-  var resultViewMode = 'table';
   var currentPage = 0;
   var PAGE_SIZE = 50;
+
+  var sqlEditor = null;
 
   var erdScale = 1;
   var erdTranslateX = 0;
@@ -183,8 +184,8 @@ var DevToolsPage = (function () {
     var ua = navigator.userAgent;
     var isFirefox = /Firefox\//i.test(ua);
     var isSafari = /Safari\//i.test(ua) && !/Chrome\//i.test(ua);
-    if (isFirefox) return ' Firefox does not support persistent file access — you must re-load vocabularies each session. Use Chrome or Edge for best experience.';
-    if (isSafari) return ' Safari has limited support — vocabulary features may not work. Use Chrome or Edge for best experience.';
+    if (isFirefox) return ' Firefox does not support persistent file access — you must re-load vocabularies each session. Persistent file access is supported by Chrome and Edge.';
+    if (isSafari) return ' Safari has limited support — vocabulary features may not work correctly. Full support is available in Chrome and Edge.';
     return '';
   }
 
@@ -261,15 +262,15 @@ var DevToolsPage = (function () {
     });
     select.addEventListener('change', function () {
       if (this.value) {
-        document.getElementById('sql-editor').value = this.value;
+        sqlEditor.setValue(this.value, -1);
+        sqlEditor.focus();
         this.value = '';
       }
     });
   }
 
   function runQuery() {
-    var textarea = document.getElementById('sql-editor');
-    var sql = textarea.value.trim();
+    var sql = sqlEditor.getValue().trim();
     if (!sql) return;
 
     var resultsEl = document.getElementById('sql-results');
@@ -313,20 +314,6 @@ var DevToolsPage = (function () {
     if (!lastQueryRows || !lastQueryCols) return;
     var resultsEl = document.getElementById('sql-results');
     var total = lastQueryRows.length;
-
-    if (resultViewMode === 'raw') {
-      var lines = [lastQueryCols.join('\t')];
-      for (var r = 0; r < total; r++) {
-        var vals = [];
-        for (var c = 0; c < lastQueryCols.length; c++) {
-          var val = lastQueryRows[r][lastQueryCols[c]];
-          vals.push(val == null ? '' : String(val));
-        }
-        lines.push(vals.join('\t'));
-      }
-      resultsEl.innerHTML = '<pre class="devtools-sql-raw">' + App.escapeHtml(lines.join('\n')) + '</pre>';
-      return;
-    }
 
     /* Paginated table view */
     var totalPages = Math.ceil(total / PAGE_SIZE);
@@ -595,29 +582,22 @@ var DevToolsPage = (function () {
 
     document.getElementById('sql-run-btn').addEventListener('click', runQuery);
 
-    document.getElementById('sql-editor').addEventListener('keydown', function (e) {
-      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-        e.preventDefault();
-        runQuery();
-      }
-      if (e.key === 'Tab') {
-        e.preventDefault();
-        var start = this.selectionStart;
-        var end = this.selectionEnd;
-        this.value = this.value.substring(0, start) + '  ' + this.value.substring(end);
-        this.selectionStart = this.selectionEnd = start + 2;
-      }
+    /* Ace SQL editor */
+    sqlEditor = ace.edit('sql-editor');
+    sqlEditor.setTheme('ace/theme/tomorrow');
+    sqlEditor.session.setMode('ace/mode/sql');
+    sqlEditor.setOptions({
+      fontSize: '13px',
+      showPrintMargin: false,
+      wrap: true,
+      tabSize: 2,
+      useSoftTabs: true,
+      placeholder: 'Enter SQL query...'
     });
-
-    document.querySelectorAll('#result-view-toggle .toggle-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        document.querySelectorAll('#result-view-toggle .toggle-btn').forEach(function (b) {
-          b.classList.remove('active');
-        });
-        this.classList.add('active');
-        resultViewMode = this.dataset.mode;
-        renderResults();
-      });
+    sqlEditor.commands.addCommand({
+      name: 'runQuery',
+      bindKey: { win: 'Ctrl-Enter', mac: 'Cmd-Enter' },
+      exec: function () { runQuery(); }
     });
 
     document.getElementById('sql-export-csv').addEventListener('click', exportCsv);

@@ -12,10 +12,11 @@ var App = (function() {
   var resolvedIndex = {}; // conceptSetId -> resolvedConcepts[]
   var sessionReviews = JSON.parse(localStorage.getItem('indicate_reviews') || '{}');
   var languageChangeCallbacks = [];
+  var userConceptSets = JSON.parse(localStorage.getItem('indicate_user_cs') || '[]');
 
   // ==================== DATA LOADING ====================
   function loadData(callback) {
-    conceptSets = DATA.conceptSets || [];
+    conceptSets = (DATA.conceptSets || []).concat(userConceptSets);
     projects = DATA.projects || [];
     unitConversions = DATA.unitConversions || [];
     recommendedUnits = DATA.recommendedUnits || [];
@@ -366,6 +367,53 @@ var App = (function() {
     }
   }
 
+  // ==================== USER CONCEPT SETS ====================
+  function nextConceptSetId() {
+    var maxId = 0;
+    conceptSets.forEach(function(cs) { if (cs.id > maxId) maxId = cs.id; });
+    return maxId + 1;
+  }
+
+  function saveUserConceptSets() {
+    localStorage.setItem('indicate_user_cs', JSON.stringify(userConceptSets));
+  }
+
+  function addConceptSet(cs) {
+    conceptSets.push(cs);
+    userConceptSets.push(cs);
+    saveUserConceptSets();
+  }
+
+  function updateConceptSet(cs) {
+    for (var i = 0; i < conceptSets.length; i++) {
+      if (conceptSets[i].id === cs.id) { conceptSets[i] = cs; break; }
+    }
+    for (var j = 0; j < userConceptSets.length; j++) {
+      if (userConceptSets[j].id === cs.id) { userConceptSets[j] = cs; break; }
+    }
+    saveUserConceptSets();
+  }
+
+  function deleteConceptSets(ids) {
+    var idSet = {};
+    ids.forEach(function(id) { idSet[id] = true; });
+    // Only delete user-created concept sets
+    var userIds = {};
+    userConceptSets.forEach(function(cs) { userIds[cs.id] = true; });
+    var deletable = ids.filter(function(id) { return userIds[id]; });
+    var notDeletable = ids.filter(function(id) { return !userIds[id]; });
+    // Remove from userConceptSets
+    userConceptSets = userConceptSets.filter(function(cs) { return !idSet[cs.id]; });
+    saveUserConceptSets();
+    // Remove from conceptSets
+    conceptSets = conceptSets.filter(function(cs) { return !idSet[cs.id] || !userIds[cs.id]; });
+    return { deleted: deletable.length, skipped: notDeletable.length };
+  }
+
+  function isUserConceptSet(id) {
+    return userConceptSets.some(function(cs) { return cs.id === id; });
+  }
+
   // ==================== GETCSDATA ====================
   function getCSData() {
     return conceptSets.map(function(cs) {
@@ -423,6 +471,11 @@ var App = (function() {
     closeProfileModal: closeProfileModal,
     initSharedEvents: initSharedEvents,
     getCSData: getCSData,
-    onLanguageChange: function(cb) { languageChangeCallbacks.push(cb); }
+    onLanguageChange: function(cb) { languageChangeCallbacks.push(cb); },
+    nextConceptSetId: nextConceptSetId,
+    addConceptSet: addConceptSet,
+    updateConceptSet: updateConceptSet,
+    deleteConceptSets: deleteConceptSets,
+    isUserConceptSet: isUserConceptSet
   };
 })();
