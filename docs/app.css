@@ -1411,6 +1411,168 @@ select.form-input { appearance: auto; }
   color: var(--primary);
 }
 
+/* ── General Settings / Vocabulary DB ─────────────────── */
+
+.vocab-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.vocab-status-panel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.vocab-status-panel .vocab-status-icon {
+  font-size: 28px;
+  color: var(--gray);
+  flex-shrink: 0;
+}
+.vocab-status-panel .vocab-status-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.vocab-status-panel .vocab-status-msg {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.vocab-status-loading .vocab-status-icon { color: var(--primary); }
+.vocab-status-ready .vocab-status-icon { color: var(--success); }
+.vocab-status-error .vocab-status-icon { color: var(--danger); }
+.vocab-status-empty .vocab-status-icon { color: var(--gray); }
+
+.vocab-info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--primary-light);
+  border: 1px solid #b6d4fe;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #084298;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.vocab-info-box i {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.vocab-info-box a {
+  color: #084298;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.vocab-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Progress */
+.vocab-progress-section {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.vocab-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.vocab-progress-bar {
+  height: 8px;
+  background: var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.vocab-progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.vocab-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.vocab-file-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 4px 0;
+}
+.vocab-file-icon {
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.vocab-file-importing { color: var(--primary); font-weight: 600; }
+.vocab-file-importing .vocab-file-icon { color: var(--primary); }
+.vocab-file-done { color: var(--success); }
+.vocab-file-done .vocab-file-icon { color: var(--success); }
+.vocab-file-error { color: var(--danger); }
+.vocab-file-error .vocab-file-icon { color: var(--danger); }
+
+/* Stats grid */
+.vocab-stats-section {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+}
+.vocab-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.vocab-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.vocab-stat-card {
+  background: var(--gray-light);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.vocab-stat-name {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.vocab-stat-count {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
 @media (max-width: 900px) {
   .etl-editor-layout { grid-template-columns: 1fr; height: auto; }
   .etl-editor-pane { min-height: 300px; border-right: none; border-bottom: 1px solid var(--border); }
@@ -1419,4 +1581,5 @@ select.form-input { appearance: auto; }
 @media (max-width: 600px) {
   .form-row { grid-template-columns: 1fr; }
   .modal { width: 95vw; }
+  .vocab-stats-grid { grid-template-columns: 1fr 1fr; }
 }
