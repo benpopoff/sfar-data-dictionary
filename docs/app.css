@@ -362,10 +362,14 @@ body {
 
 /* Selection mode: checkbox column + row highlight */
 #cs-table .cs-select-col { display: none; width: 36px; text-align: center; }
+#cs-table .cs-edit-col { display: none; width: 40px; text-align: center; }
 #cs-table.selection-mode .cs-select-col { display: table-cell; }
+#cs-table.selection-mode .cs-edit-col { display: table-cell; }
 #cs-table tbody tr.selected { background: #e8f0fe; }
 #cs-table tbody tr.selected:hover { background: #d4e4fa; }
 .cs-row-checkbox { width: 16px; height: 16px; cursor: pointer; accent-color: var(--primary); }
+.cs-row-edit-btn { background: none; border: none; cursor: pointer; color: var(--gray-400); font-size: 14px; padding: 4px 8px; border-radius: var(--radius); transition: color .15s, background .15s; }
+.cs-row-edit-btn:hover { background: var(--primary-light, #e8e5ff); color: var(--primary); }
 
 .category-badges {
   display: flex;
@@ -1517,6 +1521,38 @@ select.form-input { appearance: auto; }
   height: 100%;
   font-size: 13px;
 }
+
+/* Comments & Statistics edit mode */
+.form-textarea {
+  width: 100%; box-sizing: border-box;
+  padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius);
+  font-family: inherit; font-size: 13px; line-height: 1.5; resize: vertical;
+  color: var(--text); background: white;
+}
+.form-textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 2px rgba(79,70,229,.15); }
+.form-select-sm {
+  padding: 4px 8px; border: 1px solid var(--border); border-radius: var(--radius);
+  font-size: 12px; background: white; color: var(--text); cursor: pointer;
+}
+#cs-comments-ace-editor, #cs-stats-ace-editor {
+  width: 100%; font-size: 13px;
+  border: 1px solid #dee2e6; border-radius: 0;
+}
+#cs-tab-comments { display: flex; flex-direction: column; }
+#cs-comments-edit { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+#cs-tab-statistics { display: flex; flex-direction: column; }
+#cs-statistics-edit { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+
+/* Statistics view */
+.stats-summary-table { border-collapse: collapse; }
+.stats-summary-table td { border: none; }
+.stats-histogram { display: flex; flex-direction: column; gap: 4px; }
+.stats-hist-row { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.stats-hist-label { width: 60px; text-align: right; flex-shrink: 0; color: var(--text-muted); font-size: 12px; }
+.stats-hist-bar-wrap { flex: 1; height: 18px; background: var(--gray-100); border-radius: 3px; overflow: hidden; }
+.stats-hist-bar { height: 100%; background: var(--primary); border-radius: 3px; min-width: 1px; transition: width .2s; }
+.stats-hist-bar-cat { background: #38a169; }
+.stats-hist-count { width: 80px; flex-shrink: 0; font-size: 12px; color: var(--text-muted); }
 
 /* Settings toolbar */
 .settings-toolbar {

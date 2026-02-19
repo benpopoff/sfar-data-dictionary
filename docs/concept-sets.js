@@ -54,6 +54,13 @@ var ConceptSetsPage = (function() {
   var addLimitChecked = true;
   var addColumnFilters = {}; // keyed by element id
 
+  // Comments & Statistics edit state
+  var commentsEditMode = false;
+  var commentsAceEditor = null;
+  var statsEditMode = false;
+  var statsAceEditor = null;
+  var statsCurrentProfile = null;
+
   // ==================== FILTERING ====================
   function getFilteredCS() {
     var data = App.getCSData();
@@ -166,6 +173,7 @@ var ConceptSetsPage = (function() {
       var isSelected = selectedIds.has(d.id);
       return '<tr data-id="' + d.id + '"' + (isSelected ? ' class="selected"' : '') + '>' +
         '<td class="cs-select-col"><input type="checkbox" class="cs-row-checkbox" data-id="' + d.id + '"' + (isSelected ? ' checked' : '') + '></td>' +
+        '<td class="cs-edit-col"><button class="cs-row-edit-btn" data-edit-id="' + d.id + '" title="Edit"><i class="fas fa-pen"></i></button></td>' +
         '<td><span class="badge badge-category">' + App.escapeHtml(d.category) + '</span></td>' +
         '<td><span class="badge badge-subcategory">' + App.escapeHtml(d.subcategory) + '</span></td>' +
         '<td><strong>' + App.escapeHtml(d.name) + '</strong></td>' +
@@ -204,6 +212,8 @@ var ConceptSetsPage = (function() {
 
   // ==================== CS DETAIL: TABS & TOGGLE ====================
   function switchCSDetailTab(tabName) {
+    // Exit any active edit mode when switching tabs
+    if (isAnyEditMode()) cancelEdits();
     csDetailTab = tabName;
     document.querySelectorAll('#cs-detail-tabs .tab-btn-blue').forEach(function(btn) {
       btn.classList.toggle('active', btn.dataset.tab === tabName);
@@ -212,6 +222,7 @@ var ConceptSetsPage = (function() {
       var el = document.getElementById('cs-tab-' + t);
       if (el) el.style.display = (t === tabName) ? '' : 'none';
     });
+    updateToolbar();
   }
 
   function updateViewJsonLink() {
@@ -237,7 +248,7 @@ var ConceptSetsPage = (function() {
       resolvedPage = 1;
       renderResolvedTable();
     }
-    updateExprToolbar();
+    updateToolbar();
   }
 
   // ==================== PAGINATION HELPER ====================
@@ -352,63 +363,63 @@ var ConceptSetsPage = (function() {
     renderPaginationControls('expression-pagination', 'expression-page-info', 'expression-page-buttons', expressionPage, items.length, expressionPageSize);
   }
 
-  // ==================== EXPRESSION EDIT MODE ====================
-  function enterExprEditMode() {
+  // ==================== EDIT MODE (generalized) ====================
+  function isAnyEditMode() {
+    return exprEditMode || commentsEditMode || statsEditMode;
+  }
+
+  function enterEditMode() {
     if (!selectedConceptSet) return;
-    exprEditMode = true;
-    exprSelectMode = false;
-    exprSelectedIdxs.clear();
-    // Deep clone items
-    var orig = (selectedConceptSet.expression && selectedConceptSet.expression.items) || [];
-    exprEditItems = JSON.parse(JSON.stringify(orig));
-    // Switch to expression tab if not already there
-    if (csConceptMode !== 'expression') {
-      switchConceptMode('expression');
-    } else {
-      renderExpressionTable();
+    if (csDetailTab === 'concepts') {
+      enterExprEditMode();
+    } else if (csDetailTab === 'comments') {
+      enterCommentsEditMode();
+    } else if (csDetailTab === 'statistics') {
+      enterStatsEditMode();
     }
-    updateExprToolbar();
   }
 
-  function exitExprEditMode() {
-    exprEditMode = false;
-    exprSelectMode = false;
-    exprSelectedIdxs.clear();
-    exprEditItems = null;
-    updateExprToolbar();
-    if (csConceptMode === 'expression') renderExpressionTable();
+  function saveEdits() {
+    if (exprEditMode) saveExprEdits();
+    else if (commentsEditMode) saveCommentsEdits();
+    else if (statsEditMode) saveStatsEdits();
   }
 
-  function updateExprToolbar() {
-    // Header-level buttons
-    // Header-level buttons
+  function cancelEdits() {
+    if (exprEditMode) exitExprEditMode();
+    else if (commentsEditMode) exitCommentsEditMode();
+    else if (statsEditMode) exitStatsEditMode();
+  }
+
+  function updateToolbar() {
     var headerEditBtn = document.getElementById('cs-edit-btn');
     var headerExportBtn = document.getElementById('cs-export-json');
     var headerImportBtn = document.getElementById('expr-import-btn');
     var headerCancelBtn = document.getElementById('cs-edit-cancel-btn');
     var headerSaveBtn = document.getElementById('cs-edit-save-btn');
-
-    // Toggle-bar edit actions
     var editActions = document.getElementById('expr-edit-actions');
     var selectBtn = document.getElementById('expr-select-btn');
     var deleteSelBtn = document.getElementById('expr-delete-sel-btn');
     var selCount = document.getElementById('expr-selection-count');
 
-    if (exprEditMode) {
+    var editing = isAnyEditMode();
+    if (editing) {
       headerEditBtn.style.display = 'none';
       headerExportBtn.style.display = 'none';
-      headerImportBtn.style.display = '';
+      headerImportBtn.style.display = exprEditMode ? '' : 'none';
       headerCancelBtn.style.display = '';
       headerSaveBtn.style.display = '';
-      // Show edit actions on toggle bar when on expression tab
-      editActions.style.display = (csConceptMode === 'expression') ? 'flex' : 'none';
+      // Expression-specific toolbar
+      editActions.style.display = (exprEditMode && csConceptMode === 'expression') ? 'flex' : 'none';
       selectBtn.classList.toggle('active', exprSelectMode);
       deleteSelBtn.style.display = exprSelectMode ? '' : 'none';
       selCount.style.display = exprSelectMode ? '' : 'none';
       if (exprSelectMode) selCount.textContent = exprSelectedIdxs.size + ' selected';
     } else {
-      headerEditBtn.style.display = '';
-      headerExportBtn.style.display = '';
+      // Hide Edit button on review tab (has its own "Add Review")
+      var showEdit = (csDetailTab !== 'review');
+      headerEditBtn.style.display = showEdit ? '' : 'none';
+      headerExportBtn.style.display = (csDetailTab === 'concepts') ? '' : 'none';
       headerImportBtn.style.display = 'none';
       headerCancelBtn.style.display = 'none';
       headerSaveBtn.style.display = 'none';
@@ -416,41 +427,29 @@ var ConceptSetsPage = (function() {
     }
   }
 
-  function toggleExprSelectMode() {
-    exprSelectMode = !exprSelectMode;
-    if (!exprSelectMode) exprSelectedIdxs.clear();
-    updateExprToolbar();
-    renderExpressionTable();
-  }
-
-  function toggleExprRowSelection(idx) {
-    if (exprSelectedIdxs.has(idx)) exprSelectedIdxs.delete(idx);
-    else exprSelectedIdxs.add(idx);
-    updateExprToolbar();
-    // Update just the row visual + checkbox without full re-render
-    var tr = document.querySelector('#expression-tbody tr[data-idx="' + idx + '"]');
-    if (tr) {
-      tr.classList.toggle('expr-selected', exprSelectedIdxs.has(idx));
-      var cb = tr.querySelector('.expr-row-checkbox');
-      if (cb) cb.checked = exprSelectedIdxs.has(idx);
+  // --- Expression edit ---
+  function enterExprEditMode() {
+    if (!selectedConceptSet) return;
+    exprEditMode = true;
+    exprSelectMode = false;
+    exprSelectedIdxs.clear();
+    var orig = (selectedConceptSet.expression && selectedConceptSet.expression.items) || [];
+    exprEditItems = JSON.parse(JSON.stringify(orig));
+    if (csConceptMode !== 'expression') {
+      switchConceptMode('expression');
+    } else {
+      renderExpressionTable();
     }
+    updateToolbar();
   }
 
-  function deleteExprSelected() {
-    if (exprSelectedIdxs.size === 0) return;
-    // Sort descending so splice doesn't shift indices
-    var sorted = Array.from(exprSelectedIdxs).sort(function(a, b) { return b - a; });
-    sorted.forEach(function(idx) { exprEditItems.splice(idx, 1); });
+  function exitExprEditMode() {
+    exprEditMode = false;
+    exprSelectMode = false;
     exprSelectedIdxs.clear();
-    updateExprToolbar();
-    renderExpressionTable();
-  }
-
-  function deleteExprRow(idx) {
-    exprEditItems.splice(idx, 1);
-    exprSelectedIdxs.clear();
-    updateExprToolbar();
-    renderExpressionTable();
+    exprEditItems = null;
+    updateToolbar();
+    if (csConceptMode === 'expression') renderExpressionTable();
   }
 
   function saveExprEdits() {
@@ -463,8 +462,169 @@ var ConceptSetsPage = (function() {
     App.showToast('Expression saved');
   }
 
-  function cancelExprEdits() {
-    exitExprEditMode();
+  // --- Comments edit ---
+  function initCommentsAceEditor() {
+    if (commentsAceEditor) return;
+    commentsAceEditor = ace.edit('cs-comments-ace-editor');
+    commentsAceEditor.setTheme('ace/theme/chrome');
+    commentsAceEditor.session.setMode('ace/mode/markdown');
+    commentsAceEditor.setFontSize(13);
+    commentsAceEditor.setShowPrintMargin(false);
+    commentsAceEditor.session.setUseWrapMode(true);
+    commentsAceEditor.session.on('change', function() {
+      var md = commentsAceEditor.getValue();
+      var preview = document.getElementById('cs-comments-preview');
+      if (!md.trim()) {
+        preview.innerHTML = '<div class="markdown-preview-placeholder">Preview will appear here...</div>';
+      } else {
+        preview.innerHTML = App.renderMarkdown(md);
+      }
+    });
+  }
+
+  function enterCommentsEditMode() {
+    if (!selectedConceptSet) return;
+    commentsEditMode = true;
+    initCommentsAceEditor();
+    var tr = App.t(selectedConceptSet);
+    // Load longDescription into editor; fall back to description if no longDescription
+    var content = (tr && tr.longDescription) || selectedConceptSet.description || '';
+    commentsAceEditor.setValue(content, -1);
+    document.getElementById('cs-comments-view').style.display = 'none';
+    document.getElementById('cs-comments-edit').style.display = '';
+    commentsAceEditor.resize();
+    updateToolbar();
+  }
+
+  function exitCommentsEditMode() {
+    commentsEditMode = false;
+    document.getElementById('cs-comments-edit').style.display = 'none';
+    document.getElementById('cs-comments-view').style.display = '';
+    renderCommentsTab(selectedConceptSet);
+    updateToolbar();
+  }
+
+  function saveCommentsEdits() {
+    if (!selectedConceptSet) return;
+    var newContent = commentsAceEditor.getValue().trim();
+    // Save as longDescription in translations for current language
+    if (!selectedConceptSet.metadata) selectedConceptSet.metadata = {};
+    if (!selectedConceptSet.metadata.translations) selectedConceptSet.metadata.translations = {};
+    var lang = App.lang || 'en';
+    if (!selectedConceptSet.metadata.translations[lang]) selectedConceptSet.metadata.translations[lang] = {};
+    selectedConceptSet.metadata.translations[lang].longDescription = newContent || '';
+    selectedConceptSet.modifiedDate = new Date().toISOString().slice(0, 10);
+    App.updateConceptSet(selectedConceptSet);
+    exitCommentsEditMode();
+    App.showToast('Comments saved');
+  }
+
+  // --- Statistics edit ---
+  var defaultStatsTemplate = {
+    profiles: [{
+      name_en: 'All patients', name_fr: 'Tous les patients',
+      description_en: 'Default profile for all patients',
+      description_fr: 'Profil par défaut pour tous les patients',
+      data_types: [],
+      numeric_data: { min: null, max: null, mean: null, median: null, sd: null, cv: null, p5: null, p25: null, p75: null, p95: null },
+      histogram: [],
+      categorical_data: [],
+      measurement_frequency: { typical_interval: null }
+    }],
+    default_profile_en: 'All patients',
+    default_profile_fr: 'Tous les patients'
+  };
+
+  function initStatsAceEditor() {
+    if (statsAceEditor) return;
+    statsAceEditor = ace.edit('cs-stats-ace-editor');
+    statsAceEditor.setTheme('ace/theme/chrome');
+    statsAceEditor.session.setMode('ace/mode/json');
+    statsAceEditor.setFontSize(13);
+    statsAceEditor.setShowPrintMargin(false);
+    statsAceEditor.session.setTabSize(2);
+    statsAceEditor.setOption('showLineNumbers', true);
+    statsAceEditor.setOption('highlightActiveLine', true);
+  }
+
+  function enterStatsEditMode() {
+    if (!selectedConceptSet) return;
+    statsEditMode = true;
+    initStatsAceEditor();
+    var stats = (selectedConceptSet.metadata && selectedConceptSet.metadata.distributionStats) || null;
+    var json = (stats && Object.keys(stats).length > 0) ? JSON.stringify(stats, null, 2) : JSON.stringify(defaultStatsTemplate, null, 2);
+    statsAceEditor.setValue(json, -1);
+    document.getElementById('cs-statistics-view').style.display = 'none';
+    document.getElementById('cs-statistics-edit').style.display = '';
+    statsAceEditor.resize();
+    updateToolbar();
+  }
+
+  function exitStatsEditMode() {
+    statsEditMode = false;
+    document.getElementById('cs-statistics-edit').style.display = 'none';
+    document.getElementById('cs-statistics-view').style.display = '';
+    renderStatisticsTab(selectedConceptSet);
+    updateToolbar();
+  }
+
+  function saveStatsEdits() {
+    if (!selectedConceptSet) return;
+    var jsonStr = statsAceEditor.getValue().trim();
+    var parsed;
+    try {
+      parsed = jsonStr ? JSON.parse(jsonStr) : null;
+    } catch (e) {
+      App.showToast('Invalid JSON: ' + e.message, 'error');
+      return;
+    }
+    if (!selectedConceptSet.metadata) selectedConceptSet.metadata = {};
+    selectedConceptSet.metadata.distributionStats = parsed;
+    selectedConceptSet.modifiedDate = new Date().toISOString().slice(0, 10);
+    App.updateConceptSet(selectedConceptSet);
+    exitStatsEditMode();
+    App.showToast('Statistics saved');
+  }
+
+  function resetStatsToTemplate() {
+    if (!statsAceEditor) return;
+    statsAceEditor.setValue(JSON.stringify(defaultStatsTemplate, null, 2), -1);
+  }
+
+  // --- Expression toolbar helpers ---
+  function toggleExprSelectMode() {
+    exprSelectMode = !exprSelectMode;
+    if (!exprSelectMode) exprSelectedIdxs.clear();
+    updateToolbar();
+    renderExpressionTable();
+  }
+
+  function toggleExprRowSelection(idx) {
+    if (exprSelectedIdxs.has(idx)) exprSelectedIdxs.delete(idx);
+    else exprSelectedIdxs.add(idx);
+    updateToolbar();
+    var tr = document.querySelector('#expression-tbody tr[data-idx="' + idx + '"]');
+    if (tr) {
+      tr.classList.toggle('expr-selected', exprSelectedIdxs.has(idx));
+      var cb = tr.querySelector('.expr-row-checkbox');
+      if (cb) cb.checked = exprSelectedIdxs.has(idx);
+    }
+  }
+
+  function deleteExprSelected() {
+    if (exprSelectedIdxs.size === 0) return;
+    var sorted = Array.from(exprSelectedIdxs).sort(function(a, b) { return b - a; });
+    sorted.forEach(function(idx) { exprEditItems.splice(idx, 1); });
+    exprSelectedIdxs.clear();
+    updateToolbar();
+    renderExpressionTable();
+  }
+
+  function deleteExprRow(idx) {
+    exprEditItems.splice(idx, 1);
+    exprSelectedIdxs.clear();
+    updateToolbar();
+    renderExpressionTable();
   }
 
   // ==================== IMPORT ATLAS JSON ====================
@@ -1866,31 +2026,122 @@ var ConceptSetsPage = (function() {
       el.innerHTML = '<div class="empty-state"><p>No description available for this concept set.</p></div>';
       return;
     }
-    var html = '';
-    if (desc) {
-      html += '<div style="margin-bottom:16px"><h4 style="font-size:14px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px">Description</h4>';
-      html += '<div style="line-height:1.7">' + App.renderMarkdown(desc) + '</div></div>';
-    }
-    if (longDesc) {
-      html += '<div><h4 style="font-size:14px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px">Detailed Description</h4>';
-      html += '<div style="line-height:1.7">' + App.renderMarkdown(longDesc) + '</div></div>';
-    }
-    el.innerHTML = html;
+    var content = longDesc || desc;
+    el.innerHTML = '<div class="markdown-body" style="padding:16px">' + App.renderMarkdown(content) + '</div>';
   }
 
   function renderStatisticsTab(cs) {
     var el = document.getElementById('cs-statistics-body');
+    var profileWrap = document.getElementById('cs-stats-profile-select-wrap');
+    var profileSelect = document.getElementById('cs-stats-profile-select');
     var stats = cs.metadata && cs.metadata.distributionStats;
-    if (!stats || Object.keys(stats).length === 0) {
+    if (!stats || typeof stats !== 'object' || !stats.profiles || !stats.profiles.length) {
+      profileWrap.style.display = 'none';
       el.innerHTML = '<div class="empty-state">' +
         '<i class="fas fa-chart-bar" style="font-size:32px; color:var(--gray-300); display:block; margin-bottom:12px"></i>' +
         '<p>No distribution statistics available for this concept set.</p>' +
-        '<p style="font-size:12px; margin-top:8px; color:var(--text-muted)">Statistics will appear here once computed via the INDICATE Data Dictionary application.</p>' +
+        '<p style="font-size:12px; margin-top:8px; color:var(--text-muted)">Click <strong>Edit</strong> to add statistics, or compute them via the INDICATE Data Dictionary application.</p>' +
         '</div>';
       return;
     }
-    el.innerHTML = '<pre style="font-size:13px; overflow:auto; max-height:400px; background:var(--gray-light); padding:16px; border-radius:var(--radius)">' +
-      App.escapeHtml(JSON.stringify(stats, null, 2)) + '</pre>';
+    // Build profile selector
+    var lang = App.lang || 'en';
+    var profileNames = stats.profiles.map(function(p) { return p['name_' + lang] || p.name_en || 'Unnamed'; });
+    var defaultProfile = stats['default_profile_' + lang] || stats.default_profile_en || profileNames[0];
+    if (!statsCurrentProfile || profileNames.indexOf(statsCurrentProfile) < 0) statsCurrentProfile = defaultProfile;
+    if (profileNames.length > 1) {
+      profileWrap.style.display = '';
+      profileSelect.innerHTML = profileNames.map(function(n) {
+        return '<option value="' + App.escapeHtml(n) + '"' + (n === statsCurrentProfile ? ' selected' : '') + '>' + App.escapeHtml(n) + '</option>';
+      }).join('');
+    } else {
+      profileWrap.style.display = 'none';
+    }
+    // Find selected profile
+    var profileIdx = profileNames.indexOf(statsCurrentProfile);
+    if (profileIdx < 0) profileIdx = 0;
+    var profile = stats.profiles[profileIdx];
+    el.innerHTML = renderStatsProfileView(profile, lang);
+  }
+
+  function renderStatsProfileView(profile, lang) {
+    if (!profile) return '<div class="empty-state"><p>No profile data</p></div>';
+    var html = '';
+    var descKey = 'description_' + lang;
+    var desc = profile[descKey] || profile.description_en || '';
+    if (desc) html += '<p style="color:var(--text-muted); margin-bottom:12px; font-size:13px">' + App.escapeHtml(desc) + '</p>';
+
+    // Data types
+    var types = profile.data_types || [];
+    if (types.length) {
+      html += '<div style="margin-bottom:8px">';
+      types.forEach(function(t) {
+        html += '<span class="badge badge-count" style="margin-right:4px">' + App.escapeHtml(t) + '</span>';
+      });
+      html += '</div>';
+    }
+
+    // Measurement frequency
+    var freq = profile.measurement_frequency && profile.measurement_frequency.typical_interval;
+    if (freq) html += '<div style="font-size:13px; margin-bottom:12px; color:var(--text-muted)"><i class="fas fa-clock" style="margin-right:4px"></i> Typical interval: <strong>' + App.escapeHtml(freq) + '</strong></div>';
+
+    // Missing rate
+    if (profile.missing_rate != null) {
+      html += '<div style="font-size:13px; margin-bottom:12px; color:var(--text-muted)"><i class="fas fa-exclamation-triangle" style="margin-right:4px"></i> Missing rate: <strong>' + profile.missing_rate + '%</strong></div>';
+    }
+
+    // Numeric data
+    var nd = profile.numeric_data;
+    if (nd && (nd.mean != null || nd.median != null || nd.min != null)) {
+      html += '<h4 style="font-size:13px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin:16px 0 8px">Numeric Summary</h4>';
+      html += '<table class="stats-summary-table"><tbody>';
+      var rows = [
+        ['Min', nd.min], ['P5', nd.p5], ['P25 (Q1)', nd.p25], ['Median', nd.median],
+        ['Mean', nd.mean], ['P75 (Q3)', nd.p75], ['P95', nd.p95], ['Max', nd.max],
+        ['SD', nd.sd], ['CV', nd.cv != null ? nd.cv + '%' : null]
+      ];
+      rows.forEach(function(r) {
+        if (r[1] != null) html += '<tr><td style="font-weight:600; color:var(--text-muted); padding:3px 12px 3px 0; font-size:13px">' + r[0] + '</td><td style="font-size:13px; padding:3px 0">' + r[1] + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+
+    // Histogram
+    var hist = profile.histogram;
+    if (hist && hist.length > 0) {
+      html += '<h4 style="font-size:13px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin:16px 0 8px">Distribution</h4>';
+      var maxCount = Math.max.apply(null, hist.map(function(h) { return h.count || 0; }));
+      html += '<div class="stats-histogram">';
+      hist.forEach(function(h) {
+        var pct = maxCount > 0 ? ((h.count / maxCount) * 100) : 0;
+        html += '<div class="stats-hist-row">' +
+          '<span class="stats-hist-label">' + (h.x != null ? h.x : '') + '</span>' +
+          '<div class="stats-hist-bar-wrap"><div class="stats-hist-bar" style="width:' + pct + '%"></div></div>' +
+          '<span class="stats-hist-count">' + (h.count || 0).toLocaleString() + '</span>' +
+          '</div>';
+      });
+      html += '</div>';
+    }
+
+    // Categorical data
+    var cat = profile.categorical_data;
+    if (cat && cat.length > 0) {
+      html += '<h4 style="font-size:13px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin:16px 0 8px">Categories</h4>';
+      var maxCatPct = Math.max.apply(null, cat.map(function(c) { return c.percent || 0; }));
+      html += '<div class="stats-histogram">';
+      cat.forEach(function(c) {
+        var barW = maxCatPct > 0 ? ((c.percent / maxCatPct) * 100) : 0;
+        html += '<div class="stats-hist-row">' +
+          '<span class="stats-hist-label" title="' + App.escapeHtml(c.value || '') + '">' + App.escapeHtml(App.truncate(c.value || '', 30)) + '</span>' +
+          '<div class="stats-hist-bar-wrap"><div class="stats-hist-bar stats-hist-bar-cat" style="width:' + barW + '%"></div></div>' +
+          '<span class="stats-hist-count">' + (c.percent != null ? c.percent + '%' : '') + ' (' + (c.count || 0).toLocaleString() + ')</span>' +
+          '</div>';
+      });
+      html += '</div>';
+    }
+
+    if (!html) html = '<div class="empty-state"><p>No statistics data in this profile.</p></div>';
+    return html;
   }
 
   function getReviewsForCS(cs) {
@@ -1952,6 +2203,13 @@ var ConceptSetsPage = (function() {
     document.getElementById('cs-edit-cancel-btn').style.display = 'none';
     document.getElementById('cs-edit-save-btn').style.display = 'none';
 
+    // Reset edit containers to view mode
+    document.getElementById('cs-comments-view').style.display = '';
+    document.getElementById('cs-comments-edit').style.display = 'none';
+    document.getElementById('cs-statistics-view').style.display = '';
+    document.getElementById('cs-statistics-edit').style.display = 'none';
+    statsCurrentProfile = null;
+
     switchCSDetailTab('concepts');
     switchConceptMode('resolved');
     updateViewJsonLink();
@@ -1962,7 +2220,9 @@ var ConceptSetsPage = (function() {
   }
 
   function hideCSDetail() {
-    exitExprEditMode();
+    if (exprEditMode) exitExprEditMode();
+    if (commentsEditMode) exitCommentsEditMode();
+    if (statsEditMode) exitStatsEditMode();
     document.getElementById('cs-edit-btn').style.display = 'none';
     document.getElementById('cs-edit-cancel-btn').style.display = 'none';
     document.getElementById('cs-edit-save-btn').style.display = 'none';
@@ -2170,24 +2430,58 @@ var ConceptSetsPage = (function() {
   }
 
   // ==================== SELECTION MODE ====================
-  function toggleSelectionMode() {
-    selectionMode = !selectionMode;
-    var table = document.getElementById('cs-table');
-    var btn = document.getElementById('cs-select-mode-btn');
-    table.classList.toggle('selection-mode', selectionMode);
-    btn.classList.toggle('active', selectionMode);
+  var listEditSnapshot = null; // { all, user, hidden }
 
-    // Show/hide toolbar buttons
+  function enterListEditMode() {
+    if (selectionMode) return;
+    listEditSnapshot = {
+      all: JSON.parse(JSON.stringify(App.conceptSets)),
+      user: JSON.parse(JSON.stringify(App.conceptSets.filter(function(cs) { return App.isUserConceptSet(cs.id); }))),
+      hidden: localStorage.getItem('indicate_hidden_cs') || '[]'
+    };
+    selectionMode = true;
+    selectedIds.clear();
+    updateListEditToolbar();
+    renderCSTable();
+  }
+
+  function saveListEdits() {
+    listEditSnapshot = null;
+    selectionMode = false;
+    selectedIds.clear();
+    updateListEditToolbar();
+    renderAll();
+    App.showToast('Changes saved');
+  }
+
+  function cancelListEdits() {
+    if (listEditSnapshot) {
+      App.restoreConceptSets(listEditSnapshot.all, listEditSnapshot.user);
+      localStorage.setItem('indicate_hidden_cs', listEditSnapshot.hidden);
+    }
+    selectionMode = false;
+    selectedIds.clear();
+    listEditSnapshot = null;
+    updateListEditToolbar();
+    renderAll();
+  }
+
+  function updateListEditToolbar() {
+    var table = document.getElementById('cs-table');
+    table.classList.toggle('selection-mode', selectionMode);
+
+    // Edit mode buttons
     document.getElementById('cs-select-all-btn').style.display = selectionMode ? '' : 'none';
     document.getElementById('cs-unselect-all-btn').style.display = selectionMode ? '' : 'none';
     document.getElementById('cs-delete-selected-btn').style.display = selectionMode ? '' : 'none';
     document.getElementById('cs-selection-count').style.display = selectionMode ? '' : 'none';
+    document.getElementById('cs-list-cancel-btn').style.display = selectionMode ? '' : 'none';
+    document.getElementById('cs-list-save-btn').style.display = selectionMode ? '' : 'none';
 
-    if (!selectionMode) {
-      selectedIds.clear();
-      updateSelectionCount();
-      renderCSTable();
-    }
+    // Normal mode buttons
+    document.getElementById('cs-edit-list-btn').style.display = selectionMode ? 'none' : '';
+    document.getElementById('cs-export-all-btn').style.display = selectionMode ? 'none' : '';
+    document.getElementById('cs-create-btn').style.display = selectionMode ? 'none' : '';
   }
 
   function updateSelectionCount() {
@@ -2211,7 +2505,6 @@ var ConceptSetsPage = (function() {
   function toggleRowSelection(id) {
     if (selectedIds.has(id)) selectedIds.delete(id); else selectedIds.add(id);
     updateSelectionCount();
-    // Update just the row instead of full re-render
     var row = document.querySelector('#cs-tbody tr[data-id="' + id + '"]');
     if (row) {
       row.classList.toggle('selected', selectedIds.has(id));
@@ -2226,15 +2519,8 @@ var ConceptSetsPage = (function() {
       App.showToast('No concept sets selected.', 'warning');
       return;
     }
-    var userCount = 0;
-    selectedIds.forEach(function(id) { if (App.isUserConceptSet(id)) userCount++; });
-    var repoCount = selectedIds.size - userCount;
-    var msg = 'Delete ' + selectedIds.size + ' selected concept set' + (selectedIds.size > 1 ? 's' : '') + '?';
-    if (repoCount > 0 && userCount > 0) {
-      msg += ' (' + userCount + ' local will be deleted, ' + repoCount + ' from repository will be skipped)';
-    } else if (repoCount > 0 && userCount === 0) {
-      msg = 'The selected concept sets are from the repository and cannot be deleted locally.';
-    }
+    var n = selectedIds.size;
+    var msg = 'Delete ' + n + ' selected concept set' + (n > 1 ? 's' : '') + '?';
     document.getElementById('cs-delete-confirm-msg').textContent = msg;
     document.getElementById('cs-delete-confirm-modal').style.display = 'flex';
   }
@@ -2388,7 +2674,12 @@ var ConceptSetsPage = (function() {
     });
   }
 
+  var csEditingId = null; // null = create mode, number = edit mode
+
   function openCreateModal() {
+    csEditingId = null;
+    document.getElementById('cs-create-modal-title').innerHTML = '<i class="fas fa-plus"></i> New Concept Set';
+    document.getElementById('cs-create-submit').innerHTML = '<i class="fas fa-plus"></i> Create';
     // Clear form
     document.getElementById('cs-create-name').value = '';
     document.getElementById('cs-create-desc').value = '';
@@ -2406,47 +2697,100 @@ var ConceptSetsPage = (function() {
     document.getElementById('cs-create-modal').style.display = 'flex';
   }
 
+  function openEditModal(id) {
+    var cs = App.conceptSets.find(function(c) { return c.id === id; });
+    if (!cs) return;
+    csEditingId = id;
+    document.getElementById('cs-create-modal-title').innerHTML = '<i class="fas fa-pen"></i> Edit Concept Set';
+    document.getElementById('cs-create-submit').innerHTML = '<i class="fas fa-save"></i> Save';
+
+    buildCategoryMap();
+    populateCatDropdown();
+
+    // Pre-fill form
+    var tr = cs.metadata && cs.metadata.translations;
+    var trEn = (tr && tr.en) || {};
+    document.getElementById('cs-create-name').value = trEn.name || cs.name || '';
+    document.getElementById('cs-create-desc').value = cs.description || '';
+    document.getElementById('cs-create-cat-new').style.display = 'none';
+    document.getElementById('cs-create-cat-new-input').value = '';
+    document.getElementById('cs-create-subcat-new').style.display = 'none';
+    document.getElementById('cs-create-subcat-new-input').value = '';
+
+    // Select category
+    var catEn = (trEn.category || '').trim();
+    document.getElementById('cs-create-cat').value = catEn;
+    populateSubcatDropdown();
+
+    // Select subcategory
+    var subcatEn = (trEn.subcategory || '').trim();
+    document.getElementById('cs-create-subcat').value = subcatEn;
+
+    document.getElementById('cs-create-modal').style.display = 'flex';
+  }
+
   function closeCreateModal() {
     document.getElementById('cs-create-modal').style.display = 'none';
+  }
+
+  function resolveModalCatSubcat() {
+    var catKey = document.getElementById('cs-create-cat').value;
+    var catNewInput = document.getElementById('cs-create-cat-new-input').value.trim();
+    var catEn, catFr;
+    if (catNewInput) {
+      catEn = catNewInput; catFr = catNewInput;
+    } else if (catKey && createCatMap[catKey]) {
+      catEn = createCatMap[catKey].en; catFr = createCatMap[catKey].fr;
+    } else {
+      catEn = ''; catFr = '';
+    }
+    var subcatKey = document.getElementById('cs-create-subcat').value;
+    var subcatNewInput = document.getElementById('cs-create-subcat-new-input').value.trim();
+    var subcatEn, subcatFr;
+    if (subcatNewInput) {
+      subcatEn = subcatNewInput; subcatFr = subcatNewInput;
+    } else if (subcatKey && catKey && createCatMap[catKey] && createCatMap[catKey].subcats[subcatKey]) {
+      subcatEn = createCatMap[catKey].subcats[subcatKey].en;
+      subcatFr = createCatMap[catKey].subcats[subcatKey].fr;
+    } else {
+      subcatEn = ''; subcatFr = '';
+    }
+    return { catEn: catEn, catFr: catFr, subcatEn: subcatEn, subcatFr: subcatFr };
   }
 
   function submitCreateCS() {
     var name = document.getElementById('cs-create-name').value.trim();
     var desc = document.getElementById('cs-create-desc').value.trim();
-
-    // Category: from dropdown or new input
-    var catKey = document.getElementById('cs-create-cat').value;
-    var catNewInput = document.getElementById('cs-create-cat-new-input').value.trim();
-    var catEn, catFr;
-    if (catNewInput) {
-      catEn = catNewInput;
-      catFr = catNewInput;
-    } else if (catKey && createCatMap[catKey]) {
-      catEn = createCatMap[catKey].en;
-      catFr = createCatMap[catKey].fr;
-    } else {
-      catEn = '';
-      catFr = '';
-    }
-
-    // Subcategory: from dropdown or new input
-    var subcatKey = document.getElementById('cs-create-subcat').value;
-    var subcatNewInput = document.getElementById('cs-create-subcat-new-input').value.trim();
-    var subcatEn, subcatFr;
-    if (subcatNewInput) {
-      subcatEn = subcatNewInput;
-      subcatFr = subcatNewInput;
-    } else if (subcatKey && catKey && createCatMap[catKey] && createCatMap[catKey].subcats[subcatKey]) {
-      subcatEn = createCatMap[catKey].subcats[subcatKey].en;
-      subcatFr = createCatMap[catKey].subcats[subcatKey].fr;
-    } else {
-      subcatEn = '';
-      subcatFr = '';
-    }
+    var r = resolveModalCatSubcat();
 
     if (!name) { App.showToast('Name is required.', 'error'); return; }
-    if (!catEn) { App.showToast('Category is required.', 'error'); return; }
+    if (!r.catEn) { App.showToast('Category is required.', 'error'); return; }
 
+    // Edit mode
+    if (csEditingId != null) {
+      var cs = App.conceptSets.find(function(c) { return c.id === csEditingId; });
+      if (!cs) return;
+      cs.name = name;
+      cs.description = desc || null;
+      cs.modifiedDate = new Date().toISOString().split('T')[0];
+      if (!cs.metadata) cs.metadata = {};
+      if (!cs.metadata.translations) cs.metadata.translations = {};
+      if (!cs.metadata.translations.en) cs.metadata.translations.en = {};
+      if (!cs.metadata.translations.fr) cs.metadata.translations.fr = {};
+      cs.metadata.translations.en.name = name;
+      cs.metadata.translations.en.category = r.catEn;
+      cs.metadata.translations.en.subcategory = r.subcatEn;
+      cs.metadata.translations.fr.name = cs.metadata.translations.fr.name || name;
+      cs.metadata.translations.fr.category = r.catFr;
+      cs.metadata.translations.fr.subcategory = r.subcatFr;
+      App.updateConceptSet(cs);
+      closeCreateModal();
+      renderAll();
+      App.showToast('Concept set "' + name + '" updated.', 'success');
+      return;
+    }
+
+    // Create mode
     var profile = App.getUserProfile();
     var authorName = ((profile.firstName || '') + ' ' + (profile.lastName || '')).trim() || 'Anonymous';
     var today = new Date().toISOString().split('T')[0];
@@ -2466,8 +2810,8 @@ var ConceptSetsPage = (function() {
       reviewStatus: 'draft',
       metadata: {
         translations: {
-          en: { name: name, category: catEn, subcategory: subcatEn },
-          fr: { name: name, category: catFr, subcategory: subcatFr }
+          en: { name: name, category: r.catEn, subcategory: r.subcatEn },
+          fr: { name: name, category: r.catFr, subcategory: r.subcatFr }
         },
         createdByDetails: {
           firstName: profile.firstName || '',
@@ -2492,7 +2836,9 @@ var ConceptSetsPage = (function() {
   // ==================== EVENTS ====================
   function initEvents() {
     // Toolbar: selection mode toggle
-    document.getElementById('cs-select-mode-btn').addEventListener('click', toggleSelectionMode);
+    document.getElementById('cs-edit-list-btn').addEventListener('click', enterListEditMode);
+    document.getElementById('cs-list-cancel-btn').addEventListener('click', cancelListEdits);
+    document.getElementById('cs-list-save-btn').addEventListener('click', saveListEdits);
     document.getElementById('cs-select-all-btn').addEventListener('click', selectAll);
     document.getElementById('cs-unselect-all-btn').addEventListener('click', unselectAll);
     document.getElementById('cs-delete-selected-btn').addEventListener('click', openDeleteConfirm);
@@ -2560,8 +2906,15 @@ var ConceptSetsPage = (function() {
       renderCSTable();
     });
 
-    // CS table row click -> detail OR toggle checkbox in selection mode
+    // CS table row click -> detail OR toggle checkbox in selection mode OR edit
     document.getElementById('cs-tbody').addEventListener('click', function(e) {
+      // Edit button click
+      var editBtn = e.target.closest('.cs-row-edit-btn');
+      if (editBtn) {
+        e.stopPropagation();
+        openEditModal(parseInt(editBtn.dataset.editId));
+        return;
+      }
       var tr = e.target.closest('tr[data-id]');
       if (!tr) return;
       var id = parseInt(tr.dataset.id);
@@ -2597,9 +2950,14 @@ var ConceptSetsPage = (function() {
     });
 
     // Header-level edit/cancel/save
-    document.getElementById('cs-edit-btn').addEventListener('click', enterExprEditMode);
-    document.getElementById('cs-edit-cancel-btn').addEventListener('click', cancelExprEdits);
-    document.getElementById('cs-edit-save-btn').addEventListener('click', saveExprEdits);
+    document.getElementById('cs-edit-btn').addEventListener('click', enterEditMode);
+    document.getElementById('cs-edit-cancel-btn').addEventListener('click', cancelEdits);
+    document.getElementById('cs-edit-save-btn').addEventListener('click', saveEdits);
+    document.getElementById('cs-stats-reset-btn').addEventListener('click', resetStatsToTemplate);
+    document.getElementById('cs-stats-profile-select').addEventListener('change', function() {
+      statsCurrentProfile = this.value;
+      if (selectedConceptSet) renderStatisticsTab(selectedConceptSet);
+    });
 
     // Expression edit actions
     document.getElementById('expr-import-btn').addEventListener('click', openImportModal);

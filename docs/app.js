@@ -16,7 +16,14 @@ var App = (function() {
 
   // ==================== DATA LOADING ====================
   function loadData(callback) {
-    conceptSets = (DATA.conceptSets || []).concat(userConceptSets);
+    var hiddenIds = JSON.parse(localStorage.getItem('indicate_hidden_cs') || '[]');
+    var hiddenSet = {};
+    hiddenIds.forEach(function(id) { hiddenSet[id] = true; });
+    // User-modified repo CS override originals; hidden ones are excluded
+    var userIdSet = {};
+    userConceptSets.forEach(function(cs) { userIdSet[cs.id] = true; });
+    var repoCS = (DATA.conceptSets || []).filter(function(cs) { return !hiddenSet[cs.id] && !userIdSet[cs.id]; });
+    conceptSets = repoCS.concat(userConceptSets);
     projects = DATA.projects || [];
     unitConversions = DATA.unitConversions || [];
     recommendedUnits = DATA.recommendedUnits || [];
@@ -57,6 +64,10 @@ var App = (function() {
 
   function renderMarkdown(s) {
     if (!s) return '';
+    if (typeof marked !== 'undefined' && marked.parse) {
+      return marked.parse(s);
+    }
+    // Fallback if marked not loaded
     var html = escapeHtml(s);
     html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
     var blocks = html.split(/\n\n+/);
@@ -388,30 +399,39 @@ var App = (function() {
     for (var i = 0; i < conceptSets.length; i++) {
       if (conceptSets[i].id === cs.id) { conceptSets[i] = cs; break; }
     }
+    // Promote to userConceptSets if not already there
+    var found = false;
     for (var j = 0; j < userConceptSets.length; j++) {
-      if (userConceptSets[j].id === cs.id) { userConceptSets[j] = cs; break; }
+      if (userConceptSets[j].id === cs.id) { userConceptSets[j] = cs; found = true; break; }
     }
+    if (!found) userConceptSets.push(cs);
     saveUserConceptSets();
   }
 
   function deleteConceptSets(ids) {
     var idSet = {};
     ids.forEach(function(id) { idSet[id] = true; });
-    // Only delete user-created concept sets
-    var userIds = {};
-    userConceptSets.forEach(function(cs) { userIds[cs.id] = true; });
-    var deletable = ids.filter(function(id) { return userIds[id]; });
-    var notDeletable = ids.filter(function(id) { return !userIds[id]; });
-    // Remove from userConceptSets
     userConceptSets = userConceptSets.filter(function(cs) { return !idSet[cs.id]; });
+    var before = conceptSets.length;
+    conceptSets = conceptSets.filter(function(cs) { return !idSet[cs.id]; });
+    var deleted = before - conceptSets.length;
+    // Track deleted repo IDs so they stay hidden on reload
+    var hidden = JSON.parse(localStorage.getItem('indicate_hidden_cs') || '[]');
+    ids.forEach(function(id) { if (hidden.indexOf(id) < 0) hidden.push(id); });
+    localStorage.setItem('indicate_hidden_cs', JSON.stringify(hidden));
     saveUserConceptSets();
-    // Remove from conceptSets
-    conceptSets = conceptSets.filter(function(cs) { return !idSet[cs.id] || !userIds[cs.id]; });
-    return { deleted: deletable.length, skipped: notDeletable.length };
+    return { deleted: deleted, skipped: 0 };
   }
 
   function isUserConceptSet(id) {
     return userConceptSets.some(function(cs) { return cs.id === id; });
+  }
+
+  function restoreConceptSets(allSnapshot, userSnapshot) {
+    conceptSets.length = 0;
+    allSnapshot.forEach(function(cs) { conceptSets.push(cs); });
+    userConceptSets = userSnapshot;
+    saveUserConceptSets();
   }
 
   // ==================== GETCSDATA ====================
@@ -476,6 +496,8 @@ var App = (function() {
     addConceptSet: addConceptSet,
     updateConceptSet: updateConceptSet,
     deleteConceptSets: deleteConceptSets,
-    isUserConceptSet: isUserConceptSet
+    isUserConceptSet: isUserConceptSet,
+    saveUserConceptSets: saveUserConceptSets,
+    restoreConceptSets: restoreConceptSets
   };
 })();
