@@ -934,19 +934,22 @@ Enter your review comments here using Markdown syntax.
     <button class="modal-fs-close" id="expr-add-close">&times;</button>
   </div>
   <div class="modal-fs-body" style="flex:1; display:flex; flex-direction:column; min-height:0; padding:16px">
-    <div style="display:flex; gap:8px; margin-bottom:12px">
-      <input type="text" class="form-input" id="expr-add-search" placeholder="Search concepts by name, code, or ID..." style="flex:1">
-      <button class="btn-submit" id="expr-add-search-btn"><i class="fas fa-search"></i> Search</button>
-    </div>
+    <!-- No DB message -->
     <div id="expr-add-no-db" style="display:none; padding:20px; text-align:center; color:var(--text-muted); font-size:13px">
       <i class="fas fa-info-circle" style="color:var(--primary); margin-right:6px"></i>
       Load OHDSI vocabularies in <a href="#/general-settings" style="color:var(--primary); font-weight:600">General Settings</a> to search concepts.
     </div>
+    <!-- Search bar -->
+    <div id="expr-add-search-row" style="display:flex; gap:8px; margin-bottom:12px">
+      <input type="text" class="form-input" id="expr-add-search" placeholder="Search concepts by name, code, or ID..." style="flex:1">
+      <button class="btn-primary-custom" id="expr-add-search-btn"><i class="fas fa-search"></i> Search</button>
+    </div>
+    <!-- Top: Results table -->
     <div id="expr-add-results-wrap" style="flex:1; overflow-y:auto; min-height:0">
       <table class="concept-related-table" id="expr-add-results-table">
         <thead>
           <tr>
-            <th style="width:36px"><input type="checkbox" id="expr-add-select-all"></th>
+            <th class="expr-add-check-col" style="width:36px"><input type="checkbox" id="expr-add-select-all"></th>
             <th>Concept ID</th>
             <th>Concept Name</th>
             <th>Vocabulary</th>
@@ -959,22 +962,40 @@ Enter your review comments here using Markdown syntax.
         <tbody id="expr-add-results-tbody"></tbody>
       </table>
     </div>
+    <!-- Bottom: Details + Descendants panels -->
+    <div id="expr-add-bottom" class="expr-add-bottom">
+      <div class="expr-add-detail-panel" id="expr-add-detail-panel">
+        <div class="expr-add-panel-title">Selected Concept Details</div>
+        <div id="expr-add-detail-body" class="expr-add-detail-body">
+          <div class="empty-state"><p>Select a concept to view details</p></div>
+        </div>
+      </div>
+      <div class="expr-add-desc-panel" id="expr-add-desc-panel">
+        <div class="expr-add-panel-title">Descendants</div>
+        <div id="expr-add-desc-body" class="expr-add-desc-body">
+          <div class="empty-state"><p>Select a concept to view descendants</p></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="modal-fs-footer">
     <div class="expr-add-toggles">
+      <label style="display:inline-flex; align-items:center; gap:6px; font-size:13px; cursor:pointer">
+        <input type="checkbox" id="expr-add-multiple"> Multiple Selection
+      </label>
+    </div>
+    <div style="display:flex; align-items:center; gap:12px">
       <label class="toggle-switch toggle-sm toggle-exclude">
         <input type="checkbox" id="expr-add-exclude"><span class="toggle-slider"></span>
-      </label> <span>Exclude</span>
+      </label> <span style="font-size:13px; font-weight:500">Exclude</span>
       <label class="toggle-switch toggle-sm">
         <input type="checkbox" id="expr-add-descendants"><span class="toggle-slider"></span>
-      </label> <span>Descendants</span>
+      </label> <span style="font-size:13px; font-weight:500">Descendants</span>
       <label class="toggle-switch toggle-sm">
         <input type="checkbox" id="expr-add-mapped"><span class="toggle-slider"></span>
-      </label> <span>Mapped</span>
-    </div>
-    <div style="display:flex; align-items:center; gap:10px">
+      </label> <span style="font-size:13px; font-weight:500">Mapped</span>
       <span id="expr-add-count" style="font-size:12px; color:var(--text-muted)">0 selected</span>
-      <button class="btn-submit" id="expr-add-submit" disabled><i class="fas fa-plus"></i> Add Concepts</button>
+      <button class="btn-success-custom" id="expr-add-submit" disabled><i class="fas fa-plus"></i> Add Concepts</button>
     </div>
   </div>
 </div>

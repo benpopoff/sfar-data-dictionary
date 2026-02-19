@@ -29,6 +29,8 @@ var ConceptSetsPage = (function() {
   var exprImportEditor = null;
   var addConceptResults = [];
   var addConceptSelectedIds = new Set();
+  var addMultiSelect = false;
+  var addSelectedConcept = null; // currently focused row in single-select mode
 
   // ==================== FILTERING ====================
   function getFilteredCS() {
@@ -466,28 +468,36 @@ var ConceptSetsPage = (function() {
     var modal = document.getElementById('expr-add-modal');
     var noDb = document.getElementById('expr-add-no-db');
     var resultsWrap = document.getElementById('expr-add-results-wrap');
-    var footer = document.querySelector('.modal-fs-footer');
-    var searchRow = document.getElementById('expr-add-search').parentElement;
+    var bottom = document.getElementById('expr-add-bottom');
+    var footer = document.querySelector('#expr-add-modal .modal-fs-footer');
+    var searchRow = document.getElementById('expr-add-search-row');
 
     addConceptResults = [];
     addConceptSelectedIds.clear();
+    addSelectedConcept = null;
+    addMultiSelect = false;
     document.getElementById('expr-add-results-tbody').innerHTML = '';
     document.getElementById('expr-add-search').value = '';
     document.getElementById('expr-add-select-all').checked = false;
+    document.getElementById('expr-add-multiple').checked = false;
     document.getElementById('expr-add-exclude').checked = false;
     document.getElementById('expr-add-descendants').checked = false;
     document.getElementById('expr-add-mapped').checked = false;
     updateAddCount();
+    resetAddDetailPanels();
+    applyAddMultiSelect();
 
     function showReady() {
       noDb.style.display = 'none';
       resultsWrap.style.display = '';
+      bottom.style.display = '';
       footer.style.display = '';
       searchRow.style.display = '';
     }
     function showNoDb() {
       noDb.style.display = '';
       resultsWrap.style.display = 'none';
+      bottom.style.display = 'none';
       footer.style.display = 'none';
       searchRow.style.display = 'none';
     }
@@ -500,11 +510,11 @@ var ConceptSetsPage = (function() {
           showReady();
           return;
         }
-        // Try to auto-remount from IndexedDB / stored handles
         noDb.style.display = '';
         noDb.innerHTML = '<i class="fas fa-spinner fa-spin" style="color:var(--primary); margin-right:6px"></i>' +
           'Attempting to load vocabulary database...';
         resultsWrap.style.display = 'none';
+        bottom.style.display = 'none';
         footer.style.display = 'none';
         searchRow.style.display = 'none';
 
@@ -530,17 +540,40 @@ var ConceptSetsPage = (function() {
     document.getElementById('expr-add-modal').classList.remove('visible');
   }
 
+  function resetAddDetailPanels() {
+    document.getElementById('expr-add-detail-body').innerHTML =
+      '<div class="empty-state"><p>Select a concept to view details</p></div>';
+    document.getElementById('expr-add-desc-body').innerHTML =
+      '<div class="empty-state"><p>Select a concept to view descendants</p></div>';
+  }
+
+  // --- Multiple selection toggle ---
+  function applyAddMultiSelect() {
+    var table = document.getElementById('expr-add-results-table');
+    var bottom = document.getElementById('expr-add-bottom');
+    if (addMultiSelect) {
+      table.classList.add('add-multi-select');
+      bottom.style.display = 'none';
+    } else {
+      table.classList.remove('add-multi-select');
+      bottom.style.display = '';
+    }
+  }
+
+  // --- Search ---
   function searchAddConcepts() {
     var q = document.getElementById('expr-add-search').value.trim();
     if (!q) return;
     var tbody = document.getElementById('expr-add-results-tbody');
-    tbody.innerHTML = '<tr><td colspan="8" class="td-center" style="padding:20px; color:var(--text-muted)"><i class="fas fa-spinner fa-spin"></i> Searching...</td></tr>';
+    var colSpan = addMultiSelect ? 8 : 7;
+    tbody.innerHTML = '<tr><td colspan="' + colSpan + '" class="td-center" style="padding:20px; color:var(--text-muted)"><i class="fas fa-spinner fa-spin"></i> Searching...</td></tr>';
     addConceptResults = [];
     addConceptSelectedIds.clear();
+    addSelectedConcept = null;
     document.getElementById('expr-add-select-all').checked = false;
     updateAddCount();
+    resetAddDetailPanels();
 
-    // Build SQL: search by name, code, or ID
     var isNumeric = /^\d+$/.test(q);
     var conditions = [];
     if (isNumeric) {
@@ -548,7 +581,7 @@ var ConceptSetsPage = (function() {
     }
     conditions.push('concept_name ILIKE \'%' + q.replace(/'/g, "''") + '%\'');
     conditions.push('concept_code ILIKE \'%' + q.replace(/'/g, "''") + '%\'');
-    var sql = 'SELECT concept_id, concept_name, vocabulary_id, domain_id, concept_class_id, concept_code, standard_concept ' +
+    var sql = 'SELECT concept_id, concept_name, vocabulary_id, domain_id, concept_class_id, concept_code, standard_concept, invalid_reason ' +
       'FROM concept WHERE (' + conditions.join(' OR ') + ') ' +
       'ORDER BY CASE WHEN standard_concept = \'S\' THEN 0 ELSE 1 END, concept_name LIMIT 500';
 
@@ -556,23 +589,28 @@ var ConceptSetsPage = (function() {
       addConceptResults = rows || [];
       renderAddResults();
     }).catch(function(err) {
-      tbody.innerHTML = '<tr><td colspan="8" style="padding:20px; color:var(--danger)">' + App.escapeHtml(err.message) + '</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="' + colSpan + '" style="padding:20px; color:var(--danger)">' + App.escapeHtml(err.message) + '</td></tr>';
     });
   }
 
+  // --- Render results ---
   function renderAddResults() {
     var tbody = document.getElementById('expr-add-results-tbody');
+    var colSpan = addMultiSelect ? 8 : 7;
     if (addConceptResults.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="8" class="td-center" style="padding:20px; color:var(--text-muted)">No results found.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="' + colSpan + '" class="td-center" style="padding:20px; color:var(--text-muted)">No results found.</td></tr>';
       return;
     }
     tbody.innerHTML = addConceptResults.map(function(r) {
-      var sel = addConceptSelectedIds.has(Number(r.concept_id));
+      var cid = Number(r.concept_id);
+      var sel = addConceptSelectedIds.has(cid);
+      var active = addSelectedConcept && Number(addSelectedConcept.concept_id) === cid;
       var std = r.standard_concept === 'S' ? 'Standard' : (r.standard_concept === 'C' ? 'Classification' : 'Non-standard');
       var stdClass = r.standard_concept === 'S' ? 'flag-yes' : (r.standard_concept === 'C' ? '' : 'flag-yes-danger');
-      return '<tr data-cid="' + r.concept_id + '"' + (sel ? ' class="expr-selected"' : '') + '>' +
-        '<td class="td-center"><input type="checkbox" class="add-row-checkbox" data-cid="' + r.concept_id + '"' + (sel ? ' checked' : '') + '></td>' +
-        '<td>' + r.concept_id + '</td>' +
+      var rowClass = sel ? 'expr-selected' : (active ? 'add-active-row' : '');
+      return '<tr data-cid="' + cid + '"' + (rowClass ? ' class="' + rowClass + '"' : '') + '>' +
+        '<td class="expr-add-check-col td-center"><input type="checkbox" class="add-row-checkbox" data-cid="' + cid + '"' + (sel ? ' checked' : '') + '></td>' +
+        '<td>' + cid + '</td>' +
         '<td>' + App.escapeHtml(r.concept_name) + '</td>' +
         '<td>' + App.escapeHtml(r.vocabulary_id) + '</td>' +
         '<td>' + App.escapeHtml(r.concept_code || '') + '</td>' +
@@ -581,6 +619,28 @@ var ConceptSetsPage = (function() {
         '<td class="td-center">' + (stdClass ? '<span class="' + stdClass + '">' + std + '</span>' : std) + '</td>' +
         '</tr>';
     }).join('');
+  }
+
+  // --- Row interaction ---
+  function handleAddRowClick(cid) {
+    if (addMultiSelect) {
+      toggleAddRow(cid);
+    } else {
+      // Single-select: focus row, show details + descendants
+      var concept = addConceptResults.find(function(r) { return Number(r.concept_id) === cid; });
+      if (!concept) return;
+      addSelectedConcept = concept;
+      addConceptSelectedIds.clear();
+      addConceptSelectedIds.add(cid);
+      updateAddCount();
+      // Highlight active row
+      document.querySelectorAll('#expr-add-results-tbody tr').forEach(function(tr) {
+        tr.classList.toggle('add-active-row', Number(tr.dataset.cid) === cid);
+        tr.classList.remove('expr-selected');
+      });
+      showAddConceptDetail(concept);
+      showAddConceptDescendants(cid);
+    }
   }
 
   function toggleAddRow(cid) {
@@ -612,6 +672,68 @@ var ConceptSetsPage = (function() {
     document.getElementById('expr-add-submit').disabled = (n === 0);
   }
 
+  // --- Selected Concept Details panel ---
+  function showAddConceptDetail(r) {
+    var el = document.getElementById('expr-add-detail-body');
+    var sc = r.standard_concept || '';
+    var standardText = sc === 'S' ? 'Standard' : (sc === 'C' ? 'Classification' : 'Non-standard');
+    var standardColor = sc === 'S' ? '#28a745' : (sc === 'C' ? '#6c757d' : '#dc3545');
+    var isValid = !r.invalid_reason || r.invalid_reason === '';
+    var validityText = isValid ? 'Valid' : 'Invalid';
+    var validityColor = isValid ? '#28a745' : '#dc3545';
+
+    // Check if already in expression
+    var alreadyAdded = false;
+    if (exprEditItems) {
+      alreadyAdded = exprEditItems.some(function(it) { return it.concept.conceptId === Number(r.concept_id); });
+    }
+    var alreadyHtml = alreadyAdded ? '<div class="expr-add-already-badge"><i class="fas fa-check"></i> Already in expression</div>' : '';
+
+    el.innerHTML = alreadyHtml +
+      '<dl class="expr-add-detail-grid">' +
+      '<dt>Concept Name</dt><dd>' + App.escapeHtml(r.concept_name) + '</dd>' +
+      '<dt>OMOP Concept ID</dt><dd>' + r.concept_id + '</dd>' +
+      '<dt>Vocabulary</dt><dd>' + App.escapeHtml(r.vocabulary_id) + '</dd>' +
+      '<dt>Concept Code</dt><dd>' + App.escapeHtml(r.concept_code || '') + '</dd>' +
+      '<dt>Domain</dt><dd>' + App.escapeHtml(r.domain_id || '') + '</dd>' +
+      '<dt>Concept Class</dt><dd>' + App.escapeHtml(r.concept_class_id || '') + '</dd>' +
+      '<dt>Standard</dt><dd><span style="color:' + standardColor + '; font-weight:600">' + standardText + '</span></dd>' +
+      '<dt>Validity</dt><dd><span style="color:' + validityColor + '">' + validityText + '</span></dd>' +
+      '</dl>';
+  }
+
+  // --- Descendants panel ---
+  function showAddConceptDescendants(conceptId) {
+    var el = document.getElementById('expr-add-desc-body');
+    el.innerHTML = '<div style="padding:12px; color:var(--text-muted); font-size:12px"><i class="fas fa-spinner fa-spin"></i> Loading descendants...</div>';
+
+    var sql = 'SELECT c.concept_id, c.concept_name, c.vocabulary_id ' +
+      'FROM concept_ancestor ca JOIN concept c ON ca.descendant_concept_id = c.concept_id ' +
+      'WHERE ca.ancestor_concept_id = ' + conceptId + ' AND ca.descendant_concept_id != ' + conceptId +
+      ' AND (c.invalid_reason IS NULL OR c.invalid_reason = \'\') ' +
+      'ORDER BY c.concept_name LIMIT 200';
+
+    VocabDB.query(sql).then(function(rows) {
+      if (!rows || rows.length === 0) {
+        el.innerHTML = '<div class="empty-state"><p>No descendants found</p></div>';
+        return;
+      }
+      var html = '<table class="expr-add-desc-table"><thead><tr>' +
+        '<th>Concept ID</th><th>Concept Name</th><th>Vocabulary</th>' +
+        '</tr></thead><tbody>';
+      rows.forEach(function(d) {
+        html += '<tr><td>' + d.concept_id + '</td>' +
+          '<td>' + App.escapeHtml(d.concept_name) + '</td>' +
+          '<td>' + App.escapeHtml(d.vocabulary_id) + '</td></tr>';
+      });
+      html += '</tbody></table>';
+      el.innerHTML = html;
+    }).catch(function() {
+      el.innerHTML = '<div class="empty-state"><p>Could not load descendants</p></div>';
+    });
+  }
+
+  // --- Submit ---
   function submitAddConcepts() {
     if (addConceptSelectedIds.size === 0) return;
     var existingIds = {};
@@ -2286,10 +2408,29 @@ var ConceptSetsPage = (function() {
       if (e.key === 'Enter') searchAddConcepts();
     });
     document.getElementById('expr-add-select-all').addEventListener('change', toggleAddSelectAll);
+    document.getElementById('expr-add-multiple').addEventListener('change', function() {
+      addMultiSelect = this.checked;
+      // When switching to multi-select, keep existing selection; when switching to single, clear
+      if (!addMultiSelect) {
+        addConceptSelectedIds.clear();
+        addSelectedConcept = null;
+        updateAddCount();
+        resetAddDetailPanels();
+      }
+      applyAddMultiSelect();
+      renderAddResults();
+    });
     document.getElementById('expr-add-results-tbody').addEventListener('click', function(e) {
+      // Don't handle checkbox clicks directly — they bubble as row clicks
+      if (e.target.classList.contains('add-row-checkbox')) return;
       var tr = e.target.closest('tr[data-cid]');
       if (!tr) return;
-      toggleAddRow(parseInt(tr.getAttribute('data-cid')));
+      handleAddRowClick(parseInt(tr.getAttribute('data-cid')));
+    });
+    document.getElementById('expr-add-results-tbody').addEventListener('change', function(e) {
+      if (e.target.classList.contains('add-row-checkbox')) {
+        toggleAddRow(parseInt(e.target.getAttribute('data-cid')));
+      }
     });
     document.getElementById('expr-add-submit').addEventListener('click', submitAddConcepts);
 
