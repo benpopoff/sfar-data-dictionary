@@ -643,7 +643,7 @@ tbody td {
 .concept-vocab-tab { padding: 6px 14px; border: none; background: none; cursor: pointer; font-size: 12px; font-weight: 600; color: var(--text-muted); border-bottom: 2px solid transparent; margin-bottom: -2px; transition: color 0.15s, border-color 0.15s; }
 .concept-vocab-tab:hover { color: var(--text); }
 .concept-vocab-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
-.concept-vocab-content { min-height: 100px; padding: 8px 0; }
+.concept-vocab-content { padding: 8px 0; flex: 1; display: flex; flex-direction: column; min-height: 0; overflow-y: auto; }
 .concept-vocab-content .loading-inline { padding: 20px; text-align: center; color: var(--text-muted); font-size: 13px; }
 .concept-related-table { width: 100%; font-size: 12px; border-collapse: collapse; }
 .concept-related-table th { text-align: left; padding: 6px 8px; border-bottom: 2px solid var(--border); color: var(--primary); font-weight: 600; font-size: 11px; }
@@ -652,6 +652,88 @@ tbody td {
 .concept-synonyms-list { list-style: none; padding: 0; margin: 0; }
 .concept-synonyms-list li { padding: 6px 8px; border-bottom: 1px solid #eee; font-size: 13px; }
 .related-pager { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 8px 0; }
+
+/* Hierarchy graph header + controls */
+.hierarchy-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: var(--gray-light);
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.hierarchy-header-title {
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hierarchy-header-title .hierarchy-id { color: var(--text-muted); font-weight: 400; margin-left: 6px; }
+.hierarchy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 13px;
+  transition: all .15s;
+  flex-shrink: 0;
+}
+.hierarchy-btn:hover { border-color: var(--primary); color: var(--primary); }
+.hierarchy-btn:disabled { opacity: .3; cursor: default; }
+.hierarchy-btn:disabled:hover { border-color: var(--border); color: var(--text-muted); }
+.hierarchy-controls { display: flex; gap: 4px; flex-shrink: 0; }
+.hierarchy-graph-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 300px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: relative;
+  overflow: hidden;
+}
+.hierarchy-graph-container.fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  height: 100vh;
+  min-height: unset;
+  border-radius: 0;
+  border: none;
+  background: white;
+}
+/* Hierarchy warning overlay (for large graphs, shown inside wrapper to preserve fullscreen) */
+.hierarchy-warn-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: rgba(255,255,255,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hierarchy-warn-box {
+  text-align: center;
+  padding: 24px 32px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  max-width: 400px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* Previous concept color in hierarchy */
 
 /* Pagination */
 .pagination {

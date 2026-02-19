@@ -434,7 +434,10 @@ var ConceptSetsPage = (function() {
       encodeURIComponent(system) + '&code=' + encodeURIComponent(conceptCode);
   }
 
+  var currentConceptInDetail = null;
+
   function showResolvedConceptDetail(concept) {
+    currentConceptInDetail = concept;
     var el = document.getElementById('resolved-concept-detail-body');
     var athenaUrl = 'https://athena.ohdsi.org/search-terms/terms/' + concept.conceptId;
     var fhirUrl = buildFhirUrl(concept.vocabularyId, concept.conceptCode);
@@ -451,7 +454,11 @@ var ConceptSetsPage = (function() {
       ? '<a href="' + fhirUrl + '" target="_blank">' + App.escapeHtml(concept.vocabularyId) + '</a>'
       : '<span style="color:var(--text-muted)">No link available</span>';
 
-    el.innerHTML =
+    var backBtnHtml = conceptDetailHistory.length > 0
+      ? '<div style="margin-bottom:8px"><button class="btn-outline-sm" id="concept-detail-back"><i class="fas fa-arrow-left"></i> Back</button></div>'
+      : '';
+
+    el.innerHTML = backBtnHtml +
       '<div class="concept-details-container"><div class="concept-details-grid">' +
       '<div class="detail-item"><strong>Concept Name:</strong><span>' + App.escapeHtml(concept.conceptName) + '</span></div>' +
       '<div class="detail-item"><strong>View in ATHENA:</strong><span><a href="' + athenaUrl + '" target="_blank">' + concept.conceptId + '</a></span></div>' +
@@ -465,38 +472,99 @@ var ConceptSetsPage = (function() {
       '<div></div>' +
       '</div></div>';
 
-    // Append vocab tabs if DuckDB is ready, or show a hint
+    // Wire up back button if present
+    var backBtn = document.getElementById('concept-detail-back');
+    if (backBtn) {
+      backBtn.addEventListener('click', goBackConceptDetail);
+    }
+
+    // Append vocab tabs if DuckDB is ready, or try to auto-load, or show hint
     if (typeof VocabDB !== 'undefined') {
       VocabDB.isDatabaseReady().then(function(ready) {
         if (ready) {
           renderVocabTabs(concept, el);
-        } else {
-          var hint = document.createElement('div');
-          hint.style.cssText = 'margin-top:16px; padding:12px 16px; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:6px; font-size:13px; color:#666';
-          hint.innerHTML = '<i class="fas fa-info-circle" style="color:var(--primary); margin-right:6px"></i>' +
-            'Load OHDSI vocabularies in <a href="#/general-settings" style="color:var(--primary); font-weight:600">General Settings</a> ' +
-            'to view related concepts, hierarchy, and synonyms.';
-          el.appendChild(hint);
+          return;
         }
+        // Try to auto-remount from IndexedDB / stored handles
+        var loadingHint = document.createElement('div');
+        loadingHint.style.cssText = 'margin-top:16px; padding:12px 16px; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:6px; font-size:13px; color:#666';
+        loadingHint.innerHTML = '<i class="fas fa-spinner fa-spin" style="color:var(--primary); margin-right:6px"></i>' +
+          'Attempting to load vocabulary database...';
+        el.appendChild(loadingHint);
+
+        VocabDB.remountFromStoredHandles().then(function(ok) {
+          loadingHint.remove();
+          if (ok) {
+            renderVocabTabs(concept, el);
+          } else {
+            showVocabLoadHint(el);
+          }
+        }).catch(function() {
+          loadingHint.remove();
+          showVocabLoadHint(el, concept);
+        });
       });
     }
   }
 
+  function showVocabLoadHint(el) {
+    var hint = document.createElement('div');
+    hint.style.cssText = 'margin-top:16px; padding:12px 16px; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:6px; font-size:13px; color:#666';
+    hint.innerHTML = '<i class="fas fa-info-circle" style="color:var(--primary); margin-right:6px"></i>' +
+      'Load OHDSI vocabularies in <a href="#/general-settings" style="color:var(--primary); font-weight:600">General Settings</a>' +
+      ' to view related concepts, hierarchy, and synonyms.';
+    el.appendChild(hint);
+  }
+
+  // ==================== CONCEPT DETAIL NAVIGATION HISTORY ====================
+  var conceptDetailHistory = [];
+
+  function navigateToConceptDetail(conceptId, currentConcept) {
+    if (currentConcept) {
+      conceptDetailHistory.push(currentConcept);
+    }
+    VocabDB.lookupConcepts([conceptId]).then(function(concepts) {
+      if (concepts.length > 0) {
+        var c = concepts[0];
+        showResolvedConceptDetail({
+          conceptId: c.concept_id, conceptName: c.concept_name,
+          vocabularyId: c.vocabulary_id, domainId: c.domain_id,
+          conceptClassId: c.concept_class_id, conceptCode: c.concept_code,
+          standardConcept: c.standard_concept
+        });
+      }
+    });
+  }
+
+  function goBackConceptDetail() {
+    if (conceptDetailHistory.length === 0) return;
+    var prev = conceptDetailHistory.pop();
+    showResolvedConceptDetail(prev);
+  }
+
   // ==================== VOCAB TABS (Related / Hierarchy / Synonyms) ====================
   var vocabTabsHierarchyNetwork = null;
+  var hierarchyHistory = [];
+  var hierarchyPreviousId = null;
+  var hierarchyIsFullscreen = false;
+  var hierarchyWrapper = null; // persisted wrapper DOM element
+  var lastVocabTab = 'related'; // remember last active vocab tab
 
   function renderVocabTabs(concept, containerEl) {
+    hierarchyWrapper = null; // reset so a fresh wrapper is created for new concept
+    var activeTab = lastVocabTab || 'related';
     var tabsHtml =
       '<div class="concept-vocab-tab-bar">' +
-        '<button class="concept-vocab-tab active" data-vtab="related">Related</button>' +
-        '<button class="concept-vocab-tab" data-vtab="hierarchy">Hierarchy</button>' +
-        '<button class="concept-vocab-tab" data-vtab="synonyms">Synonyms</button>' +
+        '<button class="concept-vocab-tab' + (activeTab === 'related' ? ' active' : '') + '" data-vtab="related">Related</button>' +
+        '<button class="concept-vocab-tab' + (activeTab === 'hierarchy' ? ' active' : '') + '" data-vtab="hierarchy">Hierarchy</button>' +
+        '<button class="concept-vocab-tab' + (activeTab === 'synonyms' ? ' active' : '') + '" data-vtab="synonyms">Synonyms</button>' +
       '</div>' +
-      '<div class="concept-vocab-content" id="vtab-related"></div>' +
-      '<div class="concept-vocab-content" id="vtab-hierarchy" style="display:none"></div>' +
-      '<div class="concept-vocab-content" id="vtab-synonyms" style="display:none"></div>';
+      '<div class="concept-vocab-content" id="vtab-related"' + (activeTab !== 'related' ? ' style="display:none"' : '') + '></div>' +
+      '<div class="concept-vocab-content" id="vtab-hierarchy"' + (activeTab !== 'hierarchy' ? ' style="display:none"' : '') + '></div>' +
+      '<div class="concept-vocab-content" id="vtab-synonyms"' + (activeTab !== 'synonyms' ? ' style="display:none"' : '') + '></div>';
 
     var wrapper = document.createElement('div');
+    wrapper.style.cssText = 'display:flex; flex-direction:column; flex:1; min-height:0; overflow:hidden';
     wrapper.innerHTML = tabsHtml;
     containerEl.appendChild(wrapper);
 
@@ -506,6 +574,7 @@ var ConceptSetsPage = (function() {
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].addEventListener('click', function() {
         var vtab = this.getAttribute('data-vtab');
+        lastVocabTab = vtab;
         for (var j = 0; j < tabs.length; j++) tabs[j].classList.toggle('active', tabs[j] === this);
         ['related', 'hierarchy', 'synonyms'].forEach(function(t) {
           var el = document.getElementById('vtab-' + t);
@@ -513,15 +582,28 @@ var ConceptSetsPage = (function() {
         });
         if (!loaded[vtab]) {
           loaded[vtab] = true;
-          if (vtab === 'hierarchy') loadHierarchyGraph(concept.conceptId, document.getElementById('vtab-hierarchy'));
+          if (vtab === 'hierarchy') {
+            hierarchyHistory = [];
+            hierarchyPreviousId = null;
+            loadHierarchyGraph(concept.conceptId, document.getElementById('vtab-hierarchy'));
+          }
           if (vtab === 'synonyms') loadSynonyms(concept.conceptId, document.getElementById('vtab-synonyms'));
         }
       });
     }
 
-    // Load related by default
-    loaded.related = true;
-    loadRelatedConcepts(concept.conceptId, document.getElementById('vtab-related'));
+    // Load the active tab
+    function loadTab(name) {
+      loaded[name] = true;
+      if (name === 'related') loadRelatedConcepts(concept.conceptId, document.getElementById('vtab-related'));
+      if (name === 'hierarchy') {
+        hierarchyHistory = [];
+        hierarchyPreviousId = null;
+        loadHierarchyGraph(concept.conceptId, document.getElementById('vtab-hierarchy'));
+      }
+      if (name === 'synonyms') loadSynonyms(concept.conceptId, document.getElementById('vtab-synonyms'));
+    }
+    loadTab(activeTab);
   }
 
   var relatedRows = null;
@@ -595,30 +677,32 @@ var ConceptSetsPage = (function() {
     if (prevBtn) prevBtn.addEventListener('click', function() { relatedPage--; renderRelatedPage(); });
     if (nextBtn) nextBtn.addEventListener('click', function() { relatedPage++; renderRelatedPage(); });
 
-    // Click row to navigate
+    // Click row to navigate (with history)
     relatedEl.querySelector('tbody').addEventListener('click', function(e) {
       var tr = e.target.closest('tr[data-cid]');
       if (!tr) return;
       var cid = parseInt(tr.getAttribute('data-cid'));
-      VocabDB.lookupConcepts([cid]).then(function(concepts) {
-        if (concepts.length > 0) {
-          var c = concepts[0];
-          showResolvedConceptDetail({
-            conceptId: c.concept_id, conceptName: c.concept_name,
-            vocabularyId: c.vocabulary_id, domainId: c.domain_id,
-            conceptClassId: c.concept_class_id, conceptCode: c.concept_code,
-            standardConcept: c.standard_concept
-          });
-        }
-      });
+      navigateToConceptDetail(cid, currentConceptInDetail);
     });
   }
 
   var HIERARCHY_MAX_LEVELS = 5;
   var HIERARCHY_WARN_THRESHOLD = 100;
 
+  function showHierarchyLoading() {
+    // Show spinner inside existing canvas if wrapper exists, otherwise in the tab el
+    if (hierarchyWrapper) {
+      var canvas = hierarchyWrapper.querySelector('#hierarchy-graph-canvas');
+      if (canvas) canvas.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
+    }
+  }
+
   function loadHierarchyGraph(conceptId, el) {
-    el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
+    if (hierarchyWrapper) {
+      showHierarchyLoading();
+    } else {
+      el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
+    }
 
     // Step 1: count nodes first
     var countSql =
@@ -631,21 +715,51 @@ var ConceptSetsPage = (function() {
     VocabDB.query(countSql).then(function(countRows) {
       var total = Number(countRows[0].ancestors) + Number(countRows[0].descendants) + 1;
       if (total > HIERARCHY_WARN_THRESHOLD) {
-        el.innerHTML =
-          '<div class="loading-inline" style="text-align:left">' +
-          '<i class="fas fa-exclamation-triangle" style="color:var(--warning)"></i> ' +
-          'This concept has <strong>' + total + '</strong> nodes in the hierarchy (' + HIERARCHY_MAX_LEVELS + ' levels). ' +
-          'Loading may be slow.' +
-          '<br><button class="btn-outline-sm" id="hierarchy-load-anyway" style="margin-top:8px">' +
-          '<i class="fas fa-project-diagram"></i> Load anyway</button></div>';
-        document.getElementById('hierarchy-load-anyway').addEventListener('click', function() {
-          el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
-          buildHierarchyGraph(conceptId, el);
-        });
+        var warningHtml =
+          '<div class="hierarchy-warn-overlay">' +
+            '<div class="hierarchy-warn-box">' +
+              '<i class="fas fa-exclamation-triangle" style="color:var(--warning); font-size:18px"></i>' +
+              '<div style="margin-top:8px">' +
+                'This concept has <strong>' + total + '</strong> nodes in the hierarchy (' + HIERARCHY_MAX_LEVELS + ' levels). ' +
+                'Loading may be slow.' +
+              '</div>' +
+              '<div style="display:flex; gap:8px; margin-top:12px">' +
+                '<button class="btn-outline-sm" id="hierarchy-warn-cancel"><i class="fas fa-times"></i> Cancel</button>' +
+                '<button class="btn-outline-sm" id="hierarchy-load-anyway"><i class="fas fa-project-diagram"></i> Load anyway</button>' +
+              '</div>' +
+            '</div>' +
+          '</div>';
+
+        if (hierarchyWrapper) {
+          // Show overlay inside existing wrapper (preserves fullscreen)
+          var overlay = document.createElement('div');
+          overlay.innerHTML = warningHtml;
+          overlay = overlay.firstChild;
+          hierarchyWrapper.appendChild(overlay);
+          overlay.querySelector('#hierarchy-warn-cancel').addEventListener('click', function() {
+            overlay.remove();
+          });
+          overlay.querySelector('#hierarchy-load-anyway').addEventListener('click', function() {
+            overlay.remove();
+            showHierarchyLoading();
+            buildHierarchyGraph(conceptId, el);
+          });
+        } else {
+          // No wrapper yet — show warning in the tab element
+          el.innerHTML = warningHtml;
+          el.querySelector('#hierarchy-warn-cancel').addEventListener('click', function() {
+            el.innerHTML = '<div class="loading-inline" style="color:var(--text-muted)">Cancelled.</div>';
+          });
+          el.querySelector('#hierarchy-load-anyway').addEventListener('click', function() {
+            el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
+            buildHierarchyGraph(conceptId, el);
+          });
+        }
         return;
       }
       buildHierarchyGraph(conceptId, el);
     }).catch(function(err) {
+      hierarchyWrapper = null;
       el.innerHTML = '<div class="loading-inline" style="color:var(--danger)">Error: ' + App.escapeHtml(err.message) + '</div>';
     });
   }
@@ -708,26 +822,130 @@ var ConceptSetsPage = (function() {
       });
   }
 
-  function conceptTooltip(c) {
-    var std = c.standard_concept === 'S' ? 'Standard' : (c.standard_concept || 'Non-standard');
-    return c.concept_name + ' [' + c.vocabulary_id + ']\n' +
-      'ID: ' + c.concept_id + ' | Code: ' + (c.concept_code || '') + '\n' +
-      'Domain: ' + (c.domain_id || '') + ' | Class: ' + (c.concept_class_id || '') + '\n' +
-      'Standard: ' + std;
+  function conceptTooltipEl(c) {
+    var std = c.standard_concept === 'S' ? 'Standard' : (c.standard_concept === 'C' ? 'Classification' : 'Non-standard');
+    var div = document.createElement('div');
+    div.style.cssText = 'font-size:12px; line-height:1.6; padding:2px 0';
+    div.innerHTML =
+      '<div><strong>' + App.escapeHtml(String(c.concept_name)) + '</strong></div>' +
+      '<div>ID: ' + c.concept_id + '</div>' +
+      '<div>Vocabulary: ' + App.escapeHtml(String(c.vocabulary_id)) + '</div>' +
+      '<div>Code: ' + App.escapeHtml(String(c.concept_code || '')) + '</div>' +
+      '<div>Domain: ' + App.escapeHtml(String(c.domain_id || '')) + '</div>' +
+      '<div>Class: ' + App.escapeHtml(String(c.concept_class_id || '')) + '</div>' +
+      '<div>Standard: ' + std + '</div>';
+    return div;
   }
 
   function renderHierarchyNetwork(self, ancestors, descendants, edgeRows, el) {
-    el.innerHTML = '<div id="hierarchy-graph-container" style="height:400px; border:1px solid #eee; border-radius:6px"></div>';
+    var selfId = Number(self.concept_id);
+    var prevId = hierarchyPreviousId;
+    var wrapper;
 
+    if (hierarchyWrapper) {
+      // Reuse existing wrapper — just update header + clear canvas
+      wrapper = hierarchyWrapper;
+      var titleEl = wrapper.querySelector('.hierarchy-header-title');
+      if (titleEl) {
+        titleEl.innerHTML = App.escapeHtml(self.concept_name) +
+          '<span class="hierarchy-id">#' + selfId + '</span>';
+      }
+      var backBtn = wrapper.querySelector('#hierarchy-back-btn');
+      if (backBtn) backBtn.disabled = (hierarchyHistory.length === 0);
+      var canvas = wrapper.querySelector('#hierarchy-graph-canvas');
+      if (canvas) canvas.innerHTML = '';
+    } else {
+      // First render — create the full wrapper
+      var headerHtml =
+        '<div class="hierarchy-header">' +
+          '<button class="hierarchy-btn" id="hierarchy-back-btn" title="Back to previous concept"' +
+            (hierarchyHistory.length === 0 ? ' disabled' : '') + '>' +
+            '<i class="fas fa-arrow-left"></i></button>' +
+          '<div class="hierarchy-header-title">' +
+            App.escapeHtml(self.concept_name) +
+            '<span class="hierarchy-id">#' + selfId + '</span>' +
+          '</div>' +
+          '<div class="hierarchy-controls">' +
+            '<button class="hierarchy-btn" id="hierarchy-zoom-in" title="Zoom in"><i class="fas fa-search-plus"></i></button>' +
+            '<button class="hierarchy-btn" id="hierarchy-zoom-out" title="Zoom out"><i class="fas fa-search-minus"></i></button>' +
+            '<button class="hierarchy-btn" id="hierarchy-fit" title="Fit to view"><i class="fas fa-compress-arrows-alt"></i></button>' +
+            '<button class="hierarchy-btn" id="hierarchy-fullscreen" title="Toggle fullscreen"><i class="fas fa-expand"></i></button>' +
+          '</div>' +
+        '</div>' +
+        '<div id="hierarchy-graph-canvas" style="height:100%; flex:1"></div>';
+
+      el.innerHTML = '';
+      wrapper = document.createElement('div');
+      wrapper.className = 'hierarchy-graph-container';
+      wrapper.innerHTML = headerHtml;
+      el.appendChild(wrapper);
+      hierarchyWrapper = wrapper;
+
+      // Wire up control buttons (only once)
+      wrapper.querySelector('#hierarchy-back-btn').addEventListener('click', function() {
+        if (hierarchyHistory.length > 0) {
+          var prevConceptId = hierarchyHistory.pop();
+          hierarchyPreviousId = selfId;
+          loadHierarchyGraph(prevConceptId, el);
+        }
+      });
+
+      wrapper.querySelector('#hierarchy-zoom-in').addEventListener('click', function() {
+        if (!vocabTabsHierarchyNetwork) return;
+        var scale = vocabTabsHierarchyNetwork.getScale();
+        vocabTabsHierarchyNetwork.moveTo({ scale: scale * 1.3, animation: { duration: 300 } });
+      });
+
+      wrapper.querySelector('#hierarchy-zoom-out').addEventListener('click', function() {
+        if (!vocabTabsHierarchyNetwork) return;
+        var scale = vocabTabsHierarchyNetwork.getScale();
+        vocabTabsHierarchyNetwork.moveTo({ scale: scale / 1.3, animation: { duration: 300 } });
+      });
+
+      wrapper.querySelector('#hierarchy-fit').addEventListener('click', function() {
+        if (vocabTabsHierarchyNetwork) vocabTabsHierarchyNetwork.fit({ animation: { duration: 400 } });
+      });
+
+      wrapper.querySelector('#hierarchy-fullscreen').addEventListener('click', function() {
+        hierarchyIsFullscreen = !hierarchyIsFullscreen;
+        wrapper.classList.toggle('fullscreen', hierarchyIsFullscreen);
+        var icon = this.querySelector('i');
+        icon.className = hierarchyIsFullscreen ? 'fas fa-compress' : 'fas fa-expand';
+        this.title = hierarchyIsFullscreen ? 'Exit fullscreen' : 'Toggle fullscreen';
+        setTimeout(function() {
+          if (vocabTabsHierarchyNetwork) vocabTabsHierarchyNetwork.fit({ animation: { duration: 300 } });
+        }, 100);
+      });
+
+      // Esc to exit fullscreen
+      if (!el._escHandler) {
+        el._escHandler = function(e) {
+          if (e.key === 'Escape' && hierarchyIsFullscreen) {
+            hierarchyIsFullscreen = false;
+            wrapper.classList.remove('fullscreen');
+            var fsBtn = wrapper.querySelector('#hierarchy-fullscreen');
+            if (fsBtn) {
+              var icon = fsBtn.querySelector('i');
+              icon.className = 'fas fa-expand';
+              fsBtn.title = 'Toggle fullscreen';
+            }
+            setTimeout(function() {
+              if (vocabTabsHierarchyNetwork) vocabTabsHierarchyNetwork.fit({ animation: { duration: 300 } });
+            }, 100);
+          }
+        };
+        document.addEventListener('keydown', el._escHandler);
+      }
+    }
+
+    // Build nodes & edges
     var nodes = [];
     var edges = [];
-    var selfId = Number(self.concept_id);
 
-    // Self node (level 0)
     nodes.push({
       id: selfId,
       label: self.concept_name + '\n[' + self.vocabulary_id + ']',
-      title: conceptTooltip(self),
+      title: conceptTooltipEl(self),
       level: 0,
       shape: 'box',
       color: { background: '#0f60af', border: '#0a4a8a' },
@@ -735,42 +953,45 @@ var ConceptSetsPage = (function() {
       widthConstraint: { minimum: 140, maximum: 220 }
     });
 
-    // Ancestor nodes (negative levels)
     ancestors.forEach(function(a) {
       var aid = Number(a.concept_id);
+      var isPrev = (aid === prevId);
       nodes.push({
         id: aid,
         label: a.concept_name + '\n[' + a.vocabulary_id + ']',
-        title: conceptTooltip(a),
-        level: Number(a.hierarchy_level), // negative
+        title: conceptTooltipEl(a),
+        level: Number(a.hierarchy_level),
         shape: 'box',
-        color: { background: '#6c757d', border: '#555' },
+        color: isPrev
+          ? { background: '#e67700', border: '#c66000' }
+          : { background: '#6c757d', border: '#555' },
         font: { color: '#fff', size: 11 },
         widthConstraint: { minimum: 140, maximum: 220 }
       });
     });
 
-    // Descendant nodes (positive levels)
     descendants.forEach(function(d) {
       var did = Number(d.concept_id);
+      var isPrev = (did === prevId);
       nodes.push({
         id: did,
         label: d.concept_name + '\n[' + d.vocabulary_id + ']',
-        title: conceptTooltip(d),
-        level: Number(d.hierarchy_level), // positive
+        title: conceptTooltipEl(d),
+        level: Number(d.hierarchy_level),
         shape: 'box',
-        color: { background: '#28a745', border: '#1e7e34' },
+        color: isPrev
+          ? { background: '#e67700', border: '#c66000' }
+          : { background: '#28a745', border: '#1e7e34' },
         font: { color: '#fff', size: 11 },
         widthConstraint: { minimum: 140, maximum: 220 }
       });
     });
 
-    // Edges from the direct parent-child query
     edgeRows.forEach(function(e) {
       edges.push({ from: Number(e.from_id), to: Number(e.to_id), arrows: 'to' });
     });
 
-    var container = document.getElementById('hierarchy-graph-container');
+    var canvasEl = wrapper.querySelector('#hierarchy-graph-canvas');
     var data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
     var options = {
       layout: {
@@ -796,23 +1017,16 @@ var ConceptSetsPage = (function() {
     };
 
     if (vocabTabsHierarchyNetwork) vocabTabsHierarchyNetwork.destroy();
-    vocabTabsHierarchyNetwork = new vis.Network(container, data, options);
+    vocabTabsHierarchyNetwork = new vis.Network(canvasEl, data, options);
 
-    // Double-click to navigate
+    // Double-click on node: navigate hierarchy in-place
     vocabTabsHierarchyNetwork.on('doubleClick', function(params) {
       if (params.nodes.length === 1) {
         var cid = params.nodes[0];
-        VocabDB.lookupConcepts([cid]).then(function(concepts) {
-          if (concepts.length > 0) {
-            var c2 = concepts[0];
-            showResolvedConceptDetail({
-              conceptId: c2.concept_id, conceptName: c2.concept_name,
-              vocabularyId: c2.vocabulary_id, domainId: c2.domain_id,
-              conceptClassId: c2.concept_class_id, conceptCode: c2.concept_code,
-              standardConcept: c2.standard_concept
-            });
-          }
-        });
+        if (cid === selfId) return;
+        hierarchyHistory.push(selfId);
+        hierarchyPreviousId = selfId;
+        loadHierarchyGraph(cid, el);
       }
     });
   }
@@ -1523,13 +1737,16 @@ var ConceptSetsPage = (function() {
       switchConceptMode(btn.dataset.mode);
     });
 
-    // Resolved concept row click -> concept detail
+    // Resolved concept row click -> concept detail (fresh navigation, reset history)
     document.getElementById('resolved-tbody').addEventListener('click', function(e) {
       var tr = e.target.closest('tr[data-idx]');
       if (!tr || !selectedConceptSet) return;
       var concepts = App.resolvedIndex[selectedConceptSet.id] || [];
       var idx = parseInt(tr.dataset.idx);
-      if (concepts[idx]) showResolvedConceptDetail(concepts[idx]);
+      if (concepts[idx]) {
+        conceptDetailHistory = [];
+        showResolvedConceptDetail(concepts[idx]);
+      }
     });
 
     // Resolved table filters
