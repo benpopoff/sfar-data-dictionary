@@ -380,7 +380,7 @@ var App = (function() {
         }
         // Navigate to concept sets list and force show even if already on that route
         var current = Router.getCurrentRoute();
-        if (current && current.path === '/concept-sets' && !current.query.cs) {
+        if (current && current.path === '/concept-sets' && !current.query.cs && !current.query.id) {
           // Already on list view, trigger homeCallbacks to close detail if open
           for (var j = 0; j < homeCallbacks.length; j++) homeCallbacks[j]();
         } else {

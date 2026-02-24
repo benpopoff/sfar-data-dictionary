@@ -869,6 +869,54 @@ Enter your review comments here using Markdown syntax.
   </div>
 </div>
 
+<!-- Version Modal -->
+<div class="modal-overlay" id="cs-version-modal" style="display:none">
+  <div class="modal" style="max-width:520px">
+    <div class="modal-header">
+      <h3><i class="fas fa-code-branch"></i> Create New Version</h3>
+      <button class="modal-close" id="cs-version-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block">Version</label>
+      <input type="text" id="cs-version-input" class="form-input" placeholder="e.g., 1.1.0" style="margin-bottom:12px">
+      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block">Change Summary <span style="font-weight:400">(optional)</span></label>
+      <textarea id="cs-version-summary" class="form-input" rows="3" placeholder="Describe what changed..." style="margin-bottom:16px; resize:vertical"></textarea>
+      <div id="cs-version-history" style="display:none">
+        <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px; display:block">Version History</label>
+        <div id="cs-version-history-body" style="max-height:180px; overflow-y:auto"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="cs-version-cancel">Cancel</button>
+      <button class="btn-submit" id="cs-version-save"><i class="fas fa-check"></i> Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Status Modal -->
+<div class="modal-overlay" id="cs-status-modal" style="display:none">
+  <div class="modal" style="max-width:400px">
+    <div class="modal-header">
+      <h3><i class="fas fa-exchange-alt"></i> Change Status</h3>
+      <button class="modal-close" id="cs-status-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block">Status</label>
+      <select id="cs-status-select" class="form-input">
+        <option value="draft">Draft</option>
+        <option value="pending_review">Pending Review</option>
+        <option value="approved">Approved</option>
+        <option value="needs_revision">Needs Revision</option>
+        <option value="deprecated">Deprecated</option>
+      </select>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="cs-status-cancel">Cancel</button>
+      <button class="btn-submit" id="cs-status-save"><i class="fas fa-check"></i> Save</button>
+    </div>
+  </div>
+</div>
+
 <!-- Bulk Export Concept Sets Modal -->
 <div class="modal-overlay" id="cs-bulk-export-modal" style="display:none">
   <div class="modal" style="max-width:500px">

@@ -2266,11 +2266,7 @@ var ConceptSetsPage = (function() {
     document.getElementById('cs-detail-view').classList.add('active');
 
     document.getElementById('cs-detail-title').textContent = tr.name || cs.name;
-    var statusClass = (cs.reviewStatus || 'draft').replace(/\s+/g, '_').toLowerCase();
-    var statusLabel = (cs.reviewStatus || 'Draft').charAt(0).toUpperCase() + (cs.reviewStatus || 'draft').slice(1).replace(/_/g, ' ');
-    document.getElementById('cs-detail-badges').innerHTML =
-      '<span class="version-badge">v' + App.escapeHtml(cs.version || '1.0.0') + '</span>' +
-      '<span class="status-badge ' + statusClass + '">' + App.escapeHtml(statusLabel) + '</span>';
+    refreshDetailBadges();
 
     // Show Edit button for all concept sets
     document.getElementById('cs-edit-btn').style.display = '';
@@ -2291,6 +2287,9 @@ var ConceptSetsPage = (function() {
     renderCommentsTab(cs);
     renderStatisticsTab(cs);
     renderReviewTab(cs);
+
+    // Update URL with ?id= (replaceState to avoid triggering hashchange)
+    history.replaceState(null, '', '#/concept-sets?id=' + cs.id);
   }
 
   function hideCSDetail() {
@@ -2305,6 +2304,9 @@ var ConceptSetsPage = (function() {
     selectedConceptSet = null;
     csDetailTab = 'concepts';
     csConceptMode = 'resolved';
+
+    // Clear URL param
+    history.replaceState(null, '', '#/concept-sets');
   }
 
   // ==================== REVIEW MODAL ====================
@@ -2402,6 +2404,116 @@ var ConceptSetsPage = (function() {
   }
 
   // ==================== JSON EXPORT ====================
+  // ==================== VERSION MODAL ====================
+  function suggestNextVersion(version) {
+    var parts = (version || '1.0.0').split('.');
+    if (parts.length === 3) {
+      var patch = parseInt(parts[2]) + 1;
+      return parts[0] + '.' + parts[1] + '.' + (isNaN(patch) ? 1 : patch);
+    }
+    return version || '1.0.1';
+  }
+
+  function renderVersionHistory() {
+    var cs = selectedConceptSet;
+    if (!cs) return;
+    var versions = (cs.metadata && cs.metadata.versions) || [];
+    var container = document.getElementById('cs-version-history');
+    var body = document.getElementById('cs-version-history-body');
+    if (versions.length === 0) {
+      container.style.display = 'none';
+      return;
+    }
+    container.style.display = '';
+    var rows = versions.slice().reverse().map(function(v) {
+      return '<tr>' +
+        '<td style="white-space:nowrap; font-weight:600">v' + App.escapeHtml(v.version || '') + '</td>' +
+        '<td>' + App.escapeHtml(v.summary || '') + '</td>' +
+        '<td style="white-space:nowrap; color:var(--text-muted); font-size:12px">' + App.escapeHtml(v.date || '') + '</td>' +
+        '</tr>';
+    }).join('');
+    body.innerHTML = '<table class="data-table" style="width:100%; font-size:13px"><thead><tr><th>Version</th><th>Summary</th><th>Date</th></tr></thead><tbody>' + rows + '</tbody></table>';
+  }
+
+  function openVersionModal() {
+    if (!selectedConceptSet) return;
+    document.getElementById('cs-version-input').value = suggestNextVersion(selectedConceptSet.version);
+    document.getElementById('cs-version-summary').value = '';
+    renderVersionHistory();
+    document.getElementById('cs-version-modal').style.display = 'flex';
+    document.getElementById('cs-version-input').focus();
+  }
+
+  function closeVersionModal() {
+    document.getElementById('cs-version-modal').style.display = 'none';
+  }
+
+  function saveVersion() {
+    if (!selectedConceptSet) return;
+    var newVersion = document.getElementById('cs-version-input').value.trim();
+    if (!newVersion) {
+      App.showToast('Please enter a version number', 'error');
+      return;
+    }
+    var summary = document.getElementById('cs-version-summary').value.trim();
+    var oldVersion = selectedConceptSet.version || '1.0.0';
+
+    // Add to version history
+    if (!selectedConceptSet.metadata) selectedConceptSet.metadata = {};
+    if (!selectedConceptSet.metadata.versions) selectedConceptSet.metadata.versions = [];
+    selectedConceptSet.metadata.versions.push({
+      version: newVersion,
+      versionFrom: oldVersion,
+      summary: summary,
+      changedBy: (App.getProfile() || {}).firstName || '',
+      date: new Date().toISOString().slice(0, 10)
+    });
+
+    selectedConceptSet.version = newVersion;
+    selectedConceptSet.modifiedDate = new Date().toISOString().slice(0, 10);
+    App.updateConceptSet(selectedConceptSet);
+    refreshDetailBadges();
+    closeVersionModal();
+    App.showToast('Version updated to v' + newVersion);
+  }
+
+  // ==================== STATUS MODAL ====================
+  function openStatusModal() {
+    if (!selectedConceptSet) return;
+    document.getElementById('cs-status-select').value = selectedConceptSet.reviewStatus || 'draft';
+    document.getElementById('cs-status-modal').style.display = 'flex';
+  }
+
+  function closeStatusModal() {
+    document.getElementById('cs-status-modal').style.display = 'none';
+  }
+
+  function saveStatus() {
+    if (!selectedConceptSet) return;
+    var newStatus = document.getElementById('cs-status-select').value;
+    selectedConceptSet.reviewStatus = newStatus;
+    selectedConceptSet.modifiedDate = new Date().toISOString().slice(0, 10);
+    App.updateConceptSet(selectedConceptSet);
+    refreshDetailBadges();
+    closeStatusModal();
+    App.showToast('Status changed to ' + (App.statusLabelsMap[newStatus] || newStatus));
+  }
+
+  function refreshDetailBadges() {
+    if (!selectedConceptSet) return;
+    var cs = selectedConceptSet;
+    var statusClass = (cs.reviewStatus || 'draft').replace(/\s+/g, '_').toLowerCase();
+    var statusLabel = App.statusLabelsMap[cs.reviewStatus] || 'Draft';
+    document.getElementById('cs-detail-badges').innerHTML =
+      '<span class="version-badge" id="cs-badge-version">v' + App.escapeHtml(cs.version || '1.0.0') + '</span>' +
+      '<span class="status-badge ' + statusClass + '" id="cs-badge-status">' + App.escapeHtml(statusLabel) + '</span>';
+    document.getElementById('cs-badge-version').addEventListener('click', openVersionModal);
+    document.getElementById('cs-badge-status').addEventListener('click', openStatusModal);
+    // Also refresh the table row if visible
+    renderAll();
+  }
+
+  // ==================== EXPORT MODAL ====================
   var exportMethod = null;
 
   function openExportModal() {
@@ -3273,6 +3385,22 @@ var ConceptSetsPage = (function() {
       if (opt) executeExport(opt.dataset.format);
     });
 
+    // Version modal events
+    document.getElementById('cs-version-close').addEventListener('click', closeVersionModal);
+    document.getElementById('cs-version-cancel').addEventListener('click', closeVersionModal);
+    document.getElementById('cs-version-save').addEventListener('click', saveVersion);
+    document.getElementById('cs-version-modal').addEventListener('click', function(e) {
+      if (e.target === document.getElementById('cs-version-modal')) closeVersionModal();
+    });
+
+    // Status modal events
+    document.getElementById('cs-status-close').addEventListener('click', closeStatusModal);
+    document.getElementById('cs-status-cancel').addEventListener('click', closeStatusModal);
+    document.getElementById('cs-status-save').addEventListener('click', saveStatus);
+    document.getElementById('cs-status-modal').addEventListener('click', function(e) {
+      if (e.target === document.getElementById('cs-status-modal')) closeStatusModal();
+    });
+
     // Add Review button
     document.getElementById('cs-add-review-btn').addEventListener('click', openReviewModal);
 
@@ -3344,8 +3472,9 @@ var ConceptSetsPage = (function() {
 
   function show(query) {
     init();
-    if (query && query.cs) {
-      showCSDetail(parseInt(query.cs));
+    var csId = query && (query.id || query.cs);
+    if (csId) {
+      showCSDetail(parseInt(csId));
     }
   }
 
@@ -3357,6 +3486,8 @@ var ConceptSetsPage = (function() {
     closeDeleteConfirm();
     closeImportModal();
     closeAddModal();
+    closeVersionModal();
+    closeStatusModal();
   }
 
   function onLanguageChange() {

@@ -1,7 +1,7 @@
 /**
  * Hash-based SPA Router
  * Routes: #/concept-sets, #/projects, #/settings, #/general-settings, #/dev-tools
- * Supports query params: #/concept-sets?cs=123
+ * Supports query params: #/concept-sets?id=123, #/projects?id=1
  */
 var Router = (function () {
   'use strict';

@@ -93,6 +93,9 @@ var ProjectsPage = (function() {
     populateProjColumnFilters();
     renderProjectCSTable();
 
+    // Update URL with ?id=
+    history.replaceState(null, '', '#/projects?id=' + proj.id);
+
     // Reset to context tab
     document.querySelectorAll('#proj-tabs .panel-tab').forEach(function(btn) {
       btn.classList.toggle('active', btn.dataset.tab === 'context');
@@ -207,6 +210,7 @@ var ProjectsPage = (function() {
     document.getElementById('proj-detail-view').classList.remove('active');
     document.getElementById('proj-list-view').classList.remove('hidden');
     selectedProject = null;
+    history.replaceState(null, '', '#/projects');
   }
 
   // ==================== EVENTS ====================
@@ -240,7 +244,7 @@ var ProjectsPage = (function() {
     document.getElementById('proj-cs-tbody').addEventListener('click', function(e) {
       var tr = e.target.closest('tr[data-id]');
       if (!tr) return;
-      Router.navigate('/concept-sets', { cs: tr.dataset.id });
+      Router.navigate('/concept-sets', { id: tr.dataset.id });
     });
 
     // Project CS sort
@@ -318,8 +322,12 @@ var ProjectsPage = (function() {
     renderProjectCards();
   }
 
-  function show() {
+  function show(query) {
     init();
+    var projId = query && query.id;
+    if (projId) {
+      showProjectDetail(parseInt(projId));
+    }
   }
 
   function hide() {
