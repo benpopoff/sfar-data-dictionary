@@ -48,6 +48,22 @@ var ProjectsPage = (function() {
   }
 
   // ==================== PROJECT DETAIL ====================
+  function switchProjectTab(tabName) {
+    document.querySelectorAll('#proj-tabs .panel-tab').forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.tab === tabName);
+    });
+    var isVars = tabName === 'variables';
+    document.getElementById('proj-tab-context').style.display = isVars ? 'none' : '';
+    document.getElementById('proj-tab-variables').style.display = isVars ? '' : 'none';
+    document.getElementById('proj-export-csv').style.display = isVars ? '' : 'none';
+    // Update URL with tab param
+    if (selectedProject) {
+      var url = '#/projects?id=' + selectedProject.id;
+      if (tabName !== 'context') url += '&tab=' + tabName;
+      history.replaceState(null, '', url);
+    }
+  }
+
   function showProjectDetail(id) {
     var proj = App.projects.find(function(p) { return p.id === id; });
     if (!proj) return;
@@ -93,16 +109,8 @@ var ProjectsPage = (function() {
     populateProjColumnFilters();
     renderProjectCSTable();
 
-    // Update URL with ?id=
-    history.replaceState(null, '', '#/projects?id=' + proj.id);
-
     // Reset to context tab
-    document.querySelectorAll('#proj-tabs .panel-tab').forEach(function(btn) {
-      btn.classList.toggle('active', btn.dataset.tab === 'context');
-    });
-    document.getElementById('proj-tab-context').style.display = '';
-    document.getElementById('proj-tab-variables').style.display = 'none';
-    document.getElementById('proj-export-csv').style.display = 'none';
+    switchProjectTab('context');
   }
 
   function getProjectCSData() {
@@ -232,12 +240,7 @@ var ProjectsPage = (function() {
     document.getElementById('proj-tabs').addEventListener('click', function(e) {
       var tab = e.target.closest('.panel-tab');
       if (!tab) return;
-      document.querySelectorAll('#proj-tabs .panel-tab').forEach(function(b) { b.classList.remove('active'); });
-      tab.classList.add('active');
-      var isVars = tab.dataset.tab === 'variables';
-      document.getElementById('proj-tab-context').style.display = isVars ? 'none' : '';
-      document.getElementById('proj-tab-variables').style.display = isVars ? '' : 'none';
-      document.getElementById('proj-export-csv').style.display = isVars ? '' : 'none';
+      switchProjectTab(tab.dataset.tab);
     });
 
     // Project concept set click -> navigate to concept sets page via router
@@ -327,6 +330,10 @@ var ProjectsPage = (function() {
     var projId = query && query.id;
     if (projId) {
       showProjectDetail(parseInt(projId));
+      var tab = query && query.tab;
+      if (tab && ['context', 'variables'].indexOf(tab) !== -1) {
+        switchProjectTab(tab);
+      }
     }
   }
 

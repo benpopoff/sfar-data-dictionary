@@ -223,6 +223,12 @@ var ConceptSetsPage = (function() {
       if (el) el.style.display = (t === tabName) ? '' : 'none';
     });
     updateToolbar();
+    // Update URL with tab param
+    if (selectedConceptSet) {
+      var url = '#/concept-sets?id=' + selectedConceptSet.id;
+      if (tabName !== 'concepts') url += '&tab=' + tabName;
+      history.replaceState(null, '', url);
+    }
   }
 
   function updateViewJsonLink() {
@@ -2287,9 +2293,6 @@ var ConceptSetsPage = (function() {
     renderCommentsTab(cs);
     renderStatisticsTab(cs);
     renderReviewTab(cs);
-
-    // Update URL with ?id= (replaceState to avoid triggering hashchange)
-    history.replaceState(null, '', '#/concept-sets?id=' + cs.id);
   }
 
   function hideCSDetail() {
@@ -3485,6 +3488,10 @@ var ConceptSetsPage = (function() {
     var csId = query && (query.id || query.cs);
     if (csId) {
       showCSDetail(parseInt(csId));
+      var tab = query && query.tab;
+      if (tab && ['concepts', 'comments', 'statistics', 'review'].indexOf(tab) !== -1) {
+        switchCSDetailTab(tab);
+      }
     }
   }
 
