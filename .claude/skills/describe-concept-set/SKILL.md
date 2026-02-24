@@ -224,7 +224,7 @@ Generate a structured description in Markdown and **write it to a temporary file
 - **Keep it simple**: Do NOT include LOINC technical jargon in the description body (no LOINC class names like "HRTRATE.ATOM", no "System is XXX (unspecified)", no UMLS semantic type codes like "T201"). The LOINC/UMLS decomposition data is used to *inform* the writing but should not appear verbatim. The description must be easy to read for a non-terminologist.
 - **UMLS as a source, not in the text**: UMLS definitions (MeSH, NCI, ICF, etc.) should be used to write authoritative clinical definitions, but UMLS-specific identifiers (CUIs, semantic types, MeSH descriptor IDs) should only appear in the References section, never in the body text. Same for MeSH hierarchy — describe the clinical context naturally (e.g., "Heart rate is a vital sign and a hemodynamic parameter") without citing MeSH tree numbers.
 - **DO NOT** repeat general ETL/mapping rules (LOINC for labs, RxNorm for drugs, etc.) — these are documented elsewhere
-- **DO NOT** include OHDSI concept IDs in the description — use LOINC/SNOMED codes instead
+- **DO** include the OMOP concept_id alongside the vocabulary code and the vocabulary name for every concept citation, using the format `concept_id / concept_code (vocabulary)` (e.g., `3027018 / 8867-4 (LOINC)`, `4091643 / 249043002 (SNOMED)`). The OMOP concept_id comes first, then the vocabulary code, then the vocabulary name in parentheses. This applies everywhere a concept is cited: included concepts, excluded concepts (both hierarchy nodes and individual standard concepts), inline references in prose, and mapping notes.
 - **DO** explain clinical nuances that affect mapping decisions
 - **DO** explain what distinguishes each concept from similar ones
 - **DO** group concepts logically (by method, site, condition) rather than alphabetically
@@ -241,26 +241,15 @@ Use **numbered Vancouver-style references** throughout the description:
 ```markdown
 ## References
 
-[1] U.S. National Library of Medicine. Unified Medical Language System (UMLS), {edition} edition.
-    {Detail what was used: CUIs, definition sources (MeSH, NCI, ICF...), hierarchy}.
-    Available: https://uts.nlm.nih.gov/uts/umls
-
-[2] {Author(s)}. {Title}. In: {Book/Journal}. {Publisher}; {Year}.
-    Available: {URL}
-
-[3] Regenstrief Institute. LOINC version {version}.
-    Concepts used in this description: {comma-separated list of LOINC codes}.
-    Available: https://loinc.org (e.g., https://loinc.org/{example-code})
-
-[4] SNOMED International. SNOMED CT International Edition, {date}.
-    Concepts {list of SNOMED concept IDs with names}.
-    Available: https://browser.ihtsdotools.org/?perspective=full&conceptId1={id}
+[1] {Author(s)}. {Title}. In: {Book/Journal}. {Publisher}; {Year}.
+    Available: <a href="{URL}" target="_blank">{URL}</a>
 ```
 
 Key rules for references:
-- **UMLS**: One generic reference with URL `https://uts.nlm.nih.gov/uts/umls`. Detail which CUIs, definition sources (MeSH, NCI, CSP, ICF...), and hierarchy relationships were used.
-- **LOINC**: One single grouped reference listing all LOINC codes used, with an example URL (e.g., `https://loinc.org/8867-4`). Do NOT create one reference per LOINC code.
-- **SNOMED**: One reference with the browser URL and the list of concepts used.
+- **Links must open in a new page**: Use HTML `<a href="..." target="_blank">` for all URLs in the references section, since the description is rendered as HTML/Markdown in a web application.
+- **Do NOT cite vocabulary sources as references** — LOINC, SNOMED, and UMLS are the standard vocabulary sources used to build the data dictionary and are already known to the audience. Every concept in the description already carries its LOINC or SNOMED code, which is sufficient. UMLS definitions (MeSH, NCI, ICF, etc.) are used to *write* the clinical definitions but UMLS itself should not appear as a reference.
+- **Only cite truly external sources**: clinical guidelines, textbooks, web references (e.g., StatPearls, UpToDate, society guidelines).
+- **Do NOT list individual concept codes** (LOINC codes, SNOMED IDs, UMLS CUIs) in the references section. The concepts are identified by their codes in the body text.
 - **Web sources**: Standard bibliographic format with author, title, publisher, and URL.
 - **INDICATE units data**: Reference `recommended_units.csv` and `unit_conversions.csv` if unit data was found and used.
 
@@ -283,7 +272,7 @@ Key rules for references:
 
 ### [Group 1 name — e.g., "General heart rate"]
 [For each concept:]
-- **[LOINC code] — [Long common name]** [ref]: [1-2 sentence clinical description. No LOINC technical fields.]
+- *[OMOP concept_id] / [vocabulary code] — [Long common name] ([vocabulary])*: [1-2 sentence clinical description. No LOINC technical fields.]
 
 ### [Group 2 name — e.g., "By measurement method"]
 ...
