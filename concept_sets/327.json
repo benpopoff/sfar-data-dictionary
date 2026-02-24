@@ -7,7 +7,7 @@
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
   "modifiedDate": "2026-02-24",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
+  "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
@@ -735,8 +735,14 @@
     ]
   },
   "tags": [],
-  "reviewStatus": "pending_review",
   "metadata": {
+    "uniqueId": "7ff303d3-0c14-4c30-b7dd-0e76d4674145",
+    "organization": {
+      "name": "INDICATE Consortium",
+      "url": "https://indicate-eu.org"
+    },
+    "reviewStatus": "pending_review",
+    "origin": null,
     "translations": {
       "en": {
         "name": "Heart rate",

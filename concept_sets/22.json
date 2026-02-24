@@ -7,13 +7,19 @@
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
   "modifiedDate": "2026-02-12",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
+  "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": []
   },
   "tags": [],
-  "reviewStatus": "draft",
   "metadata": {
+    "uniqueId": "e2befc87-03e8-4eff-a2a2-2b2e8dbf58a2",
+    "organization": {
+      "name": "INDICATE Consortium",
+      "url": "https://indicate-eu.org"
+    },
+    "reviewStatus": "draft",
+    "origin": null,
     "translations": {
       "en": {
         "name": "Leukemia",

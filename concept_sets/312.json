@@ -7,7 +7,7 @@
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
   "modifiedDate": "2026-02-12",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
+  "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
@@ -32,8 +32,14 @@
     ]
   },
   "tags": [],
-  "reviewStatus": "draft",
   "metadata": {
+    "uniqueId": "47d07797-8fb6-4aa8-8d72-536f388a35e5",
+    "organization": {
+      "name": "INDICATE Consortium",
+      "url": "https://indicate-eu.org"
+    },
+    "reviewStatus": "draft",
+    "origin": null,
     "translations": {
       "en": {
         "name": "End tidal carbone dioxyde concentration",

@@ -7,7 +7,7 @@
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
   "modifiedDate": "2026-02-12",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
+  "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
@@ -1020,8 +1020,14 @@
     ]
   },
   "tags": [],
-  "reviewStatus": "draft",
   "metadata": {
+    "uniqueId": "0021dddf-4a93-4e29-9824-673cd3ad2bb8",
+    "organization": {
+      "name": "INDICATE Consortium",
+      "url": "https://indicate-eu.org"
+    },
+    "reviewStatus": "draft",
+    "origin": null,
     "translations": {
       "en": {
         "name": "Body temperature",

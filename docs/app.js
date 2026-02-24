@@ -2,6 +2,9 @@
 var App = (function() {
   'use strict';
 
+  var APP_NAME = 'INDICATE Data Dictionary (Web)';
+  var APP_VERSION = '1.0.0';
+
   // ==================== STATE ====================
   var conceptSets = [];
   var projects = [];
@@ -267,6 +270,68 @@ var App = (function() {
     closeProfileModal();
   }
 
+  // ==================== ORGANIZATION ====================
+  function getOrganization() {
+    try {
+      var saved = JSON.parse(localStorage.getItem('indicate_organization') || 'null');
+      if (saved) return saved;
+      return detectDefaultOrganization();
+    } catch(e) { return null; }
+  }
+
+  function saveOrganization(org) {
+    try { localStorage.setItem('indicate_organization', JSON.stringify(org)); } catch(e) {}
+    updateOrgBadge();
+  }
+
+  function detectDefaultOrganization() {
+    // Scan concept sets for a unique organization; use it as default
+    var orgs = {};
+    conceptSets.forEach(function(cs) {
+      var o = cs.metadata && cs.metadata.organization;
+      if (o && o.name) {
+        var key = o.name.toLowerCase();
+        if (!orgs[key]) orgs[key] = o;
+      }
+    });
+    var keys = Object.keys(orgs);
+    if (keys.length === 1) return orgs[keys[0]];
+    return null;
+  }
+
+  function updateOrgBadge() {
+    var org = getOrganization();
+    if (!org) org = detectDefaultOrganization();
+    var el = document.getElementById('org-badge-name');
+    if (el) el.textContent = (org && org.name) ? org.name : 'Organization';
+  }
+
+  function openOrgModal() {
+    var org = getOrganization();
+    if (!org) org = detectDefaultOrganization() || {};
+    document.getElementById('org-name').value = org.name || '';
+    document.getElementById('org-url').value = org.url || '';
+    document.getElementById('org-modal').style.display = '';
+  }
+
+  function closeOrgModal() {
+    document.getElementById('org-modal').style.display = 'none';
+  }
+
+  function saveOrgFromModal() {
+    var name = document.getElementById('org-name').value.trim();
+    if (!name) {
+      showToast('Organization name is required.', 'error');
+      return;
+    }
+    saveOrganization({
+      name: name,
+      url: document.getElementById('org-url').value.trim()
+    });
+    closeOrgModal();
+    showToast('Organization saved');
+  }
+
   // ==================== SHARED EVENTS ====================
   function initSharedEvents() {
     // Language toggle
@@ -314,6 +379,26 @@ var App = (function() {
     if (profileModal) {
       profileModal.addEventListener('click', function(e) {
         if (e.target === profileModal) closeProfileModal();
+      });
+    }
+
+    // Organization modal events
+    var orgBadge = document.getElementById('org-badge');
+    if (orgBadge) orgBadge.addEventListener('click', openOrgModal);
+
+    var orgClose = document.getElementById('org-modal-close');
+    if (orgClose) orgClose.addEventListener('click', closeOrgModal);
+
+    var orgCancel = document.getElementById('org-cancel');
+    if (orgCancel) orgCancel.addEventListener('click', closeOrgModal);
+
+    var orgSave = document.getElementById('org-save');
+    if (orgSave) orgSave.addEventListener('click', saveOrgFromModal);
+
+    var orgModal = document.getElementById('org-modal');
+    if (orgModal) {
+      orgModal.addEventListener('click', function(e) {
+        if (e.target === orgModal) closeOrgModal();
       });
     }
 
@@ -458,7 +543,7 @@ var App = (function() {
         category: tr.category || '',
         subcategory: tr.subcategory || '',
         description: cs.description || '',
-        reviewStatus: cs.reviewStatus || 'draft',
+        reviewStatus: (cs.metadata && cs.metadata.reviewStatus) || 'draft',
         version: cs.version || '',
         concepts: (cs.expression && cs.expression.items) ? cs.expression.items.length : 0,
         modified: cs.modifiedDate || cs.createdDate || '',
@@ -469,6 +554,8 @@ var App = (function() {
 
   // ==================== PUBLIC API ====================
   return {
+    APP_NAME: APP_NAME,
+    APP_VERSION: APP_VERSION,
     // State getters/setters
     get conceptSets() { return conceptSets; },
     get projects() { return projects; },
@@ -503,6 +590,8 @@ var App = (function() {
     getKnownAuthors: getKnownAuthors,
     openProfileModal: openProfileModal,
     closeProfileModal: closeProfileModal,
+    getOrganization: getOrganization,
+    updateOrgBadge: updateOrgBadge,
     initSharedEvents: initSharedEvents,
     getCSData: getCSData,
     onLanguageChange: function(cb) { languageChangeCallbacks.push(cb); },

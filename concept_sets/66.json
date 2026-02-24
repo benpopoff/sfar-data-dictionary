@@ -7,7 +7,7 @@
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
   "modifiedDate": "2026-02-12",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
+  "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
@@ -1457,8 +1457,14 @@
     ]
   },
   "tags": [],
-  "reviewStatus": "draft",
   "metadata": {
+    "uniqueId": "b82162b8-0bff-4072-a831-03093620b07e",
+    "organization": {
+      "name": "INDICATE Consortium",
+      "url": "https://indicate-eu.org"
+    },
+    "reviewStatus": "draft",
+    "origin": null,
     "translations": {
       "en": {
         "name": "Amphotericin B",

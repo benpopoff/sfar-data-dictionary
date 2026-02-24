@@ -7,7 +7,7 @@
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
   "modifiedDate": "2026-02-12",
-  "createdByTool": "INDICATE Data Dictionary v0.2.0.9002",
+  "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
@@ -298,8 +298,14 @@
     ]
   },
   "tags": [],
-  "reviewStatus": "draft",
   "metadata": {
+    "uniqueId": "2147c805-8011-4ae1-ba81-4e2bda5b502a",
+    "organization": {
+      "name": "INDICATE Consortium",
+      "url": "https://indicate-eu.org"
+    },
+    "reviewStatus": "draft",
+    "origin": null,
     "translations": {
       "en": {
         "name": "Streptococcus mitis group",

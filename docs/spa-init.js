@@ -84,6 +84,12 @@
   // Boot the app
   App.loadData();
   App.updateUserBadge();
+  App.updateOrgBadge();
   App.initSharedEvents();
+
+  // Footer
+  var footer = document.getElementById('app-footer');
+  if (footer) footer.textContent = App.APP_NAME + ' v' + App.APP_VERSION;
+
   Router.init();
 })();

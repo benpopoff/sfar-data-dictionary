@@ -1049,6 +1049,35 @@ tbody td {
   filter: brightness(1.15);
   transform: scale(1.05);
 }
+.org-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  vertical-align: middle;
+}
+.uuid-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  color: var(--text-muted);
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+.uuid-badge:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
 
 .btn-primary-custom {
   display: inline-flex;
@@ -2162,4 +2191,14 @@ select.form-input { appearance: auto; }
   .form-row { grid-template-columns: 1fr; }
   .modal { width: 95vw; }
   .vocab-stats-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 12px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--gray-200);
+  margin-top: auto;
 }

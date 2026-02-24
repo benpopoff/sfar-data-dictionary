@@ -2480,7 +2480,8 @@ var ConceptSetsPage = (function() {
   // ==================== STATUS MODAL ====================
   function openStatusModal() {
     if (!selectedConceptSet) return;
-    document.getElementById('cs-status-select').value = selectedConceptSet.reviewStatus || 'draft';
+    var meta = selectedConceptSet.metadata || {};
+    document.getElementById('cs-status-select').value = meta.reviewStatus || 'draft';
     document.getElementById('cs-status-modal').style.display = 'flex';
   }
 
@@ -2491,7 +2492,8 @@ var ConceptSetsPage = (function() {
   function saveStatus() {
     if (!selectedConceptSet) return;
     var newStatus = document.getElementById('cs-status-select').value;
-    selectedConceptSet.reviewStatus = newStatus;
+    if (!selectedConceptSet.metadata) selectedConceptSet.metadata = {};
+    selectedConceptSet.metadata.reviewStatus = newStatus;
     selectedConceptSet.modifiedDate = new Date().toISOString().slice(0, 10);
     App.updateConceptSet(selectedConceptSet);
     refreshDetailBadges();
@@ -2502,8 +2504,11 @@ var ConceptSetsPage = (function() {
   function refreshDetailBadges() {
     if (!selectedConceptSet) return;
     var cs = selectedConceptSet;
-    var statusClass = (cs.reviewStatus || 'draft').replace(/\s+/g, '_').toLowerCase();
-    var statusLabel = App.statusLabelsMap[cs.reviewStatus] || 'Draft';
+    var meta = cs.metadata || {};
+    var status = meta.reviewStatus || 'draft';
+    var statusClass = status.replace(/\s+/g, '_').toLowerCase();
+    var statusLabel = App.statusLabelsMap[status] || 'Draft';
+
     document.getElementById('cs-detail-badges').innerHTML =
       '<span class="version-badge" id="cs-badge-version">v' + App.escapeHtml(cs.version || '1.0.0') + '</span>' +
       '<span class="status-badge ' + statusClass + '" id="cs-badge-status">' + App.escapeHtml(statusLabel) + '</span>';
@@ -2545,6 +2550,8 @@ var ConceptSetsPage = (function() {
 
   function buildIndicateJSON() {
     var cs = JSON.parse(JSON.stringify(selectedConceptSet));
+    cs.createdByTool = App.APP_NAME + ' v' + App.APP_VERSION;
+    cs.modifiedDate = new Date().toISOString().slice(0, 10);
     var sessionRevs = App.sessionReviews[cs.id] || [];
     if (sessionRevs.length > 0) {
       if (!cs.metadata) cs.metadata = {};
@@ -2990,11 +2997,14 @@ var ConceptSetsPage = (function() {
       createdDate: today,
       modifiedBy: authorName,
       modifiedDate: today,
-      createdByTool: 'INDICATE Data Dictionary (Web)',
+      createdByTool: App.APP_NAME + ' v' + App.APP_VERSION,
       expression: { items: [] },
       tags: [],
-      reviewStatus: 'draft',
       metadata: {
+        uniqueId: crypto.randomUUID(),
+        organization: App.getOrganization() || { name: 'INDICATE Consortium', url: 'https://indicate-eu.org' },
+        reviewStatus: 'draft',
+        origin: null,
         translations: {
           en: { name: name, category: r.catEn, subcategory: r.subcatEn },
           fr: { name: name, category: r.catFr, subcategory: r.subcatFr }
