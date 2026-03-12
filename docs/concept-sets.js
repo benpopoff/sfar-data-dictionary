@@ -3,6 +3,21 @@ var ConceptSetsPage = (function() {
   'use strict';
 
   var GITHUB_REPO = 'indicate-eu/data-dictionary-content';
+
+  /** Decode escaped UTF-8 hex bytes (e.g. <e5><bf><83>) to proper characters */
+  function decodeEscapedUtf8(str) {
+    if (!str || !/&lt;[0-9a-f]{2}&gt;/i.test(str) && !/<[0-9a-f]{2}>/i.test(str)) return str;
+    try {
+      return str.replace(/(<[0-9a-f]{2}>)+/gi, function (match) {
+        var hex = match.replace(/[<>]/g, '');
+        var bytes = [];
+        for (var i = 0; i < hex.length; i += 2) {
+          bytes.push(parseInt(hex.substr(i, 2), 16));
+        }
+        return new TextDecoder('utf-8').decode(new Uint8Array(bytes));
+      });
+    } catch (e) { return str; }
+  }
   var initialized = false;
 
   // ==================== CS STATE ====================
@@ -902,6 +917,12 @@ var ConceptSetsPage = (function() {
   function resetAddDetailPanels() {
     var detailEl = document.getElementById('expr-add-detail-body');
     if (detailEl) detailEl.innerHTML = '<div class="empty-state"><p>Select a concept to view details</p></div>';
+    var hierEl = document.getElementById('expr-add-hierarchy-body');
+    if (hierEl) hierEl.innerHTML = '<div class="empty-state"><p>Select a concept to view hierarchy</p></div>';
+    if (addModalHierarchyNetwork) { addModalHierarchyNetwork.destroy(); addModalHierarchyNetwork = null; }
+    addModalHierarchyWrapper = null;
+    addModalHierarchyHistory = [];
+    addModalHierarchyFullscreen = false;
   }
 
   // --- Multiple selection toggle ---
@@ -1168,7 +1189,20 @@ var ConceptSetsPage = (function() {
   }
 
   // --- Selected Concept Details panel ---
+  var addModalHierarchyNetwork = null;
+  var addModalHierarchyHistory = [];
+  var addModalHierarchyWrapper = null;
+  var addModalHierarchyFullscreen = false;
+
   function showAddConceptDetail(r) {
+    // Reset hierarchy state when selecting a new concept from search
+    addModalHierarchyHistory = [];
+    if (addModalHierarchyNetwork) { addModalHierarchyNetwork.destroy(); addModalHierarchyNetwork = null; }
+    if (addModalHierarchyWrapper && addModalHierarchyFullscreen) {
+      addModalHierarchyWrapper.classList.remove('fullscreen');
+      addModalHierarchyFullscreen = false;
+    }
+    addModalHierarchyWrapper = null;
     var el = document.getElementById('expr-add-detail-body');
     var sc = r.standard_concept || '';
     var standardText = sc === 'S' ? 'Standard' : (sc === 'C' ? 'Classification' : 'Non-standard');
@@ -1197,6 +1231,242 @@ var ConceptSetsPage = (function() {
       '<div class="detail-item"><strong>Concept Class:</strong><span>' + App.escapeHtml(r.concept_class_id || '') + '</span></div>' +
       '<div class="detail-item"><strong>Validity:</strong><span style="color:' + validityColor + ';font-weight:600">' + validityText + '</span></div>' +
       '</div></div>';
+
+    // Load hierarchy in right panel
+    loadAddModalHierarchy(Number(r.concept_id));
+  }
+
+  function loadAddModalHierarchy(conceptId) {
+    var el = document.getElementById('expr-add-hierarchy-body');
+    if (!el) return;
+
+    // Show loading in canvas if wrapper exists, otherwise in the element
+    if (addModalHierarchyWrapper) {
+      var canvas = addModalHierarchyWrapper.querySelector('.amh-canvas');
+      if (canvas) canvas.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
+    } else {
+      el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
+    }
+
+    // Count nodes first to warn on large hierarchies
+    var countSql =
+      'WITH RECURSIVE anc AS (' +
+        'SELECT ancestor_concept_id AS cid, 1 AS d FROM concept_ancestor WHERE descendant_concept_id = ' + conceptId +
+        ' UNION ALL SELECT ca.ancestor_concept_id, anc.d + 1 FROM concept_ancestor ca JOIN anc ON ca.descendant_concept_id = anc.cid WHERE anc.d < 20' +
+      '), desc_r AS (' +
+        'SELECT descendant_concept_id AS cid, 1 AS d FROM concept_ancestor WHERE ancestor_concept_id = ' + conceptId +
+        ' UNION ALL SELECT ca.descendant_concept_id, desc_r.d + 1 FROM concept_ancestor ca JOIN desc_r ON ca.ancestor_concept_id = desc_r.cid WHERE desc_r.d < 20' +
+      ') SELECT (SELECT COUNT(DISTINCT cid) FROM anc) AS ancestors, (SELECT COUNT(DISTINCT cid) FROM desc_r) AS descendants';
+
+    VocabDB.query(countSql).then(function(countRows) {
+      var total = Number(countRows[0].ancestors) + Number(countRows[0].descendants) + 1;
+      if (total > HIERARCHY_WARN_THRESHOLD) {
+        var target = addModalHierarchyWrapper ? addModalHierarchyWrapper : el;
+        var overlay = document.createElement('div');
+        overlay.className = 'hierarchy-warn-overlay';
+        overlay.innerHTML =
+          '<div class="hierarchy-warn-box">' +
+            '<i class="fas fa-exclamation-triangle" style="color:var(--warning); font-size:18px"></i>' +
+            '<div style="margin-top:8px">This concept has <strong>' + total + '</strong> nodes. Loading may be slow.</div>' +
+            '<div style="display:flex; gap:8px; margin-top:12px">' +
+              '<button class="btn-outline-sm amh-warn-cancel"><i class="fas fa-times"></i> Cancel</button>' +
+              '<button class="btn-outline-sm amh-warn-load"><i class="fas fa-project-diagram"></i> Load anyway</button>' +
+            '</div>' +
+          '</div>';
+        target.appendChild(overlay);
+        overlay.querySelector('.amh-warn-cancel').addEventListener('click', function() { overlay.remove(); });
+        overlay.querySelector('.amh-warn-load').addEventListener('click', function() {
+          overlay.remove();
+          doLoadAddModalHierarchy(conceptId, el);
+        });
+        return;
+      }
+      doLoadAddModalHierarchy(conceptId, el);
+    }).catch(function(err) {
+      var errTarget = addModalHierarchyWrapper ? addModalHierarchyWrapper.querySelector('.amh-canvas') : el;
+      if (errTarget) errTarget.innerHTML = '<div class="loading-inline" style="color:var(--danger)">Error: ' + App.escapeHtml(err.message) + '</div>';
+    });
+  }
+
+  function doLoadAddModalHierarchy(conceptId, el) {
+    var ancestorsSql =
+      'WITH RECURSIVE anc AS (' +
+        'SELECT ancestor_concept_id AS cid, 1 AS depth FROM concept_ancestor WHERE descendant_concept_id = ' + conceptId +
+        ' UNION ALL SELECT ca.ancestor_concept_id, anc.depth + 1 FROM concept_ancestor ca JOIN anc ON ca.descendant_concept_id = anc.cid WHERE anc.depth < 20' +
+      ') SELECT DISTINCT c.concept_id, c.concept_name, c.vocabulary_id, -MIN(anc.depth) AS hierarchy_level ' +
+      'FROM anc JOIN concept c ON c.concept_id = anc.cid GROUP BY c.concept_id, c.concept_name, c.vocabulary_id ORDER BY MIN(anc.depth)';
+    var descendantsSql =
+      'WITH RECURSIVE desc_r AS (' +
+        'SELECT descendant_concept_id AS cid, 1 AS depth FROM concept_ancestor WHERE ancestor_concept_id = ' + conceptId +
+        ' UNION ALL SELECT ca.descendant_concept_id, desc_r.depth + 1 FROM concept_ancestor ca JOIN desc_r ON ca.ancestor_concept_id = desc_r.cid WHERE desc_r.depth < 20' +
+      ') SELECT DISTINCT c.concept_id, c.concept_name, c.vocabulary_id, MIN(desc_r.depth) AS hierarchy_level ' +
+      'FROM desc_r JOIN concept c ON c.concept_id = desc_r.cid GROUP BY c.concept_id, c.concept_name, c.vocabulary_id ORDER BY MIN(desc_r.depth)';
+    var selfSql = 'SELECT concept_id, concept_name, vocabulary_id FROM concept WHERE concept_id = ' + conceptId;
+
+    Promise.all([
+      VocabDB.query(ancestorsSql),
+      VocabDB.query(descendantsSql),
+      VocabDB.query(selfSql)
+    ]).then(function(results) {
+      var ancestors = results[0] || [];
+      var descendants = results[1] || [];
+      var self = results[2] && results[2][0];
+      if (!self) {
+        var t = addModalHierarchyWrapper ? addModalHierarchyWrapper.querySelector('.amh-canvas') : el;
+        if (t) t.innerHTML = '<div class="empty-state"><p>Concept not found</p></div>';
+        return;
+      }
+
+      var allIds = [Number(self.concept_id)];
+      ancestors.forEach(function(a) { allIds.push(Number(a.concept_id)); });
+      descendants.forEach(function(d) { allIds.push(Number(d.concept_id)); });
+
+      if (allIds.length === 1) {
+        var t2 = addModalHierarchyWrapper ? addModalHierarchyWrapper.querySelector('.amh-canvas') : el;
+        if (t2) t2.innerHTML = '<div class="empty-state"><p>No hierarchy</p></div>';
+        return;
+      }
+
+      var edgesSql = 'SELECT ancestor_concept_id AS from_id, descendant_concept_id AS to_id FROM concept_ancestor ' +
+        'WHERE ancestor_concept_id IN (' + allIds.join(',') + ') AND descendant_concept_id IN (' + allIds.join(',') + ')';
+
+      return VocabDB.query(edgesSql).then(function(edgeRows) {
+        renderAddModalHierarchy(self, ancestors, descendants, edgeRows || [], el);
+      });
+    }).catch(function(err) {
+      var errTarget = addModalHierarchyWrapper ? addModalHierarchyWrapper.querySelector('.amh-canvas') : el;
+      if (errTarget) errTarget.innerHTML = '<div class="loading-inline" style="color:var(--danger)">Error: ' + App.escapeHtml(err.message) + '</div>';
+    });
+  }
+
+  function renderAddModalHierarchy(self, ancestors, descendants, edgeRows, el) {
+    var selfId = Number(self.concept_id);
+    var wrapper;
+
+    if (addModalHierarchyWrapper) {
+      wrapper = addModalHierarchyWrapper;
+      var titleEl = wrapper.querySelector('.hierarchy-header-title');
+      if (titleEl) titleEl.innerHTML = App.escapeHtml(self.concept_name) + '<span class="hierarchy-id">#' + selfId + ' · ' + App.escapeHtml(self.vocabulary_id) + '</span>';
+      var backBtn = wrapper.querySelector('.amh-back-btn');
+      if (backBtn) backBtn.disabled = (addModalHierarchyHistory.length === 0);
+      var canvas = wrapper.querySelector('.amh-canvas');
+      if (canvas) canvas.innerHTML = '';
+    } else {
+      el.innerHTML = '';
+      wrapper = document.createElement('div');
+      wrapper.className = 'hierarchy-graph-container';
+      wrapper.style.cssText = 'height:100%; min-height:0';
+      wrapper.innerHTML =
+        '<div class="hierarchy-header">' +
+          '<button class="hierarchy-btn amh-back-btn" title="Back" disabled><i class="fas fa-arrow-left"></i></button>' +
+          '<div class="hierarchy-header-title">' + App.escapeHtml(self.concept_name) + '<span class="hierarchy-id">#' + selfId + ' · ' + App.escapeHtml(self.vocabulary_id) + '</span></div>' +
+          '<div class="hierarchy-controls">' +
+            '<button class="hierarchy-btn amh-zoom-in" title="Zoom in"><i class="fas fa-search-plus"></i></button>' +
+            '<button class="hierarchy-btn amh-zoom-out" title="Zoom out"><i class="fas fa-search-minus"></i></button>' +
+            '<button class="hierarchy-btn amh-fit" title="Fit to view"><i class="fas fa-compress-arrows-alt"></i></button>' +
+            '<button class="hierarchy-btn amh-fullscreen" title="Toggle fullscreen"><i class="fas fa-expand"></i></button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="amh-canvas" style="height:100%;flex:1"></div>';
+      el.appendChild(wrapper);
+      addModalHierarchyWrapper = wrapper;
+
+      wrapper.querySelector('.amh-back-btn').addEventListener('click', function() {
+        if (addModalHierarchyHistory.length > 0) loadAddModalHierarchy(addModalHierarchyHistory.pop());
+      });
+      wrapper.querySelector('.amh-zoom-in').addEventListener('click', function() {
+        if (addModalHierarchyNetwork) { var s = addModalHierarchyNetwork.getScale(); addModalHierarchyNetwork.moveTo({ scale: s * 1.3, animation: { duration: 300 } }); }
+      });
+      wrapper.querySelector('.amh-zoom-out').addEventListener('click', function() {
+        if (addModalHierarchyNetwork) { var s = addModalHierarchyNetwork.getScale(); addModalHierarchyNetwork.moveTo({ scale: s / 1.3, animation: { duration: 300 } }); }
+      });
+      wrapper.querySelector('.amh-fit').addEventListener('click', function() {
+        if (addModalHierarchyNetwork) addModalHierarchyNetwork.fit({ animation: { duration: 400 } });
+      });
+      wrapper.querySelector('.amh-fullscreen').addEventListener('click', function() {
+        addModalHierarchyFullscreen = !addModalHierarchyFullscreen;
+        wrapper.classList.toggle('fullscreen', addModalHierarchyFullscreen);
+        var icon = this.querySelector('i');
+        icon.className = addModalHierarchyFullscreen ? 'fas fa-compress' : 'fas fa-expand';
+        this.title = addModalHierarchyFullscreen ? 'Exit fullscreen' : 'Toggle fullscreen';
+        setTimeout(function() { if (addModalHierarchyNetwork) addModalHierarchyNetwork.fit({ animation: { duration: 300 } }); }, 100);
+      });
+    }
+
+    var canvasEl = wrapper.querySelector('.amh-canvas');
+
+    var nodes = [];
+    var edges = [];
+
+    nodes.push({
+      id: selfId, label: self.concept_name + '\n[' + self.vocabulary_id + ']',
+      level: 0, shape: 'box', color: { background: '#0f60af', border: '#0a4a8a' },
+      font: { color: '#fff', size: 11 }, widthConstraint: { minimum: 120, maximum: 200 }
+    });
+    ancestors.forEach(function(a) {
+      nodes.push({
+        id: Number(a.concept_id), label: a.concept_name + '\n[' + a.vocabulary_id + ']',
+        level: Number(a.hierarchy_level), shape: 'box',
+        color: { background: '#6c757d', border: '#555' },
+        font: { color: '#fff', size: 10 }, widthConstraint: { minimum: 120, maximum: 200 }
+      });
+    });
+    descendants.forEach(function(d) {
+      nodes.push({
+        id: Number(d.concept_id), label: d.concept_name + '\n[' + d.vocabulary_id + ']',
+        level: Number(d.hierarchy_level), shape: 'box',
+        color: { background: '#28a745', border: '#1e7e34' },
+        font: { color: '#fff', size: 10 }, widthConstraint: { minimum: 120, maximum: 200 }
+      });
+    });
+    edgeRows.forEach(function(e) {
+      edges.push({ from: Number(e.from_id), to: Number(e.to_id), arrows: 'to' });
+    });
+
+    if (addModalHierarchyNetwork) addModalHierarchyNetwork.destroy();
+    addModalHierarchyNetwork = new vis.Network(canvasEl,
+      { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) },
+      {
+        layout: { hierarchical: { direction: 'UD', sortMethod: 'directed', levelSeparation: 60, nodeSpacing: 100 } },
+        physics: false,
+        interaction: { hover: true, zoomView: true, dragView: true, tooltipDelay: 0 },
+        edges: { color: { color: '#ccc', hover: '#999' }, smooth: { type: 'cubicBezier', roundness: 0.5 } }
+      }
+    );
+
+    // Populate hierarchyConceptMap for tooltip
+    hierarchyConceptMap[selfId] = self;
+    ancestors.forEach(function(a) { hierarchyConceptMap[Number(a.concept_id)] = a; });
+    descendants.forEach(function(d) { hierarchyConceptMap[Number(d.concept_id)] = d; });
+
+    // Custom tooltip on hover
+    var tooltipTimeout = null;
+    addModalHierarchyNetwork.on('hoverNode', function(params) {
+      clearTimeout(tooltipTimeout);
+      var domPos = params.event.center || { x: params.event.offsetX || params.pointer.DOM.x, y: params.event.offsetY || params.pointer.DOM.y };
+      tooltipTimeout = setTimeout(function() {
+        showHierarchyTooltip(params.node, canvasEl, domPos);
+      }, 300);
+    });
+    addModalHierarchyNetwork.on('blurNode', function() {
+      clearTimeout(tooltipTimeout);
+      setTimeout(function() {
+        if (!document.querySelector('.hierarchy-tooltip:hover')) hideHierarchyTooltip();
+      }, 200);
+    });
+    addModalHierarchyNetwork.on('dragStart', function() { hideHierarchyTooltip(); });
+    addModalHierarchyNetwork.on('zoom', function() { hideHierarchyTooltip(); });
+
+    // Double-click to navigate within modal hierarchy
+    addModalHierarchyNetwork.on('doubleClick', function(params) {
+      if (params.nodes.length === 1) {
+        var cid = params.nodes[0];
+        if (cid === selfId) return;
+        hideHierarchyTooltip();
+        addModalHierarchyHistory.push(selfId);
+        loadAddModalHierarchy(cid);
+      }
+    });
   }
 
 
@@ -1647,11 +1917,19 @@ var ConceptSetsPage = (function() {
   var relatedPage = 0;
   var RELATED_PAGE_SIZE = 50;
   var relatedEl = null;
+  var relatedFilterRelationship = '';
+  var relatedFilterVocabulary = '';
+  var relatedFilterName = '';
+  var relatedFilterId = '';
 
   function loadRelatedConcepts(conceptId, el) {
     relatedEl = el;
     relatedRows = null;
     relatedPage = 0;
+    relatedFilterRelationship = '';
+    relatedFilterVocabulary = '';
+    relatedFilterName = '';
+    relatedFilterId = '';
 
     el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading...</div>';
 
@@ -1675,32 +1953,51 @@ var ConceptSetsPage = (function() {
     });
   }
 
+  function getFilteredRelatedRows() {
+    if (!relatedRows) return [];
+    return relatedRows.filter(function(r) {
+      if (relatedFilterRelationship && r.relationship_id.toLowerCase().indexOf(relatedFilterRelationship.toLowerCase()) === -1) return false;
+      if (relatedFilterVocabulary && r.vocabulary_id.toLowerCase().indexOf(relatedFilterVocabulary.toLowerCase()) === -1) return false;
+      if (relatedFilterName && r.concept_name.toLowerCase().indexOf(relatedFilterName.toLowerCase()) === -1) return false;
+      if (relatedFilterId && String(r.concept_id).indexOf(relatedFilterId) === -1) return false;
+      return true;
+    });
+  }
+
   function renderRelatedPage() {
     if (!relatedRows || !relatedEl) return;
-    var total = relatedRows.length;
-    var totalPages = Math.ceil(total / RELATED_PAGE_SIZE);
+    var filtered = getFilteredRelatedRows();
+    var total = filtered.length;
+    var totalPages = Math.max(1, Math.ceil(total / RELATED_PAGE_SIZE));
     if (relatedPage >= totalPages) relatedPage = totalPages - 1;
     if (relatedPage < 0) relatedPage = 0;
     var start = relatedPage * RELATED_PAGE_SIZE;
     var end = Math.min(start + RELATED_PAGE_SIZE, total);
 
+    // Table with inline column filters
     var html = '<table class="concept-related-table"><thead><tr>' +
-      '<th>Relationship</th><th>Concept ID</th><th>Concept Name</th><th>Vocabulary</th>' +
+      '<th>Relationship</th><th>Vocabulary</th><th>Concept Name</th><th>Concept ID</th>' +
+      '</tr><tr class="filter-row">' +
+      '<th><input type="text" class="column-filter" id="rel-filter-relationship" placeholder="Filter..." value="' + App.escapeHtml(relatedFilterRelationship) + '"></th>' +
+      '<th><input type="text" class="column-filter" id="rel-filter-vocabulary" placeholder="Filter..." value="' + App.escapeHtml(relatedFilterVocabulary) + '"></th>' +
+      '<th><input type="text" class="column-filter" id="rel-filter-name" placeholder="Filter..." value="' + App.escapeHtml(relatedFilterName) + '"></th>' +
+      '<th><input type="text" class="column-filter" id="rel-filter-id" placeholder="Filter..." value="' + App.escapeHtml(relatedFilterId) + '"></th>' +
       '</tr></thead><tbody>';
     for (var i = start; i < end; i++) {
-      var r = relatedRows[i];
+      var r = filtered[i];
       html += '<tr data-cid="' + r.concept_id + '" title="' +
         App.escapeHtml(r.concept_name) + ' [' + r.vocabulary_id + ']\n' +
         'Domain: ' + (r.domain_id || '') + ' | Class: ' + (r.concept_class_id || '') + '\n' +
         'Code: ' + (r.concept_code || '') + ' | Standard: ' + (r.standard_concept === 'S' ? 'Standard' : r.standard_concept || 'Non-standard') + '">' +
         '<td>' + App.escapeHtml(r.relationship_id) + '</td>' +
-        '<td>' + r.concept_id + '</td>' +
-        '<td>' + App.escapeHtml(r.concept_name) + '</td>' +
         '<td>' + App.escapeHtml(r.vocabulary_id) + '</td>' +
+        '<td>' + App.escapeHtml(r.concept_name) + '</td>' +
+        '<td>' + r.concept_id + '</td>' +
         '</tr>';
     }
     html += '</tbody></table>';
 
+    // Pager
     if (totalPages > 1) {
       html += '<div class="related-pager">' +
         '<button class="btn-outline-sm" id="rel-prev"' + (relatedPage === 0 ? ' disabled' : '') + '><i class="fas fa-chevron-left"></i></button>' +
@@ -1711,6 +2008,20 @@ var ConceptSetsPage = (function() {
 
     relatedEl.innerHTML = html;
 
+    // Filter events
+    document.getElementById('rel-filter-relationship').addEventListener('input', function() {
+      relatedFilterRelationship = this.value; relatedPage = 0; renderRelatedPage();
+    });
+    document.getElementById('rel-filter-vocabulary').addEventListener('input', function() {
+      relatedFilterVocabulary = this.value; relatedPage = 0; renderRelatedPage();
+    });
+    document.getElementById('rel-filter-name').addEventListener('input', function() {
+      relatedFilterName = this.value; relatedPage = 0; renderRelatedPage();
+    });
+    document.getElementById('rel-filter-id').addEventListener('input', function() {
+      relatedFilterId = this.value; relatedPage = 0; renderRelatedPage();
+    });
+
     // Pager events
     var prevBtn = document.getElementById('rel-prev');
     var nextBtn = document.getElementById('rel-next');
@@ -1718,7 +2029,8 @@ var ConceptSetsPage = (function() {
     if (nextBtn) nextBtn.addEventListener('click', function() { relatedPage++; renderRelatedPage(); });
 
     // Click row to navigate (with history)
-    relatedEl.querySelector('tbody').addEventListener('click', function(e) {
+    var tbody = relatedEl.querySelector('tbody');
+    if (tbody) tbody.addEventListener('click', function(e) {
       var tr = e.target.closest('tr[data-cid]');
       if (!tr) return;
       var cid = parseInt(tr.getAttribute('data-cid'));
@@ -1737,9 +2049,8 @@ var ConceptSetsPage = (function() {
   }
 
   function loadHierarchyGraph(conceptId, el) {
-    if (hierarchyWrapper) {
-      showHierarchyLoading();
-    } else {
+    // Don't clear the canvas yet — wait until we know we'll actually load
+    if (!hierarchyWrapper) {
       el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
     }
 
@@ -1802,6 +2113,7 @@ var ConceptSetsPage = (function() {
         }
         return;
       }
+      showHierarchyLoading();
       buildHierarchyGraph(conceptId, el);
     }).catch(function(err) {
       hierarchyWrapper = null;
@@ -1887,19 +2199,65 @@ var ConceptSetsPage = (function() {
       });
   }
 
-  function conceptTooltipEl(c) {
+  // Store concept data for custom tooltips
+  var hierarchyConceptMap = {};
+
+  function copyToClipboard(text, btnEl) {
+    navigator.clipboard.writeText(text).then(function() {
+      var icon = btnEl.querySelector('i');
+      if (icon) { icon.className = 'fas fa-check'; icon.style.color = 'var(--success)'; setTimeout(function() { icon.className = 'far fa-clone'; icon.style.color = ''; }, 1200); }
+    });
+  }
+
+  function showHierarchyTooltip(conceptId, canvasEl, domPos) {
+    var c = hierarchyConceptMap[conceptId];
+    if (!c) return;
+    hideHierarchyTooltip();
+
     var std = c.standard_concept === 'S' ? 'Standard' : (c.standard_concept === 'C' ? 'Classification' : 'Non-standard');
-    var div = document.createElement('div');
-    div.style.cssText = 'font-size:12px; line-height:1.6; padding:2px 0';
-    div.innerHTML =
-      '<div><strong>' + App.escapeHtml(String(c.concept_name)) + '</strong></div>' +
-      '<div>ID: ' + c.concept_id + '</div>' +
-      '<div>Vocabulary: ' + App.escapeHtml(String(c.vocabulary_id)) + '</div>' +
-      '<div>Code: ' + App.escapeHtml(String(c.concept_code || '')) + '</div>' +
-      '<div>Domain: ' + App.escapeHtml(String(c.domain_id || '')) + '</div>' +
-      '<div>Class: ' + App.escapeHtml(String(c.concept_class_id || '')) + '</div>' +
-      '<div>Standard: ' + std + '</div>';
-    return div;
+    var tip = document.createElement('div');
+    tip.className = 'hierarchy-tooltip';
+    var copyBtn = function(val) {
+      return '<td class="ht-action"><button class="ht-copy" data-copy="' + App.escapeHtml(String(val)) + '" title="Copy"><i class="far fa-clone"></i></button></td>';
+    };
+    tip.innerHTML =
+      '<table class="hierarchy-tooltip-table">' +
+        '<tr><td class="ht-label">Name</td><td class="ht-value"><strong>' + App.escapeHtml(String(c.concept_name)) + '</strong></td>' + copyBtn(c.concept_name) + '</tr>' +
+        '<tr><td class="ht-label">ID</td><td class="ht-value">' + c.concept_id + '</td>' + copyBtn(c.concept_id) + '</tr>' +
+        '<tr><td class="ht-label">Code</td><td class="ht-value">' + App.escapeHtml(String(c.concept_code || '')) + '</td>' + copyBtn(c.concept_code || '') + '</tr>' +
+        '<tr><td class="ht-label">Vocabulary</td><td class="ht-value">' + App.escapeHtml(String(c.vocabulary_id)) + '</td><td></td></tr>' +
+        '<tr><td class="ht-label">Domain</td><td class="ht-value">' + App.escapeHtml(String(c.domain_id || '')) + '</td><td></td></tr>' +
+        '<tr><td class="ht-label">Class</td><td class="ht-value">' + App.escapeHtml(String(c.concept_class_id || '')) + '</td><td></td></tr>' +
+        '<tr><td class="ht-label">Standard</td><td class="ht-value">' + std + '</td><td></td></tr>' +
+      '</table>';
+
+    // Position relative to the canvas container
+    var rect = canvasEl.getBoundingClientRect();
+    tip.style.left = (domPos.x + 12) + 'px';
+    tip.style.top = (domPos.y + 12) + 'px';
+    canvasEl.appendChild(tip);
+
+    // Adjust if overflows
+    var tipRect = tip.getBoundingClientRect();
+    if (tipRect.right > rect.right - 10) tip.style.left = (domPos.x - tipRect.width - 12) + 'px';
+    if (tipRect.bottom > rect.bottom - 10) tip.style.top = (domPos.y - tipRect.height - 12) + 'px';
+
+    // Copy button events
+    tip.querySelectorAll('.ht-copy').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        copyToClipboard(btn.getAttribute('data-copy'), btn);
+      });
+    });
+
+    tip._hideTimeout = null;
+    tip.addEventListener('mouseenter', function() { clearTimeout(tip._hideTimeout); });
+    tip.addEventListener('mouseleave', function() { hideHierarchyTooltip(); });
+  }
+
+  function hideHierarchyTooltip() {
+    var existing = document.querySelectorAll('.hierarchy-tooltip');
+    existing.forEach(function(el) { el.remove(); });
   }
 
   function renderHierarchyNetwork(self, ancestors, descendants, edgeRows, el) {
@@ -1913,7 +2271,7 @@ var ConceptSetsPage = (function() {
       var titleEl = wrapper.querySelector('.hierarchy-header-title');
       if (titleEl) {
         titleEl.innerHTML = App.escapeHtml(self.concept_name) +
-          '<span class="hierarchy-id">#' + selfId + '</span>';
+          '<span class="hierarchy-id">#' + selfId + ' · ' + App.escapeHtml(self.vocabulary_id) + '</span>';
       }
       var backBtn = wrapper.querySelector('#hierarchy-back-btn');
       if (backBtn) backBtn.disabled = (hierarchyHistory.length === 0);
@@ -1928,7 +2286,7 @@ var ConceptSetsPage = (function() {
             '<i class="fas fa-arrow-left"></i></button>' +
           '<div class="hierarchy-header-title">' +
             App.escapeHtml(self.concept_name) +
-            '<span class="hierarchy-id">#' + selfId + '</span>' +
+            '<span class="hierarchy-id">#' + selfId + ' · ' + App.escapeHtml(self.vocabulary_id) + '</span>' +
           '</div>' +
           '<div class="hierarchy-controls">' +
             '<button class="hierarchy-btn" id="hierarchy-zoom-in" title="Zoom in"><i class="fas fa-search-plus"></i></button>' +
@@ -2003,6 +2361,12 @@ var ConceptSetsPage = (function() {
       }
     }
 
+    // Build concept map for tooltips
+    hierarchyConceptMap = {};
+    hierarchyConceptMap[selfId] = self;
+    ancestors.forEach(function(a) { hierarchyConceptMap[Number(a.concept_id)] = a; });
+    descendants.forEach(function(d) { hierarchyConceptMap[Number(d.concept_id)] = d; });
+
     // Build nodes & edges
     var nodes = [];
     var edges = [];
@@ -2010,7 +2374,6 @@ var ConceptSetsPage = (function() {
     nodes.push({
       id: selfId,
       label: self.concept_name + '\n[' + self.vocabulary_id + ']',
-      title: conceptTooltipEl(self),
       level: 0,
       shape: 'box',
       color: { background: '#0f60af', border: '#0a4a8a' },
@@ -2024,7 +2387,6 @@ var ConceptSetsPage = (function() {
       nodes.push({
         id: aid,
         label: a.concept_name + '\n[' + a.vocabulary_id + ']',
-        title: conceptTooltipEl(a),
         level: Number(a.hierarchy_level),
         shape: 'box',
         color: isPrev
@@ -2041,7 +2403,6 @@ var ConceptSetsPage = (function() {
       nodes.push({
         id: did,
         label: d.concept_name + '\n[' + d.vocabulary_id + ']',
-        title: conceptTooltipEl(d),
         level: Number(d.hierarchy_level),
         shape: 'box',
         color: isPrev
@@ -2072,7 +2433,7 @@ var ConceptSetsPage = (function() {
         hover: true,
         zoomView: true,
         dragView: true,
-        tooltipDelay: 200,
+        tooltipDelay: 0,
         navigationButtons: false
       },
       edges: {
@@ -2084,11 +2445,31 @@ var ConceptSetsPage = (function() {
     if (vocabTabsHierarchyNetwork) vocabTabsHierarchyNetwork.destroy();
     vocabTabsHierarchyNetwork = new vis.Network(canvasEl, data, options);
 
+    // Custom tooltip on hover
+    var tooltipTimeout = null;
+    vocabTabsHierarchyNetwork.on('hoverNode', function(params) {
+      clearTimeout(tooltipTimeout);
+      var domPos = params.event.center || { x: params.event.offsetX || params.pointer.DOM.x, y: params.event.offsetY || params.pointer.DOM.y };
+      tooltipTimeout = setTimeout(function() {
+        showHierarchyTooltip(params.node, canvasEl, domPos);
+      }, 300);
+    });
+    vocabTabsHierarchyNetwork.on('blurNode', function() {
+      clearTimeout(tooltipTimeout);
+      // Delay hide so user can move mouse to tooltip
+      setTimeout(function() {
+        if (!document.querySelector('.hierarchy-tooltip:hover')) hideHierarchyTooltip();
+      }, 200);
+    });
+    vocabTabsHierarchyNetwork.on('dragStart', function() { hideHierarchyTooltip(); });
+    vocabTabsHierarchyNetwork.on('zoom', function() { hideHierarchyTooltip(); });
+
     // Double-click on node: navigate hierarchy in-place
     vocabTabsHierarchyNetwork.on('doubleClick', function(params) {
       if (params.nodes.length === 1) {
         var cid = params.nodes[0];
         if (cid === selfId) return;
+        hideHierarchyTooltip();
         hierarchyHistory.push(selfId);
         hierarchyPreviousId = selfId;
         loadHierarchyGraph(cid, el);
@@ -2113,7 +2494,8 @@ var ConceptSetsPage = (function() {
           '<th>Synonym</th><th>Language</th>' +
           '</tr></thead><tbody>';
         rows.forEach(function(r) {
-          html += '<tr><td>' + App.escapeHtml(r.concept_synonym_name) + '</td>' +
+          var synName = decodeEscapedUtf8(r.concept_synonym_name || '');
+          html += '<tr><td>' + App.escapeHtml(synName) + '</td>' +
             '<td>' + App.escapeHtml(r.language || '') + '</td></tr>';
         });
         html += '</tbody></table>';

@@ -550,11 +550,57 @@
     <div class="vocab-info-box">
       <i class="fas fa-info-circle"></i>
       <span>
-        Vocabulary files are available from
+        Vocabulary files (CSV or Parquet) are available from
         <a href="https://athena.ohdsi.org/vocabulary/list" target="_blank" rel="noopener">ATHENA</a>.
-        Download the desired vocabularies, then select the folder containing the CSV files below.
+        Download the desired vocabularies, then select the folder below.
         The database will be stored locally in your browser and persists across sessions.
       </span>
+    </div>
+
+    <!-- Parquet recommendation -->
+    <div class="vocab-info-box vocab-info-parquet">
+      <i class="fas fa-sitemap"></i>
+      <div>
+        <strong>Parquet format recommended.</strong>
+        With Parquet files, you can browse the hierarchy of <em>any</em> OMOP concept — including concepts not yet in the catalog.
+        With CSV files, hierarchy browsing is limited to concepts already used in existing concept sets.
+        <button type="button" id="vocab-parquet-howto-toggle" class="btn-link">Show conversion instructions</button>
+        <div id="vocab-parquet-howto" style="display:none; margin-top:10px">
+          <div class="vocab-code-tabs">
+            <button class="vocab-code-tab active" data-lang="bash">DuckDB CLI</button>
+            <button class="vocab-code-tab" data-lang="python">Python</button>
+          </div>
+          <div class="vocab-code-block" data-lang="bash">
+            <button class="vocab-code-copy" title="Copy to clipboard"><i class="fas fa-copy"></i></button>
+            <pre><code># Install: brew install duckdb (macOS) or see duckdb.org/docs/installation
+
+cd /path/to/athena_download
+
+for f in CONCEPT CONCEPT_ANCESTOR CONCEPT_RELATIONSHIP CONCEPT_SYNONYM \
+         RELATIONSHIP VOCABULARY DOMAIN CONCEPT_CLASS DRUG_STRENGTH; do
+  [ -f "$f.csv" ] &amp;&amp; duckdb -c \
+    "COPY (SELECT * FROM read_csv('$f.csv', delim='\t', header=true, quote='')) \
+     TO '$f.parquet' (FORMAT PARQUET);"
+done</code></pre>
+          </div>
+          <div class="vocab-code-block" data-lang="python" style="display:none">
+            <button class="vocab-code-copy" title="Copy to clipboard"><i class="fas fa-copy"></i></button>
+            <pre><code># pip install duckdb
+
+cd /path/to/athena_download
+
+python3 -c "
+import duckdb, os
+for f in ['CONCEPT','CONCEPT_ANCESTOR','CONCEPT_RELATIONSHIP','CONCEPT_SYNONYM',
+          'RELATIONSHIP','VOCABULARY','DOMAIN','CONCEPT_CLASS','DRUG_STRENGTH']:
+    if os.path.exists(f+'.csv'):
+        duckdb.sql(\"COPY (SELECT * FROM read_csv('\"+f+\".csv', delim='\t', header=true, quote='')) TO '\"+f+\".parquet' (FORMAT PARQUET)\")
+        print(f'  {f}.csv -> {f}.parquet')
+"</code></pre>
+          </div>
+          <p class="vocab-code-note">Run this in the folder containing the Athena CSV files. Both CSV and Parquet files can coexist — Parquet files are preferred when both are present.</p>
+        </div>
+      </div>
     </div>
 
     <!-- Browser compatibility warning (hidden by default, shown by JS) -->
@@ -1148,12 +1194,18 @@ Enter your review comments here using Markdown syntax.
     </div>
     <!-- Resize bar -->
     <div class="expr-add-resize-bar" id="expr-add-resize-bar"></div>
-    <!-- Bottom: Details + vocab tabs panels -->
+    <!-- Bottom: Details (left) + Hierarchy (right) -->
     <div id="expr-add-bottom" class="expr-add-bottom">
       <div class="expr-add-detail-panel" id="expr-add-detail-panel">
-        <div class="expr-add-panel-title">Selected Concept Details</div>
+        <div class="expr-add-panel-title">Concept Details</div>
         <div id="expr-add-detail-body" class="expr-add-detail-body">
           <div class="empty-state"><p>Select a concept to view details</p></div>
+        </div>
+      </div>
+      <div class="expr-add-hierarchy-panel" id="expr-add-hierarchy-panel">
+        <div class="expr-add-panel-title">Hierarchy</div>
+        <div id="expr-add-hierarchy-body" class="expr-add-hierarchy-body">
+          <div class="empty-state"><p>Select a concept to view hierarchy</p></div>
         </div>
       </div>
     </div>

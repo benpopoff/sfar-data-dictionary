@@ -273,7 +273,7 @@ var GeneralSettingsPage = (function () {
     var isSafari = /Safari\//i.test(ua) && !/Chrome\//i.test(ua);
 
     if (isFirefox) {
-      msgEl.textContent = 'Firefox: vocabulary data will be filtered to concepts used in the catalog. You will also need to re-select the folder each visit. For full vocabulary access, use Chrome or Edge.';
+      msgEl.textContent = 'Firefox: you will need to re-select the vocabulary folder each visit. For persistent access, use Chrome or Edge.';
       warningEl.style.display = '';
     } else if (isSafari) {
       msgEl.textContent = 'Safari has limited support for the File System Access API. Vocabulary features may not work correctly. Full support is available in Chrome and Edge.';
