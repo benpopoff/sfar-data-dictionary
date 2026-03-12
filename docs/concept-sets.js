@@ -1652,15 +1652,18 @@ var ConceptSetsPage = (function() {
     relatedEl = el;
     relatedRows = null;
     relatedPage = 0;
+
     el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading...</div>';
-    VocabDB.query(
+
+    var sql =
       'SELECT cr.relationship_id, c.concept_id, c.concept_name, c.vocabulary_id, ' +
       'c.domain_id, c.concept_class_id, c.concept_code, c.standard_concept ' +
       'FROM concept_relationship cr ' +
       'JOIN concept c ON c.concept_id = cr.concept_id_2 ' +
       'WHERE cr.concept_id_1 = ' + conceptId + ' ' +
-      'ORDER BY cr.relationship_id, c.concept_name'
-    ).then(function(rows) {
+      'ORDER BY cr.relationship_id, c.concept_name';
+
+    VocabDB.query(sql).then(function(rows) {
       if (!rows || rows.length === 0) {
         el.innerHTML = '<div class="loading-inline">No related concepts found.</div>';
         return;
@@ -1723,7 +1726,6 @@ var ConceptSetsPage = (function() {
     });
   }
 
-  var HIERARCHY_MAX_LEVELS = 5;
   var HIERARCHY_WARN_THRESHOLD = 100;
 
   function showHierarchyLoading() {
@@ -1741,23 +1743,29 @@ var ConceptSetsPage = (function() {
       el.innerHTML = '<div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Loading hierarchy...</div>';
     }
 
-    // Step 1: count nodes first
+    // Step 1: count nodes using recursive CTE traversal
     var countSql =
-      'SELECT ' +
-      '(SELECT COUNT(*) FROM concept_ancestor WHERE descendant_concept_id = ' + conceptId +
-      ' AND min_levels_of_separation > 0 AND min_levels_of_separation <= ' + HIERARCHY_MAX_LEVELS + ') AS ancestors, ' +
-      '(SELECT COUNT(*) FROM concept_ancestor WHERE ancestor_concept_id = ' + conceptId +
-      ' AND min_levels_of_separation > 0 AND min_levels_of_separation <= ' + HIERARCHY_MAX_LEVELS + ') AS descendants';
+      'WITH RECURSIVE anc AS (' +
+        'SELECT ancestor_concept_id AS cid, 1 AS d FROM concept_ancestor WHERE descendant_concept_id = ' + conceptId +
+        ' UNION ALL ' +
+        'SELECT ca.ancestor_concept_id, anc.d + 1 FROM concept_ancestor ca JOIN anc ON ca.descendant_concept_id = anc.cid WHERE anc.d < 20' +
+      '), desc_r AS (' +
+        'SELECT descendant_concept_id AS cid, 1 AS d FROM concept_ancestor WHERE ancestor_concept_id = ' + conceptId +
+        ' UNION ALL ' +
+        'SELECT ca.descendant_concept_id, desc_r.d + 1 FROM concept_ancestor ca JOIN desc_r ON ca.ancestor_concept_id = desc_r.cid WHERE desc_r.d < 20' +
+      ') SELECT (SELECT COUNT(DISTINCT cid) FROM anc) AS ancestors, (SELECT COUNT(DISTINCT cid) FROM desc_r) AS descendants';
 
     VocabDB.query(countSql).then(function(countRows) {
       var total = Number(countRows[0].ancestors) + Number(countRows[0].descendants) + 1;
+      return total;
+    }).then(function(total) {
       if (total > HIERARCHY_WARN_THRESHOLD) {
         var warningHtml =
           '<div class="hierarchy-warn-overlay">' +
             '<div class="hierarchy-warn-box">' +
               '<i class="fas fa-exclamation-triangle" style="color:var(--warning); font-size:18px"></i>' +
               '<div style="margin-top:8px">' +
-                'This concept has <strong>' + total + '</strong> nodes in the hierarchy (' + HIERARCHY_MAX_LEVELS + ' levels). ' +
+                'This concept has <strong>' + total + '</strong> nodes in the hierarchy. ' +
                 'Loading may be slow.' +
               '</div>' +
               '<div style="display:flex; gap:8px; margin-top:12px">' +
@@ -1802,31 +1810,52 @@ var ConceptSetsPage = (function() {
   }
 
   function buildHierarchyGraph(conceptId, el) {
+    // Recursive CTE to traverse the full hierarchy via direct edges
     var ancestorsSql =
-      'SELECT c.concept_id, c.concept_name, c.vocabulary_id, c.domain_id, ' +
+      'WITH RECURSIVE anc AS (' +
+        'SELECT ancestor_concept_id AS cid, 1 AS depth ' +
+        'FROM concept_ancestor WHERE descendant_concept_id = ' + conceptId +
+        ' UNION ALL ' +
+        'SELECT ca.ancestor_concept_id, anc.depth + 1 ' +
+        'FROM concept_ancestor ca JOIN anc ON ca.descendant_concept_id = anc.cid ' +
+        'WHERE anc.depth < 20' +
+      ') SELECT DISTINCT c.concept_id, c.concept_name, c.vocabulary_id, c.domain_id, ' +
       'c.concept_class_id, c.concept_code, c.standard_concept, ' +
-      '-ca.min_levels_of_separation AS hierarchy_level ' +
-      'FROM concept_ancestor ca JOIN concept c ON c.concept_id = ca.ancestor_concept_id ' +
-      'WHERE ca.descendant_concept_id = ' + conceptId +
-      ' AND ca.min_levels_of_separation > 0 AND ca.min_levels_of_separation <= ' + HIERARCHY_MAX_LEVELS +
-      ' ORDER BY ca.min_levels_of_separation';
+      '-MIN(anc.depth) AS hierarchy_level ' +
+      'FROM anc JOIN concept c ON c.concept_id = anc.cid ' +
+      'GROUP BY c.concept_id, c.concept_name, c.vocabulary_id, c.domain_id, ' +
+      'c.concept_class_id, c.concept_code, c.standard_concept ' +
+      'ORDER BY MIN(anc.depth)';
+
     var descendantsSql =
-      'SELECT c.concept_id, c.concept_name, c.vocabulary_id, c.domain_id, ' +
+      'WITH RECURSIVE desc_r AS (' +
+        'SELECT descendant_concept_id AS cid, 1 AS depth ' +
+        'FROM concept_ancestor WHERE ancestor_concept_id = ' + conceptId +
+        ' UNION ALL ' +
+        'SELECT ca.descendant_concept_id, desc_r.depth + 1 ' +
+        'FROM concept_ancestor ca JOIN desc_r ON ca.ancestor_concept_id = desc_r.cid ' +
+        'WHERE desc_r.depth < 20' +
+      ') SELECT DISTINCT c.concept_id, c.concept_name, c.vocabulary_id, c.domain_id, ' +
       'c.concept_class_id, c.concept_code, c.standard_concept, ' +
-      'ca.min_levels_of_separation AS hierarchy_level ' +
-      'FROM concept_ancestor ca JOIN concept c ON c.concept_id = ca.descendant_concept_id ' +
-      'WHERE ca.ancestor_concept_id = ' + conceptId +
-      ' AND ca.min_levels_of_separation > 0 AND ca.min_levels_of_separation <= ' + HIERARCHY_MAX_LEVELS +
-      ' ORDER BY ca.min_levels_of_separation';
+      'MIN(desc_r.depth) AS hierarchy_level ' +
+      'FROM desc_r JOIN concept c ON c.concept_id = desc_r.cid ' +
+      'GROUP BY c.concept_id, c.concept_name, c.vocabulary_id, c.domain_id, ' +
+      'c.concept_class_id, c.concept_code, c.standard_concept ' +
+      'ORDER BY MIN(desc_r.depth)';
+
     var selfSql =
       'SELECT concept_id, concept_name, vocabulary_id, domain_id, concept_class_id, concept_code, standard_concept ' +
       'FROM concept WHERE concept_id = ' + conceptId;
 
-    Promise.all([VocabDB.query(ancestorsSql), VocabDB.query(descendantsSql), VocabDB.query(selfSql)])
-      .then(function(results) {
+    Promise.all([
+      VocabDB.query(ancestorsSql),
+      VocabDB.query(descendantsSql),
+      VocabDB.query(selfSql)
+    ]).then(function (results) {
         var ancestors = results[0] || [];
         var descendants = results[1] || [];
         var self = results[2] && results[2][0];
+
         if (!self) {
           el.innerHTML = '<div class="loading-inline">Concept not found in vocabulary database.</div>';
           return;
@@ -1842,12 +1871,11 @@ var ConceptSetsPage = (function() {
           return;
         }
 
-        // Get direct parent-child edges between all nodes in the graph
+        // Get direct parent-child edges between the discovered nodes
         var edgesSql =
           'SELECT ancestor_concept_id AS from_id, descendant_concept_id AS to_id ' +
           'FROM concept_ancestor ' +
-          'WHERE min_levels_of_separation = 1 ' +
-          'AND ancestor_concept_id IN (' + allIds.join(',') + ') ' +
+          'WHERE ancestor_concept_id IN (' + allIds.join(',') + ') ' +
           'AND descendant_concept_id IN (' + allIds.join(',') + ')';
 
         return VocabDB.query(edgesSql).then(function(edgeRows) {

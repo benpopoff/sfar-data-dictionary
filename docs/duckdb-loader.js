@@ -1,18 +1,18 @@
 /**
  * DuckDB-WASM Vocabulary Loader
  *
- * Loads OHDSI Athena vocabulary CSV files into an in-memory DuckDB database.
- * Files are NOT copied into browser memory — DuckDB reads them on demand
- * via FileSystemFileHandle (BROWSER_FILEREADER protocol).
+ * Loads OHDSI Athena vocabulary files (CSV or Parquet) into an in-memory
+ * DuckDB database. Strategy:
+ *   - CONCEPT: loaded in full (~4M rows, ~4 MB in DuckDB)
+ *   - CONCEPT_ANCESTOR: only direct edges (min_levels_of_separation=1,
+ *     ~7.8M rows, ~7 MB). Hierarchy is rebuilt via recursive CTE at query time.
+ *   - CONCEPT_RELATIONSHIP, CONCEPT_SYNONYM: filtered by resolved concept IDs
+ *   - Small reference tables: loaded in full
  *
- * Chrome/Edge: showDirectoryPicker() → zero-copy streaming from disk
- * Firefox: <input webkitdirectory> fallback (files loaded into memory)
+ * Tables are indexed and persisted to IndexedDB via EXPORT/IMPORT DATABASE.
  *
- * FileSystemFileHandles are stored in IndexedDB so that on future visits,
- * the user only needs to re-grant permission (no re-import needed).
- *
- * DuckDB-WASM is loaded lazily via dynamic import() on first use.
- * Requires HTTP/HTTPS (won't work from file://).
+ * Chrome/Edge: showDirectoryPicker() + stored FileSystemFileHandles
+ * Firefox: <input webkitdirectory> fallback (must re-select each visit)
  *
  * Exposes window.VocabDB for use by other scripts.
  */
@@ -21,26 +21,27 @@
 
   var DUCKDB_ESM_URL = 'https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm';
 
-  var REQUIRED_FILES = [
-    'CONCEPT.csv',
-    'CONCEPT_ANCESTOR.csv',
-    'CONCEPT_RELATIONSHIP.csv',
-    'CONCEPT_SYNONYM.csv',
-    'RELATIONSHIP.csv',
-    'VOCABULARY.csv',
-    'DOMAIN.csv',
-    'CONCEPT_CLASS.csv'
-  ];
-  var OPTIONAL_FILES = ['DRUG_STRENGTH.csv'];
+  var REQUIRED_TABLES = ['CONCEPT', 'CONCEPT_ANCESTOR', 'CONCEPT_RELATIONSHIP', 'CONCEPT_SYNONYM', 'RELATIONSHIP', 'VOCABULARY', 'DOMAIN', 'CONCEPT_CLASS'];
+  var OPTIONAL_TABLES = ['DRUG_STRENGTH'];
+
+  var REQUIRED_CSV  = REQUIRED_TABLES.map(function (t) { return t + '.csv'; });
+  var OPTIONAL_CSV  = OPTIONAL_TABLES.map(function (t) { return t + '.csv'; });
+  var REQUIRED_PARQUET = REQUIRED_TABLES.map(function (t) { return t + '.parquet'; });
+  var OPTIONAL_PARQUET = OPTIONAL_TABLES.map(function (t) { return t + '.parquet'; });
 
   var duckdbLib = null;
   var db = null;
   var conn = null;
+  var importMode = null; /* 'filtered' — set during import */
 
   /* ── helpers ──────────────────────────────────────────── */
 
-  function tableName(csvFilename) {
-    return csvFilename.replace('.csv', '').toLowerCase();
+  function tableName(filename) {
+    return filename.replace(/\.(csv|parquet)$/i, '').toLowerCase();
+  }
+
+  function isParquetFile(filename) {
+    return /\.parquet$/i.test(filename);
   }
 
   /* ── IndexedDB for file handle persistence ──────────── */
@@ -87,7 +88,7 @@
     });
   }
 
-  /** Store individual FileSystemFileHandles keyed by CSV filename */
+  /** Store individual FileSystemFileHandles keyed by filename */
   function storeFileHandles(fileHandlesMap) {
     return openHandleDB().then(function (idb) {
       return new Promise(function (resolve, reject) {
@@ -212,21 +213,15 @@
 
   /* ── Persist / restore DB via EXPORT/IMPORT DATABASE ───── */
 
-  /**
-   * Export all tables to Parquet in DuckDB's virtual FS,
-   * then copy those files to IndexedDB for persistence.
-   */
   function exportDbToIndexedDB() {
     if (!db || !conn) return Promise.resolve();
     return conn.query("EXPORT DATABASE '" + EXPORT_PATH + "' (FORMAT PARQUET)")
       .then(function () {
-        /* Build the list of exported files: schema.sql + one .parquet per table */
-        var allFiles = REQUIRED_FILES.concat(OPTIONAL_FILES);
+        var allTables = REQUIRED_TABLES.concat(OPTIONAL_TABLES);
         var exportedFiles = [EXPORT_PATH + '/schema.sql', EXPORT_PATH + '/load.sql'];
-        allFiles.forEach(function (f) {
-          exportedFiles.push(EXPORT_PATH + '/' + tableName(f) + '.parquet');
+        allTables.forEach(function (t) {
+          exportedFiles.push(EXPORT_PATH + '/' + t.toLowerCase() + '.parquet');
         });
-        /* Copy each file to a buffer (skip missing optional files) */
         var buffers = {};
         var chain = Promise.resolve();
         exportedFiles.forEach(function (fpath) {
@@ -246,18 +241,30 @@
       });
   }
 
-  /**
-   * Restore DB from stored Parquet buffers via IMPORT DATABASE.
-   * Returns true if successful.
-   */
   function loadFromStoredBuffer() {
     return getStoredDbBuffer().then(function (buffers) {
       if (!buffers || typeof buffers !== 'object') return false;
       var files = Object.keys(buffers);
       if (files.length === 0) return false;
 
+      // Validate: must contain schema.sql and at least one .parquet file
+      var hasSchema = files.some(function (f) { return f.indexOf('schema.sql') !== -1; });
+      var hasParquet = files.some(function (f) { return /\.parquet$/.test(f); });
+      if (!hasSchema || !hasParquet) {
+        console.warn('Stored DB buffer is invalid (missing schema or parquet files), clearing...');
+        return clearAllHandles().then(function () { return false; });
+      }
+
+      // Validate: parquet buffers must have non-trivial size
+      var hasValidData = files.some(function (f) {
+        return /\.parquet$/.test(f) && buffers[f] && buffers[f].byteLength > 100;
+      });
+      if (!hasValidData) {
+        console.warn('Stored DB buffer contains empty parquet files, clearing...');
+        return clearAllHandles().then(function () { return false; });
+      }
+
       return initDuckDB().then(function () {
-        /* Register each exported file in DuckDB's virtual FS */
         var chain = Promise.resolve();
         files.forEach(function (fpath) {
           chain = chain.then(function () {
@@ -272,7 +279,7 @@
       });
     }).catch(function (err) {
       console.warn('Could not restore DB from IndexedDB:', err.message);
-      return false;
+      return clearAllHandles().then(function () { return false; }).catch(function () { return false; });
     });
   }
 
@@ -283,7 +290,7 @@
     return conn.query("SELECT table_name FROM information_schema.tables WHERE table_schema='main'")
       .then(function (result) {
         var tables = resultToArray(result).map(function (r) { return r.table_name; });
-        var required = REQUIRED_FILES.map(function (f) { return tableName(f); });
+        var required = REQUIRED_TABLES.map(function (t) { return t.toLowerCase(); });
         var missing = required.filter(function (t) {
           return tables.indexOf(t) === -1;
         });
@@ -313,11 +320,6 @@
 
   /* ── Register file handles with DuckDB ────────────────── */
 
-  /**
-   * Register CSV file handles with DuckDB using BROWSER_FILEREADER.
-   * This is zero-copy: DuckDB streams data on demand, files are NOT
-   * loaded entirely into memory.
-   */
   function registerFileHandlesWithDuckDB(fileHandlesMap) {
     var chain = Promise.resolve();
     var names = Object.keys(fileHandlesMap);
@@ -348,48 +350,51 @@
       .catch(function () { resolvedConceptIds = []; return []; });
   }
 
-  /* ── Vocabularies to keep for concept table ───────────── */
-
-  var CONCEPT_VOCABULARIES = ['SNOMED', 'LOINC', 'RxNorm', 'RxNorm Extension', 'UCUM', 'ICD10', 'ICD10CM'];
-
-  /* ── Import: create materialized tables with filtering ── */
+  /* ── Read source SQL (CSV or Parquet) ────────────────── */
 
   var READ_CSV_OPTS = "delim='\\t', header=true, quote='', auto_detect=true, sample_size=100000";
 
-  /**
-   * Tables that need filtering by resolved concept IDs.
-   * The filter SQL uses a temp table of IDs for efficient joining.
-   */
-  var FILTERED_TABLES = {
-    'CONCEPT_ANCESTOR.csv': function () {
+  function readSourceSql(filename) {
+    if (isParquetFile(filename)) {
+      return "read_parquet('" + filename + "')";
+    }
+    return "read_csv('" + filename + "', " + READ_CSV_OPTS + ")";
+  }
+
+  /* ── Filtered SQL for large tables ───────────────────── */
+
+  function getFilteredSql(name) {
+    var src = readSourceSql(name);
+    var tbl = tableName(name);
+
+    if (tbl === 'concept_ancestor') {
+      // Only direct parent-child edges — hierarchy rebuilt via recursive CTE
       return 'CREATE TABLE concept_ancestor AS ' +
-        'SELECT ca.* FROM read_csv(\'CONCEPT_ANCESTOR.csv\', ' + READ_CSV_OPTS + ') ca ' +
-        'WHERE ca.ancestor_concept_id IN (SELECT id FROM _filter_ids) ' +
-        'OR ca.descendant_concept_id IN (SELECT id FROM _filter_ids)';
-    },
-    'CONCEPT_RELATIONSHIP.csv': function () {
+        'SELECT ca.ancestor_concept_id, ca.descendant_concept_id FROM ' + src + ' ca ' +
+        'WHERE ca.min_levels_of_separation = 1';
+    }
+    if (tbl === 'concept_relationship') {
       return 'CREATE TABLE concept_relationship AS ' +
-        'SELECT cr.* FROM read_csv(\'CONCEPT_RELATIONSHIP.csv\', ' + READ_CSV_OPTS + ') cr ' +
+        'SELECT cr.* FROM ' + src + ' cr ' +
         'WHERE cr.concept_id_1 IN (SELECT id FROM _filter_ids) ' +
         'OR cr.concept_id_2 IN (SELECT id FROM _filter_ids)';
-    },
-    'CONCEPT_SYNONYM.csv': function () {
-      return 'CREATE TABLE concept_synonym AS ' +
-        'SELECT cs.* FROM read_csv(\'CONCEPT_SYNONYM.csv\', ' + READ_CSV_OPTS + ') cs ' +
-        'WHERE cs.concept_id IN (SELECT id FROM _filter_ids)';
-    },
-    'CONCEPT.csv': function () {
-      var vocabList = CONCEPT_VOCABULARIES.map(function (v) { return "'" + v + "'"; }).join(',');
-      return 'CREATE TABLE concept AS ' +
-        'SELECT * FROM read_csv(\'CONCEPT.csv\', ' + READ_CSV_OPTS + ') ' +
-        'WHERE vocabulary_id IN (' + vocabList + ')';
     }
-  };
+    if (tbl === 'concept_synonym') {
+      return 'CREATE TABLE concept_synonym AS ' +
+        'SELECT cs.* FROM ' + src + ' cs ' +
+        'WHERE cs.concept_id IN (SELECT id FROM _filter_ids)';
+    }
+    if (tbl === 'concept') {
+      // Full concept table — small in DuckDB columnar format (~4 MB for 4M rows)
+      return 'CREATE TABLE concept AS SELECT * FROM ' + src;
+    }
 
-  /**
-   * Indexes to create after tables are materialized.
-   * Matches the Shiny app (fct_duckdb.R).
-   */
+    // Small reference tables: import in full
+    return 'CREATE TABLE ' + tbl + ' AS SELECT * FROM ' + src;
+  }
+
+  /* ── Import: create materialized tables with filtering ── */
+
   var INDEXES = [
     'CREATE INDEX idx_concept_id ON concept(concept_id)',
     'CREATE INDEX idx_concept_vocab ON concept(vocabulary_id)',
@@ -402,27 +407,26 @@
 
   function createTablesFromFiles(fileNames, onProgress) {
     var done = 0;
-    // +1 for indexing step, +1 for filter IDs setup
+    // +1 for filter IDs setup, +1 for indexing
     var total = fileNames.length + 2;
-    var importChain = Promise.resolve();
+    var chain = Promise.resolve();
 
     // Step 0: Load resolved concept IDs and create temp filter table
-    importChain = importChain.then(function () {
+    chain = chain.then(function () {
       onProgress({ file: null, table: null, step: 'filter_ids', done: 0, total: total });
       return loadResolvedConceptIds().then(function (ids) {
         if (ids.length === 0) return;
-        // Create a temp table with the IDs for efficient filtering
         var batchSize = 500;
-        var chain = conn.query('CREATE TEMP TABLE _filter_ids (id INTEGER)');
+        var idChain = conn.query('CREATE TEMP TABLE _filter_ids (id INTEGER)');
         for (var i = 0; i < ids.length; i += batchSize) {
           (function (batch) {
-            chain = chain.then(function () {
+            idChain = idChain.then(function () {
               return conn.query('INSERT INTO _filter_ids VALUES ' +
                 batch.map(function (id) { return '(' + id + ')'; }).join(','));
             });
           })(ids.slice(i, i + batchSize));
         }
-        return chain.then(function () {
+        return idChain.then(function () {
           return conn.query('CREATE INDEX idx_filter ON _filter_ids(id)');
         });
       }).then(function () {
@@ -433,31 +437,28 @@
 
     // Step 1: Import each file as a materialized table
     fileNames.forEach(function (name) {
-      importChain = importChain.then(function () {
+      chain = chain.then(function () {
         var tbl = tableName(name);
         onProgress({ file: name, table: tbl, step: 'importing', done: done, total: total });
 
         var dropSql = 'DROP TABLE IF EXISTS ' + tbl + '; DROP VIEW IF EXISTS ' + tbl;
-
-        var createSql;
-        if (FILTERED_TABLES[name]) {
-          createSql = FILTERED_TABLES[name]();
-        } else {
-          // Small reference tables: import in full
-          createSql = 'CREATE TABLE ' + tbl + ' AS SELECT * FROM read_csv(\'' + name + '\', ' + READ_CSV_OPTS + ')';
-        }
+        var createSql = getFilteredSql(name);
 
         return conn.query(dropSql).then(function () {
           return conn.query(createSql);
         }).then(function () {
           done++;
           onProgress({ file: name, table: tbl, step: 'done', done: done, total: total });
+        }).catch(function (err) {
+          console.warn('Skipping ' + name + ': ' + err.message);
+          done++;
+          onProgress({ file: name, table: tbl, step: 'error', done: done, total: total });
         });
       });
     });
 
     // Step 2: Create indexes
-    importChain = importChain.then(function () {
+    chain = chain.then(function () {
       onProgress({ file: null, table: null, step: 'indexing', done: done, total: total });
       var indexChain = Promise.resolve();
       INDEXES.forEach(function (sql) {
@@ -466,7 +467,6 @@
         });
       });
       return indexChain.then(function () {
-        // Clean up filter table
         return conn.query('DROP TABLE IF EXISTS _filter_ids').catch(function () {});
       }).then(function () {
         done++;
@@ -474,7 +474,46 @@
       });
     });
 
-    return importChain.then(function () { return total; });
+    return chain.then(function () { return total; });
+  }
+
+  /* ── Detect files in directory (Parquet preferred, CSV fallback) ── */
+
+  function detectAndCollectFiles(dirHandle) {
+    var fileHandlesMap = {};
+    var chain = Promise.resolve();
+
+    // Try Parquet first, then CSV for each required table
+    REQUIRED_TABLES.forEach(function (tbl) {
+      chain = chain.then(function () {
+        var parquetName = tbl + '.parquet';
+        var csvName = tbl + '.csv';
+        return dirHandle.getFileHandle(parquetName).then(function (fh) {
+          fileHandlesMap[parquetName] = fh;
+        }).catch(function () {
+          return dirHandle.getFileHandle(csvName).then(function (fh) {
+            fileHandlesMap[csvName] = fh;
+          });
+        });
+      });
+    });
+
+    // Optional tables: try Parquet first, then CSV
+    OPTIONAL_TABLES.forEach(function (tbl) {
+      chain = chain.then(function () {
+        var parquetName = tbl + '.parquet';
+        var csvName = tbl + '.csv';
+        return dirHandle.getFileHandle(parquetName).then(function (fh) {
+          fileHandlesMap[parquetName] = fh;
+        }).catch(function () {
+          return dirHandle.getFileHandle(csvName).then(function (fh) {
+            fileHandlesMap[csvName] = fh;
+          }).catch(function () { /* optional */ });
+        });
+      });
+    });
+
+    return chain.then(function () { return fileHandlesMap; });
   }
 
   /* ── Import from directory handle (Chrome/Edge) ──────── */
@@ -482,49 +521,26 @@
   function importFromDirectory(dirHandle, onProgress) {
     onProgress = onProgress || function () {};
 
-    var fileHandlesMap = {};
-    var validationChain = Promise.resolve();
-
-    REQUIRED_FILES.forEach(function (name) {
-      validationChain = validationChain.then(function () {
-        return dirHandle.getFileHandle(name).then(function (fh) {
-          fileHandlesMap[name] = fh;
+    return detectAndCollectFiles(dirHandle)
+      .then(function (fileHandlesMap) {
+        return initDuckDB().then(function () {
+          return registerFileHandlesWithDuckDB(fileHandlesMap);
+        }).then(function () {
+          return createTablesFromFiles(Object.keys(fileHandlesMap), onProgress);
+        }).then(function (total) {
+          onProgress({ file: null, table: null, step: 'persisting', done: total, total: total });
+          return exportDbToIndexedDB()
+            .then(function () {
+              return storeDirectoryHandle(dirHandle).catch(function () {});
+            })
+            .then(function () {
+              return storeFileHandles(fileHandlesMap).catch(function () {});
+            })
+            .then(function () {
+              importMode = 'filtered';
+              onProgress({ file: null, table: null, step: 'complete', done: total, total: total });
+            });
         });
-      });
-    });
-
-    OPTIONAL_FILES.forEach(function (name) {
-      validationChain = validationChain.then(function () {
-        return dirHandle.getFileHandle(name).then(function (fh) {
-          fileHandlesMap[name] = fh;
-        }).catch(function () { /* optional */ });
-      });
-    });
-
-    return validationChain
-      .then(function () {
-        return initDuckDB();
-      })
-      .then(function () {
-        /* Register file handles — zero-copy, DuckDB streams on demand */
-        return registerFileHandlesWithDuckDB(fileHandlesMap);
-      })
-      .then(function () {
-        return createTablesFromFiles(Object.keys(fileHandlesMap), onProgress);
-      })
-      .then(function (total) {
-        onProgress({ file: null, table: null, step: 'persisting', done: total, total: total });
-        /* Persist DB buffer + file handles to IndexedDB */
-        return exportDbToIndexedDB()
-          .then(function () {
-            return storeDirectoryHandle(dirHandle).catch(function () {});
-          })
-          .then(function () {
-            return storeFileHandles(fileHandlesMap).catch(function () {});
-          })
-          .then(function () {
-            onProgress({ file: null, table: null, step: 'complete', done: total, total: total });
-          });
       });
   }
 
@@ -537,28 +553,34 @@
     for (var i = 0; i < fileList.length; i++) {
       var f = fileList[i];
       var name = f.name;
-      if (REQUIRED_FILES.indexOf(name) !== -1 || OPTIONAL_FILES.indexOf(name) !== -1) {
-        fileMap[name] = f;
+      if (REQUIRED_CSV.indexOf(name) !== -1 || OPTIONAL_CSV.indexOf(name) !== -1 ||
+          REQUIRED_PARQUET.indexOf(name) !== -1 || OPTIONAL_PARQUET.indexOf(name) !== -1) {
+        // Prefer Parquet over CSV for same table
+        var tbl = tableName(name);
+        var existing = fileMap[tbl];
+        if (!existing || isParquetFile(name)) {
+          fileMap[tbl] = { name: name, file: f };
+        }
       }
     }
 
-    var missing = REQUIRED_FILES.filter(function (n) { return !fileMap[n]; });
-    if (missing.length > 0) {
-      return Promise.reject(new Error('Missing required files: ' + missing.join(', ')));
+    // Check required tables
+    var missingTables = REQUIRED_TABLES.filter(function (t) { return !fileMap[t.toLowerCase()]; });
+    if (missingTables.length > 0) {
+      return Promise.reject(new Error('Missing required files: ' + missingTables.join(', ')));
     }
 
-    var filesToImport = Object.keys(fileMap);
-    var total = filesToImport.length;
-    var done = 0;
+    var filesToImport = [];
+    var keys = Object.keys(fileMap);
+    keys.forEach(function (k) { filesToImport.push(fileMap[k]); });
 
     return initDuckDB().then(function () {
-      /* Firefox: register File objects via BROWSER_FILEREADER (still zero-copy) */
       var regChain = Promise.resolve();
-      filesToImport.forEach(function (name) {
+      filesToImport.forEach(function (entry) {
         regChain = regChain.then(function () {
           return db.registerFileHandle(
-            name,
-            fileMap[name],
+            entry.name,
+            entry.file,
             duckdbLib.DuckDBDataProtocol.BROWSER_FILEREADER,
             true
           );
@@ -566,9 +588,11 @@
       });
       return regChain;
     }).then(function () {
-      return createTablesFromFiles(filesToImport, onProgress);
+      var fileNames = filesToImport.map(function (e) { return e.name; });
+      return createTablesFromFiles(fileNames, onProgress);
     }).then(function (total) {
       onProgress({ file: null, table: null, step: 'persisting', done: total, total: total });
+      importMode = 'filtered';
       return exportDbToIndexedDB().then(function () {
         onProgress({ file: null, table: null, step: 'complete', done: total, total: total });
       });
@@ -577,23 +601,24 @@
 
   /* ── Restore from stored data (future sessions) ─────── */
 
-  /**
-   * Try to restore the database. Strategy:
-   * 1. Try IndexedDB buffer (works on all browsers, instant)
-   * 2. Fall back to stored FileSystemFileHandles (Chrome/Edge only, re-imports from CSV)
-   */
   function remountFromStoredHandles() {
     /* Strategy 1: IndexedDB buffer (all browsers) */
     return loadFromStoredBuffer().then(function (success) {
-      if (success) return true;
+      if (success) {
+        importMode = 'filtered';
+        return true;
+      }
 
-      /* Strategy 2: FileSystemFileHandles (Chrome/Edge) */
+      /* Strategy 2: FileSystemFileHandles (Chrome/Edge) — re-import from source */
       return getStoredFileHandles().then(function (handles) {
         var names = Object.keys(handles);
         if (names.length === 0) return false;
 
-        var required = REQUIRED_FILES.map(function (f) { return f; });
-        var missing = required.filter(function (n) { return !handles[n]; });
+        // Check we have all required tables (CSV or Parquet)
+        var tablesCovered = {};
+        names.forEach(function (n) { tablesCovered[tableName(n)] = true; });
+        var requiredLower = REQUIRED_TABLES.map(function (t) { return t.toLowerCase(); });
+        var missing = requiredLower.filter(function (t) { return !tablesCovered[t]; });
         if (missing.length > 0) return false;
 
         var permChain = Promise.resolve(true);
@@ -614,9 +639,20 @@
 
         return permChain.then(function (allGranted) {
           if (!allGranted) return false;
-          return registerFileHandlesWithDuckDB(handles).then(function () {
-            return createTablesFromFiles(names, function () {}).then(function () {
-              /* Persist the buffer for next time */
+
+          // Filter to relevant files only
+          var relevantHandles = {};
+          names.forEach(function (n) {
+            var tbl = tableName(n);
+            var isRequired = REQUIRED_TABLES.some(function (t) { return t.toLowerCase() === tbl; });
+            var isOptional = OPTIONAL_TABLES.some(function (t) { return t.toLowerCase() === tbl; });
+            if (isRequired || isOptional) relevantHandles[n] = handles[n];
+          });
+          var relevantNames = Object.keys(relevantHandles);
+
+          return registerFileHandlesWithDuckDB(relevantHandles).then(function () {
+            return createTablesFromFiles(relevantNames, function () {}).then(function () {
+              importMode = 'filtered';
               return exportDbToIndexedDB().then(function () { return true; });
             });
           });
@@ -636,7 +672,7 @@
         var rows = resultToArray(result);
         var stats = {};
         for (var i = 0; i < rows.length; i++) {
-          stats[rows[i].table_name] = rows[i].table_type; /* 'VIEW' or 'BASE TABLE' */
+          stats[rows[i].table_name] = rows[i].table_type;
         }
         return stats;
       });
@@ -677,6 +713,7 @@
       });
     }
     chain = chain.then(function () {
+      importMode = null;
       return clearAllHandles().catch(function () {});
     });
     return chain;
@@ -685,8 +722,11 @@
   /* ── Public API ──────────────────────────────────────── */
 
   window.VocabDB = {
-    REQUIRED_FILES: REQUIRED_FILES,
-    OPTIONAL_FILES: OPTIONAL_FILES,
+    REQUIRED_TABLES: REQUIRED_TABLES,
+    OPTIONAL_TABLES: OPTIONAL_TABLES,
+    REQUIRED_PARQUET: REQUIRED_PARQUET,
+    OPTIONAL_PARQUET: OPTIONAL_PARQUET,
+    getImportMode: function () { return importMode; },
     initDuckDB: initDuckDB,
     isDatabaseReady: isDatabaseReady,
     importFromDirectory: importFromDirectory,

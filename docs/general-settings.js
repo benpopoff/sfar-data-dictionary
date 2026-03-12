@@ -25,20 +25,13 @@ var GeneralSettingsPage = (function () {
       empty:   'fas fa-database'
     };
     statusIcon.innerHTML = '<i class="' + (iconMap[type] || iconMap.empty) + '"></i>';
-    statusMsg.textContent = msg;
+    statusMsg.innerHTML = msg;
   }
 
   function showButtons(selectFolder, regrant, deleteDb) {
     btnSelectFolder.style.display = selectFolder ? '' : 'none';
     btnRegrant.style.display = regrant ? '' : 'none';
     btnDeleteDb.style.display = deleteDb ? '' : 'none';
-  }
-
-  /* ── Format numbers ────────────────────────────────── */
-
-  function fmtNumber(n) {
-    if (n === null || n === undefined) return '—';
-    return n.toLocaleString();
   }
 
   /* ── Stats display ─────────────────────────────────── */
@@ -48,8 +41,10 @@ var GeneralSettingsPage = (function () {
     var html = '';
     var tables = Object.keys(stats).sort();
     for (var i = 0; i < tables.length; i++) {
+      var name = tables[i];
+      var label = App.escapeHtml(name);
       html += '<div class="vocab-stat-card">' +
-        '<div class="vocab-stat-name">' + App.escapeHtml(tables[i]) + '</div>' +
+        '<div class="vocab-stat-name">' + label + '</div>' +
         '<div class="vocab-stat-count"><i class="fas fa-check-circle" style="color:var(--success)"></i> Linked</div>' +
         '</div>';
     }
@@ -59,20 +54,20 @@ var GeneralSettingsPage = (function () {
 
   /* ── Progress display ──────────────────────────────── */
 
-  function initFileList() {
-    var files = VocabDB.REQUIRED_FILES.concat(VocabDB.OPTIONAL_FILES);
+  function initFileList(fileNames) {
     var html = '';
-    for (var i = 0; i < files.length; i++) {
-      html += '<div class="vocab-file-item" id="file-' + files[i].replace('.csv', '') + '">' +
+    for (var i = 0; i < fileNames.length; i++) {
+      var key = VocabDB.tableName(fileNames[i]);
+      html += '<div class="vocab-file-item" id="file-' + key + '">' +
         '<i class="fas fa-clock vocab-file-icon"></i> ' +
-        '<span class="vocab-file-name">' + files[i] + '</span>' +
+        '<span class="vocab-file-name">' + fileNames[i] + '</span>' +
         '</div>';
     }
     fileListEl.innerHTML = html;
   }
 
   function updateFileStatus(filename, status) {
-    var key = filename.replace('.csv', '');
+    var key = VocabDB.tableName(filename);
     var el = document.getElementById('file-' + key);
     if (!el) return;
     var iconClass = {
@@ -103,6 +98,9 @@ var GeneralSettingsPage = (function () {
     if (info.step === 'done' && info.file) {
       updateFileStatus(info.file, 'done');
     }
+    if (info.step === 'error' && info.file) {
+      updateFileStatus(info.file, 'error');
+    }
     if (info.step === 'indexing') {
       progressLabel.textContent = 'Creating indexes...';
     }
@@ -127,9 +125,10 @@ var GeneralSettingsPage = (function () {
     showButtons(false, false, false);
     progressSection.style.display = '';
     statsSection.style.display = 'none';
-    initFileList();
 
-    VocabDB.importFromDirectory(dirHandle, onProgress)
+    VocabDB.importFromDirectory(dirHandle, function (info) {
+      onProgress(info);
+    })
       .then(function () {
         return checkDatabaseStatus();
       })
@@ -145,7 +144,6 @@ var GeneralSettingsPage = (function () {
     showButtons(false, false, false);
     progressSection.style.display = '';
     statsSection.style.display = 'none';
-    initFileList();
 
     VocabDB.importFromFiles(fileList, onProgress)
       .then(function () {
@@ -228,7 +226,6 @@ var GeneralSettingsPage = (function () {
   }
 
   function checkDatabaseStatus() {
-    /* file:// cannot load ES modules — show helpful message */
     if (window.location.protocol === 'file:') {
       setStatus('error', 'This page requires a local HTTP server. Run: python3 -m http.server 8000 --directory docs');
       showButtons(false, false, false);
@@ -249,7 +246,6 @@ var GeneralSettingsPage = (function () {
           });
         }
 
-        /* DB is empty — try restoring from IndexedDB buffer or stored file handles */
         setStatus('loading', 'Restoring database...');
         return VocabDB.remountFromStoredHandles().then(function (success) {
           if (success) {
@@ -277,7 +273,7 @@ var GeneralSettingsPage = (function () {
     var isSafari = /Safari\//i.test(ua) && !/Chrome\//i.test(ua);
 
     if (isFirefox) {
-      msgEl.textContent = 'Firefox does not support persistent file access. You will need to re-select the vocabulary folder each time you visit the site. Persistent file access is supported by Chrome and Edge.';
+      msgEl.textContent = 'Firefox: vocabulary data will be filtered to concepts used in the catalog. You will also need to re-select the folder each visit. For full vocabulary access, use Chrome or Edge.';
       warningEl.style.display = '';
     } else if (isSafari) {
       msgEl.textContent = 'Safari has limited support for the File System Access API. Vocabulary features may not work correctly. Full support is available in Chrome and Edge.';
@@ -368,4 +364,44 @@ var GeneralSettingsPage = (function () {
     show: show,
     hide: hide
   };
+})();
+
+/* ── Parquet howto toggle (runs at script load, outside IIFE) ── */
+(function () {
+  var toggle = document.getElementById('vocab-parquet-howto-toggle');
+  var howto = document.getElementById('vocab-parquet-howto');
+  if (!toggle || !howto) return;
+
+  toggle.addEventListener('click', function () {
+    var visible = howto.style.display !== 'none';
+    howto.style.display = visible ? 'none' : '';
+    toggle.textContent = visible ? 'Show conversion instructions' : 'Hide instructions';
+  });
+
+  var tabs = howto.querySelectorAll('.vocab-code-tab');
+  var blocks = howto.querySelectorAll('.vocab-code-block');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var lang = tab.getAttribute('data-lang');
+      tabs.forEach(function (t) {
+        var active = t.getAttribute('data-lang') === lang;
+        t.classList.toggle('active', active);
+      });
+      blocks.forEach(function (b) {
+        b.style.display = b.getAttribute('data-lang') === lang ? '' : 'none';
+      });
+    });
+  });
+
+  howto.querySelectorAll('.vocab-code-copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var code = btn.closest('.vocab-code-block').querySelector('code');
+      if (!code) return;
+      navigator.clipboard.writeText(code.textContent).then(function () {
+        var icon = btn.querySelector('i');
+        icon.className = 'fas fa-check';
+        setTimeout(function () { icon.className = 'fas fa-copy'; }, 1500);
+      });
+    });
+  });
 })();
