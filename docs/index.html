@@ -406,7 +406,7 @@
       <button class="panel-tab active" data-tab="context" data-i18n="Description">Description</button>
       <button class="panel-tab" data-tab="variables" data-i18n="Concept Sets">Concept Sets</button>
       <button class="export-btn" id="proj-export-csv" style="margin-left:auto; display:none" title="Export all concepts to CSV">
-        <i class="fas fa-download"></i> Export CSV
+        <i class="fas fa-download"></i> <span data-i18n="Export CSV">Export CSV</span>
       </button>
     </div>
 
@@ -421,19 +421,19 @@
     <div class="panel" id="proj-tab-context-edit" style="display:none">
       <div class="panel-body">
         <div class="project-detail-section">
-          <h4>Long description (EN)</h4>
+          <h4 data-i18n="Long description (EN)">Long description (EN)</h4>
           <div class="md-editor-wrap">
             <div class="md-editor-pane">
-              <textarea class="md-editor-textarea" id="proj-edit-long-desc-en" placeholder="Enter long description in English (Markdown supported)..."></textarea>
+              <textarea class="md-editor-textarea" id="proj-edit-long-desc-en" data-i18n-placeholder="Enter long description in English (Markdown supported)..." placeholder="Enter long description in English (Markdown supported)..."></textarea>
             </div>
             <div class="md-editor-pane md-preview" id="proj-edit-long-desc-en-preview"></div>
           </div>
         </div>
         <div class="project-detail-section">
-          <h4>Long description (FR)</h4>
+          <h4 data-i18n="Long description (FR)">Long description (FR)</h4>
           <div class="md-editor-wrap">
             <div class="md-editor-pane">
-              <textarea class="md-editor-textarea" id="proj-edit-long-desc-fr" placeholder="Entrez la description longue en français (Markdown supporté)..."></textarea>
+              <textarea class="md-editor-textarea" id="proj-edit-long-desc-fr" data-i18n-placeholder="Enter long description in French (Markdown supported)..." placeholder="Entrez la description longue en français (Markdown supporté)..."></textarea>
             </div>
             <div class="md-editor-pane md-preview" id="proj-edit-long-desc-fr-preview"></div>
           </div>
@@ -533,22 +533,22 @@
     <div class="modal-body" style="display:flex; flex-direction:column; gap:12px; padding:20px">
       <div style="display:flex; gap:12px">
         <div style="flex:1">
-          <label class="form-label" for="proj-modal-name-en">Name (EN) *</label>
-          <input type="text" class="form-input" id="proj-modal-name-en" placeholder="Project name (English)">
+          <label class="form-label" for="proj-modal-name-en" data-i18n="Name (EN) *">Name (EN) *</label>
+          <input type="text" class="form-input" id="proj-modal-name-en" data-i18n-placeholder="Project name (English)" placeholder="Project name (English)">
         </div>
         <div style="flex:1">
-          <label class="form-label" for="proj-modal-name-fr">Name (FR)</label>
-          <input type="text" class="form-input" id="proj-modal-name-fr" placeholder="Nom du projet (Français)">
+          <label class="form-label" for="proj-modal-name-fr" data-i18n="Name (FR)">Name (FR)</label>
+          <input type="text" class="form-input" id="proj-modal-name-fr" data-i18n-placeholder="Project name (French)" placeholder="Nom du projet (Français)">
         </div>
       </div>
       <div style="display:flex; gap:12px">
         <div style="flex:1">
-          <label class="form-label" for="proj-modal-short-desc-en">Short description (EN)</label>
-          <input type="text" class="form-input" id="proj-modal-short-desc-en" placeholder="Short description (English)">
+          <label class="form-label" for="proj-modal-short-desc-en" data-i18n="Short description (EN)">Short description (EN)</label>
+          <input type="text" class="form-input" id="proj-modal-short-desc-en" data-i18n-placeholder="Short description (English)" placeholder="Short description (English)">
         </div>
         <div style="flex:1">
-          <label class="form-label" for="proj-modal-short-desc-fr">Short description (FR)</label>
-          <input type="text" class="form-input" id="proj-modal-short-desc-fr" placeholder="Description courte (Français)">
+          <label class="form-label" for="proj-modal-short-desc-fr" data-i18n="Short description (FR)">Short description (FR)</label>
+          <input type="text" class="form-input" id="proj-modal-short-desc-fr" data-i18n-placeholder="Short description (French)" placeholder="Description courte (Français)">
         </div>
       </div>
       <div>
@@ -1046,21 +1046,21 @@ LIMIT 50</div>
 <!-- Review Modal (fullscreen) -->
 <div class="modal-fs" id="review-modal">
   <div class="modal-fs-header">
-    <h3>Add Review</h3>
-    <label style="font-size:12px; font-weight:600; color:var(--text-muted); margin-left:20px">Status:</label>
+    <h3 data-i18n="Add Review">Add Review</h3>
+    <label style="font-size:12px; font-weight:600; color:var(--text-muted); margin-left:20px" data-i18n="Status:">Status:</label>
     <select id="review-status">
-      <option value="">-- Select status --</option>
-      <option value="approved">Approved</option>
-      <option value="needs_revision">Needs Revision</option>
+      <option value="" data-i18n="-- Select status --">-- Select status --</option>
+      <option value="approved" data-i18n="Approved">Approved</option>
+      <option value="needs_revision" data-i18n="Needs Revision">Needs Revision</option>
     </select>
     <button class="btn-success-custom" id="review-submit">
-      <i class="fas fa-check"></i> Submit Review
+      <i class="fas fa-check"></i> <span data-i18n="Submit Review">Submit Review</span>
     </button>
     <button class="modal-fs-close" id="review-modal-close">&times;</button>
   </div>
   <div class="modal-fs-body">
     <div class="modal-fs-col">
-      <div class="modal-fs-col-title"><i class="fas fa-pencil-alt"></i> Markdown Editor</div>
+      <div class="modal-fs-col-title"><i class="fas fa-pencil-alt"></i> <span data-i18n="Editor">Editor</span></div>
       <div id="review-ace-editor"># Review Comments
 
 Enter your review comments here using Markdown syntax.
@@ -1072,8 +1072,8 @@ Enter your review comments here using Markdown syntax.
 </div>
     </div>
     <div class="modal-fs-col">
-      <div class="modal-fs-col-title"><i class="fas fa-eye"></i> Preview</div>
-      <div class="markdown-body" id="review-preview"><div class="markdown-preview-placeholder">Preview will appear here...</div></div>
+      <div class="modal-fs-col-title"><i class="fas fa-eye"></i> <span data-i18n="Preview">Preview</span></div>
+      <div class="markdown-body" id="review-preview"><div class="markdown-preview-placeholder" data-i18n="Preview will appear here...">Preview will appear here...</div></div>
     </div>
   </div>
 </div>
@@ -1082,18 +1082,18 @@ Enter your review comments here using Markdown syntax.
 <div class="modal-overlay" id="cs-delete-confirm-modal" style="display:none">
   <div class="modal" style="width:420px">
     <div class="modal-header">
-      <h3>Delete Concept Sets</h3>
+      <h3 data-i18n="Confirm Delete">Confirm Delete</h3>
       <button class="modal-close" id="cs-delete-confirm-close">&times;</button>
     </div>
     <div class="modal-body" style="text-align:center; padding:24px 20px">
       <i class="fas fa-exclamation-triangle" style="font-size:32px; color:var(--danger); margin-bottom:12px"></i>
-      <p style="font-size:14px; margin-bottom:4px" id="cs-delete-confirm-msg">Are you sure you want to delete the selected concept sets?</p>
-      <p style="font-size:13px; color:var(--text-muted)">This will only remove locally created concept sets. Repository concept sets cannot be deleted.</p>
+      <p style="font-size:14px; margin-bottom:4px" id="cs-delete-confirm-msg"></p>
+      <p style="font-size:13px; color:var(--text-muted)" data-i18n="This will only remove locally created concept sets. Repository concept sets cannot be deleted.">This will only remove locally created concept sets. Repository concept sets cannot be deleted.</p>
     </div>
     <div class="modal-footer">
-      <button class="btn-cancel" id="cs-delete-confirm-cancel">Cancel</button>
+      <button class="btn-cancel" id="cs-delete-confirm-cancel" data-i18n="Cancel">Cancel</button>
       <button class="btn-submit" id="cs-delete-confirm-ok" style="background:var(--danger)">
-        <i class="fas fa-trash"></i> Delete
+        <i class="fas fa-trash"></i> <span data-i18n="Delete">Delete</span>
       </button>
     </div>
   </div>
@@ -1103,22 +1103,22 @@ Enter your review comments here using Markdown syntax.
 <div class="modal-overlay" id="cs-version-modal" style="display:none">
   <div class="modal" style="max-width:520px">
     <div class="modal-header">
-      <h3><i class="fas fa-code-branch"></i> Create New Version</h3>
+      <h3><i class="fas fa-code-branch"></i> <span data-i18n="Create New Version">Create New Version</span></h3>
       <button class="modal-close" id="cs-version-close">&times;</button>
     </div>
     <div class="modal-body">
-      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block">Version</label>
+      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block" data-i18n="Version">Version</label>
       <input type="text" id="cs-version-input" class="form-input" placeholder="e.g., 1.1.0" style="margin-bottom:12px">
-      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block">Change Summary <span style="font-weight:400">(optional)</span></label>
-      <textarea id="cs-version-summary" class="form-input" rows="3" placeholder="Describe what changed..." style="margin-bottom:16px; resize:vertical"></textarea>
+      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block"><span data-i18n="Change Summary (optional)">Change Summary (optional)</span></label>
+      <textarea id="cs-version-summary" class="form-input" rows="3" data-i18n-placeholder="Describe what changed..." placeholder="Describe what changed..." style="margin-bottom:16px; resize:vertical"></textarea>
       <div id="cs-version-history" style="display:none">
-        <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px; display:block">Version History</label>
+        <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px; display:block" data-i18n="Version History">Version History</label>
         <div id="cs-version-history-body" style="max-height:180px; overflow-y:auto"></div>
       </div>
     </div>
     <div class="modal-footer">
-      <button class="btn-cancel" id="cs-version-cancel">Cancel</button>
-      <button class="btn-submit" id="cs-version-save"><i class="fas fa-check"></i> Save</button>
+      <button class="btn-cancel" id="cs-version-cancel" data-i18n="Cancel">Cancel</button>
+      <button class="btn-submit" id="cs-version-save"><i class="fas fa-check"></i> <span data-i18n="Save">Save</span></button>
     </div>
   </div>
 </div>
@@ -1127,22 +1127,22 @@ Enter your review comments here using Markdown syntax.
 <div class="modal-overlay" id="cs-status-modal" style="display:none">
   <div class="modal" style="max-width:400px">
     <div class="modal-header">
-      <h3><i class="fas fa-exchange-alt"></i> Change Status</h3>
+      <h3><i class="fas fa-exchange-alt"></i> <span data-i18n="Change Status">Change Status</span></h3>
       <button class="modal-close" id="cs-status-close">&times;</button>
     </div>
     <div class="modal-body">
-      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block">Status</label>
+      <label style="font-size:12px; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:4px; display:block" data-i18n="Status">Status</label>
       <select id="cs-status-select" class="form-input">
-        <option value="draft">Draft</option>
-        <option value="pending_review">Pending Review</option>
-        <option value="approved">Approved</option>
-        <option value="needs_revision">Needs Revision</option>
-        <option value="deprecated">Deprecated</option>
+        <option value="draft" data-i18n="Draft">Draft</option>
+        <option value="pending_review" data-i18n="Pending Review">Pending Review</option>
+        <option value="approved" data-i18n="Approved">Approved</option>
+        <option value="needs_revision" data-i18n="Needs Revision">Needs Revision</option>
+        <option value="deprecated" data-i18n="Deprecated">Deprecated</option>
       </select>
     </div>
     <div class="modal-footer">
-      <button class="btn-cancel" id="cs-status-cancel">Cancel</button>
-      <button class="btn-submit" id="cs-status-save"><i class="fas fa-check"></i> Save</button>
+      <button class="btn-cancel" id="cs-status-cancel" data-i18n="Cancel">Cancel</button>
+      <button class="btn-submit" id="cs-status-save"><i class="fas fa-check"></i> <span data-i18n="Save">Save</span></button>
     </div>
   </div>
 </div>
@@ -1151,7 +1151,7 @@ Enter your review comments here using Markdown syntax.
 <div class="modal-overlay" id="cs-bulk-export-modal" style="display:none">
   <div class="modal" style="max-width:500px">
     <div class="modal-header">
-      <h3><i class="fas fa-download"></i> Export Concept Sets</h3>
+      <h3><i class="fas fa-download"></i> <span data-i18n="Export Concept Sets">Export Concept Sets</span></h3>
       <button class="modal-close" id="cs-bulk-export-close">&times;</button>
     </div>
     <div class="modal-body">
@@ -1159,22 +1159,22 @@ Enter your review comments here using Markdown syntax.
         <div class="export-option" data-bulk-export="all">
           <div class="export-option-icon"><i class="fas fa-file-archive" style="color:#0f60af"></i></div>
           <div class="export-option-content">
-            <h5 class="export-option-title">Export All</h5>
-            <p class="export-option-subtitle">Download all concept sets as a single JSON file</p>
+            <h5 class="export-option-title" data-i18n="Export All">Export All</h5>
+            <p class="export-option-subtitle" data-i18n="Download all concept sets as a single JSON file">Download all concept sets as a single JSON file</p>
           </div>
         </div>
         <div class="export-option" data-bulk-export="selected" id="cs-bulk-export-selected-option" style="display:none">
           <div class="export-option-icon"><i class="fas fa-check-square" style="color:#f97316"></i></div>
           <div class="export-option-content">
-            <h5 class="export-option-title">Export Selected</h5>
-            <p class="export-option-subtitle" id="cs-bulk-export-selected-desc">Download selected concept sets</p>
+            <h5 class="export-option-title" data-i18n="Export Selected">Export Selected</h5>
+            <p class="export-option-subtitle" id="cs-bulk-export-selected-desc" data-i18n="Download selected concept sets">Download selected concept sets</p>
           </div>
         </div>
         <div class="export-option" data-bulk-export="category">
           <div class="export-option-icon"><i class="fas fa-folder" style="color:#28a745"></i></div>
           <div class="export-option-content">
-            <h5 class="export-option-title">Filter by Category</h5>
-            <p class="export-option-subtitle">Export concept sets from a specific category</p>
+            <h5 class="export-option-title" data-i18n="Filter by Category">Filter by Category</h5>
+            <p class="export-option-subtitle" data-i18n="Export concept sets from a specific category">Export concept sets from a specific category</p>
           </div>
         </div>
       </div>
@@ -1187,7 +1187,7 @@ Enter your review comments here using Markdown syntax.
       </div>
     </div>
     <div class="modal-footer">
-      <button class="btn-cancel" id="cs-bulk-export-cancel">Cancel</button>
+      <button class="btn-cancel" id="cs-bulk-export-cancel" data-i18n="Cancel">Cancel</button>
     </div>
   </div>
 </div>
@@ -1196,19 +1196,19 @@ Enter your review comments here using Markdown syntax.
 <div class="modal-overlay" id="cs-create-modal" style="display:none">
   <div class="modal" style="width:520px">
     <div class="modal-header">
-      <h3 id="cs-create-modal-title"><i class="fas fa-plus"></i> New Concept Set</h3>
+      <h3 id="cs-create-modal-title"><i class="fas fa-plus"></i> <span data-i18n="New Concept Set">New Concept Set</span></h3>
       <button class="modal-close" id="cs-create-close">&times;</button>
     </div>
     <div class="modal-body">
       <div class="form-group">
-        <label>Name *</label>
-        <input type="text" id="cs-create-name" class="form-input" placeholder="e.g. Heart Rate">
+        <label data-i18n="Name *">Name *</label>
+        <input type="text" id="cs-create-name" class="form-input" data-i18n-placeholder="e.g. Heart Rate" placeholder="e.g. Heart Rate">
       </div>
       <div class="form-group">
-        <label>Category *</label>
+        <label data-i18n="Category *">Category *</label>
         <div class="input-with-add">
           <select id="cs-create-cat" class="form-input">
-            <option value="">Select a category...</option>
+            <option value="" data-i18n="Select a category...">Select a category...</option>
           </select>
           <button class="btn-outline-sm" id="cs-create-cat-add" title="Add new category"><i class="fas fa-plus"></i></button>
         </div>
@@ -1217,10 +1217,10 @@ Enter your review comments here using Markdown syntax.
         </div>
       </div>
       <div class="form-group">
-        <label>Subcategory</label>
+        <label data-i18n="Subcategory">Subcategory</label>
         <div class="input-with-add">
           <select id="cs-create-subcat" class="form-input">
-            <option value="">Select a subcategory...</option>
+            <option value="" data-i18n="Select a subcategory...">Select a subcategory...</option>
           </select>
           <button class="btn-outline-sm" id="cs-create-subcat-add" title="Add new subcategory"><i class="fas fa-plus"></i></button>
         </div>
@@ -1229,13 +1229,13 @@ Enter your review comments here using Markdown syntax.
         </div>
       </div>
       <div class="form-group">
-        <label>Description</label>
-        <textarea id="cs-create-desc" class="form-input" rows="3" placeholder="Brief description of the concept set..."></textarea>
+        <label data-i18n="Description">Description</label>
+        <textarea id="cs-create-desc" class="form-input" rows="3" data-i18n-placeholder="Brief description of the concept set..." placeholder="Brief description of the concept set..."></textarea>
       </div>
     </div>
     <div class="modal-footer">
-      <button class="btn-cancel" id="cs-create-cancel">Cancel</button>
-      <button class="btn-submit" id="cs-create-submit"><i class="fas fa-plus"></i> Create</button>
+      <button class="btn-cancel" id="cs-create-cancel" data-i18n="Cancel">Cancel</button>
+      <button class="btn-submit" id="cs-create-submit"><i class="fas fa-plus"></i> <span data-i18n="Create">Create</span></button>
     </div>
   </div>
 </div>
@@ -1244,19 +1244,19 @@ Enter your review comments here using Markdown syntax.
 <div class="modal-overlay" id="expr-import-modal" style="display:none">
   <div class="modal" style="width:700px; max-height:85vh">
     <div class="modal-header">
-      <h3><i class="fas fa-file-import"></i> Import ATLAS JSON</h3>
+      <h3><i class="fas fa-file-import"></i> <span data-i18n="Import ATLAS JSON">Import ATLAS JSON</span></h3>
       <button class="modal-close" id="expr-import-close">&times;</button>
     </div>
     <div class="modal-body">
-      <p style="font-size:13px; color:var(--text-muted); margin-bottom:8px">
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:8px" data-i18n='Paste an ATLAS concept set expression JSON. Format: {"items": [...]}'>
         Paste an ATLAS concept set expression JSON. Format: <code>{"items": [...]}</code>
       </p>
       <div id="expr-import-ace" style="height:350px; border:1px solid var(--border); border-radius:var(--radius)"></div>
       <div id="expr-import-error" style="margin-top:8px; font-size:12px; color:var(--danger); display:none"></div>
     </div>
     <div class="modal-footer">
-      <button class="btn-cancel" id="expr-import-cancel">Cancel</button>
-      <button class="btn-submit" id="expr-import-submit"><i class="fas fa-file-import"></i> Import</button>
+      <button class="btn-cancel" id="expr-import-cancel" data-i18n="Cancel">Cancel</button>
+      <button class="btn-submit" id="expr-import-submit"><i class="fas fa-file-import"></i> <span data-i18n="Import">Import</span></button>
     </div>
   </div>
 </div>
@@ -1265,15 +1265,15 @@ Enter your review comments here using Markdown syntax.
 <div class="modal-overlay" id="expr-optimize-modal" style="display:none">
   <div class="modal" style="width:700px; max-height:85vh">
     <div class="modal-header">
-      <h3><i class="fas fa-magic"></i> Optimize Expression</h3>
+      <h3><i class="fas fa-magic"></i> <span data-i18n="Optimize Expression">Optimize Expression</span></h3>
       <button class="modal-close" id="expr-optimize-close">&times;</button>
     </div>
     <div class="modal-body" id="expr-optimize-body">
-      <div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> Analyzing hierarchy...</div>
+      <div class="loading-inline"><i class="fas fa-spinner fa-spin"></i> <span data-i18n="Analyzing hierarchy...">Analyzing hierarchy...</span></div>
     </div>
     <div class="modal-footer" id="expr-optimize-footer" style="display:none">
-      <button class="btn-cancel" id="expr-optimize-cancel">Cancel</button>
-      <button class="btn-submit" id="expr-optimize-apply"><i class="fas fa-check"></i> Apply Optimization</button>
+      <button class="btn-cancel" id="expr-optimize-cancel" data-i18n="Cancel">Cancel</button>
+      <button class="btn-submit" id="expr-optimize-apply"><i class="fas fa-check"></i> <span data-i18n="Apply Optimization">Apply Optimization</span></button>
     </div>
   </div>
 </div>
@@ -1281,56 +1281,56 @@ Enter your review comments here using Markdown syntax.
 <!-- Expression editor: Add Concepts fullscreen modal -->
 <div class="modal-fs" id="expr-add-modal">
   <div class="modal-fs-header">
-    <h3>Add Concepts</h3>
+    <h3 data-i18n="Add Concepts">Add Concepts</h3>
     <button class="modal-fs-close" id="expr-add-close">&times;</button>
   </div>
   <div class="modal-fs-body" style="flex:1; display:flex; flex-direction:column; min-height:0; padding:16px">
     <!-- No DB message -->
     <div id="expr-add-no-db" style="display:none; padding:20px; text-align:center; color:var(--text-muted); font-size:13px">
       <i class="fas fa-info-circle" style="color:var(--primary); margin-right:6px"></i>
-      Load OHDSI vocabularies in <a href="#/general-settings" style="color:var(--primary); font-weight:600">General Settings</a> to search concepts.
+      <span data-i18n="Load OHDSI vocabularies in General Settings to search concepts.">Load OHDSI vocabularies in General Settings to search concepts.</span>
     </div>
     <!-- Search bar -->
     <div id="expr-add-search-row" style="display:flex; gap:8px; margin-bottom:12px; align-items:center; position:relative">
-      <input type="text" class="form-input" id="expr-add-search" placeholder="Search concepts by name, code, or ID..." style="flex:1">
-      <button class="btn-primary-custom" id="expr-add-search-btn"><i class="fas fa-search"></i> Search</button>
+      <input type="text" class="form-input" id="expr-add-search" data-i18n-placeholder="Search concepts by name, code, or ID..." placeholder="Search concepts by name, code, or ID..." style="flex:1">
+      <button class="btn-primary-custom" id="expr-add-search-btn"><i class="fas fa-search"></i> <span data-i18n="Search">Search</span></button>
       <div style="position:relative">
-        <button class="btn-primary-custom btn-gray" id="expr-add-filters-btn" title="Filters"><i class="fas fa-filter"></i> Filters</button>
+        <button class="btn-primary-custom btn-gray" id="expr-add-filters-btn" title="Filters"><i class="fas fa-filter"></i> <span data-i18n="Filters">Filters</span></button>
         <!-- Filters popup -->
         <div id="expr-add-filters-popup" class="expr-add-filters-popup" style="display:none">
           <div class="expr-add-filters-row">
-            <label>Vocabulary</label>
+            <label data-i18n="Vocabulary">Vocabulary</label>
             <div class="ms-container" id="expr-add-filter-vocab" style="flex:1"></div>
           </div>
           <div class="expr-add-filters-row">
-            <label>Domain</label>
+            <label data-i18n="Domain">Domain</label>
             <div class="ms-container" id="expr-add-filter-domain" style="flex:1"></div>
           </div>
           <div class="expr-add-filters-row">
-            <label>Class</label>
+            <label data-i18n="Class">Class</label>
             <div class="ms-container" id="expr-add-filter-class" style="flex:1"></div>
           </div>
           <div class="expr-add-filters-row">
-            <label>Standard</label>
+            <label data-i18n="Standard">Standard</label>
             <select class="form-input form-input-sm" id="expr-add-filter-standard">
-              <option value="">All</option>
-              <option value="S" selected>Standard</option>
-              <option value="C">Classification</option>
-              <option value="non">Non-standard</option>
+              <option value="" data-i18n="All">All</option>
+              <option value="S" selected data-i18n="Standard">Standard</option>
+              <option value="C" data-i18n="Classification">Classification</option>
+              <option value="non" data-i18n="Non-standard">Non-standard</option>
             </select>
           </div>
           <div class="expr-add-filters-row">
-            <label>Valid only</label>
+            <label data-i18n="Valid only">Valid only</label>
             <input type="checkbox" id="expr-add-filter-valid" checked>
           </div>
           <div style="display:flex; gap:6px; justify-content:flex-end; margin-top:8px">
-            <button class="btn-primary-custom btn-gray" id="expr-add-filters-clear" style="font-size:12px">Clear</button>
-            <button class="btn-primary-custom" id="expr-add-filters-apply" style="font-size:12px">Apply</button>
+            <button class="btn-primary-custom btn-gray" id="expr-add-filters-clear" style="font-size:12px" data-i18n="Clear">Clear</button>
+            <button class="btn-primary-custom" id="expr-add-filters-apply" style="font-size:12px" data-i18n="Apply">Apply</button>
           </div>
         </div>
       </div>
       <label style="display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--text-muted); white-space:nowrap; cursor:pointer">
-        <input type="checkbox" id="expr-add-limit" checked> Limit 10K
+        <input type="checkbox" id="expr-add-limit" checked> <span data-i18n="Limit 10K">Limit 10K</span>
       </label>
     </div>
     <!-- Top: Results table -->
@@ -1339,13 +1339,13 @@ Enter your review comments here using Markdown syntax.
         <thead>
           <tr>
             <th class="expr-add-check-col" style="width:36px"><input type="checkbox" id="expr-add-select-all"></th>
-            <th>Concept ID</th>
-            <th>Concept Name</th>
-            <th>Vocabulary</th>
-            <th>Code</th>
-            <th>Domain</th>
-            <th>Class</th>
-            <th style="text-align:center">Standard</th>
+            <th data-i18n="Concept ID">Concept ID</th>
+            <th data-i18n="Concept Name">Concept Name</th>
+            <th data-i18n="Vocabulary">Vocabulary</th>
+            <th data-i18n="Concept Code">Code</th>
+            <th data-i18n="Domain">Domain</th>
+            <th data-i18n="Class">Class</th>
+            <th style="text-align:center" data-i18n="Standard">Standard</th>
           </tr>
           <tr class="filter-row" id="expr-add-col-filter-row">
             <th class="expr-add-check-col"></th>
@@ -1370,15 +1370,15 @@ Enter your review comments here using Markdown syntax.
     <!-- Bottom: Details (left) + Hierarchy (right) -->
     <div id="expr-add-bottom" class="expr-add-bottom">
       <div class="expr-add-detail-panel" id="expr-add-detail-panel">
-        <div class="expr-add-panel-title">Concept Details</div>
+        <div class="expr-add-panel-title" data-i18n="Concept Details">Concept Details</div>
         <div id="expr-add-detail-body" class="expr-add-detail-body">
-          <div class="empty-state"><p>Select a concept to view details</p></div>
+          <div class="empty-state"><p data-i18n="Select a concept to view details">Select a concept to view details</p></div>
         </div>
       </div>
       <div class="expr-add-hierarchy-panel" id="expr-add-hierarchy-panel">
-        <div class="expr-add-panel-title">Hierarchy</div>
+        <div class="expr-add-panel-title" data-i18n="Hierarchy">Hierarchy</div>
         <div id="expr-add-hierarchy-body" class="expr-add-hierarchy-body">
-          <div class="empty-state"><p>Select a concept to view hierarchy</p></div>
+          <div class="empty-state"><p data-i18n="Select a concept to view hierarchy">Select a concept to view hierarchy</p></div>
         </div>
       </div>
     </div>
@@ -1386,21 +1386,21 @@ Enter your review comments here using Markdown syntax.
   <div class="modal-fs-footer">
     <div class="expr-add-toggles">
       <label style="display:inline-flex; align-items:center; gap:6px; font-size:13px; cursor:pointer">
-        <input type="checkbox" id="expr-add-multiple"> Multiple Selection
+        <input type="checkbox" id="expr-add-multiple"> <span data-i18n="Multiple Selection">Multiple Selection</span>
       </label>
     </div>
     <div style="display:flex; align-items:center; gap:12px">
       <label class="toggle-switch toggle-sm toggle-exclude">
         <input type="checkbox" id="expr-add-exclude"><span class="toggle-slider"></span>
-      </label> <span style="font-size:13px; font-weight:500">Exclude</span>
+      </label> <span style="font-size:13px; font-weight:500" data-i18n="Exclude">Exclude</span>
       <label class="toggle-switch toggle-sm">
         <input type="checkbox" id="expr-add-descendants"><span class="toggle-slider"></span>
-      </label> <span style="font-size:13px; font-weight:500">Descendants</span>
+      </label> <span style="font-size:13px; font-weight:500" data-i18n="Descendants">Descendants</span>
       <label class="toggle-switch toggle-sm">
         <input type="checkbox" id="expr-add-mapped"><span class="toggle-slider"></span>
-      </label> <span style="font-size:13px; font-weight:500">Mapped</span>
-      <span id="expr-add-count" style="font-size:12px; color:var(--text-muted)">0 selected</span>
-      <button class="btn-success-custom" id="expr-add-submit" disabled><i class="fas fa-plus"></i> Add Concepts</button>
+      </label> <span style="font-size:13px; font-weight:500" data-i18n="Mapped">Mapped</span>
+      <span id="expr-add-count" style="font-size:12px; color:var(--text-muted)" data-i18n="0 selected">0 selected</span>
+      <button class="btn-success-custom" id="expr-add-submit" disabled><i class="fas fa-plus"></i> <span data-i18n="Add Concepts">Add Concepts</span></button>
     </div>
   </div>
 </div>

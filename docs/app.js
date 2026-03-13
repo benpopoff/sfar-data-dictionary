@@ -195,6 +195,19 @@ var App = (function() {
     'Are you sure you want to delete this project?': { fr: 'Êtes-vous sûr de vouloir supprimer ce projet ?' },
     'Add Project':                   { fr: 'Ajouter un projet' },
     'Search projects...':            { fr: 'Rechercher des projets...' },
+    'Name (EN) *':                   { fr: 'Nom (EN) *' },
+    'Name (FR)':                     { fr: 'Nom (FR)' },
+    'Project name (English)':        { fr: 'Nom du projet (Anglais)' },
+    'Project name (French)':         { fr: 'Nom du projet (Français)' },
+    'Short description (EN)':        { fr: 'Description courte (EN)' },
+    'Short description (FR)':        { fr: 'Description courte (FR)' },
+    'Short description (English)':   { fr: 'Description courte (Anglais)' },
+    'Short description (French)':    { fr: 'Description courte (Français)' },
+    'Long description (EN)':         { fr: 'Description longue (EN)' },
+    'Long description (FR)':         { fr: 'Description longue (FR)' },
+    'Enter long description in English (Markdown supported)...': { fr: 'Saisir la description longue en anglais (Markdown supporté)...' },
+    'Enter long description in French (Markdown supported)...': { fr: 'Saisir la description longue en français (Markdown supporté)...' },
+    'Export CSV':                    { fr: 'Exporter CSV' },
 
     // Profile modal
     'Edit Profile':                  { fr: 'Modifier le profil' },
@@ -277,6 +290,9 @@ var App = (function() {
 
     // Confirm Delete
     'Confirm Delete':                { fr: 'Confirmer la suppression' },
+    'This will only remove locally created concept sets. Repository concept sets cannot be deleted.': { fr: 'Seuls les jeux de concepts créés localement seront supprimés. Les jeux de concepts du dépôt ne peuvent pas être supprimés.' },
+    'Create New Version':            { fr: 'Créer une nouvelle version' },
+    'Import':                        { fr: 'Importer' },
 
     // Toast messages
     'Expression saved':              { fr: 'Expression enregistrée' },
@@ -419,7 +435,15 @@ var App = (function() {
   function renderMarkdown(s) {
     if (!s) return '';
     if (typeof marked !== 'undefined' && marked.parse) {
-      return marked.parse(s);
+      var renderer = new marked.Renderer();
+      renderer.link = function(token) {
+        var h = typeof token === 'object' ? token.href : token;
+        var ti = typeof token === 'object' ? token.title : arguments[1];
+        var tx = typeof token === 'object' ? token.text : arguments[2];
+        var t = ti ? ' title="' + escapeHtml(ti) + '"' : '';
+        return '<a href="' + escapeHtml(h) + '"' + t + ' target="_blank" rel="noopener noreferrer">' + (tx || '') + '</a>';
+      };
+      return marked.parse(s, { renderer: renderer });
     }
     // Fallback if marked not loaded
     var html = escapeHtml(s);
