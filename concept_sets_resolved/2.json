@@ -1,4 +1,14 @@
 {
   "conceptSetId": 2,
-  "resolvedConcepts": []
+  "resolvedConcepts": [
+    {
+      "conceptId": 3662219,
+      "conceptName": "4AT - 4 A's Test",
+      "vocabularyId": "SNOMED",
+      "domainId": "Measurement",
+      "conceptClassId": "Staging / Scales",
+      "conceptCode": "1239191000000102",
+      "standardConcept": "S"
+    }
+  ]
 }
