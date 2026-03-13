@@ -117,6 +117,7 @@ var App = (function() {
     'Standard':                      { fr: 'Standard' },
     'Concept Class':                 { fr: 'Classe du concept' },
     'Date':                          { fr: 'Date' },
+    'Reset to Template':             { fr: 'Réinitialiser le modèle' },
 
     // Status labels
     'Draft':                         { fr: 'Brouillon' },
