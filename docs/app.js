@@ -19,6 +19,8 @@ var App = (function() {
   var homeCallbacks = [];
   var userConceptSets = JSON.parse(localStorage.getItem('indicate_user_cs') || '[]');
   var userProjects = JSON.parse(localStorage.getItem('indicate_user_proj') || '[]');
+  var modifiedCsIds = new Set(JSON.parse(localStorage.getItem('indicate_modified_cs_ids') || '[]'));
+  var modifiedProjIds = new Set(JSON.parse(localStorage.getItem('indicate_modified_proj_ids') || '[]'));
 
   // Migrate legacy project format (name/description/justification/bibliography → translations)
   (function migrateProjects() {
@@ -72,6 +74,164 @@ var App = (function() {
     if (callback) callback();
   }
 
+  // ==================== DATA UPDATE / MERGE ====================
+
+  function reloadMergedData() {
+    var hiddenIds = JSON.parse(localStorage.getItem('indicate_hidden_cs') || '[]');
+    var hiddenSet = {};
+    hiddenIds.forEach(function(id) { hiddenSet[id] = true; });
+    var userIdSet = {};
+    userConceptSets.forEach(function(cs) { userIdSet[cs.id] = true; });
+    var repoCS = (DATA.conceptSets || []).filter(function(cs) { return !hiddenSet[cs.id] && !userIdSet[cs.id]; });
+    conceptSets = repoCS.concat(userConceptSets);
+
+    var hiddenProjIds = JSON.parse(localStorage.getItem('indicate_hidden_proj') || '[]');
+    var hiddenProjSet = {};
+    hiddenProjIds.forEach(function(id) { hiddenProjSet[id] = true; });
+    var userProjIdSet = {};
+    userProjects.forEach(function(p) { userProjIdSet[p.id] = true; });
+    var repoProj = (DATA.projects || []).filter(function(p) { return !hiddenProjSet[p.id] && !userProjIdSet[p.id]; });
+    projects = repoProj.concat(userProjects);
+  }
+
+  function computeMerge() {
+    var remoteById = {};
+    (DATA.conceptSets || []).forEach(function(cs) { remoteById[cs.id] = cs; });
+
+    var result = { updated: [], added: [], conflicts: [], kept: [] };
+
+    userConceptSets.forEach(function(cs) {
+      if (!remoteById[cs.id]) {
+        // Locally created — keep
+        result.kept.push(cs.id);
+      } else if (modifiedCsIds.has(cs.id)) {
+        // Modified locally AND exists in remote — conflict
+        result.conflicts.push({ id: cs.id, local: cs, remote: remoteById[cs.id] });
+      } else {
+        // In user CS but not marked as modified — stale override, update silently
+        result.updated.push(cs.id);
+      }
+    });
+
+    // Check for new concept sets in remote that are hidden locally (user deleted them before)
+    // We don't re-add those — the hidden list takes precedence.
+
+    return result;
+  }
+
+  function applySilentMerge(result) {
+    var removeIds = {};
+    result.updated.forEach(function(id) { removeIds[id] = true; });
+    userConceptSets = userConceptSets.filter(function(cs) { return !removeIds[cs.id]; });
+    result.updated.forEach(function(id) { modifiedCsIds.delete(id); });
+    saveUserConceptSets();
+    saveModifiedCsIds();
+  }
+
+  function showMergeModal(result, newVersion, newHash) {
+    var body = document.getElementById('data-update-body');
+    if (!body) return;
+
+    var html = '<p style="margin-bottom:12px">' +
+      i18n('New data has been published. Some concept sets you modified locally have also changed remotely.') + '</p>';
+
+    if (result.updated.length > 0) {
+      html += '<p style="color:var(--text-muted); font-size:13px"><i class="fas fa-check" style="color:var(--accent-green)"></i> ' +
+        result.updated.length + ' ' + i18n('concept set(s) updated automatically') + '</p>';
+    }
+
+    html += '<table class="table" style="font-size:13px; margin-top:8px"><thead><tr>' +
+      '<th>ID</th><th>' + i18n('Name') + '</th><th>' + i18n('Local Modified') + '</th><th>' + i18n('Remote Modified') + '</th><th>' + i18n('Keep') + '</th>' +
+      '</tr></thead><tbody>';
+
+    result.conflicts.forEach(function(c) {
+      var localName = t(c.local, 'name');
+      html += '<tr>' +
+        '<td>' + c.id + '</td>' +
+        '<td>' + escapeHtml(localName) + '</td>' +
+        '<td>' + escapeHtml(c.local.modifiedDate || '?') + '</td>' +
+        '<td>' + escapeHtml(c.remote.modifiedDate || '?') + '</td>' +
+        '<td style="white-space:nowrap">' +
+          '<label style="margin-right:8px"><input type="radio" name="merge-' + c.id + '" value="local" checked> ' + i18n('Local') + '</label>' +
+          '<label><input type="radio" name="merge-' + c.id + '" value="remote"> ' + i18n('Remote') + '</label>' +
+        '</td></tr>';
+    });
+
+    html += '</tbody></table>';
+    body.innerHTML = html;
+    document.getElementById('data-update-modal').style.display = '';
+
+    // Store pending merge info for the apply handler
+    window._pendingMerge = { result: result, newVersion: newVersion, newHash: newHash };
+  }
+
+  function applyMergeDecisions() {
+    var merge = window._pendingMerge;
+    if (!merge) return;
+
+    // Apply silent updates first
+    applySilentMerge(merge.result);
+
+    // Process conflict resolutions
+    merge.result.conflicts.forEach(function(c) {
+      var radios = document.querySelectorAll('input[name="merge-' + c.id + '"]');
+      var choice = 'local';
+      radios.forEach(function(r) { if (r.checked) choice = r.value; });
+      if (choice === 'remote') {
+        userConceptSets = userConceptSets.filter(function(cs) { return cs.id !== c.id; });
+        modifiedCsIds.delete(c.id);
+      }
+    });
+
+    saveUserConceptSets();
+    saveModifiedCsIds();
+    localStorage.setItem('indicate_data_version', merge.newVersion);
+    localStorage.setItem('indicate_data_hash', merge.newHash);
+    reloadMergedData();
+
+    document.getElementById('data-update-modal').style.display = 'none';
+    delete window._pendingMerge;
+
+    showToast(i18n('Data updated successfully'), 'success');
+    // Trigger re-render on page modules
+    languageChangeCallbacks.forEach(function(cb) { cb(); });
+  }
+
+  function checkForDataUpdate() {
+    var currentVersion = DATA.dataVersion || null;
+    var currentHash = DATA.dataHash || null;
+    var lastKnownVersion = localStorage.getItem('indicate_data_version');
+    var lastKnownHash = localStorage.getItem('indicate_data_hash');
+
+    // First visit — just store version, no merge needed
+    if (!lastKnownVersion) {
+      localStorage.setItem('indicate_data_version', currentVersion);
+      localStorage.setItem('indicate_data_hash', currentHash);
+      return;
+    }
+
+    // No content change (hash matches)
+    if (currentHash && currentHash === lastKnownHash) {
+      localStorage.setItem('indicate_data_version', currentVersion);
+      return;
+    }
+
+    // Data changed — compute merge
+    var result = computeMerge();
+    if (result.conflicts.length === 0) {
+      applySilentMerge(result);
+      localStorage.setItem('indicate_data_version', currentVersion);
+      localStorage.setItem('indicate_data_hash', currentHash);
+      reloadMergedData();
+      if (result.updated.length > 0) {
+        showToast(i18n('Data updated') + ': ' + result.updated.length + ' ' + i18n('concept set(s) updated'), 'info');
+      }
+    } else {
+      // Apply non-conflicting updates, then show modal for conflicts
+      showMergeModal(result, currentVersion, currentHash);
+    }
+  }
+
   // ==================== I18N DICTIONARY ====================
   var I18N = {
     // Navigation & Header
@@ -84,6 +244,22 @@ var App = (function() {
     'General Settings':              { fr: 'Paramètres généraux' },
     'Dictionary Settings':           { fr: 'Paramètres du dictionnaire' },
     'Dev Tools':                     { fr: 'Outils de développement' },
+
+    // Data update / merge
+    'Data Update Available':         { fr: 'Mise \u00e0 jour disponible' },
+    'Data updated':                  { fr: 'Donn\u00e9es mises \u00e0 jour' },
+    'Data updated successfully':     { fr: 'Donn\u00e9es mises \u00e0 jour avec succ\u00e8s' },
+    'concept set(s) updated':        { fr: 'jeu(x) de concepts mis \u00e0 jour' },
+    'concept set(s) updated automatically': { fr: 'jeu(x) de concepts mis \u00e0 jour automatiquement' },
+    'New data has been published. Some concept sets you modified locally have also changed remotely.':
+      { fr: 'De nouvelles donn\u00e9es ont \u00e9t\u00e9 publi\u00e9es. Certains jeux de concepts que vous avez modifi\u00e9s localement ont aussi chang\u00e9 \u00e0 distance.' },
+    'Local Modified':                { fr: 'Modifi\u00e9 local' },
+    'Remote Modified':               { fr: 'Modifi\u00e9 distant' },
+    'Keep':                          { fr: 'Conserver' },
+    'Local':                         { fr: 'Locale' },
+    'Remote':                        { fr: 'Distante' },
+    'Later':                         { fr: 'Plus tard' },
+    'Apply Updates':                 { fr: 'Appliquer les mises \u00e0 jour' },
 
     // Common actions
     'Cancel':                        { fr: 'Annuler' },
@@ -854,6 +1030,30 @@ var App = (function() {
       });
     }
 
+    // Data update modal
+    var dataUpdateApply = document.getElementById('data-update-apply');
+    if (dataUpdateApply) {
+      dataUpdateApply.addEventListener('click', applyMergeDecisions);
+    }
+    var dataUpdateLater = document.getElementById('data-update-later');
+    if (dataUpdateLater) {
+      dataUpdateLater.addEventListener('click', function() {
+        document.getElementById('data-update-modal').style.display = 'none';
+      });
+    }
+    var dataUpdateClose = document.getElementById('data-update-close');
+    if (dataUpdateClose) {
+      dataUpdateClose.addEventListener('click', function() {
+        document.getElementById('data-update-modal').style.display = 'none';
+      });
+    }
+    var dataUpdateModal = document.getElementById('data-update-modal');
+    if (dataUpdateModal) {
+      dataUpdateModal.addEventListener('click', function(e) {
+        if (e.target === this) this.style.display = 'none';
+      });
+    }
+
     // Settings dropdown
     var navSettingsBtn = document.getElementById('nav-settings-btn');
     var navSettingsMenu = document.getElementById('nav-settings-menu');
@@ -924,6 +1124,9 @@ var App = (function() {
     }
     if (!found) userConceptSets.push(cs);
     saveUserConceptSets();
+    // Track as locally modified if it's a repo concept set
+    var isRepoCs = (DATA.conceptSets || []).some(function(rc) { return rc.id === cs.id; });
+    if (isRepoCs) { modifiedCsIds.add(cs.id); saveModifiedCsIds(); }
   }
 
   function deleteConceptSets(ids) {
@@ -963,6 +1166,13 @@ var App = (function() {
     localStorage.setItem('indicate_user_proj', JSON.stringify(userProjects));
   }
 
+  function saveModifiedCsIds() {
+    localStorage.setItem('indicate_modified_cs_ids', JSON.stringify(Array.from(modifiedCsIds)));
+  }
+  function saveModifiedProjIds() {
+    localStorage.setItem('indicate_modified_proj_ids', JSON.stringify(Array.from(modifiedProjIds)));
+  }
+
   function addProject(proj) {
     projects.push(proj);
     userProjects.push(proj);
@@ -979,6 +1189,8 @@ var App = (function() {
     }
     if (!found) userProjects.push(proj);
     saveUserProjects();
+    var isRepoProj = (DATA.projects || []).some(function(rp) { return rp.id === proj.id; });
+    if (isRepoProj) { modifiedProjIds.add(proj.id); saveModifiedProjIds(); }
   }
 
   function deleteProject(id) {
@@ -1094,6 +1306,7 @@ var App = (function() {
 
     // Functions
     loadData: loadData,
+    checkForDataUpdate: checkForDataUpdate,
     t: t,
     tProj: tProj,
     escapeHtml: escapeHtml,

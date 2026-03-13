@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build docs/data_inline.js and docs/data.json from concept_sets/, projects/, units/ and etl_guidelines/."""
 
+import datetime
+import hashlib
 import json
 import glob
 import os
@@ -46,7 +48,16 @@ def main():
     recommended_units = load_json_file(os.path.join(ROOT, "units", "recommended_units.json"))
     etl_guidelines = load_text_file(os.path.join(ROOT, "etl_guidelines", "etl_guidelines.md"))
 
+    # Compute a content hash from concept set fingerprints (id + modifiedDate + version)
+    cs_fingerprint = "|".join(
+        str(cs["id"]) + ":" + cs.get("modifiedDate", "") + ":" + cs.get("version", "")
+        for cs in concept_sets
+    )
+    data_hash = hashlib.sha256(cs_fingerprint.encode()).hexdigest()[:16]
+
     data = {
+        "dataVersion": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "dataHash": data_hash,
         "conceptSets": concept_sets,
         "projects": projects,
         "resolvedConceptSets": resolved,

@@ -83,6 +83,7 @@
 
   // Boot the app
   App.loadData();
+  App.checkForDataUpdate();
   App.updateUserBadge();
   App.updateOrgBadge();
   App.initSharedEvents();
