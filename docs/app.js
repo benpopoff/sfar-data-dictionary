@@ -76,6 +76,19 @@ var App = (function() {
 
   // ==================== DATA UPDATE / MERGE ====================
 
+  /** Build a fingerprint map: { id: "modifiedDate|version" } for each concept set in DATA */
+  function buildCsFingerprints() {
+    var fp = {};
+    (DATA.conceptSets || []).forEach(function(cs) {
+      fp[cs.id] = (cs.modifiedDate || '') + '|' + (cs.version || '');
+    });
+    return fp;
+  }
+
+  function saveCsFingerprints(fp) {
+    localStorage.setItem('indicate_cs_fingerprints', JSON.stringify(fp));
+  }
+
   function reloadMergedData() {
     var hiddenIds = JSON.parse(localStorage.getItem('indicate_hidden_cs') || '[]');
     var hiddenSet = {};
@@ -94,11 +107,50 @@ var App = (function() {
     projects = repoProj.concat(userProjects);
   }
 
+  /**
+   * Compare old fingerprints (stored) with new DATA to find what changed remotely.
+   * Returns { remoteChanged: [{id, name, oldVersion, newVersion, oldDate, newDate}], newlyAdded: [...] }
+   */
+  function detectRemoteChanges(oldFingerprints) {
+    var changes = { remoteChanged: [], newlyAdded: [] };
+    var newFp = buildCsFingerprints();
+    var remoteById = {};
+    (DATA.conceptSets || []).forEach(function(cs) { remoteById[cs.id] = cs; });
+
+    Object.keys(newFp).forEach(function(idStr) {
+      var id = parseInt(idStr);
+      var cs = remoteById[id];
+      if (!cs) return;
+      var csName = (cs.metadata && cs.metadata.translations && cs.metadata.translations[lang])
+        ? cs.metadata.translations[lang].name : cs.name || '';
+      if (!oldFingerprints[idStr]) {
+        // New concept set added to repo
+        changes.newlyAdded.push({ id: id, name: csName, version: cs.version || '?' });
+      } else if (oldFingerprints[idStr] !== newFp[idStr]) {
+        // Changed remotely
+        var oldParts = oldFingerprints[idStr].split('|');
+        changes.remoteChanged.push({
+          id: id,
+          name: csName,
+          oldDate: oldParts[0] || '?',
+          newDate: cs.modifiedDate || '?',
+          oldVersion: oldParts[1] || '?',
+          newVersion: cs.version || '?'
+        });
+      }
+    });
+    return changes;
+  }
+
+  /**
+   * Compute merge for user-modified concept sets.
+   * Returns { autoUpdated: [ids], conflicts: [{id, local, remote}], kept: [ids] }
+   */
   function computeMerge() {
     var remoteById = {};
     (DATA.conceptSets || []).forEach(function(cs) { remoteById[cs.id] = cs; });
 
-    var result = { updated: [], added: [], conflicts: [], kept: [] };
+    var result = { autoUpdated: [], conflicts: [], kept: [] };
 
     userConceptSets.forEach(function(cs) {
       if (!remoteById[cs.id]) {
@@ -109,71 +161,125 @@ var App = (function() {
         result.conflicts.push({ id: cs.id, local: cs, remote: remoteById[cs.id] });
       } else {
         // In user CS but not marked as modified — stale override, update silently
-        result.updated.push(cs.id);
+        result.autoUpdated.push(cs.id);
       }
     });
-
-    // Check for new concept sets in remote that are hidden locally (user deleted them before)
-    // We don't re-add those — the hidden list takes precedence.
 
     return result;
   }
 
-  function applySilentMerge(result) {
+  function applySilentMerge(autoUpdatedIds) {
     var removeIds = {};
-    result.updated.forEach(function(id) { removeIds[id] = true; });
+    autoUpdatedIds.forEach(function(id) { removeIds[id] = true; });
     userConceptSets = userConceptSets.filter(function(cs) { return !removeIds[cs.id]; });
-    result.updated.forEach(function(id) { modifiedCsIds.delete(id); });
+    autoUpdatedIds.forEach(function(id) { modifiedCsIds.delete(id); });
     saveUserConceptSets();
     saveModifiedCsIds();
   }
 
-  function showMergeModal(result, newVersion, newHash) {
+  function showUpdateModal(changes, merge, newVersion, newHash) {
     var body = document.getElementById('data-update-body');
     if (!body) return;
 
-    var html = '<p style="margin-bottom:12px">' +
-      i18n('New data has been published. Some concept sets you modified locally have also changed remotely.') + '</p>';
+    var hasConflicts = merge.conflicts.length > 0;
+    var hasChanges = changes.remoteChanged.length > 0 || changes.newlyAdded.length > 0;
 
-    if (result.updated.length > 0) {
-      html += '<p style="color:var(--text-muted); font-size:13px"><i class="fas fa-check" style="color:var(--accent-green)"></i> ' +
-        result.updated.length + ' ' + i18n('concept set(s) updated automatically') + '</p>';
+    // Header message
+    var html = '';
+    if (hasConflicts) {
+      html += '<p style="margin-bottom:12px">' +
+        i18n('New data has been published. Some concept sets you modified locally have also changed remotely.') + '</p>';
+    } else {
+      html += '<p style="margin-bottom:12px">' +
+        i18n('The data dictionary has been updated.') + '</p>';
     }
 
-    html += '<table class="table" style="font-size:13px; margin-top:8px"><thead><tr>' +
-      '<th>ID</th><th>' + i18n('Name') + '</th><th>' + i18n('Local Modified') + '</th><th>' + i18n('Remote Modified') + '</th><th>' + i18n('Keep') + '</th>' +
-      '</tr></thead><tbody>';
+    // Summary line for auto-updated stale overrides
+    if (merge.autoUpdated.length > 0) {
+      html += '<p style="color:var(--text-muted); font-size:13px; margin-bottom:8px"><i class="fas fa-check" style="color:var(--accent-green)"></i> ' +
+        merge.autoUpdated.length + ' ' + i18n('concept set(s) updated automatically') + '</p>';
+    }
 
-    result.conflicts.forEach(function(c) {
-      var localName = t(c.local, 'name');
-      html += '<tr>' +
-        '<td>' + c.id + '</td>' +
-        '<td>' + escapeHtml(localName) + '</td>' +
-        '<td>' + escapeHtml(c.local.modifiedDate || '?') + '</td>' +
-        '<td>' + escapeHtml(c.remote.modifiedDate || '?') + '</td>' +
-        '<td style="white-space:nowrap">' +
-          '<label style="margin-right:8px"><input type="radio" name="merge-' + c.id + '" value="local" checked> ' + i18n('Local') + '</label>' +
-          '<label><input type="radio" name="merge-' + c.id + '" value="remote"> ' + i18n('Remote') + '</label>' +
-        '</td></tr>';
-    });
+    // Remote changes list (collapsible)
+    if (hasChanges) {
+      var totalChanges = changes.remoteChanged.length + changes.newlyAdded.length;
+      html += '<details style="margin-bottom:12px">' +
+        '<summary style="cursor:pointer; font-size:13px; font-weight:600; color:var(--primary); margin-bottom:6px">' +
+        '<i class="fas fa-list"></i> ' + totalChanges + ' ' + i18n('concept set(s) changed remotely') + '</summary>';
+      html += '<table class="table" style="font-size:12px; margin-top:4px"><thead><tr>' +
+        '<th>ID</th><th>' + i18n('Name') + '</th><th>' + i18n('Version') + '</th><th>' + i18n('Modified') + '</th>' +
+        '</tr></thead><tbody>';
 
-    html += '</tbody></table>';
+      changes.remoteChanged.forEach(function(c) {
+        html += '<tr>' +
+          '<td>' + c.id + '</td>' +
+          '<td>' + escapeHtml(c.name) + '</td>' +
+          '<td>' + escapeHtml(c.oldVersion) + ' → ' + escapeHtml(c.newVersion) + '</td>' +
+          '<td>' + escapeHtml(c.oldDate) + ' → ' + escapeHtml(c.newDate) + '</td>' +
+          '</tr>';
+      });
+      changes.newlyAdded.forEach(function(c) {
+        html += '<tr>' +
+          '<td>' + c.id + '</td>' +
+          '<td>' + escapeHtml(c.name) + '</td>' +
+          '<td>' + escapeHtml(c.version) + '</td>' +
+          '<td><span style="color:var(--accent-green); font-weight:600">' + i18n('New') + '</span></td>' +
+          '</tr>';
+      });
+
+      html += '</tbody></table></details>';
+    }
+
+    // Conflicts table (if any)
+    if (hasConflicts) {
+      html += '<h4 style="font-size:13px; font-weight:600; margin:12px 0 6px">' + i18n('Conflicts') + '</h4>';
+      html += '<p style="font-size:12px; color:var(--text-muted); margin-bottom:8px">' +
+        i18n('These concept sets were modified both locally and remotely. Choose which version to keep:') + '</p>';
+      html += '<table class="table" style="font-size:12px"><thead><tr>' +
+        '<th>ID</th><th>' + i18n('Name') + '</th><th>' + i18n('Local') + '</th><th>' + i18n('Remote') + '</th><th>' + i18n('Keep') + '</th>' +
+        '</tr></thead><tbody>';
+
+      merge.conflicts.forEach(function(c) {
+        var localName = t(c.local, 'name');
+        html += '<tr>' +
+          '<td>' + c.id + '</td>' +
+          '<td>' + escapeHtml(localName) + '</td>' +
+          '<td>' + escapeHtml(c.local.modifiedDate || '?') + '</td>' +
+          '<td>' + escapeHtml(c.remote.modifiedDate || '?') + '</td>' +
+          '<td style="white-space:nowrap">' +
+            '<label style="margin-right:8px"><input type="radio" name="merge-' + c.id + '" value="local" checked> ' + i18n('Local') + '</label>' +
+            '<label><input type="radio" name="merge-' + c.id + '" value="remote"> ' + i18n('Remote') + '</label>' +
+          '</td></tr>';
+      });
+
+      html += '</tbody></table>';
+    }
+
     body.innerHTML = html;
+
+    // Update button label based on whether there are conflicts
+    var applyBtn = document.getElementById('data-update-apply');
+    if (applyBtn) {
+      var btnLabel = applyBtn.querySelector('span');
+      if (btnLabel) btnLabel.textContent = hasConflicts ? i18n('Apply Updates') : i18n('OK');
+    }
+
     document.getElementById('data-update-modal').style.display = '';
 
     // Store pending merge info for the apply handler
-    window._pendingMerge = { result: result, newVersion: newVersion, newHash: newHash };
+    window._pendingMerge = { merge: merge, newVersion: newVersion, newHash: newHash };
   }
 
   function applyMergeDecisions() {
-    var merge = window._pendingMerge;
-    if (!merge) return;
+    var pending = window._pendingMerge;
+    if (!pending) return;
+    var merge = pending.merge;
 
-    // Apply silent updates first
-    applySilentMerge(merge.result);
+    // Apply silent updates
+    applySilentMerge(merge.autoUpdated);
 
     // Process conflict resolutions
-    merge.result.conflicts.forEach(function(c) {
+    merge.conflicts.forEach(function(c) {
       var radios = document.querySelectorAll('input[name="merge-' + c.id + '"]');
       var choice = 'local';
       radios.forEach(function(r) { if (r.checked) choice = r.value; });
@@ -185,8 +291,9 @@ var App = (function() {
 
     saveUserConceptSets();
     saveModifiedCsIds();
-    localStorage.setItem('indicate_data_version', merge.newVersion);
-    localStorage.setItem('indicate_data_hash', merge.newHash);
+    localStorage.setItem('indicate_data_version', pending.newVersion);
+    localStorage.setItem('indicate_data_hash', pending.newHash);
+    saveCsFingerprints(buildCsFingerprints());
     reloadMergedData();
 
     document.getElementById('data-update-modal').style.display = 'none';
@@ -200,13 +307,13 @@ var App = (function() {
   function checkForDataUpdate() {
     var currentVersion = DATA.dataVersion || null;
     var currentHash = DATA.dataHash || null;
-    var lastKnownVersion = localStorage.getItem('indicate_data_version');
     var lastKnownHash = localStorage.getItem('indicate_data_hash');
 
-    // First visit — just store version, no merge needed
-    if (!lastKnownVersion) {
+    // First visit — store version + fingerprints, no merge needed
+    if (!lastKnownHash) {
       localStorage.setItem('indicate_data_version', currentVersion);
       localStorage.setItem('indicate_data_hash', currentHash);
+      saveCsFingerprints(buildCsFingerprints());
       return;
     }
 
@@ -216,20 +323,24 @@ var App = (function() {
       return;
     }
 
-    // Data changed — compute merge
-    var result = computeMerge();
-    if (result.conflicts.length === 0) {
-      applySilentMerge(result);
+    // Data changed — detect remote changes and compute merge
+    var oldFingerprints = JSON.parse(localStorage.getItem('indicate_cs_fingerprints') || '{}');
+    var changes = detectRemoteChanges(oldFingerprints);
+    var merge = computeMerge();
+
+    var hasConflicts = merge.conflicts.length > 0;
+    var hasChanges = changes.remoteChanged.length > 0 || changes.newlyAdded.length > 0;
+
+    if (!hasConflicts && !hasChanges && merge.autoUpdated.length === 0) {
+      // Hash changed but nothing meaningful changed (e.g. rebuild without content changes)
       localStorage.setItem('indicate_data_version', currentVersion);
       localStorage.setItem('indicate_data_hash', currentHash);
-      reloadMergedData();
-      if (result.updated.length > 0) {
-        showToast(i18n('Data updated') + ': ' + result.updated.length + ' ' + i18n('concept set(s) updated'), 'info');
-      }
-    } else {
-      // Apply non-conflicting updates, then show modal for conflicts
-      showMergeModal(result, currentVersion, currentHash);
+      saveCsFingerprints(buildCsFingerprints());
+      return;
     }
+
+    // Always show modal so the user sees what changed
+    showUpdateModal(changes, merge, currentVersion, currentHash);
   }
 
   // ==================== I18N DICTIONARY ====================
@@ -247,18 +358,23 @@ var App = (function() {
 
     // Data update / merge
     'Data Update Available':         { fr: 'Mise \u00e0 jour disponible' },
-    'Data updated':                  { fr: 'Donn\u00e9es mises \u00e0 jour' },
     'Data updated successfully':     { fr: 'Donn\u00e9es mises \u00e0 jour avec succ\u00e8s' },
-    'concept set(s) updated':        { fr: 'jeu(x) de concepts mis \u00e0 jour' },
     'concept set(s) updated automatically': { fr: 'jeu(x) de concepts mis \u00e0 jour automatiquement' },
+    'concept set(s) changed remotely': { fr: 'jeu(x) de concepts modifi\u00e9s \u00e0 distance' },
+    'The data dictionary has been updated.': { fr: 'Le dictionnaire de donn\u00e9es a \u00e9t\u00e9 mis \u00e0 jour.' },
     'New data has been published. Some concept sets you modified locally have also changed remotely.':
       { fr: 'De nouvelles donn\u00e9es ont \u00e9t\u00e9 publi\u00e9es. Certains jeux de concepts que vous avez modifi\u00e9s localement ont aussi chang\u00e9 \u00e0 distance.' },
-    'Local Modified':                { fr: 'Modifi\u00e9 local' },
-    'Remote Modified':               { fr: 'Modifi\u00e9 distant' },
+    'These concept sets were modified both locally and remotely. Choose which version to keep:':
+      { fr: 'Ces jeux de concepts ont \u00e9t\u00e9 modifi\u00e9s \u00e0 la fois localement et \u00e0 distance. Choisissez la version \u00e0 conserver :' },
+    'Conflicts':                     { fr: 'Conflits' },
+    'Version':                       { fr: 'Version' },
+    'Modified':                      { fr: 'Modifi\u00e9' },
+    'New':                           { fr: 'Nouveau' },
     'Keep':                          { fr: 'Conserver' },
     'Local':                         { fr: 'Locale' },
     'Remote':                        { fr: 'Distante' },
     'Later':                         { fr: 'Plus tard' },
+    'OK':                            { fr: 'OK' },
     'Apply Updates':                 { fr: 'Appliquer les mises \u00e0 jour' },
 
     // Common actions
