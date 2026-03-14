@@ -1,4 +1,14 @@
 {
   "conceptSetId": 5,
-  "resolvedConcepts": []
+  "resolvedConcepts": [
+    {
+      "conceptId": 2100000002,
+      "conceptName": "Delirium Detection Score (DDS) score",
+      "vocabularyId": "INDICATE",
+      "domainId": "Measurement",
+      "conceptClassId": "Staging / Scales",
+      "conceptCode": "DDS-score",
+      "standardConcept": ""
+    }
+  ]
 }

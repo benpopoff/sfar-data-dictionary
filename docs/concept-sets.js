@@ -1438,8 +1438,9 @@ var ConceptSetsPage = (function() {
       noDb.style.display = 'none';
       resultsWrap.style.display = '';
       bottom.style.display = '';
-      footer.style.display = '';
-      searchRow.style.display = '';
+      // Only show OHDSI footer/search if on the OHDSI tab
+      footer.style.display = addActiveTab === 'ohdsi' ? '' : 'none';
+      searchRow.style.display = addActiveTab === 'ohdsi' ? '' : 'none';
       buildAddFilterDropdowns().then(function() {
         if (document.getElementById('expr-add-search').value.trim()) {
           searchAddConcepts();

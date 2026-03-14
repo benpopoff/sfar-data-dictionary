@@ -6,7 +6,7 @@
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-03-13",
+  "modifiedDate": "2026-03-14",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.1",
   "expression": {
     "items": [
@@ -19,7 +19,7 @@
           "conceptClassId": "Staging / Scales",
           "standardConcept": "",
           "standardConceptCaption": "Non-standard",
-          "conceptCode": "CAM-ICU",
+          "conceptCode": "CAM-ICU-score",
           "validStartDate": "2026-03-13",
           "validEndDate": "2099-12-31",
           "invalidReason": null,

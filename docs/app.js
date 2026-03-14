@@ -235,12 +235,18 @@ var App = (function() {
       html += '<h4 style="font-size:13px; font-weight:600; margin:12px 0 6px">' + i18n('Conflicts') + '</h4>';
       html += '<p style="font-size:12px; color:var(--text-muted); margin-bottom:8px">' +
         i18n('These concept sets were modified both locally and remotely. Choose which version to keep:') + '</p>';
+      if (merge.conflicts.length > 1) {
+        html += '<div style="display:flex; gap:8px; margin-bottom:8px">' +
+          '<button type="button" class="btn-cancel" id="merge-all-local" style="font-size:12px; padding:4px 10px">' + i18n('Keep all local') + '</button>' +
+          '<button type="button" class="btn-cancel" id="merge-all-remote" style="font-size:12px; padding:4px 10px">' + i18n('Keep all remote') + '</button>' +
+          '</div>';
+      }
       html += '<table class="table" style="font-size:12px"><thead><tr>' +
         '<th>ID</th><th>' + i18n('Name') + '</th><th>' + i18n('Local') + '</th><th>' + i18n('Remote') + '</th><th>' + i18n('Keep') + '</th>' +
         '</tr></thead><tbody>';
 
       merge.conflicts.forEach(function(c) {
-        var localName = t(c.local, 'name');
+        var localName = t(c.local).name || c.local.name || '';
         html += '<tr>' +
           '<td>' + c.id + '</td>' +
           '<td>' + escapeHtml(localName) + '</td>' +
@@ -256,6 +262,20 @@ var App = (function() {
     }
 
     body.innerHTML = html;
+
+    // "Keep all local" / "Keep all remote" buttons
+    var allLocalBtn = document.getElementById('merge-all-local');
+    var allRemoteBtn = document.getElementById('merge-all-remote');
+    if (allLocalBtn) {
+      allLocalBtn.addEventListener('click', function() {
+        body.querySelectorAll('input[type="radio"][value="local"]').forEach(function(r) { r.checked = true; });
+      });
+    }
+    if (allRemoteBtn) {
+      allRemoteBtn.addEventListener('click', function() {
+        body.querySelectorAll('input[type="radio"][value="remote"]').forEach(function(r) { r.checked = true; });
+      });
+    }
 
     // Update button label based on whether there are conflicts
     var applyBtn = document.getElementById('data-update-apply');
@@ -371,6 +391,8 @@ var App = (function() {
     'Modified':                      { fr: 'Modifi\u00e9' },
     'New':                           { fr: 'Nouveau' },
     'Keep':                          { fr: 'Conserver' },
+    'Keep all local':                { fr: 'Tout conserver en local' },
+    'Keep all remote':               { fr: 'Tout conserver en distant' },
     'Local':                         { fr: 'Locale' },
     'Remote':                        { fr: 'Distante' },
     'Later':                         { fr: 'Plus tard' },
@@ -727,7 +749,8 @@ var App = (function() {
   }
 
   function escapeHtml(s) {
-    if (!s) return '';
+    if (s == null) return '';
+    if (typeof s !== 'string') s = String(s);
     return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 

@@ -2345,6 +2345,8 @@ select.form-input { appearance: auto; }
 .expr-row-checkbox { width: 16px; height: 16px; cursor: pointer; accent-color: var(--primary); }
 .expr-edit-custom-icon { cursor: pointer; color: var(--primary); opacity: 0.6; font-size: 13px; margin-right: 6px; }
 .expr-edit-custom-icon:hover { opacity: 1; }
+#data-update-modal .modal { display: flex; flex-direction: column; max-height: 80vh; }
+#data-update-modal .modal-body { overflow-y: auto; flex: 1 1 auto; max-height: calc(80vh - 130px); }
 #edit-custom-concept-modal .modal { overflow: visible; }
 #edit-custom-concept-modal .modal-body { overflow: visible; }
 #edit-custom-concept-modal .ms-dropdown { z-index: 510; }
