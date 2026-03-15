@@ -7,7 +7,7 @@
 
   var pages = {
     '/concept-sets':    { el: 'page-concept-sets',    mod: ConceptSetsPage },
-    '/etl-guidelines':  { el: 'page-etl-guidelines',  mod: EtlGuidelinesPage },
+    '/mapping-recommendations': { el: 'page-mapping-recommendations', mod: MappingRecommendationsPage },
     '/projects':        { el: 'page-projects',        mod: ProjectsPage },
     '/settings':        { el: 'page-settings',        mod: SettingsPage },
     '/general-settings':{ el: 'page-general-settings', mod: GeneralSettingsPage },
@@ -54,6 +54,7 @@
   // Register language change callbacks for pages that support it
   if (ConceptSetsPage.onLanguageChange) App.onLanguageChange(ConceptSetsPage.onLanguageChange);
   if (ProjectsPage.onLanguageChange) App.onLanguageChange(ProjectsPage.onLanguageChange);
+  if (MappingRecommendationsPage.onLanguageChange) App.onLanguageChange(MappingRecommendationsPage.onLanguageChange);
 
   // Centralized Escape key handler
   document.addEventListener('keydown', function (e) {

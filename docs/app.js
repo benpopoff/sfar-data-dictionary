@@ -10,7 +10,7 @@ var App = (function() {
   var projects = [];
   var unitConversions = [];
   var recommendedUnits = [];
-  var etlGuidelines = '';
+  var mappingRecommendations = {};
   var lang = localStorage.getItem('indicate_lang') || 'en';
   var resolvedIndex = {}; // conceptSetId -> resolvedConcepts[]
   var sessionReviews = JSON.parse(localStorage.getItem('indicate_reviews') || '{}');
@@ -65,7 +65,8 @@ var App = (function() {
     projects = repoProj.concat(userProjects);
     unitConversions = DATA.unitConversions || [];
     recommendedUnits = DATA.recommendedUnits || [];
-    etlGuidelines = DATA.etlGuidelines || '';
+    var userMR = localStorage.getItem('indicate_user_mapping');
+    mappingRecommendations = userMR ? JSON.parse(userMR) : (DATA.mappingRecommendations || {});
     var resolved = DATA.resolvedConceptSets || [];
     resolved.forEach(function(r) {
       resolvedIndex[r.conceptSetId] = r.resolvedConcepts || [];
@@ -673,7 +674,9 @@ var App = (function() {
     'OHDSI Vocabularies':            { fr: 'Vocabulaires OHDSI' },
     'Load a DuckDB (.duckdb) or SQLite (.sqlite / .db) database containing OMOP vocabulary tables.': { fr: 'Chargez une base de données DuckDB (.duckdb) ou SQLite (.sqlite / .db) contenant les tables de vocabulaire OMOP.' },
     'Load vocabulary database':      { fr: 'Charger la base de vocabulaire' },
-    'ETL Guidelines':                { fr: 'Directives ETL' },
+    'Mapping Recommendations':       { fr: 'Recommandations de mapping' },
+    'No mapping recommendations available.': { fr: 'Aucune recommandation de mapping disponible.' },
+    'Mapping recommendations saved.': { fr: 'Recommandations de mapping enregistrées.' },
     'Units':                         { fr: 'Unités' },
     'Recommended Units':             { fr: 'Unités recommandées' },
     'Unit Conversions':              { fr: 'Conversions d\'unités' },
@@ -1470,8 +1473,20 @@ var App = (function() {
     get projects() { return projects; },
     get unitConversions() { return unitConversions; },
     get recommendedUnits() { return recommendedUnits; },
-    get etlGuidelines() { return etlGuidelines; },
-    set etlGuidelines(v) { etlGuidelines = v; },
+    get mappingRecommendations() { return mappingRecommendations; },
+    set mappingRecommendations(v) { mappingRecommendations = v; localStorage.setItem('indicate_user_mapping', JSON.stringify(v)); },
+    getMappingContent: function(l) {
+      var t = (mappingRecommendations || {}).translations || {};
+      return (t[l || lang] || {}).content || '';
+    },
+    setMappingContent: function(content, l) {
+      if (!mappingRecommendations) mappingRecommendations = {};
+      if (!mappingRecommendations.translations) mappingRecommendations.translations = {};
+      var key = l || lang;
+      if (!mappingRecommendations.translations[key]) mappingRecommendations.translations[key] = {};
+      mappingRecommendations.translations[key].content = content;
+      localStorage.setItem('indicate_user_mapping', JSON.stringify(mappingRecommendations));
+    },
     get lang() { return lang; },
     set lang(v) { lang = v; },
     get resolvedIndex() { return resolvedIndex; },

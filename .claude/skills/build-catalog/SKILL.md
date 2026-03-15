@@ -1,6 +1,6 @@
 ---
 name: build-catalog
-description: Rebuild the GitHub Pages catalog data files (data.json and data_inline.js) from source JSON. Use after any change to concept_sets/, projects/, concept_sets_resolved/, units/, or etl_guidelines/.
+description: Rebuild the GitHub Pages catalog data files (data.json and data_inline.js) from source JSON. Use after any change to concept_sets/, projects/, concept_sets_resolved/, units/, or mapping_recommendations/.
 allowed-tools: Bash
 ---
 

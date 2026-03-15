@@ -18,12 +18,15 @@ data-dictionary-content/
 ├── units/                     # Unit mappings
 │   ├── recommended_units.csv
 │   └── unit_conversions.csv
+├── mapping_recommendations/   # Mapping recommendations (multilingual JSON)
+│   └── mapping_recommendations.json
 ├── docs/                      # GitHub Pages static site
 │   ├── index.html             # Concept Sets page
 │   ├── projects.html          # Projects page
 │   ├── app.css                # Shared CSS (all styles)
 │   ├── app.js                 # Shared JS utilities (window.App module)
 │   ├── concept-sets.js        # Concept Sets page logic
+│   ├── mapping-recommendations.js  # Mapping Recommendations page logic
 │   ├── projects.js            # Projects page logic
 │   ├── data_inline.js         # Generated data (const DATA={...};)
 │   ├── data.json              # Generated data (pure JSON)
@@ -232,7 +235,7 @@ Enable GitHub Pages in repository settings, pointing to the `docs/` folder on th
 
 ## Important Workflow Rules
 
-- **After any change to source data files** (`concept_sets/`, `projects/`, `concept_sets_resolved/`, `units/`, `etl_guidelines/`), you MUST run `/build-catalog` to regenerate `docs/data.json` and `docs/data_inline.js`. Without this step, the GitHub Pages site will not reflect the changes.
+- **After any change to source data files** (`concept_sets/`, `projects/`, `concept_sets_resolved/`, `units/`, `mapping_recommendations/`), you MUST run `/build-catalog` to regenerate `docs/data.json` and `docs/data_inline.js`. Without this step, the GitHub Pages site will not reflect the changes.
 - **Never edit `docs/data.json`, `docs/data_inline.js`, or `docs/resolved_concept_ids.json` by hand** — they are generated files. Always edit the source JSON and rebuild.
 
 ## Key Conventions

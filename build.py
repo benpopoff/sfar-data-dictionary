@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build docs/data_inline.js and docs/data.json from concept_sets/, projects/, units/ and etl_guidelines/."""
+"""Build docs/data_inline.js and docs/data.json from concept_sets/, projects/, units/ and mapping_recommendations/."""
 
 import datetime
 import hashlib
@@ -46,7 +46,7 @@ def main():
 
     unit_conversions = load_json_file(os.path.join(ROOT, "units", "unit_conversions.json"))
     recommended_units = load_json_file(os.path.join(ROOT, "units", "recommended_units.json"))
-    etl_guidelines = load_text_file(os.path.join(ROOT, "etl_guidelines", "etl_guidelines.md"))
+    mapping_recommendations = load_json_file(os.path.join(ROOT, "mapping_recommendations", "mapping_recommendations.json"))
 
     # Compute a content hash from all data sources
     cs_fingerprint = "|".join(
@@ -59,8 +59,8 @@ def main():
     )
     units_fingerprint = hashlib.sha256(json.dumps(unit_conversions, sort_keys=True).encode()).hexdigest()[:16]
     rec_units_fingerprint = hashlib.sha256(json.dumps(recommended_units, sort_keys=True).encode()).hexdigest()[:16]
-    etl_fingerprint = hashlib.sha256(etl_guidelines.encode()).hexdigest()[:16] if etl_guidelines else ""
-    full_fingerprint = "\n".join([cs_fingerprint, proj_fingerprint, units_fingerprint, rec_units_fingerprint, etl_fingerprint])
+    mapping_fingerprint = hashlib.sha256(json.dumps(mapping_recommendations, sort_keys=True).encode()).hexdigest()[:16] if mapping_recommendations else ""
+    full_fingerprint = "\n".join([cs_fingerprint, proj_fingerprint, units_fingerprint, rec_units_fingerprint, mapping_fingerprint])
     data_hash = hashlib.sha256(full_fingerprint.encode()).hexdigest()[:16]
 
     data = {
@@ -71,7 +71,7 @@ def main():
         "resolvedConceptSets": resolved,
         "unitConversions": unit_conversions,
         "recommendedUnits": recommended_units,
-        "etlGuidelines": etl_guidelines
+        "mappingRecommendations": mapping_recommendations
     }
     # Extract unique concept IDs from resolved concept sets for DuckDB filtering
     resolved_ids = set()
@@ -97,9 +97,10 @@ def main():
     with open(os.path.join(DOCS, "data_inline.js"), "w", encoding="utf-8") as f:
         f.write("const DATA=" + compact + ";")
 
+    mr_langs = len(mapping_recommendations.get('translations', {})) if mapping_recommendations else 0
     print(f"Built {len(concept_sets)} concept sets, {len(projects)} projects, {len(resolved)} resolved, "
           f"{len(unit_conversions)} unit conversions, {len(recommended_units)} recommended units, "
-          f"ETL guidelines {'loaded' if etl_guidelines else 'empty'}")
+          f"mapping recommendations ({mr_langs} languages)")
     print(f"  -> docs/data.json ({os.path.getsize(os.path.join(DOCS, 'data.json')):,} bytes)")
     print(f"  -> docs/data_inline.js ({os.path.getsize(os.path.join(DOCS, 'data_inline.js')):,} bytes)")
 
