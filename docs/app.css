@@ -2413,7 +2413,7 @@ select.form-input { appearance: auto; }
 
 /* Expression table edit/select mode */
 #expression-table .expr-select-col, #expression-table .expr-action-col { display: none; }
-#expression-table.expr-select-mode .expr-select-col { display: table-cell; }
+#expression-table.expr-edit-mode .expr-select-col { display: table-cell; }
 #expression-table.expr-edit-mode .expr-action-col { display: table-cell; }
 .expr-row-checkbox { width: 16px; height: 16px; cursor: pointer; accent-color: var(--primary); }
 .expr-edit-custom-icon { cursor: pointer; color: var(--primary); opacity: 0.6; font-size: 13px; margin-right: 6px; }

@@ -43,7 +43,6 @@ var ConceptSetsPage = (function() {
   // Expression editor state
   var exprEditMode = false;
   var exprEditItems = null;
-  var exprSelectMode = false;
   var exprSelectedIdxs = new Set();
   var exprImportEditor = null;
   var addConceptResults = [];      // all results from SQL query
@@ -336,7 +335,6 @@ var ConceptSetsPage = (function() {
 
     // Toggle table classes
     table.classList.toggle('expr-edit-mode', exprEditMode);
-    table.classList.toggle('expr-select-mode', exprSelectMode);
 
     // Populate filter dropdowns
     populateExpressionFilters(allItems);
@@ -455,8 +453,6 @@ var ConceptSetsPage = (function() {
     var headerCancelBtn = document.getElementById('cs-edit-cancel-btn');
     var headerSaveBtn = document.getElementById('cs-edit-save-btn');
     var editActions = document.getElementById('expr-edit-actions');
-    var selectBtn = document.getElementById('expr-select-btn');
-    var deleteSelBtn = document.getElementById('expr-delete-sel-btn');
     var selCount = document.getElementById('expr-selection-count');
 
     var editing = isAnyEditMode();
@@ -468,11 +464,7 @@ var ConceptSetsPage = (function() {
       headerSaveBtn.style.display = '';
       // Expression-specific toolbar
       editActions.style.display = (exprEditMode && csConceptMode === 'expression') ? 'flex' : 'none';
-      // Optimize button always visible in edit mode (checks VocabDB at click time)
-      selectBtn.classList.toggle('active', exprSelectMode);
-      deleteSelBtn.style.display = exprSelectMode ? '' : 'none';
-      selCount.style.display = exprSelectMode ? '' : 'none';
-      if (exprSelectMode) selCount.textContent = exprSelectedIdxs.size + ' selected';
+      selCount.textContent = exprSelectedIdxs.size + ' ' + App.i18n('selected');
     } else {
       // Hide Edit button on review tab (has its own "Add Review")
       var showEdit = (csDetailTab !== 'review');
@@ -489,7 +481,6 @@ var ConceptSetsPage = (function() {
   function enterExprEditMode() {
     if (!selectedConceptSet) return;
     exprEditMode = true;
-    exprSelectMode = false;
     exprSelectedIdxs.clear();
     var orig = (selectedConceptSet.expression && selectedConceptSet.expression.items) || [];
     exprEditItems = JSON.parse(JSON.stringify(orig));
@@ -503,7 +494,6 @@ var ConceptSetsPage = (function() {
 
   function exitExprEditMode() {
     exprEditMode = false;
-    exprSelectMode = false;
     exprSelectedIdxs.clear();
     exprEditItems = null;
     updateToolbar();
@@ -1268,9 +1258,15 @@ var ConceptSetsPage = (function() {
   }
 
   // --- Expression toolbar helpers ---
-  function toggleExprSelectMode() {
-    exprSelectMode = !exprSelectMode;
-    if (!exprSelectMode) exprSelectedIdxs.clear();
+  function exprSelectAll() {
+    if (!exprEditItems) return;
+    for (var i = 0; i < exprEditItems.length; i++) exprSelectedIdxs.add(i);
+    updateToolbar();
+    renderExpressionTable();
+  }
+
+  function exprUnselectAll() {
+    exprSelectedIdxs.clear();
     updateToolbar();
     renderExpressionTable();
   }
@@ -4658,7 +4654,8 @@ var ConceptSetsPage = (function() {
     // Expression edit actions
     document.getElementById('expr-import-btn').addEventListener('click', openImportModal);
     document.getElementById('expr-add-btn').addEventListener('click', openAddModal);
-    document.getElementById('expr-select-btn').addEventListener('click', toggleExprSelectMode);
+    document.getElementById('expr-select-all-btn').addEventListener('click', exprSelectAll);
+    document.getElementById('expr-unselect-all-btn').addEventListener('click', exprUnselectAll);
     document.getElementById('expr-delete-sel-btn').addEventListener('click', deleteExprSelected);
     document.getElementById('expr-optimize-btn').addEventListener('click', optimizeExpression);
 
@@ -4720,10 +4717,12 @@ var ConceptSetsPage = (function() {
         toggleExprRowSelection(parseInt(e.target.getAttribute('data-idx')));
         return;
       }
-      // Row click in select mode
-      if (exprSelectMode) {
+      // Row click in edit mode — toggle selection
+      if (exprEditMode) {
         var tr = e.target.closest('tr[data-idx]');
-        if (tr) toggleExprRowSelection(parseInt(tr.getAttribute('data-idx')));
+        if (tr && !e.target.closest('.toggle-switch') && !e.target.closest('.expr-action-col')) {
+          toggleExprRowSelection(parseInt(tr.getAttribute('data-idx')));
+        }
       }
     });
 

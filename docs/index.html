@@ -169,9 +169,10 @@
         </div>
         <div class="toggle-bar-right">
           <div id="expr-edit-actions" style="display:none">
-            <button class="btn-primary-custom btn-danger" id="expr-delete-sel-btn" style="display:none"><i class="fas fa-trash"></i> <span data-i18n="Delete Selected">Delete Selected</span></button>
-            <span id="expr-selection-count" style="display:none; font-size:12px; color:var(--text-muted)">0 selected</span>
-            <button class="btn-primary-custom btn-gray" id="expr-select-btn"><i class="fas fa-check-square"></i> <span data-i18n="Select">Select</span></button>
+            <button class="btn-secondary-custom btn-sm" id="expr-select-all-btn" title="Select all"><i class="fas fa-check-square"></i></button>
+            <button class="btn-secondary-custom btn-sm" id="expr-unselect-all-btn" title="Unselect all"><i class="far fa-square"></i></button>
+            <button class="btn-danger-custom btn-sm" id="expr-delete-sel-btn" title="Delete selected"><i class="fas fa-trash"></i></button>
+            <span id="expr-selection-count" style="font-size:12px; color:var(--text-muted)">0 selected</span>
             <button class="btn-success-custom" id="expr-add-btn"><i class="fas fa-plus"></i> <span data-i18n="Add Concepts">Add Concepts</span></button>
             <button class="btn-primary-custom" id="expr-optimize-btn" title="Remove redundant concepts covered by ancestors with Include Descendants"><i class="fas fa-magic"></i> <span data-i18n="Optimize">Optimize</span></button>
           </div>
