@@ -1,25 +1,25 @@
 {
   "id": 4,
-  "name": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU) score",
+  "name": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU)",
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-03-14",
+  "modifiedDate": "2026-03-15",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.1",
   "expression": {
     "items": [
       {
         "concept": {
           "conceptId": 2100000001,
-          "conceptName": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU) score",
+          "conceptName": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU)",
           "domainId": "Measurement",
           "vocabularyId": "INDICATE",
           "conceptClassId": "Staging / Scales",
           "standardConcept": "",
           "standardConceptCaption": "Non-standard",
-          "conceptCode": "CAM-ICU-score",
+          "conceptCode": "CAM-ICU",
           "validStartDate": "2026-03-13",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
@@ -42,7 +42,7 @@
     "origin": null,
     "translations": {
       "en": {
-        "name": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU) score",
+        "name": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU)",
         "category": "Clinical observation",
         "subcategory": "Neurological assessment",
         "longDescription": "## Definition & Clinical Context\n\nThe CAM-ICU (Confusion Assessment Method for the Intensive Care Unit) is a bedside delirium diagnostic instrument adapted from the original CAM for use in critically ill patients, including those who are mechanically ventilated. It takes approximately 2 minutes to administer and does not require special training [1].\n\nThe instrument uses a two-step process. The level of consciousness is first assessed using the RASS; patients with RASS −4 or −5 (coma) cannot be evaluated. For assessable patients, four features are evaluated:\n- acute onset or fluctuating course\n- inattention\n- altered level of consciousness\n- disorganised thinking\n\nThe CAM-ICU is positive for delirium when features 1 and 2 are both present, together with feature 3 and/or feature 4.\n\n## References\n\n[1] Ely EW, Inouye SK, Bernard GR, et al. Delirium in mechanically ventilated patients: validity and reliability of the confusion assessment method for the intensive care unit (CAM-ICU). *JAMA*. 2001;286(21):2703-2710. doi:10.1001/jama.286.21.2703. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/11730446/\" target=\"_blank\">11730446</a>"

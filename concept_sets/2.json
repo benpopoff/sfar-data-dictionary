@@ -1,12 +1,12 @@
 {
   "id": 2,
-  "name": "4 A's Test for Delirium Screening score",
+  "name": "4 A's Test for Delirium Screening",
   "description": null,
   "version": "1.0.0",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-03-13",
+  "modifiedDate": "2026-03-15",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.1",
   "expression": {
     "items": [
@@ -42,7 +42,7 @@
     "origin": null,
     "translations": {
       "en": {
-        "name": "4 A's Test for Delirium Screening score",
+        "name": "4 A's Test for Delirium Screening",
         "category": "Clinical observation",
         "subcategory": "Neurological assessment",
         "longDescription": "## Definition & Clinical Context\n\nThe 4AT (4 'A's Test) is a rapid screening tool for delirium, designed for use in routine clinical practice without special training. It takes less than 2 minutes to administer and can be used with patients who have visual or hearing impairment, or who are too drowsy or agitated to undergo formal cognitive testing [1].\n\nThe instrument comprises four items:\n- alertness\n- AMT4 (Abbreviated Mental Test-4, a brief orientation screen)\n- attention (months of the year backwards)\n- acute change or fluctuating course\n\nThe total score ranges from 0 to 12. A score of 0 suggests delirium is unlikely, 1–3 indicates possible cognitive impairment warranting further investigation, and ≥ 4 suggests possible delirium.\n\n## References\n\n[1] Bellelli G, Morandi A, Davis D, et al. Validation of the 4AT, a new instrument for rapid delirium screening: a study in 234 hospitalised older people. *Age Ageing*. 2014;43(4):496-502. doi:10.1093/ageing/afu021. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/24590568/\" target=\"_blank\">24590568</a>"

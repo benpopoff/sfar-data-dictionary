@@ -1,4 +1,14 @@
 {
   "conceptSetId": 11,
-  "resolvedConcepts": []
+  "resolvedConcepts": [
+    {
+      "conceptId": 2100000005,
+      "conceptName": "Nursing Delirium Screening Scale (Nu-DESC)",
+      "vocabularyId": "INDICATE",
+      "domainId": "Measurement",
+      "conceptClassId": "Staging / Scales",
+      "conceptCode": "Nu-DESC",
+      "standardConcept": ""
+    }
+  ]
 }

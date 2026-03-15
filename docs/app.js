@@ -194,12 +194,6 @@ var App = (function() {
         i18n('The data dictionary has been updated.') + '</p>';
     }
 
-    // Summary line for auto-updated stale overrides
-    if (merge.autoUpdated.length > 0) {
-      html += '<p style="color:var(--text-muted); font-size:13px; margin-bottom:8px"><i class="fas fa-check" style="color:var(--accent-green)"></i> ' +
-        merge.autoUpdated.length + ' ' + i18n('concept set(s) updated automatically') + '</p>';
-    }
-
     // Remote changes list (collapsible)
     if (hasChanges) {
       var totalChanges = changes.remoteChanged.length + changes.newlyAdded.length;
@@ -253,8 +247,8 @@ var App = (function() {
           '<td>' + escapeHtml(c.local.modifiedDate || '?') + '</td>' +
           '<td>' + escapeHtml(c.remote.modifiedDate || '?') + '</td>' +
           '<td style="white-space:nowrap">' +
-            '<label style="margin-right:8px"><input type="radio" name="merge-' + c.id + '" value="local" checked> ' + i18n('Local') + '</label>' +
-            '<label><input type="radio" name="merge-' + c.id + '" value="remote"> ' + i18n('Remote') + '</label>' +
+            '<label style="margin-right:8px"><input type="radio" name="merge-' + c.id + '" value="local"> ' + i18n('Local') + '</label>' +
+            '<label><input type="radio" name="merge-' + c.id + '" value="remote" checked> ' + i18n('Remote') + '</label>' +
           '</td></tr>';
       });
 
@@ -301,7 +295,7 @@ var App = (function() {
     // Process conflict resolutions
     merge.conflicts.forEach(function(c) {
       var radios = document.querySelectorAll('input[name="merge-' + c.id + '"]');
-      var choice = 'local';
+      var choice = 'remote';
       radios.forEach(function(r) { if (r.checked) choice = r.value; });
       if (choice === 'remote') {
         userConceptSets = userConceptSets.filter(function(cs) { return cs.id !== c.id; });
@@ -348,6 +342,13 @@ var App = (function() {
     var changes = detectRemoteChanges(oldFingerprints);
     var merge = computeMerge();
 
+    // Remove conflict and auto-updated IDs from the "changed remotely" list to avoid duplicates
+    var excludeFromChanges = {};
+    merge.conflicts.forEach(function(c) { excludeFromChanges[c.id] = true; });
+    merge.autoUpdated.forEach(function(id) { excludeFromChanges[id] = true; });
+    changes.remoteChanged = changes.remoteChanged.filter(function(c) { return !excludeFromChanges[c.id]; });
+    changes.newlyAdded = changes.newlyAdded.filter(function(c) { return !excludeFromChanges[c.id]; });
+
     var hasConflicts = merge.conflicts.length > 0;
     var hasChanges = changes.remoteChanged.length > 0 || changes.newlyAdded.length > 0;
 
@@ -379,7 +380,7 @@ var App = (function() {
     // Data update / merge
     'Data Update Available':         { fr: 'Mise \u00e0 jour disponible' },
     'Data updated successfully':     { fr: 'Donn\u00e9es mises \u00e0 jour avec succ\u00e8s' },
-    'concept set(s) updated automatically': { fr: 'jeu(x) de concepts mis \u00e0 jour automatiquement' },
+    'concept set(s) will be updated automatically': { fr: 'jeu(x) de concepts seront mis \u00e0 jour automatiquement' },
     'concept set(s) changed remotely': { fr: 'jeu(x) de concepts modifi\u00e9s \u00e0 distance' },
     'The data dictionary has been updated.': { fr: 'Le dictionnaire de donn\u00e9es a \u00e9t\u00e9 mis \u00e0 jour.' },
     'New data has been published. Some concept sets you modified locally have also changed remotely.':

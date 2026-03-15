@@ -3,7 +3,7 @@
   "resolvedConcepts": [
     {
       "conceptId": 2100000001,
-      "conceptName": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU) score",
+      "conceptName": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU)",
       "vocabularyId": "INDICATE",
       "domainId": "Measurement",
       "conceptClassId": "Staging / Scales",
