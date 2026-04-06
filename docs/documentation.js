@@ -652,10 +652,10 @@ var DocumentationPage = (function() {
 
       + '<h2>Fonctionnalit\u00e9s principales</h2>'
       + '<div class="doc-feature-grid">'
-      + featureCard('fa-book', 'Navigateur de concept sets',
+      + featureCard('fa-book', 'Navigateur de jeux de concepts',
         'Parcourez les jeux de concepts par cat\u00e9gorie clinique\u00a0: signes vitaux, biologie, pathologies, m\u00e9dicaments, ventilation, etc.')
       + featureCard('fa-layer-group', 'Expression & R\u00e9solution',
-        'Visualisez les expressions avec les options Exclure/Descendants/Mapp\u00e9s et leur r\u00e9solution en concepts standards.')
+        'Visualisez les expressions avec les options Exclure/Descendants/Mapp\u00e9 et leur r\u00e9solution en concepts standards.')
       + featureCard('fa-comment-dots', 'Recommandations d\u2019experts',
         'Chaque jeu de concepts inclut des commentaires cliniques en Markdown pour guider l\u2019ETL.')
       + featureCard('fa-chart-bar', 'Statistiques de r\u00e9f\u00e9rence',
@@ -730,7 +730,7 @@ var DocumentationPage = (function() {
       + '<ul>'
       + '<li><strong>Exclure</strong> \u2014 Retirer ce concept du jeu</li>'
       + '<li><strong>Descendants</strong> \u2014 Inclure tous les descendants hi\u00e9rarchiques</li>'
-      + '<li><strong>Mapp\u00e9s</strong> \u2014 Inclure les concepts li\u00e9s par des relations \u00ab Maps to \u00bb</li>'
+      + '<li><strong>Mapp\u00e9</strong> \u2014 Inclure les concepts li\u00e9s par des relations \u00ab Maps to \u00bb</li>'
       + '</ul>'
 
       + infoBox('Expression vs. R\u00e9solus',
@@ -803,7 +803,7 @@ var DocumentationPage = (function() {
       + '<p>Deux modes, accessibles via un commutateur\u00a0:</p>'
 
       + '<h3>Mode Expression</h3>'
-      + '<p>Affiche les \u00e9l\u00e9ments de l\u2019expression avec les options Exclure, Descendants et Mapp\u00e9s. '
+      + '<p>Affiche les \u00e9l\u00e9ments de l\u2019expression avec les options Exclure, Descendants et Mapp\u00e9. '
       + 'Filtres par vocabulaire, domaine, standard et recherche floue par nom.</p>'
 
       + '<h3>Mode R\u00e9solus</h3>'
@@ -838,7 +838,7 @@ var DocumentationPage = (function() {
 
   function editingConceptSetsFR() {
     return '<h1>Modifier un jeu de concepts</h1>'
-      + '<p>Cliquez sur <strong>Modifier la page</strong> pour entrer en mode \u00e9dition.</p>'
+      + '<p>Cliquez sur le bouton <strong>Modifier</strong> (ic\u00f4ne crayon) pour entrer en mode \u00e9dition.</p>'
 
       + '<h2>Mode \u00e9dition de la liste</h2>'
       + '<ul>'
@@ -857,10 +857,10 @@ var DocumentationPage = (function() {
       + '</ul>'
 
       + '<h3>Importer un JSON</h3>'
-      + '<p>Collez un concept set au format ATLAS ou INDICATE. D\u00e9duplication automatique.</p>'
+      + '<p>Collez un jeu de concepts au format ATLAS ou INDICATE. D\u00e9duplication automatique.</p>'
 
       + '<h3>Options des concepts</h3>'
-      + '<p>Cliquez sur les bascules Exclure, Descendants ou Mapp\u00e9s directement dans le tableau.</p>'
+      + '<p>Cliquez sur les bascules Exclure, Descendants ou Mapp\u00e9 directement dans le tableau.</p>'
 
       + '<h3>Optimiser l\u2019expression</h3>'
       + '<p>Le bouton <strong>Optimiser</strong> simplifie l\u2019expression en analysant la hi\u00e9rarchie '
