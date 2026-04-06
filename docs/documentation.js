@@ -29,7 +29,7 @@ var DocumentationPage = (function() {
           { id: 'browsing', label: en ? 'Browsing Concept Sets' : 'Parcourir les jeux de concepts' },
           { id: 'concept-set-details', label: en ? 'Concept Set Details' : 'D\u00e9tails d\u2019un jeu de concepts' },
           { id: 'editing-concept-sets', label: en ? 'Editing Concept Sets' : 'Modifier un jeu de concepts' },
-          { id: 'reviewing', label: en ? 'Reviewing & GitHub' : 'Relecture & GitHub', draft: true },
+          { id: 'reviewing', label: en ? 'Reviewing & GitHub' : 'Relecture & GitHub' },
           { id: 'exporting', label: en ? 'Exporting' : 'Exporter', draft: true }
         ]
       },
@@ -224,7 +224,7 @@ var DocumentationPage = (function() {
     var en = lang === 'en';
     var resolved = en ? 'Resolved' : 'R\u00e9solus';
     var expression = 'Expression';
-    return '<div style="margin:12px 0; display:flex; justify-content:center">'
+    return '<div style="margin:16px 0; display:flex; justify-content:center">'
       + '<div class="toggle-group">'
       + '<button class="toggle-btn' + (activeMode === 'resolved' ? ' active' : '') + '" style="cursor:default">' + resolved + '</button>'
       + '<button class="toggle-btn' + (activeMode === 'expression' ? ' active' : '') + '" style="cursor:default">' + expression + '</button>'
@@ -998,7 +998,7 @@ var DocumentationPage = (function() {
       + '<p>At the top of the page, badges show each category with its concept set count. '
       + 'Click a badge to filter the table to that category. Click again to remove the filter. '
       + 'Multiple categories can be selected simultaneously.</p>'
-      + '<div class="category-badges" style="justify-content:center; margin:12px 0">'
+      + '<div class="category-badges" style="justify-content:center; margin:16px 0">'
       + '<span class="category-badge">Vital Signs <span class="count">10</span></span>'
       + '<span class="category-badge active">Laboratory <span class="count">76</span></span>'
       + '<span class="category-badge">Drugs <span class="count">112</span></span>'
@@ -1164,12 +1164,12 @@ var DocumentationPage = (function() {
 
       + '<h3>Entering Edit Mode</h3>'
       + '<p>Click the <strong>Edit</strong> button in the toolbar:</p>'
-      + '<div style="display:flex; gap:6px; justify-content:center; margin:12px 0; flex-wrap:wrap; align-items:center">'
+      + '<div style="display:flex; gap:6px; justify-content:center; margin:16px 0; flex-wrap:wrap; align-items:center">'
       + '<button class="btn-primary-custom btn-gray" style="cursor:default"><i class="fas fa-pen"></i> Edit</button>'
       + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-download"></i> Export</button>'
       + '</div>'
       + '<p>The toolbar changes to show selection, add, and save/cancel controls:</p>'
-      + '<div style="display:flex; gap:6px; justify-content:center; margin:12px 0; flex-wrap:wrap; align-items:center">'
+      + '<div style="display:flex; gap:6px; justify-content:center; margin:16px 0; flex-wrap:wrap; align-items:center">'
       + '<button class="btn-secondary-custom btn-sm" style="cursor:default"><i class="fas fa-check-square"></i></button>'
       + '<button class="btn-secondary-custom btn-sm" style="cursor:default"><i class="far fa-square"></i></button>'
       + '<button class="btn-danger-custom btn-sm" style="cursor:default"><i class="fas fa-trash"></i></button>'
@@ -1220,7 +1220,7 @@ var DocumentationPage = (function() {
       + '<h2>Editing a Concept Set\u2019s Details</h2>'
       + '<p>Open a concept set, then click <strong>Edit</strong> in the detail header. '
       + 'The Edit and Export buttons are replaced by Import, Cancel, and Save:</p>'
-      + '<div style="display:flex; gap:6px; justify-content:center; margin:12px 0; flex-wrap:wrap">'
+      + '<div style="display:flex; gap:6px; justify-content:center; margin:16px 0; flex-wrap:wrap">'
       + '<button class="btn-primary-custom btn-purple" style="cursor:default"><i class="fas fa-file-import"></i> Import</button>'
       + '<button class="btn-primary-custom btn-gray" style="cursor:default"><i class="fas fa-times"></i> Cancel</button>'
       + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-save"></i> Save</button>'
@@ -1271,7 +1271,7 @@ var DocumentationPage = (function() {
 
       + '<h3>Adding Concepts</h3>'
       + '<p>In edit mode, the expression toolbar shows additional buttons:</p>'
-      + '<div style="display:flex; gap:6px; justify-content:center; margin:12px 0; flex-wrap:wrap; align-items:center">'
+      + '<div style="display:flex; gap:6px; justify-content:center; margin:16px 0; flex-wrap:wrap; align-items:center">'
       + '<button class="btn-secondary-custom btn-sm" style="cursor:default"><i class="fas fa-check-square"></i></button>'
       + '<button class="btn-secondary-custom btn-sm" style="cursor:default"><i class="far fa-square"></i></button>'
       + '<button class="btn-danger-custom btn-sm" style="cursor:default"><i class="fas fa-trash"></i></button>'
@@ -1280,7 +1280,7 @@ var DocumentationPage = (function() {
       + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-magic"></i> Optimize</button>'
       + '</div>'
       + '<p>Click <strong>Add Concepts</strong> to open a fullscreen modal with two tabs:</p>'
-      + '<div style="display:flex; gap:0; justify-content:center; margin:12px 0">'
+      + '<div style="display:flex; gap:0; justify-content:center; margin:16px 0">'
       + '<button class="expr-add-tab active" style="cursor:default">'
       + (App.lang === 'en' ? 'OHDSI Vocabularies' : 'Vocabulaires OHDSI') + '</button>'
       + '<button class="expr-add-tab" style="cursor:default">'
@@ -1426,28 +1426,77 @@ var DocumentationPage = (function() {
       + '<a href="https://github.com/indicate-eu/data-dictionary-content" target="_blank">'
       + 'indicate-eu/data-dictionary-content</a> repository.</p>'
 
+      // ===== SUBMITTING A REVIEW =====
       + '<h2>Submitting a Review</h2>'
-      + '<ol>'
-      + '<li>Open a concept set and go to the <strong>Review</strong> tab</li>'
-      + '<li>Click <strong>Add Review</strong></li>'
-      + '<li>Select a review status (Approved, Needs Revision, etc.)</li>'
-      + '<li>Write your comments (Markdown supported)</li>'
-      + '<li>Submit \u2014 your review is stored in the session</li>'
-      + '</ol>'
+      + '<p>Open a concept set, go to the <strong>Review</strong> tab, and click '
+      + '<button class="tab-btn-green" style="cursor:default"><i class="fas fa-plus"></i> Add Review</button>. '
+      + 'A fullscreen editor opens:</p>'
 
+      // Mock review modal
+      + '<div class="doc-mock-modal" style="max-width:100%">'
+      // Header
+      + '<div style="padding:6px 15px; border-bottom:1px solid #ddd; background:#f8f9fa; display:flex; align-items:center; gap:12px">'
+      + '<h3 style="margin:0; font-size:15px">Add Review</h3>'
+      + '<label style="font-size:12px; font-weight:600; color:var(--text-muted)">Status:</label>'
+      + '<select class="form-input" disabled style="width:140px; height:28px; font-size:12px; padding:2px 8px">'
+      + '<option>Needs Revision</option></select>'
+      + '<button class="btn-success-custom" style="cursor:default"><i class="fas fa-check"></i> Submit Review</button>'
+      + '<span style="flex:1"></span>'
+      + '<span class="modal-close" style="cursor:default; font-size:20px">&times;</span>'
+      + '</div>'
+      // Body: Editor + Preview
+      + '<div style="display:flex; min-height:180px">'
+      // Editor
+      + '<div style="flex:1; border-right:1px solid #ddd; display:flex; flex-direction:column">'
+      + '<div style="font-size:12px; font-weight:600; color:var(--text-muted); padding:6px 12px; border-bottom:1px solid #eee">'
+      + '<i class="fas fa-pencil-alt"></i> Editor</div>'
+      + '<div style="padding:12px; font-family:monospace; font-size:12px; color:#333; flex:1; background:#fafafa; white-space:pre-wrap">'
+      + 'Fetal heart rate should be excluded from this set.\n\n'
+      + 'It is recorded at the **maternal level** (in the mother\'s obstetric record), '
+      + 'creating a risk of confusion with the mother\'s own heart rate.\n\n'
+      + 'I suggest moving it to a dedicated concept set to prevent mixing fetal and maternal values during data alignment.'
+      + '</div></div>'
+      // Preview
+      + '<div style="flex:1; display:flex; flex-direction:column">'
+      + '<div style="font-size:12px; font-weight:600; color:var(--text-muted); padding:6px 12px; border-bottom:1px solid #eee">'
+      + '<i class="fas fa-eye"></i> Preview</div>'
+      + '<div style="padding:12px; font-size:13px; flex:1">'
+      + '<p style="margin:0 0 10px">Fetal heart rate should be excluded from this set.</p>'
+      + '<p style="margin:0 0 10px">It is recorded at the <strong>maternal level</strong> (in the mother\'s obstetric record), '
+      + 'creating a risk of confusion with the mother\'s own heart rate.</p>'
+      + '<p style="margin:0">I suggest moving it to a dedicated concept set to prevent mixing fetal and maternal values during data alignment.</p>'
+      + '</div></div>'
+      + '</div></div>'
+
+      + '<p>Select a <strong>status</strong> (Approved or Needs Revision), write your comments using Markdown '
+      + 'in the left editor with a live preview on the right, then click <strong>Submit Review</strong>.</p>'
+      + '<p>Your review is stored in the current browser session and appears in the Review tab.</p>'
+
+      // ===== PROPOSING ON GITHUB =====
       + '<h2>Proposing Changes on GitHub</h2>'
-      + '<p>After submitting a review or editing a concept set, a <strong>Propose on GitHub</strong> '
-      + 'button appears. Clicking it:</p>'
+      + '<p>You can propose changes on GitHub in two ways:</p>'
+      + '<ul>'
+      + '<li>In the <strong>Review tab</strong>, after submitting a review, a '
+      + '<button class="tab-btn-green" style="cursor:default"><i class="fab fa-github"></i> Propose on GitHub</button>'
+      + ' button appears</li>'
+      + '<li>From <strong>any tab</strong>, click '
+      + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-download"></i> Export</button>'
+      + ' and choose the GitHub option</li>'
+      + '</ul>'
+      + '<p>In both cases, clicking it:</p>'
       + '<ol>'
       + '<li>Copies the full updated concept set JSON to your clipboard</li>'
-      + '<li>Opens the GitHub file editor for that specific file</li>'
-      + '<li>You paste the JSON, commit to a new branch, and open a pull request</li>'
+      + '<li>Opens the GitHub editor for that file \u2014 if you don\'t have write access, '
+      + 'you will be prompted to <strong>fork</strong> the repository into your account</li>'
+      + '<li>Paste the JSON from your clipboard, replacing the file content</li>'
+      + '<li>Commit to a new branch and open a <strong>pull request</strong></li>'
       + '</ol>'
 
       + infoBox('No GitHub Account?',
         'You can still browse and use the dictionary locally. The GitHub workflow is only needed '
         + 'to contribute changes back to the shared library.')
 
+      // ===== WHAT CAN YOU CONTRIBUTE =====
       + '<h2>What Can You Contribute?</h2>'
       + '<ul>'
       + '<li><strong>New concept sets</strong> \u2014 For clinical variables not yet covered</li>'
@@ -1455,19 +1504,88 @@ var DocumentationPage = (function() {
       + '<li><strong>Expert comments</strong> \u2014 Clinical guidance for ETL and mapping</li>'
       + '<li><strong>Statistical data</strong> \u2014 Reference distributions for data validation</li>'
       + '<li><strong>Reviews</strong> \u2014 Approve or request revision of concept sets</li>'
-      + '<li><strong>Translations</strong> \u2014 Improve French translations</li>'
+      + '<li><strong>Translations</strong> \u2014 Improve or add translations</li>'
       + '<li><strong>Bug reports</strong> \u2014 '
       + '<a href="https://github.com/indicate-eu/data-dictionary-content/issues" target="_blank">Open an issue</a></li>'
       + '</ul>'
 
-      + '<h2>File Structure on GitHub</h2>'
+      // ===== REPOSITORY STRUCTURE =====
+      + '<h2>Repository Structure</h2>'
+      + '<p>The <a href="https://github.com/indicate-eu/data-dictionary-content" target="_blank">'
+      + 'indicate-eu/data-dictionary-content</a> repository is organized as follows:</p>'
+      + '<div class="doc-mock-modal" style="max-width:100%; padding:12px 16px">'
+      + '<table style="font-size:12px; font-family:monospace; margin:0; border-collapse:collapse">'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:var(--primary); font-weight:600; border:none">concept_sets/</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">One JSON file per concept set ({id}.json)</td></tr>'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:var(--primary); font-weight:600; border:none">concept_sets_resolved/</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">Resolved concept sets (generated by resolve.py)</td></tr>'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:var(--primary); font-weight:600; border:none">projects/</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">One JSON file per project ({id}.json)</td></tr>'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:var(--primary); font-weight:600; border:none">mapping_recommendations/</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">Mapping recommendations (multilingual JSON)</td></tr>'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:var(--primary); font-weight:600; border:none">units/</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">unit_conversions.csv + recommended_units.csv</td></tr>'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:var(--primary); font-weight:600; border:none">docs/</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">GitHub Pages static site (HTML, JS, CSS, generated data files)</td></tr>'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:#e67700; font-weight:600; border:none">build.py</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">Aggregates all JSON into docs/data.json and docs/data_inline.js</td></tr>'
+      + '<tr><td style="padding:3px 16px 3px 0; white-space:nowrap; color:#e67700; font-weight:600; border:none">resolve.py</td>'
+      + '<td style="padding:3px 0; border:none; font-family:inherit; color:var(--text)">Resolves concept set expressions using OMOP vocabularies</td></tr>'
+      + '</table></div>'
+
+      // ===== BUILD PIPELINE =====
+      + '<h2>Build Pipeline</h2>'
+      + '<p>Two Python scripts maintain the data files used by the web application:</p>'
+
+      + '<h3>resolve.py</h3>'
+      + '<p>Resolves concept set expressions by expanding descendants and mapped concepts using '
+      + 'OMOP vocabulary tables stored in a DuckDB database.</p>'
+      + '<div class="doc-mock-modal" style="max-width:100%; padding:12px 16px; font-family:monospace; font-size:12px; white-space:pre-wrap">'
+      + 'python3 resolve.py --db /path/to/ohdsi_vocabularies.duckdb\n'
+      + '# or\n'
+      + 'python3 resolve.py --csv-dir /path/to/athena_csv_folder'
+      + '</div>'
+      + '<p>You can provide either a DuckDB database (<code>--db</code>) or a folder of Athena CSV files '
+      + '(<code>--csv-dir</code> containing CONCEPT.csv, CONCEPT_ANCESTOR.csv, CONCEPT_RELATIONSHIP.csv).</p>'
+      + '<p>For each concept set, it:</p>'
+      + '<ol>'
+      + '<li>Partitions expression items into included and excluded</li>'
+      + '<li>Expands each set with descendants and mapped concepts as configured</li>'
+      + '<li>Computes: included \u2212 excluded</li>'
+      + '<li>Writes the resolved set to <code>concept_sets_resolved/{id}.json</code> \u2014 '
+      + 'these pre-computed files allow users to browse the Resolved tab in Concept Set Details '
+      + 'without needing to import an OHDSI vocabulary database locally</li>'
+      + '</ol>'
+
+      + '<h3>build.py</h3>'
+      + '<p>Aggregates all source JSON files into data files consumed by the static site.</p>'
+      + '<div class="doc-mock-modal" style="max-width:100%; padding:12px 16px; font-family:monospace; font-size:12px">'
+      + 'python3 build.py'
+      + '</div>'
+      + '<p>Produces:</p>'
       + '<ul>'
-      + '<li><code>concept_sets/{id}.json</code> \u2014 One file per concept set</li>'
-      + '<li><code>projects/{id}.json</code> \u2014 One file per project</li>'
-      + '<li><code>mapping_recommendations/mapping_recommendations.json</code> \u2014 All mapping recommendations</li>'
-      + '<li><code>units/unit_conversions.csv</code> \u2014 Unit conversion factors</li>'
-      + '<li><code>units/recommended_units.csv</code> \u2014 Recommended units per concept</li>'
-      + '</ul>';
+      + '<li><code>docs/data.json</code> \u2014 Compact JSON for programmatic use</li>'
+      + '<li><code>docs/data_inline.js</code> \u2014 Same data as <code>const DATA={...};</code> for direct script inclusion</li>'
+      + '</ul>'
+
+      + infoBox('Full rebuild',
+        'After modifying source data files, run both scripts in sequence:<br>'
+        + '<code style="font-size:12px">python3 resolve.py --db /path/to/vocabularies.duckdb && python3 build.py</code><br>'
+        + 'or with CSV files:<br>'
+        + '<code style="font-size:12px">python3 resolve.py --csv-dir /path/to/athena_csv && python3 build.py</code>')
+
+      // ===== CLAUDE CODE SKILLS =====
+      + '<h2>Claude Code Skills</h2>'
+      + '<p>If you use <a href="https://github.com/anthropics/claude-code" target="_blank">Claude Code</a> '
+      + 'to work on this repository, three skills (slash commands) are available:</p>'
+      + '<ul>'
+      + '<li><code>/resolve-concept-sets</code> \u2014 Runs resolve.py to resolve one or all concept sets '
+      + 'using the OMOP vocabulary database</li>'
+      + '<li><code>/build-catalog</code> \u2014 Runs build.py to regenerate the data files for the static site</li>'
+      + '<li><code>/describe-concept-set</code> \u2014 Generates a detailed clinical description for a concept set '
+      + 'using UMLS, LOINC, and SNOMED vocabulary sources \u2014 useful for writing the Comments tab content</li>'
+      + '</ul>'
+      + '<p>These automate the build pipeline and assist with documentation.</p>';
   }
 
   function exportingEN() {
@@ -1773,7 +1891,7 @@ var DocumentationPage = (function() {
       + '<h2>Badges de cat\u00e9gorie</h2>'
       + '<p>En haut de page, des badges indiquent chaque cat\u00e9gorie avec son nombre de jeux. '
       + 'Cliquez pour filtrer, re-cliquez pour retirer le filtre. S\u00e9lection multiple possible.</p>'
-      + '<div class="category-badges" style="justify-content:center; margin:12px 0">'
+      + '<div class="category-badges" style="justify-content:center; margin:16px 0">'
       + '<span class="category-badge">Signes vitaux <span class="count">10</span></span>'
       + '<span class="category-badge active">Biologie <span class="count">76</span></span>'
       + '<span class="category-badge">M\u00e9dicaments <span class="count">112</span></span>'
@@ -2162,7 +2280,12 @@ var DocumentationPage = (function() {
     var container = document.getElementById('doc-content-inner');
     var tocEl = document.getElementById('doc-toc');
     if (!container || !tocEl) return;
-    var headings = container.querySelectorAll('h2, h3, h4');
+    var allHeadings = container.querySelectorAll('h2, h3, h4');
+    // Exclude headings inside UI mocks
+    var headings = [];
+    for (var k = 0; k < allHeadings.length; k++) {
+      if (!allHeadings[k].closest('.doc-mock-modal, .doc-mock-table')) headings.push(allHeadings[k]);
+    }
     if (headings.length === 0) { tocEl.innerHTML = ''; return; }
 
     // Assign IDs to headings that don't have one
@@ -2194,7 +2317,11 @@ var DocumentationPage = (function() {
     // Remove previous handler
     if (tocScrollHandler) contentEl.removeEventListener('scroll', tocScrollHandler);
 
-    var headings = document.getElementById('doc-content-inner').querySelectorAll('h2, h3, h4');
+    var allH = document.getElementById('doc-content-inner').querySelectorAll('h2, h3, h4');
+    var headings = [];
+    for (var m = 0; m < allH.length; m++) {
+      if (!allH[m].closest('.doc-mock-modal, .doc-mock-table')) headings.push(allH[m]);
+    }
     if (headings.length === 0) return;
 
     tocScrollHandler = function() {

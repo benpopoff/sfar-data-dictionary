@@ -2934,7 +2934,7 @@ select.form-input { appearance: auto; }
   background: white;
   border-radius: 8px;
   box-shadow: var(--shadow-lg);
-  margin: 4px auto;
+  margin: 16px auto;
   max-width: 600px;
   overflow: hidden;
 }
@@ -2948,7 +2948,7 @@ select.form-input { appearance: auto; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  margin: 12px 0;
+  margin: 16px 0;
 }
 .doc-mock-table table { margin: 0; }
 .doc-mock-table tbody tr { cursor: pointer; }
