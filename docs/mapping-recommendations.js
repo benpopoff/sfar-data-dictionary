@@ -24,6 +24,9 @@ var MappingRecommendationsPage = (function() {
 
   function enterEditMode() {
     editing = true;
+    var toolbar = document.querySelector('.mapping-page-toolbar');
+    toolbar.classList.add('edit-mode');
+    document.getElementById('mapping-page-export-btn').style.display = 'none';
     document.getElementById('mapping-page-edit-btn').style.display = 'none';
     document.getElementById('mapping-page-cancel-btn').style.display = '';
     document.getElementById('mapping-page-save-btn').style.display = '';
@@ -67,6 +70,9 @@ var MappingRecommendationsPage = (function() {
 
   function exitEditMode() {
     editing = false;
+    var toolbar = document.querySelector('.mapping-page-toolbar');
+    toolbar.classList.remove('edit-mode');
+    document.getElementById('mapping-page-export-btn').style.display = '';
     document.getElementById('mapping-page-edit-btn').style.display = '';
     document.getElementById('mapping-page-cancel-btn').style.display = 'none';
     document.getElementById('mapping-page-save-btn').style.display = 'none';

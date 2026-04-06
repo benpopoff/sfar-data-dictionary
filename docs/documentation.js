@@ -42,7 +42,7 @@ var DocumentationPage = (function() {
       {
         title: en ? 'Mapping Recommendations' : 'Recommandations',
         items: [
-          { id: 'mapping-recommendations', label: en ? 'Mapping Recommendations' : 'Recommandations de mapping', draft: true }
+          { id: 'mapping-recommendations', label: en ? 'Mapping Recommendations' : 'Recommandations de mapping' }
         ]
       },
       {
@@ -919,7 +919,7 @@ var DocumentationPage = (function() {
 
       + '<h2>Language</h2>'
       + '<p>Toggle between English and French using the <strong>EN</strong>/<strong>FR</strong> '
-      + 'button in the header. Concept set names, categories, and descriptions are bilingual. '
+      + 'button in the header. Concept set names, categories, and descriptions are multilingual (currently English and French). '
       + 'Support for additional languages may be added in the future.</p>'
 
       + '<h2>Local Storage</h2>'
@@ -1764,18 +1764,10 @@ var DocumentationPage = (function() {
       + '<span class="modal-close" style="cursor:default">&times;</span>'
       + '</div>'
       + '<div class="modal-body" style="display:flex; flex-direction:column; gap:12px">'
-      + '<div style="display:flex; gap:12px">'
-      + '<div style="flex:1"><label class="form-label">' + (en ? 'Name (EN) *' : 'Nom (EN) *') + '</label>'
+      + '<div><label class="form-label">' + (en ? 'Name *' : 'Nom *') + '</label>'
       + '<input type="text" class="form-input" value="Quality Benchmarking Dashboards" readonly></div>'
-      + '<div style="flex:1"><label class="form-label">' + (en ? 'Name (FR)' : 'Nom (FR)') + '</label>'
-      + '<input type="text" class="form-input" value="Tableaux de bord de benchmarking qualit\u00e9" readonly></div>'
-      + '</div>'
-      + '<div style="display:flex; gap:12px">'
-      + '<div style="flex:1"><label class="form-label">' + (en ? 'Short description (EN)' : 'Description courte (EN)') + '</label>'
+      + '<div><label class="form-label">' + (en ? 'Short description' : 'Description courte') + '</label>'
       + '<input type="text" class="form-input" value="Quality benchmarking dashboards for ICU data" readonly></div>'
-      + '<div style="flex:1"><label class="form-label">' + (en ? 'Short description (FR)' : 'Description courte (FR)') + '</label>'
-      + '<input type="text" class="form-input" value="Tableaux de bord de benchmarking qualit\u00e9 pour les donn\u00e9es de r\u00e9animation" readonly></div>'
-      + '</div>'
       + '<div><label class="form-label">' + (en ? 'Created By' : 'Cr\u00e9\u00e9 par') + '</label>'
       + '<input type="text" class="form-input" value="Falk von Dincklage" readonly></div>'
       + '</div>'
@@ -1870,7 +1862,7 @@ var DocumentationPage = (function() {
 
       + '<h2>Creating a Project</h2>'
       + '<p>In edit mode, click <strong>Add Project</strong>. Provide a name and short description '
-      + '(bilingual EN/FR). The author is pre-filled from your profile.</p>'
+      + '(multilingual, currently EN/FR). The author is pre-filled from your profile.</p>'
       + mockNewProjectModal('en')
 
       + '<h2>Project Detail View</h2>'
@@ -1900,6 +1892,37 @@ var DocumentationPage = (function() {
         + 'stratification. This ensures complete data collection from the start.');
   }
 
+  function mockMappingToolbar(lang) {
+    var en = lang === 'en';
+    return '<div style="display:flex; gap:6px; justify-content:center; margin-bottom:12px">'
+      + '<button class="btn-primary-custom" style="pointer-events:none"><i class="fas fa-download"></i> '
+      + (en ? 'Export' : 'Export') + '</button>'
+      + '<button class="btn-primary-custom btn-gray" style="pointer-events:none"><i class="fas fa-pen"></i> '
+      + (en ? 'Edit' : '\u00c9diter') + '</button>'
+      + '</div>';
+  }
+
+  function mockMappingExportModal(lang) {
+    var en = lang === 'en';
+    return '<div class="doc-mock-modal" style="max-width:480px">'
+      + '<div class="modal-header"><h3 style="margin:0; font-size:14px"><i class="fas fa-download"></i> '
+      + (en ? 'Export Mapping Recommendations' : 'Exporter les recommandations de mapping') + '</h3>'
+      + '<span class="modal-close" style="cursor:default">&times;</span></div>'
+      + '<div style="padding:12px"><div class="export-options-container" style="gap:8px; padding:4px 0">'
+      + mockExportOpt('fas fa-file-download', '#0f60af',
+        en ? 'Download File' : 'T\u00e9l\u00e9charger',
+        en ? 'Download as mapping_recommendations.json' : 'T\u00e9l\u00e9charger en fichier mapping_recommendations.json')
+      + mockExportOpt('fas fa-clipboard', '#28a745',
+        en ? 'Copy to Clipboard' : 'Copier',
+        en ? 'Copy JSON to clipboard' : 'Copier le JSON dans le presse-papiers')
+      + mockExportOpt('fab fa-github', '#6f42c1',
+        en ? 'Propose on GitHub' : 'Proposer sur GitHub',
+        en ? 'Copy to clipboard and open GitHub editor' : 'Copier et ouvrir l\u2019\u00e9diteur GitHub')
+      + '</div></div>'
+      + '<div class="modal-footer"><button class="btn-cancel" disabled>' + (en ? 'Cancel' : 'Annuler') + '</button></div>'
+      + '</div>';
+  }
+
   function mappingEN() {
     return '<h1>Mapping Recommendations</h1>'
       + '<p>The <strong>Mapping Recommendations</strong> page provides expert-curated guidance for '
@@ -1912,14 +1935,25 @@ var DocumentationPage = (function() {
 
       + '<h2>Viewing</h2>'
       + '<p>The content is rendered as Markdown, allowing rich formatting with tables, links, and structured guidance.</p>'
+      + '<p>Two buttons are available in the top-right corner:</p>'
+      + mockMappingToolbar('en')
+      + '<ul>'
+      + '<li><strong>Export</strong> \u2014 opens the export modal (see below)</li>'
+      + '<li><strong>Edit</strong> \u2014 enters edit mode to modify the content</li>'
+      + '</ul>'
 
       + '<h2>Editing</h2>'
-      + '<p>In edit mode, an ACE editor with Markdown syntax highlighting opens alongside a live preview panel. '
-      + 'Content is bilingual \u2014 switching language saves the current text and loads the other language.</p>'
+      + '<p>In edit mode, an ACE editor with Markdown syntax highlighting opens alongside a live preview panel.</p>'
+      + '<p>Content is multilingual \u2014 switching language saves the current text and loads the other language.</p>'
 
       + '<h2>Exporting</h2>'
-      + '<p>Use the Export button to copy the recommendations as JSON, download the file, or open the '
-      + 'GitHub editor to propose changes.</p>';
+      + '<p>Click <strong>Export</strong> to open the export modal:</p>'
+      + mockMappingExportModal('en')
+      + '<ul>'
+      + '<li><strong>Download File</strong> \u2014 downloads <code>mapping_recommendations.json</code>, which belongs in the <code>mapping_recommendations/</code> folder of the Git repository</li>'
+      + '<li><strong>Copy to Clipboard</strong> \u2014 copies the JSON content to your clipboard</li>'
+      + '<li><strong>Propose on GitHub</strong> \u2014 copies to clipboard and opens the GitHub editor to propose changes via a pull request</li>'
+      + '</ul>';
   }
 
   function ohdsiVocabEN() {
@@ -2074,7 +2108,7 @@ var DocumentationPage = (function() {
 
       + '<h2>Langue</h2>'
       + '<p>Basculez entre anglais et fran\u00e7ais avec le bouton <strong>EN</strong>/<strong>FR</strong>. '
-      + 'Les noms, cat\u00e9gories et descriptions des jeux de concepts sont bilingues. '
+      + 'Les noms, cat\u00e9gories et descriptions des jeux de concepts sont multilingues (actuellement anglais et fran\u00e7ais). '
       + 'Le support d\u2019autres langues pourra \u00eatre ajout\u00e9 \u00e0 l\u2019avenir.</p>'
 
       + '<h2>Stockage local</h2>'
@@ -2401,13 +2435,13 @@ var DocumentationPage = (function() {
       + mockProjectCard('fr')
 
       + '<h2>Cr\u00e9er un projet</h2>'
-      + '<p>En mode \u00e9dition, cliquez <strong>Ajouter un projet</strong>. Nom et description bilingues (EN/FR).</p>'
+      + '<p>En mode \u00e9dition, cliquez <strong>Ajouter un projet</strong>. Nom et description multilingues (actuellement EN/FR).</p>'
       + mockNewProjectModal('fr')
 
       + '<h2>Vue d\u00e9taill\u00e9e</h2>'
 
       + '<h3>Onglet Description</h3>'
-      + '<p>Description longue en Markdown, \u00e9dition bilingue c\u00f4te \u00e0 c\u00f4te.</p>'
+      + '<p>Description longue en Markdown, \u00e9dition multilingue c\u00f4te \u00e0 c\u00f4te.</p>'
 
       + '<h3>Onglet Jeux de concepts</h3>'
       + '<p>En lecture\u00a0: tableau triable et filtrable des jeux du projet. Cliquez pour naviguer vers un jeu.</p>'
@@ -2426,14 +2460,33 @@ var DocumentationPage = (function() {
       + '<p>La page <strong>Recommandations de mapping</strong> fournit des recommandations expertis\u00e9es '
       + 'pour mapper les variables cliniques locales vers les concepts OMOP standards.</p>'
 
-      + '<h2>Contenu</h2>'
+      + '<h2>Que sont les recommandations de mapping\u00a0?</h2>'
+      + '<p>Lors d\u2019un processus ETL pour convertir des donn\u00e9es cliniques locales vers le CDM OMOP, '
+      + 'd\u00e9cider comment mapper chaque variable locale vers des concepts standards est l\u2019une des \u00e9tapes '
+      + 'les plus complexes. Les recommandations de mapping fournissent des conseils structur\u00e9s pour les '
+      + 'variables courantes des bases de donn\u00e9es de r\u00e9animation.</p>'
+
+      + '<h2>Visualisation</h2>'
       + '<p>Le contenu est rendu en Markdown avec mise en forme riche (tableaux, liens, listes).</p>'
+      + '<p>Deux boutons sont disponibles en haut \u00e0 droite\u00a0:</p>'
+      + mockMappingToolbar('fr')
+      + '<ul>'
+      + '<li><strong>Export</strong> \u2014 ouvre le modal d\u2019export (voir ci-dessous)</li>'
+      + '<li><strong>\u00c9diter</strong> \u2014 passe en mode \u00e9dition pour modifier le contenu</li>'
+      + '</ul>'
 
       + '<h2>\u00c9dition</h2>'
-      + '<p>En mode \u00e9dition, \u00e9diteur Markdown avec aper\u00e7u en direct. Contenu bilingue.</p>'
+      + '<p>En mode \u00e9dition, un \u00e9diteur ACE avec coloration syntaxique Markdown s\u2019ouvre \u00e0 c\u00f4t\u00e9 d\u2019un panneau d\u2019aper\u00e7u en direct.</p>'
+      + '<p>Le contenu est multilingue \u2014 changer de langue sauvegarde le texte actuel et charge l\u2019autre langue.</p>'
 
       + '<h2>Export</h2>'
-      + '<p>Copiez le JSON, t\u00e9l\u00e9chargez ou ouvrez l\u2019\u00e9diteur GitHub pour proposer des modifications.</p>';
+      + '<p>Cliquez sur <strong>Export</strong> pour ouvrir le modal d\u2019export\u00a0:</p>'
+      + mockMappingExportModal('fr')
+      + '<ul>'
+      + '<li><strong>T\u00e9l\u00e9charger</strong> \u2014 t\u00e9l\u00e9charge <code>mapping_recommendations.json</code>, \u00e0 placer dans le dossier <code>mapping_recommendations/</code> du d\u00e9p\u00f4t Git</li>'
+      + '<li><strong>Copier</strong> \u2014 copie le contenu JSON dans le presse-papiers</li>'
+      + '<li><strong>Proposer sur GitHub</strong> \u2014 copie dans le presse-papiers et ouvre l\u2019\u00e9diteur GitHub pour proposer des modifications via une pull request</li>'
+      + '</ul>';
   }
 
   function ohdsiVocabFR() {

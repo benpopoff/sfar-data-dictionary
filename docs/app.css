@@ -1621,6 +1621,14 @@ select.form-input { appearance: auto; }
   justify-content: flex-end;
   gap: 8px;
   padding: 0 0 10px;
+  position: relative;
+  z-index: 2;
+  float: right;
+  margin-bottom: -40px;
+}
+.mapping-page-toolbar.edit-mode {
+  float: none;
+  margin-bottom: 0;
 }
 .mapping-view-container {
   flex: 1;
