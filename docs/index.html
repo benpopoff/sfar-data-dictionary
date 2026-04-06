@@ -414,8 +414,8 @@
     <div class="panel-tabs" id="proj-tabs" style="align-items:center">
       <button class="panel-tab active" data-tab="context" data-i18n="Description">Description</button>
       <button class="panel-tab" data-tab="variables" data-i18n="Concept Sets">Concept Sets</button>
-      <button class="export-btn" id="proj-export-csv" style="margin-left:auto; display:none" title="Export all concepts to CSV">
-        <i class="fas fa-download"></i> <span data-i18n="Export CSV">Export CSV</span>
+      <button class="btn-primary-custom" id="proj-export-csv" style="margin-left:auto; display:none" title="Export all concepts to CSV">
+        <i class="fas fa-file-csv"></i> <span data-i18n="Export CSV">Export CSV</span>
       </button>
     </div>
 
@@ -540,25 +540,13 @@
       <button class="modal-close" id="proj-modal-close">&times;</button>
     </div>
     <div class="modal-body" style="display:flex; flex-direction:column; gap:12px; padding:20px">
-      <div style="display:flex; gap:12px">
-        <div style="flex:1">
-          <label class="form-label" for="proj-modal-name-en" data-i18n="Name (EN) *">Name (EN) *</label>
-          <input type="text" class="form-input" id="proj-modal-name-en" data-i18n-placeholder="Project name (English)" placeholder="Project name (English)">
-        </div>
-        <div style="flex:1">
-          <label class="form-label" for="proj-modal-name-fr" data-i18n="Name (FR)">Name (FR)</label>
-          <input type="text" class="form-input" id="proj-modal-name-fr" data-i18n-placeholder="Project name (French)" placeholder="Nom du projet (Français)">
-        </div>
+      <div>
+        <label class="form-label" for="proj-modal-name" data-i18n="Name *">Name *</label>
+        <input type="text" class="form-input" id="proj-modal-name" data-i18n-placeholder="Project name" placeholder="Project name">
       </div>
-      <div style="display:flex; gap:12px">
-        <div style="flex:1">
-          <label class="form-label" for="proj-modal-short-desc-en" data-i18n="Short description (EN)">Short description (EN)</label>
-          <input type="text" class="form-input" id="proj-modal-short-desc-en" data-i18n-placeholder="Short description (English)" placeholder="Short description (English)">
-        </div>
-        <div style="flex:1">
-          <label class="form-label" for="proj-modal-short-desc-fr" data-i18n="Short description (FR)">Short description (FR)</label>
-          <input type="text" class="form-input" id="proj-modal-short-desc-fr" data-i18n-placeholder="Short description (French)" placeholder="Description courte (Français)">
-        </div>
+      <div>
+        <label class="form-label" for="proj-modal-short-desc" data-i18n="Short description">Short description</label>
+        <input type="text" class="form-input" id="proj-modal-short-desc" data-i18n-placeholder="Short description" placeholder="Short description">
       </div>
       <div>
         <label class="form-label" for="proj-modal-author" data-i18n="Created By">Created By</label>

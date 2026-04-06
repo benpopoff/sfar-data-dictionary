@@ -88,32 +88,27 @@ var ProjectsPage = (function() {
     modalEditingId = null;
     document.getElementById('proj-modal-title').innerHTML = '<i class="fas fa-plus"></i> ' + App.i18n('New Project');
     document.getElementById('proj-modal-submit').innerHTML = '<i class="fas fa-plus"></i> ' + App.i18n('Create');
-    document.getElementById('proj-modal-name-en').value = '';
-    document.getElementById('proj-modal-name-fr').value = '';
-    document.getElementById('proj-modal-short-desc-en').value = '';
-    document.getElementById('proj-modal-short-desc-fr').value = '';
+    document.getElementById('proj-modal-name').value = '';
+    document.getElementById('proj-modal-short-desc').value = '';
     var profile = App.getUserProfile();
     var authorName = ((profile.firstName || '') + ' ' + (profile.lastName || '')).trim();
     document.getElementById('proj-modal-author').value = authorName || '';
     document.getElementById('proj-modal').style.display = '';
-    document.getElementById('proj-modal-name-en').focus();
+    document.getElementById('proj-modal-name').focus();
   }
 
   function openEditModal(id) {
     var proj = App.projects.find(function(p) { return p.id === id; });
     if (!proj) return;
     modalEditingId = id;
-    var trEn = (proj.translations && proj.translations.en) || {};
-    var trFr = (proj.translations && proj.translations.fr) || {};
+    var tr = App.tProj(proj);
     document.getElementById('proj-modal-title').innerHTML = '<i class="fas fa-pen"></i> ' + App.i18n('Edit Project');
     document.getElementById('proj-modal-submit').innerHTML = '<i class="fas fa-save"></i> ' + App.i18n('Save');
-    document.getElementById('proj-modal-name-en').value = trEn.name || '';
-    document.getElementById('proj-modal-name-fr').value = trFr.name || '';
-    document.getElementById('proj-modal-short-desc-en').value = trEn.short_description || '';
-    document.getElementById('proj-modal-short-desc-fr').value = trFr.short_description || '';
+    document.getElementById('proj-modal-name').value = tr.name || '';
+    document.getElementById('proj-modal-short-desc').value = tr.short_description || '';
     document.getElementById('proj-modal-author').value = proj.createdBy || '';
     document.getElementById('proj-modal').style.display = '';
-    document.getElementById('proj-modal-name-en').focus();
+    document.getElementById('proj-modal-name').focus();
   }
 
   function closeCreateModal() {
@@ -121,18 +116,10 @@ var ProjectsPage = (function() {
   }
 
   function submitModal() {
-    var nameEn = document.getElementById('proj-modal-name-en').value.trim();
-    var nameFr = document.getElementById('proj-modal-name-fr').value.trim();
-    var shortDescEn = document.getElementById('proj-modal-short-desc-en').value.trim();
-    var shortDescFr = document.getElementById('proj-modal-short-desc-fr').value.trim();
+    var name = document.getElementById('proj-modal-name').value.trim();
+    var shortDesc = document.getElementById('proj-modal-short-desc').value.trim();
     var author = document.getElementById('proj-modal-author').value.trim();
-    if (!nameEn && !nameFr) { App.showToast(App.i18n('Project name is required.'), 'error'); return; }
-
-    // Default: copy from one language to the other if empty
-    if (!nameFr) nameFr = nameEn;
-    if (!nameEn) nameEn = nameFr;
-    if (!shortDescFr) shortDescFr = shortDescEn;
-    if (!shortDescEn) shortDescEn = shortDescFr;
+    if (!name) { App.showToast(App.i18n('Project name is required.'), 'error'); return; }
 
     if (modalEditingId != null) {
       // Edit existing project
@@ -141,10 +128,10 @@ var ProjectsPage = (function() {
       if (!proj.translations) proj.translations = { en: {}, fr: {} };
       if (!proj.translations.en) proj.translations.en = {};
       if (!proj.translations.fr) proj.translations.fr = {};
-      proj.translations.en.name = nameEn;
-      proj.translations.fr.name = nameFr;
-      proj.translations.en.short_description = shortDescEn;
-      proj.translations.fr.short_description = shortDescFr;
+      proj.translations.en.name = name;
+      proj.translations.fr.name = name;
+      proj.translations.en.short_description = shortDesc;
+      proj.translations.fr.short_description = shortDesc;
       proj.createdBy = author;
       proj.modifiedDate = new Date().toISOString().split('T')[0];
       App.updateProject(proj);
@@ -160,8 +147,8 @@ var ProjectsPage = (function() {
       var proj = {
         id: App.nextProjectId(),
         translations: {
-          en: { name: nameEn, short_description: shortDescEn, long_description: '' },
-          fr: { name: nameFr, short_description: shortDescFr, long_description: '' }
+          en: { name: name, short_description: shortDesc, long_description: '' },
+          fr: { name: name, short_description: shortDesc, long_description: '' }
         },
         createdBy: author,
         createdDate: today,
