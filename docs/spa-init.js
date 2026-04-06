@@ -10,7 +10,6 @@
     '/mapping-recommendations': { el: 'page-mapping-recommendations', mod: MappingRecommendationsPage },
     '/projects':        { el: 'page-projects',        mod: ProjectsPage },
     '/settings':        { el: 'page-settings',        mod: SettingsPage },
-    '/general-settings':{ el: 'page-general-settings', mod: GeneralSettingsPage },
     '/dev-tools':       { el: 'page-dev-tools',       mod: DevToolsPage },
     '/documentation':   { el: 'page-documentation',   mod: DocumentationPage }
   };

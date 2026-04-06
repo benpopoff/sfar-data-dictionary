@@ -5,15 +5,19 @@ var SettingsPage = (function() {
   var initialized = false;
 
   // ==================== STATE ====================
-  var activeTab = 'conversions';
+  var activeTab = 'vocabularies';
 
   // Session-editable copies
   var convData = [];
   var ruData = [];
 
-  // Search state
-  var convSearch = '';
-  var ruSearch = '';
+  // Pagination
+  var convPage = 1, convPageSize = 50;
+  var ruPage = 1, ruPageSize = 50;
+
+  // Column filters
+  var convFilters = {};
+  var ruFilters = {};
 
   // Delete callback holder
   var pendingDelete = null;
@@ -22,28 +26,104 @@ var SettingsPage = (function() {
   var testConvRow = null;
   var testConvSwapped = false;
 
+  // ==================== SHARED PAGINATION ====================
+  function renderPagination(paginationId, pageInfoId, pageBtnsId, currentPage, totalItems, pageSize) {
+    var el = document.getElementById(paginationId);
+    var totalPages = Math.ceil(totalItems / pageSize);
+    if (totalPages <= 0) totalPages = 1;
+    var start = (currentPage - 1) * pageSize;
+    document.getElementById(pageInfoId).textContent =
+      totalItems === 0 ? 'No items' :
+      'Showing ' + (start + 1) + '-' + Math.min(start + pageSize, totalItems) + ' of ' + totalItems;
+    var btnContainer = document.getElementById(pageBtnsId);
+    if (totalPages <= 1) {
+      btnContainer.innerHTML = '';
+      el.style.display = '';
+      return;
+    }
+    el.style.display = '';
+    var btns = '';
+    btns += '<button ' + (currentPage <= 1 ? 'disabled' : '') + ' data-page="first">&laquo;</button>';
+    btns += '<button ' + (currentPage <= 1 ? 'disabled' : '') + ' data-page="prev">&lsaquo;</button>';
+    var maxButtons = 7;
+    var startP = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+    var endP = Math.min(totalPages, startP + maxButtons - 1);
+    if (endP - startP < maxButtons - 1) startP = Math.max(1, endP - maxButtons + 1);
+    for (var i = startP; i <= endP; i++) {
+      btns += '<button ' + (i === currentPage ? 'class="active"' : '') + ' data-page="' + i + '">' + i + '</button>';
+    }
+    btns += '<button ' + (currentPage >= totalPages ? 'disabled' : '') + ' data-page="next">&rsaquo;</button>';
+    btns += '<button ' + (currentPage >= totalPages ? 'disabled' : '') + ' data-page="last">&raquo;</button>';
+    btnContainer.innerHTML = btns;
+  }
+
+  function handlePageClick(e, totalItems, pageSize, getCurrentPage, setPage, render, scrollElId) {
+    var btn = e.target.closest('button[data-page]');
+    if (!btn || btn.disabled) return;
+    var val = btn.dataset.page;
+    var totalPages = Math.ceil(totalItems / pageSize);
+    var p = getCurrentPage();
+    if (val === 'first') p = 1;
+    else if (val === 'prev') p = Math.max(1, p - 1);
+    else if (val === 'next') p = Math.min(totalPages, p + 1);
+    else if (val === 'last') p = totalPages;
+    else p = parseInt(val);
+    setPage(p);
+    render();
+    if (scrollElId) {
+      var el = document.getElementById(scrollElId);
+      if (el) el.scrollTop = 0;
+    }
+  }
+
   // ==================== VOCAB ENRICHMENT ====================
-  function enrichTableNames(tbodyId) {
-    if (typeof VocabDB === 'undefined') return;
+  var enriched = false;
+  var enrichRetries = 0;
+
+  function enrichAllNames() {
+    if (enriched) return;
+    if (typeof VocabDB === 'undefined' || typeof VocabDB.isDatabaseReady !== 'function') return;
     VocabDB.isDatabaseReady().then(function(ready) {
-      if (!ready) return;
-      var tbody = document.getElementById(tbodyId);
-      if (!tbody) return;
-      var cells = tbody.querySelectorAll('td[data-cid]');
-      var idSet = {};
-      for (var i = 0; i < cells.length; i++) {
-        var cid = parseInt(cells[i].getAttribute('data-cid'));
-        if (cid) idSet[cid] = true;
+      if (!ready) {
+        // DB not ready yet — retry a few times with delay
+        if (enrichRetries < 5) {
+          enrichRetries++;
+          setTimeout(enrichAllNames, 1000);
+        }
+        return;
       }
+      // Collect all concept IDs from both tables
+      var idSet = {};
+      convData.forEach(function(row) {
+        if (row.conceptId1) idSet[row.conceptId1] = true;
+        if (row.conceptId2) idSet[row.conceptId2] = true;
+        if (row.unitConceptId1) idSet[row.unitConceptId1] = true;
+        if (row.unitConceptId2) idSet[row.unitConceptId2] = true;
+      });
+      ruData.forEach(function(row) {
+        if (row.conceptId) idSet[row.conceptId] = true;
+        if (row.recommendedUnitConceptId) idSet[row.recommendedUnitConceptId] = true;
+      });
       var ids = Object.keys(idSet).map(Number);
       if (ids.length === 0) return;
       VocabDB.lookupConcepts(ids).then(function(concepts) {
         var map = {};
         concepts.forEach(function(c) { map[c.concept_id] = c.concept_name; });
-        for (var j = 0; j < cells.length; j++) {
-          var id = parseInt(cells[j].getAttribute('data-cid'));
-          if (map[id]) cells[j].textContent = map[id];
-        }
+        // Enrich convData
+        convData.forEach(function(row) {
+          if (map[row.conceptId1] && !row.conceptName1) row.conceptName1 = map[row.conceptId1];
+          if (map[row.conceptId2] && !row.conceptName2) row.conceptName2 = map[row.conceptId2];
+          if (map[row.unitConceptId1] && !row.unitName1) row.unitName1 = map[row.unitConceptId1];
+          if (map[row.unitConceptId2] && !row.unitName2) row.unitName2 = map[row.unitConceptId2];
+        });
+        // Enrich ruData
+        ruData.forEach(function(row) {
+          if (map[row.conceptId] && !row.conceptName) row.conceptName = map[row.conceptId];
+          if (map[row.recommendedUnitConceptId] && !row.recommendedUnitName) row.recommendedUnitName = map[row.recommendedUnitConceptId];
+        });
+        enriched = true;
+        renderConvTable();
+        renderRUTable();
       });
     });
   }
@@ -54,52 +134,71 @@ var SettingsPage = (function() {
     document.querySelectorAll('#settings-tabs .settings-tab').forEach(function(btn) {
       btn.classList.toggle('active', btn.dataset.tab === tab);
     });
-    ['conversions', 'units'].forEach(function(t) {
+    ['vocabularies', 'conversions', 'units'].forEach(function(t) {
       var el = document.getElementById('tab-' + t);
       if (el) el.style.display = (t === tab) ? '' : 'none';
     });
+    if (tab === 'vocabularies' && typeof GeneralSettingsPage !== 'undefined') {
+      GeneralSettingsPage.show();
+    }
+    if ((tab === 'conversions' || tab === 'units') && !enriched) {
+      enrichAllNames();
+    }
   }
 
   // ==================== UNIT CONVERSIONS ====================
   function getFilteredConv() {
-    if (!convSearch) return convData;
-    return App.fuzzyFilter(convData, convSearch, function(row) {
-      return [
-        String(row.conceptId1), row.conceptName1 || '',
-        row.unitName1 || '', String(row.conceptId2),
-        row.conceptName2 || '', row.unitName2 || ''
-      ];
+    return convData.filter(function(row) {
+      for (var key in convFilters) {
+        if (!convFilters[key]) continue;
+        var q = convFilters[key].toLowerCase();
+        var val = '';
+        if (key === 'cid1') val = String(row.conceptId1);
+        else if (key === 'cname1') val = (row.conceptName1 || '').toLowerCase();
+        else if (key === 'uname1') val = (row.unitName1 || '').toLowerCase();
+        else if (key === 'factor') val = String(row.conversionFactor);
+        else if (key === 'cid2') val = String(row.conceptId2);
+        else if (key === 'cname2') val = (row.conceptName2 || '').toLowerCase();
+        else if (key === 'uname2') val = (row.unitName2 || '').toLowerCase();
+        if (val.indexOf(q) === -1) return false;
+      }
+      return true;
     });
   }
 
   function renderConvTable() {
-    var data = getFilteredConv();
+    var filtered = getFilteredConv();
+    var totalPages = Math.ceil(filtered.length / convPageSize);
+    if (convPage > totalPages && totalPages > 0) convPage = totalPages;
+    var start = (convPage - 1) * convPageSize;
+    var pageData = filtered.slice(start, start + convPageSize);
     var tbody = document.getElementById('conv-tbody');
-    if (data.length === 0) {
+
+    if (pageData.length === 0) {
       tbody.innerHTML = '<tr><td colspan="8" class="empty-state"><p>No unit conversions' +
-        (convSearch ? ' match your search' : ' defined') + '.</p></td></tr>';
-      return;
+        (Object.keys(convFilters).some(function(k) { return !!convFilters[k]; }) ? ' match your filters' : ' defined') + '.</p></td></tr>';
+    } else {
+      tbody.innerHTML = pageData.map(function(row) {
+        var idx = convData.indexOf(row);
+        return '<tr data-idx="' + idx + '">' +
+          '<td>' + row.conceptId1 + '</td>' +
+          '<td>' + App.escapeHtml(row.conceptName1 || '') + '</td>' +
+          '<td>' + App.escapeHtml(row.unitName1 || '') + '</td>' +
+          '<td class="td-center editable-cell" data-field="conversionFactor" data-idx="' + idx + '">' +
+            row.conversionFactor + '</td>' +
+          '<td>' + row.conceptId2 + '</td>' +
+          '<td>' + App.escapeHtml(row.conceptName2 || '') + '</td>' +
+          '<td>' + App.escapeHtml(row.unitName2 || '') + '</td>' +
+          '<td class="td-center">' +
+            '<button class="btn-action btn-action-test" data-idx="' + idx + '" title="Test">' +
+              '<i class="fas fa-calculator"></i> Test</button> ' +
+            '<button class="btn-action btn-action-delete" data-idx="' + idx + '" title="Delete">' +
+              '<i class="fas fa-trash"></i></button>' +
+          '</td>' +
+          '</tr>';
+      }).join('');
     }
-    tbody.innerHTML = data.map(function(row, i) {
-      var idx = convData.indexOf(row);
-      return '<tr data-idx="' + idx + '">' +
-        '<td>' + row.conceptId1 + '</td>' +
-        '<td data-cid="' + row.conceptId1 + '">' + App.escapeHtml(row.conceptName1 || '') + '</td>' +
-        '<td data-cid="' + row.unitConceptId1 + '">' + App.escapeHtml(row.unitName1 || '') + '</td>' +
-        '<td class="td-center editable-cell" data-field="conversionFactor" data-idx="' + idx + '">' +
-          row.conversionFactor + '</td>' +
-        '<td>' + row.conceptId2 + '</td>' +
-        '<td data-cid="' + row.conceptId2 + '">' + App.escapeHtml(row.conceptName2 || '') + '</td>' +
-        '<td data-cid="' + row.unitConceptId2 + '">' + App.escapeHtml(row.unitName2 || '') + '</td>' +
-        '<td class="td-center">' +
-          '<button class="btn-action btn-action-test" data-idx="' + idx + '" title="Test">' +
-            '<i class="fas fa-calculator"></i> Test</button> ' +
-          '<button class="btn-action btn-action-delete" data-idx="' + idx + '" title="Delete">' +
-            '<i class="fas fa-trash"></i></button>' +
-        '</td>' +
-        '</tr>';
-    }).join('');
-    enrichTableNames('conv-tbody');
+    renderPagination('conv-pagination', 'conv-page-info', 'conv-page-buttons', convPage, filtered.length, convPageSize);
   }
 
   function startEditFactor(td) {
@@ -163,7 +262,7 @@ var SettingsPage = (function() {
       App.escapeHtml(from) + ' <i class="fas fa-arrow-right" style="color:var(--primary)"></i> ' + App.escapeHtml(to);
     document.getElementById('test-conv-unit-from').textContent =
       testConvSwapped ? (testConvRow.unitName2 || '') : (testConvRow.unitName1 || '');
-    document.getElementById('test-conv-factor-label').textContent = ' \u00d7 ' + factor.toFixed(6);
+    document.getElementById('test-conv-factor-label').textContent = ' \u00d7 ' + parseFloat(factor.toPrecision(10));
     updateTestResult();
   }
 
@@ -181,7 +280,7 @@ var SettingsPage = (function() {
     var unitLabel = testConvSwapped
       ? (testConvRow.unitName1 || '')
       : (testConvRow.unitName2 || '');
-    resultEl.textContent = result.toFixed(4) + (unitLabel ? ' ' + unitLabel : '');
+    resultEl.textContent = result.toFixed(2) + (unitLabel ? ' ' + unitLabel : '');
   }
 
   function openAddConvModal() {
@@ -229,6 +328,7 @@ var SettingsPage = (function() {
     });
 
     document.getElementById('conv-add-modal').style.display = 'none';
+    convPage = Math.ceil(convData.length / convPageSize);
     renderConvTable();
     App.showToast('Conversion added.', 'success');
   }
@@ -251,40 +351,52 @@ var SettingsPage = (function() {
 
   // ==================== RECOMMENDED UNITS ====================
   function getFilteredRU() {
-    if (!ruSearch) return ruData;
-    return App.fuzzyFilter(ruData, ruSearch, function(row) {
-      return [
-        String(row.conceptId), row.conceptName || '',
-        row.conceptCode || '', String(row.recommendedUnitConceptId),
-        row.recommendedUnitName || '', row.recommendedUnitCode || ''
-      ];
+    return ruData.filter(function(row) {
+      for (var key in ruFilters) {
+        if (!ruFilters[key]) continue;
+        var q = ruFilters[key].toLowerCase();
+        var val = '';
+        if (key === 'cid') val = String(row.conceptId);
+        else if (key === 'cname') val = (row.conceptName || '').toLowerCase();
+        else if (key === 'ccode') val = (row.conceptCode || '').toLowerCase();
+        else if (key === 'uid') val = String(row.recommendedUnitConceptId);
+        else if (key === 'uname') val = (row.recommendedUnitName || '').toLowerCase();
+        else if (key === 'ucode') val = (row.recommendedUnitCode || '').toLowerCase();
+        if (val.indexOf(q) === -1) return false;
+      }
+      return true;
     });
   }
 
   function renderRUTable() {
-    var data = getFilteredRU();
+    var filtered = getFilteredRU();
+    var totalPages = Math.ceil(filtered.length / ruPageSize);
+    if (ruPage > totalPages && totalPages > 0) ruPage = totalPages;
+    var start = (ruPage - 1) * ruPageSize;
+    var pageData = filtered.slice(start, start + ruPageSize);
     var tbody = document.getElementById('ru-tbody');
-    if (data.length === 0) {
+
+    if (pageData.length === 0) {
       tbody.innerHTML = '<tr><td colspan="7" class="empty-state"><p>No recommended units' +
-        (ruSearch ? ' match your search' : ' defined') + '.</p></td></tr>';
-      return;
+        (Object.keys(ruFilters).some(function(k) { return !!ruFilters[k]; }) ? ' match your filters' : ' defined') + '.</p></td></tr>';
+    } else {
+      tbody.innerHTML = pageData.map(function(row) {
+        var idx = ruData.indexOf(row);
+        return '<tr data-idx="' + idx + '">' +
+          '<td>' + row.conceptId + '</td>' +
+          '<td>' + App.escapeHtml(row.conceptName || '') + '</td>' +
+          '<td>' + App.escapeHtml(row.conceptCode || '') + '</td>' +
+          '<td>' + row.recommendedUnitConceptId + '</td>' +
+          '<td>' + App.escapeHtml(row.recommendedUnitName || '') + '</td>' +
+          '<td>' + App.escapeHtml(row.recommendedUnitCode || '') + '</td>' +
+          '<td class="td-center">' +
+            '<button class="btn-action btn-action-delete" data-ru-idx="' + idx + '" title="Delete">' +
+              '<i class="fas fa-trash"></i></button>' +
+          '</td>' +
+          '</tr>';
+      }).join('');
     }
-    tbody.innerHTML = data.map(function(row) {
-      var idx = ruData.indexOf(row);
-      return '<tr data-idx="' + idx + '">' +
-        '<td>' + row.conceptId + '</td>' +
-        '<td data-cid="' + row.conceptId + '">' + App.escapeHtml(row.conceptName || '') + '</td>' +
-        '<td>' + App.escapeHtml(row.conceptCode || '') + '</td>' +
-        '<td>' + row.recommendedUnitConceptId + '</td>' +
-        '<td data-cid="' + row.recommendedUnitConceptId + '">' + App.escapeHtml(row.recommendedUnitName || '') + '</td>' +
-        '<td>' + App.escapeHtml(row.recommendedUnitCode || '') + '</td>' +
-        '<td class="td-center">' +
-          '<button class="btn-action btn-action-delete" data-ru-idx="' + idx + '" title="Delete">' +
-            '<i class="fas fa-trash"></i></button>' +
-        '</td>' +
-        '</tr>';
-    }).join('');
-    enrichTableNames('ru-tbody');
+    renderPagination('ru-pagination', 'ru-page-info', 'ru-page-buttons', ruPage, filtered.length, ruPageSize);
   }
 
   function openAddRUModal() {
@@ -324,6 +436,7 @@ var SettingsPage = (function() {
     });
 
     document.getElementById('ru-add-modal').style.display = 'none';
+    ruPage = Math.ceil(ruData.length / ruPageSize);
     renderRUTable();
     App.showToast('Recommended unit added.', 'success');
   }
@@ -352,10 +465,14 @@ var SettingsPage = (function() {
       if (btn) switchTab(btn.dataset.tab);
     });
 
-    // Conversions: search
-    document.getElementById('conv-search').addEventListener('input', function(e) {
-      convSearch = e.target.value;
-      renderConvTable();
+    // Conversions: column filters
+    ['cid1', 'cname1', 'uname1', 'factor', 'cid2', 'cname2', 'uname2'].forEach(function(key) {
+      var el = document.getElementById('conv-filter-' + key);
+      if (el) el.addEventListener('input', function(e) {
+        convFilters[key] = e.target.value;
+        convPage = 1;
+        renderConvTable();
+      });
     });
 
     // Conversions: table actions
@@ -366,6 +483,15 @@ var SettingsPage = (function() {
       if (delBtn) { deleteConv(parseInt(delBtn.dataset.idx)); return; }
       var editCell = e.target.closest('.editable-cell');
       if (editCell) startEditFactor(editCell);
+    });
+
+    // Conversions: pagination
+    document.getElementById('conv-page-buttons').addEventListener('click', function(e) {
+      var filtered = getFilteredConv();
+      handlePageClick(e, filtered.length, convPageSize,
+        function() { return convPage; },
+        function(p) { convPage = p; },
+        renderConvTable, 'conv-table-wrap');
     });
 
     // Conversions: add / export
@@ -400,16 +526,29 @@ var SettingsPage = (function() {
       if (e.target === this) this.style.display = 'none';
     });
 
-    // Recommended units: search
-    document.getElementById('ru-search').addEventListener('input', function(e) {
-      ruSearch = e.target.value;
-      renderRUTable();
+    // Recommended units: column filters
+    ['cid', 'cname', 'ccode', 'uid', 'uname', 'ucode'].forEach(function(key) {
+      var el = document.getElementById('ru-filter-' + key);
+      if (el) el.addEventListener('input', function(e) {
+        ruFilters[key] = e.target.value;
+        ruPage = 1;
+        renderRUTable();
+      });
     });
 
     // Recommended units: table actions
     document.getElementById('ru-tbody').addEventListener('click', function(e) {
       var delBtn = e.target.closest('.btn-action-delete[data-ru-idx]');
       if (delBtn) deleteRU(parseInt(delBtn.dataset.ruIdx));
+    });
+
+    // Recommended units: pagination
+    document.getElementById('ru-page-buttons').addEventListener('click', function(e) {
+      var filtered = getFilteredRU();
+      handlePageClick(e, filtered.length, ruPageSize,
+        function() { return ruPage; },
+        function(p) { ruPage = p; },
+        renderRUTable, 'ru-table-wrap');
     });
 
     // Recommended units: add / export
@@ -456,8 +595,14 @@ var SettingsPage = (function() {
     renderRUTable();
   }
 
-  function show() {
+  function show(query) {
     init();
+    // Support direct tab navigation via query param, e.g. #/settings?tab=vocabularies
+    if (query && query.tab) {
+      switchTab(query.tab);
+    } else {
+      switchTab(activeTab);
+    }
   }
 
   function hide() {

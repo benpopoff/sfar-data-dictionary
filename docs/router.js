@@ -1,6 +1,6 @@
 /**
  * Hash-based SPA Router
- * Routes: #/concept-sets, #/mapping-recommendations, #/projects, #/settings, #/general-settings, #/dev-tools
+ * Routes: #/concept-sets, #/mapping-recommendations, #/projects, #/settings, #/dev-tools, #/documentation
  * Supports query params: #/concept-sets?id=123, #/projects?id=1
  */
 var Router = (function () {
