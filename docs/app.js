@@ -571,6 +571,10 @@ var App = (function() {
     'Full OHDSI format with metadata and translations': { fr: 'Format OHDSI complet avec métadonnées et traductions' },
     'ATLAS':                         { fr: 'ATLAS' },
     'ATLAS-compatible format (expression only)': { fr: 'Format compatible ATLAS (expression uniquement)' },
+    'OMOP SQL Query':                { fr: 'Requête SQL OMOP' },
+    'Copy OMOP SQL Query':           { fr: 'Copier la requête SQL OMOP' },
+    'SQL query copied to clipboard!': { fr: 'Requête SQL copiée dans le presse-papiers !' },
+    'SQL query to extract data from OMOP CDM tables, with unit conversions': { fr: 'Requête SQL pour extraire les données des tables OMOP CDM, avec conversions d\'unités' },
 
     // Bulk export modal
     'Export Concept Sets':           { fr: 'Exporter les jeux de concepts' },

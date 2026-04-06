@@ -328,6 +328,215 @@ var DocumentationPage = (function() {
     return html;
   }
 
+  function mockFiltersPopup(lang) {
+    var en = lang === 'en';
+    function filterRow(label, value) {
+      return '<div style="display:flex; align-items:center; gap:8px; margin-bottom:8px">'
+        + '<label style="min-width:80px; font-size:12px; font-weight:600; color:var(--text-muted)">' + label + '</label>'
+        + '<select class="form-input" disabled style="flex:1; font-size:12px; padding:3px 8px"><option>' + value + '</option></select>'
+        + '</div>';
+    }
+    return '<div class="doc-mock-modal" style="max-width:360px; padding:16px">'
+      + filterRow(en ? 'Vocabulary' : 'Vocabulaire', en ? 'All' : 'Tous')
+      + filterRow(en ? 'Domain' : 'Domaine', en ? 'All' : 'Tous')
+      + filterRow(en ? 'Class' : 'Classe', en ? 'All' : 'Tous')
+      + filterRow('Standard', 'Standard')
+      + '<div style="display:flex; align-items:center; gap:8px; margin-bottom:12px">'
+      + '<label style="min-width:80px; font-size:12px; font-weight:600; color:var(--text-muted)">'
+      + (en ? 'Valid only' : 'Valides uniq.') + '</label>'
+      + '<input type="checkbox" checked onclick="return false">'
+      + '</div>'
+      + '<div style="display:flex; gap:6px; justify-content:flex-end">'
+      + '<button class="btn-primary-custom btn-gray" style="cursor:default; font-size:12px">'
+      + (en ? 'Clear' : 'Effacer') + '</button>'
+      + '<button class="btn-primary-custom" style="cursor:default; font-size:12px">'
+      + (en ? 'Apply' : 'Appliquer') + '</button>'
+      + '</div></div>';
+  }
+
+  function mockAddConceptsTable(lang) {
+    var en = lang === 'en';
+    var fl = en ? 'Filter...' : 'Filtrer...';
+    var rows = [
+      { id: 3027018, name: 'Heart rate', vocab: 'LOINC', code: '8867-4', domain: 'Measurement', cls: 'Clinical Observation', std: 'S' },
+      { id: 3040891, name: 'Heart rate --resting', vocab: 'LOINC', code: '40443-4', domain: 'Measurement', cls: 'Clinical Observation', std: 'S' },
+      { id: 3001376, name: 'Heart rate by Pulse oximetry', vocab: 'LOINC', code: '8889-8', domain: 'Measurement', cls: 'Clinical Observation', std: 'S' },
+      { id: 4239408, name: 'Heart rate', vocab: 'SNOMED', code: '364075005', domain: 'Measurement', cls: 'Observable Entity', std: '' }
+    ];
+    var stdBadge = function(s) {
+      if (s === 'S') return '<span class="badge badge-standard">Standard</span>';
+      if (s === 'C') return '<span class="badge badge-classification">Classification</span>';
+      return '<span class="badge badge-non-standard">Non-standard</span>';
+    };
+    var html = '<div class="doc-mock-table"><table><thead><tr>'
+      + '<th style="width:36px"><input type="checkbox" onclick="return false"></th>'
+      + '<th>' + (en ? 'Concept ID' : 'ID Concept') + '</th>'
+      + '<th>' + (en ? 'Concept Name' : 'Nom du concept') + '</th>'
+      + '<th>' + (en ? 'Vocabulary' : 'Vocabulaire') + '</th>'
+      + '<th>Code</th>'
+      + '<th>' + (en ? 'Domain' : 'Domaine') + '</th>'
+      + '<th>' + (en ? 'Class' : 'Classe') + '</th>'
+      + '<th class="td-center">Standard</th>'
+      + '</tr><tr class="doc-mock-filter-row">'
+      + '<th></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '</tr></thead><tbody>';
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      var sel = i === 0 ? ' style="background:#e8f0fe"' : '';
+      html += '<tr' + sel + '>'
+        + '<td class="td-center"><input type="checkbox"' + (i === 0 ? ' checked' : '') + ' onclick="return false" style="accent-color:var(--primary); width:15px; height:15px"></td>'
+        + '<td>' + r.id + '</td>'
+        + '<td>' + r.name + '</td>'
+        + '<td>' + r.vocab + '</td>'
+        + '<td>' + r.code + '</td>'
+        + '<td>' + (en ? r.domain : 'Mesure') + '</td>'
+        + '<td>' + r.cls + '</td>'
+        + '<td class="td-center">' + stdBadge(r.std) + '</td>'
+        + '</tr>';
+    }
+    html += '</tbody></table></div>';
+    return html;
+  }
+
+  function mockAddConceptsFooter(lang, isCustom) {
+    var en = lang === 'en';
+    function toggle(checked, isExclude) {
+      var cls = 'toggle-switch toggle-sm' + (isExclude ? ' toggle-exclude' : '');
+      return '<label class="' + cls + '" style="cursor:default">'
+        + '<input type="checkbox"' + (checked ? ' checked' : '') + ' onclick="return false">'
+        + '<span class="toggle-slider" style="cursor:default"></span></label>';
+    }
+    var html = '<div class="doc-mock-modal" style="max-width:100%; padding:10px 16px">'
+      + '<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px">';
+
+    if (!isCustom) {
+      html += '<label style="display:inline-flex; align-items:center; gap:4px; font-size:13px; cursor:default">'
+        + '<input type="checkbox" onclick="return false"> '
+        + '<span>' + (en ? 'Multiple Selection' : 'S\u00e9lection multiple') + '</span></label>';
+    } else {
+      html += '<div></div>';
+    }
+
+    html += '<div style="display:flex; align-items:center; gap:12px">';
+    html += toggle(false, true) + ' <span style="font-size:13px; font-weight:500">'
+      + (en ? 'Exclude' : 'Exclure') + '</span>';
+    if (!isCustom) {
+      html += toggle(false, false) + ' <span style="font-size:13px; font-weight:500">Descendants</span>';
+      html += toggle(false, false) + ' <span style="font-size:13px; font-weight:500">'
+        + (en ? 'Mapped' : 'Mapp\u00e9') + '</span>';
+      html += '<span style="font-size:12px; color:var(--text-muted)">'
+        + (en ? '1 selected' : '1 s\u00e9lectionn\u00e9') + '</span>';
+      html += '<button class="btn-success-custom" style="cursor:default"><i class="fas fa-plus"></i> '
+        + (en ? 'Add Concepts' : 'Ajouter des concepts') + '</button>';
+    } else {
+      html += '<button class="btn-success-custom" style="cursor:default"><i class="fas fa-plus"></i> '
+        + (en ? 'Add Custom Concept' : 'Ajouter le concept') + '</button>';
+    }
+    html += '</div></div></div>';
+    return html;
+  }
+
+  function mockCustomConceptForm(lang) {
+    var en = lang === 'en';
+    return '<div class="doc-mock-modal" style="max-width:100%; padding:20px 24px">'
+      + '<div class="custom-concept-form" style="max-width:500px">'
+      + '<div class="custom-concept-row">'
+      + '<label>' + (en ? 'Concept ID' : 'ID Concept') + '</label>'
+      + '<div class="custom-concept-input-wrap">'
+      + '<input type="text" class="form-input" value="2100000003" readonly>'
+      + '<span style="font-size:11px; color:var(--text-muted)">'
+      + (en ? 'Auto-assigned from 2,100,000,000' : 'Auto-attribu\u00e9 \u00e0 partir de 2\u202f100\u202f000\u202f000')
+      + '</span></div></div>'
+      + '<div class="custom-concept-row">'
+      + '<label>' + (en ? 'Concept Name *' : 'Nom du concept *') + '</label>'
+      + '<input type="text" class="form-input" value="ICDSC Score" readonly></div>'
+      + '<div class="custom-concept-row">'
+      + '<label>' + (en ? 'Domain *' : 'Domaine *') + '</label>'
+      + '<input type="text" class="form-input" value="Measurement" readonly></div>'
+      + '<div class="custom-concept-row">'
+      + '<label>' + (en ? 'Vocabulary' : 'Vocabulaire') + '</label>'
+      + '<div class="custom-concept-input-wrap">'
+      + '<input type="text" class="form-input" value="INDICATE" readonly>'
+      + '<span style="font-size:11px; color:var(--text-muted)">'
+      + (en ? 'Custom concepts use the INDICATE vocabulary' : 'Les concepts personnalis\u00e9s utilisent le vocabulaire INDICATE')
+      + '</span></div></div>'
+      + '<div class="custom-concept-row">'
+      + '<label>' + (en ? 'Concept Class *' : 'Classe *') + '</label>'
+      + '<input type="text" class="form-input" value="Clinical Observation" readonly></div>'
+      + '<div class="custom-concept-row">'
+      + '<label>' + (en ? 'Concept Code' : 'Code du concept') + '</label>'
+      + '<input type="text" class="form-input" value="" placeholder="'
+      + (en ? 'Enter concept code (optional)...' : 'Code du concept (optionnel)...')
+      + '" readonly></div>'
+      + '<div class="custom-concept-row">'
+      + '<label>Standard Concept</label>'
+      + '<input type="text" class="form-input" value="Non-standard" readonly></div>'
+      + '</div></div>';
+  }
+
+  function mockExpressionEditTable(lang) {
+    var en = lang === 'en';
+    function toggle(checked, isExclude) {
+      var cls = 'toggle-switch toggle-sm' + (isExclude ? ' toggle-exclude' : '');
+      return '<label class="' + cls + '" style="cursor:default">'
+        + '<input type="checkbox"' + (checked ? ' checked' : '') + ' onclick="return false">'
+        + '<span class="toggle-slider" style="cursor:default"></span></label>';
+    }
+    var rows = [
+      { vocab: 'LOINC', name: 'Heart rate', cls: 'LOINC Hierarchy', std: 'C', excl: false, desc: true, map: true },
+      { vocab: 'SNOMED', name: 'Heart rate', cls: 'Observable Entity', std: 'S', excl: false, desc: true, map: true },
+      { vocab: 'SNOMED', name: 'Fetal heart rate', cls: 'Observable Entity', std: 'S', excl: true, desc: true, map: true },
+      { vocab: 'LOINC', name: 'Heart rate at First encounter', cls: 'Clinical Observation', std: 'S', excl: true, desc: true, map: true }
+    ];
+    var stdBadge = function(s) {
+      return s === 'S'
+        ? '<span class="badge badge-standard">Standard</span>'
+        : '<span class="badge badge-classification">Classification</span>';
+    };
+    var fl = en ? 'Filter...' : 'Filtrer...';
+    var html = '<div class="doc-mock-table"><table><thead><tr>'
+      + '<th>' + (en ? 'Vocabulary' : 'Vocabulaire') + '</th>'
+      + '<th>' + (en ? 'Concept Name' : 'Nom du concept') + '</th>'
+      + '<th>' + (en ? 'Concept Class' : 'Classe') + '</th>'
+      + '<th>Standard</th>'
+      + '<th class="td-center">' + (en ? 'Exclude' : 'Exclure') + '</th>'
+      + '<th class="td-center">Desc.</th>'
+      + '<th class="td-center">' + (en ? 'Mapped' : 'Mapp\u00e9') + '</th>'
+      + '<th style="width:36px"></th>'
+      + '</tr><tr class="doc-mock-filter-row">'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th><input type="text" class="form-input" placeholder="' + fl + '" readonly></th>'
+      + '<th></th><th></th><th></th><th></th>'
+      + '</tr></thead><tbody>';
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      html += '<tr>'
+        + '<td>' + r.vocab + '</td>'
+        + '<td>' + r.name + '</td>'
+        + '<td>' + r.cls + '</td>'
+        + '<td>' + stdBadge(r.std) + '</td>'
+        + '<td class="td-center">' + toggle(r.excl, true) + '</td>'
+        + '<td class="td-center">' + toggle(r.desc, r.excl) + '</td>'
+        + '<td class="td-center">' + toggle(r.map, r.excl) + '</td>'
+        + '<td class="td-center"><i class="fas fa-trash" style="color:var(--danger); opacity:0.6; font-size:13px; cursor:default"></i></td>'
+        + '</tr>';
+    }
+    html += '<tr><td colspan="8" style="text-align:center; color:var(--text-muted); font-size:12px; padding:8px">'
+      + (en ? '... 38 items total' : '... 38 \u00e9l\u00e9ments au total')
+      + '</td></tr>';
+    html += '</tbody></table></div>';
+    return html;
+  }
+
   function mockEditModeTable(lang) {
     var en = lang === 'en';
     var rows = [
@@ -867,23 +1076,21 @@ var DocumentationPage = (function() {
       + '<p>In edit mode, two extra columns appear on each row: a <strong>checkbox</strong> for selection '
       + 'and a <strong>pen icon</strong> to edit that concept set.</p>'
       + mockEditModeTable(App.lang)
-      + '<ul>'
-      + '<li><button class="cs-row-edit-btn" style="cursor:default"><i class="fas fa-pen"></i></button> '
+      + '<p style="margin-top:16px"><button class="cs-row-edit-btn" style="cursor:default"><i class="fas fa-pen"></i></button> '
       + '<strong>' + (App.lang === 'en' ? 'Edit' : 'Modifier') + '</strong> \u2014 '
       + (App.lang === 'en'
-        ? 'Opens the edit modal (same form as "New Concept Set", pre-filled with the existing values)'
-        : 'Ouvre le modal d\u2019\u00e9dition (m\u00eame formulaire que \u00ab Nouveau jeu de concepts \u00bb, pr\u00e9-rempli)')
-      + '</li>'
-      + '<li><button class="btn-secondary-custom btn-sm" style="cursor:default"><i class="fas fa-check-square"></i></button> '
+        ? 'Opens the edit modal (same form as "New Concept Set", pre-filled with the existing values).'
+        : 'Ouvre le modal d\u2019\u00e9dition (m\u00eame formulaire que \u00ab Nouveau jeu de concepts \u00bb, pr\u00e9-rempli).')
+      + '</p>'
+      + '<p><button class="btn-secondary-custom btn-sm" style="cursor:default"><i class="fas fa-check-square"></i></button> '
       + '<button class="btn-secondary-custom btn-sm" style="cursor:default"><i class="far fa-square"></i></button> '
       + '<strong>' + (App.lang === 'en' ? 'Select All / Unselect All' : 'Tout s\u00e9lectionner / D\u00e9s\u00e9lectionner') + '</strong> \u2014 '
-      + (App.lang === 'en' ? 'Toggle selection on all rows' : 'Basculer la s\u00e9lection sur toutes les lignes')
-      + '</li>'
-      + '<li><button class="btn-danger-custom btn-sm" style="cursor:default"><i class="fas fa-trash"></i></button> '
+      + (App.lang === 'en' ? 'Toggle selection on all rows.' : 'Basculer la s\u00e9lection sur toutes les lignes.')
+      + '</p>'
+      + '<p><button class="btn-danger-custom btn-sm" style="cursor:default"><i class="fas fa-trash"></i></button> '
       + '<strong>' + (App.lang === 'en' ? 'Delete' : 'Supprimer') + '</strong> \u2014 '
-      + (App.lang === 'en' ? 'Remove all selected concept sets' : 'Supprimer les jeux de concepts s\u00e9lectionn\u00e9s')
-      + '</li>'
-      + '</ul>'
+      + (App.lang === 'en' ? 'Remove all selected concept sets.' : 'Supprimer les jeux de concepts s\u00e9lectionn\u00e9s.')
+      + '</p>'
 
       + '<h3>Saving & Cancelling</h3>'
       + '<p>All changes made in edit mode (additions, edits, deletions) are pending until you explicitly act:</p>'
@@ -896,10 +1103,8 @@ var DocumentationPage = (function() {
       // ===== PART 2: DETAIL EDITING =====
       + '<h2>Editing a Concept Set\u2019s Details</h2>'
       + '<p>Open a concept set, then click <strong>Edit</strong> in the detail header. '
-      + 'The toolbar changes to show editing controls:</p>'
+      + 'The Edit and Export buttons are replaced by Import, Cancel, and Save:</p>'
       + '<div style="display:flex; gap:6px; justify-content:center; margin:12px 0; flex-wrap:wrap">'
-      + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-download"></i> Export</button>'
-      + '<button class="btn-primary-custom btn-gray" style="cursor:default"><i class="fas fa-pen"></i> Edit</button>'
       + '<button class="btn-primary-custom btn-purple" style="cursor:default"><i class="fas fa-file-import"></i> Import</button>'
       + '<button class="btn-primary-custom btn-gray" style="cursor:default"><i class="fas fa-times"></i> Cancel</button>'
       + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-save"></i> Save</button>'
@@ -910,6 +1115,12 @@ var DocumentationPage = (function() {
       + 'These flags follow the '
       + '<a href="https://ohdsi.github.io/TAB/Concept-Set-Specification.html" target="_blank">'
       + 'OHDSI Concept Set Specification</a>:</p>'
+      + '<p style="font-size:12px; color:var(--text-muted); margin-bottom:4px"><i class="fas fa-info-circle"></i> '
+      + (App.lang === 'en'
+        ? 'Example: Heart rate expression in edit mode. Toggle switches control each flag. The trash icon deletes individual items.'
+        : 'Exemple\u00a0: expression Fr\u00e9quence cardiaque en mode \u00e9dition. Les interrupteurs contr\u00f4lent chaque option. L\u2019ic\u00f4ne corbeille supprime un \u00e9l\u00e9ment.')
+      + '</p>'
+      + mockExpressionEditTable(App.lang)
 
       + '<p><strong>Descendants</strong> \u2014 When checked, all descendant concepts in the '
       + 'vocabulary hierarchy are automatically included. OMOP vocabularies organize concepts '
@@ -925,7 +1136,7 @@ var DocumentationPage = (function() {
       + '(marked "S"). Other vocabulary codes representing the same idea are <strong>non-standard</strong> '
       + 'and are linked to the Standard concept via "Maps to". For example, SNOMED "Heart rate" '
       + '(concept ID 4239408, non-standard) maps to LOINC "Heart rate" (concept ID 3027018, Standard). '
-      + 'Checking Mapped ensures that source codes from other vocabularies are captured alongside the '
+      + 'Checking Mapped ensures that non-standard concepts from other vocabularies are captured alongside the '
       + 'standard concept.</p>'
 
       + '<p><strong>Exclude</strong> \u2014 When checked, this concept is removed from the resolved set. '
@@ -935,10 +1146,12 @@ var DocumentationPage = (function() {
       + 'remove fetal-specific measurements from the set.</p>'
 
       + infoBox('Resolution Algorithm',
-        'The concept set is resolved in two phases: (1) build the <strong>inclusion set</strong> from '
-        + 'all items where Exclude is unchecked, expanding via Descendants and Mapped as configured; '
-        + '(2) build the <strong>exclusion set</strong> from items where Exclude is checked, with the '
-        + 'same expansion logic; (3) the final result is <strong>inclusion set minus exclusion set</strong>.')
+        'The concept set is resolved in three steps:'
+        + '<ol style="margin:8px 0 0 0; padding-left:20px">'
+        + '<li>Build the <strong>inclusion set</strong> from all items where Exclude is unchecked, expanding via Descendants and Mapped as configured</li>'
+        + '<li>Build the <strong>exclusion set</strong> from items where Exclude is checked, with the same expansion logic</li>'
+        + '<li>Final result = <strong>inclusion set minus exclusion set</strong></li>'
+        + '</ol>')
 
       + '<h3>Adding Concepts</h3>'
       + '<p>In edit mode, the expression toolbar shows additional buttons:</p>'
@@ -950,15 +1163,100 @@ var DocumentationPage = (function() {
       + '<button class="btn-success-custom" style="cursor:default"><i class="fas fa-plus"></i> Add Concepts</button>'
       + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-magic"></i> Optimize</button>'
       + '</div>'
-      + '<p>Click <strong>Add Concepts</strong> to open a modal with two tabs:</p>'
+      + '<p>Click <strong>Add Concepts</strong> to open a fullscreen modal with two tabs:</p>'
+      + '<div style="display:flex; gap:0; justify-content:center; margin:12px 0">'
+      + '<button class="expr-add-tab active" style="cursor:default">'
+      + (App.lang === 'en' ? 'OHDSI Vocabularies' : 'Vocabulaires OHDSI') + '</button>'
+      + '<button class="expr-add-tab" style="cursor:default">'
+      + (App.lang === 'en' ? 'Custom Concept' : 'Concept personnalis\u00e9') + '</button>'
+      + '</div>'
+
+      // --- OHDSI Vocabularies tab ---
+      + '<h4>' + (App.lang === 'en' ? 'OHDSI Vocabularies' : 'Vocabulaires OHDSI') + '</h4>'
+      + '<p>' + (App.lang === 'en'
+        ? 'Search the local OHDSI vocabulary database by name, concept ID, or code. Requires '
+          + docLink('ohdsi-vocabularies', 'importing vocabularies') + ' first. '
+          + 'The search uses <strong>fuzzy matching</strong> on concept names.'
+        : 'Recherchez dans la base de vocabulaires OHDSI locale par nom, ID ou code. N\u00e9cessite l\u2019'
+          + docLink('ohdsi-vocabularies', 'import des vocabulaires')
+          + '. La recherche utilise une <strong>correspondance floue</strong> sur les noms.')
+      + '</p>'
+
+      // Search bar mock
+      + '<div class="doc-mock-modal" style="max-width:100%; padding:12px 16px">'
+      + '<div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap">'
+      + '<input type="text" class="form-input" placeholder="'
+      + (App.lang === 'en' ? 'Search concepts by name, code, or ID...' : 'Rechercher par nom, code ou ID...')
+      + '" value="heart rate" readonly style="flex:1; min-width:200px">'
+      + '<button class="btn-primary-custom" style="cursor:default"><i class="fas fa-search"></i> '
+      + (App.lang === 'en' ? 'Search' : 'Rechercher') + '</button>'
+      + '<button class="btn-primary-custom btn-gray" style="cursor:default"><i class="fas fa-filter"></i> '
+      + (App.lang === 'en' ? 'Filters' : 'Filtres') + '</button>'
+      + '<label style="display:inline-flex; align-items:center; gap:4px; font-size:12px; color:var(--text-muted); white-space:nowrap">'
+      + '<input type="checkbox" checked onclick="return false"> <span>Limit 10K</span></label>'
+      + '</div></div>'
+
+      + '<p style="margin-top:16px">' + (App.lang === 'en'
+        ? 'The <strong>Filters</strong> button opens a popup to narrow results:'
+        : 'Le bouton <strong>Filtres</strong> ouvre un popup pour affiner les r\u00e9sultats\u00a0:')
+      + '</p>'
+      + mockFiltersPopup(App.lang)
+      + '<p>' + (App.lang === 'en'
+        ? '<strong>Limit 10K</strong> caps results at 10,000 to avoid overloading the table.'
+        : '<strong>Limit 10K</strong> limite les r\u00e9sultats \u00e0 10\u202f000 pour \u00e9viter de surcharger le tableau.')
+      + '</p>'
+
+      // Results table mock
+      + '<p>' + (App.lang === 'en'
+        ? 'Results are displayed in a datatable with column filters:'
+        : 'Les r\u00e9sultats sont affich\u00e9s dans un tableau avec filtres par colonne\u00a0:')
+      + '</p>'
+      + mockAddConceptsTable(App.lang)
+
+      + '<p>' + (App.lang === 'en'
+        ? 'Below the table, two panels show details for the selected concept:'
+        : 'Sous le tableau, deux panneaux affichent les d\u00e9tails du concept s\u00e9lectionn\u00e9\u00a0:')
+      + '</p>'
       + '<ul>'
-      + '<li><strong>OHDSI search</strong> \u2014 Search the local OHDSI vocabulary database by name, '
-      + 'concept ID, or code. Requires ' + docLink('ohdsi-vocabularies', 'importing vocabularies') + ' first. '
-      + 'Filter results by vocabulary, domain, concept class, standard status, and validity.</li>'
-      + '<li><strong>Custom concept</strong> \u2014 Create non-OMOP concepts (ID \u2265 2,100,000,000) '
-      + 'when no standard concept exists. Use sparingly \u2014 custom concepts break interoperability.</li>'
-      + '</ul>'
-      + '<p>For each concept, set the Exclude, Descendants, and Mapped flags before adding.</p>'
+      + '<li><strong>' + (App.lang === 'en' ? 'Concept Details' : 'D\u00e9tails du concept')
+      + '</strong> \u2014 ' + (App.lang === 'en'
+        ? 'Full metadata, ATHENA and FHIR links'
+        : 'M\u00e9tadonn\u00e9es compl\u00e8tes, liens ATHENA et FHIR')
+      + '</li>'
+      + '<li><strong>' + (App.lang === 'en' ? 'Hierarchy' : 'Hi\u00e9rarchie')
+      + '</strong> \u2014 ' + (App.lang === 'en'
+        ? 'Interactive graph of ancestors, descendants, and related concepts'
+        : 'Graphe interactif des anc\u00eatres, descendants et concepts li\u00e9s')
+      + '</li></ul>'
+
+      // Footer mock
+      + '<p>' + (App.lang === 'en'
+        ? 'At the bottom, configure the flags and add the selected concept(s):'
+        : 'En bas, configurez les options et ajoutez le(s) concept(s) s\u00e9lectionn\u00e9(s)\u00a0:')
+      + '</p>'
+      + mockAddConceptsFooter(App.lang, false)
+
+      + '<p>' + (App.lang === 'en'
+        ? 'Check <strong>Multiple Selection</strong> to select several concepts at once using checkboxes '
+          + 'in the table, then add them all in one click.'
+        : 'Cochez <strong>S\u00e9lection multiple</strong> pour s\u00e9lectionner plusieurs concepts avec les '
+          + 'cases \u00e0 cocher du tableau, puis les ajouter en une seule fois.')
+      + '</p>'
+
+      // --- Custom Concept tab ---
+      + '<h4>' + (App.lang === 'en' ? 'Custom Concept' : 'Concept personnalis\u00e9') + '</h4>'
+      + '<p>' + (App.lang === 'en'
+        ? 'Create non-OMOP concepts when no standard concept exists. Use sparingly \u2014 custom concepts break interoperability.'
+        : 'Cr\u00e9ez des concepts hors OMOP quand aucun concept standard n\u2019existe. \u00c0 utiliser avec parcimonie.')
+      + '</p>'
+      + mockCustomConceptForm(App.lang)
+      + '<p>' + (App.lang === 'en'
+        ? 'Only the <strong>Exclude</strong> toggle is available for custom concepts, since Descendants and Mapped '
+          + 'rely on OMOP vocabulary relationships that do not exist for custom entries.'
+        : 'Seule l\u2019option <strong>Exclure</strong> est disponible pour les concepts personnalis\u00e9s, '
+          + 'car Descendants et Mapp\u00e9 reposent sur des relations de vocabulaire OMOP inexistantes pour les entr\u00e9es personnalis\u00e9es.')
+      + '</p>'
+      + mockAddConceptsFooter(App.lang, true)
 
       + '<h3>Import JSON</h3>'
       + '<p>Click <strong>Import</strong> (purple button) to paste an ATLAS-format or INDICATE-format '
@@ -1721,15 +2019,93 @@ var DocumentationPage = (function() {
     }
   }
 
+  function renderToc() {
+    var container = document.getElementById('doc-content-inner');
+    var tocEl = document.getElementById('doc-toc');
+    if (!container || !tocEl) return;
+    var headings = container.querySelectorAll('h2, h3, h4');
+    if (headings.length === 0) { tocEl.innerHTML = ''; return; }
+
+    // Assign IDs to headings that don't have one
+    for (var i = 0; i < headings.length; i++) {
+      if (!headings[i].id) {
+        headings[i].id = 'doc-heading-' + i;
+      }
+    }
+
+    var en = App.lang === 'en';
+    var html = '<div class="doc-toc-title">' + (en ? 'On this page' : 'Sur cette page') + '</div><ul>';
+    for (var j = 0; j < headings.length; j++) {
+      var h = headings[j];
+      var level = h.tagName.toLowerCase();
+      html += '<li class="toc-' + level + '"><a href="javascript:void(0)" data-toc-target="' + h.id + '">'
+        + h.textContent + '</a></li>';
+    }
+    html += '</ul>';
+    tocEl.innerHTML = html;
+  }
+
+  var tocObserver = null;
+
+  function setupTocObserver() {
+    if (tocObserver) { tocObserver.disconnect(); tocObserver = null; }
+    var contentEl = document.getElementById('doc-content');
+    var tocEl = document.getElementById('doc-toc');
+    if (!contentEl || !tocEl) return;
+    var headings = document.getElementById('doc-content-inner').querySelectorAll('h2, h3, h4');
+    if (headings.length === 0) return;
+
+    // Use IntersectionObserver relative to the scroll container
+    var visibleIds = [];
+    tocObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        var idx = visibleIds.indexOf(entry.target.id);
+        if (entry.isIntersecting && idx === -1) {
+          visibleIds.push(entry.target.id);
+        } else if (!entry.isIntersecting && idx !== -1) {
+          visibleIds.splice(idx, 1);
+        }
+      });
+      // Highlight the first visible heading
+      var links = tocEl.querySelectorAll('a[data-toc-target]');
+      var activeId = visibleIds.length > 0 ? visibleIds[0] : null;
+      // Find topmost visible heading by DOM order
+      if (visibleIds.length > 1) {
+        for (var i = 0; i < headings.length; i++) {
+          if (visibleIds.indexOf(headings[i].id) !== -1) {
+            activeId = headings[i].id;
+            break;
+          }
+        }
+      }
+      for (var j = 0; j < links.length; j++) {
+        links[j].classList.toggle('active', links[j].getAttribute('data-toc-target') === activeId);
+      }
+    }, { root: contentEl, rootMargin: '0px 0px -70% 0px', threshold: 0 });
+
+    for (var k = 0; k < headings.length; k++) {
+      tocObserver.observe(headings[k]);
+    }
+  }
+
   function renderAll() {
     renderSidebar();
     renderContent();
+    renderToc();
+    setupTocObserver();
   }
 
   // ==================== EVENTS ====================
 
   function initEvents() {
-    // Sidebar clicks use href hash links, handled by the router calling show()
+    // TOC clicks scroll to heading
+    document.getElementById('doc-toc').addEventListener('click', function(e) {
+      var link = e.target.closest('[data-toc-target]');
+      if (!link) return;
+      e.preventDefault();
+      var target = document.getElementById(link.getAttribute('data-toc-target'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   }
 
   function navigateTo(id) {
