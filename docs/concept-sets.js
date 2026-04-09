@@ -287,6 +287,8 @@ var ConceptSetsPage = (function() {
     var paginationEl = document.getElementById(paginationId);
     var totalPages = Math.ceil(totalItems / pageSize);
     if (totalPages <= 0) totalPages = 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
     var start = (currentPage - 1) * pageSize;
     document.getElementById(pageInfoId).textContent =
       totalItems === 0 ? 'No items' :
@@ -2417,7 +2419,7 @@ var ConceptSetsPage = (function() {
     name: { label: 'Concept Name', visible: true },
     code: { label: 'Concept Code', visible: true },
     domain: { label: 'Domain', visible: false },
-    'class': { label: 'Concept Class', visible: false },
+    'class': { label: 'Concept Class', visible: true },
     standard: { label: 'Standard', visible: true }
   };
   var expressionColumns = {
