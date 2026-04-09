@@ -1329,7 +1329,11 @@ var App = (function() {
   function nextConceptSetId() {
     var maxId = 0;
     conceptSets.forEach(function(cs) { if (cs.id > maxId) maxId = cs.id; });
-    return maxId + 1;
+    var repoFloor = (DATA && DATA.nextConceptSetId) || 0;
+    var localFloor = parseInt(localStorage.getItem('indicate_next_cs_id') || '0', 10);
+    var next = Math.max(maxId + 1, repoFloor, localFloor);
+    localStorage.setItem('indicate_next_cs_id', String(next + 1));
+    return next;
   }
 
   function saveUserConceptSets() {
@@ -1388,7 +1392,11 @@ var App = (function() {
   function nextProjectId() {
     var maxId = 0;
     projects.forEach(function(p) { if (p.id > maxId) maxId = p.id; });
-    return maxId + 1;
+    var repoFloor = (DATA && DATA.nextProjectId) || 0;
+    var localFloor = parseInt(localStorage.getItem('indicate_next_proj_id') || '0', 10);
+    var next = Math.max(maxId + 1, repoFloor, localFloor);
+    localStorage.setItem('indicate_next_proj_id', String(next + 1));
+    return next;
   }
 
   function saveUserProjects() {

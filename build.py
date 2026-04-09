@@ -48,6 +48,23 @@ def main():
     recommended_units = load_json_file(os.path.join(ROOT, "units", "recommended_units.json"))
     mapping_recommendations = load_json_file(os.path.join(ROOT, "mapping_recommendations", "mapping_recommendations.json"))
 
+    # Load and validate ID counters
+    counters_path = os.path.join(ROOT, "id_counters.json")
+    counters = load_json_file(counters_path) if os.path.isfile(counters_path) else {}
+    next_cs_id = counters.get("nextConceptSetId", 1)
+    next_proj_id = counters.get("nextProjectId", 1)
+    max_cs_id = max((cs["id"] for cs in concept_sets), default=0)
+    max_proj_id = max((p["id"] for p in projects), default=0)
+    if next_cs_id <= max_cs_id:
+        next_cs_id = max_cs_id + 1
+        print(f"  WARNING: nextConceptSetId was too low, bumped to {next_cs_id}")
+    if next_proj_id <= max_proj_id:
+        next_proj_id = max_proj_id + 1
+        print(f"  WARNING: nextProjectId was too low, bumped to {next_proj_id}")
+    with open(counters_path, "w", encoding="utf-8") as f:
+        json.dump({"nextConceptSetId": next_cs_id, "nextProjectId": next_proj_id}, f, indent=2)
+        f.write("\n")
+
     # Compute a content hash from all data sources
     cs_fingerprint = "|".join(
         str(cs["id"]) + ":" + cs.get("modifiedDate", "") + ":" + cs.get("version", "")
@@ -71,7 +88,9 @@ def main():
         "resolvedConceptSets": resolved,
         "unitConversions": unit_conversions,
         "recommendedUnits": recommended_units,
-        "mappingRecommendations": mapping_recommendations
+        "mappingRecommendations": mapping_recommendations,
+        "nextConceptSetId": next_cs_id,
+        "nextProjectId": next_proj_id
     }
     # Extract unique concept IDs from resolved concept sets for DuckDB filtering
     resolved_ids = set()
