@@ -705,6 +705,8 @@ var App = (function() {
 
     // Multi-select
     'selected':                      { fr: 'sélectionné(s)' },
+    'Select all':                    { fr: 'Tout cocher' },
+    'Deselect all':                  { fr: 'Tout décocher' },
 
     // Review form
     'Submit Review':                 { fr: 'Soumettre la relecture' },
@@ -913,6 +915,7 @@ var App = (function() {
       '<div class="ms-toggle" tabindex="0">' + toggleLabel() + ' <i class="fas fa-chevron-down" style="font-size:9px;margin-left:2px"></i></div>' +
       '<div class="ms-dropdown" style="display:none">' +
         (showSearch ? '<div class="ms-search-wrap"><input type="text" class="ms-search" placeholder="' + escapeHtml(i18n('Search')) + '…"></div>' : '') +
+        '<div class="ms-bulk-actions"><button type="button" class="ms-btn-all">' + escapeHtml(i18n('Select all')) + '</button><button type="button" class="ms-btn-none">' + escapeHtml(i18n('Deselect all')) + '</button></div>' +
         '<div class="ms-options">' +
           values.map(function(v) {
             return '<label class="ms-option"><input type="checkbox" value="' + escapeHtml(v) + '"' + (selectedSet.has(v) ? ' checked' : '') + '> ' + escapeHtml(getLabel(v) || '(empty)') + '</label>';
@@ -946,6 +949,37 @@ var App = (function() {
       });
       searchInput.addEventListener('click', function(e) { e.stopPropagation(); });
     }
+    var btnAll = dropdown.querySelector('.ms-btn-all');
+    var btnNone = dropdown.querySelector('.ms-btn-none');
+    function refreshCheckboxes() {
+      dropdown.querySelectorAll('.ms-option input[type="checkbox"]').forEach(function(cb) {
+        cb.checked = selectedSet.has(cb.value);
+      });
+      toggle.innerHTML = toggleLabel() + ' <i class="fas fa-chevron-down" style="font-size:9px;margin-left:2px"></i>';
+      onChange();
+    }
+    btnAll.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var visibleOptions = dropdown.querySelectorAll('.ms-option');
+      visibleOptions.forEach(function(opt) {
+        if (opt.style.display !== 'none') {
+          var cb = opt.querySelector('input[type="checkbox"]');
+          if (cb) selectedSet.add(cb.value);
+        }
+      });
+      refreshCheckboxes();
+    });
+    btnNone.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var visibleOptions = dropdown.querySelectorAll('.ms-option');
+      visibleOptions.forEach(function(opt) {
+        if (opt.style.display !== 'none') {
+          var cb = opt.querySelector('input[type="checkbox"]');
+          if (cb) selectedSet.delete(cb.value);
+        }
+      });
+      refreshCheckboxes();
+    });
     dropdown.addEventListener('change', function(e) {
       var cb = e.target;
       if (cb.checked) selectedSet.add(cb.value); else selectedSet.delete(cb.value);

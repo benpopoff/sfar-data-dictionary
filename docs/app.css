@@ -1155,6 +1155,10 @@ tbody td {
 .ms-search-wrap { padding: 4px 6px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: white; z-index: 1; }
 .ms-search { width: 100%; padding: 4px 6px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 12px; font-family: inherit; outline: none; box-sizing: border-box; }
 .ms-search:focus { border-color: var(--primary); }
+.ms-bulk-actions { display: flex; gap: 4px; padding: 4px 6px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: white; z-index: 1; }
+.ms-search-wrap + .ms-bulk-actions { position: static; z-index: auto; }
+.ms-bulk-actions button { flex: 1; padding: 3px 6px; font-size: 11px; font-family: inherit; border: 1px solid var(--border); border-radius: var(--radius); background: var(--gray-light); color: var(--text); cursor: pointer; }
+.ms-bulk-actions button:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
 .ms-options { max-height: 220px; overflow-y: auto; padding: 4px 0; }
 tr:has(+ .filter-row) th { border-bottom: none !important; }
 .filter-row th {
