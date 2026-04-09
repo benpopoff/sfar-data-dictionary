@@ -2,12 +2,84 @@
   "conceptSetId": 62,
   "resolvedConcepts": [
     {
+      "conceptId": 40799186,
+      "conceptName": "Ximelagatran",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Ingredient",
+      "conceptCode": "OMOP2721537",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40950749,
+      "conceptName": "Ximelagatran 24 MG",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "OMOP2148711",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 40896006,
       "conceptName": "Ximelagatran 24 MG Oral Tablet",
       "vocabularyId": "RxNorm Extension",
       "domainId": "Drug",
       "conceptClassId": "Clinical Drug",
       "conceptCode": "OMOP2093968",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40821713,
+      "conceptName": "Ximelagatran 24 MG Oral Tablet Box of 100",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP2019675",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40901151,
+      "conceptName": "Ximelagatran 24 MG Oral Tablet [Exanta]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug",
+      "conceptCode": "OMOP2099113",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40932239,
+      "conceptName": "Ximelagatran 24 MG Oral Tablet [Exanta] Box of 100",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP2130201",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40858882,
+      "conceptName": "Ximelagatran 24 MG [Exanta]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Comp",
+      "conceptCode": "OMOP2056844",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41079915,
+      "conceptName": "Ximelagatran Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "OMOP2277877",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41206153,
+      "conceptName": "Ximelagatran Oral Tablet [Exanta]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Form",
+      "conceptCode": "OMOP2404115",
       "standardConcept": "S"
     }
   ]

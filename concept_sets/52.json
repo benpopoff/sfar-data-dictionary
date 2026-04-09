@@ -2,411 +2,31 @@
   "id": 52,
   "name": "Nadroparin",
   "description": null,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-02-12",
+  "modifiedDate": "2026-04-09",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 2917151,
-          "conceptName": "nadroparin 19000 IU/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP5133977",
-          "validStartDate": "2021-06-30",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 2917158,
-          "conceptName": "nadroparin 9500 IU/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP5133985",
-          "validStartDate": "2021-06-30",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19001015,
-          "conceptName": "nadroparin 25000 UNT/ML Injectable Solution",
+          "conceptId": 19001014,
+          "conceptName": "nadroparin",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
+          "conceptClassId": "Ingredient",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "249819",
+          "conceptCode": "67031",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19001016,
-          "conceptName": "nadroparin 9500 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "251272",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 19001019,
-          "conceptName": "nadroparin 19000 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "415379",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36883845,
-          "conceptName": "Nadroparin 19000 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP991521",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36894582,
-          "conceptName": "Nadroparin 9500 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP999177",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40866226,
-          "conceptName": "Nadroparin 8.6 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2064188",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40959720,
-          "conceptName": "Nadroparin 9.5 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2157682",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40959721,
-          "conceptName": "Nadroparin 25.3 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2157683",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41021915,
-          "conceptName": "Nadroparin 633 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2219877",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41021916,
-          "conceptName": "Nadroparin 11.4 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2219878",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41053174,
-          "conceptName": "Nadroparin 19 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2251136",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41084729,
-          "conceptName": "Nadroparin 9.5 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2282691",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41147479,
-          "conceptName": "Nadroparin 1900 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2345441",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41240930,
-          "conceptName": "Nadroparin 10 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2438892",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42728545,
-          "conceptName": "Nadroparin 9.53 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2737954",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43275002,
-          "conceptName": "Nadroparin 19000 UNT/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP557817",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43275004,
-          "conceptName": "Nadroparin 9500 UNT/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP557826",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43786295,
-          "conceptName": "Nadroparin 190 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP697910",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43786302,
-          "conceptName": "Nadroparin 100 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP697956",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
+        "includeDescendants": true,
         "includeMapped": false
       }
     ]
@@ -418,7 +38,7 @@
       "name": "INDICATE Consortium",
       "url": "https://indicate-eu.org"
     },
-    "reviewStatus": "draft",
+    "reviewStatus": "pending_review",
     "origin": null,
     "translations": {
       "en": {
@@ -440,7 +60,14 @@
       "orcid": "0009-0002-6055-6935"
     },
     "reviews": [],
-    "versions": [],
+    "versions": [
+      {
+        "version": "1.0.1",
+        "date": "2026-04-09",
+        "author": "Boris Delange",
+        "message": "Changed concept set definition from specific Clinical Drug concepts to the RxNorm Ingredient with all descendants included."
+      }
+    ],
     "distributionStats": null
   }
 }

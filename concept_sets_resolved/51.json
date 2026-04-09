@@ -2,12 +2,66 @@
   "conceptSetId": 51,
   "resolvedConcepts": [
     {
+      "conceptId": 41405960,
+      "conceptName": "0.3 ML Melagatran 10 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "OMOP2603922",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41405775,
+      "conceptName": "0.3 ML Melagatran 10 MG/ML Prefilled Syringe Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP2603737",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40798953,
+      "conceptName": "Melagatran",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Ingredient",
+      "conceptCode": "OMOP2721291",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41107785,
+      "conceptName": "Melagatran 10 MG/ML",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "OMOP2305747",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 40866445,
       "conceptName": "Melagatran 10 MG/ML Prefilled Syringe",
       "vocabularyId": "RxNorm Extension",
       "domainId": "Drug",
       "conceptClassId": "Clinical Drug",
       "conceptCode": "OMOP2064407",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41084990,
+      "conceptName": "Melagatran 10 MG/ML Prefilled Syringe Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP2282952",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41298285,
+      "conceptName": "Melagatran Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "OMOP2496247",
       "standardConcept": "S"
     }
   ]

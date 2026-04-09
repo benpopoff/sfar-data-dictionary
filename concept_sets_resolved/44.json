@@ -2,12 +2,39 @@
   "conceptSetId": 44,
   "resolvedConcepts": [
     {
+      "conceptId": 1325124,
+      "conceptName": "dicumarol",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Ingredient",
+      "conceptCode": "1598",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19111821,
+      "conceptName": "dicumarol 100 MG",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "451484",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 19108504,
       "conceptName": "dicumarol 100 MG Oral Tablet",
       "vocabularyId": "RxNorm",
       "domainId": "Drug",
       "conceptClassId": "Clinical Drug",
       "conceptCode": "436496",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19081150,
+      "conceptName": "dicumarol 25 MG",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "315802",
       "standardConcept": "S"
     },
     {
@@ -29,6 +56,15 @@
       "standardConcept": "S"
     },
     {
+      "conceptId": 19081171,
+      "conceptName": "dicumarol 50 MG",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "315803",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 19108503,
       "conceptName": "dicumarol 50 MG Oral Capsule",
       "vocabularyId": "RxNorm",
@@ -45,6 +81,42 @@
       "conceptClassId": "Clinical Drug",
       "conceptCode": "309861",
       "standardConcept": "S"
+    },
+    {
+      "conceptId": 40032482,
+      "conceptName": "dicumarol Oral Capsule",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "451797",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36217243,
+      "conceptName": "dicumarol Oral Product",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Dose Group",
+      "conceptCode": "1151160",
+      "standardConcept": "C"
+    },
+    {
+      "conceptId": 40032483,
+      "conceptName": "dicumarol Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "371810",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36217244,
+      "conceptName": "dicumarol Pill",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Dose Group",
+      "conceptCode": "1151161",
+      "standardConcept": "C"
     }
   ]
 }

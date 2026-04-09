@@ -2,183 +2,31 @@
   "id": 341,
   "name": "Certoparin",
   "description": null,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "createdBy": "Gregor Lichtner",
   "createdDate": "2026-03-23",
-  "modifiedBy": "Gregor Lichtner",
-  "modifiedDate": "2026-03-23",
+  "modifiedBy": "Boris Delange",
+  "modifiedDate": "2026-04-09",
   "createdByTool": null,
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 19016075,
-          "conceptName": "certoparin 6000 UNT/ML Injectable Solution",
+          "conceptId": 19016072,
+          "conceptName": "certoparin",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
+          "conceptClassId": "Ingredient",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "152615",
+          "conceptCode": "152610",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41243163,
-          "conceptName": "certoparin 10 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2441125",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40868520,
-          "conceptName": "certoparin 10 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2066482",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43660807,
-          "conceptName": "certoparin 10000 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP700837",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41212204,
-          "conceptName": "certoparin 6 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2410166",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43714526,
-          "conceptName": "certoparin 83.3 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP700889",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42712720,
-          "conceptName": "certoparin 83.5 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2737671",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42902725,
-          "conceptName": "certoparin sodium 10000 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1359838",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41149738,
-          "conceptName": "certoparin 6000 UNT/ML / Dihydroergotamine 1 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2347700",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
+        "includeDescendants": true,
         "includeMapped": false
       }
     ]
@@ -190,13 +38,18 @@
       "name": "INDICATE Consortium",
       "url": "https://indicate-eu.org"
     },
-    "reviewStatus": "draft",
+    "reviewStatus": "pending_review",
     "origin": null,
     "translations": {
       "en": {
         "name": "Certoparin",
-        "category": "Medication",
-        "subcategory": "Anticoagulant"
+        "category": "Drug",
+        "subcategory": "Anticoagulants"
+      },
+      "fr": {
+        "name": "Certoparine",
+        "category": "Traitements",
+        "subcategory": "Anticoagulants"
       }
     },
     "createdByDetails": {
@@ -207,7 +60,14 @@
       "orcid": null
     },
     "reviews": [],
-    "versions": [],
+    "versions": [
+      {
+        "version": "1.0.1",
+        "date": "2026-04-09",
+        "author": "Boris Delange",
+        "message": "Changed concept set definition from specific Clinical Drug concepts to the RxNorm Ingredient with all descendants included."
+      }
+    ],
     "distributionStats": null
   }
 }

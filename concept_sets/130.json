@@ -2,259 +2,31 @@
   "id": 130,
   "name": "Dexmedetomidine",
   "description": null,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-02-12",
+  "modifiedDate": "2026-04-09",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 779650,
-          "conceptName": "dexmedetomidine 0.12 MG Sublingual Film",
+          "conceptId": 19061088,
+          "conceptName": "dexmedetomidine",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
+          "conceptClassId": "Ingredient",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "2601119",
-          "validStartDate": "2022-08-01",
+          "conceptCode": "48937",
+          "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 779659,
-          "conceptName": "dexmedetomidine 0.18 MG Sublingual Film",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "2601129",
-          "validStartDate": "2022-08-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35603040,
-          "conceptName": "dexmedetomidine 0.004 MG/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1718903",
-          "validStartDate": "2016-05-02",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35603083,
-          "conceptName": "dexmedetomidine 0.1 MG/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1719792",
-          "validStartDate": "2016-05-02",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35604437,
-          "conceptName": "dexmedetomidine 0.1 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1788947",
-          "validStartDate": "2016-05-02",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35606046,
-          "conceptName": "dexmedetomidine 0.00009 MG/MG Oral Gel",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1732668",
-          "validStartDate": "2016-05-02",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35829710,
-          "conceptName": "dexmedetomidine 0.004 MG/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP5038511",
-          "validStartDate": "2021-01-21",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36120551,
-          "conceptName": "dexmedetomidine 0.004 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP5049511",
-          "validStartDate": "2021-06-28",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36785643,
-          "conceptName": "Dexmedetomidine 0.1 MG/ML Intravenous Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP4773924",
-          "validStartDate": "2018-09-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36891706,
-          "conceptName": "Dexmedetomidine 0.1 MG/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP992428",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40822989,
-          "conceptName": "Dexmedetomidine 0.118 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2020951",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44818165,
-          "conceptName": "dexmedetomidine hydrochloride 0.1 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1535224",
-          "validStartDate": "2014-06-02",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44818167,
-          "conceptName": "dexmedetomidine hydrochloride 0.5 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1535228",
-          "validStartDate": "2014-06-02",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
+        "includeDescendants": true,
         "includeMapped": false
       }
     ]
@@ -266,7 +38,7 @@
       "name": "INDICATE Consortium",
       "url": "https://indicate-eu.org"
     },
-    "reviewStatus": "draft",
+    "reviewStatus": "pending_review",
     "origin": null,
     "translations": {
       "en": {
@@ -288,7 +60,14 @@
       "orcid": "0009-0002-6055-6935"
     },
     "reviews": [],
-    "versions": [],
+    "versions": [
+      {
+        "version": "1.0.1",
+        "date": "2026-04-09",
+        "author": "Boris Delange",
+        "message": "Changed concept set definition from specific Clinical Drug concepts to the RxNorm Ingredient with all descendants included."
+      }
+    ],
     "distributionStats": null
   }
 }

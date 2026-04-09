@@ -2,240 +2,31 @@
   "id": 70,
   "name": "Caspofungin",
   "description": null,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-02-12",
+  "modifiedDate": "2026-04-09",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 1718056,
-          "conceptName": "caspofungin acetate 70 MG Injection",
+          "conceptId": 1718054,
+          "conceptName": "caspofungin",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
+          "conceptClassId": "Ingredient",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "828539",
-          "validStartDate": "2009-01-04",
+          "conceptCode": "140108",
+          "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1718059,
-          "conceptName": "caspofungin acetate 50 MG Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "828755",
-          "validStartDate": "2009-01-04",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36785495,
-          "conceptName": "Caspofungin 50 MG Intravenous Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP4773776",
-          "validStartDate": "2018-09-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36785507,
-          "conceptName": "Caspofungin 70 MG Intravenous Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP4773787",
-          "validStartDate": "2018-09-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36881170,
-          "conceptName": "Caspofungin 70 MG Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP1002459",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36885964,
-          "conceptName": "Caspofungin 50 MG Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP1006131",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40837464,
-          "conceptName": "Caspofungin 70 MG Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2035426",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40837466,
-          "conceptName": "Caspofungin 50 MG Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2035428",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43031253,
-          "conceptName": "Caspofungin 5 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP4846317",
-          "validStartDate": "2019-10-06",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43031255,
-          "conceptName": "Caspofungin 7 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP4846319",
-          "validStartDate": "2019-10-06",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44059003,
-          "conceptName": "Caspofungin 50 MG Injectable Suspension",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP1053634",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44123689,
-          "conceptName": "Caspofungin 70 MG Injectable Suspension",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP1118320",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
+        "includeDescendants": true,
         "includeMapped": false
       }
     ]
@@ -247,7 +38,7 @@
       "name": "INDICATE Consortium",
       "url": "https://indicate-eu.org"
     },
-    "reviewStatus": "draft",
+    "reviewStatus": "pending_review",
     "origin": null,
     "translations": {
       "en": {
@@ -269,7 +60,14 @@
       "orcid": "0009-0002-6055-6935"
     },
     "reviews": [],
-    "versions": [],
+    "versions": [
+      {
+        "version": "1.0.1",
+        "date": "2026-04-09",
+        "author": "Boris Delange",
+        "message": "Changed concept set definition from specific Clinical Drug concepts to the RxNorm Ingredient with all descendants included."
+      }
+    ],
     "distributionStats": null
   }
 }

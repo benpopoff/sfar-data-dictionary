@@ -2,487 +2,31 @@
   "id": 46,
   "name": "Enoxaparin",
   "description": null,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-02-12",
+  "modifiedDate": "2026-04-09",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 19104488,
-          "conceptName": "enoxaparin 60 MG/ML Injectable Solution",
+          "conceptId": 1301025,
+          "conceptName": "enoxaparin",
           "domainId": "Drug",
           "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
+          "conceptClassId": "Ingredient",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "415320",
+          "conceptCode": "67108",
           "validStartDate": "1970-01-01",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 35869699,
-          "conceptName": "enoxaparin 10000 IU/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP5025944",
-          "validStartDate": "2020-10-02",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36259706,
-          "conceptName": "Enoxaparin 15000 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP3110581",
-          "validStartDate": "2017-10-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36783760,
-          "conceptName": "Enoxaparin 15000 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP4772144",
-          "validStartDate": "2018-09-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36881946,
-          "conceptName": "Enoxaparin 100 MG/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP996850",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 36886730,
-          "conceptName": "Enoxaparin 150 MG/ML Injection",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP999881",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40160948,
-          "conceptName": "enoxaparin sodium 100 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "854255",
-          "validStartDate": "2009-07-05",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40836551,
-          "conceptName": "Enoxaparin 13.3 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2034513",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40836552,
-          "conceptName": "Enoxaparin 7.5 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2034514",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40867638,
-          "conceptName": "Enoxaparin 10 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2065600",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40898729,
-          "conceptName": "Enoxaparin 30 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2096691",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40929839,
-          "conceptName": "Enoxaparin 20 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2127801",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40961166,
-          "conceptName": "Enoxaparin 10 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2159128",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41023342,
-          "conceptName": "Enoxaparin 10 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2221304",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41023347,
-          "conceptName": "Enoxaparin 5 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2221309",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41054605,
-          "conceptName": "Enoxaparin 133 MG/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2252567",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41054606,
-          "conceptName": "Enoxaparin 15 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2252568",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41148892,
-          "conceptName": "Enoxaparin 1 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2346854",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41148895,
-          "conceptName": "Enoxaparin 33.3 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2346857",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41211416,
-          "conceptName": "Enoxaparin 6 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2409378",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 41211417,
-          "conceptName": "Enoxaparin 10000 UNT/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP2409379",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42902627,
-          "conceptName": "enoxaparin sodium 150 MG/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1359740",
-          "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 42902906,
-          "conceptName": "enoxaparin sodium 100 MG/ML Prefilled Syringe",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1360019",
-          "validStartDate": "2012-12-03",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 43803627,
-          "conceptName": "Enoxaparin 10000 UNT/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP686457",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 44123442,
-          "conceptName": "Enoxaparin 150 MG/ML Injectable Solution",
-          "domainId": "Drug",
-          "vocabularyId": "RxNorm Extension",
-          "conceptClassId": "Clinical Drug",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "OMOP1118073",
-          "validStartDate": "2017-08-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
+        "includeDescendants": true,
         "includeMapped": false
       }
     ]
@@ -494,7 +38,7 @@
       "name": "INDICATE Consortium",
       "url": "https://indicate-eu.org"
     },
-    "reviewStatus": "draft",
+    "reviewStatus": "pending_review",
     "origin": null,
     "translations": {
       "en": {
@@ -516,7 +60,14 @@
       "orcid": "0009-0002-6055-6935"
     },
     "reviews": [],
-    "versions": [],
+    "versions": [
+      {
+        "version": "1.0.1",
+        "date": "2026-04-09",
+        "author": "Boris Delange",
+        "message": "Changed concept set definition from specific Clinical Drug concepts to the RxNorm Ingredient with all descendants included."
+      }
+    ],
     "distributionStats": null
   }
 }

@@ -2,6 +2,33 @@
   "conceptSetId": 47,
   "resolvedConcepts": [
     {
+      "conceptId": 19107962,
+      "conceptName": "24 HR fluindione 20 MG Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "433883",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19113013,
+      "conceptName": "fluindione",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Ingredient",
+      "conceptCode": "50097",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19109953,
+      "conceptName": "fluindione 20 MG",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "439688",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 19134706,
       "conceptName": "fluindione 20 MG Extended Release Oral Tablet",
       "vocabularyId": "RxNorm",
@@ -18,6 +45,96 @@
       "conceptClassId": "Clinical Drug",
       "conceptCode": "OMOP462592",
       "standardConcept": "S"
+    },
+    {
+      "conceptId": 43191554,
+      "conceptName": "fluindione 20 MG Oral Tablet Box of 30",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP462593",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43147544,
+      "conceptName": "fluindione 20 MG Oral Tablet [PREVISCAN]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug",
+      "conceptCode": "OMOP462594",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43202586,
+      "conceptName": "fluindione 20 MG Oral Tablet [PREVISCAN] Box of 30",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP462595",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43202587,
+      "conceptName": "fluindione 20 MG Oral Tablet [PREVISCAN] Box of 30 by Merck",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP462596",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43136577,
+      "conceptName": "fluindione 20 MG [PREVISCAN]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Comp",
+      "conceptCode": "OMOP462591",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40057229,
+      "conceptName": "fluindione Extended Release Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "439689",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36222650,
+      "conceptName": "fluindione Oral Product",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Dose Group",
+      "conceptCode": "1165046",
+      "standardConcept": "C"
+    },
+    {
+      "conceptId": 43191553,
+      "conceptName": "fluindione Oral Tablet",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "OMOP462588",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43136576,
+      "conceptName": "fluindione Oral Tablet [PREVISCAN]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Form",
+      "conceptCode": "OMOP462590",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36222651,
+      "conceptName": "fluindione Pill",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Dose Group",
+      "conceptCode": "1165047",
+      "standardConcept": "C"
     }
   ]
 }

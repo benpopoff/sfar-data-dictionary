@@ -13,6 +13,7 @@ var App = (function() {
   var mappingRecommendations = {};
   var lang = localStorage.getItem('indicate_lang') || 'en';
   var resolvedIndex = {}; // conceptSetId -> resolvedConcepts[]
+  var resolvedDeferred = {}; // conceptSetId -> { count, promise? }
   var sessionReviews = JSON.parse(localStorage.getItem('indicate_reviews') || '{}');
   var languageChangeCallbacks = [];
   var beforeNavigateCallbacks = [];
@@ -69,7 +70,11 @@ var App = (function() {
     mappingRecommendations = userMR ? JSON.parse(userMR) : (DATA.mappingRecommendations || {});
     var resolved = DATA.resolvedConceptSets || [];
     resolved.forEach(function(r) {
-      resolvedIndex[r.conceptSetId] = r.resolvedConcepts || [];
+      if (r.resolvedDeferred) {
+        resolvedDeferred[r.conceptSetId] = { count: r.resolvedCount || 0 };
+      } else {
+        resolvedIndex[r.conceptSetId] = r.resolvedConcepts || [];
+      }
     });
     document.getElementById('loading').classList.add('hidden');
     if (callback) callback();
@@ -1583,6 +1588,31 @@ var App = (function() {
     get lang() { return lang; },
     set lang(v) { lang = v; },
     get resolvedIndex() { return resolvedIndex; },
+    get resolvedDeferred() { return resolvedDeferred; },
+    fetchResolved: function(conceptSetId) {
+      // Return cached if already loaded
+      if (resolvedIndex[conceptSetId]) {
+        return Promise.resolve(resolvedIndex[conceptSetId]);
+      }
+      // Return in-flight promise if already fetching
+      var def = resolvedDeferred[conceptSetId];
+      if (def && def.promise) return def.promise;
+      // Fetch from individual file
+      var url = 'concept_sets_resolved/' + conceptSetId + '.json';
+      var promise = fetch(url).then(function(resp) {
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        return resp.json();
+      }).then(function(data) {
+        var concepts = data.resolvedConcepts || [];
+        resolvedIndex[conceptSetId] = concepts;
+        return concepts;
+      }).catch(function(err) {
+        console.error('Failed to fetch resolved concepts for CS ' + conceptSetId + ':', err);
+        return [];
+      });
+      if (def) def.promise = promise;
+      return promise;
+    },
     get sessionReviews() { return sessionReviews; },
     set sessionReviews(v) { sessionReviews = v; localStorage.setItem('indicate_reviews', JSON.stringify(v)); },
     saveSessionReviews: function() { localStorage.setItem('indicate_reviews', JSON.stringify(sessionReviews)); },

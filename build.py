@@ -6,6 +6,7 @@ import hashlib
 import json
 import glob
 import os
+import shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(ROOT, "docs")
@@ -80,12 +81,43 @@ def main():
     full_fingerprint = "\n".join([cs_fingerprint, proj_fingerprint, units_fingerprint, rec_units_fingerprint, mapping_fingerprint])
     data_hash = hashlib.sha256(full_fingerprint.encode()).hexdigest()[:16]
 
+    # Split resolved sets: inline if <= threshold, deferred otherwise
+    RESOLVED_INLINE_THRESHOLD = 100
+    resolved_inline = []
+    deferred_count = 0
+    for r in resolved:
+        concepts = r.get("resolvedConcepts", [])
+        if len(concepts) <= RESOLVED_INLINE_THRESHOLD:
+            resolved_inline.append(r)
+        else:
+            resolved_inline.append({
+                "conceptSetId": r["conceptSetId"],
+                "resolvedConcepts": [],
+                "resolvedDeferred": True,
+                "resolvedCount": len(concepts)
+            })
+            deferred_count += 1
+
+    # Copy deferred resolved files to docs/ for lazy loading
+    docs_resolved_dir = os.path.join(DOCS, "concept_sets_resolved")
+    if os.path.isdir(docs_resolved_dir):
+        shutil.rmtree(docs_resolved_dir)
+    if deferred_count > 0:
+        os.makedirs(docs_resolved_dir, exist_ok=True)
+        for r in resolved:
+            concepts = r.get("resolvedConcepts", [])
+            if len(concepts) > RESOLVED_INLINE_THRESHOLD:
+                src = os.path.join(resolved_dir, f"{r['conceptSetId']}.json")
+                if os.path.isfile(src):
+                    dst = os.path.join(docs_resolved_dir, f"{r['conceptSetId']}.json")
+                    shutil.copy2(src, dst)
+
     data = {
         "dataVersion": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "dataHash": data_hash,
         "conceptSets": concept_sets,
         "projects": projects,
-        "resolvedConceptSets": resolved,
+        "resolvedConceptSets": resolved_inline,
         "unitConversions": unit_conversions,
         "recommendedUnits": recommended_units,
         "mappingRecommendations": mapping_recommendations,
@@ -117,7 +149,8 @@ def main():
         f.write("const DATA=" + compact + ";")
 
     mr_langs = len(mapping_recommendations.get('translations', {})) if mapping_recommendations else 0
-    print(f"Built {len(concept_sets)} concept sets, {len(projects)} projects, {len(resolved)} resolved, "
+    print(f"Built {len(concept_sets)} concept sets, {len(projects)} projects, {len(resolved)} resolved "
+          f"({len(resolved) - deferred_count} inline, {deferred_count} deferred), "
           f"{len(unit_conversions)} unit conversions, {len(recommended_units)} recommended units, "
           f"mapping recommendations ({mr_langs} languages)")
     print(f"  -> docs/data.json ({os.path.getsize(os.path.join(DOCS, 'data.json')):,} bytes)")

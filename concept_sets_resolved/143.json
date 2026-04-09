@@ -2,12 +2,489 @@
   "conceptSetId": 143,
   "resolvedConcepts": [
     {
+      "conceptId": 43590501,
+      "conceptName": "1 ML Levosimendan 2.5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "OMOP739469",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43842574,
+      "conceptName": "1 ML Levosimendan 2.5 MG/ML Injection [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Drug",
+      "conceptCode": "OMOP739471",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43752394,
+      "conceptName": "1 ML Levosimendan 2.5 MG/ML Injection [Simdax] by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP739472",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43592254,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "OMOP786499",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43610181,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP786502",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43862514,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection Box of 4",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP786500",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43736285,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Drug",
+      "conceptCode": "OMOP786503",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43754164,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP786507",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43610182,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 10 by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP786508",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43736286,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 4",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP786505",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43700406,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 4 by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP786506",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43628261,
+      "conceptName": "10 ML Levosimendan 2.5 MG/ML Injection [Simdax] by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP786504",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41356037,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "OMOP2553999",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41357132,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP2555094",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41355742,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Drug",
+      "conceptCode": "OMOP2553704",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41358435,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution [Simdax] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP2556397",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 784477,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution [Simdax] Box of 1 by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP4832296",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 587220,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution [Simdax] by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP3135000",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43040640,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution [ZIMINO]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Drug",
+      "conceptCode": "OMOP4855671",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43040641,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injectable Solution [ZIMINO] by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP4855672",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21029012,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "OMOP308732",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21038823,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP308733",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43627497,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP771868",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43861785,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection Box of 4",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP771867",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21146775,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Drug",
+      "conceptCode": "OMOP308734",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21166478,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP308736",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43591558,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP771872",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43699664,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 10 by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP771873",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43861786,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 4",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP771870",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43627498,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection [Simdax] Box of 4 by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP771871",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43825584,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Injection [Simdax] by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP771869",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36780488,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "OMOP4768786",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36780487,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Intravenous Solution Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP4768785",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36780486,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Intravenous Solution [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Drug",
+      "conceptCode": "OMOP4768784",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36780485,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Intravenous Solution [Simdax] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP4768783",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36780484,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Intravenous Solution [Simdax] Box of 1 by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP4768782",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35413425,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Drug",
+      "conceptCode": "OMOP1147010",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35413424,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Prefilled Syringe Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Clinical Box",
+      "conceptCode": "OMOP1147009",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35413429,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Prefilled Syringe [ZIMINO]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Drug",
+      "conceptCode": "OMOP1147014",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35413463,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Prefilled Syringe [ZIMINO] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Quant Branded Box",
+      "conceptCode": "OMOP1147048",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35413413,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Prefilled Syringe [ZIMINO] Box of 1 by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP1146998",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43040642,
+      "conceptName": "5 ML Levosimendan 2.5 MG/ML Prefilled Syringe [ZIMINO] by Orion",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Marketed Product",
+      "conceptCode": "OMOP4855673",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40960139,
+      "conceptName": "Levosimendan 2.5 MG/ML Injectable Solution Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP2158101",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40844102,
+      "conceptName": "Levosimendan 2.5 MG/ML Injectable Solution [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug",
+      "conceptCode": "OMOP2042064",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 41124949,
+      "conceptName": "Levosimendan 2.5 MG/ML Injectable Solution [Simdax] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP2322911",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43034878,
+      "conceptName": "Levosimendan 2.5 MG/ML Injectable Solution [ZIMINO]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug",
+      "conceptCode": "OMOP4849924",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 42482095,
       "conceptName": "Levosimendan 2.5 MG/ML Injection",
       "vocabularyId": "RxNorm Extension",
       "domainId": "Drug",
       "conceptClassId": "Clinical Drug",
       "conceptCode": "OMOP419969",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21036580,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP265922",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43750239,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP697165",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43714271,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection Box of 4",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP697164",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21036581,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug",
+      "conceptCode": "OMOP265923",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21105322,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection [Simdax] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP265924",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43660609,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection [Simdax] Box of 10",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP697167",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43804252,
+      "conceptName": "Levosimendan 2.5 MG/ML Injection [Simdax] Box of 4",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP697166",
       "standardConcept": "S"
     },
     {
@@ -20,6 +497,33 @@
       "standardConcept": "S"
     },
     {
+      "conceptId": 36783483,
+      "conceptName": "Levosimendan 2.5 MG/ML Intravenous Solution Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP4771766",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36783482,
+      "conceptName": "Levosimendan 2.5 MG/ML Intravenous Solution [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug",
+      "conceptCode": "OMOP4771765",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36783481,
+      "conceptName": "Levosimendan 2.5 MG/ML Intravenous Solution [Simdax] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP4771764",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 35408187,
       "conceptName": "Levosimendan 2.5 MG/ML Prefilled Syringe",
       "vocabularyId": "RxNorm Extension",
@@ -29,12 +533,174 @@
       "standardConcept": "S"
     },
     {
+      "conceptId": 35412871,
+      "conceptName": "Levosimendan 2.5 MG/ML Prefilled Syringe Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Box",
+      "conceptCode": "OMOP1146456",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409125,
+      "conceptName": "Levosimendan 2.5 MG/ML Prefilled Syringe [ZIMINO]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug",
+      "conceptCode": "OMOP1142710",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409878,
+      "conceptName": "Levosimendan 2.5 MG/ML Prefilled Syringe [ZIMINO] Box of 1",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Box",
+      "conceptCode": "OMOP1143463",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21056211,
+      "conceptName": "Levosimendan 2.5 MG/ML [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Comp",
+      "conceptCode": "OMOP265921",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35409577,
+      "conceptName": "Levosimendan 2.5 MG/ML [ZIMINO]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Comp",
+      "conceptCode": "OMOP1143162",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40863212,
+      "conceptName": "Levosimendan Injectable Solution [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Form",
+      "conceptCode": "OMOP2061174",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 43034877,
+      "conceptName": "Levosimendan Injectable Solution [ZIMINO]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Form",
+      "conceptCode": "OMOP4849923",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 42482094,
+      "conceptName": "Levosimendan Injection",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "OMOP419968",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 21154483,
+      "conceptName": "Levosimendan Injection [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Form",
+      "conceptCode": "OMOP265920",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36783486,
+      "conceptName": "Levosimendan Intravenous Solution",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "OMOP4771769",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36783485,
+      "conceptName": "Levosimendan Intravenous Solution [Simdax]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Form",
+      "conceptCode": "OMOP4771768",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35410386,
+      "conceptName": "Levosimendan Prefilled Syringe",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "OMOP1143971",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35408907,
+      "conceptName": "Levosimendan Prefilled Syringe [ZIMINO]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Form",
+      "conceptCode": "OMOP1142492",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173184,
+      "conceptName": "levosimendan",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Ingredient",
+      "conceptCode": "73107",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 40173185,
+      "conceptName": "levosimendan 2.5 MG/ML",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "901045",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 40173186,
       "conceptName": "levosimendan 2.5 MG/ML Injectable Solution",
       "vocabularyId": "RxNorm",
       "domainId": "Drug",
       "conceptClassId": "Clinical Drug",
       "conceptCode": "901047",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 35849781,
+      "conceptName": "levosimendan 2.5 MG/ML [Haihetianxin]",
+      "vocabularyId": "RxNorm Extension",
+      "domainId": "Drug",
+      "conceptClassId": "Branded Drug Comp",
+      "conceptCode": "OMOP5006486",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36218422,
+      "conceptName": "levosimendan Injectable Product",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Dose Group",
+      "conceptCode": "1164037",
+      "standardConcept": "C"
+    },
+    {
+      "conceptId": 40173187,
+      "conceptName": "levosimendan Injectable Solution",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "901046",
       "standardConcept": "S"
     }
   ]

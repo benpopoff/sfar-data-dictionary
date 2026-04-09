@@ -2,6 +2,24 @@
   "conceptSetId": 60,
   "resolvedConcepts": [
     {
+      "conceptId": 19018364,
+      "conceptName": "tioclomarol",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Ingredient",
+      "conceptCode": "163426",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 19112229,
+      "conceptName": "tioclomarol 4 MG",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Comp",
+      "conceptCode": "452244",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 19107417,
       "conceptName": "tioclomarol 4 MG Oral Tablet",
       "vocabularyId": "RxNorm",
@@ -9,6 +27,33 @@
       "conceptClassId": "Clinical Drug",
       "conceptCode": "432451",
       "standardConcept": "S"
+    },
+    {
+      "conceptId": 36224269,
+      "conceptName": "tioclomarol Oral Product",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Dose Group",
+      "conceptCode": "1162100",
+      "standardConcept": "C"
+    },
+    {
+      "conceptId": 40098512,
+      "conceptName": "tioclomarol Oral Tablet",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Drug Form",
+      "conceptCode": "452245",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 36224270,
+      "conceptName": "tioclomarol Pill",
+      "vocabularyId": "RxNorm",
+      "domainId": "Drug",
+      "conceptClassId": "Clinical Dose Group",
+      "conceptCode": "1162101",
+      "standardConcept": "C"
     }
   ]
 }

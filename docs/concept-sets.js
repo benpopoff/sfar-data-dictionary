@@ -103,6 +103,13 @@ var ConceptSetsPage = (function() {
       var vb = (b[csSort.key] || '').toString().toLowerCase();
       if (va < vb) return csSort.asc ? -1 : 1;
       if (va > vb) return csSort.asc ? 1 : -1;
+      // Secondary sort by name when primary values are equal
+      if (csSort.key !== 'name') {
+        var na = (a.name || '').toLowerCase();
+        var nb = (b.name || '').toLowerCase();
+        if (na < nb) return -1;
+        if (na > nb) return 1;
+      }
       return 0;
     });
     return data;
@@ -2791,8 +2798,22 @@ var ConceptSetsPage = (function() {
 
     // If no DuckDB, fall back to pre-resolved data + custom concepts
     if (typeof VocabDB === 'undefined') {
-      var preResolved = App.resolvedIndex[selectedConceptSet.id] || [];
-      renderResolvedTableWithData(appendCustomConcepts(preResolved, items), keepFilters);
+      var preResolved = App.resolvedIndex[selectedConceptSet.id];
+      if (preResolved) {
+        renderResolvedTableWithData(appendCustomConcepts(preResolved, items), keepFilters);
+        return;
+      }
+      // Deferred: fetch from individual file
+      if (App.resolvedDeferred[selectedConceptSet.id]) {
+        var tbody = document.getElementById('resolved-tbody');
+        var colCount = Object.keys(resolvedColumns).length;
+        tbody.innerHTML = '<tr><td colspan="' + colCount + '" class="empty-state"><p><i class="fas fa-spinner fa-spin"></i> ' + App.i18n('Loading resolved concepts...') + '</p></td></tr>';
+        App.fetchResolved(selectedConceptSet.id).then(function(concepts) {
+          renderResolvedTableWithData(appendCustomConcepts(concepts, items), keepFilters);
+        });
+        return;
+      }
+      renderResolvedTableWithData(appendCustomConcepts([], items), keepFilters);
       return;
     }
 
@@ -2803,8 +2824,16 @@ var ConceptSetsPage = (function() {
 
     VocabDB.isDatabaseReady().then(function(ready) {
       if (!ready) {
-        var preResolved = appendCustomConcepts(App.resolvedIndex[selectedConceptSet.id] || [], items);
-        renderResolvedTableWithData(preResolved, keepFilters);
+        var preResolved = App.resolvedIndex[selectedConceptSet.id];
+        if (preResolved) {
+          renderResolvedTableWithData(appendCustomConcepts(preResolved, items), keepFilters);
+        } else if (App.resolvedDeferred[selectedConceptSet.id]) {
+          App.fetchResolved(selectedConceptSet.id).then(function(concepts) {
+            renderResolvedTableWithData(appendCustomConcepts(concepts, items), keepFilters);
+          });
+        } else {
+          renderResolvedTableWithData(appendCustomConcepts([], items), keepFilters);
+        }
         return;
       }
       resolveExpressionLive(items).then(function(concepts) {
