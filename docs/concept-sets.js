@@ -1769,7 +1769,7 @@ var ConceptSetsPage = (function() {
   function updateAddCount() {
     var n = addConceptSelectedIds.size;
     document.getElementById('expr-add-count').textContent = n + ' selected';
-    document.getElementById('expr-add-submit').disabled = (n === 0);
+    document.getElementById('expr-add-submit').disabled = false;
   }
 
   // --- Selected Concept Details panel ---
@@ -2060,7 +2060,7 @@ var ConceptSetsPage = (function() {
 
   // --- Submit ---
   function submitAddConcepts() {
-    if (addConceptSelectedIds.size === 0) return;
+    if (addConceptSelectedIds.size === 0) { App.showToast(App.i18n('Please select at least one concept.'), 'warning'); return; }
     var existingIds = {};
     exprEditItems.forEach(function(it) { existingIds[it.concept.conceptId] = true; });
     var isExcluded = document.getElementById('expr-add-exclude').checked;
@@ -2415,7 +2415,7 @@ var ConceptSetsPage = (function() {
   };
   var expressionColumns = {
     vocabulary: { label: 'Vocabulary', visible: true },
-    conceptId: { label: 'Concept ID', visible: false },
+    conceptId: { label: 'Concept ID', visible: true },
     name: { label: 'Concept Name', visible: true },
     code: { label: 'Concept Code', visible: true },
     domain: { label: 'Domain', visible: true },
@@ -3977,7 +3977,7 @@ var ConceptSetsPage = (function() {
       version: newVersion,
       versionFrom: oldVersion,
       summary: summary,
-      changedBy: (App.getProfile() || {}).firstName || '',
+      changedBy: (App.getUserProfile() || {}).firstName || '',
       date: new Date().toISOString().slice(0, 10)
     });
 

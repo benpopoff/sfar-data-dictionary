@@ -794,12 +794,18 @@ var App = (function() {
     var container = document.getElementById('toast-container');
     var toast = document.createElement('div');
     toast.className = 'toast toast-' + type;
-    toast.innerHTML = '<i class="fas ' + (toastIcons[type] || toastIcons.info) + '"></i><span>' + escapeHtml(message) + '</span>';
+    toast.innerHTML = '<i class="fas ' + (toastIcons[type] || toastIcons.info) + '"></i><span>' + escapeHtml(message) + '</span><button class="toast-close" aria-label="Close">&times;</button>';
     container.appendChild(toast);
-    setTimeout(function() {
-      toast.classList.add('toast-fade-out');
-      setTimeout(function() { toast.remove(); }, 300);
-    }, duration);
+    var timer = setTimeout(function() { dismissToast(toast); }, duration);
+    toast.querySelector('.toast-close').addEventListener('click', function() {
+      clearTimeout(timer);
+      dismissToast(toast);
+    });
+  }
+  function dismissToast(toast) {
+    if (toast.classList.contains('toast-fade-out')) return;
+    toast.classList.add('toast-fade-out');
+    setTimeout(function() { toast.remove(); }, 300);
   }
 
   function renderMarkdown(s) {
