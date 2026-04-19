@@ -1,127 +1,51 @@
 {
   "id": 180,
-  "name": "Total bilirubin",
+  "name": "Total bilirubin in blood",
   "description": null,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-02-12",
+  "modifiedDate": "2026-04-19",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
       {
         "concept": {
-          "conceptId": 1175191,
-          "conceptName": "Bilirubin.total [Moles/volume] in Venous blood",
+          "conceptId": 40652712,
+          "conceptName": "Bilirubin|Substance Concentration|Moment in time|Blood, Serum or Plasma",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
-          "conceptClassId": "Lab Test",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "89871-8",
-          "validStartDate": "2018-12-14",
+          "conceptClassId": "LOINC Group",
+          "standardConcept": null,
+          "standardConceptCaption": "Classification",
+          "conceptCode": "LG2811-0",
+          "validStartDate": "2018-06-15",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
+        "includeDescendants": true,
         "includeMapped": false
       },
       {
         "concept": {
-          "conceptId": 1616780,
-          "conceptName": "Bilirubin.total [Moles/volume] in Capillary blood",
+          "conceptId": 40652709,
+          "conceptName": "Bilirubin|Mass Concentration|Moment in time|Blood, Serum or Plasma",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
-          "conceptClassId": "Lab Test",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "97770-2",
-          "validStartDate": "2021-08-23",
+          "conceptClassId": "LOINC Group",
+          "standardConcept": null,
+          "standardConceptCaption": "Classification",
+          "conceptCode": "LG6199-6",
+          "validStartDate": "2018-06-15",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 3006140,
-          "conceptName": "Bilirubin.total [Moles/volume] in Serum or Plasma",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Lab Test",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "14631-6",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 3028833,
-          "conceptName": "Bilirubin.total [Mass/volume] in Blood",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Lab Test",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "42719-5",
-          "validStartDate": "2005-10-18",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40757494,
-          "conceptName": "Bilirubin.total [Moles/volume] in Blood",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Lab Test",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "54363-7",
-          "validStartDate": "2008-12-18",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 40762889,
-          "conceptName": "Bilirubin.total [Mass/volume] in Venous blood",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Lab Test",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "59828-4",
-          "validStartDate": "2010-04-30",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
+        "includeDescendants": true,
         "includeMapped": false
       }
     ]
@@ -137,12 +61,12 @@
     "origin": null,
     "translations": {
       "en": {
-        "name": "Total bilirubin",
+        "name": "Total bilirubin in blood",
         "category": "Labs",
         "subcategory": "Liver test"
       },
       "fr": {
-        "name": "Bilirubine totale",
+        "name": "Bilirubine totale sanguine",
         "category": "Biologie",
         "subcategory": "Bilan hépatique"
       }

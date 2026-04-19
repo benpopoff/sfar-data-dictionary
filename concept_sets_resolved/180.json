@@ -2,6 +2,15 @@
   "conceptSetId": 180,
   "resolvedConcepts": [
     {
+      "conceptId": 40762888,
+      "conceptName": "Bilirubin.total [Mass/volume] in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "59827-6",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 3028833,
       "conceptName": "Bilirubin.total [Mass/volume] in Blood",
       "vocabularyId": "LOINC",
@@ -11,12 +20,30 @@
       "standardConcept": "S"
     },
     {
+      "conceptId": 3024128,
+      "conceptName": "Bilirubin.total [Mass/volume] in Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "1975-2",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 40762889,
       "conceptName": "Bilirubin.total [Mass/volume] in Venous blood",
       "vocabularyId": "LOINC",
       "domainId": "Measurement",
       "conceptClassId": "Lab Test",
       "conceptCode": "59828-4",
+      "standardConcept": "S"
+    },
+    {
+      "conceptId": 1175183,
+      "conceptName": "Bilirubin.total [Moles/volume] in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "89872-6",
       "standardConcept": "S"
     },
     {
@@ -47,6 +74,15 @@
       "standardConcept": "S"
     },
     {
+      "conceptId": 46235782,
+      "conceptName": "Bilirubin.total [Moles/volume] in Serum, Plasma or Blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "77137-8",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 1175191,
       "conceptName": "Bilirubin.total [Moles/volume] in Venous blood",
       "vocabularyId": "LOINC",
@@ -54,6 +90,24 @@
       "conceptClassId": "Lab Test",
       "conceptCode": "89871-8",
       "standardConcept": "S"
+    },
+    {
+      "conceptId": 40652709,
+      "conceptName": "Bilirubin|Mass Concentration|Moment in time|Blood, Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "LOINC Group",
+      "conceptCode": "LG6199-6",
+      "standardConcept": "C"
+    },
+    {
+      "conceptId": 40652712,
+      "conceptName": "Bilirubin|Substance Concentration|Moment in time|Blood, Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "LOINC Group",
+      "conceptCode": "LG2811-0",
+      "standardConcept": "C"
     }
   ]
 }
