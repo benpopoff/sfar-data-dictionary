@@ -2655,8 +2655,8 @@ select.form-input { appearance: auto; }
 }
 .expr-add-chip[data-type="vocab"]    { background: #e7f1fd; border-color: #b6d4f5; color: #0f4b8a; }
 .expr-add-chip[data-type="domain"]   { background: #e0f5f7; border-color: #a8dce3; color: #0d6b78; }
-.expr-add-chip[data-type="class"]    { background: #fde8d8; border-color: #f5b982; color: #8a3a00; }
-.expr-add-chip[data-type="standard"] { background: #f3e8fb; border-color: #d9bdee; color: #6b2a9c; }
+.expr-add-chip[data-type="class"]    { background: #f3e8fb; border-color: #d9bdee; color: #6b2a9c; }
+.expr-add-chip[data-type="standard"] { background: #fde8d8; border-color: #f5b982; color: #8a3a00; }
 .expr-add-chip[data-type="valid"]    { background: #e8f7ec; border-color: #b5e2bf; color: #1e7e34; }
 .expr-add-chip-label { white-space: nowrap; }
 .expr-add-chip-x {

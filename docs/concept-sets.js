@@ -33,6 +33,7 @@ var ConceptSetsPage = (function() {
   var csConceptMode = 'resolved';
   var resolvedPage = 1;
   var resolvedPageSize = 50;
+  var resolvedCurrentConcepts = [];
   var expressionPage = 1;
   var expressionPageSize = 50;
 
@@ -2239,28 +2240,32 @@ var ConceptSetsPage = (function() {
     });
     // Click on a node: pin the tooltip. Re-clicking the same node unpins it.
     // Click outside a node: unpin tooltip and deselect.
+    var clickTimeout = null;
     addModalHierarchyNetwork.on('click', function(params) {
       clearTimeout(tooltipShowTimeout);
       clearTimeout(tooltipHideTimeout);
-      if (params.nodes && params.nodes.length === 1) {
-        var nodeId = Number(params.nodes[0]);
-        if (hierarchyPinnedId === nodeId) {
+      clearTimeout(clickTimeout);
+      clickTimeout = setTimeout(function() {
+        if (params.nodes && params.nodes.length === 1) {
+          var nodeId = Number(params.nodes[0]);
+          if (hierarchyPinnedId === nodeId) {
+            unpinHierarchyTooltip();
+            addModalHierarchyNetwork.unselectAll();
+            return;
+          }
+          var domPos = params.pointer && params.pointer.DOM ? params.pointer.DOM : { x: 0, y: 0 };
+          hierarchyPinnedId = null;
+          showHierarchyTooltip(nodeId, canvasEl, domPos, { showSearch: true, pin: true });
+        } else {
           unpinHierarchyTooltip();
           addModalHierarchyNetwork.unselectAll();
-          return;
         }
-        var domPos = params.pointer && params.pointer.DOM ? params.pointer.DOM : { x: 0, y: 0 };
-        hierarchyPinnedId = null;
-        showHierarchyTooltip(nodeId, canvasEl, domPos, { showSearch: true, pin: true });
-      } else {
-        // Click outside a node: unpin tooltip and deselect
-        unpinHierarchyTooltip();
-        addModalHierarchyNetwork.unselectAll();
-      }
+      }, 280);
     });
 
     // Double-click to navigate within modal hierarchy
     addModalHierarchyNetwork.on('doubleClick', function(params) {
+      clearTimeout(clickTimeout);
       if (params.nodes.length === 1) {
         var cid = params.nodes[0];
         if (cid === selfId) return;
@@ -2842,6 +2847,7 @@ var ConceptSetsPage = (function() {
   }
 
   function renderResolvedTableWithData(allConcepts, keepFilters) {
+    resolvedCurrentConcepts = allConcepts || [];
     var tbody = document.getElementById('resolved-tbody');
     document.getElementById('resolved-concept-detail-body').innerHTML =
       '<div class="empty-state"><p>Select a concept to view details</p></div>';
@@ -3910,27 +3916,32 @@ var ConceptSetsPage = (function() {
         if (!document.querySelector('.hierarchy-tooltip:hover')) hideHierarchyTooltip();
       }, 200);
     });
+    var clickTimeout2 = null;
     vocabTabsHierarchyNetwork.on('click', function(params) {
       clearTimeout(tooltipShowTimeout);
       clearTimeout(tooltipHideTimeout);
-      if (params.nodes && params.nodes.length === 1) {
-        var nodeId = Number(params.nodes[0]);
-        if (hierarchyPinnedId === nodeId) {
+      clearTimeout(clickTimeout2);
+      clickTimeout2 = setTimeout(function() {
+        if (params.nodes && params.nodes.length === 1) {
+          var nodeId = Number(params.nodes[0]);
+          if (hierarchyPinnedId === nodeId) {
+            unpinHierarchyTooltip();
+            vocabTabsHierarchyNetwork.unselectAll();
+            return;
+          }
+          var domPos = params.pointer && params.pointer.DOM ? params.pointer.DOM : { x: 0, y: 0 };
+          hierarchyPinnedId = null;
+          showHierarchyTooltip(nodeId, canvasEl, domPos, { pin: true });
+        } else {
           unpinHierarchyTooltip();
           vocabTabsHierarchyNetwork.unselectAll();
-          return;
         }
-        var domPos = params.pointer && params.pointer.DOM ? params.pointer.DOM : { x: 0, y: 0 };
-        hierarchyPinnedId = null;
-        showHierarchyTooltip(nodeId, canvasEl, domPos, { pin: true });
-      } else {
-        unpinHierarchyTooltip();
-        vocabTabsHierarchyNetwork.unselectAll();
-      }
+      }, 280);
     });
 
     // Double-click on node: navigate hierarchy in-place
     vocabTabsHierarchyNetwork.on('doubleClick', function(params) {
+      clearTimeout(clickTimeout2);
       if (params.nodes.length === 1) {
         var cid = params.nodes[0];
         if (cid === selfId) return;
@@ -5623,11 +5634,10 @@ var ConceptSetsPage = (function() {
     document.getElementById('resolved-tbody').addEventListener('click', function(e) {
       var tr = e.target.closest('tr[data-idx]');
       if (!tr || !selectedConceptSet) return;
-      var concepts = App.resolvedIndex[selectedConceptSet.id] || [];
       var idx = parseInt(tr.dataset.idx);
-      if (concepts[idx]) {
+      if (resolvedCurrentConcepts[idx]) {
         conceptDetailHistory = [];
-        showResolvedConceptDetail(concepts[idx]);
+        showResolvedConceptDetail(resolvedCurrentConcepts[idx]);
       }
     });
 
@@ -5650,9 +5660,8 @@ var ConceptSetsPage = (function() {
     // Resolved table pagination
     document.getElementById('resolved-page-buttons').addEventListener('click', function(e) {
       handlePageClick(e, (function() {
-        var allC = App.resolvedIndex[selectedConceptSet ? selectedConceptSet.id : 0] || [];
         var filters = getResolvedFilters();
-        return filterResolvedConcepts(allC, filters).length;
+        return filterResolvedConcepts(resolvedCurrentConcepts, filters).length;
       })(), resolvedPageSize,
       function() { return resolvedPage; },
       function(p) { resolvedPage = p; },
