@@ -759,23 +759,19 @@ for f in ['CONCEPT','CONCEPT_ANCESTOR','CONCEPT_RELATIONSHIP','CONCEPT_SYNONYM',
         <table id="conv-table">
           <thead>
             <tr>
-              <th style="width:8%">Concept ID 1</th>
-              <th style="width:18%">Concept 1</th>
-              <th style="width:10%">Unit 1</th>
-              <th style="width:8%" class="td-center">Factor</th>
-              <th style="width:8%">Concept ID 2</th>
-              <th style="width:18%">Concept 2</th>
-              <th style="width:10%">Unit 2</th>
-              <th style="width:10%" class="td-center">Actions</th>
+              <th style="width:10%">Concept ID</th>
+              <th style="width:32%">Concept Name</th>
+              <th style="width:16%">Source Unit</th>
+              <th style="width:10%" class="td-center">Factor</th>
+              <th style="width:16%">Target Unit</th>
+              <th style="width:16%" class="td-center">Actions</th>
             </tr>
             <tr class="filter-row">
-              <th><input type="text" class="column-filter" id="conv-filter-cid1" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="conv-filter-cname1" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="conv-filter-uname1" placeholder="Filter..."></th>
+              <th><input type="text" class="column-filter" id="conv-filter-cid" placeholder="Filter..."></th>
+              <th><input type="text" class="column-filter" id="conv-filter-cname" placeholder="Filter..."></th>
+              <th><input type="text" class="column-filter" id="conv-filter-uname-src" placeholder="Filter..."></th>
               <th><input type="text" class="column-filter" id="conv-filter-factor" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="conv-filter-cid2" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="conv-filter-cname2" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="conv-filter-uname2" placeholder="Filter..."></th>
+              <th><input type="text" class="column-filter" id="conv-filter-uname-tgt" placeholder="Filter..."></th>
               <th></th>
             </tr>
           </thead>
@@ -803,20 +799,14 @@ for f in ['CONCEPT','CONCEPT_ANCESTOR','CONCEPT_RELATIONSHIP','CONCEPT_SYNONYM',
           <thead>
             <tr>
               <th style="width:10%">Concept ID</th>
-              <th style="width:22%">Measurement</th>
-              <th style="width:12%">Code</th>
-              <th style="width:10%">Unit Concept ID</th>
-              <th style="width:18%">Unit</th>
-              <th style="width:12%">Unit Code</th>
-              <th style="width:10%" class="td-center">Actions</th>
+              <th style="width:55%">Concept Name</th>
+              <th style="width:20%">Unit</th>
+              <th style="width:15%" class="td-center">Actions</th>
             </tr>
             <tr class="filter-row">
               <th><input type="text" class="column-filter" id="ru-filter-cid" placeholder="Filter..."></th>
               <th><input type="text" class="column-filter" id="ru-filter-cname" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="ru-filter-ccode" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="ru-filter-uid" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="ru-filter-uname" placeholder="Filter..."></th>
-              <th><input type="text" class="column-filter" id="ru-filter-ucode" placeholder="Filter..."></th>
+              <th><input type="text" class="column-filter" id="ru-filter-unit" placeholder="Filter..."></th>
               <th></th>
             </tr>
           </thead>
@@ -1650,46 +1640,36 @@ Enter your review comments here using Markdown syntax.
     <div class="modal-body">
       <div class="form-row">
         <div class="form-group">
-          <label>Concept ID 1 *</label>
-          <input type="number" id="conv-add-cid1" class="form-input" placeholder="e.g. 3000483">
+          <label>Concept ID *</label>
+          <input type="number" id="conv-add-cid" class="form-input" placeholder="e.g. 3000483">
         </div>
         <div class="form-group">
-          <label>Concept Name 1</label>
-          <input type="text" id="conv-add-cname1" class="form-input" placeholder="e.g. Glucose">
+          <label>Concept Name</label>
+          <input type="text" id="conv-add-cname" class="form-input" placeholder="e.g. Glucose">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label>Unit Concept ID 1 *</label>
-          <input type="number" id="conv-add-uid1" class="form-input" placeholder="e.g. 8636">
+          <label>Source Unit Concept ID *</label>
+          <input type="number" id="conv-add-uid-src" class="form-input" placeholder="e.g. 8840">
         </div>
         <div class="form-group">
-          <label>Unit Name 1</label>
-          <input type="text" id="conv-add-uname1" class="form-input" placeholder="e.g. mg/dL">
+          <label>Source Unit Name</label>
+          <input type="text" id="conv-add-uname-src" class="form-input" placeholder="e.g. mg/dL">
         </div>
       </div>
       <div class="form-group">
         <label>Conversion Factor *</label>
-        <input type="number" id="conv-add-factor" class="form-input" step="any" min="0" placeholder="e.g. 5.551">
+        <input type="number" id="conv-add-factor" class="form-input" step="any" min="0" placeholder="e.g. 0.0555">
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label>Concept ID 2 *</label>
-          <input type="number" id="conv-add-cid2" class="form-input" placeholder="e.g. 3020491">
+          <label>Target Unit Concept ID *</label>
+          <input type="number" id="conv-add-uid-tgt" class="form-input" placeholder="e.g. 8753">
         </div>
         <div class="form-group">
-          <label>Concept Name 2</label>
-          <input type="text" id="conv-add-cname2" class="form-input" placeholder="e.g. Glucose">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Unit Concept ID 2 *</label>
-          <input type="number" id="conv-add-uid2" class="form-input" placeholder="e.g. 8753">
-        </div>
-        <div class="form-group">
-          <label>Unit Name 2</label>
-          <input type="text" id="conv-add-uname2" class="form-input" placeholder="e.g. mmol/L">
+          <label>Target Unit Name</label>
+          <input type="text" id="conv-add-uname-tgt" class="form-input" placeholder="e.g. mmol/L">
         </div>
       </div>
     </div>
@@ -1711,9 +1691,6 @@ Enter your review comments here using Markdown syntax.
     </div>
     <div class="modal-body">
       <div class="test-conv-info" id="test-conv-info"></div>
-      <button class="btn-outline-sm" id="test-conv-swap" style="margin-bottom:12px">
-        <i class="fas fa-exchange-alt"></i> Swap direction
-      </button>
       <div class="test-conv-row">
         <input type="number" id="test-conv-value" placeholder="Enter value" step="any">
         <span class="unit-label" id="test-conv-unit-from"></span>
@@ -1723,9 +1700,6 @@ Enter your review comments here using Markdown syntax.
         <span id="test-conv-factor-label"></span>
       </div>
       <div class="test-conv-result" id="test-conv-result">—</div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn-cancel" id="test-conv-cancel">Close</button>
     </div>
   </div>
 </div>

@@ -129,7 +129,7 @@ Present web sources found to the user and let them decide which to include in th
 The INDICATE data dictionary maintains two unit files that specify how measurements should be stored:
 
 - `units/recommended_units.json` — Maps each OMOP measurement concept to its recommended unit (fields: `conceptId`, `recommendedUnitConceptId`, plus names/codes when available)
-- `units/unit_conversions.json` — Lists conversion factors between units for specific measurements (fields: `conceptId1`, `unitConceptId1`, `conversionFactor`, `conceptId2`, `unitConceptId2`)
+- `units/unit_conversions.json` — Lists conversion factors between units for specific measurements (fields: `conceptId`, `sourceUnitConceptId`, `conversionFactor`, `targetUnitConceptId`)
 
 These files are available locally in the repository or via GitHub:
 - `https://raw.githubusercontent.com/indicate-eu/data-dictionary/refs/heads/main/units/recommended_units.json`
@@ -139,7 +139,7 @@ These files are available locally in the repository or via GitHub:
 
 1. Get the OMOP concept IDs of all resolved standard concepts from the resolved concept set JSON.
 2. Search `recommended_units.json` for entries where `conceptId` matches any of these OMOP concept IDs. This gives the recommended unit concept ID for each measurement.
-3. Search `unit_conversions.json` for entries where `conceptId1` or `conceptId2` matches any of these OMOP concept IDs. This gives the accepted alternative units and their conversion factors.
+3. Search `unit_conversions.json` for entries where `conceptId` matches any of these OMOP concept IDs. This gives the accepted alternative units and their conversion factors.
 4. To resolve unit concept IDs to human-readable names (e.g., 8541 → "beats per minute"), look up the concept ID in the OMOP vocabulary. If an OMOP vocabulary database is not available, use Athena (`https://athena.ohdsi.org/search-terms/terms/{unitConceptId}`) or infer from LOINC `EXAMPLE_UCUM_UNITS` field.
 
 ```bash
@@ -147,7 +147,7 @@ These files are available locally in the repository or via GitHub:
 jq '[.[] | select(.conceptId == 3027018 or .conceptId == 4239408)]' units/recommended_units.json
 
 # Example: filter unit_conversions.json by a list of concept IDs
-jq '[.[] | select(.conceptId1 == 3027018 or .conceptId2 == 3027018)]' units/unit_conversions.json
+jq '[.[] | select(.conceptId == 3027018)]' units/unit_conversions.json
 ```
 
 **What to extract**:

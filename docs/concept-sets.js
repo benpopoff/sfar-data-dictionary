@@ -29,6 +29,7 @@ var ConceptSetsPage = (function() {
   var csSubcategories = new Set();
   var csFilterReviewStatus = new Set();
   var selectedConceptSet = null;
+  var sqlExportUnitLabels = {}; // unit_concept_id -> short label (e.g. "mg/dL"), populated by the SQL export UI
   var csDetailTab = 'concepts';
   var csConceptMode = 'resolved';
   var resolvedPage = 1;
@@ -4506,6 +4507,12 @@ var ConceptSetsPage = (function() {
 
     function renderOptions(unitEntries) {
       // unitEntries: [{ unitId, code, name }]
+      // Remember labels so buildOMOPSQL can render "mg/dL (8749)" in comments.
+      sqlExportUnitLabels = {};
+      unitEntries.forEach(function(u) {
+        var lbl = u.code || u.name;
+        if (lbl) sqlExportUnitLabels[u.unitId] = lbl;
+      });
       // Sort by code (fallback to id)
       unitEntries.sort(function(a, b) {
         var ak = (a.code || String(a.unitId)).toLowerCase();
@@ -4537,8 +4544,8 @@ var ConceptSetsPage = (function() {
         }
       });
       App.unitConversions.forEach(function(conv) {
-        if (conv.unitConceptId1 && !nameMap[conv.unitConceptId1] && conv.unitName1) nameMap[conv.unitConceptId1] = conv.unitName1;
-        if (conv.unitConceptId2 && !nameMap[conv.unitConceptId2] && conv.unitName2) nameMap[conv.unitConceptId2] = conv.unitName2;
+        if (conv.sourceUnitConceptId && !nameMap[conv.sourceUnitConceptId] && conv.sourceUnitName) nameMap[conv.sourceUnitConceptId] = conv.sourceUnitName;
+        if (conv.targetUnitConceptId && !nameMap[conv.targetUnitConceptId] && conv.targetUnitName) nameMap[conv.targetUnitConceptId] = conv.targetUnitName;
       });
       var entries = unitIds.map(function(id) { return { unitId: id, code: codeMap[id] || '', name: nameMap[id] || '' }; });
       renderOptions(entries);
@@ -4737,8 +4744,7 @@ var ConceptSetsPage = (function() {
       }
     });
     App.unitConversions.forEach(function(conv) {
-      if (conceptIds[conv.conceptId1] && conv.unitConceptId2) unitIdSet[conv.unitConceptId2] = true;
-      if (conceptIds[conv.conceptId2] && conv.unitConceptId1) unitIdSet[conv.unitConceptId1] = true;
+      if (conceptIds[conv.conceptId] && conv.targetUnitConceptId) unitIdSet[conv.targetUnitConceptId] = true;
     });
     return Object.keys(unitIdSet).map(function(k) { return parseInt(k, 10); });
   }
@@ -4763,21 +4769,50 @@ var ConceptSetsPage = (function() {
       byDomain[d].push(c);
     });
 
+    // Build a unit_concept_id -> human label map. Prefer the short UCUM code
+    // (e.g. "mg/dL") — falls back to the long concept name, then to the id.
+    // Sources, in order: the SQL export UI (which may have populated labels
+    // from VocabDB), then the enriched unit_conversions.json and
+    // recommended_units.json (which now carry codes/names after the enrichment
+    // script).
+    var unitLabels = {};
+    Object.keys(sqlExportUnitLabels || {}).forEach(function(k) {
+      unitLabels[parseInt(k, 10)] = sqlExportUnitLabels[k];
+    });
+    App.unitConversions.forEach(function(conv) {
+      if (conv.sourceUnitConceptId && !unitLabels[conv.sourceUnitConceptId]) {
+        var sLbl = conv.sourceUnitCode || conv.sourceUnitName;
+        if (sLbl) unitLabels[conv.sourceUnitConceptId] = sLbl;
+      }
+      if (conv.targetUnitConceptId && !unitLabels[conv.targetUnitConceptId]) {
+        var tLbl = conv.targetUnitCode || conv.targetUnitName;
+        if (tLbl) unitLabels[conv.targetUnitConceptId] = tLbl;
+      }
+    });
+    App.recommendedUnits.forEach(function(ru) {
+      if (ru.recommendedUnitConceptId && !unitLabels[ru.recommendedUnitConceptId]) {
+        var label = ru.recommendedUnitCode || ru.recommendedUnitName;
+        if (label) unitLabels[ru.recommendedUnitConceptId] = label;
+      }
+    });
+    function unitLabel(id) {
+      var n = parseInt(id, 10);
+      var lbl = unitLabels[n];
+      return lbl ? (lbl + ' (' + n + ')') : String(n);
+    }
+
     // For each measurement concept, return the per-concept map { srcUnitId -> factor }
     // of conversions that target the chosen reference unit. Factors depend on the
     // concept (e.g. molecular weight), so we keep them separated by concept.
     // unit_conversions.json already stores both directions (A->B factor f, B->A factor 1/f)
-    // as separate rows, so we only match rows where unitConceptId2 === refUid.
+    // as separate rows, so we only match rows where targetUnitConceptId === refUid.
     function getPerConceptConversions(domainConcepts, refUid) {
       var perConcept = {};
       domainConcepts.forEach(function(c) { perConcept[c.conceptId] = {}; });
       App.unitConversions.forEach(function(conv) {
-        if (conv.unitConceptId2 !== refUid) return;
-        if (perConcept[conv.conceptId1] !== undefined) {
-          perConcept[conv.conceptId1][conv.unitConceptId1] = conv.conversionFactor;
-        }
-        if (perConcept[conv.conceptId2] !== undefined) {
-          perConcept[conv.conceptId2][conv.unitConceptId1] = conv.conversionFactor;
+        if (conv.targetUnitConceptId !== refUid) return;
+        if (perConcept[conv.conceptId] !== undefined) {
+          perConcept[conv.conceptId][conv.sourceUnitConceptId] = conv.conversionFactor;
         }
       });
       return perConcept;
@@ -4841,13 +4876,13 @@ var ConceptSetsPage = (function() {
         if (!ambiguous) {
           // Flat CASE on unit_concept_id.
           var caseParts = [];
-          caseParts.push('        -- Reference unit concept_id: ' + refUnitId);
+          caseParts.push('        -- Reference unit: ' + unitLabel(refUnitId));
           caseParts.push('        WHEN unit_concept_id = ' + refUnitId + ' THEN value_as_number');
           Object.keys(factorsBySrc).forEach(function(srcUnitId) {
             var factor = Object.keys(factorsBySrc[srcUnitId])[0];
             caseParts.push('        WHEN unit_concept_id = ' + parseInt(srcUnitId, 10) +
               ' THEN value_as_number * ' + factor +
-              ' -- convert unit ' + srcUnitId + ' -> ' + refUnitId);
+              ' -- convert ' + unitLabel(srcUnitId) + ' -> ' + unitLabel(refUnitId));
           });
           valueAsNumberExpr = '    CASE\n' + caseParts.join('\n') +
             '\n        ELSE NULL -- unknown unit, no conversion available' +
@@ -4855,7 +4890,7 @@ var ConceptSetsPage = (function() {
         } else {
           // Nested CASE per concept.
           var outerParts = [];
-          outerParts.push('        -- Reference unit concept_id: ' + refUnitId);
+          outerParts.push('        -- Reference unit: ' + unitLabel(refUnitId));
           outerParts.push('        -- Conversion factors differ between concepts — switching per measurement_concept_id');
           domainConcepts.forEach(function(c) {
             var srcUnits = Object.keys(perConcept[c.conceptId] || {}).map(function(k) { return parseInt(k, 10); });
@@ -4866,7 +4901,7 @@ var ConceptSetsPage = (function() {
               var factor = perConcept[c.conceptId][srcUnitId];
               outerParts.push('                WHEN unit_concept_id = ' + srcUnitId +
                 ' THEN value_as_number * ' + factor +
-                ' -- convert unit ' + srcUnitId + ' -> ' + refUnitId);
+                ' -- convert ' + unitLabel(srcUnitId) + ' -> ' + unitLabel(refUnitId));
             });
             outerParts.push('                ELSE NULL -- unknown unit, no conversion for this concept');
             outerParts.push('            END');

@@ -24,7 +24,6 @@ var SettingsPage = (function() {
 
   // Test conversion state
   var testConvRow = null;
-  var testConvSwapped = false;
 
   // ==================== SHARED PAGINATION ====================
   function renderPagination(paginationId, pageInfoId, pageBtnsId, currentPage, totalItems, pageSize) {
@@ -95,10 +94,9 @@ var SettingsPage = (function() {
       // Collect all concept IDs from both tables
       var idSet = {};
       convData.forEach(function(row) {
-        if (row.conceptId1) idSet[row.conceptId1] = true;
-        if (row.conceptId2) idSet[row.conceptId2] = true;
-        if (row.unitConceptId1) idSet[row.unitConceptId1] = true;
-        if (row.unitConceptId2) idSet[row.unitConceptId2] = true;
+        if (row.conceptId) idSet[row.conceptId] = true;
+        if (row.sourceUnitConceptId) idSet[row.sourceUnitConceptId] = true;
+        if (row.targetUnitConceptId) idSet[row.targetUnitConceptId] = true;
       });
       ruData.forEach(function(row) {
         if (row.conceptId) idSet[row.conceptId] = true;
@@ -108,18 +106,33 @@ var SettingsPage = (function() {
       if (ids.length === 0) return;
       VocabDB.lookupConcepts(ids).then(function(concepts) {
         var map = {};
-        concepts.forEach(function(c) { map[c.concept_id] = c.concept_name; });
+        concepts.forEach(function(c) { map[c.concept_id] = c; });
         // Enrich convData
         convData.forEach(function(row) {
-          if (map[row.conceptId1] && !row.conceptName1) row.conceptName1 = map[row.conceptId1];
-          if (map[row.conceptId2] && !row.conceptName2) row.conceptName2 = map[row.conceptId2];
-          if (map[row.unitConceptId1] && !row.unitName1) row.unitName1 = map[row.unitConceptId1];
-          if (map[row.unitConceptId2] && !row.unitName2) row.unitName2 = map[row.unitConceptId2];
+          var c = map[row.conceptId]; if (c && !row.conceptName) row.conceptName = c.concept_name;
+          var s = map[row.sourceUnitConceptId];
+          if (s) {
+            if (!row.sourceUnitName) row.sourceUnitName = s.concept_name;
+            if (!row.sourceUnitCode) row.sourceUnitCode = s.concept_code;
+          }
+          var t = map[row.targetUnitConceptId];
+          if (t) {
+            if (!row.targetUnitName) row.targetUnitName = t.concept_name;
+            if (!row.targetUnitCode) row.targetUnitCode = t.concept_code;
+          }
         });
         // Enrich ruData
         ruData.forEach(function(row) {
-          if (map[row.conceptId] && !row.conceptName) row.conceptName = map[row.conceptId];
-          if (map[row.recommendedUnitConceptId] && !row.recommendedUnitName) row.recommendedUnitName = map[row.recommendedUnitConceptId];
+          var c = map[row.conceptId];
+          if (c) {
+            if (!row.conceptName) row.conceptName = c.concept_name;
+            if (!row.conceptCode) row.conceptCode = c.concept_code;
+          }
+          var u = map[row.recommendedUnitConceptId];
+          if (u) {
+            if (!row.recommendedUnitName) row.recommendedUnitName = u.concept_name;
+            if (!row.recommendedUnitCode) row.recommendedUnitCode = u.concept_code;
+          }
         });
         enriched = true;
         renderConvTable();
@@ -153,13 +166,11 @@ var SettingsPage = (function() {
         if (!convFilters[key]) continue;
         var q = convFilters[key].toLowerCase();
         var val = '';
-        if (key === 'cid1') val = String(row.conceptId1);
-        else if (key === 'cname1') val = (row.conceptName1 || '').toLowerCase();
-        else if (key === 'uname1') val = (row.unitName1 || '').toLowerCase();
+        if (key === 'cid') val = String(row.conceptId);
+        else if (key === 'cname') val = (row.conceptName || '').toLowerCase();
+        else if (key === 'uname-src') val = ((row.sourceUnitCode || '') + ' ' + (row.sourceUnitName || '')).toLowerCase();
         else if (key === 'factor') val = String(row.conversionFactor);
-        else if (key === 'cid2') val = String(row.conceptId2);
-        else if (key === 'cname2') val = (row.conceptName2 || '').toLowerCase();
-        else if (key === 'uname2') val = (row.unitName2 || '').toLowerCase();
+        else if (key === 'uname-tgt') val = ((row.targetUnitCode || '') + ' ' + (row.targetUnitName || '')).toLowerCase();
         if (val.indexOf(q) === -1) return false;
       }
       return true;
@@ -175,20 +186,22 @@ var SettingsPage = (function() {
     var tbody = document.getElementById('conv-tbody');
 
     if (pageData.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="8" class="empty-state"><p>No unit conversions' +
+      tbody.innerHTML = '<tr><td colspan="6" class="empty-state"><p>No unit conversions' +
         (Object.keys(convFilters).some(function(k) { return !!convFilters[k]; }) ? ' match your filters' : ' defined') + '.</p></td></tr>';
     } else {
       tbody.innerHTML = pageData.map(function(row) {
         var idx = convData.indexOf(row);
+        var srcCode = row.sourceUnitCode || '';
+        var srcName = row.sourceUnitName || '';
+        var tgtCode = row.targetUnitCode || '';
+        var tgtName = row.targetUnitName || '';
         return '<tr data-idx="' + idx + '">' +
-          '<td>' + row.conceptId1 + '</td>' +
-          '<td>' + App.escapeHtml(row.conceptName1 || '') + '</td>' +
-          '<td>' + App.escapeHtml(row.unitName1 || '') + '</td>' +
+          '<td>' + row.conceptId + '</td>' +
+          '<td>' + App.escapeHtml(row.conceptName || '') + '</td>' +
+          '<td title="' + App.escapeHtml(srcName) + '">' + App.escapeHtml(srcCode) + '</td>' +
           '<td class="td-center editable-cell" data-field="conversionFactor" data-idx="' + idx + '">' +
             row.conversionFactor + '</td>' +
-          '<td>' + row.conceptId2 + '</td>' +
-          '<td>' + App.escapeHtml(row.conceptName2 || '') + '</td>' +
-          '<td>' + App.escapeHtml(row.unitName2 || '') + '</td>' +
+          '<td title="' + App.escapeHtml(tgtName) + '">' + App.escapeHtml(tgtCode) + '</td>' +
           '<td class="td-center">' +
             '<button class="btn-action btn-action-test" data-idx="' + idx + '" title="Test">' +
               '<i class="fas fa-calculator"></i> Test</button> ' +
@@ -234,7 +247,6 @@ var SettingsPage = (function() {
 
   function openTestConvModal(idx) {
     testConvRow = convData[idx];
-    testConvSwapped = false;
     renderTestConv();
     document.getElementById('test-conv-value').value = '';
     document.getElementById('test-conv-result').textContent = '\u2014';
@@ -244,25 +256,17 @@ var SettingsPage = (function() {
 
   function renderTestConv() {
     if (!testConvRow) return;
-    var from, to, factor;
-    if (!testConvSwapped) {
-      from = (testConvRow.conceptName1 || 'Concept ' + testConvRow.conceptId1) +
-        ' (' + (testConvRow.unitName1 || 'Unit ' + testConvRow.unitConceptId1) + ')';
-      to = (testConvRow.conceptName2 || 'Concept ' + testConvRow.conceptId2) +
-        ' (' + (testConvRow.unitName2 || 'Unit ' + testConvRow.unitConceptId2) + ')';
-      factor = testConvRow.conversionFactor;
-    } else {
-      from = (testConvRow.conceptName2 || 'Concept ' + testConvRow.conceptId2) +
-        ' (' + (testConvRow.unitName2 || 'Unit ' + testConvRow.unitConceptId2) + ')';
-      to = (testConvRow.conceptName1 || 'Concept ' + testConvRow.conceptId1) +
-        ' (' + (testConvRow.unitName1 || 'Unit ' + testConvRow.unitConceptId1) + ')';
-      factor = testConvRow.conversionFactor !== 0 ? 1 / testConvRow.conversionFactor : 0;
-    }
+    var conceptLabel = testConvRow.conceptName || 'Concept ' + testConvRow.conceptId;
+    var srcUnit = testConvRow.sourceUnitCode || testConvRow.sourceUnitName || 'Unit ' + testConvRow.sourceUnitConceptId;
+    var tgtUnit = testConvRow.targetUnitCode || testConvRow.targetUnitName || 'Unit ' + testConvRow.targetUnitConceptId;
     document.getElementById('test-conv-info').innerHTML =
-      App.escapeHtml(from) + ' <i class="fas fa-arrow-right" style="color:var(--primary)"></i> ' + App.escapeHtml(to);
-    document.getElementById('test-conv-unit-from').textContent =
-      testConvSwapped ? (testConvRow.unitName2 || '') : (testConvRow.unitName1 || '');
-    document.getElementById('test-conv-factor-label').textContent = ' \u00d7 ' + parseFloat(factor.toPrecision(10));
+      '<div>' + App.escapeHtml(conceptLabel) + '</div>' +
+      '<div style="margin-top:8px"><strong>' + App.escapeHtml(srcUnit) +
+      '</strong> <i class="fas fa-arrow-right" style="color:var(--primary)"></i> <strong>' +
+      App.escapeHtml(tgtUnit) + '</strong></div>';
+    document.getElementById('test-conv-unit-from').textContent = srcUnit;
+    document.getElementById('test-conv-factor-label').textContent =
+      ' \u00d7 ' + parseFloat(testConvRow.conversionFactor.toPrecision(10));
     updateTestResult();
   }
 
@@ -273,31 +277,25 @@ var SettingsPage = (function() {
       resultEl.textContent = '\u2014';
       return;
     }
-    var factor = testConvSwapped
-      ? (testConvRow.conversionFactor !== 0 ? 1 / testConvRow.conversionFactor : 0)
-      : testConvRow.conversionFactor;
-    var result = val * factor;
-    var unitLabel = testConvSwapped
-      ? (testConvRow.unitName1 || '')
-      : (testConvRow.unitName2 || '');
+    var result = val * testConvRow.conversionFactor;
+    var unitLabel = testConvRow.targetUnitCode || testConvRow.targetUnitName || '';
     resultEl.textContent = result.toFixed(2) + (unitLabel ? ' ' + unitLabel : '');
   }
 
   function openAddConvModal() {
-    ['conv-add-cid1', 'conv-add-cname1', 'conv-add-uid1', 'conv-add-uname1',
-     'conv-add-factor', 'conv-add-cid2', 'conv-add-cname2', 'conv-add-uid2', 'conv-add-uname2'
+    ['conv-add-cid', 'conv-add-cname', 'conv-add-uid-src', 'conv-add-uname-src',
+     'conv-add-factor', 'conv-add-uid-tgt', 'conv-add-uname-tgt'
     ].forEach(function(id) { document.getElementById(id).value = ''; });
     document.getElementById('conv-add-modal').style.display = 'flex';
   }
 
   function submitAddConv() {
-    var cid1 = parseInt(document.getElementById('conv-add-cid1').value);
-    var uid1 = parseInt(document.getElementById('conv-add-uid1').value);
+    var cid = parseInt(document.getElementById('conv-add-cid').value);
+    var uidSrc = parseInt(document.getElementById('conv-add-uid-src').value);
     var factor = parseFloat(document.getElementById('conv-add-factor').value);
-    var cid2 = parseInt(document.getElementById('conv-add-cid2').value);
-    var uid2 = parseInt(document.getElementById('conv-add-uid2').value);
+    var uidTgt = parseInt(document.getElementById('conv-add-uid-tgt').value);
 
-    if (isNaN(cid1) || isNaN(uid1) || isNaN(factor) || isNaN(cid2) || isNaN(uid2)) {
+    if (isNaN(cid) || isNaN(uidSrc) || isNaN(factor) || isNaN(uidTgt)) {
       App.showToast('Please fill in all required fields (*).', 'error');
       return;
     }
@@ -307,8 +305,8 @@ var SettingsPage = (function() {
     }
 
     var exists = convData.some(function(r) {
-      return r.conceptId1 === cid1 && r.unitConceptId1 === uid1 &&
-             r.conceptId2 === cid2 && r.unitConceptId2 === uid2;
+      return r.conceptId === cid && r.sourceUnitConceptId === uidSrc &&
+             r.targetUnitConceptId === uidTgt;
     });
     if (exists) {
       App.showToast('This conversion already exists.', 'warning');
@@ -316,15 +314,15 @@ var SettingsPage = (function() {
     }
 
     convData.push({
-      conceptId1: cid1,
-      conceptName1: document.getElementById('conv-add-cname1').value.trim(),
-      unitConceptId1: uid1,
-      unitName1: document.getElementById('conv-add-uname1').value.trim(),
+      conceptId: cid,
+      conceptName: document.getElementById('conv-add-cname').value.trim(),
+      sourceUnitConceptId: uidSrc,
+      sourceUnitCode: '',
+      sourceUnitName: document.getElementById('conv-add-uname-src').value.trim(),
       conversionFactor: factor,
-      conceptId2: cid2,
-      conceptName2: document.getElementById('conv-add-cname2').value.trim(),
-      unitConceptId2: uid2,
-      unitName2: document.getElementById('conv-add-uname2').value.trim()
+      targetUnitConceptId: uidTgt,
+      targetUnitCode: '',
+      targetUnitName: document.getElementById('conv-add-uname-tgt').value.trim()
     });
 
     document.getElementById('conv-add-modal').style.display = 'none';
@@ -358,10 +356,7 @@ var SettingsPage = (function() {
         var val = '';
         if (key === 'cid') val = String(row.conceptId);
         else if (key === 'cname') val = (row.conceptName || '').toLowerCase();
-        else if (key === 'ccode') val = (row.conceptCode || '').toLowerCase();
-        else if (key === 'uid') val = String(row.recommendedUnitConceptId);
-        else if (key === 'uname') val = (row.recommendedUnitName || '').toLowerCase();
-        else if (key === 'ucode') val = (row.recommendedUnitCode || '').toLowerCase();
+        else if (key === 'unit') val = ((row.recommendedUnitCode || '') + ' ' + (row.recommendedUnitName || '')).toLowerCase();
         if (val.indexOf(q) === -1) return false;
       }
       return true;
@@ -377,18 +372,17 @@ var SettingsPage = (function() {
     var tbody = document.getElementById('ru-tbody');
 
     if (pageData.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="7" class="empty-state"><p>No recommended units' +
+      tbody.innerHTML = '<tr><td colspan="4" class="empty-state"><p>No recommended units' +
         (Object.keys(ruFilters).some(function(k) { return !!ruFilters[k]; }) ? ' match your filters' : ' defined') + '.</p></td></tr>';
     } else {
       tbody.innerHTML = pageData.map(function(row) {
         var idx = ruData.indexOf(row);
+        var unitCode = row.recommendedUnitCode || '';
+        var unitName = row.recommendedUnitName || '';
         return '<tr data-idx="' + idx + '">' +
           '<td>' + row.conceptId + '</td>' +
           '<td>' + App.escapeHtml(row.conceptName || '') + '</td>' +
-          '<td>' + App.escapeHtml(row.conceptCode || '') + '</td>' +
-          '<td>' + row.recommendedUnitConceptId + '</td>' +
-          '<td>' + App.escapeHtml(row.recommendedUnitName || '') + '</td>' +
-          '<td>' + App.escapeHtml(row.recommendedUnitCode || '') + '</td>' +
+          '<td title="' + App.escapeHtml(unitName) + '">' + App.escapeHtml(unitCode) + '</td>' +
           '<td class="td-center">' +
             '<button class="btn-action btn-action-delete" data-ru-idx="' + idx + '" title="Delete">' +
               '<i class="fas fa-trash"></i></button>' +
@@ -466,7 +460,7 @@ var SettingsPage = (function() {
     });
 
     // Conversions: column filters
-    ['cid1', 'cname1', 'uname1', 'factor', 'cid2', 'cname2', 'uname2'].forEach(function(key) {
+    ['cid', 'cname', 'uname-src', 'factor', 'uname-tgt'].forEach(function(key) {
       var el = document.getElementById('conv-filter-' + key);
       if (el) el.addEventListener('input', function(e) {
         convFilters[key] = e.target.value;
@@ -514,20 +508,13 @@ var SettingsPage = (function() {
     document.getElementById('test-conv-close').addEventListener('click', function() {
       document.getElementById('test-conv-modal').style.display = 'none';
     });
-    document.getElementById('test-conv-cancel').addEventListener('click', function() {
-      document.getElementById('test-conv-modal').style.display = 'none';
-    });
-    document.getElementById('test-conv-swap').addEventListener('click', function() {
-      testConvSwapped = !testConvSwapped;
-      renderTestConv();
-    });
     document.getElementById('test-conv-value').addEventListener('input', updateTestResult);
     document.getElementById('test-conv-modal').addEventListener('click', function(e) {
       if (e.target === this) this.style.display = 'none';
     });
 
     // Recommended units: column filters
-    ['cid', 'cname', 'ccode', 'uid', 'uname', 'ucode'].forEach(function(key) {
+    ['cid', 'cname', 'unit'].forEach(function(key) {
       var el = document.getElementById('ru-filter-' + key);
       if (el) el.addEventListener('input', function(e) {
         ruFilters[key] = e.target.value;
