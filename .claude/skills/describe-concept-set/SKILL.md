@@ -160,7 +160,7 @@ jq '[.[] | select((.conceptId1 as $c | [3027018, 4239408] | index($c)))]' units/
 When the description claims a unit is the "SI unit", "IFCC-recommended", "metrological standard" or similar, the claim must be backed by an authoritative source. The **JCTLM (Joint Committee for Traceability in Laboratory Medicine)** database is the recommended single source for laboratory measurements: it lists the higher-order reference measurement procedures and reference materials endorsed by BIPM, IFCC and ILAC, including the unit (`Quantity`) in which the reference procedure expresses the measurand.
 
 Lookup approach:
-1. Open the JCTLM database (<https://www.jctlm.org/database/>) and search for the analyte of the concept set (e.g., "bilirubin", "creatinine").
+1. Open the JCTLM database (<https://www.jctlmdb.org/#/app/home>) and search for the analyte of the concept set (e.g., "bilirubin", "creatinine").
 2. From the matching reference measurement procedure entries, note the `Quantity` (e.g., "Amount-of-substance concentration") and the service measurement range (e.g., "31.8 µmol/L to 92.9 µmol/L"). This gives you the unit metrologically endorsed for that analyte.
 3. Cite the JCTLM database (single canonical reference, see below) — do not cite individual JCTLM entries by URL.
 
@@ -273,7 +273,7 @@ Key rules for references:
   Joint Committee for Traceability in Laboratory Medicine (JCTLM). Database of higher-order
   reference measurement procedures, reference materials and reference measurement services.
   BIPM/IFCC/ILAC.
-  Available: <a href="https://www.jctlm.org/database/" target="_blank">https://www.jctlm.org/database/</a>
+  Available: <a href="https://www.jctlmdb.org/#/app/home" target="_blank">https://www.jctlmdb.org/#/app/home</a>
   ```
   Cite the database as a single canonical reference even when multiple JCTLM entries inform the description; do not link individual JCTLM entry pages.
 - **Do NOT cite the INDICATE units files** (`recommended_units.json`, `unit_conversions.json`) as references. These are internal data and not authoritative external sources.
