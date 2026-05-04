@@ -1670,5 +1670,49 @@
     "targetUnitConceptId": 8840,
     "targetUnitCode": "mg/dL",
     "targetUnitName": "milligram per deciliter"
+  },
+  {
+    "conceptId": 3030942,
+    "conceptName": "Ammonia [Mass/volume] in Blood",
+    "sourceUnitConceptId": 8837,
+    "sourceUnitCode": "ug/dL",
+    "sourceUnitName": "microgram per deciliter",
+    "conversionFactor": 0.5872,
+    "targetUnitConceptId": 8749,
+    "targetUnitCode": "umol/L",
+    "targetUnitName": "micromole per liter"
+  },
+  {
+    "conceptId": 3005347,
+    "conceptName": "Ammonia [Moles/volume] in Blood",
+    "sourceUnitConceptId": 8749,
+    "sourceUnitCode": "umol/L",
+    "sourceUnitName": "micromole per liter",
+    "conversionFactor": 1.7031,
+    "targetUnitConceptId": 8837,
+    "targetUnitCode": "ug/dL",
+    "targetUnitName": "microgram per deciliter"
+  },
+  {
+    "conceptId": 3036887,
+    "conceptName": "Ammonia [Mass/volume] in Plasma",
+    "sourceUnitConceptId": 8837,
+    "sourceUnitCode": "ug/dL",
+    "sourceUnitName": "microgram per deciliter",
+    "conversionFactor": 0.5872,
+    "targetUnitConceptId": 8749,
+    "targetUnitCode": "umol/L",
+    "targetUnitName": "micromole per liter"
+  },
+  {
+    "conceptId": 3011958,
+    "conceptName": "Ammonia [Moles/volume] in Plasma",
+    "sourceUnitConceptId": 8749,
+    "sourceUnitCode": "umol/L",
+    "sourceUnitName": "micromole per liter",
+    "conversionFactor": 1.7031,
+    "targetUnitConceptId": 8837,
+    "targetUnitCode": "ug/dL",
+    "targetUnitName": "microgram per deciliter"
   }
 ]

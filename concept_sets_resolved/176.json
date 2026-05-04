@@ -20,6 +20,15 @@
       "standardConcept": "S"
     },
     {
+      "conceptId": 1002144,
+      "conceptName": "Ammonia [Moles/volume] in Arterial blood",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "Lab Test",
+      "conceptCode": "93684-9",
+      "standardConcept": "S"
+    },
+    {
       "conceptId": 3005347,
       "conceptName": "Ammonia [Moles/volume] in Blood",
       "vocabularyId": "LOINC",
@@ -36,6 +45,24 @@
       "conceptClassId": "Lab Test",
       "conceptCode": "16362-6",
       "standardConcept": "S"
+    },
+    {
+      "conceptId": 40652595,
+      "conceptName": "Ammonia|Mass Concentration|Moment in time|Blood, Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "LOINC Group",
+      "conceptCode": "LG6365-3",
+      "standardConcept": "C"
+    },
+    {
+      "conceptId": 40652596,
+      "conceptName": "Ammonia|Substance Concentration|Moment in time|Blood, Serum or Plasma",
+      "vocabularyId": "LOINC",
+      "domainId": "Measurement",
+      "conceptClassId": "LOINC Group",
+      "conceptCode": "LG4629-4",
+      "standardConcept": "C"
     }
   ]
 }

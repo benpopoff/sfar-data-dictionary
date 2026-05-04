@@ -3729,17 +3729,6 @@
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
-    "conceptId": 3005347,
-    "conceptName": "Ammonia [Moles/volume] in Blood",
-    "conceptCode": "1839-0",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8749,
-    "recommendedUnitName": "micromole per liter",
-    "recommendedUnitCode": "umol/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
     "conceptId": 3005353,
     "conceptName": "Prothrombin activity actual/normal in Platelet poor plasma by Coagulation assay",
     "conceptCode": "3289-6",
@@ -3979,17 +3968,6 @@
     "recommendedUnitConceptId": 8636,
     "recommendedUnitName": "gram per liter",
     "recommendedUnitCode": "g/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
-    "conceptId": 3005755,
-    "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P",
-    "conceptCode": "1743-4",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8923,
-    "recommendedUnitName": "international unit per liter",
-    "recommendedUnitCode": "[iU]/L",
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
@@ -4859,17 +4837,6 @@
     "recommendedUnitConceptId": 8751,
     "recommendedUnitName": "milligram per liter",
     "recommendedUnitCode": "mg/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
-    "conceptId": 3006923,
-    "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
-    "conceptCode": "1742-6",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8923,
-    "recommendedUnitName": "international unit per liter",
-    "recommendedUnitCode": "[iU]/L",
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
@@ -8250,17 +8217,6 @@
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
-    "conceptId": 3011958,
-    "conceptName": "Ammonia [Moles/volume] in Plasma",
-    "conceptCode": "16362-6",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8749,
-    "recommendedUnitName": "micromole per liter",
-    "recommendedUnitCode": "umol/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
     "conceptId": 3011960,
     "conceptName": "Natriuretic peptide B [Mass/volume] in Serum or Plasma",
     "conceptCode": "30934-4",
@@ -9204,17 +9160,6 @@
     "recommendedUnitConceptId": 8876,
     "recommendedUnitName": "millimeter mercury column",
     "recommendedUnitCode": "mm[Hg]",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
-    "conceptId": 3013721,
-    "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
-    "conceptCode": "1920-8",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8923,
-    "recommendedUnitName": "international unit per liter",
-    "recommendedUnitCode": "[iU]/L",
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
@@ -19360,17 +19305,6 @@
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
-    "conceptId": 3030942,
-    "conceptName": "Ammonia [Mass/volume] in Blood",
-    "conceptCode": "32664-5",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8751,
-    "recommendedUnitName": "milligram per liter",
-    "recommendedUnitCode": "mg/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
     "conceptId": 3030943,
     "conceptName": "Beta 1 globulin/Protein.total in Urine by Electrophoresis",
     "conceptCode": "32736-1",
@@ -21461,17 +21395,6 @@
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
-    "conceptId": 3035995,
-    "conceptName": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma",
-    "conceptCode": "6768-6",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8923,
-    "recommendedUnitName": "international unit per liter",
-    "recommendedUnitCode": "[iU]/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
     "conceptId": 3035999,
     "conceptName": "Lactate [Moles/volume] in Cerebral spinal fluid",
     "conceptCode": "2520-5",
@@ -22022,17 +21945,6 @@
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
-    "conceptId": 3036887,
-    "conceptName": "Ammonia [Mass/volume] in Plasma",
-    "conceptCode": "22763-7",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8748,
-    "recommendedUnitName": "microgram per liter",
-    "recommendedUnitCode": "ug/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
     "conceptId": 3036895,
     "conceptName": "Glucose [Moles/volume] in Serum or Plasma --1.5 hours post dose glucose",
     "conceptCode": "14752-0",
@@ -22107,17 +22019,6 @@
     "recommendedUnitConceptId": 8751,
     "recommendedUnitName": "milligram per liter",
     "recommendedUnitCode": "mg/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
-    "conceptId": 3037081,
-    "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P",
-    "conceptCode": "30239-8",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8923,
-    "recommendedUnitName": "international unit per liter",
-    "recommendedUnitCode": "[iU]/L",
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
@@ -29862,6 +29763,182 @@
     "recommendedUnitConceptId": 8749,
     "recommendedUnitName": "micromole per liter",
     "recommendedUnitCode": "umol/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3001110,
+    "conceptName": "Alkaline phosphatase [Enzymatic activity/volume] in Blood",
+    "conceptCode": "1783-0",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3035995,
+    "conceptName": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma",
+    "conceptCode": "6768-6",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 46235077,
+    "conceptName": "Alkaline phosphatase [Enzymatic activity/volume] in Serum, Plasma or Blood",
+    "conceptCode": "77141-0",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3006923,
+    "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
+    "conceptCode": "1742-6",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3005755,
+    "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P",
+    "conceptCode": "1743-4",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3027388,
+    "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P",
+    "conceptCode": "1744-2",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 46235106,
+    "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Blood",
+    "conceptCode": "76625-3",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 46236949,
+    "conceptName": "Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood",
+    "conceptCode": "77144-4",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3013721,
+    "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma",
+    "conceptCode": "1920-8",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3037081,
+    "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P",
+    "conceptCode": "30239-8",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 36305398,
+    "conceptName": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P",
+    "conceptCode": "88112-8",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8645,
+    "recommendedUnitName": "unit per liter",
+    "recommendedUnitCode": "[U]/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3005347,
+    "conceptName": "Ammonia [Moles/volume] in Blood",
+    "conceptCode": "1839-0",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8749,
+    "recommendedUnitName": "micromole per liter",
+    "recommendedUnitCode": "umol/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3011958,
+    "conceptName": "Ammonia [Moles/volume] in Plasma",
+    "conceptCode": "16362-6",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8749,
+    "recommendedUnitName": "micromole per liter",
+    "recommendedUnitCode": "umol/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 1002144,
+    "conceptName": "Ammonia [Moles/volume] in Arterial blood",
+    "conceptCode": "93684-9",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8749,
+    "recommendedUnitName": "micromole per liter",
+    "recommendedUnitCode": "umol/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3030942,
+    "conceptName": "Ammonia [Mass/volume] in Blood",
+    "conceptCode": "32664-5",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8837,
+    "recommendedUnitName": "microgram per deciliter",
+    "recommendedUnitCode": "ug/dL",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3036887,
+    "conceptName": "Ammonia [Mass/volume] in Plasma",
+    "conceptCode": "22763-7",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8837,
+    "recommendedUnitName": "microgram per deciliter",
+    "recommendedUnitCode": "ug/dL",
     "recommendedUnitVocabularyId": "UCUM"
   }
 ]
