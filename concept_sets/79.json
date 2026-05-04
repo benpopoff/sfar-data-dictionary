@@ -44,12 +44,16 @@
       "en": {
         "name": "Clavulanate",
         "category": "Drug",
-        "subcategory": "Antimicrobials"
+        "subcategory": "Antimicrobials",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Clavulanate",
         "category": "Traitements",
-        "subcategory": "Antimicrobiens"
+        "subcategory": "Antimicrobiens",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

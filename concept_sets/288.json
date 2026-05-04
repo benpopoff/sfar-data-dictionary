@@ -44,12 +44,16 @@
       "en": {
         "name": "Advance care plan agreed",
         "category": "Other",
-        "subcategory": "Other"
+        "subcategory": "Other",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Directives anticipées établies",
         "category": "Autres",
-        "subcategory": "Autres"
+        "subcategory": "Autres",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

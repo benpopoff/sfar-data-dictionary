@@ -44,12 +44,16 @@
       "en": {
         "name": "Norepinephrine",
         "category": "Drug",
-        "subcategory": "Vasoactive drugs"
+        "subcategory": "Vasoactive drugs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Norepinephrine",
         "category": "Traitements",
-        "subcategory": "Vasopresseurs"
+        "subcategory": "Vasopresseurs",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

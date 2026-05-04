@@ -82,12 +82,16 @@
       "en": {
         "name": "Oxygen flow rate",
         "category": "Ventilation",
-        "subcategory": "Oxygenation"
+        "subcategory": "Oxygenation",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Débit oxygène",
         "category": "Ventilation",
-        "subcategory": "Oxygénation"
+        "subcategory": "Oxygénation",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

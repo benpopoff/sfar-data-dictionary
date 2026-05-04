@@ -44,12 +44,16 @@
       "en": {
         "name": "Linezolid",
         "category": "Drug",
-        "subcategory": "Antimicrobials"
+        "subcategory": "Antimicrobials",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Linezolid",
         "category": "Traitements",
-        "subcategory": "Antimicrobiens"
+        "subcategory": "Antimicrobiens",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

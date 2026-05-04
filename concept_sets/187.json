@@ -82,12 +82,16 @@
       "en": {
         "name": "NT-proBNP",
         "category": "Labs",
-        "subcategory": "Other labs"
+        "subcategory": "Other labs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "NT-proBNP",
         "category": "Biologie",
-        "subcategory": "Autres analyses"
+        "subcategory": "Autres analyses",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

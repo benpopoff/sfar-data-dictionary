@@ -158,12 +158,16 @@
       "en": {
         "name": "Plasma potassium",
         "category": "Labs",
-        "subcategory": "Plasma ionogram"
+        "subcategory": "Plasma ionogram",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Potassium plasmatique",
         "category": "Biologie",
-        "subcategory": "Ionogramme plasmatique"
+        "subcategory": "Ionogramme plasmatique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

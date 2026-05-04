@@ -44,12 +44,16 @@
       "en": {
         "name": "Tobramycin",
         "category": "Drug",
-        "subcategory": "Antimicrobials"
+        "subcategory": "Antimicrobials",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Tobramycin",
         "category": "Traitements",
-        "subcategory": "Antimicrobiens"
+        "subcategory": "Antimicrobiens",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

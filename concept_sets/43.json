@@ -44,12 +44,16 @@
       "en": {
         "name": "Desirudin",
         "category": "Drug",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Desirudin",
         "category": "Traitements",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -44,12 +44,16 @@
       "en": {
         "name": "Mean airway pressure",
         "category": "Ventilation",
-        "subcategory": "Ventilation parameters"
+        "subcategory": "Ventilation parameters",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Pression moyenne des voies aeriennes",
         "category": "Ventilation",
-        "subcategory": "Paramètres ventilatoires"
+        "subcategory": "Paramètres ventilatoires",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

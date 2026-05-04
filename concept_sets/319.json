@@ -44,12 +44,16 @@
       "en": {
         "name": "Peak inspiration pressure",
         "category": "Ventilation",
-        "subcategory": "Ventilation parameters"
+        "subcategory": "Ventilation parameters",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Pression inspiratoire de crête",
         "category": "Ventilation",
-        "subcategory": "Paramètres ventilatoires"
+        "subcategory": "Paramètres ventilatoires",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

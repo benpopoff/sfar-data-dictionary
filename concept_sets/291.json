@@ -690,12 +690,16 @@
       "en": {
         "name": "Central venous catheter",
         "category": "Procedure",
-        "subcategory": "Catheter"
+        "subcategory": "Catheter",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Cathéter veineux central",
         "category": "Actes",
-        "subcategory": "Cathéter"
+        "subcategory": "Cathéter",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

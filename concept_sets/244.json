@@ -139,12 +139,16 @@
       "en": {
         "name": "Klebsiella variicola",
         "category": "Microbiology",
-        "subcategory": "Microorganism"
+        "subcategory": "Microorganism",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Klebsiella variicola",
         "category": "Microbiologie",
-        "subcategory": "Micro-organisme"
+        "subcategory": "Micro-organisme",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -101,12 +101,16 @@
       "en": {
         "name": "ABG pH",
         "category": "Labs",
-        "subcategory": "Arterial blood gases"
+        "subcategory": "Arterial blood gases",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Gaz du sang - pH",
         "category": "Biologie",
-        "subcategory": "Gaz du sang artériel"
+        "subcategory": "Gaz du sang artériel",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

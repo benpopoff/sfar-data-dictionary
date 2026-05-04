@@ -120,12 +120,16 @@
       "en": {
         "name": "INR",
         "category": "Labs",
-        "subcategory": "Hemostasis"
+        "subcategory": "Hemostasis",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "INR",
         "category": "Biologie",
-        "subcategory": "Hémostase"
+        "subcategory": "Hémostase",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

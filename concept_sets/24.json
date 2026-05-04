@@ -24,12 +24,16 @@
       "en": {
         "name": "Metastatic carcinoma",
         "category": "Condition",
-        "subcategory": "APACHE IV - Chronic health conditions"
+        "subcategory": "APACHE IV - Chronic health conditions",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Carcinome métastatique",
         "category": "Antécédents",
-        "subcategory": "APACHE IV - Pathologies chroniques"
+        "subcategory": "APACHE IV - Pathologies chroniques",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

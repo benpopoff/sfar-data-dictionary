@@ -272,7 +272,9 @@
       "en": {
         "name": "Ventilation mode - Pressure driven (PCV)",
         "category": "Ventilation",
-        "subcategory": "Ventilation mode"
+        "subcategory": "Ventilation mode",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

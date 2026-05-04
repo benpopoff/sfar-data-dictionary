@@ -139,12 +139,16 @@
       "en": {
         "name": "Prothrombin time",
         "category": "Labs",
-        "subcategory": "Hemostasis"
+        "subcategory": "Hemostasis",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Temps de prothrombine",
         "category": "Biologie",
-        "subcategory": "Hémostase"
+        "subcategory": "Hémostase",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

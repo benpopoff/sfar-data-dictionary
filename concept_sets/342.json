@@ -44,7 +44,9 @@
       "en": {
         "name": "Decision authority documented",
         "category": "Clinical observation",
-        "subcategory": "Care planning"
+        "subcategory": "Care planning",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

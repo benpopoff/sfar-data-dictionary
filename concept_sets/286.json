@@ -44,12 +44,16 @@
       "en": {
         "name": "Energy intake",
         "category": "Other",
-        "subcategory": "Nutrition"
+        "subcategory": "Nutrition",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Apport énergétique",
         "category": "Autres",
-        "subcategory": "Nutrition"
+        "subcategory": "Nutrition",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

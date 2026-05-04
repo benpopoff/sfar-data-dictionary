@@ -101,12 +101,16 @@
       "en": {
         "name": "ECMO",
         "category": "Procedure",
-        "subcategory": "ECMO"
+        "subcategory": "ECMO",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "ECMO",
         "category": "Actes",
-        "subcategory": "ECMO"
+        "subcategory": "ECMO",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

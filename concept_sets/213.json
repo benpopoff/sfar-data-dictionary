@@ -101,12 +101,16 @@
       "en": {
         "name": "Plasma urea",
         "category": "Labs",
-        "subcategory": "Plasma ionogram"
+        "subcategory": "Plasma ionogram",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Urée plasmatique",
         "category": "Biologie",
-        "subcategory": "Ionogramme plasmatique"
+        "subcategory": "Ionogramme plasmatique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

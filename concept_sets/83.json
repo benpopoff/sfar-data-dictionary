@@ -44,12 +44,16 @@
       "en": {
         "name": "Doxycycline",
         "category": "Drug",
-        "subcategory": "Antimicrobials"
+        "subcategory": "Antimicrobials",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Doxycycline",
         "category": "Traitements",
-        "subcategory": "Antimicrobiens"
+        "subcategory": "Antimicrobiens",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

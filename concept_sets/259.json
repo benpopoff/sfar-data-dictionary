@@ -82,12 +82,16 @@
       "en": {
         "name": "Staphylococcus epidermidis",
         "category": "Microbiology",
-        "subcategory": "Microorganism"
+        "subcategory": "Microorganism",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Staphylococcus epidermidis",
         "category": "Microbiologie",
-        "subcategory": "Micro-organisme"
+        "subcategory": "Micro-organisme",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

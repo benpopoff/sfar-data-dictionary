@@ -44,12 +44,16 @@
       "en": {
         "name": "Dexamethasone",
         "category": "Drug",
-        "subcategory": "Corticosteroids"
+        "subcategory": "Corticosteroids",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Dexamethasone",
         "category": "Traitements",
-        "subcategory": "Corticostéroïdes"
+        "subcategory": "Corticostéroïdes",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

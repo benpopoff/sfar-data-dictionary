@@ -44,12 +44,16 @@
       "en": {
         "name": "Dalteparin",
         "category": "Drug",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Dalteparin",
         "category": "Traitements",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

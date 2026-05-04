@@ -44,12 +44,16 @@
       "en": {
         "name": "Parnaparin",
         "category": "Drug",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Parnaparin",
         "category": "Traitements",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -500,12 +500,16 @@
       "en": {
         "name": "Respiratory rate",
         "category": "Vitals",
-        "subcategory": "Ventilatory"
+        "subcategory": "Ventilatory",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Fréquence respiratoire",
         "category": "Paramètres vitaux",
-        "subcategory": "Ventilatoire"
+        "subcategory": "Ventilatoire",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

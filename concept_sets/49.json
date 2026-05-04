@@ -44,12 +44,16 @@
       "en": {
         "name": "Heparin",
         "category": "Drug",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Heparin",
         "category": "Traitements",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

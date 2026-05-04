@@ -44,12 +44,16 @@
       "en": {
         "name": "End tidal carbone dioxyde concentration",
         "category": "Ventilation",
-        "subcategory": "Ventilation parameters"
+        "subcategory": "Ventilation parameters",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Concentration de CO2 en fin expiration",
         "category": "Ventilation",
-        "subcategory": "Paramètres ventilatoires"
+        "subcategory": "Paramètres ventilatoires",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -82,12 +82,16 @@
       "en": {
         "name": "Plasma erythrocytes",
         "category": "Labs",
-        "subcategory": "Plasma blood count"
+        "subcategory": "Plasma blood count",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Érythrocytes plasmatiques",
         "category": "Biologie",
-        "subcategory": "Numération sanguine"
+        "subcategory": "Numération sanguine",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

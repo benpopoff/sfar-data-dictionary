@@ -44,12 +44,16 @@
       "en": {
         "name": "Ketoconazole",
         "category": "Drug",
-        "subcategory": "Antimicrobials"
+        "subcategory": "Antimicrobials",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Ketoconazole",
         "category": "Traitements",
-        "subcategory": "Antimicrobiens"
+        "subcategory": "Antimicrobiens",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

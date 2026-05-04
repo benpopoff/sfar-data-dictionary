@@ -44,12 +44,16 @@
       "en": {
         "name": "Surrogate decision maker documented",
         "category": "Other",
-        "subcategory": "Other"
+        "subcategory": "Other",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Personne de confiance documentée",
         "category": "Autres",
-        "subcategory": "Autres"
+        "subcategory": "Autres",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

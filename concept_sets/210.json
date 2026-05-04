@@ -82,12 +82,16 @@
       "en": {
         "name": "Plasma phosphate",
         "category": "Labs",
-        "subcategory": "Plasma ionogram"
+        "subcategory": "Plasma ionogram",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Phosphate plasmatique",
         "category": "Biologie",
-        "subcategory": "Ionogramme plasmatique"
+        "subcategory": "Ionogramme plasmatique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

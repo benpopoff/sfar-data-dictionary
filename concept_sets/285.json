@@ -63,12 +63,16 @@
       "en": {
         "name": "Contraindication to enteral feeding",
         "category": "Other",
-        "subcategory": "Nutrition"
+        "subcategory": "Nutrition",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Contre-indication à la nutrition entérale",
         "category": "Autres",
-        "subcategory": "Nutrition"
+        "subcategory": "Nutrition",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

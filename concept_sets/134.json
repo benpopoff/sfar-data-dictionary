@@ -44,12 +44,16 @@
       "en": {
         "name": "Midazolam",
         "category": "Drug",
-        "subcategory": "Sedative drugs"
+        "subcategory": "Sedative drugs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Midazolam",
         "category": "Traitements",
-        "subcategory": "Sédatifs"
+        "subcategory": "Sédatifs",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

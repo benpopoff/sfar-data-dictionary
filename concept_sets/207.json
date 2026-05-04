@@ -253,12 +253,16 @@
       "en": {
         "name": "Plasma glucose",
         "category": "Labs",
-        "subcategory": "Plasma ionogram"
+        "subcategory": "Plasma ionogram",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Glucose plasmatique",
         "category": "Biologie",
-        "subcategory": "Ionogramme plasmatique"
+        "subcategory": "Ionogramme plasmatique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

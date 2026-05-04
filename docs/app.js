@@ -1489,7 +1489,7 @@ var App = (function() {
         name: tr.name || cs.name,
         category: tr.category || '',
         subcategory: tr.subcategory || '',
-        description: cs.description || '',
+        description: tr.shortDescription || '',
         reviewStatus: (cs.metadata && cs.metadata.reviewStatus) || 'draft',
         version: cs.version || '',
         concepts: (cs.expression && cs.expression.items) ? cs.expression.items.length : 0,

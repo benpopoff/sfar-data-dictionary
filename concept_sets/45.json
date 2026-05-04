@@ -44,12 +44,16 @@
       "en": {
         "name": "Edoxaban",
         "category": "Drug",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Edoxaban",
         "category": "Traitements",
-        "subcategory": "Anticoagulants"
+        "subcategory": "Anticoagulants",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

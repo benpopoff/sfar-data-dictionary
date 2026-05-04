@@ -63,12 +63,16 @@
       "en": {
         "name": "Urinary calcium",
         "category": "Labs",
-        "subcategory": "Urinary ionogram"
+        "subcategory": "Urinary ionogram",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Calcium urinaire",
         "category": "Biologie",
-        "subcategory": "Ionogramme urinaire"
+        "subcategory": "Ionogramme urinaire",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

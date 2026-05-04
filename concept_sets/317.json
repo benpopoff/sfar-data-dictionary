@@ -234,12 +234,16 @@
       "en": {
         "name": "Minute volume",
         "category": "Ventilation",
-        "subcategory": "Ventilation parameters"
+        "subcategory": "Ventilation parameters",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Volume minute",
         "category": "Ventilation",
-        "subcategory": "Paramètres ventilatoires"
+        "subcategory": "Paramètres ventilatoires",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

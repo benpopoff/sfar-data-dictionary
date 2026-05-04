@@ -253,12 +253,16 @@
       "en": {
         "name": "Bacillus cereus group",
         "category": "Microbiology",
-        "subcategory": "Microorganism"
+        "subcategory": "Microorganism",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Bacillus cereus group",
         "category": "Microbiologie",
-        "subcategory": "Micro-organisme"
+        "subcategory": "Micro-organisme",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -82,12 +82,16 @@
       "en": {
         "name": "Visual analog pain scale",
         "category": "Clinical observation",
-        "subcategory": "Neurological assessment"
+        "subcategory": "Neurological assessment",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Visual analog pain scale",
         "category": "Observations cliniques",
-        "subcategory": "Évaluation neurologique"
+        "subcategory": "Évaluation neurologique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -139,12 +139,16 @@
       "en": {
         "name": "Renal replacement therapy",
         "category": "Procedure",
-        "subcategory": "Renal replacement therapy"
+        "subcategory": "Renal replacement therapy",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Renal replacement therapy",
         "category": "Actes",
-        "subcategory": "Épuration extra-rénale"
+        "subcategory": "Épuration extra-rénale",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

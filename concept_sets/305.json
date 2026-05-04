@@ -443,12 +443,16 @@
       "en": {
         "name": "Endotracheal intubation",
         "category": "Ventilation",
-        "subcategory": "Ventilation device"
+        "subcategory": "Ventilation device",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Intubation endotrachéale",
         "category": "Ventilation",
-        "subcategory": "Dispositif de ventilation"
+        "subcategory": "Dispositif de ventilation",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

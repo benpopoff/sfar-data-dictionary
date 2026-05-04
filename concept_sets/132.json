@@ -44,12 +44,16 @@
       "en": {
         "name": "Fentanyl",
         "category": "Drug",
-        "subcategory": "Sedative drugs"
+        "subcategory": "Sedative drugs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Fentanyl",
         "category": "Traitements",
-        "subcategory": "Sédatifs"
+        "subcategory": "Sédatifs",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

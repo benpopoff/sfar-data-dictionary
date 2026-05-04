@@ -44,12 +44,16 @@
       "en": {
         "name": "Trial of spontaneous breathing",
         "category": "Ventilation",
-        "subcategory": "Ventilation device"
+        "subcategory": "Ventilation device",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Épreuve de ventilation spontanée",
         "category": "Ventilation",
-        "subcategory": "Dispositif de ventilation"
+        "subcategory": "Dispositif de ventilation",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

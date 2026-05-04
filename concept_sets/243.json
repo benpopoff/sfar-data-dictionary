@@ -272,12 +272,16 @@
       "en": {
         "name": "Klebsiella pneumoniae",
         "category": "Microbiology",
-        "subcategory": "Microorganism"
+        "subcategory": "Microorganism",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Klebsiella pneumoniae",
         "category": "Microbiologie",
-        "subcategory": "Micro-organisme"
+        "subcategory": "Micro-organisme",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

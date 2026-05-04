@@ -462,12 +462,16 @@
       "en": {
         "name": "Enterobacter cloacae complex",
         "category": "Microbiology",
-        "subcategory": "Microorganism"
+        "subcategory": "Microorganism",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Enterobacter cloacae complex",
         "category": "Microbiologie",
-        "subcategory": "Micro-organisme"
+        "subcategory": "Micro-organisme",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

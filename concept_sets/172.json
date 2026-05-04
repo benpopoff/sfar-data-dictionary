@@ -158,12 +158,16 @@
       "en": {
         "name": "aPTT",
         "category": "Labs",
-        "subcategory": "Hemostasis"
+        "subcategory": "Hemostasis",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "aPTT",
         "category": "Biologie",
-        "subcategory": "Hémostase"
+        "subcategory": "Hémostase",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -63,12 +63,16 @@
       "en": {
         "name": "Urinary bicarbonate",
         "category": "Labs",
-        "subcategory": "Urinary ionogram"
+        "subcategory": "Urinary ionogram",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Bicarbonates urinaires",
         "category": "Biologie",
-        "subcategory": "Ionogramme urinaire"
+        "subcategory": "Ionogramme urinaire",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

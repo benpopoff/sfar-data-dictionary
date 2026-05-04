@@ -120,7 +120,9 @@
       "en": {
         "name": "Ventilation mode - Volume driven (VCV)",
         "category": "Ventilation",
-        "subcategory": "Ventilation mode"
+        "subcategory": "Ventilation mode",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

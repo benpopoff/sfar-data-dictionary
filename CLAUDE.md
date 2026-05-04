@@ -100,8 +100,8 @@ data-dictionary/                   # (repo root)
     "reviewStatus": "draft",
     "origin": null,
     "translations": {
-      "en": { "name": "...", "category": "...", "subcategory": "..." },
-      "fr": { "name": "...", "category": "...", "subcategory": "..." }
+      "en": { "name": "...", "category": "...", "subcategory": "...", "shortDescription": "...", "longDescription": "..." },
+      "fr": { "name": "...", "category": "...", "subcategory": "...", "shortDescription": "...", "longDescription": "..." }
     },
     "createdByDetails": {
       "firstName": "Boris",
@@ -295,7 +295,9 @@ Enable GitHub Pages in repository settings, pointing to the `docs/` folder on th
 
 ## Key Conventions
 
-- **Bilingual**: All concept sets have English and French translations in `metadata.translations`
+- **Bilingual**: All concept sets have English and French translations in `metadata.translations`. Each language entry follows the key order `name`, `category`, `subcategory`, `shortDescription`, `longDescription`.
+- **Root `name` and `description` mirror the English translation**: the top-level `name` field is a copy of `metadata.translations.en.name`, and the top-level `description` field is a copy of `metadata.translations.en.shortDescription`. Both are kept in sync by the SPA on edit. Other consumers (search indices, external tooling) may read the root fields, but the translations are the source of truth.
+- **`shortDescription` vs `longDescription`**: `shortDescription` is the brief one-line description shown in the concept set datatable (truncated to ~100 chars). `longDescription` is the full Markdown content rendered in the Comments tab of the concept set detail view. Both live per-language in `metadata.translations.{en,fr}`. The SPA does **not** fall back across languages or onto root `description` for either — if the translation in the active language is null, no text is shown (encourages filling the missing translation).
 - **OMOP CDM**: Concepts follow the OMOP Common Data Model vocabulary (SNOMED, LOINC, RxNorm, etc.)
 - **Athena links**: Concept IDs link to `https://athena.ohdsi.org/search-terms/terms/{conceptId}`
 - **Categories**: Concept sets are grouped by category/subcategory from metadata translations

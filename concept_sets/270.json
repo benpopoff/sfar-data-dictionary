@@ -177,12 +177,16 @@
       "en": {
         "name": "Blood culture",
         "category": "Microbiology",
-        "subcategory": "Specimen"
+        "subcategory": "Specimen",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Hémoculture",
         "category": "Microbiologie",
-        "subcategory": "Prélèvement"
+        "subcategory": "Prélèvement",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

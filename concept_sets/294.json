@@ -2590,12 +2590,16 @@
       "en": {
         "name": "Mobilization",
         "category": "Procedure",
-        "subcategory": "Patient position"
+        "subcategory": "Patient position",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Mobilisation",
         "category": "Actes",
-        "subcategory": "Position du patient"
+        "subcategory": "Position du patient",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

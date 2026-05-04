@@ -139,12 +139,16 @@
       "en": {
         "name": "Catheter infection",
         "category": "Condition",
-        "subcategory": "Hospitalization complications"
+        "subcategory": "Hospitalization complications",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Infection de cathéter",
         "category": "Antécédents",
-        "subcategory": "Complications hospitalières"
+        "subcategory": "Complications hospitalières",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

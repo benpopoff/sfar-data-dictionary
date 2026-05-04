@@ -139,12 +139,16 @@
       "en": {
         "name": "CRP",
         "category": "Labs",
-        "subcategory": "Other labs"
+        "subcategory": "Other labs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "CRP",
         "category": "Biologie",
-        "subcategory": "Autres analyses"
+        "subcategory": "Autres analyses",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

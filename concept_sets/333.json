@@ -481,12 +481,16 @@
       "en": {
         "name": "Oxygen saturation (SpO2)",
         "category": "Vitals",
-        "subcategory": "Ventilatory"
+        "subcategory": "Ventilatory",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Saturation en oxygène (SpO2)",
         "category": "Paramètres vitaux",
-        "subcategory": "Ventilatoire"
+        "subcategory": "Ventilatoire",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

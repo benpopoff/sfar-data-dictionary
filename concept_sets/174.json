@@ -101,12 +101,16 @@
       "en": {
         "name": "ALT",
         "category": "Labs",
-        "subcategory": "Liver test"
+        "subcategory": "Liver test",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "ALT",
         "category": "Biologie",
-        "subcategory": "Bilan hépatique"
+        "subcategory": "Bilan hépatique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

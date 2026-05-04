@@ -1182,8 +1182,7 @@ var ConceptSetsPage = (function() {
     commentsEditMode = true;
     initCommentsAceEditor();
     var tr = App.t(selectedConceptSet);
-    // Load longDescription into editor; fall back to description if no longDescription
-    var content = (tr && tr.longDescription) || selectedConceptSet.description || '';
+    var content = (tr && tr.longDescription) || '';
     commentsAceEditor.setValue(content, -1);
     document.getElementById('cs-comments-view').style.display = 'none';
     document.getElementById('cs-comments-edit').style.display = '';
@@ -1207,7 +1206,7 @@ var ConceptSetsPage = (function() {
     if (!selectedConceptSet.metadata.translations) selectedConceptSet.metadata.translations = {};
     var lang = App.lang || 'en';
     if (!selectedConceptSet.metadata.translations[lang]) selectedConceptSet.metadata.translations[lang] = {};
-    selectedConceptSet.metadata.translations[lang].longDescription = newContent || '';
+    selectedConceptSet.metadata.translations[lang].longDescription = newContent || null;
     selectedConceptSet.modifiedDate = new Date().toISOString().slice(0, 10);
     App.updateConceptSet(selectedConceptSet);
     exitCommentsEditMode();
@@ -3987,14 +3986,12 @@ var ConceptSetsPage = (function() {
   function renderCommentsTab(cs) {
     var el = document.getElementById('cs-comments-body');
     var tr = App.t(cs);
-    var desc = cs.description || '';
     var longDesc = (tr && tr.longDescription) || '';
-    if (!desc && !longDesc) {
+    if (!longDesc) {
       el.innerHTML = '<div class="empty-state"><p>' + App.i18n('No description available for this concept set.') + '</p></div>';
       return;
     }
-    var content = longDesc || desc;
-    el.innerHTML = App.renderMarkdown(content);
+    el.innerHTML = App.renderMarkdown(longDesc);
   }
 
   function renderStatisticsTab(cs) {
@@ -5267,7 +5264,7 @@ var ConceptSetsPage = (function() {
     var trEn = (tr && tr.en) || {};
     var trCur = (tr && tr[App.lang]) || trEn;
     document.getElementById('cs-create-name').value = trCur.name || cs.name || '';
-    document.getElementById('cs-create-desc').value = cs.description || '';
+    document.getElementById('cs-create-desc').value = trCur.shortDescription || '';
     document.getElementById('cs-create-cat-new').style.display = 'none';
     document.getElementById('cs-create-cat-new-input').value = '';
     document.getElementById('cs-create-subcat-new').style.display = 'none';
@@ -5326,7 +5323,6 @@ var ConceptSetsPage = (function() {
     if (csEditingId != null) {
       var cs = App.conceptSets.find(function(c) { return c.id === csEditingId; });
       if (!cs) return;
-      cs.description = desc || null;
       cs.modifiedDate = new Date().toISOString().split('T')[0];
       if (!cs.metadata) cs.metadata = {};
       if (!cs.metadata.translations) cs.metadata.translations = {};
@@ -5335,11 +5331,14 @@ var ConceptSetsPage = (function() {
       if (App.lang === 'fr') {
         cs.metadata.translations.fr.name = name;
         cs.metadata.translations.en.name = cs.metadata.translations.en.name || name;
+        cs.metadata.translations.fr.shortDescription = desc || null;
       } else {
         cs.metadata.translations.en.name = name;
         cs.metadata.translations.fr.name = cs.metadata.translations.fr.name || name;
+        cs.metadata.translations.en.shortDescription = desc || null;
       }
       cs.name = cs.metadata.translations.en.name;
+      cs.description = cs.metadata.translations.en.shortDescription || null;
       cs.metadata.translations.en.category = r.catEn;
       cs.metadata.translations.en.subcategory = r.subcatEn;
       cs.metadata.translations.fr.category = r.catFr;
@@ -5356,10 +5355,12 @@ var ConceptSetsPage = (function() {
     var authorName = ((profile.firstName || '') + ' ' + (profile.lastName || '')).trim() || 'Anonymous';
     var today = new Date().toISOString().split('T')[0];
 
+    var enShort = App.lang === 'en' ? (desc || null) : null;
+    var frShort = App.lang === 'fr' ? (desc || null) : null;
     var cs = {
       id: App.nextConceptSetId(),
       name: name,
-      description: desc || null,
+      description: enShort,
       version: '1.0.0',
       createdBy: authorName,
       createdDate: today,
@@ -5374,8 +5375,8 @@ var ConceptSetsPage = (function() {
         reviewStatus: 'draft',
         origin: null,
         translations: {
-          en: { name: name, category: r.catEn, subcategory: r.subcatEn },
-          fr: { name: name, category: r.catFr, subcategory: r.subcatFr }
+          en: { name: name, category: r.catEn, subcategory: r.subcatEn, shortDescription: enShort, longDescription: null },
+          fr: { name: name, category: r.catFr, subcategory: r.subcatFr, shortDescription: frShort, longDescription: null }
         },
         createdByDetails: {
           firstName: profile.firstName || '',

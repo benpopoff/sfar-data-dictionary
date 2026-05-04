@@ -44,12 +44,16 @@
       "en": {
         "name": "Insulin Detemir",
         "category": "Drug",
-        "subcategory": "Other drugs"
+        "subcategory": "Other drugs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Insulin Detemir",
         "category": "Traitements",
-        "subcategory": "Autres médicaments"
+        "subcategory": "Autres médicaments",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -329,12 +329,16 @@
       "en": {
         "name": "Enteral feeding",
         "category": "Procedure",
-        "subcategory": "Nutrition"
+        "subcategory": "Nutrition",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Nutrition entérale",
         "category": "Actes",
-        "subcategory": "Nutrition"
+        "subcategory": "Nutrition",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

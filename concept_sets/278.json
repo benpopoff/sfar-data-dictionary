@@ -44,12 +44,16 @@
       "en": {
         "name": "Gestational age",
         "category": "Other",
-        "subcategory": "Demographic data"
+        "subcategory": "Demographic data",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Âge gestationnel",
         "category": "Autres",
-        "subcategory": "Données démographiques"
+        "subcategory": "Données démographiques",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

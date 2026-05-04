@@ -24,12 +24,16 @@
       "en": {
         "name": "Chronic kidney disease",
         "category": "Condition",
-        "subcategory": "APACHE IV - Chronic health conditions"
+        "subcategory": "APACHE IV - Chronic health conditions",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Insuffisance rénale chronique",
         "category": "Antécédents",
-        "subcategory": "APACHE IV - Pathologies chroniques"
+        "subcategory": "APACHE IV - Pathologies chroniques",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -44,12 +44,16 @@
       "en": {
         "name": "Dexmedetomidine",
         "category": "Drug",
-        "subcategory": "Sedative drugs"
+        "subcategory": "Sedative drugs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Dexmedetomidine",
         "category": "Traitements",
-        "subcategory": "Sédatifs"
+        "subcategory": "Sédatifs",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

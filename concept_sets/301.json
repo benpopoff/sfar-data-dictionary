@@ -120,12 +120,16 @@
       "en": {
         "name": "Fraction of inspired oxygen (FiO2)",
         "category": "Ventilation",
-        "subcategory": "Oxygenation"
+        "subcategory": "Oxygenation",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Fraction inspirée en oxygène (FiO2)",
         "category": "Ventilation",
-        "subcategory": "Oxygénation"
+        "subcategory": "Oxygénation",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

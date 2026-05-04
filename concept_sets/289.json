@@ -196,12 +196,16 @@
       "en": {
         "name": "Consultation with patient",
         "category": "Other",
-        "subcategory": "Other"
+        "subcategory": "Other",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Consultation avec le patient",
         "category": "Autres",
-        "subcategory": "Autres"
+        "subcategory": "Autres",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

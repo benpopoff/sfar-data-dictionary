@@ -139,12 +139,16 @@
       "en": {
         "name": "Plasma sodium",
         "category": "Labs",
-        "subcategory": "Plasma ionogram"
+        "subcategory": "Plasma ionogram",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Sodium plasmatique",
         "category": "Biologie",
-        "subcategory": "Ionogramme plasmatique"
+        "subcategory": "Ionogramme plasmatique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

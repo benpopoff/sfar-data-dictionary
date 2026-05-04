@@ -63,12 +63,16 @@
       "en": {
         "name": "Ideal body weight",
         "category": "Other",
-        "subcategory": "Demographic data"
+        "subcategory": "Demographic data",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Poids idéal théorique",
         "category": "Autres",
-        "subcategory": "Données démographiques"
+        "subcategory": "Données démographiques",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

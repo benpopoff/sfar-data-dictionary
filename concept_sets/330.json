@@ -1032,12 +1032,16 @@
       "en": {
         "name": "Body temperature",
         "category": "Vitals",
-        "subcategory": "Other vitals"
+        "subcategory": "Other vitals",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Température corporelle",
         "category": "Paramètres vitaux",
-        "subcategory": "Autres paramètres vitaux"
+        "subcategory": "Autres paramètres vitaux",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

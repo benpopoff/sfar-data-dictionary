@@ -101,12 +101,16 @@
       "en": {
         "name": "Plasma leukocytes",
         "category": "Labs",
-        "subcategory": "Plasma blood count"
+        "subcategory": "Plasma blood count",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Leucocytes plasmatiques",
         "category": "Biologie",
-        "subcategory": "Numération sanguine"
+        "subcategory": "Numération sanguine",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

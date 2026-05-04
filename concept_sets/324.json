@@ -880,12 +880,16 @@
       "en": {
         "name": "Cardiac output",
         "category": "Vitals",
-        "subcategory": "Haemodynamics"
+        "subcategory": "Haemodynamics",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Débit cardiaque",
         "category": "Paramètres vitaux",
-        "subcategory": "Hémodynamique"
+        "subcategory": "Hémodynamique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

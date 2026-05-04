@@ -44,12 +44,16 @@
       "en": {
         "name": "Ventilator-associated pneumonia",
         "category": "Condition",
-        "subcategory": "Hospitalization complications"
+        "subcategory": "Hospitalization complications",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Pneumonie acquise sous ventilation mécanique",
         "category": "Antécédents",
-        "subcategory": "Complications hospitalières"
+        "subcategory": "Complications hospitalières",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

@@ -44,12 +44,16 @@
       "en": {
         "name": "Dependence on home ventilator",
         "category": "Condition",
-        "subcategory": "General conditions"
+        "subcategory": "General conditions",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Dépendance à la ventilation à domicile",
         "category": "Antécédents",
-        "subcategory": "Pathologies générales"
+        "subcategory": "Pathologies générales",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

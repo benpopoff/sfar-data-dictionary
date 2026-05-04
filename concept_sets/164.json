@@ -44,12 +44,16 @@
       "en": {
         "name": "Peripheral blood specimen",
         "category": "Labs",
-        "subcategory": "Blood specimen type"
+        "subcategory": "Blood specimen type",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Prélèvement sanguin périphérique",
         "category": "Biologie",
-        "subcategory": "Type de prélèvement sanguin"
+        "subcategory": "Type de prélèvement sanguin",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

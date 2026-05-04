@@ -462,12 +462,16 @@
       "en": {
         "name": "Mean arterial pressure",
         "category": "Vitals",
-        "subcategory": "Haemodynamics"
+        "subcategory": "Haemodynamics",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Pression artérielle moyenne",
         "category": "Paramètres vitaux",
-        "subcategory": "Hémodynamique"
+        "subcategory": "Hémodynamique",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

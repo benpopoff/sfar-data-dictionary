@@ -44,12 +44,16 @@
       "en": {
         "name": "Dopamine",
         "category": "Drug",
-        "subcategory": "Vasoactive drugs"
+        "subcategory": "Vasoactive drugs",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Dopamine",
         "category": "Traitements",
-        "subcategory": "Vasopresseurs"
+        "subcategory": "Vasopresseurs",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

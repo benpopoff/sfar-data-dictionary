@@ -44,12 +44,16 @@
       "en": {
         "name": "Coagulation factor V",
         "category": "Labs",
-        "subcategory": "Hemostasis"
+        "subcategory": "Hemostasis",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Facteur V de coagulation",
         "category": "Biologie",
-        "subcategory": "Hémostase"
+        "subcategory": "Hémostase",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

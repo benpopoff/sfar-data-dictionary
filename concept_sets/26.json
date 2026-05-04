@@ -44,12 +44,16 @@
       "en": {
         "name": "Adult Respiratory Distress Syndrome (ARDS)",
         "category": "Condition",
-        "subcategory": "General conditions"
+        "subcategory": "General conditions",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "ARDS",
         "category": "Antécédents",
-        "subcategory": "Pathologies générales"
+        "subcategory": "Pathologies générales",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

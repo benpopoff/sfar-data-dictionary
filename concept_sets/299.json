@@ -291,12 +291,16 @@
       "en": {
         "name": "Endotracheal tube",
         "category": "Ventilation",
-        "subcategory": "Airway device"
+        "subcategory": "Airway device",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Sonde endotrachéale",
         "category": "Ventilation",
-        "subcategory": "Dispositif des voies aériennes"
+        "subcategory": "Dispositif des voies aériennes",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

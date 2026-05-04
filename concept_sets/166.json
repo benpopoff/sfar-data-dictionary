@@ -120,12 +120,16 @@
       "en": {
         "name": "Whole blood specimen",
         "category": "Labs",
-        "subcategory": "Blood specimen type"
+        "subcategory": "Blood specimen type",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Prélèvement de sang total",
         "category": "Biologie",
-        "subcategory": "Type de prélèvement sanguin"
+        "subcategory": "Type de prélèvement sanguin",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

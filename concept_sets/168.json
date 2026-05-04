@@ -120,12 +120,16 @@
       "en": {
         "name": "Fibrin D-dimer",
         "category": "Labs",
-        "subcategory": "Hemostasis"
+        "subcategory": "Hemostasis",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Fibrin D-dimer",
         "category": "Biologie",
-        "subcategory": "Hémostase"
+        "subcategory": "Hémostase",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

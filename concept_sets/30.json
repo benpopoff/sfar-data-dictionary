@@ -24,12 +24,16 @@
       "en": {
         "name": "Diabetes mellitus",
         "category": "Condition",
-        "subcategory": "General conditions"
+        "subcategory": "General conditions",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Diabète",
         "category": "Antécédents",
-        "subcategory": "Pathologies générales"
+        "subcategory": "Pathologies générales",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {

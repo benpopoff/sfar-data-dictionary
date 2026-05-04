@@ -82,12 +82,16 @@
       "en": {
         "name": "Plasmapheresis",
         "category": "Procedure",
-        "subcategory": "Plasmapheresis"
+        "subcategory": "Plasmapheresis",
+        "shortDescription": null,
+        "longDescription": null
       },
       "fr": {
         "name": "Plasmapheresis",
         "category": "Actes",
-        "subcategory": "Plasmaphérèse"
+        "subcategory": "Plasmaphérèse",
+        "shortDescription": null,
+        "longDescription": null
       }
     },
     "createdByDetails": {
