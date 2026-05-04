@@ -43,7 +43,7 @@
     "translations": {
       "en": {
         "name": "Richmond Agitation-Sedation Scale (RASS)",
-        "category": "Clinical observation",
+        "category": "Clinical observations",
         "subcategory": "Neurological assessment",
         "shortDescription": null,
         "longDescription": "## Definition & Clinical Context\n\nThe RASS (Richmond Agitation–Sedation Scale) is a 10-level clinician-rated scale for assessing the level of consciousness, sedation, and agitation in adult intensive care unit patients. It can be administered in 30–60 seconds and does not require special training [1].\n\nThe scale uses three sequential assessment steps — observation, response to auditory stimulation, and response to physical stimulation — to assign a single score:\n- +4 combative\n- +3 very agitated\n- +2 agitated\n- +1 restless\n- 0 alert and calm\n- −1 drowsy\n- −2 light sedation\n- −3 moderate sedation\n- −4 deep sedation\n- −5 unarousable\n\nPositive scores denote agitation, zero denotes a calm and alert state, and negative scores denote sedation.\n\n## References\n\n[1] Sessler CN, Gosnell MS, Grap MJ, et al. The Richmond Agitation-Sedation Scale: validity and reliability in adult intensive care unit patients. *Am J Respir Crit Care Med*. 2002;166(10):1338-1344. doi:10.1164/rccm.2107138. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/12421743/\" target=\"_blank\">12421743</a>"

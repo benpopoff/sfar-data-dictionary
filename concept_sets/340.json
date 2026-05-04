@@ -123,6 +123,10 @@
         "subcategory": "Ventilation mode",
         "shortDescription": null,
         "longDescription": null
+      },
+      "fr": {
+        "category": "Ventilation",
+        "subcategory": "Mode de ventilation"
       }
     },
     "createdByDetails": {

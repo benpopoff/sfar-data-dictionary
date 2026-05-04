@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Melagatran",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Melagatran",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null

@@ -100,7 +100,7 @@
     "translations": {
       "en": {
         "name": "Troponin T",
-        "category": "Labs",
+        "category": "Laboratory tests",
         "subcategory": "Other labs",
         "shortDescription": null,
         "longDescription": null

@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Posaconazole",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Antimicrobials",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Posaconazole",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Antimicrobiens",
         "shortDescription": null,
         "longDescription": null

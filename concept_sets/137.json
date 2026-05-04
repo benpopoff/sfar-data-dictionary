@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Remifentanil",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Sedative drugs",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Remifentanil",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Sédatifs",
         "shortDescription": null,
         "longDescription": null

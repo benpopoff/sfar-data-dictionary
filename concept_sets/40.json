@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Dabigatran Etexilate",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Dabigatran Etexilate",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null

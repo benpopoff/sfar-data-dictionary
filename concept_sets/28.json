@@ -23,14 +23,14 @@
     "translations": {
       "en": {
         "name": "Chronic heart failure",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "General conditions",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Insuffisance cardiaque chronique",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "Pathologies générales",
         "shortDescription": null,
         "longDescription": null

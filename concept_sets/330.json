@@ -1031,7 +1031,7 @@
     "translations": {
       "en": {
         "name": "Body temperature",
-        "category": "Vitals",
+        "category": "Vital signs",
         "subcategory": "Other vitals",
         "shortDescription": null,
         "longDescription": null

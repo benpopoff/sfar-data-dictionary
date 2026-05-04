@@ -43,7 +43,7 @@
     "translations": {
       "en": {
         "name": "Nursing Delirium Screening Scale (Nu-DESC)",
-        "category": "Clinical observation",
+        "category": "Clinical observations",
         "subcategory": "Neurological assessment",
         "shortDescription": null,
         "longDescription": "## Definition & Clinical Context\n\nThe Nu-DESC (Nursing Delirium Screening Scale) is an observational five-item screening scale for delirium, designed to be completed by bedside nurses during routine care. It takes on average one minute per patient and is completed three times per day (once per nursing shift) [1].\n\nThe instrument comprises five items, each rated from 0 to 2 based on symptom presence and intensity:\n- disorientation\n- inappropriate behaviour\n- inappropriate communication\n- illusions/hallucinations\n- psychomotor retardation\n\nThe total score ranges from 0 to 10. A score ≥ 2 suggests delirium.\n\n## Included Concepts\n\nThis concept set contains a single custom concept, as no equivalent exists in standard terminologies (SNOMED, LOINC).\n\n## References\n\n[1] Gaudreau JD, Gagnon P, Harel F, Tremblay A, Roy MA. Fast, systematic, and continuous delirium assessment in hospitalized patients: the Nursing Delirium Screening Scale. *J Pain Symptom Manage*. 2005;29(4):368-375. doi:10.1016/j.jpainsymman.2004.07.009. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/15857740/\" target=\"_blank\">15857740</a>"

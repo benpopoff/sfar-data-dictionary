@@ -100,8 +100,8 @@
     "translations": {
       "en": {
         "name": "Plasma leukocytes",
-        "category": "Labs",
-        "subcategory": "Plasma blood count",
+        "category": "Laboratory tests",
+        "subcategory": "Complete blood count",
         "shortDescription": null,
         "longDescription": null
       },

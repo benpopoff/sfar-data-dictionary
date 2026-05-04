@@ -138,14 +138,14 @@
     "translations": {
       "en": {
         "name": "Catheter infection",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "Hospitalization complications",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Infection de cathéter",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "Complications hospitalières",
         "shortDescription": null,
         "longDescription": null

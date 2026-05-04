@@ -499,7 +499,7 @@
     "translations": {
       "en": {
         "name": "Diastolic arterial pressure",
-        "category": "Vitals",
+        "category": "Vital signs",
         "subcategory": "Haemodynamics",
         "shortDescription": null,
         "longDescription": null

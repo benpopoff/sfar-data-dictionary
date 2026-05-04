@@ -43,7 +43,7 @@
     "translations": {
       "en": {
         "name": "Delirium Detection Score (DDS)",
-        "category": "Clinical observation",
+        "category": "Clinical observations",
         "subcategory": "Neurological assessment",
         "shortDescription": null,
         "longDescription": "## Definition & Clinical Context\n\nThe DDS (Delirium Detection Score) is a bedside assessment tool designed to monitor and quantify delirium severity in ICU patients. It was originally developed and validated in surgical ICU patients [1].\n\nThe instrument comprises eight clinical criteria:\n- orientation\n- hallucinations\n- agitation\n- anxiety\n- seizures\n- tremor\n- paroxysmal sweating\n- altered sleep-wake rhythm\n\nThe DDS score increases with delirium severity.\n\n## Included Concepts\n\nThis concept set contains a single custom concept, as no equivalent exists in standard terminologies (SNOMED, LOINC).\n\n## References\n\n[1] Otter H, Martin J, Bäsell K, et al. Validity and reliability of the DDS for severity of delirium in the ICU. *Neurocrit Care*. 2005;2(2):150-154. doi:10.1385/NCC:2:2:150. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/16159057/\" target=\"_blank\">16159057</a>"

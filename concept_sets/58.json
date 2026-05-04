@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Sulodexide",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Sulodexide",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null

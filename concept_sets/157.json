@@ -62,7 +62,7 @@
     "translations": {
       "en": {
         "name": "ABG glucose",
-        "category": "Labs",
+        "category": "Laboratory tests",
         "subcategory": "Arterial blood gases",
         "shortDescription": null,
         "longDescription": null

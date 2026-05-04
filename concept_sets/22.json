@@ -23,14 +23,14 @@
     "translations": {
       "en": {
         "name": "Leukemia",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "APACHE IV - Chronic health conditions",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Leucémie",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "APACHE IV - Pathologies chroniques",
         "shortDescription": null,
         "longDescription": null

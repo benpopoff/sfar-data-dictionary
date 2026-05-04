@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Betamethasone",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Corticosteroids",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Betamethasone",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Corticostéroïdes",
         "shortDescription": null,
         "longDescription": null

@@ -43,7 +43,7 @@
     "translations": {
       "en": {
         "name": "Confusion Assessment Method for the Intensive Care Unit (CAM-ICU)",
-        "category": "Clinical observation",
+        "category": "Clinical observations",
         "subcategory": "Neurological assessment",
         "shortDescription": null,
         "longDescription": "## Definition & Clinical Context\n\nThe CAM-ICU (Confusion Assessment Method for the Intensive Care Unit) is a bedside delirium diagnostic instrument adapted from the original CAM for use in critically ill patients, including those who are mechanically ventilated. It takes approximately 2 minutes to administer and does not require special training [1].\n\nThe instrument uses a two-step process. The level of consciousness is first assessed using the RASS; patients with RASS −4 or −5 (coma) cannot be evaluated. For assessable patients, four features are evaluated:\n- acute onset or fluctuating course\n- inattention\n- altered level of consciousness\n- disorganised thinking\n\nThe CAM-ICU is positive for delirium when features 1 and 2 are both present, together with feature 3 and/or feature 4.\n\n## Included Concepts\n\nThis concept set contains a single custom concept, as no equivalent exists in standard terminologies (SNOMED, LOINC).\n\n## References\n\n[1] Ely EW, Inouye SK, Bernard GR, et al. Delirium in mechanically ventilated patients: validity and reliability of the confusion assessment method for the intensive care unit (CAM-ICU). *JAMA*. 2001;286(21):2703-2710. doi:10.1001/jama.286.21.2703. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/11730446/\" target=\"_blank\">11730446</a>"

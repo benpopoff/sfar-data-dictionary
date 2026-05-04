@@ -499,7 +499,7 @@
     "translations": {
       "en": {
         "name": "Respiratory rate",
-        "category": "Vitals",
+        "category": "Vital signs",
         "subcategory": "Ventilatory",
         "shortDescription": null,
         "longDescription": null

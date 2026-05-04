@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Dexmedetomidine",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Sedative drugs",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Dexmedetomidine",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Sédatifs",
         "shortDescription": null,
         "longDescription": null

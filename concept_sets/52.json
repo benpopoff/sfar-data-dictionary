@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Nadroparin",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Nadroparin",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null

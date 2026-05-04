@@ -119,8 +119,8 @@
     "translations": {
       "en": {
         "name": "Plasma bicarbonate",
-        "category": "Labs",
-        "subcategory": "Plasma ionogram",
+        "category": "Laboratory tests",
+        "subcategory": "Plasma electrolytes",
         "shortDescription": null,
         "longDescription": null
       },

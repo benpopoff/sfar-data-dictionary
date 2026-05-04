@@ -879,7 +879,7 @@
     "translations": {
       "en": {
         "name": "Cardiac output",
-        "category": "Vitals",
+        "category": "Vital signs",
         "subcategory": "Haemodynamics",
         "shortDescription": null,
         "longDescription": null

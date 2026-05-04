@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Immunosuppression",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "APACHE IV - Chronic health conditions",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Immunosuppression",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "APACHE IV - Pathologies chroniques",
         "shortDescription": null,
         "longDescription": null

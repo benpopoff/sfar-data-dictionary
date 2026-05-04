@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Argatroban",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Argatroban",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Anticoagulants",
         "shortDescription": null,
         "longDescription": null

@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Imipenem",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Antimicrobials",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Imipenem",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Antimicrobiens",
         "shortDescription": null,
         "longDescription": null

@@ -43,7 +43,7 @@
     "translations": {
       "en": {
         "name": "Intensive Care Delirium Screening Checklist (ICDSC)",
-        "category": "Clinical observation",
+        "category": "Clinical observations",
         "subcategory": "Neurological assessment",
         "shortDescription": null,
         "longDescription": "## Definition & Clinical Context\n\nThe ICDSC (Intensive Care Delirium Screening Checklist) is a screening tool for delirium based on DSM (Diagnostic and Statistical Manual of Mental Disorders) criteria, designed to be completed by clinicians or nurses at the bedside using information from each 8-hour nursing shift or the previous 24 hours [1].\n\nThe checklist comprises eight items, each scored 0 or 1:\n- altered level of consciousness\n- inattention\n- disorientation\n- hallucination, delusion, or psychosis\n- psychomotor agitation or retardation\n- inappropriate speech or mood\n- sleep/wake cycle disturbance\n- symptom fluctuation\n\nThe total score ranges from 0 to 8. A score ≥ 4 suggests delirium.\n\n## Included Concepts\n\nThis concept set contains a single custom concept, as no equivalent exists in standard terminologies (SNOMED, LOINC).\n\n## References\n\n[1] Bergeron N, Dubois MJ, Dumont M, Dial S, Skrobik Y. Intensive Care Delirium Screening Checklist: evaluation of a new screening tool. *Intensive Care Med*. 2001;27(5):859-864. doi:10.1007/s001340100909. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/11430542/\" target=\"_blank\">11430542</a>"

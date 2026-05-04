@@ -23,14 +23,14 @@
     "translations": {
       "en": {
         "name": "Metastatic carcinoma",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "APACHE IV - Chronic health conditions",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Carcinome métastatique",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "APACHE IV - Pathologies chroniques",
         "shortDescription": null,
         "longDescription": null

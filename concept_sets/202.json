@@ -138,8 +138,8 @@
     "translations": {
       "en": {
         "name": "Plasma albumin",
-        "category": "Labs",
-        "subcategory": "Plasma ionogram",
+        "category": "Laboratory tests",
+        "subcategory": "Plasma electrolytes",
         "shortDescription": null,
         "longDescription": null
       },

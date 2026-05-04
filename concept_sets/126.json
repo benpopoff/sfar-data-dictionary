@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Insulin Glargine",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Other drugs",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Insulin Glargine",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Autres médicaments",
         "shortDescription": null,
         "longDescription": null

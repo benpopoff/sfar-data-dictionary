@@ -23,14 +23,14 @@
     "translations": {
       "en": {
         "name": "Hepatic failure, not elsewhere classified",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "APACHE IV - Chronic health conditions",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Insuffisance hépatique, non classée ailleurs",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "APACHE IV - Pathologies chroniques",
         "shortDescription": null,
         "longDescription": null

@@ -43,7 +43,7 @@
     "translations": {
       "en": {
         "name": "Coagulation factor V",
-        "category": "Labs",
+        "category": "Laboratory tests",
         "subcategory": "Hemostasis",
         "shortDescription": null,
         "longDescription": null

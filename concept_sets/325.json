@@ -138,7 +138,7 @@
     "translations": {
       "en": {
         "name": "Central venous pressure",
-        "category": "Vitals",
+        "category": "Vital signs",
         "subcategory": "Haemodynamics",
         "shortDescription": null,
         "longDescription": null

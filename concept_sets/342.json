@@ -43,10 +43,14 @@
     "translations": {
       "en": {
         "name": "Decision authority documented",
-        "category": "Clinical observation",
+        "category": "Clinical observations",
         "subcategory": "Care planning",
         "shortDescription": null,
         "longDescription": null
+      },
+      "fr": {
+        "category": "Observations cliniques",
+        "subcategory": "Planification des soins"
       }
     },
     "createdByDetails": {

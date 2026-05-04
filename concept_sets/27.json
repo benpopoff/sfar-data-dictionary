@@ -23,14 +23,14 @@
     "translations": {
       "en": {
         "name": "COPD",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "General conditions",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "COPD",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "Pathologies générales",
         "shortDescription": null,
         "longDescription": null

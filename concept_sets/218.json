@@ -43,8 +43,8 @@
     "translations": {
       "en": {
         "name": "Urinary glucose",
-        "category": "Labs",
-        "subcategory": "Urinary ionogram",
+        "category": "Laboratory tests",
+        "subcategory": "Urine electrolytes",
         "shortDescription": null,
         "longDescription": null
       },

@@ -119,7 +119,7 @@
     "translations": {
       "en": {
         "name": "HbA1c",
-        "category": "Labs",
+        "category": "Laboratory tests",
         "subcategory": "Other labs",
         "shortDescription": null,
         "longDescription": null

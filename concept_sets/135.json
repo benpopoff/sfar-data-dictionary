@@ -43,14 +43,14 @@
     "translations": {
       "en": {
         "name": "Morphine",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Sedative drugs",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Morphine",
-        "category": "Traitements",
+        "category": "Médicaments",
         "subcategory": "Sédatifs",
         "shortDescription": null,
         "longDescription": null

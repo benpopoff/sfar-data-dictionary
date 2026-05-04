@@ -43,15 +43,15 @@
     "translations": {
       "en": {
         "name": "Norepinephrine",
-        "category": "Drug",
+        "category": "Medications",
         "subcategory": "Vasoactive drugs",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Norepinephrine",
-        "category": "Traitements",
-        "subcategory": "Vasopresseurs",
+        "category": "Médicaments",
+        "subcategory": "Vasoactifs",
         "shortDescription": null,
         "longDescription": null
       }

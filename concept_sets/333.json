@@ -480,7 +480,7 @@
     "translations": {
       "en": {
         "name": "Oxygen saturation (SpO2)",
-        "category": "Vitals",
+        "category": "Vital signs",
         "subcategory": "Ventilatory",
         "shortDescription": null,
         "longDescription": null

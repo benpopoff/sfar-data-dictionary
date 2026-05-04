@@ -43,7 +43,7 @@
     "translations": {
       "en": {
         "name": "3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM)",
-        "category": "Clinical observation",
+        "category": "Clinical observations",
         "subcategory": "Neurological assessment",
         "shortDescription": null,
         "longDescription": "## Definition & Clinical Context\n\nThe 3D-CAM (3-Minute Diagnostic Assessment for CAM-defined Delirium) is a brief, structured bedside diagnostic instrument that operationalises the Confusion Assessment Method (CAM) algorithm for identifying delirium in hospitalised patients. It takes a median of 3 minutes to administer (IQR 2–5 minutes) and does not require special training [1].\n\nThe instrument comprises 20 items organised into the four CAM diagnostic features:\n- acute onset and fluctuating course\n- inattention\n- disorganised thinking\n- altered level of consciousness\n\nA feature is considered present if any single item within that category is positive. Delirium is diagnosed when features 1 and 2 are both present, along with feature 3 and/or feature 4.\n\n## Included Concepts\n\nThis concept set contains a single custom concept, as no equivalent exists in standard terminologies (SNOMED, LOINC).\n\n## References\n\n[1] Marcantonio ER, Ngo LH, O'Connor M, et al. 3D-CAM: Derivation and Validation of a 3-Minute Diagnostic Interview for CAM-Defined Delirium. *Ann Intern Med*. 2014;161(8):554-561. doi:10.7326/M14-0865. PMID: <a href=\"https://pubmed.ncbi.nlm.nih.gov/25329203/\" target=\"_blank\">25329203</a>"

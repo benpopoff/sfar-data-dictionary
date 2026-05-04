@@ -62,7 +62,7 @@
     "translations": {
       "en": {
         "name": "Venous blood specimen",
-        "category": "Labs",
+        "category": "Laboratory tests",
         "subcategory": "Blood specimen type",
         "shortDescription": null,
         "longDescription": null

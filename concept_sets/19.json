@@ -23,14 +23,14 @@
     "translations": {
       "en": {
         "name": "Cirrhosis of liver",
-        "category": "Condition",
+        "category": "Conditions",
         "subcategory": "APACHE IV - Chronic health conditions",
         "shortDescription": null,
         "longDescription": null
       },
       "fr": {
         "name": "Cirrhose hépatique",
-        "category": "Antécédents",
+        "category": "Pathologies",
         "subcategory": "APACHE IV - Pathologies chroniques",
         "shortDescription": null,
         "longDescription": null

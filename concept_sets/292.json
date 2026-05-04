@@ -100,7 +100,7 @@
     "translations": {
       "en": {
         "name": "ECMO",
-        "category": "Procedure",
+        "category": "Procedures",
         "subcategory": "ECMO",
         "shortDescription": null,
         "longDescription": null
