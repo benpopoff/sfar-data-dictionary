@@ -4037,17 +4037,6 @@
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
-    "conceptId": 3005772,
-    "conceptName": "Bilirubin.conjugated [Moles/volume] in Serum or Plasma",
-    "conceptCode": "29760-6",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8749,
-    "recommendedUnitName": "micromole per liter",
-    "recommendedUnitCode": "umol/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
     "conceptId": 3005784,
     "conceptName": "Nickel [Mass/volume] in Serum or Plasma",
     "conceptCode": "5702-6",
@@ -12977,17 +12966,6 @@
     "recommendedUnitConceptId": 8810,
     "recommendedUnitName": "kilounit per liter",
     "recommendedUnitCode": "10*3.[U]/L",
-    "recommendedUnitVocabularyId": "UCUM"
-  },
-  {
-    "conceptId": 3019676,
-    "conceptName": "Bilirubin.conjugated [Mass/volume] in Serum or Plasma",
-    "conceptCode": "15152-2",
-    "vocabularyId": "LOINC",
-    "domainId": "Measurement",
-    "recommendedUnitConceptId": 8751,
-    "recommendedUnitName": "milligram per liter",
-    "recommendedUnitCode": "mg/L",
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
@@ -29840,6 +29818,50 @@
     "recommendedUnitConceptId": 9117,
     "recommendedUnitName": "milliliter per minute per 1.73 square meter",
     "recommendedUnitCode": "mL/min/1.73.m2",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3019676,
+    "conceptName": "Bilirubin.conjugated [Mass/volume] in Serum or Plasma",
+    "conceptCode": "15152-2",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8840,
+    "recommendedUnitName": "milligram per deciliter",
+    "recommendedUnitCode": "mg/dL",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3027597,
+    "conceptName": "Bilirubin.direct [Mass/volume] in Serum or Plasma",
+    "conceptCode": "1968-7",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8840,
+    "recommendedUnitName": "milligram per deciliter",
+    "recommendedUnitCode": "mg/dL",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3005772,
+    "conceptName": "Bilirubin.conjugated [Moles/volume] in Serum or Plasma",
+    "conceptCode": "29760-6",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8749,
+    "recommendedUnitName": "micromole per liter",
+    "recommendedUnitCode": "umol/L",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 3028638,
+    "conceptName": "Bilirubin.direct [Moles/volume] in Serum or Plasma",
+    "conceptCode": "14629-0",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 8749,
+    "recommendedUnitName": "micromole per liter",
+    "recommendedUnitCode": "umol/L",
     "recommendedUnitVocabularyId": "UCUM"
   }
 ]

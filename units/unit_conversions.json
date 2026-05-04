@@ -319,17 +319,6 @@
     "targetUnitName": "gram per liter"
   },
   {
-    "conceptId": 3005772,
-    "conceptName": "Bilirubin.conjugated [Moles/volume] in Serum or Plasma",
-    "sourceUnitConceptId": 8749,
-    "sourceUnitCode": "umol/L",
-    "sourceUnitName": "micromole per liter",
-    "conversionFactor": 0.585,
-    "targetUnitConceptId": 8751,
-    "targetUnitCode": "mg/L",
-    "targetUnitName": "milligram per liter"
-  },
-  {
     "conceptId": 3006140,
     "conceptName": "Bilirubin.total [Moles/volume] in Serum or Plasma",
     "sourceUnitConceptId": 8749,
@@ -735,17 +724,6 @@
     "targetUnitConceptId": 8636,
     "targetUnitCode": "g/L",
     "targetUnitName": "gram per liter"
-  },
-  {
-    "conceptId": 3019676,
-    "conceptName": "Bilirubin.conjugated [Mass/volume] in Serum or Plasma",
-    "sourceUnitConceptId": 8751,
-    "sourceUnitCode": "mg/L",
-    "sourceUnitName": "milligram per liter",
-    "conversionFactor": 1.71,
-    "targetUnitConceptId": 8749,
-    "targetUnitCode": "umol/L",
-    "targetUnitName": "micromole per liter"
   },
   {
     "conceptId": 3019900,
@@ -1648,5 +1626,49 @@
     "targetUnitConceptId": 8842,
     "targetUnitCode": "ng/mL",
     "targetUnitName": "nanogram per milliliter"
+  },
+  {
+    "conceptId": 3019676,
+    "conceptName": "Bilirubin.conjugated [Mass/volume] in Serum or Plasma",
+    "sourceUnitConceptId": 8840,
+    "sourceUnitCode": "mg/dL",
+    "sourceUnitName": "milligram per deciliter",
+    "conversionFactor": 17.1,
+    "targetUnitConceptId": 8749,
+    "targetUnitCode": "umol/L",
+    "targetUnitName": "micromole per liter"
+  },
+  {
+    "conceptId": 3005772,
+    "conceptName": "Bilirubin.conjugated [Moles/volume] in Serum or Plasma",
+    "sourceUnitConceptId": 8749,
+    "sourceUnitCode": "umol/L",
+    "sourceUnitName": "micromole per liter",
+    "conversionFactor": 0.0585,
+    "targetUnitConceptId": 8840,
+    "targetUnitCode": "mg/dL",
+    "targetUnitName": "milligram per deciliter"
+  },
+  {
+    "conceptId": 3027597,
+    "conceptName": "Bilirubin.direct [Mass/volume] in Serum or Plasma",
+    "sourceUnitConceptId": 8840,
+    "sourceUnitCode": "mg/dL",
+    "sourceUnitName": "milligram per deciliter",
+    "conversionFactor": 17.1,
+    "targetUnitConceptId": 8749,
+    "targetUnitCode": "umol/L",
+    "targetUnitName": "micromole per liter"
+  },
+  {
+    "conceptId": 3028638,
+    "conceptName": "Bilirubin.direct [Moles/volume] in Serum or Plasma",
+    "sourceUnitConceptId": 8749,
+    "sourceUnitCode": "umol/L",
+    "sourceUnitName": "micromole per liter",
+    "conversionFactor": 0.0585,
+    "targetUnitConceptId": 8840,
+    "targetUnitCode": "mg/dL",
+    "targetUnitName": "milligram per deciliter"
   }
 ]

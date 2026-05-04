@@ -300,6 +300,14 @@ Enable GitHub Pages in repository settings, pointing to the `docs/` folder on th
 - **Athena links**: Concept IDs link to `https://athena.ohdsi.org/search-terms/terms/{conceptId}`
 - **Categories**: Concept sets are grouped by category/subcategory from metadata translations
 - **Versioning**: Concept sets use semantic versioning (`version` field)
+- **Concept set expression — `standardConcept` field**: When building or editing the items in `expression.items[].concept`, **always populate `standardConcept` with the canonical OMOP value** by reading it from the OHDSI vocabulary database (`SELECT standard_concept FROM concept WHERE concept_id = ?`). Valid values:
+  - `'S'` → Standard concept (mappable target)
+  - `'C'` → Classification concept (e.g., LOINC Group, LOINC Hierarchy — not a mapping target, but valid as a hierarchy anchor with `includeDescendants: true`)
+  - `null` → Non-standard concept (truly non-standard, e.g., source-only)
+
+  The SPA's [`App.standardBadge`](docs/app.js) reads `standardConcept` directly to render the "Standard / Classification / Non-standard" badge — `standardConceptCaption` is informational only and is **not** used by the renderer. A common mistake is to write `standardConcept: null` together with `standardConceptCaption: "Classification"` thinking the caption disambiguates; it does not, and the badge will display "Non-standard". Always hydrate the field from the source database.
+
+  Same applies to `invalidReason` / `invalidReasonCaption`, `validStartDate`, `validEndDate`, `domainId`, `vocabularyId`, `conceptClassId`, `conceptCode`, `conceptName` — read them from the OHDSI database rather than hard-coding, to avoid stale or mismatched metadata.
 
 ## Unit Conventions
 
