@@ -12,25 +12,6 @@
     "items": [
       {
         "concept": {
-          "conceptId": 4165600,
-          "conceptName": "Visual analog pain scale",
-          "domainId": "Measurement",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Staging / Scales",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "273904000",
-          "validStartDate": "2002-01-31",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
           "conceptId": 40481449,
           "conceptName": "Visual analog scale pain score",
           "domainId": "Measurement",

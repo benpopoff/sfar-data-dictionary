@@ -12,25 +12,6 @@
     "items": [
       {
         "concept": {
-          "conceptId": 37151627,
-          "conceptName": "Numeric Pain Rating Scale",
-          "domainId": "Measurement",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Staging / Scales",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1284852002",
-          "validStartDate": "2023-05-31",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
           "conceptId": 37151630,
           "conceptName": "Numeric Pain Rating Scale score",
           "domainId": "Measurement",

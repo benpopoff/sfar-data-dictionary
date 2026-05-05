@@ -11,15 +11,6 @@
       "standardConcept": null
     },
     {
-      "conceptId": 37151627,
-      "conceptName": "Numeric Pain Rating Scale",
-      "vocabularyId": "SNOMED",
-      "domainId": "Measurement",
-      "conceptClassId": "Staging / Scales",
-      "conceptCode": "1284852002",
-      "standardConcept": "S"
-    },
-    {
       "conceptId": 37151630,
       "conceptName": "Numeric Pain Rating Scale score",
       "vocabularyId": "SNOMED",
