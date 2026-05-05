@@ -12,21 +12,21 @@
     "items": [
       {
         "concept": {
-          "conceptId": 3662219,
-          "conceptName": "4AT - 4 A's Test",
+          "conceptId": 3662221,
+          "conceptName": "4AT (4 A's Test) score",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
-          "conceptClassId": "Staging / Scales",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "1239191000000102",
-          "validStartDate": "",
-          "validEndDate": "",
+          "conceptClassId": "Observable Entity",
+          "standardConcept": null,
+          "standardConceptCaption": "Non-standard",
+          "conceptCode": "1239211000000103",
+          "validStartDate": "2020-08-05",
+          "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": true,
+        "includeDescendants": false,
         "includeMapped": false
       }
     ]
