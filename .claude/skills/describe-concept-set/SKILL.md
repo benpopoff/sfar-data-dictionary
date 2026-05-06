@@ -15,19 +15,23 @@ You are an expert in OHDSI/OMOP vocabularies and clinical terminologies. Your ta
 
 ### Step 1: Get Configuration
 
-Ask the user for:
+First, read `config.local.json` at the repo root if it exists. The keys `loincPath`, `snomedPath`, `umlsPath`, and `npuCodesPath` give terminology source paths the user has already configured — use these silently and do **not** re-prompt for them.
+
+Then ask the user only for what's still missing:
 
 1. **Concept set name** (e.g., "Heart rate", "Mechanical ventilation")
 2. **Concept set ID** (the numeric ID, e.g., 327)
-3. **Terminology source paths** — full paths to the terminology files used to enrich the description. All four are useful; ask the user which ones they have available and request the path for each. For any source the user does not have, give them the download URL below — they can either download it and re-invoke the skill, or skip it. **Sources the user cannot provide are simply omitted from the lookup**; the description is written using the available sources only, and the description itself states what was used (LOINC Part description / NPU / etc.) so the reader can see which inputs informed it.
+3. **Terminology source paths** — only those not already set in `config.local.json`. All four are useful; ask the user which of the missing ones they have available and request the path for each. For any source the user does not have, give them the download URL below — they can either download it and re-invoke the skill, or skip it. **Sources the user cannot provide are simply omitted from the lookup**; the description is written using the available sources only, and the description itself states what was used (LOINC Part description / NPU / etc.) so the reader can see which inputs informed it.
 
-   - **LOINC** — path to the folder containing the LOINC distribution (must contain `LoincTable/Loinc.csv` and `AccessoryFiles/`). Used for COMPONENT / PROPERTY / METHOD decomposition, `EXAMPLE_UCUM_UNITS`, Part descriptions, and Consumer names.
+   When the user gives you a new path, suggest they save it to `config.local.json` so they don't have to provide it again.
+
+   - **LOINC** (`loincPath`) — path to the folder containing the LOINC distribution (must contain `LoincTable/Loinc.csv` and `AccessoryFiles/`). Used for COMPONENT / PROPERTY / METHOD decomposition, `EXAMPLE_UCUM_UNITS`, Part descriptions, and Consumer names.
      Download: <https://loinc.org/downloads/> (registration required, free).
-   - **SNOMED** — path to the SNOMED CT RF2 release ZIP or extracted folder (must contain `sct2_Description_Snapshot-en_*.txt` and `sct2_TextDefinition_Snapshot-en_*.txt`). Used for FSN, synonyms, and text definitions of SNOMED concepts.
+   - **SNOMED** (`snomedPath`) — path to the SNOMED CT RF2 release ZIP or extracted folder (must contain `sct2_Description_Snapshot-en_*.txt` and `sct2_TextDefinition_Snapshot-en_*.txt`). Used for FSN, synonyms, and text definitions of SNOMED concepts.
      Download: <https://www.nlm.nih.gov/healthit/snomedct/international.html> (UMLS licence required, free).
-   - **UMLS** — path to the folder containing the UMLS Metathesaurus RRF files (`MRCONSO.RRF`, `MRDEF.RRF`, `MRSTY.RRF`, `MRREL.RRF`). Used as a fallback for clinical definitions (MeSH, NCI, etc.) when LOINC Part descriptions are thin.
+   - **UMLS** (`umlsPath`) — path to the folder containing the UMLS Metathesaurus RRF files (`MRCONSO.RRF`, `MRDEF.RRF`, `MRSTY.RRF`, `MRREL.RRF`). Used as a fallback for clinical definitions (MeSH, NCI, etc.) when LOINC Part descriptions are thin.
      Download: **UMLS Metathesaurus Full Subset** from <https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html> (UMLS licence required, free).
-   - **NPU codes CSV** — full path to the NPU codes CSV file (typically named `npu-codes-latest.csv`). Used as the authoritative source for the SI/IFCC-recommended unit of laboratory measurands (see Step 3f).
+   - **NPU codes CSV** (`npuCodesPath`) — full path to the NPU codes CSV file (typically named `npu-codes-latest.csv`). Used as the authoritative source for the SI/IFCC-recommended unit of laboratory measurands (see Step 3f).
      Download: <https://npu-terminology.org/npu-database/>.
 
    If none of the four are available, the description will rely solely on the concept names and any web information found in Step 3d — flag this clearly to the user before proceeding so they can decide whether to download the missing sources first.

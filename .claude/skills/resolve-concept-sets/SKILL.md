@@ -20,14 +20,17 @@ Resolve INDICATE concept set expressions into lists of OMOP concepts using the `
 
 ### Step 2: Get Vocabulary Source
 
-Ask the user which OMOP vocabulary source they want to use. `resolve.py` natively supports:
+First, check whether `config.local.json` exists at the repo root and contains an `ohdsiVocab` key. `resolve.py` reads it automatically when no CLI flag is passed, so if it is set you do **not** need to ask the user — just run `resolve.py` without `--vocab`.
 
-1. **DuckDB database** (`--db <path>`) — a `.duckdb` file containing OMOP vocabulary tables (`concept`, `concept_ancestor`, `concept_relationship`)
-2. **Athena CSV folder** (`--csv-dir <path>`) — a directory containing tab-separated CSV files downloaded from [Athena](https://athena.ohdsi.org/vocabulary/list): `CONCEPT.csv`, `CONCEPT_ANCESTOR.csv`, and `CONCEPT_RELATIONSHIP.csv`
+If the key is not set, ask the user for a path. `resolve.py` accepts any of:
 
-If the user has a different source (PostgreSQL, MySQL, etc.), adapt accordingly — for instance by exporting the relevant tables to CSV, loading them into a temporary DuckDB, or modifying the script as needed.
+1. A **DuckDB database** — a `.duckdb` file containing OMOP vocabulary tables (`concept`, `concept_ancestor`, `concept_relationship`)
+2. An **Athena CSV folder** — a directory containing tab-separated `CONCEPT.csv`, `CONCEPT_ANCESTOR.csv`, and `CONCEPT_RELATIONSHIP.csv` (downloadable from [Athena](https://athena.ohdsi.org/vocabulary/list))
+3. A **Parquet folder** — a directory containing `CONCEPT.parquet`, `CONCEPT_ANCESTOR.parquet`, and `CONCEPT_RELATIONSHIP.parquet`
 
-Ask the user for the full path to their vocabulary source.
+The format is detected automatically from the path. If the user has a different source (PostgreSQL, MySQL, etc.), adapt accordingly — for instance by exporting the relevant tables to CSV/Parquet or loading them into a temporary DuckDB.
+
+Once the user gives you the path, suggest they save it to `config.local.json` under `ohdsiVocab` so they don't have to provide it again.
 
 ### Step 3: Run resolve.py
 
@@ -35,16 +38,14 @@ Run the script from the repository root.
 
 **Single concept set:**
 ```bash
-python3 resolve.py --db <path> --id <ID>
-# or
-python3 resolve.py --csv-dir <path> --id <ID>
+python3 resolve.py --id <ID>                       # uses config.local.json
+python3 resolve.py --vocab <path> --id <ID>        # explicit path
 ```
 
 **All concept sets:**
 ```bash
-python3 resolve.py --db <path>
-# or
-python3 resolve.py --csv-dir <path>
+python3 resolve.py                                 # uses config.local.json
+python3 resolve.py --vocab <path>
 ```
 
 ### Step 4: Show Results

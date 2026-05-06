@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy this file to config.local.json and fill in the paths to your local terminology resources. config.local.json is gitignored — paths are machine-specific and should not be committed. All entries are optional; tools and skills will fall back to prompting the user only for entries that are missing.",
+  "ohdsiVocab": "/path/to/ohdsi_vocabularies.duckdb_or_folder_with_CSV_or_Parquet",
+  "loincPath": "/path/to/loinc_distribution",
+  "snomedPath": "/path/to/snomed_rf2_release",
+  "umlsPath": "/path/to/umls_metathesaurus",
+  "npuCodesPath": "/path/to/npu-codes-latest.csv"
+}

@@ -100,6 +100,17 @@
   var headerTitle = document.querySelector('.header-title');
   if (headerTitle && cfg.title) headerTitle.textContent = cfg.title;
 
+  // Hide nav tabs that are disabled in config (showProjects / showMappingRecommendations default to true)
+  var tabs = cfg.tabs || {};
+  if (tabs.showProjects === false) {
+    var projTab = document.querySelector('.nav-tab[data-page="projects"]');
+    if (projTab) projTab.style.display = 'none';
+  }
+  if (tabs.showMappingRecommendations === false) {
+    var mrTab = document.querySelector('.nav-tab[data-page="mapping-recommendations"]');
+    if (mrTab) mrTab.style.display = 'none';
+  }
+
   // Boot the app
   App.loadData();
   App.checkForDataUpdate();

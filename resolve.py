@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 """Resolve concept sets using OMOP vocabulary tables.
 
-Vocabulary source can be either a DuckDB database or a folder of Athena CSV files.
+Vocabulary source can be:
+  - a DuckDB database file (`.duckdb`)
+  - a folder of Athena tab-separated CSV files (CONCEPT.csv, CONCEPT_ANCESTOR.csv,
+    CONCEPT_RELATIONSHIP.csv)
+  - a folder of Parquet files with the same names (.parquet)
+
+The source is detected automatically from the path. If no `--vocab` flag is provided,
+falls back to the `ohdsiVocab` key in config.local.json.
 
 Usage:
-    python3 resolve.py --db /path/to/ohdsi_vocabularies.duckdb
-    python3 resolve.py --csv-dir /path/to/athena_csv_folder
+    python3 resolve.py --vocab /path/to/ohdsi_vocabularies.duckdb
+    python3 resolve.py --vocab /path/to/athena_csv_folder
+    python3 resolve.py --vocab /path/to/parquet_folder
+    python3 resolve.py                # uses config.local.json (ohdsiVocab)
 """
 
 import argparse
@@ -194,15 +203,32 @@ def resolve_one(con, cs_id):
     return name, len(concepts)
 
 
+REQUIRED_TABLES = ["CONCEPT", "CONCEPT_ANCESTOR", "CONCEPT_RELATIONSHIP"]
+
+
+def detect_vocab_format(path):
+    """Return one of 'duckdb', 'csv', 'parquet' based on what the path contains."""
+    if os.path.isfile(path):
+        if path.lower().endswith((".duckdb", ".db")):
+            return "duckdb"
+        raise SystemExit(f"Error: vocabulary file is not a .duckdb database: {path}")
+    if not os.path.isdir(path):
+        raise SystemExit(f"Error: vocabulary path not found: {path}")
+    has_csv = all(os.path.isfile(os.path.join(path, t + ".csv")) for t in REQUIRED_TABLES)
+    has_parquet = all(os.path.isfile(os.path.join(path, t + ".parquet")) for t in REQUIRED_TABLES)
+    if has_csv:
+        return "csv"
+    if has_parquet:
+        return "parquet"
+    raise SystemExit(
+        f"Error: folder does not contain the required OMOP tables: {path}\n"
+        f"Expected either {[t + '.csv' for t in REQUIRED_TABLES]} or "
+        f"{[t + '.parquet' for t in REQUIRED_TABLES]}."
+    )
+
+
 def connect_from_csv(csv_dir):
     """Create an in-memory DuckDB connection from Athena CSV files."""
-    required = ["CONCEPT.csv", "CONCEPT_ANCESTOR.csv", "CONCEPT_RELATIONSHIP.csv"]
-    for fname in required:
-        fpath = os.path.join(csv_dir, fname)
-        if not os.path.exists(fpath):
-            print(f"Error: required file not found: {fpath}", file=sys.stderr)
-            sys.exit(1)
-
     con = duckdb.connect(":memory:")
     print("Loading Athena CSV files into memory...")
     con.execute(f"CREATE TABLE concept AS SELECT * FROM read_csv_auto('{os.path.join(csv_dir, 'CONCEPT.csv')}', delim='\\t', header=true)")
@@ -212,24 +238,49 @@ def connect_from_csv(csv_dir):
     return con
 
 
+def connect_from_parquet(parquet_dir):
+    """Create an in-memory DuckDB connection from Parquet files."""
+    con = duckdb.connect(":memory:")
+    print("Loading Parquet files into memory...")
+    for table in REQUIRED_TABLES:
+        path = os.path.join(parquet_dir, f"{table}.parquet")
+        con.execute(f"CREATE TABLE {table.lower()} AS SELECT * FROM read_parquet('{path}')")
+    print("Parquet files loaded.")
+    return con
+
+
+def load_local_config():
+    """Load config.local.json (gitignored) if it exists, else {}."""
+    path = os.path.join(ROOT, "config.local.json")
+    if not os.path.isfile(path):
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Resolve concept sets using OMOP vocabularies")
-    source = parser.add_mutually_exclusive_group(required=True)
-    source.add_argument("--db", help="Path to a DuckDB database containing OMOP vocabulary tables")
-    source.add_argument("--csv-dir", help="Path to a folder of Athena CSV files (CONCEPT.csv, CONCEPT_ANCESTOR.csv, CONCEPT_RELATIONSHIP.csv)")
+    parser.add_argument("--vocab", help="Path to OMOP vocabulary source (.duckdb file, or folder of CSV/Parquet files). "
+                                        "If omitted, falls back to the 'ohdsiVocab' key in config.local.json.")
     parser.add_argument("--id", type=int, default=None, help="Resolve a single concept set by ID")
     args = parser.parse_args()
 
-    if args.db:
-        if not os.path.exists(args.db):
-            print(f"Error: database not found: {args.db}", file=sys.stderr)
+    vocab = args.vocab
+    if not vocab:
+        vocab = load_local_config().get("ohdsiVocab")
+        if not vocab:
+            print("Error: no vocabulary source. Pass --vocab <path>, or set 'ohdsiVocab' in "
+                  "config.local.json (see config.local.example.json).",
+                  file=sys.stderr)
             sys.exit(1)
-        con = duckdb.connect(args.db, read_only=True)
+
+    fmt = detect_vocab_format(vocab)
+    if fmt == "duckdb":
+        con = duckdb.connect(vocab, read_only=True)
+    elif fmt == "csv":
+        con = connect_from_csv(vocab)
     else:
-        if not os.path.isdir(args.csv_dir):
-            print(f"Error: directory not found: {args.csv_dir}", file=sys.stderr)
-            sys.exit(1)
-        con = connect_from_csv(args.csv_dir)
+        con = connect_from_parquet(vocab)
 
     if args.id is not None:
         result = resolve_one(con, args.id)

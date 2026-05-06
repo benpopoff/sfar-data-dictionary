@@ -21,5 +21,9 @@
     "logo": "logo.png",
     "favicon": "favicon.png",
     "logoAlt": "INDICATE"
+  },
+  "tabs": {
+    "showProjects": true,
+    "showMappingRecommendations": true
   }
 }
