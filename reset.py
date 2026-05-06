@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """Reset the data dictionary to an empty state for a fresh fork.
 
-Wipes team-specific content (concept sets, projects, resolved sets, recommended
-units) and resets ID counters. Keeps generic content (UCUM unit conversions,
-mapping recommendations template) and configuration files (config.json,
-config.local.json, branding assets).
+Wipes team-specific content (concept sets, projects, resolved sets, mapping
+recommendations text) and resets ID counters. Keeps reusable reference data
+(UCUM unit conversions, OMOP recommended units) and configuration files
+(config.json, config.local.json, branding assets).
 
 Run from the repository root:
 
-    python3 reset.py              # interactive (asks for confirmation)
-    python3 reset.py --yes        # non-interactive
-    python3 reset.py --keep-units # also keep recommended_units.json
+    python3 reset.py        # interactive (asks for confirmation)
+    python3 reset.py --yes  # non-interactive
 
-After reset, run build.py to regenerate the static site data files.
+After reset, run build.py to regenerate the static site data files (the script
+does this automatically unless --no-build is passed).
 """
 
 import argparse
@@ -30,7 +30,7 @@ def list_files(pattern):
     return sorted(glob.glob(os.path.join(ROOT, pattern)))
 
 
-def plan_actions(keep_units):
+def plan_actions():
     """Return a list of (label, action_callable) tuples describing the reset plan."""
     actions = []
 
@@ -49,10 +49,14 @@ def plan_actions(keep_units):
         actions.append((f"Delete {len(resolved_files)} resolved concept set(s) in concept_sets_resolved/",
                         lambda: [os.remove(p) for p in resolved_files]))
 
-    rec_units = os.path.join(ROOT, "units", "recommended_units.json")
-    if not keep_units and os.path.isfile(rec_units):
-        actions.append(("Reset units/recommended_units.json to []",
-                        lambda: _write_json(rec_units, [])))
+    mapping = os.path.join(ROOT, "mapping_recommendations", "mapping_recommendations.json")
+    if os.path.isfile(mapping):
+        current = _read_json(mapping)
+        langs = list((current.get("translations") or {}).keys()) or ["en", "fr"]
+        empty = {"translations": {l: {"content": ""} for l in langs}}
+        if current != empty:
+            actions.append(("Reset mapping_recommendations/mapping_recommendations.json content to empty (structure preserved)",
+                            lambda: _write_json(mapping, empty)))
 
     counters = os.path.join(ROOT, "id_counters.json")
     if os.path.isfile(counters):
@@ -78,11 +82,10 @@ def _write_json(path, data):
 def main():
     parser = argparse.ArgumentParser(description="Reset the data dictionary to an empty state for a fresh fork.")
     parser.add_argument("--yes", action="store_true", help="Skip the confirmation prompt")
-    parser.add_argument("--keep-units", action="store_true", help="Keep units/recommended_units.json (otherwise reset to [])")
     parser.add_argument("--no-build", action="store_true", help="Skip running build.py at the end")
     args = parser.parse_args()
 
-    actions = plan_actions(keep_units=args.keep_units)
+    actions = plan_actions()
 
     if not actions:
         print("Nothing to reset — the dictionary is already empty.")
@@ -93,7 +96,7 @@ def main():
         print(f"  - {label}")
     print()
     print("Kept as-is: config.json, config.local.json, units/unit_conversions.json,")
-    print("  mapping_recommendations/, docs/ (branding assets and generated files).")
+    print("  units/recommended_units.json, docs/ (branding assets and generated files).")
     print()
 
     if not args.yes:

@@ -25,9 +25,6 @@ This file at the repo root holds everything that identifies the dictionary as yo
 ```json
 {
   "title": "My Team Data Dictionary",
-  "appName": "My Team Data Dictionary",
-  "appVersion": "1.0.0",
-  "footer": "{name} v{version}",
   "languages": ["en", "fr"],
   "defaultLanguage": "en",
   "github": {
@@ -57,12 +54,14 @@ This file at the repo root holds everything that identifies the dictionary as yo
 ```
 
 Key fields:
-- **`title`** — shown in the browser tab and the SPA header.
+- **`title`** — shown in the browser tab and the SPA header. This is the name of *your* dictionary.
 - **`github.repo`** — the URL fragment used for "Propose on GitHub" links (`https://github.com/<repo>/edit/<branch>/...`).
 - **`github.upstream`** — kept pointing at INDICATE's repo so `update_from_upstream.py` knows where to pull code updates from.
 - **`organization`** — default `metadata.organization` written into new concept sets.
 - **`customVocabulary`** — vocabulary id and code prefix used when a user adds a *custom* concept (not from OMOP) inside the SPA.
 - **`tabs`** — set `false` to hide the Projects or Mapping Recommendations tabs if you don't need them.
+
+**Not configurable** (intentionally): the application name and version shown in the footer always reference the master upstream INDICATE app, since that's what's running here. Your dictionary content is versioned per concept set (`version` field in each `concept_sets/<id>.json`), independently of the app version.
 
 ### 1.3. Replace branding assets
 

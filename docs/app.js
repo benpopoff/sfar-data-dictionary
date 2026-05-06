@@ -2,10 +2,15 @@
 var App = (function() {
   'use strict';
 
-  // Config is injected by build.py from config.json (root). DATA.config is the source of truth.
+  // App identity — the master upstream app, NOT the fork's dictionary.
+  // These are intentionally not configurable: forks ride on this app version.
+  // The dictionary's own identity (title, branding, organization) lives in config.json.
+  var APP_NAME = 'INDICATE Data Dictionary';
+  var APP_VERSION = '1.1.0';
+  var APP_GITHUB_URL = 'https://github.com/indicate-eu/data-dictionary';
+
+  // Config injected by build.py from config.json (root). Branding, GitHub repo of the fork, etc.
   var config = (typeof DATA !== 'undefined' && DATA.config) ? DATA.config : {};
-  var APP_NAME = config.appName || 'Data Dictionary';
-  var APP_VERSION = config.appVersion || '0.0.0';
 
   // ==================== STATE ====================
   var conceptSets = [];
@@ -1570,6 +1575,7 @@ var App = (function() {
   return {
     APP_NAME: APP_NAME,
     APP_VERSION: APP_VERSION,
+    APP_GITHUB_URL: APP_GITHUB_URL,
     config: config,
     github: function(path) {
       var repo = (config.github && config.github.repo) || '';

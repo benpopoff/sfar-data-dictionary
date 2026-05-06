@@ -118,11 +118,13 @@
   App.initSharedEvents();
   App.translateDOM();
 
-  // Footer — configurable via config.footer (supports {name} and {version} placeholders)
+  // Footer — fixed: references the master upstream app, not the fork's dictionary.
+  // The version reflects the app code running here, not the dictionary content (which is
+  // versioned per concept set).
   var footer = document.getElementById('app-footer');
   if (footer) {
-    var tpl = cfg.footer || '{name} v{version}';
-    footer.textContent = tpl.replace('{name}', App.APP_NAME).replace('{version}', App.APP_VERSION);
+    footer.innerHTML = App.APP_NAME + ' v' + App.APP_VERSION +
+      ' · <a href="' + App.APP_GITHUB_URL + '" target="_blank" rel="noopener">GitHub</a>';
   }
 
   Router.init();
