@@ -46,8 +46,10 @@ data-dictionary/                   # (repo root)
 │   ├── logo.png
 │   └── data_dictionary.png
 ├── id_counters.json           # Monotonic ID counters (next available IDs)
+├── concept_sets_versions.json # Index { id: { version: commit_sha } } — points to historical snapshots in Git
 ├── build.py                   # Build data files for the static site
 ├── resolve.py                 # Resolve concept sets using OMOP vocabularies
+├── snapshot.py                # Record commit SHAs in concept_sets_versions.json when versions are bumped
 ├── CLAUDE.md                  # This file
 ├── README.md
 └── .gitignore
@@ -156,9 +158,17 @@ data-dictionary/                   # (repo root)
   "createdBy": "Boris Delange",
   "createdDate": "2024-01-01",
   "modifiedDate": "2024-01-01",
-  "conceptSetIds": [1, 2, 3]
+  "conceptSets": [
+    { "id": 1, "version": "1.0.0" },
+    { "id": 2, "version": "1.1.1" },
+    { "id": 3, "version": "1.0.0" }
+  ]
 }
 ```
+
+Each entry in `conceptSets` pins a concept set ID to a specific version. The SPA uses this to render the project against that exact version of the concept set, even if the concept set has since been bumped to a newer version. See [Versioned concept sets in projects](#versioned-concept-sets-in-projects) below.
+
+The SPA also accepts the legacy `conceptSetIds: [1, 2, 3]` field as a transitional fallback — entries are treated as `{id, version: <latest>}`. This is only meant to keep old `localStorage` projects (created before versioning was introduced) loadable, not as a supported alternative format. All `projects/*.json` files committed to the repo must use `conceptSets`.
 
 ## Build Pipeline
 
@@ -183,7 +193,7 @@ python3 resolve.py --db /path/to/ohdsi_vocabularies.duckdb
 
 ### Step 2: Build data files (`build.py`)
 
-Aggregates all JSON files into data files used by the static site.
+Aggregates all JSON files into data files used by the static site. Calls `snapshot.py` first to ensure the version index is up to date (see [Versioned concept sets in projects](#versioned-concept-sets-in-projects)).
 
 **Usage**:
 ```bash
@@ -191,15 +201,16 @@ python3 build.py
 ```
 
 **What it does**:
-1. Loads all `concept_sets/*.json` files
-2. Loads all `projects/*.json` files
-3. Loads all `concept_sets_resolved/*.json` files (if the directory exists)
-4. Loads `units/unit_conversions.json` and `units/recommended_units.json`
-5. Loads `mapping_recommendations/mapping_recommendations.json`
+1. Calls `snapshot.py` (records new (id, version) pairs in `concept_sets_versions.json` for any concept set whose current version is not yet indexed)
+2. Loads all `concept_sets/*.json` files
+3. Loads all `projects/*.json` files
+4. Loads all `concept_sets_resolved/*.json` files (if the directory exists)
+5. Loads `units/unit_conversions.json`, `units/recommended_units.json` and `mapping_recommendations/mapping_recommendations.json`
 6. Computes a content hash for cache-busting
 7. Splits resolved concept sets: those with ≤100 concepts are inlined in the data files; those with >100 are deferred (only metadata is inlined, full data is lazy-loaded from individual files)
-8. Produces output files:
-   - `docs/data.json` — compact JSON with all data (`conceptSets`, `projects`, `resolvedConceptSets`, `unitConversions`, `recommendedUnits`, `mappingRecommendations`, `dataVersion`, `dataHash`). Deferred resolved sets have `resolvedDeferred: true` and `resolvedCount` instead of full concept lists.
+8. Collects versioned snapshots: for each `(id, version)` pinned by a project that does not match the current source version, retrieves the historical concept set and resolved JSON via `git show <commit_sha>:concept_sets/{id}.json` and inlines them
+9. Produces output files:
+   - `docs/data.json` — compact JSON with all data (`conceptSets`, `projects`, `resolvedConceptSets`, `conceptSetVersions`, `resolvedConceptSetVersions`, `unitConversions`, `recommendedUnits`, `mappingRecommendations`, `dataVersion`, `dataHash`). Deferred resolved sets have `resolvedDeferred: true` and `resolvedCount` instead of full concept lists. `conceptSetVersions` is shaped as `{ id: { version: <full concept set JSON> } }` (only contains pinned versions that differ from the live source); same shape for `resolvedConceptSetVersions`.
    - `docs/data_inline.js` — same data wrapped as `const DATA={...};` for direct `<script>` inclusion
    - `docs/resolved_concept_ids.json` — unique concept IDs from resolved sets (used by DuckDB loader for filtering)
    - `docs/concept_sets_resolved/{id}.json` — individual resolved files for deferred concept sets (fetched on demand by the browser)
@@ -212,6 +223,46 @@ python3 build.py
 ```
 
 If you don't have a DuckDB vocabulary database, you can skip `resolve.py` and just run `build.py` — resolved concept sets will be empty but the site will still work (only the "Expression" tab will show concepts, not the "Resolved" tab).
+
+## Versioned concept sets in projects
+
+Projects pin each concept set to a specific version (`projects/{id}.json` → `conceptSets: [{id, version}]`). When the source concept set is later bumped (e.g. `1.0.0` → `1.1.0`), projects continue to render the previously pinned version — preserving reproducibility — until they are explicitly updated.
+
+### How historical versions are stored
+
+Rather than duplicating concept set files into `concept_sets_versions/{id}/{version}.json`, the repo stores **only an index** at `concept_sets_versions.json`:
+
+```json
+{
+  "1":  { "1.0.0": "ce8fd47179e877f3b338815a6c9ee226cac43311" },
+  "10": { "1.0.0": "ce8fd47179e877f3b338815a6c9ee226cac43311",
+          "1.1.0": "<sha of the commit that introduced v1.1.0>" }
+}
+```
+
+Each entry maps `(concept set id, version) → commit sha`. The historical JSON itself lives in Git history; `build.py` retrieves it via `git show <sha>:concept_sets/{id}.json`. This keeps the working tree free of duplication — Git already does versioned storage.
+
+### Workflow when bumping a concept set version
+
+1. Edit `concept_sets/{id}.json` and bump its `version` field (e.g. `1.0.0` → `1.1.0`).
+2. Commit the change: `git commit -am "Update concept set {id} to v1.1.0"`.
+3. Run `python3 build.py`. This invokes `snapshot.py` which detects the new `(id, version)` pair, records the current `HEAD` commit SHA in `concept_sets_versions.json`, and continues with the build.
+4. Commit the index update: `git commit -am "Snapshot concept set {id} v1.1.0"`.
+
+Two commits are needed because the SHA recorded in the index must point to a commit where `concept_sets/{id}.json` already contains the new version on disk. `snapshot.py` will refuse to record a snapshot for a file with uncommitted changes.
+
+### Idempotency and safety
+
+- `snapshot.py` is idempotent: re-running it does nothing if every `(id, version)` is already indexed.
+- Never reuse a `(id, version)` pair after publishing: the pinning is meant to be immutable. If you must roll back a bad version, bump to a new version (e.g. `1.1.1`) rather than reissuing `1.1.0`.
+- `concept_sets_versions.json` should never be edited by hand. Only `snapshot.py` writes to it.
+
+### How the SPA consumes versioned snapshots
+
+- `App.getConceptSet(id, version)` returns either the live concept set (when `version` matches the source) or the inlined snapshot from `DATA.conceptSetVersions[id][version]`.
+- Same logic for `App.getResolvedConceptSet(id, version)` against `DATA.resolvedConceptSetVersions`.
+- The Projects page datatable shows pinned vs. latest version per row, with `[Update]` buttons (per row + global "Update all") to bump the project's pinned versions to the latest. Updates are stored locally (`localStorage` via `App.userProjects`); the user then proposes the change on GitHub through the standard "Propose on GitHub" flow.
+- Opening a concept set from a project preserves the pinned version in the URL (`#/concept-sets?id=10&version=1.0.0&from=project&projectId=1`) and shows a banner indicating which version is being viewed and offering "View latest version" / "Update project" actions. Snapshots are immutable, so the Edit button is hidden.
 
 ## GitHub Pages Catalog
 
@@ -292,6 +343,7 @@ Enable GitHub Pages in repository settings, pointing to the `docs/` folder on th
 - **After any change to source data files** (`concept_sets/`, `projects/`, `concept_sets_resolved/`, `units/`, `mapping_recommendations/`), you MUST run `/build-catalog` to regenerate `docs/data.json` and `docs/data_inline.js`. Without this step, the GitHub Pages site will not reflect the changes.
 - **Never edit `docs/data.json`, `docs/data_inline.js`, `docs/resolved_concept_ids.json`, or `docs/concept_sets_resolved/` by hand** — they are generated files. Always edit the source JSON and rebuild.
 - **ID counters** (`id_counters.json`): contains `nextConceptSetId` and `nextProjectId` — monotonic counters that never decrease. `build.py` validates and auto-corrects them at build time. When creating a new concept set or project JSON file manually, increment the relevant counter. Never reuse a deleted ID.
+- **Versioned snapshots**: when bumping the `version` field of a concept set, follow the two-commit workflow described in [Versioned concept sets in projects](#versioned-concept-sets-in-projects): commit the bump first, then run `python3 build.py` (which calls `snapshot.py`), then commit the updated `concept_sets_versions.json`. Never edit `concept_sets_versions.json` by hand. Never reuse a published `(id, version)` pair: if a version turns out wrong, bump again rather than rewriting history.
 
 ## Key Conventions
 

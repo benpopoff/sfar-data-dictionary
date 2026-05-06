@@ -10,11 +10,12 @@ var ProjectsPage = (function() {
   var projCsFilterName = '';
   var projCsCategories = new Set();
   var projCsSubcategories = new Set();
+  var projCsReviewStatuses = new Set();
 
   // ==================== EDIT MODE STATE ====================
   var editMode = false;
   var editLongDesc = '';
-  var editConceptSetIds = []; // working copy of concept set IDs
+  var editConceptSets = []; // working copy of [{id, version}] entries
   var currentTab = 'context';
 
   // CS edit table filter state (available = right panel, project = left panel)
@@ -56,7 +57,7 @@ var ProjectsPage = (function() {
     var el = document.getElementById('proj-cards');
     el.innerHTML = filtered.map(function(p) {
       var tr = App.tProj(p);
-      var csCount = (p.conceptSetIds || []).length;
+      var csCount = App.getProjectConceptSetEntries(p).length;
       return '<div class="project-card" data-id="' + p.id + '">' +
         '<button class="project-card-menu-btn" data-menu-id="' + p.id + '" title="Actions"><i class="fas fa-ellipsis-v"></i></button>' +
         '<div class="project-card-menu" id="proj-card-menu-' + p.id + '">' +
@@ -150,7 +151,7 @@ var ProjectsPage = (function() {
         createdBy: author,
         createdDate: today,
         modifiedDate: today,
-        conceptSetIds: []
+        conceptSets: []
       };
       App.addProject(proj);
       closeCreateModal();
@@ -239,7 +240,7 @@ var ProjectsPage = (function() {
 
     document.getElementById('proj-detail-title').textContent = tr.name || '';
     document.getElementById('proj-detail-meta').innerHTML =
-      '<span class="badge badge-count"><i class="fas fa-list"></i> ' + (proj.conceptSetIds || []).length + ' ' + App.i18n('concept sets') + '</span>' +
+      '<span class="badge badge-count"><i class="fas fa-list"></i> ' + App.getProjectConceptSetEntries(proj).length + ' ' + App.i18n('concept sets') + '</span>' +
       '<span style="color:var(--text-muted); font-size:13px"><i class="fas fa-user"></i> ' + App.escapeHtml(proj.createdBy || '') + ' <i class="fas fa-calendar-alt" style="margin-left:8px"></i> ' + App.escapeHtml(App.formatDate(proj.createdDate) || '') + '</span>';
 
     // Context tab (read mode)
@@ -250,6 +251,7 @@ var ProjectsPage = (function() {
     projCsFilterName = '';
     projCsCategories.clear();
     projCsSubcategories.clear();
+    projCsReviewStatuses.clear();
     document.getElementById('proj-filter-name').value = '';
     populateProjColumnFilters();
     renderProjectCSTable();
@@ -276,7 +278,9 @@ var ProjectsPage = (function() {
     editMode = true;
     var tr = App.tProj(selectedProject);
     editLongDesc = tr.long_description || '';
-    editConceptSetIds = (selectedProject.conceptSetIds || []).slice();
+    editConceptSets = App.getProjectConceptSetEntries(selectedProject).map(function(e) {
+      return { id: e.id, version: e.version };
+    });
 
     updateEditButtons();
 
@@ -315,7 +319,10 @@ var ProjectsPage = (function() {
     if (!selectedProject.translations) selectedProject.translations = { en: {}, fr: {} };
     if (!selectedProject.translations[App.lang]) selectedProject.translations[App.lang] = {};
     selectedProject.translations[App.lang].long_description = editLongDesc;
-    selectedProject.conceptSetIds = editConceptSetIds.slice();
+    selectedProject.conceptSets = editConceptSets.map(function(e) {
+      return { id: e.id, version: e.version };
+    });
+    delete selectedProject.conceptSetIds;
     selectedProject.modifiedDate = new Date().toISOString().split('T')[0];
     App.updateProject(selectedProject);
 
@@ -325,7 +332,7 @@ var ProjectsPage = (function() {
     renderContextReadMode();
     var tr = App.tProj(selectedProject);
     document.getElementById('proj-detail-meta').innerHTML =
-      '<span class="badge badge-count"><i class="fas fa-list"></i> ' + (selectedProject.conceptSetIds || []).length + ' ' + App.i18n('concept sets') + '</span>' +
+      '<span class="badge badge-count"><i class="fas fa-list"></i> ' + App.getProjectConceptSetEntries(selectedProject).length + ' ' + App.i18n('concept sets') + '</span>' +
       '<span style="color:var(--text-muted); font-size:13px"><i class="fas fa-user"></i> ' + App.escapeHtml(selectedProject.createdBy || '') + ' <i class="fas fa-calendar-alt" style="margin-left:8px"></i> ' + App.escapeHtml(App.formatDate(selectedProject.createdDate) || '') + '</span>';
     populateProjColumnFilters();
     renderProjectCSTable();
@@ -350,7 +357,7 @@ var ProjectsPage = (function() {
   function populateCSEditFilters(skipId) {
     var allCS = App.getCSData();
     var idSet = {};
-    editConceptSetIds.forEach(function(id) { idSet[id] = true; });
+    editConceptSets.forEach(function(e) { idSet[e.id] = true; });
 
     var availData = allCS.filter(function(d) { return !idSet[d.id]; });
     var projData = allCS.filter(function(d) { return idSet[d.id]; });
@@ -414,7 +421,7 @@ var ProjectsPage = (function() {
   function renderCSEditTables() {
     var allCS = App.getCSData();
     var idSet = {};
-    editConceptSetIds.forEach(function(id) { idSet[id] = true; });
+    editConceptSets.forEach(function(e) { idSet[e.id] = true; });
 
     // Left table: concept sets in the project (right pane in UI)
     var leftData = allCS.filter(function(d) { return idSet[d.id]; });
@@ -446,7 +453,7 @@ var ProjectsPage = (function() {
         '</tr>';
     }).join('');
 
-    document.getElementById('proj-cs-edit-count').textContent = '(' + editConceptSetIds.length + ')';
+    document.getElementById('proj-cs-edit-count').textContent = '(' + editConceptSets.length + ')';
 
     // Right table: available concept sets (not in project, left pane in UI)
     var rightData = allCS.filter(function(d) { return !idSet[d.id]; });
@@ -480,14 +487,14 @@ var ProjectsPage = (function() {
   }
 
   function addCSToProject(csId) {
-    if (editConceptSetIds.indexOf(csId) >= 0) return;
-    editConceptSetIds.push(csId);
+    if (editConceptSets.some(function(e) { return e.id === csId; })) return;
+    editConceptSets.push({ id: csId, version: App.getLatestVersion(csId) });
     populateCSEditFilters();
     renderCSEditTables();
   }
 
   function removeCSFromProject(csId) {
-    editConceptSetIds = editConceptSetIds.filter(function(id) { return id !== csId; });
+    editConceptSets = editConceptSets.filter(function(e) { return e.id !== csId; });
     populateCSEditFilters();
     renderCSEditTables();
   }
@@ -495,8 +502,23 @@ var ProjectsPage = (function() {
   // ==================== READ-MODE CS TABLE ====================
   function getProjectCSData() {
     if (!selectedProject) return [];
-    var ids = new Set(selectedProject.conceptSetIds || []);
-    return App.getCSData().filter(function(d) { return ids.has(d.id); });
+    var entries = App.getProjectConceptSetEntries(selectedProject);
+    var pinnedById = {};
+    entries.forEach(function(e) { pinnedById[e.id] = e.version || ''; });
+    var ids = new Set(Object.keys(pinnedById).map(function(k) { return parseInt(k); }));
+    return App.getCSData().filter(function(d) { return ids.has(d.id); }).map(function(d) {
+      var pinned = pinnedById[d.id] || '';
+      var latest = d.version || '';
+      d.pinnedVersion = pinned;
+      d.latestVersion = latest;
+      d.outdated = pinned && latest && pinned !== latest;
+      return d;
+    });
+  }
+
+  function hasOutdatedConceptSets() {
+    if (!selectedProject) return false;
+    return getProjectCSData().some(function(d) { return d.outdated; });
   }
 
   function populateProjColumnFilters(skipId) {
@@ -531,6 +553,16 @@ var ProjectsPage = (function() {
       App.updateMsToggleLabel('proj-filter-subcategory', projCsSubcategories);
     }
 
+    var statuses = [...new Set(data.map(function(d) { return d.reviewStatus; }))].filter(Boolean).sort();
+    var statusLabelMap = {};
+    statuses.forEach(function(s) { statusLabelMap[s] = App.statusLabelsMap[s] || s; });
+    if (skipId !== 'proj-filter-reviewStatus') {
+      App.buildMultiSelectDropdown('proj-filter-reviewStatus', statuses, projCsReviewStatuses, function() {
+        renderProjectCSTable();
+      }, statusLabelMap);
+    } else {
+      App.updateMsToggleLabel('proj-filter-reviewStatus', projCsReviewStatuses);
+    }
   }
 
   function renderProjectCSTable() {
@@ -539,6 +571,7 @@ var ProjectsPage = (function() {
 
     if (projCsCategories.size > 0) data = data.filter(function(d) { return projCsCategories.has(d.category); });
     if (projCsSubcategories.size > 0) data = data.filter(function(d) { return projCsSubcategories.has(d.subcategory); });
+    if (projCsReviewStatuses.size > 0) data = data.filter(function(d) { return projCsReviewStatuses.has(d.reviewStatus); });
     if (projCsFilterName) {
       var q = projCsFilterName.toLowerCase();
       data = data.filter(function(d) {
@@ -564,13 +597,37 @@ var ProjectsPage = (function() {
 
     var tbody = document.getElementById('proj-cs-tbody');
     tbody.innerHTML = data.map(function(d) {
-      return '<tr data-id="' + d.id + '" style="cursor:pointer">' +
+      var statusCell, actionCell;
+      if (!d.pinnedVersion) {
+        statusCell = '<span style="color:var(--text-muted); font-size:12px">' + App.i18n('No version') + '</span>';
+        actionCell = '';
+      } else if (d.outdated) {
+        statusCell = '<span class="badge" style="background:#fef3c7; color:#92400e"><i class="fas fa-exclamation-triangle"></i> ' + App.i18n('Outdated') + '</span>';
+        actionCell = '<button class="proj-cs-update-btn" data-id="' + d.id + '" title="' + App.escapeHtml(App.i18n('Update to latest')) + '"><i class="fas fa-arrow-up"></i> ' + App.i18n('Update') + '</button>';
+      } else {
+        statusCell = '<span class="badge" style="background:#dcfce7; color:#166534"><i class="fas fa-check"></i> ' + App.i18n('Up to date') + '</span>';
+        actionCell = '';
+      }
+      return '<tr data-id="' + d.id + '" data-pinned="' + App.escapeHtml(d.pinnedVersion) + '" style="cursor:pointer">' +
         '<td><span class="badge badge-category">' + App.escapeHtml(d.category) + '</span></td>' +
         '<td><span class="badge badge-subcategory">' + App.escapeHtml(d.subcategory) + '</span></td>' +
         '<td><strong>' + App.escapeHtml(d.name) + '</strong></td>' +
         '<td class="desc-truncated">' + App.escapeHtml(d.description) + '</td>' +
+        '<td style="white-space:nowrap">' + App.statusBadge(d.reviewStatus) + '</td>' +
+        '<td style="white-space:nowrap; font-family:monospace; font-size:12px">' + App.escapeHtml(d.pinnedVersion) + '</td>' +
+        '<td style="white-space:nowrap; font-family:monospace; font-size:12px' + (d.outdated ? '; font-weight:bold' : '') + '">' + App.escapeHtml(d.latestVersion) + '</td>' +
+        '<td style="white-space:nowrap">' + statusCell + '</td>' +
+        '<td style="white-space:nowrap">' + actionCell + '</td>' +
         '</tr>';
     }).join('');
+
+    // Update toolbar buttons
+    var updateAllBtn = document.getElementById('proj-update-all-btn');
+    if (updateAllBtn) {
+      var nOutdated = data.filter(function(d) { return d.outdated; }).length;
+      updateAllBtn.style.display = nOutdated > 0 ? '' : 'none';
+      updateAllBtn.querySelector('.update-all-count').textContent = nOutdated > 0 ? ' (' + nOutdated + ')' : '';
+    }
 
     // Sort indicators
     document.querySelectorAll('#proj-cs-table thead th').forEach(function(th) {
@@ -578,6 +635,51 @@ var ProjectsPage = (function() {
       var icon = th.querySelector('.sort-icon');
       if (icon) icon.textContent = (th.dataset.sort === projCsSort.key && !projCsSort.asc) ? '\u25BC' : '\u25B2';
     });
+  }
+
+  // ==================== UPDATE PINNED VERSIONS ====================
+  function updatePinnedVersion(csId) {
+    if (!selectedProject) return;
+    var entries = App.getProjectConceptSetEntries(selectedProject).map(function(e) {
+      return { id: e.id, version: e.version };
+    });
+    var latest = App.getLatestVersion(csId);
+    if (!latest) return;
+    var changed = false;
+    entries.forEach(function(e) {
+      if (e.id === csId && e.version !== latest) { e.version = latest; changed = true; }
+    });
+    if (!changed) return;
+    selectedProject.conceptSets = entries;
+    delete selectedProject.conceptSetIds;
+    selectedProject.modifiedDate = new Date().toISOString().split('T')[0];
+    App.updateProject(selectedProject);
+    populateProjColumnFilters();
+    renderProjectCSTable();
+    App.showToast(App.i18n('Concept set updated to latest version.'), 'success');
+  }
+
+  function updateAllOutdated() {
+    if (!selectedProject) return;
+    var data = getProjectCSData();
+    var outdatedIds = data.filter(function(d) { return d.outdated; }).map(function(d) { return d.id; });
+    if (outdatedIds.length === 0) return;
+    var entries = App.getProjectConceptSetEntries(selectedProject).map(function(e) {
+      return { id: e.id, version: e.version };
+    });
+    entries.forEach(function(e) {
+      if (outdatedIds.indexOf(e.id) >= 0) {
+        var latest = App.getLatestVersion(e.id);
+        if (latest) e.version = latest;
+      }
+    });
+    selectedProject.conceptSets = entries;
+    delete selectedProject.conceptSetIds;
+    selectedProject.modifiedDate = new Date().toISOString().split('T')[0];
+    App.updateProject(selectedProject);
+    populateProjColumnFilters();
+    renderProjectCSTable();
+    App.showToast(App.i18n('Updated {n} concept set(s) to latest version.').replace('{n}', outdatedIds.length), 'success');
   }
 
   function hideProjectDetail() {
@@ -646,10 +748,30 @@ var ProjectsPage = (function() {
 
     // Project concept set click -> navigate to concept sets page via router
     document.getElementById('proj-cs-tbody').addEventListener('click', function(e) {
+      // Update button: bump pinned version to latest, in-place
+      var updateBtn = e.target.closest('.proj-cs-update-btn');
+      if (updateBtn) {
+        e.stopPropagation();
+        updatePinnedVersion(parseInt(updateBtn.dataset.id));
+        return;
+      }
       var tr = e.target.closest('tr[data-id]');
       if (!tr) return;
-      Router.navigate('/concept-sets', { id: tr.dataset.id });
+      var query = { id: tr.dataset.id };
+      var pinned = tr.dataset.pinned;
+      if (pinned) query.version = pinned;
+      if (selectedProject) {
+        query.from = 'project';
+        query.projectId = selectedProject.id;
+      }
+      Router.navigate('/concept-sets', query);
     });
+
+    // Update all outdated concept sets
+    var updateAllBtn = document.getElementById('proj-update-all-btn');
+    if (updateAllBtn) {
+      updateAllBtn.addEventListener('click', updateAllOutdated);
+    }
 
     // Project CS sort
     document.getElementById('proj-cs-table').querySelector('thead').addEventListener('click', function(e) {
@@ -670,14 +792,16 @@ var ProjectsPage = (function() {
     // CSV export for project concepts
     document.getElementById('proj-export-csv').addEventListener('click', function() {
       if (!selectedProject) return;
-      var ids = new Set(selectedProject.conceptSetIds || []);
+      var entries = App.getProjectConceptSetEntries(selectedProject);
       var rows = [];
       rows.push(['concept_set_id', 'concept_set_name', 'concept_set_category', 'concept_set_subcategory',
         'concept_id', 'concept_name', 'domain_id', 'vocabulary_id', 'concept_class_id', 'concept_code',
         'standard_concept', 'invalid_reason', 'valid_start_date', 'valid_end_date',
         'is_excluded', 'include_descendants', 'include_mapped'].join(','));
 
-      App.conceptSets.filter(function(cs) { return ids.has(cs.id); }).forEach(function(cs) {
+      entries.map(function(e) {
+        return App.getConceptSet(e.id, e.version);
+      }).filter(function(cs) { return cs; }).forEach(function(cs) {
         var tr = App.t(cs);
         var csName = (tr.name || cs.name || '').replace(/"/g, '""');
         var csCat = (tr.category || '').replace(/"/g, '""');

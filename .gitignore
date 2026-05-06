@@ -1,3 +1,5 @@
 .DS_Store
 tmp*
 config.local.json
+__pycache__/
+*.pyc

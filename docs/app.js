@@ -1487,6 +1487,53 @@ var App = (function() {
     saveUserProjects();
   }
 
+  // ==================== VERSIONED CONCEPT SETS ====================
+  /**
+   * Return the concept set object for (id, version). If `version` is falsy or matches
+   * the current source version, returns the live concept set from `conceptSets`.
+   * Otherwise returns the snapshot from DATA.conceptSetVersions[id][version], or null.
+   */
+  function getConceptSet(id, version) {
+    var live = conceptSets.find(function(cs) { return cs.id === id; });
+    if (!version) return live || null;
+    if (live && live.version === version) return live;
+    var snaps = (DATA.conceptSetVersions || {})[String(id)];
+    if (snaps && snaps[version]) return snaps[version];
+    return null;
+  }
+
+  /**
+   * Return the resolved concept list for (id, version). Falls back to current resolved
+   * data when version matches latest or is omitted. Returns null if a versioned snapshot
+   * is requested but missing.
+   */
+  function getResolvedConceptSet(id, version) {
+    var live = conceptSets.find(function(cs) { return cs.id === id; });
+    if (!version || (live && live.version === version)) {
+      return resolvedIndex[id] || null;
+    }
+    var snaps = (DATA.resolvedConceptSetVersions || {})[String(id)];
+    if (snaps && snaps[version]) return snaps[version].resolvedConcepts || [];
+    return null;
+  }
+
+  /** Return the latest known version of concept set `id` (live or null). */
+  function getLatestVersion(id) {
+    var cs = conceptSets.find(function(c) { return c.id === id; });
+    return cs ? (cs.version || '') : '';
+  }
+
+  /** Iterate project.conceptSets entries with fallback when the project still uses the legacy `conceptSetIds`. */
+  function getProjectConceptSetEntries(proj) {
+    if (proj && Array.isArray(proj.conceptSets)) return proj.conceptSets;
+    if (proj && Array.isArray(proj.conceptSetIds)) {
+      return proj.conceptSetIds.map(function(id) {
+        return { id: id, version: getLatestVersion(id) };
+      });
+    }
+    return [];
+  }
+
   // ==================== GETCSDATA ====================
   function getCSData() {
     return conceptSets.map(function(cs) {
@@ -1671,6 +1718,10 @@ var App = (function() {
     openExportModal: openExportModal,
     initSharedEvents: initSharedEvents,
     getCSData: getCSData,
+    getConceptSet: getConceptSet,
+    getResolvedConceptSet: getResolvedConceptSet,
+    getLatestVersion: getLatestVersion,
+    getProjectConceptSetEntries: getProjectConceptSetEntries,
     onLanguageChange: function(cb) { languageChangeCallbacks.push(cb); },
     onBeforeNavigate: function(cb) { beforeNavigateCallbacks.push(cb); },
     onHome: function(cb) { homeCallbacks.push(cb); },

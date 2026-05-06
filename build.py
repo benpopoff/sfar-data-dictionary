@@ -7,9 +7,69 @@ import json
 import glob
 import os
 import shutil
+import subprocess
+
+import snapshot
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(ROOT, "docs")
+
+
+def git_show(sha, repo_path):
+    """Return the contents of `repo_path` at commit `sha`, or None if not found."""
+    try:
+        result = subprocess.run(
+            ["git", "show", f"{sha}:{repo_path}"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        return result.stdout
+    except subprocess.CalledProcessError:
+        return None
+
+
+def collect_versioned_snapshots(projects, concept_sets, versions_index):
+    """For each (id, version) pinned by a project where version != current source version,
+    fetch the snapshot of concept_sets/{id}.json and concept_sets_resolved/{id}.json at the
+    commit recorded in the index. Return (cs_versions, resolved_versions) dicts shaped as
+    {id: {version: full_json}}."""
+    current_versions = {cs["id"]: cs.get("version") for cs in concept_sets}
+    needed = set()
+    for p in projects:
+        for entry in p.get("conceptSets", []):
+            cs_id = entry.get("id")
+            version = entry.get("version")
+            if cs_id is None or not version:
+                continue
+            if version == current_versions.get(cs_id):
+                continue
+            needed.add((cs_id, version))
+
+    cs_versions = {}
+    resolved_versions = {}
+    missing = []
+    for cs_id, version in sorted(needed):
+        sha = versions_index.get(str(cs_id), {}).get(version)
+        if not sha:
+            missing.append((cs_id, version, "no SHA in index"))
+            continue
+        cs_blob = git_show(sha, f"concept_sets/{cs_id}.json")
+        if cs_blob is None:
+            missing.append((cs_id, version, f"git show concept_sets/{cs_id}.json @ {sha[:10]} failed"))
+            continue
+        cs_versions.setdefault(str(cs_id), {})[version] = json.loads(cs_blob)
+
+        resolved_blob = git_show(sha, f"concept_sets_resolved/{cs_id}.json")
+        if resolved_blob is not None:
+            resolved_versions.setdefault(str(cs_id), {})[version] = json.loads(resolved_blob)
+
+    if missing:
+        print("  WARNINGS while collecting versioned snapshots:")
+        for cs_id, version, why in missing:
+            print(f"    concept set {cs_id} v{version}: {why}")
+    return cs_versions, resolved_versions
 
 
 def load_json_dir(directory, sort_key="id"):
@@ -45,8 +105,12 @@ def main():
     with open(config_path, "r", encoding="utf-8") as f:
         config = json.load(f)
 
+    print("Updating concept_sets_versions.json...")
+    snapshot.main()
+
     concept_sets = load_json_dir(os.path.join(ROOT, "concept_sets"))
     projects = load_json_dir(os.path.join(ROOT, "projects"))
+    versions_index = load_json_file(os.path.join(ROOT, "concept_sets_versions.json")) or {}
 
     resolved_dir = os.path.join(ROOT, "concept_sets_resolved")
     resolved = load_json_dir(resolved_dir, sort_key="conceptSetId") if os.path.isdir(resolved_dir) else []
@@ -118,6 +182,10 @@ def main():
                     dst = os.path.join(docs_resolved_dir, f"{r['conceptSetId']}.json")
                     shutil.copy2(src, dst)
 
+    cs_versions, resolved_versions = collect_versioned_snapshots(projects, concept_sets, versions_index)
+    n_cs_snapshots = sum(len(v) for v in cs_versions.values())
+    n_resolved_snapshots = sum(len(v) for v in resolved_versions.values())
+
     data = {
         "dataVersion": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "dataHash": data_hash,
@@ -125,6 +193,8 @@ def main():
         "conceptSets": concept_sets,
         "projects": projects,
         "resolvedConceptSets": resolved_inline,
+        "conceptSetVersions": cs_versions,
+        "resolvedConceptSetVersions": resolved_versions,
         "unitConversions": unit_conversions,
         "recommendedUnits": recommended_units,
         "mappingRecommendations": mapping_recommendations,
@@ -159,7 +229,8 @@ def main():
     print(f"Built {len(concept_sets)} concept sets, {len(projects)} projects, {len(resolved)} resolved "
           f"({len(resolved) - deferred_count} inline, {deferred_count} deferred), "
           f"{len(unit_conversions)} unit conversions, {len(recommended_units)} recommended units, "
-          f"mapping recommendations ({mr_langs} languages)")
+          f"mapping recommendations ({mr_langs} languages), "
+          f"versioned snapshots ({n_cs_snapshots} concept sets, {n_resolved_snapshots} resolved)")
     print(f"  -> docs/data.json ({os.path.getsize(os.path.join(DOCS, 'data.json')):,} bytes)")
     print(f"  -> docs/data_inline.js ({os.path.getsize(os.path.join(DOCS, 'data_inline.js')):,} bytes)")
 

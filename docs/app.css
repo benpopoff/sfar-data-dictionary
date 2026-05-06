@@ -1101,6 +1101,11 @@ tbody td {
   cursor: pointer;
   transition: filter .2s, transform .2s;
 }
+/* Compact size when used inside a datatable cell */
+td .status-badge {
+  padding: 2px 8px;
+  font-size: 11px;
+}
 .status-badge.draft { background: #6c757d; color: white; }
 .status-badge.pending_review { background: #ffc107; color: #000; }
 .status-badge.approved { background: #28a745; color: white; }
@@ -2868,6 +2873,22 @@ select.form-input { appearance: auto; }
 .proj-cs-remove-btn:hover { background: #fff5f5; }
 .proj-cs-add-btn { color: var(--success); }
 .proj-cs-add-btn:hover { background: #f0fff4; }
+.proj-cs-update-btn {
+  background: none; border: 1px solid var(--border); cursor: pointer;
+  font-size: 12px; padding: 4px 8px; border-radius: var(--radius);
+  color: #92400e; white-space: nowrap;
+}
+.proj-cs-update-btn:hover { background: #fef3c7; border-color: #f59e0b; }
+
+.cs-version-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: #fef3c7; color: #92400e; border: 1px solid #f59e0b;
+  border-radius: var(--radius); padding: 8px 12px; margin: 8px 16px; font-size: 13px;
+}
+.cs-version-banner-text { flex: 1; }
+.cs-version-banner-actions { display: flex; align-items: center; gap: 12px; }
+.cs-version-banner-actions a { color: #92400e; text-decoration: underline; }
+.cs-version-banner-actions a:hover { color: #78350f; }
 
 /* Footer */
 .app-footer {

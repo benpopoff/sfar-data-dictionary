@@ -32,6 +32,8 @@ var ConceptSetsPage = (function() {
   var csSubcategories = new Set();
   var csFilterReviewStatus = new Set();
   var selectedConceptSet = null;
+  var selectedSnapshotVersion = null; // non-null when viewing a pinned snapshot
+  var selectedFromProjectId = null;   // non-null when navigated from a project's variables tab
   var sqlExportUnitLabels = {}; // unit_concept_id -> short label (e.g. "mg/dL"), populated by the SQL export UI
   var csDetailTab = 'concepts';
   var csConceptMode = 'resolved';
@@ -4149,10 +4151,20 @@ var ConceptSetsPage = (function() {
   }
 
   // ==================== CS DETAIL ====================
-  function showCSDetail(id) {
-    var cs = App.conceptSets.find(function(c) { return c.id === id; });
+  function showCSDetail(id, options) {
+    options = options || {};
+    var live = App.conceptSets.find(function(c) { return c.id === id; });
+    var requestedVersion = options.version || '';
+    var cs = live;
+    var isSnapshot = false;
+    if (requestedVersion && live && live.version !== requestedVersion) {
+      var snap = App.getConceptSet(id, requestedVersion);
+      if (snap) { cs = snap; isSnapshot = true; }
+    }
     if (!cs) return;
     selectedConceptSet = cs;
+    selectedSnapshotVersion = isSnapshot ? requestedVersion : null;
+    selectedFromProjectId = options.from === 'project' && options.projectId ? parseInt(options.projectId) : null;
     var tr = App.t(cs);
 
     document.getElementById('cs-list-view').classList.add('hidden');
@@ -4163,9 +4175,10 @@ var ConceptSetsPage = (function() {
     titleEl.querySelector('.title-tooltip-text').textContent = titleName;
     titleEl.querySelector('.title-tooltip-bubble').textContent = titleName;
     refreshDetailBadges();
+    renderVersionBanner();
 
-    // Show Edit button for all concept sets
-    document.getElementById('cs-edit-btn').style.display = '';
+    // Hide edit controls in snapshot mode (snapshots are immutable)
+    document.getElementById('cs-edit-btn').style.display = isSnapshot ? 'none' : '';
     document.getElementById('cs-edit-cancel-btn').style.display = 'none';
     document.getElementById('cs-edit-save-btn').style.display = 'none';
 
@@ -4185,6 +4198,33 @@ var ConceptSetsPage = (function() {
     renderReviewTab(cs);
   }
 
+  function renderVersionBanner() {
+    var banner = document.getElementById('cs-version-banner');
+    if (!banner) return;
+    if (!selectedSnapshotVersion || !selectedConceptSet) {
+      banner.style.display = 'none';
+      return;
+    }
+    var live = App.conceptSets.find(function(c) { return c.id === selectedConceptSet.id; });
+    var latest = live ? (live.version || '') : '';
+    var msg;
+    var fromProject = selectedFromProjectId
+      ? App.projects.find(function(p) { return p.id === selectedFromProjectId; })
+      : null;
+    if (fromProject) {
+      var projName = (App.tProj(fromProject).name) || '';
+      msg = App.i18n('You are viewing the pinned version {pinned} from project "{project}". The latest version is {latest}.')
+        .replace('{pinned}', selectedSnapshotVersion).replace('{project}', projName).replace('{latest}', latest);
+    } else {
+      msg = App.i18n('You are viewing the pinned version {pinned}. The latest version is {latest}.')
+        .replace('{pinned}', selectedSnapshotVersion).replace('{latest}', latest);
+    }
+    banner.querySelector('.cs-version-banner-text').textContent = msg;
+    banner.style.display = '';
+    var updBtn = document.getElementById('cs-version-banner-update');
+    updBtn.style.display = fromProject ? '' : 'none';
+  }
+
   function hideCSDetail() {
     if (exprEditMode) exitExprEditMode();
     if (commentsEditMode) exitCommentsEditMode();
@@ -4195,6 +4235,10 @@ var ConceptSetsPage = (function() {
     document.getElementById('cs-detail-view').classList.remove('active');
     document.getElementById('cs-list-view').classList.remove('hidden');
     selectedConceptSet = null;
+    selectedSnapshotVersion = null;
+    selectedFromProjectId = null;
+    var banner = document.getElementById('cs-version-banner');
+    if (banner) banner.style.display = 'none';
     csDetailTab = 'concepts';
     csConceptMode = 'resolved';
   }
@@ -5402,6 +5446,40 @@ var ConceptSetsPage = (function() {
 
   // ==================== EVENTS ====================
   function initEvents() {
+    // Version snapshot banner: actions
+    var bannerLatest = document.getElementById('cs-version-banner-latest');
+    if (bannerLatest) {
+      bannerLatest.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (!selectedConceptSet) return;
+        Router.navigate('/concept-sets', { id: selectedConceptSet.id });
+      });
+    }
+    var bannerUpdate = document.getElementById('cs-version-banner-update');
+    if (bannerUpdate) {
+      bannerUpdate.addEventListener('click', function() {
+        if (!selectedConceptSet || !selectedFromProjectId) return;
+        var proj = App.projects.find(function(p) { return p.id === selectedFromProjectId; });
+        if (!proj) return;
+        var entries = App.getProjectConceptSetEntries(proj).map(function(e) {
+          return { id: e.id, version: e.version };
+        });
+        var latest = App.getLatestVersion(selectedConceptSet.id);
+        if (!latest) return;
+        var changed = false;
+        entries.forEach(function(e) {
+          if (e.id === selectedConceptSet.id && e.version !== latest) { e.version = latest; changed = true; }
+        });
+        if (!changed) return;
+        proj.conceptSets = entries;
+        delete proj.conceptSetIds;
+        proj.modifiedDate = new Date().toISOString().split('T')[0];
+        App.updateProject(proj);
+        App.showToast(App.i18n('Project updated to latest version of this concept set.'), 'success');
+        Router.navigate('/concept-sets', { id: selectedConceptSet.id });
+      });
+    }
+
     // Copy buttons in concept detail panels
     document.addEventListener('click', function(e) {
       var btn = e.target.closest('.detail-copy-btn');
@@ -5996,7 +6074,11 @@ var ConceptSetsPage = (function() {
     init();
     var csId = query && (query.id || query.cs);
     if (csId) {
-      showCSDetail(parseInt(csId));
+      showCSDetail(parseInt(csId), {
+        version: query && query.version,
+        from: query && query.from,
+        projectId: query && query.projectId
+      });
       var tab = query && query.tab;
       if (tab && ['concepts', 'comments', 'statistics', 'review'].indexOf(tab) !== -1) {
         switchCSDetailTab(tab);
@@ -6012,6 +6094,10 @@ var ConceptSetsPage = (function() {
       document.getElementById('cs-detail-view').classList.remove('active');
       document.getElementById('cs-list-view').classList.remove('hidden');
       selectedConceptSet = null;
+      selectedSnapshotVersion = null;
+      selectedFromProjectId = null;
+      var banner = document.getElementById('cs-version-banner');
+      if (banner) banner.style.display = 'none';
       csDetailTab = 'concepts';
       csConceptMode = 'resolved';
     }
