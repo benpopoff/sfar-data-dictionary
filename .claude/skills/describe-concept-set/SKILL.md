@@ -19,15 +19,23 @@ Ask the user for:
 
 1. **Concept set name** (e.g., "Heart rate", "Mechanical ventilation")
 2. **Concept set ID** (the numeric ID, e.g., 327)
-3. **Vocabularies folder path** — the root folder containing the terminology subfolders:
-   - `UMLS - 2025AB/META/` (UMLS RRF files)
-   - `LOINC source/Loinc_2.81/` (LOINC CSV files)
-   - `SNOMED source/` (SNOMED RF2 files)
+3. **Terminology source paths** — full paths to the terminology files used to enrich the description. All four are useful; ask the user which ones they have available and request the path for each. For any source the user does not have, give them the download URL below — they can either download it and re-invoke the skill, or skip it. **Sources the user cannot provide are simply omitted from the lookup**; the description is written using the available sources only, and the description itself states what was used (LOINC Part description / NPU / etc.) so the reader can see which inputs informed it.
+
+   - **LOINC** — path to the folder containing the LOINC distribution (must contain `LoincTable/Loinc.csv` and `AccessoryFiles/`). Used for COMPONENT / PROPERTY / METHOD decomposition, `EXAMPLE_UCUM_UNITS`, Part descriptions, and Consumer names.
+     Download: <https://loinc.org/downloads/> (registration required, free).
+   - **SNOMED** — path to the SNOMED CT RF2 release ZIP or extracted folder (must contain `sct2_Description_Snapshot-en_*.txt` and `sct2_TextDefinition_Snapshot-en_*.txt`). Used for FSN, synonyms, and text definitions of SNOMED concepts.
+     Download: <https://www.nlm.nih.gov/healthit/snomedct/international.html> (UMLS licence required, free).
+   - **UMLS** — path to the folder containing the UMLS Metathesaurus RRF files (`MRCONSO.RRF`, `MRDEF.RRF`, `MRSTY.RRF`, `MRREL.RRF`). Used as a fallback for clinical definitions (MeSH, NCI, etc.) when LOINC Part descriptions are thin.
+     Download: **UMLS Metathesaurus Full Subset** from <https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html> (UMLS licence required, free).
+   - **NPU codes CSV** — full path to the NPU codes CSV file (typically named `npu-codes-latest.csv`). Used as the authoritative source for the SI/IFCC-recommended unit of laboratory measurands (see Step 3f).
+     Download: <https://npu-terminology.org/npu-database/>.
+
+   If none of the four are available, the description will rely solely on the concept names and any web information found in Step 3d — flag this clearly to the user before proceeding so they can decide whether to download the missing sources first.
 4. **Language** for the output description (default: English)
 
-The GitHub URLs for the concept set files are:
-- OHDSI definition: `https://raw.githubusercontent.com/indicate-eu/data-dictionary/refs/heads/main/concept_sets/{id}.json`
-- Resolved concepts: `https://raw.githubusercontent.com/indicate-eu/data-dictionary/refs/heads/main/concept_sets_resolved/{id}.json`
+The concept set files live in the repository:
+- OHDSI definition: `concept_sets/{id}.json`
+- Resolved concepts: `concept_sets_resolved/{id}.json`
 
 ### Step 2: Fetch Concept Set Data
 
@@ -105,13 +113,16 @@ Also check:
 
 #### 3c. SNOMED Source (for SNOMED-based concept sets)
 
-If the concept set contains SNOMED concepts, extract from the RF2 ZIP:
-- `sct2_Description_Snapshot-en_INT_20251101.txt` — FSN and synonyms
-- `sct2_TextDefinition_Snapshot-en_INT_20251101.txt` — Full text definitions (only ~3.6% of concepts have them)
+If the concept set contains SNOMED concepts, extract from the RF2 release (the filename includes a release date, e.g. `INT_20251101`):
+- `sct2_Description_Snapshot-en_*.txt` — FSN and synonyms
+- `sct2_TextDefinition_Snapshot-en_*.txt` — Full text definitions (only ~3.6% of concepts have them)
 
 ```bash
-unzip -p "path/to/zip" "*/sct2_Description_Snapshot-en*" | grep "SNOMED_ID"
-unzip -p "path/to/zip" "*/sct2_TextDefinition_Snapshot-en*" | grep "SNOMED_ID"
+# If the release is still a ZIP:
+unzip -p "<path-to-snomed-zip>" "*/sct2_Description_Snapshot-en*" | grep "<SNOMED_ID>"
+unzip -p "<path-to-snomed-zip>" "*/sct2_TextDefinition_Snapshot-en*" | grep "<SNOMED_ID>"
+
+# If already extracted, grep the txt files directly inside the Snapshot/Terminology subfolder.
 ```
 
 #### 3d. Web Search (complementary)
@@ -136,9 +147,7 @@ The INDICATE data dictionary maintains two unit files that specify how measureme
 - `units/recommended_units.json` — Maps each OMOP measurement concept to its recommended unit (fields: `conceptId`, `conceptName`, `conceptCode`, `vocabularyId`, `domainId`, `recommendedUnitConceptId`, `recommendedUnitName`, `recommendedUnitCode`, `recommendedUnitVocabularyId`).
 - `units/unit_conversions.json` — Lists conversion factors between units for a given measurement concept. **One row = one direction** for one concept. Fields: `conceptId`, `conceptName`, `sourceUnitConceptId`, `sourceUnitCode`, `sourceUnitName`, `conversionFactor`, `targetUnitConceptId`, `targetUnitCode`, `targetUnitName` — meaning "1 unit of `sourceUnitConceptId` for `conceptId` = `conversionFactor` units of `targetUnitConceptId`". Each measurement concept that supports unit conversion has multiple rows (one per pair × direction).
 
-These files are available locally in the repository or via GitHub:
-- `https://raw.githubusercontent.com/indicate-eu/data-dictionary/refs/heads/main/units/recommended_units.json`
-- `https://raw.githubusercontent.com/indicate-eu/data-dictionary/refs/heads/main/units/unit_conversions.json`
+Read these files directly from the repository working tree (`units/recommended_units.json`, `units/unit_conversions.json`).
 
 **Lookup process**:
 
@@ -164,13 +173,9 @@ jq '[.[] | select((.conceptId as $c | [3027018, 4239408] | index($c)))]' units/u
 
 When the description claims a unit is the "SI unit", "IFCC-recommended", "metrological standard", or similar, the claim must be backed by an authoritative source. The recommended primary source is **NPU (Nomenclature for Properties and Units)**, an IUPAC/IFCC-maintained codification system that defines, for each clinical laboratory measurand, the system (specimen), the kind-of-property, and the standard unit. NPU is broader than JCTLM (it covers concentrations, activities, ratios, qualitative panels) and explicitly publishes both the SI variant and the conventional variant when both are in use (e.g. `µkat/L` and `U/L` for enzyme activities).
 
-NPU codes are kept locally at:
+The NPU codes CSV path is collected in Step 1 (item 3). If the user did not provide it, skip NPU lookup and fall back to LOINC's `EXAMPLE_UCUM_UNITS` for the unit recommendation; in that case, do not claim "SI unit" / "IFCC-recommended" / "metrological standard" in the description text — those claims require NPU as a citable source.
 
-```
-/Users/borisdelange/Documents/Vocabularies/NPU - Unités internationales/npu-codes-latest.csv
-```
-
-The file is also available online from the NPU/IFCC website. Each row contains, among others: `npu_code`, `system` (e.g. `Plasma`, `Serum`, `Capillary blood`), `component` (analyte), `kind_of_property` (e.g. `substance concentration`, `catalytic activity concentration`), `unit` (full name, e.g. `micromole per litre`, `microkatal per litre`), `unit_short` (UCUM-like short form, e.g. `µmol/L`, `µkat/L`, `U/L`), `active`.
+Each row of the CSV contains, among others: `npu_code`, `system` (e.g. `Plasma`, `Serum`, `Capillary blood`), `component` (analyte), `kind_of_property` (e.g. `substance concentration`, `catalytic activity concentration`), `unit` (full name, e.g. `micromole per litre`, `microkatal per litre`), `unit_short` (UCUM-like short form, e.g. `µmol/L`, `µkat/L`, `U/L`), `active`.
 
 Lookup approach:
 1. Filter the CSV for `active == 1` and `component` matching the analyte (e.g. `Bilirubins`, `Gamma-Glutamyltransferase`, `Alkaline phosphatase`). Restrict `system` to blood-related values (`Plasma`, `Serum`, `Capillary blood`, `Blood`, `Patient(blood)`) for "in blood" concept sets.
@@ -180,13 +185,11 @@ Lookup approach:
 ```python
 # Example: list NPU codes for bilirubin in plasma/serum
 import csv
-with open(".../npu-codes-latest.csv", encoding="utf-8") as f:
+with open("<path-to-npu-codes.csv>", encoding="utf-8") as f:
     for r in csv.DictReader(f):
         if r["active"] == "1" and r["component"].startswith("Bilirubin") and r["system"] in {"Plasma", "Serum"}:
             print(r["npu_code"], r["short_definition"], r["unit_short"])
 ```
-
-**JCTLM as a complement (optional)**: when the analyte has a higher-order reference measurement procedure listed by JCTLM (e.g. the Doumas method for total bilirubin, the IFCC reference procedure for GGT at 37 °C), JCTLM can be cited in addition to NPU as the metrological reference. JCTLM tends to express results in SI units (`µmol/L` for concentrations, `µkat/L` for catalytic activities) and is useful when explaining the unit conversion factor (e.g. `1 U/L = 0.01667 µkat/L`). The JCTLM database is at <https://www.jctlmdb.org/#/app/home>.
 
 For **non-laboratory measurements** (vital signs, scales, anthropometrics), there is no NPU equivalent — fall back to clinical guidelines or the LOINC `EXAMPLE_UCUM_UNITS` field.
 
@@ -260,8 +263,7 @@ Generate a structured description in Markdown and **write it to a temporary file
 - **Keep it simple**: Do NOT include LOINC technical jargon in the description body (no LOINC class names like "HRTRATE.ATOM", no "System is XXX (unspecified)", no UMLS semantic type codes like "T201"). The LOINC/UMLS decomposition data is used to *inform* the writing but should not appear verbatim. The description must be easy to read for a non-terminologist.
 - **UMLS as a source, not in the text**: UMLS definitions (MeSH, NCI, ICF, etc.) should be used to write authoritative clinical definitions, but UMLS-specific identifiers (CUIs, semantic types, MeSH descriptor IDs) should only appear in the References section, never in the body text. Same for MeSH hierarchy — describe the clinical context naturally (e.g., "Heart rate is a vital sign and a hemodynamic parameter") without citing MeSH tree numbers.
 - **DO NOT** repeat general ETL/mapping rules (LOINC for labs, RxNorm for drugs, etc.) — these are documented elsewhere
-- **DO** include the OMOP concept_id alongside the vocabulary code and the vocabulary name for every concept citation, using the format `concept_id / concept_code (vocabulary)` (e.g., `3027018 / 8867-4 (LOINC)`, `4091643 / 249043002 (SNOMED)`). The OMOP concept_id comes first, then the vocabulary code, then the vocabulary name in parentheses. This applies everywhere a concept is cited: included concepts, excluded concepts (both hierarchy nodes and individual standard concepts), inline references in prose, and mapping notes.
-- **In Mapping Notes, also include the concept name** alongside the concept_id and vocabulary code, formatted as `concept_id / concept_code — concept_name`. This makes recommendations readable without forcing the reader to look up each code (the audience may not know the codes by heart). Example: ``3024128 / 1975-2 — Bilirubin.total [Mass/volume] in Serum or Plasma``.
+- **Every code citation must carry its label.** Whenever a concept is cited anywhere in the description (Definition, Included Concepts, Excluded Concepts, Mapping Notes, footnotes, parenthetical examples, unit references — everywhere), use the format `concept_id / concept_code — concept_name` followed by the vocabulary name in parentheses if not already implied by context. Example: ``3024128 / 1975-2 — Bilirubin.total [Mass/volume] in Serum or Plasma (LOINC)``. **Never write a bare code** like `20570-8` or `8554` without its label — the reader may not know the codes by heart, and a bare code forces them to look it up. This rule applies uniformly to LOINC concepts, SNOMED concepts, OMOP unit concepts (e.g. `8554 / % — percent (UCUM)`), and any other vocabulary. The vocabulary suffix `(LOINC)` / `(SNOMED)` / `(UCUM)` may be omitted when the surrounding context already makes it obvious (e.g. inside a list of LOINC concepts), but the concept_id, code, and name must all be present.
 - **Do NOT mention LOINC Group / classification / hierarchy concepts in the body of the description** (e.g., LOINC Groups like `LG6199-6`, LOINC Hierarchy nodes, or other non-standard classifier concepts). The convention across all concept sets in this repository is that these classification concepts are only used to anchor descendant inclusion — they are never standard concepts and are never mapping targets, so the reader does not need to be told that. Describe the inclusion strategy in plain natural language ("anchored on the two LOINC groups for X, pulling in all their descendants") rather than referencing the classification codes or OHDSI flags.
 - **Avoid OHDSI / OMOP jargon**: do not use technical flag names like `includeDescendants: true`, `isExcluded: false`, `standardConcept: "S"` in the description body. Translate to plain English ("descendants are included", "excluded from the set", "the standard concepts in this set"). The audience may not know the OHDSI conventions.
 - **Acronyms**: spell out an acronym in full at its **first** occurrence, then use the acronym alone for the rest of the description. Example: first mention "HPLC (high-performance liquid chromatography)", then "HPLC" everywhere after. Do not redefine the acronym in later sections.
@@ -304,14 +306,6 @@ Key rules for references:
   Available: <a href="https://npu-terminology.org/npu-database/" target="_blank">https://npu-terminology.org/npu-database/</a>
   ```
   Cite NPU once even when multiple NPU codes inform the description; do not link individual code pages.
-- **JCTLM (optional complement to NPU)**: cite JCTLM when discussing the higher-order reference measurement procedure of an analyte (e.g., the Doumas method for total bilirubin, IFCC ALP 2011) or when explaining a unit conversion taken from a JCTLM entry. Format:
-  ```
-  Joint Committee for Traceability in Laboratory Medicine (JCTLM). Database of higher-order
-  reference measurement procedures, reference materials and reference measurement services.
-  BIPM/IFCC/ILAC.
-  Available: <a href="https://www.jctlmdb.org/#/app/home" target="_blank">https://www.jctlmdb.org/#/app/home</a>
-  ```
-  Cite the database as a single canonical reference; do not link individual JCTLM entries.
 - **Do NOT cite the INDICATE units files** (`recommended_units.json`, `unit_conversions.json`) as references. These are internal data and not authoritative external sources.
 
 #### Structure
