@@ -93,7 +93,7 @@ From there, the rest is small pieces of plain web:
 - **GitHub Pages** (or GitLab Pages) for hosting — static files, free, auto-deploy on `git push`.
 - **Vanilla JavaScript SPA** — no framework, no build step. Each page is a small IIFE module; routes are hash-based. Keeps the app easy to fork and hack on.
 - **[Ace Editor](https://ace.c9.io/)** for the in-browser SQL console, **[marked](https://marked.js.org/)** for rendering the Markdown expert comments, **[vis-network](https://visjs.github.io/vis-network/)** for the ERD visualization of the OMOP CDM.
-- **Python scripts** (`resolve.py`, `build.py`) handle the offline build — resolving concept set expressions against a DuckDB vocabulary, then packing everything into `data.json` for the static site.
+- **Python scripts** (`resolve.py`, `build.py`) handle the build — resolving concept set expressions against a DuckDB vocabulary, then packing everything into `data.json` for the static site. `build.py` runs automatically on every push to `main` via GitHub Actions, so the live site is always in sync with the source JSON.
 
 The net effect: a full-featured concept set governance app — with a client-side OMOP vocabulary — running on **$0/month infrastructure**, deployable by anyone with a GitHub account.
 
@@ -130,6 +130,7 @@ snapshot.py                  # Records commit SHAs in concept_sets_versions.json
 reset.py                     # Wipes content for a fresh fork (see FORKING.md)
 update_from_upstream.py      # Pulls code updates from this repo into a fork
 config.json                  # Per-fork branding, GitHub repo, organization
+.github/workflows/           # GitHub Actions: rebuilds docs/ and deploys to GitHub Pages on every push to main
 .gitlab-ci.yml               # GitLab Pages deployment (no-op on GitHub)
 CLAUDE.md                    # Project conventions, schemas, build pipeline
 FORKING.md                   # Guide for teams reusing this app for their own dictionary
@@ -142,7 +143,7 @@ See [CLAUDE.md](CLAUDE.md) for full schemas, build pipeline, and conventions.
 **Browse the catalog** — no install needed:
 → <https://indicate-eu.github.io/data-dictionary/>
 
-**Rebuild locally after editing JSON:**
+**Edit JSON, push, done.** A GitHub Actions workflow rebuilds `docs/data.json` and deploys to GitHub Pages on every push to `main` — no local build step required for the live site to update. If you want to preview locally before pushing:
 ```bash
 python3 resolve.py --db /path/to/ohdsi_vocabularies.duckdb   # optional, expands descendants/mapped
 python3 build.py                                             # regenerates docs/data.json (calls snapshot.py)
