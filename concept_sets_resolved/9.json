@@ -2,13 +2,13 @@
   "conceptSetId": 9,
   "resolvedConcepts": [
     {
-      "conceptId": 2100000003,
-      "conceptName": "Intensive Care Delirium Screening Checklist (ICDSC)",
-      "vocabularyId": "INDICATE",
+      "conceptId": 1450965,
+      "conceptName": "Intensive Care Delirium Screening Checklist score",
+      "vocabularyId": "SNOMED",
       "domainId": "Measurement",
-      "conceptClassId": "Staging / Scales",
-      "conceptCode": "ICDSC-score",
-      "standardConcept": ""
+      "conceptClassId": "Observable Entity",
+      "conceptCode": "1351995008",
+      "standardConcept": null
     }
   ]
 }
