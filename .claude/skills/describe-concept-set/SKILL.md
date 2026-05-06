@@ -121,6 +121,11 @@ If the concept set contains SNOMED concepts, extract from the RF2 release (the f
 - `sct2_Description_Snapshot-en_*.txt` — FSN and synonyms
 - `sct2_TextDefinition_Snapshot-en_*.txt` — Full text definitions (only ~3.6% of concepts have them)
 
+The `snomedPath` from `config.local.json` may point to:
+- the ZIP file directly,
+- the extracted folder (containing `Snapshot/Terminology/...`), or
+- a parent folder containing the ZIP somewhere underneath (e.g. `SNOMED source/SRC/<release>.zip`). In that case, locate the ZIP first with `find <snomedPath> -name '*.zip' | head -1`.
+
 ```bash
 # If the release is still a ZIP:
 unzip -p "<path-to-snomed-zip>" "*/sct2_Description_Snapshot-en*" | grep "<SNOMED_ID>"

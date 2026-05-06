@@ -7,7 +7,9 @@
   "defaultLanguage": "en",
   "github": {
     "repo": "indicate-eu/data-dictionary",
-    "branch": "main"
+    "branch": "main",
+    "upstream": "https://github.com/indicate-eu/data-dictionary.git",
+    "upstreamBranch": "main"
   },
   "organization": {
     "name": "INDICATE Consortium",
