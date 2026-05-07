@@ -1,25 +1,25 @@
 {
-  "title": "INDICATE Data Dictionary",
+  "title": "SFAR Data Dictionary",
   "languages": ["en", "fr"],
-  "defaultLanguage": "en",
+  "defaultLanguage": "fr",
   "github": {
-    "repo": "indicate-eu/data-dictionary",
+    "repo": "benpopoff/sfar-data-dictionary",
     "branch": "main",
-    "upstream": "https://github.com/indicate-eu/data-dictionary.git",
+    "upstream": "https://github.com/benpopoff/sfar-data-dictionary.git",
     "upstreamBranch": "main"
   },
   "organization": {
-    "name": "INDICATE Consortium",
-    "url": "https://indicate-eu.org"
+    "name": "Groupe numérique SFAR",
+    "url": "https://sfar.org"
   },
   "customVocabulary": {
-    "id": "INDICATE",
-    "codePrefix": "INDICATE-"
+    "id": "SFAR",
+    "codePrefix": "SFAR-"
   },
   "branding": {
-    "logo": "logo.png",
-    "favicon": "favicon.png",
-    "logoAlt": "INDICATE"
+    "logo": "logo_sfar.png",
+    "favicon": "logo_sfar.png",
+    "logoAlt": "SFAR"
   },
   "tabs": {
     "showProjects": true,
